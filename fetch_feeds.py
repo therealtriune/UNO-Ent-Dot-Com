@@ -37,6 +37,7 @@ from datetime import datetime, timezone
 from html import unescape
 
 import feedparser
+import requests
 
 # Each entry: (Display name, feed URL)
 SOURCES = [
@@ -57,6 +58,13 @@ TAG_RE = re.compile(r"<[^>]+>")
 IMG_SRC_RE = re.compile(r'<img[^>]+src="([^"]+)"')
 SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
 SLUG_RE = re.compile(r"[^a-z0-9]+")
+OG_IMAGE_RE = re.compile(
+    r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']', re.IGNORECASE
+)
+OG_IMAGE_RE_ALT = re.compile(
+    r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']', re.IGNORECASE
+)
+THUMBNAIL_TIMEOUT = 5.0
 
 
 def clean_text(raw_html: str) -> str:
@@ -168,8 +176,40 @@ def categorize(title: str, source_tags: list[str]) -> str:
     return "news"
 
 
+def fetch_og_image(article_url: str) -> str | None:
+    """
+    Fetch the article's own og:image meta tag -- the same high-resolution
+    hero image the source site uses when the story is shared on social
+    media. This is consistently better (and more consistently present)
+    than whatever thumbnail happens to be embedded in the RSS feed itself:
+    some feeds (e.g. HotNewHipHop's) don't carry a thumbnail at all, and
+    others carry a small WordPress-generated crop (e.g. "-300x300.jpg")
+    instead of the real hero image.
+
+    Returns None on any error -- a slow or broken fetch should never block
+    the rest of the pull, it just falls back to extract_thumbnail() below.
+    """
+    if not article_url:
+        return None
+    try:
+        resp = requests.get(
+            article_url,
+            timeout=THUMBNAIL_TIMEOUT,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; UNOEntBot/1.0)"},
+        )
+        if resp.status_code != 200:
+            return None
+        match = OG_IMAGE_RE.search(resp.text) or OG_IMAGE_RE_ALT.search(resp.text)
+        if match:
+            return unescape(match.group(1))
+    except requests.RequestException:
+        pass
+    return None
+
+
 def extract_thumbnail(entry) -> str | None:
-    """Try the common places a thumbnail shows up in RSS/Media RSS."""
+    """Fallback: try the common places a thumbnail shows up in RSS/Media RSS,
+    used only if fetch_og_image() above couldn't get the real hero image."""
     if "media_thumbnail" in entry and entry.media_thumbnail:
         return entry.media_thumbnail[0].get("url")
     if "media_content" in entry and entry.media_content:
@@ -213,6 +253,9 @@ def fetch_source(name: str, url: str) -> list[dict]:
             else datetime.now(timezone.utc).isoformat()
         )
 
+        link = entry.get("link")
+        thumbnail = fetch_og_image(link) or extract_thumbnail(entry)
+
         articles.append(
             {
                 "source": name,
@@ -221,8 +264,8 @@ def fetch_source(name: str, url: str) -> list[dict]:
                 "excerpt": excerpt,
                 "summary": summary,
                 "category": category,
-                "link": entry.get("link"),
-                "thumbnail": extract_thumbnail(entry),
+                "link": link,
+                "thumbnail": thumbnail,
                 "date": date_iso,
             }
         )
