@@ -13,6 +13,10 @@
     <img class="logo" src="../uno-logo.png" alt="UNO Entertainment">
     <span class="tagline">Where Culture Gathers</span>
   </a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+  <label for="nav-toggle" class="nav-toggle-btn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </label>
   <nav class="header-filters">
     <a class="active" href="../index.html">All</a><a class="" href="../category/news.html">News</a><a class="" href="../category/rumors.html">Rumors</a><a class="" href="../category/videos.html">Videos</a><a class="" href="../category/music.html">Music</a><a class="" href="../category/opinion.html">Opinion</a>
   </nav>
@@ -21,7 +25,7 @@
   <div class="grid">
     
     <a class="card" href="../articles/wakko-the-kidd-the-insane-clown-posse-tell-the-legend-of-bizerker-187.html">
-      <div class="card-thumb card-thumb-placeholder">&#9679;</div>
+      <img src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/IMG_4956-e1783728424198.jpeg" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
         <div class="card-meta"><span class="card-category">Music</span><span class="card-dot">&middot;</span>1 week ago</div>
         <h2 class="card-title">Wakko the Kidd &amp; the Insane Clown Posse Tell the Legend of “Bizerker 187”</h2>
@@ -31,7 +35,7 @@
     </a>
 
     <a class="card" href="../articles/the-musalini-9th-wonder-salt-box-video.html">
-      <div class="card-thumb card-thumb-placeholder">&#9679;</div>
+      <img src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/The-Musalini-9th-Wonder-Salt-Box-0-9-screenshot.png" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
         <div class="card-meta"><span class="card-category">Videos</span><span class="card-dot">&middot;</span>1 week ago</div>
         <h2 class="card-title">The Musalini, 9th Wonder – Salt Box – Video</h2>
@@ -44,6 +48,13 @@
   <nav class="pagination">
     <a href="6.html">&larr; Newer</a>
     <span class="page-count">Page 7 of 7</span>
+    
+    <label class="page-jump">
+      Go to page
+      <select onchange="if(this.value) window.location.href=this.value;">
+        <option value="../index.html">1</option><option value="2.html">2</option><option value="3.html">3</option><option value="4.html">4</option><option value="5.html">5</option><option value="6.html">6</option><option value="7.html" selected>7</option>
+      </select>
+    </label>
     <span class="disabled">Older &rarr;</span>
   </nav>
 </main>
