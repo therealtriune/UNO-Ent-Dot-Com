@@ -1,0 +1,476 @@
+#!/usr/bin/env python3
+"""
+UNO Entertainment — static site builder.
+
+Reads articles.json (produced by fetch_feeds.py) and renders:
+  - index.html                  homepage, page 1 (newest ARTICLES_PER_PAGE stories)
+  - page/2.html, page/3.html    older stories on the homepage, paginated
+  - category/<cat>.html         page 1 of a single category (news, rumors,
+                                 videos, music, opinion), same pagination
+  - category/<cat>-2.html, ...  older stories within that category
+  - articles/<slug>.html        one page per story, with UNO Ent's own
+                                 summary, then a clear link out to the source
+
+Categories are a curation layer, not a publisher directory: "exclusives" and
+"features" (tags some source RSS feeds use) don't get their own filter — that
+kind of label is specific to how XXL or HotNewHipHop organize their own site,
+not something a reader browsing UNO Ent needs. Those stories still show up
+in the main feed and in whichever of the five real categories fits them.
+
+Homepage cards link to the internal article page first — NOT straight out to
+the source. The article page is where the outbound link lives. That's
+deliberate: the summary field is written in UNO Ent's own voice today, and
+is exactly what gets swapped for original in-house reporting later without
+changing any URLs or site structure.
+
+Run this after fetch_feeds.py any time you want to refresh the site.
+"""
+
+import json
+import re
+from datetime import datetime, timezone
+from html import escape
+
+with open("articles.json") as f:
+    ARTICLES = json.load(f)
+
+
+def slugify(title: str) -> str:
+    s = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+    return s[:70]
+
+
+def time_ago(date_iso: str) -> str:
+    try:
+        dt = datetime.fromisoformat(date_iso.replace("Z", "+00:00"))
+    except ValueError:
+        return ""
+    delta = datetime.now(timezone.utc) - dt
+    hours = delta.total_seconds() / 3600
+    if hours < 1:
+        return "just now"
+    if hours < 24:
+        h = int(hours)
+        return f"{h} hour{'s' if h != 1 else ''} ago"
+    days = int(hours / 24)
+    if days < 7:
+        return f"{days} day{'s' if days != 1 else ''} ago"
+    weeks = int(days / 7)
+    return f"{weeks} week{'s' if weeks != 1 else ''} ago"
+
+
+# Assign a stable, unique slug to every article. fetch_feeds.py already sets
+# one for each article it pulls — this only fills the gap (and de-dupes)
+# when a slug is missing or collides.
+seen_slugs = {}
+for a in ARTICLES:
+    base = a.get("slug") or slugify(a["title"])
+    n = seen_slugs.get(base, 0)
+    seen_slugs[base] = n + 1
+    a["slug"] = base if n == 0 else f"{base}-{n + 1}"
+
+# Newest first, then paginate.
+ARTICLES.sort(key=lambda a: a["date"], reverse=True)
+
+ARTICLES_PER_PAGE = 12
+
+# The only categories that get a filter pill in the header. Anything else a
+# source tags an article with (e.g. "Exclusive", "Feature") is publisher-
+# specific and isn't part of UNO Ent's own taxonomy — those stories still
+# appear under "All" and get bucketed into whichever of these fits best.
+CATEGORIES = [
+    ("news", "News"),
+    ("rumors", "Rumors"),
+    ("videos", "Videos"),
+    ("music", "Music"),
+    ("opinion", "Opinion"),
+]
+CATEGORY_LABELS = dict(CATEGORIES)
+
+ARTICLE_COUNT = len(ARTICLES)
+
+# ---------------------------------------------------------------------------
+# Shared stylesheet
+# ---------------------------------------------------------------------------
+
+STYLE_CSS = """
+:root {
+  --bg: #0a0a0a;
+  --bg-card: #141414;
+  --bg-card-hover: #1c1c1c;
+  --red: #e0202e;
+  --white: #f5f5f5;
+  --gray: #9a9a9a;
+  --border: #262626;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--white);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+a { color: inherit; }
+header {
+  background: #000;
+  border-bottom: 4px solid var(--red);
+  padding: 22px 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+header a.brand-link { display: flex; align-items: center; gap: 16px; text-decoration: none; }
+header img.logo { height: 52px; width: auto; display: block; }
+header .tagline {
+  color: var(--gray);
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  border-left: 2px solid var(--red);
+  padding-left: 16px;
+}
+
+.header-filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.header-filters a {
+  font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px;
+  color: var(--gray); text-decoration: none; padding: 7px 16px; border-radius: 999px;
+  border: 1px solid var(--border);
+}
+.header-filters a:hover { color: var(--white); border-color: var(--gray); }
+.header-filters a.active { color: #fff; background: var(--red); border-color: var(--red); }
+
+main { padding: 32px 5vw 80px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.card:hover { transform: translateY(-3px); background: var(--bg-card-hover); border-color: var(--red); }
+.card-thumb { width: 100%; height: 180px; object-fit: cover; background: #1c1c1c; display: block; }
+.card-thumb-placeholder {
+  display: flex; align-items: center; justify-content: center;
+  font-size: 44px; font-weight: 800; color: var(--red);
+  background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+}
+.card-body { padding: 18px 20px 22px; display: flex; flex-direction: column; flex: 1; }
+.card-meta { font-size: 11px; color: var(--gray); margin-bottom: 10px; letter-spacing: 0.3px; }
+.card-category { color: var(--red); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+.card-dot { margin: 0 6px; }
+.card-title { font-size: 18px; line-height: 1.3; margin: 0 0 10px; font-weight: 800; color: var(--white); }
+.card-excerpt { font-size: 14px; color: var(--gray); line-height: 1.5; margin: 0 0 16px; flex: 1; }
+.card-link { font-size: 13px; font-weight: 700; color: var(--white); text-transform: uppercase;
+  letter-spacing: 0.5px; border-bottom: 2px solid var(--red); padding-bottom: 3px; align-self: flex-start; }
+footer { padding: 40px 5vw 48px; border-top: 1px solid var(--border); color: var(--gray); font-size: 12px; line-height: 1.7; }
+footer strong { color: var(--white); }
+.footer-inner { display: flex; align-items: flex-start; gap: 24px; flex-wrap: wrap; }
+.footer-logo { height: 34px; width: auto; opacity: 0.85; flex-shrink: 0; }
+.footer-body { flex: 1; min-width: 240px; }
+.footer-contact { margin-top: 10px; }
+.footer-contact a { color: var(--red); text-decoration: none; font-weight: 700; }
+.footer-contact a:hover { text-decoration: underline; }
+
+.pagination { display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 48px; }
+.pagination a, .pagination span {
+  font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+  padding: 10px 18px; border-radius: 6px; text-decoration: none;
+}
+.pagination a { color: var(--white); border: 1px solid var(--border); }
+.pagination a:hover { border-color: var(--red); color: var(--red); }
+.pagination .disabled { color: #4a4a4a; border: 1px solid var(--border); opacity: 0.5; }
+.pagination .page-count { color: var(--gray); border: none; text-transform: none; letter-spacing: 0; font-weight: 400; }
+
+/* Article page */
+.article-wrap { max-width: 720px; margin: 0 auto; padding: 48px 5vw 80px; }
+.back-link { display: inline-block; font-size: 13px; color: var(--gray); text-decoration: none; margin-bottom: 24px; }
+.back-link:hover { color: var(--white); }
+.article-meta { font-size: 12px; color: var(--gray); margin-bottom: 14px; letter-spacing: 0.3px; }
+.article-title { font-size: 32px; line-height: 1.25; font-weight: 800; margin: 0 0 24px; color: var(--white); }
+.article-hero { width: 100%; max-height: 420px; object-fit: cover; border-radius: 10px; margin-bottom: 28px; border: 1px solid var(--border); }
+.article-summary { font-size: 17px; line-height: 1.7; color: #e6e6e6; margin-bottom: 32px; }
+.outbound-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--red); color: #fff; text-decoration: none;
+  font-weight: 700; font-size: 15px; padding: 14px 26px; border-radius: 6px;
+  letter-spacing: 0.3px;
+}
+.outbound-cta:hover { background: #c81a27; }
+.outbound-note { font-size: 12px; color: var(--gray); margin-top: 14px; }
+"""
+
+# ---------------------------------------------------------------------------
+# Templates
+# ---------------------------------------------------------------------------
+
+
+def header_html(prefix: str, active: str = None) -> str:
+    """
+    active is one of "all", a category key, or None. None still renders the
+    filter pills (so they're reachable from article pages) but leaves all of
+    them unhighlighted.
+    """
+    pills = [f'<a class="{"active" if active == "all" else ""}" href="{prefix}index.html">All</a>']
+    for key, label in CATEGORIES:
+        pills.append(f'<a class="{"active" if active == key else ""}" href="{prefix}category/{key}.html">{label}</a>')
+
+    return f"""
+<header>
+  <a class="brand-link" href="{prefix}index.html">
+    <img class="logo" src="{prefix}uno-logo.png" alt="UNO Entertainment">
+    <span class="tagline">Where Culture Gathers</span>
+  </a>
+  <nav class="header-filters">
+    {"".join(pills)}
+  </nav>
+</header>"""
+
+
+def footer_html(prefix: str) -> str:
+    return f"""
+<footer>
+  <div class="footer-inner">
+    <img class="footer-logo" src="{prefix}uno-logo.png" alt="UNO Entertainment">
+    <div class="footer-body">
+      <strong>About UNO Entertainment.</strong> We cover the latest in hip-hop and culture: new music, beef,
+      gossip, and the moments people are talking about. Every story here includes a summary and a link to the
+      original reporting from outlets like XXL, HotNewHipHop, and The Source. Full credit and the complete
+      story always live with them.
+      <div class="footer-contact">Questions or a story tip? Email us at <a href="mailto:support@unoent.com">support@unoent.com</a>.</div>
+    </div>
+  </div>
+</footer>"""
+
+
+def card_html(a: dict, prefix: str) -> str:
+    thumb = a.get("thumbnail")
+    thumb_html = (
+        f'<img src="{escape(thumb)}" alt="" loading="lazy" class="card-thumb">'
+        if thumb
+        else f'<div class="card-thumb card-thumb-placeholder">&#9679;</div>'
+    )
+    cat_key = a.get("category")
+    cat_label = CATEGORY_LABELS.get(cat_key)
+    cat_html = f'<span class="card-category">{escape(cat_label)}</span><span class="card-dot">&middot;</span>' if cat_label else ""
+    return f"""
+    <a class="card" href="{prefix}articles/{a['slug']}.html">
+      {thumb_html}
+      <div class="card-body">
+        <div class="card-meta">{cat_html}{escape(time_ago(a['date']))}</div>
+        <h2 class="card-title">{escape(a['title'])}</h2>
+        <p class="card-excerpt">{escape(a['excerpt'])}</p>
+        <span class="card-link">Read More &rarr;</span>
+      </div>
+    </a>"""
+
+
+def page_href(target_page: int, current_page: int) -> str:
+    """Link from current_page to target_page, both 1-indexed."""
+    if target_page == 1:
+        return "../index.html" if current_page > 1 else "index.html"
+    return f"{target_page}.html" if current_page > 1 else f"page/{target_page}.html"
+
+
+def pagination_html(current_page: int, total_pages: int) -> str:
+    if total_pages <= 1:
+        return ""
+    if current_page > 1:
+        prev = f'<a href="{page_href(current_page - 1, current_page)}">&larr; Newer</a>'
+    else:
+        prev = '<span class="disabled">&larr; Newer</span>'
+    if current_page < total_pages:
+        nxt = f'<a href="{page_href(current_page + 1, current_page)}">Older &rarr;</a>'
+    else:
+        nxt = '<span class="disabled">Older &rarr;</span>'
+    return f"""
+  <nav class="pagination">
+    {prev}
+    <span class="page-count">Page {current_page} of {total_pages}</span>
+    {nxt}
+  </nav>"""
+
+
+def build_page(page_num: int, total_pages: int):
+    start = (page_num - 1) * ARTICLES_PER_PAGE
+    page_articles = ARTICLES[start:start + ARTICLES_PER_PAGE]
+    prefix = "" if page_num == 1 else "../"
+    cards = "\n".join(card_html(a, prefix) for a in page_articles)
+    title = "UNO Entertainment" if page_num == 1 else f"UNO Entertainment | Page {page_num}"
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title}</title>
+<link rel="stylesheet" href="{prefix}style.css">
+</head>
+<body>
+{header_html(prefix, "all")}
+<main>
+  <div class="grid">
+    {cards}
+  </div>
+  {pagination_html(page_num, total_pages)}
+</main>
+{footer_html(prefix)}
+</body>
+</html>
+"""
+    if page_num == 1:
+        with open("index.html", "w") as f:
+            f.write(html)
+    else:
+        import os
+        os.makedirs("page", exist_ok=True)
+        with open(f"page/{page_num}.html", "w") as f:
+            f.write(html)
+
+
+def build_pages():
+    import math
+    total_pages = max(1, math.ceil(ARTICLE_COUNT / ARTICLES_PER_PAGE))
+    for page_num in range(1, total_pages + 1):
+        build_page(page_num, total_pages)
+    return total_pages
+
+
+# ---------------------------------------------------------------------------
+# Category pages — same idea as build_page/build_pages, but scoped to one
+# category and living in category/ instead of the root + page/.
+# ---------------------------------------------------------------------------
+
+
+def category_page_href(cat_key: str, target_page: int) -> str:
+    return f"{cat_key}.html" if target_page == 1 else f"{cat_key}-{target_page}.html"
+
+
+def category_pagination_html(cat_key: str, current_page: int, total_pages: int) -> str:
+    if total_pages <= 1:
+        return ""
+    if current_page > 1:
+        prev = f'<a href="{category_page_href(cat_key, current_page - 1)}">&larr; Newer</a>'
+    else:
+        prev = '<span class="disabled">&larr; Newer</span>'
+    if current_page < total_pages:
+        nxt = f'<a href="{category_page_href(cat_key, current_page + 1)}">Older &rarr;</a>'
+    else:
+        nxt = '<span class="disabled">Older &rarr;</span>'
+    return f"""
+  <nav class="pagination">
+    {prev}
+    <span class="page-count">Page {current_page} of {total_pages}</span>
+    {nxt}
+  </nav>"""
+
+
+def build_category(cat_key: str, cat_label: str):
+    import math
+    import os
+
+    cat_articles = [a for a in ARTICLES if a.get("category") == cat_key]
+    total_pages = max(1, math.ceil(len(cat_articles) / ARTICLES_PER_PAGE))
+    os.makedirs("category", exist_ok=True)
+
+    for page_num in range(1, total_pages + 1):
+        start = (page_num - 1) * ARTICLES_PER_PAGE
+        page_articles = cat_articles[start:start + ARTICLES_PER_PAGE]
+        cards = "\n".join(card_html(a, "../") for a in page_articles)
+        title = f"{cat_label} | UNO Entertainment" + (f" (Page {page_num})" if page_num > 1 else "")
+        empty_state = (
+            '<p style="color: var(--gray); font-size: 15px;">No stories in this category yet. Check back soon.</p>'
+            if not page_articles else ""
+        )
+        html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{escape(title)}</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+{header_html("../", cat_key)}
+<main>
+  <div class="grid">
+    {cards}
+  </div>
+  {empty_state}
+  {category_pagination_html(cat_key, page_num, total_pages)}
+</main>
+{footer_html("../")}
+</body>
+</html>
+"""
+        with open(f"category/{category_page_href(cat_key, page_num)}", "w") as f:
+            f.write(html)
+
+
+def build_categories():
+    for cat_key, cat_label in CATEGORIES:
+        build_category(cat_key, cat_label)
+
+
+def build_article(a: dict):
+    thumb = a.get("thumbnail")
+    hero_html = f'<img class="article-hero" src="{escape(thumb)}" alt="">' if thumb else ""
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{escape(a['title'])} | UNO Entertainment</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+{header_html("../", a.get("category"))}
+<div class="article-wrap">
+  <a class="back-link" href="../index.html">&larr; Back to UNO Entertainment</a>
+  <div class="article-meta">{escape(time_ago(a['date']))}</div>
+  <h1 class="article-title">{escape(a['title'])}</h1>
+  {hero_html}
+  <p class="article-summary">{escape(a.get('summary') or a.get('excerpt', ''))}</p>
+  <a class="outbound-cta" href="{escape(a['link'])}" target="_blank" rel="noopener noreferrer">
+    Read The Full Story On {escape(a['source'])} &rarr;
+  </a>
+  <p class="outbound-note">Original reporting by {escape(a['source'])}. This page is a summary. The full story, photos, and details live at the link above.</p>
+</div>
+{footer_html("../")}
+</body>
+</html>
+"""
+    import os
+    os.makedirs("articles", exist_ok=True)
+    with open(f"articles/{a['slug']}.html", "w") as f:
+        f.write(html)
+
+
+def main():
+    with open("style.css", "w") as f:
+        f.write(STYLE_CSS)
+    total_pages = build_pages()
+    build_categories()
+    for a in ARTICLES:
+        build_article(a)
+    from collections import Counter
+    counts = Counter(a.get("category") for a in ARTICLES)
+    cat_summary = ", ".join(f"{label} {counts.get(key, 0)}" for key, label in CATEGORIES)
+    print(
+        f"Built {total_pages} homepage page(s) ({ARTICLES_PER_PAGE}/page) "
+        f"+ {ARTICLE_COUNT} article pages in articles/ "
+        f"+ category pages ({cat_summary}), plus style.css"
+    )
+
+
+if __name__ == "__main__":
+    main()
