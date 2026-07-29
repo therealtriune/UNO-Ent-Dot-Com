@@ -1,0 +1,49 @@
+name: Check For Dead Links
+
+# Runs once a day (separate from the frequent feed-pull workflow — checking
+# every article's outbound link is heavier and doesn't need to happen every
+# 30 minutes). Removes confirmed-dead articles and rebuilds the site.
+on:
+  schedule:
+    - cron: "0 8 * * *"   # 8am UTC daily
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-feed
+  cancel-in-progress: false
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check links and remove confirmed-dead articles
+        run: python3 check_links.py
+
+      - name: Rebuild site
+        run: python3 build_site.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "uno-ent-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add articles.json index.html style.css articles/ page/ category/
+          if git diff --cached --quiet; then
+            echo "No dead links found — nothing to commit."
+          else
+            git commit -m "Auto-update: remove dead links $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
