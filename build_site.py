@@ -191,6 +191,17 @@ footer strong { color: var(--white); }
 .pagination a:hover { border-color: var(--red); color: var(--red); }
 .pagination .disabled { color: #4a4a4a; border: 1px solid var(--border); opacity: 0.5; }
 .pagination .page-count { color: var(--gray); border: none; text-transform: none; letter-spacing: 0; font-weight: 400; }
+.page-jump {
+  display: flex; align-items: center; gap: 8px;
+  color: var(--gray); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.page-jump select {
+  background: var(--bg-card); color: var(--white); border: 1px solid var(--border);
+  border-radius: 6px; padding: 9px 14px; font-size: 13px; font-weight: 700;
+  font-family: inherit; cursor: pointer;
+}
+.page-jump select:hover { border-color: var(--red); }
+.page-jump select:focus { outline: none; border-color: var(--red); }
 
 /* Article page */
 .article-wrap { max-width: 720px; margin: 0 auto; padding: 48px 5vw 80px; }
@@ -282,6 +293,25 @@ def page_href(target_page: int, current_page: int) -> str:
     return f"{target_page}.html" if current_page > 1 else f"page/{target_page}.html"
 
 
+def page_jump_html(current_page: int, total_pages: int, href_for) -> str:
+    """A 'go to page' dropdown, given a function mapping a 1-indexed target
+    page number to the relative URL for it from the current page. Renders
+    nothing for a single-page listing, same as the arrows above it."""
+    if total_pages <= 1:
+        return ""
+    options = "".join(
+        f'<option value="{escape(href_for(p))}"{" selected" if p == current_page else ""}>{p}</option>'
+        for p in range(1, total_pages + 1)
+    )
+    return f"""
+    <label class="page-jump">
+      Go to page
+      <select onchange="if(this.value) window.location.href=this.value;">
+        {options}
+      </select>
+    </label>"""
+
+
 def pagination_html(current_page: int, total_pages: int) -> str:
     if total_pages <= 1:
         return ""
@@ -293,10 +323,12 @@ def pagination_html(current_page: int, total_pages: int) -> str:
         nxt = f'<a href="{page_href(current_page + 1, current_page)}">Older &rarr;</a>'
     else:
         nxt = '<span class="disabled">Older &rarr;</span>'
+    jump = page_jump_html(current_page, total_pages, lambda p: page_href(p, current_page))
     return f"""
   <nav class="pagination">
     {prev}
     <span class="page-count">Page {current_page} of {total_pages}</span>
+    {jump}
     {nxt}
   </nav>"""
 
@@ -366,10 +398,12 @@ def category_pagination_html(cat_key: str, current_page: int, total_pages: int) 
         nxt = f'<a href="{category_page_href(cat_key, current_page + 1)}">Older &rarr;</a>'
     else:
         nxt = '<span class="disabled">Older &rarr;</span>'
+    jump = page_jump_html(current_page, total_pages, lambda p: category_page_href(cat_key, p))
     return f"""
   <nav class="pagination">
     {prev}
     <span class="page-count">Page {current_page} of {total_pages}</span>
+    {jump}
     {nxt}
   </nav>"""
 
