@@ -120,6 +120,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 16px;
+  position: relative;
 }
 header a.brand-link { display: flex; align-items: center; gap: 16px; text-decoration: none; }
 header img.logo { height: 52px; width: auto; display: block; }
@@ -140,6 +141,51 @@ header .tagline {
 }
 .header-filters a:hover { color: var(--white); border-color: var(--gray); }
 .header-filters a.active { color: #fff; background: var(--red); border-color: var(--red); }
+
+/* Mobile hamburger menu -- hidden checkbox drives a CSS-only dropdown, no JS. */
+.nav-toggle-checkbox { display: none; }
+.nav-toggle-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.nav-toggle-btn span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+@media (max-width: 760px) {
+  header .tagline { display: none; }
+  .nav-toggle-btn { display: flex; }
+  .header-filters {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    background: #000;
+    border-bottom: 4px solid var(--red);
+    padding: 10px 5vw 20px;
+    gap: 6px;
+    z-index: 30;
+  }
+  .header-filters a { padding: 13px 16px; border-radius: 6px; text-align: left; }
+  .nav-toggle-checkbox:checked ~ .header-filters { display: flex; }
+  .nav-toggle-checkbox:checked ~ .nav-toggle-btn span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle-checkbox:checked ~ .nav-toggle-btn span:nth-child(2) { opacity: 0; }
+  .nav-toggle-checkbox:checked ~ .nav-toggle-btn span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+}
 
 main { padding: 32px 5vw 80px; }
 .grid {
@@ -203,6 +249,21 @@ footer strong { color: var(--white); }
 .page-jump select:hover { border-color: var(--red); }
 .page-jump select:focus { outline: none; border-color: var(--red); }
 
+@media (max-width: 600px) {
+  .pagination { flex-wrap: wrap; row-gap: 14px; column-gap: 10px; }
+  .pagination a, .pagination .page-count { font-size: 12px; padding: 10px 14px; }
+  .page-jump {
+    order: 99;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  .page-jump select {
+    flex: 0 1 240px;
+    padding: 13px 16px;
+    font-size: 15px;
+  }
+}
+
 /* Article page */
 .article-wrap { max-width: 720px; margin: 0 auto; padding: 48px 5vw 80px; }
 .back-link { display: inline-block; font-size: 13px; color: var(--gray); text-decoration: none; margin-bottom: 24px; }
@@ -242,6 +303,10 @@ def header_html(prefix: str, active: str = None) -> str:
     <img class="logo" src="{prefix}uno-logo.png" alt="UNO Entertainment">
     <span class="tagline">Where Culture Gathers</span>
   </a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+  <label for="nav-toggle" class="nav-toggle-btn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </label>
   <nav class="header-filters">
     {"".join(pills)}
   </nav>
