@@ -405,6 +405,36 @@ footer a:hover { color: var(--white); }
 }
 .outbound-cta:hover { background: #c81a27; }
 .outbound-note { font-size: 12px; color: var(--gray); margin-top: 14px; }
+
+/* Cookie consent banner */
+.cookie-banner {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 200;
+  background: #101010; border-top: 1px solid var(--border);
+  padding: 16px 5vw; box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.4);
+}
+.cookie-banner[hidden] { display: none; }
+.cookie-banner-inner {
+  max-width: 1200px; margin: 0 auto; display: flex; align-items: center;
+  justify-content: space-between; gap: 20px; flex-wrap: wrap;
+}
+.cookie-banner-inner p { margin: 0; font-size: 13px; color: var(--gray); line-height: 1.5; flex: 1; min-width: 240px; }
+.cookie-banner-inner a { color: var(--red); font-weight: 700; text-decoration: none; }
+.cookie-banner-inner a:hover { text-decoration: underline; }
+.cookie-banner-btn {
+  background: var(--red); color: #fff; border: none; border-radius: 6px;
+  font-weight: 700; font-size: 13px; padding: 11px 26px; cursor: pointer;
+  text-transform: uppercase; letter-spacing: 0.5px; flex-shrink: 0;
+}
+.cookie-banner-btn:hover { background: #c81a27; }
+
+/* Legal pages (Privacy Policy, Terms of Service) */
+.legal-wrap { max-width: 760px; margin: 0 auto; padding: 48px 5vw 80px; }
+.legal-wrap h1 { font-size: 30px; font-weight: 800; margin: 0 0 8px; color: var(--white); }
+.legal-wrap .legal-updated { font-size: 12px; color: var(--gray); margin-bottom: 36px; letter-spacing: 0.3px; }
+.legal-wrap h2 { font-size: 18px; font-weight: 700; margin: 36px 0 12px; color: var(--white); }
+.legal-wrap p { font-size: 15px; line-height: 1.7; color: #e6e6e6; margin: 0 0 16px; }
+.legal-wrap a { color: var(--red); text-decoration: none; font-weight: 700; }
+.legal-wrap a:hover { text-decoration: underline; }
 """
 
 # ---------------------------------------------------------------------------
@@ -436,6 +466,38 @@ def header_html(prefix: str, active: str = None) -> str:
     {"".join(pills)}
   </nav>
 </header>"""
+
+
+def cookie_banner_html(prefix: str) -> str:
+    """Lightweight, dependency-free cookie notice. UNO Ent doesn't set any
+    tracking cookies today, but this is here ahead of adding analytics/ads
+    so there's already a consent mechanism and a Privacy Policy to point to.
+    Dismissal is remembered in localStorage so it only shows once per
+    browser; wrapped in try/except since some browsers block storage access
+    entirely (e.g. private mode) and that shouldn't ever break the page."""
+    return f"""
+<div id="uno-cookie-banner" class="cookie-banner" hidden>
+  <div class="cookie-banner-inner">
+    <p>UNO Entertainment doesn't use tracking cookies today. If that changes — for analytics or
+    advertising — we'll ask first. Read our <a href="{prefix}privacy-policy.html">Privacy Policy</a> for details.</p>
+    <button type="button" class="cookie-banner-btn" onclick="unoCookieConsent()">Got It</button>
+  </div>
+</div>
+<script>
+(function() {{
+  try {{
+    if (!localStorage.getItem('uno_cookie_notice_seen')) {{
+      var b = document.getElementById('uno-cookie-banner');
+      if (b) b.hidden = false;
+    }}
+  }} catch (e) {{}}
+}})();
+function unoCookieConsent() {{
+  try {{ localStorage.setItem('uno_cookie_notice_seen', '1'); }} catch (e) {{}}
+  var b = document.getElementById('uno-cookie-banner');
+  if (b) b.hidden = true;
+}}
+</script>"""
 
 
 def footer_html(prefix: str) -> str:
@@ -476,10 +538,12 @@ def footer_html(prefix: str) -> str:
       with them.</p>
       <p class="footer-copy">
         <span>&copy; {year} UNO Entertainment. All Rights Reserved.</span>
+        <span><a href="{prefix}privacy-policy.html">Privacy Policy</a> &middot; <a href="{prefix}terms.html">Terms of Service</a></span>
       </p>
     </div>
   </div>
-</footer>"""
+</footer>
+{cookie_banner_html(prefix)}"""
 
 
 def meta_html(prefix: str, title: str, description: str, canonical_url: str, image_url: str = None) -> str:
@@ -744,6 +808,128 @@ def build_article(a: dict):
         f.write(html)
 
 
+# ---------------------------------------------------------------------------
+# Legal pages — Privacy Policy and Terms of Service, plus the cookie banner
+# above. UNO Ent doesn't run analytics, ads, or affiliate links yet, so
+# these are written for where the Site is today (no tracking) while leaving
+# room for that to change later without a rewrite. Not a substitute for a
+# lawyer's review — just a reasonable baseline to have live.
+# ---------------------------------------------------------------------------
+
+_legal_dt = datetime.now(timezone.utc)
+LEGAL_EFFECTIVE_DATE = f"{_legal_dt.strftime('%B')} {_legal_dt.day}, {_legal_dt.year}"
+
+PRIVACY_POLICY_BODY = """
+<h2>1. Overview</h2>
+<p>UNO Entertainment ("UNO Ent," "we," "us," or "our") operates unoent.com (the "Site"). This Privacy
+Policy explains what information we collect, how we use it, and the choices you have. By using the Site,
+you agree to the practices described here.</p>
+
+<h2>2. Information We Collect</h2>
+<p>You don't need an account to read UNO Ent, and we don't collect personal information unless you choose
+to give it to us. That includes information you provide directly, such as your email address if you contact
+us at <a href="mailto:support@unoent.com">support@unoent.com</a> with a question or story tip, and standard
+technical information collected automatically by our hosting provider — like IP address, browser type, and
+pages visited — used for basic site performance and security.</p>
+
+<h2>3. Cookies</h2>
+<p>UNO Ent doesn't currently use cookies to track visitors or personalize advertising. As the Site grows, we
+may introduce cookies for purposes like traffic analytics (for example, Google Analytics) or advertising. If
+we do, this policy will be updated and we'll ask for your consent through a cookie banner before any
+non-essential cookie is set. You can control or delete cookies at any time through your browser settings.</p>
+
+<h2>4. Third-Party Links</h2>
+<p>UNO Ent publishes original summaries of hip-hop news with links to the original reporting from outlets
+such as XXL, HotNewHipHop, and The Source. When you click through to one of these sites, you're subject to
+their own privacy practices, which we don't control and aren't responsible for. We encourage you to review
+the privacy policy of any site you visit.</p>
+
+<h2>5. Children's Privacy</h2>
+<p>UNO Ent isn't directed at children under 13, and we don't knowingly collect personal information from
+children under 13. If you believe a child has provided us with personal information, contact us at
+<a href="mailto:support@unoent.com">support@unoent.com</a> and we'll remove it.</p>
+
+<h2>6. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time as the Site evolves. The effective date above
+reflects the most recent revision. Continued use of the Site after changes take effect means you accept the
+updated policy.</p>
+
+<h2>7. Contact Us</h2>
+<p>Questions about this Privacy Policy? Email us at <a href="mailto:support@unoent.com">support@unoent.com</a>.</p>
+"""
+
+TERMS_BODY = """
+<h2>1. Acceptance of Terms</h2>
+<p>By accessing or using unoent.com (the "Site"), operated by UNO Entertainment ("UNO Ent," "we," "us," or
+"our"), you agree to be bound by these Terms of Service. If you don't agree, please don't use the Site.</p>
+
+<h2>2. What UNO Ent Is</h2>
+<p>UNO Ent curates and summarizes hip-hop and culture news. Each story on the Site is our own original
+summary paired with a link to the original reporting from the outlet that broke it — sources like XXL,
+HotNewHipHop, and The Source. Full credit for original reporting, photography, and video belongs to those
+outlets; UNO Ent's role is curation and commentary, not a substitute for the source.</p>
+
+<h2>3. Intellectual Property</h2>
+<p>The summaries, commentary, design, and branding on UNO Ent are our own and may not be reproduced without
+permission. Thumbnails, photos, and embedded content sourced from third-party outlets remain the property of
+their respective owners and are used here for commentary and news-reporting purposes with attribution and a
+link back to the original.</p>
+
+<h2>4. Third-Party Content and Links</h2>
+<p>The Site links to third-party websites we don't own or control. We're not responsible for the content,
+accuracy, or practices of those sites, and linking to them doesn't mean we endorse them. Visit third-party
+sites at your own discretion.</p>
+
+<h2>5. Acceptable Use</h2>
+<p>You agree not to use the Site to violate any law, attempt to disrupt or gain unauthorized access to the
+Site or its infrastructure, or scrape or republish UNO Ent's original content at scale without permission.</p>
+
+<h2>6. Disclaimer of Warranties</h2>
+<p>The Site and its content are provided "as is," without warranties of any kind. We work to keep
+information accurate and current, but hip-hop news moves fast — we don't guarantee the Site will always be
+error-free, complete, or up to date.</p>
+
+<h2>7. Limitation of Liability</h2>
+<p>To the fullest extent permitted by law, UNO Ent isn't liable for any indirect, incidental, or
+consequential damages arising from your use of, or inability to use, the Site.</p>
+
+<h2>8. Changes to These Terms</h2>
+<p>We may revise these Terms as the Site evolves. The effective date above reflects the most recent
+revision. Continued use of the Site after changes take effect means you accept the updated Terms.</p>
+
+<h2>9. Contact Us</h2>
+<p>Questions about these Terms? Email us at <a href="mailto:support@unoent.com">support@unoent.com</a>.</p>
+"""
+
+
+def build_legal_page(filename: str, title: str, body_html: str):
+    full_title = f"{title} | UNO Entertainment"
+    canonical = f"{SITE_URL}/{filename}"
+    description = f"{title} for UNO Entertainment."
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{full_title}</title>
+{meta_html("", full_title, description, canonical)}
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+{header_html("")}
+<div class="legal-wrap">
+  <h1>{title}</h1>
+  <p class="legal-updated">Effective {LEGAL_EFFECTIVE_DATE}</p>
+  {body_html}
+</div>
+{footer_html("")}
+</body>
+</html>
+"""
+    with open(filename, "w") as f:
+        f.write(html)
+
+
 def main():
     with open("style.css", "w") as f:
         f.write(STYLE_CSS)
@@ -751,6 +937,8 @@ def main():
     build_categories()
     for a in ARTICLES:
         build_article(a)
+    build_legal_page("privacy-policy.html", "Privacy Policy", PRIVACY_POLICY_BODY)
+    build_legal_page("terms.html", "Terms of Service", TERMS_BODY)
     check_thumbnails(ARTICLES)
     from collections import Counter
     counts = Counter(a.get("category") for a in ARTICLES)
@@ -758,7 +946,8 @@ def main():
     print(
         f"Built {total_pages} homepage page(s) ({ARTICLES_PER_PAGE}/page) "
         f"+ {ARTICLE_COUNT} article pages in articles/ "
-        f"+ category pages ({cat_summary}), plus style.css"
+        f"+ category pages ({cat_summary}) "
+        f"+ privacy-policy.html + terms.html, plus style.css"
     )
 
 
