@@ -40,7 +40,7 @@
 </header>
 <div class="article-wrap">
   <a class="back-link" href="../index.html">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">2 hours ago</div>
+  <div class="article-meta">3 hours ago</div>
   <h1 class="article-title">Bart Edmiston Jr. Reportedly Sends Cease-And-Desist To Kymbra Li For Alleged “False” Statements Amid Nolan Wells Investigation</h1>
   <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/07/Bart-Edmiston-Jr.-Reportedly-Sends-Cease-And-Desist-To-Kymbra-Li-For-Alleged-False-Statements-Amid-Nolan-Wells-Investigation.jpg" alt="">
   <p class="article-summary">Bart Edmiston Jr. has reportedly sent a cease-and-desist letter to content creator Kymbra Li for her alleged “false and defamatory” statements amid the Nolan Wells investigation. RELATED: Attorney Ben Crump Says Nolan Wells’ Family Has Hired Audio Experts To Review Viral Sea Tow Call (VIDEO) Bart Edmiston Jr.</p>
@@ -85,9 +85,33 @@
       with them.</p>
       <p class="footer-copy">
         <span>&copy; 2026 UNO Entertainment. All Rights Reserved.</span>
+        <span><a href="../privacy-policy.html">Privacy Policy</a> &middot; <a href="../terms.html">Terms of Service</a></span>
       </p>
     </div>
   </div>
 </footer>
+
+<div id="uno-cookie-banner" class="cookie-banner" hidden>
+  <div class="cookie-banner-inner">
+    <p>UNO Entertainment doesn't use tracking cookies today. If that changes — for analytics or
+    advertising — we'll ask first. Read our <a href="../privacy-policy.html">Privacy Policy</a> for details.</p>
+    <button type="button" class="cookie-banner-btn" onclick="unoCookieConsent()">Got It</button>
+  </div>
+</div>
+<script>
+(function() {
+  try {
+    if (!localStorage.getItem('uno_cookie_notice_seen')) {
+      var b = document.getElementById('uno-cookie-banner');
+      if (b) b.hidden = false;
+    }
+  } catch (e) {}
+})();
+function unoCookieConsent() {
+  try { localStorage.setItem('uno_cookie_notice_seen', '1'); } catch (e) {}
+  var b = document.getElementById('uno-cookie-banner');
+  if (b) b.hidden = true;
+}
+</script>
 </body>
 </html>

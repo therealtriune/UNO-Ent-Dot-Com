@@ -40,7 +40,7 @@
 </header>
 <div class="article-wrap">
   <a class="back-link" href="../index.html">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">15 hours ago</div>
+  <div class="article-meta">16 hours ago</div>
   <h1 class="article-title">“Zero Point Modulations” Enlists a Star-Studded Cast of UK MCs for the Beginning of King Kashmere Tending to His True Calling as a Producer (Album Review)</h1>
   <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/IMG_5342-e1785348878350.jpeg" alt="">
   <p class="article-summary">London, England, United Kingdom emcee/producer King Kashmere getting behind the boards for his 8th studio LP. Notable for being a part of several groups or duos over the last few decades ranging from Kingdom of Fear &amp; Invisible Inc. to Gawd Status as well as Old Children &amp; Strange U , he also has 7 full-lengths &amp; a few extended plays under his belt through a multitude of labels from Low Life Records to YNR Productions &amp; Boot Records .</p>
@@ -85,9 +85,33 @@
       with them.</p>
       <p class="footer-copy">
         <span>&copy; 2026 UNO Entertainment. All Rights Reserved.</span>
+        <span><a href="../privacy-policy.html">Privacy Policy</a> &middot; <a href="../terms.html">Terms of Service</a></span>
       </p>
     </div>
   </div>
 </footer>
+
+<div id="uno-cookie-banner" class="cookie-banner" hidden>
+  <div class="cookie-banner-inner">
+    <p>UNO Entertainment doesn't use tracking cookies today. If that changes — for analytics or
+    advertising — we'll ask first. Read our <a href="../privacy-policy.html">Privacy Policy</a> for details.</p>
+    <button type="button" class="cookie-banner-btn" onclick="unoCookieConsent()">Got It</button>
+  </div>
+</div>
+<script>
+(function() {
+  try {
+    if (!localStorage.getItem('uno_cookie_notice_seen')) {
+      var b = document.getElementById('uno-cookie-banner');
+      if (b) b.hidden = false;
+    }
+  } catch (e) {}
+})();
+function unoCookieConsent() {
+  try { localStorage.setItem('uno_cookie_notice_seen', '1'); } catch (e) {}
+  var b = document.getElementById('uno-cookie-banner');
+  if (b) b.hidden = true;
+}
+</script>
 </body>
 </html>

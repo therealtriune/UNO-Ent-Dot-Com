@@ -40,7 +40,7 @@
 </header>
 <div class="article-wrap">
   <a class="back-link" href="../index.html">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">1 hour ago</div>
+  <div class="article-meta">2 hours ago</div>
   <h1 class="article-title">Joe Rogan Leads Forbes’ 2026 Highest Paid Podcasters as Charlamagne Tha God and Joe Budden Cash In</h1>
   <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/07/Screenshot-2026-07-30-at-2.31.50-PM.jpg" alt="">
   <p class="article-summary">Podcasting continues to prove it’s one of the biggest businesses in media, and Forbes’ latest rankings put a staggering number on just how valuable the space has become. Covering earnings… The post Joe Rogan Leads Forbes’ 2026 Highest Paid Podcasters as Charlamagne Tha God and Joe Budden Cash In appeared first on .</p>
@@ -85,9 +85,33 @@
       with them.</p>
       <p class="footer-copy">
         <span>&copy; 2026 UNO Entertainment. All Rights Reserved.</span>
+        <span><a href="../privacy-policy.html">Privacy Policy</a> &middot; <a href="../terms.html">Terms of Service</a></span>
       </p>
     </div>
   </div>
 </footer>
+
+<div id="uno-cookie-banner" class="cookie-banner" hidden>
+  <div class="cookie-banner-inner">
+    <p>UNO Entertainment doesn't use tracking cookies today. If that changes — for analytics or
+    advertising — we'll ask first. Read our <a href="../privacy-policy.html">Privacy Policy</a> for details.</p>
+    <button type="button" class="cookie-banner-btn" onclick="unoCookieConsent()">Got It</button>
+  </div>
+</div>
+<script>
+(function() {
+  try {
+    if (!localStorage.getItem('uno_cookie_notice_seen')) {
+      var b = document.getElementById('uno-cookie-banner');
+      if (b) b.hidden = false;
+    }
+  } catch (e) {}
+})();
+function unoCookieConsent() {
+  try { localStorage.setItem('uno_cookie_notice_seen', '1'); } catch (e) {}
+  var b = document.getElementById('uno-cookie-banner');
+  if (b) b.hidden = true;
+}
+</script>
 </body>
 </html>

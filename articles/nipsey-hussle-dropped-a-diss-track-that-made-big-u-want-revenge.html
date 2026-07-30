@@ -40,7 +40,7 @@
 </header>
 <div class="article-wrap">
   <a class="back-link" href="../index.html">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">1 hour ago</div>
+  <div class="article-meta">2 hours ago</div>
   <h1 class="article-title">Nipsey Hussle Dropped A Diss Track That Made Big U Want Revenge</h1>
   <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/02/Big-U-and-Nipsey-Hussle-1.jpg" alt="">
   <p class="article-summary">Nipsey Hussle was more than just a rapper to Big U. The Rollin’ 60s Crips leader helped launch his career, let him record in the family studio, and gave him a place to live when he needed it most. But that relationship fractured in 2011 over something as simple as music equipment, and the fallout reveals how quickly mentorship can turn into conflict within gang hierarchies.</p>
@@ -85,9 +85,33 @@
       with them.</p>
       <p class="footer-copy">
         <span>&copy; 2026 UNO Entertainment. All Rights Reserved.</span>
+        <span><a href="../privacy-policy.html">Privacy Policy</a> &middot; <a href="../terms.html">Terms of Service</a></span>
       </p>
     </div>
   </div>
 </footer>
+
+<div id="uno-cookie-banner" class="cookie-banner" hidden>
+  <div class="cookie-banner-inner">
+    <p>UNO Entertainment doesn't use tracking cookies today. If that changes — for analytics or
+    advertising — we'll ask first. Read our <a href="../privacy-policy.html">Privacy Policy</a> for details.</p>
+    <button type="button" class="cookie-banner-btn" onclick="unoCookieConsent()">Got It</button>
+  </div>
+</div>
+<script>
+(function() {
+  try {
+    if (!localStorage.getItem('uno_cookie_notice_seen')) {
+      var b = document.getElementById('uno-cookie-banner');
+      if (b) b.hidden = false;
+    }
+  } catch (e) {}
+})();
+function unoCookieConsent() {
+  try { localStorage.setItem('uno_cookie_notice_seen', '1'); } catch (e) {}
+  var b = document.getElementById('uno-cookie-banner');
+  if (b) b.hidden = true;
+}
+</script>
 </body>
 </html>

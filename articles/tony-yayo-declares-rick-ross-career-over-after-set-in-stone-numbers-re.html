@@ -40,7 +40,7 @@
 </header>
 <div class="article-wrap">
   <a class="back-link" href="../index.html">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">2 hours ago</div>
+  <div class="article-meta">3 hours ago</div>
   <h1 class="article-title">Tony Yayo Declares Rick Ross Career Over After “Set In Stone” Numbers Released</h1>
   <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2023/04/Tony-Yayo.jpg" alt="">
   <p class="article-summary">Tony Yayo just delivered a brutal assessment of one of Hip-Hop’s most decorated careers, and the numbers backing his critique are impossible to ignore. During a recent podcast appearance, the G-Unit veteran didn’t hold back when discussing Rick Ross’s latest album performance, pointing to first-week sales that fell short of expectations and even underperformed compared to artists currently facing legal troubles. The conversation quickly escalated beyond just album numbers into a broader commentary about legacy, relevance, and what it takes to maintain status in an industry that moves faster than most can keep up with.</p>
@@ -85,9 +85,33 @@
       with them.</p>
       <p class="footer-copy">
         <span>&copy; 2026 UNO Entertainment. All Rights Reserved.</span>
+        <span><a href="../privacy-policy.html">Privacy Policy</a> &middot; <a href="../terms.html">Terms of Service</a></span>
       </p>
     </div>
   </div>
 </footer>
+
+<div id="uno-cookie-banner" class="cookie-banner" hidden>
+  <div class="cookie-banner-inner">
+    <p>UNO Entertainment doesn't use tracking cookies today. If that changes — for analytics or
+    advertising — we'll ask first. Read our <a href="../privacy-policy.html">Privacy Policy</a> for details.</p>
+    <button type="button" class="cookie-banner-btn" onclick="unoCookieConsent()">Got It</button>
+  </div>
+</div>
+<script>
+(function() {
+  try {
+    if (!localStorage.getItem('uno_cookie_notice_seen')) {
+      var b = document.getElementById('uno-cookie-banner');
+      if (b) b.hidden = false;
+    }
+  } catch (e) {}
+})();
+function unoCookieConsent() {
+  try { localStorage.setItem('uno_cookie_notice_seen', '1'); } catch (e) {}
+  var b = document.getElementById('uno-cookie-banner');
+  if (b) b.hidden = true;
+}
+</script>
 </body>
 </html>

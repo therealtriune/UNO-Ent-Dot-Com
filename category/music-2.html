@@ -41,16 +41,6 @@
 <main>
   <div class="grid">
     
-    <a class="card" href="../articles/point-5ve-formerly-lil-dead-makes-a-stylistic-departure-with-take-a-lo.html">
-      <img src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/IMG_5206-e1784845053394.jpeg" alt="" loading="lazy" class="card-thumb">
-      <div class="card-body">
-        <div class="card-meta"><span class="card-category">Music</span><span class="card-dot">&middot;</span>6 days ago</div>
-        <h2 class="card-title">Point 5ve Formerly Lil’ ½ Dead Makes a Stylistic Departure with “Take a Look at Me Now” (EP Review)</h2>
-        <p class="card-excerpt">Point 5ve formerly known as Lil’ ½ Dead is a 51 year old singer/songwriter &amp; former rapper from Los Angeles, California who dropped his full-length debut The De</p>
-        <span class="card-link">Read More &rarr;</span>
-      </div>
-    </a>
-
     <a class="card" href="../articles/cypress-hill-goes-full-spanish-on-dios-bendiga-album-review.html">
       <img src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/IMG_5203-scaled-e1784845060574.jpeg" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
@@ -122,9 +112,33 @@
       with them.</p>
       <p class="footer-copy">
         <span>&copy; 2026 UNO Entertainment. All Rights Reserved.</span>
+        <span><a href="../privacy-policy.html">Privacy Policy</a> &middot; <a href="../terms.html">Terms of Service</a></span>
       </p>
     </div>
   </div>
 </footer>
+
+<div id="uno-cookie-banner" class="cookie-banner" hidden>
+  <div class="cookie-banner-inner">
+    <p>UNO Entertainment doesn't use tracking cookies today. If that changes — for analytics or
+    advertising — we'll ask first. Read our <a href="../privacy-policy.html">Privacy Policy</a> for details.</p>
+    <button type="button" class="cookie-banner-btn" onclick="unoCookieConsent()">Got It</button>
+  </div>
+</div>
+<script>
+(function() {
+  try {
+    if (!localStorage.getItem('uno_cookie_notice_seen')) {
+      var b = document.getElementById('uno-cookie-banner');
+      if (b) b.hidden = false;
+    }
+  } catch (e) {}
+})();
+function unoCookieConsent() {
+  try { localStorage.setItem('uno_cookie_notice_seen', '1'); } catch (e) {}
+  var b = document.getElementById('uno-cookie-banner');
+  if (b) b.hidden = true;
+}
+</script>
 </body>
 </html>

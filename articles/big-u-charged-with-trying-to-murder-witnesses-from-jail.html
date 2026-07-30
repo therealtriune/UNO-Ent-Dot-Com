@@ -40,7 +40,7 @@
 </header>
 <div class="article-wrap">
   <a class="back-link" href="../index.html">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">8 hours ago</div>
+  <div class="article-meta">9 hours ago</div>
   <h1 class="article-title">Big U Charged With Trying To Murder Witnesses From Jail</h1>
   <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/03/Big-U.jpg" alt="">
   <p class="article-summary">Big U is facing seven fresh federal charges that paint a picture of a man willing to orchestrate violence from behind bars to silence witnesses against him. The Rollin’ 60s Neighborhood Crips leader and music executive Eugene Henley Jr., 59, was hit with the new indictment on Wednesday, and prosecutors say he’s been soliciting fellow inmates to murder or seriously injure a federal witness who’s set to testify at his trial. This isn’t just another charge in an already massive case.</p>
@@ -85,9 +85,33 @@
       with them.</p>
       <p class="footer-copy">
         <span>&copy; 2026 UNO Entertainment. All Rights Reserved.</span>
+        <span><a href="../privacy-policy.html">Privacy Policy</a> &middot; <a href="../terms.html">Terms of Service</a></span>
       </p>
     </div>
   </div>
 </footer>
+
+<div id="uno-cookie-banner" class="cookie-banner" hidden>
+  <div class="cookie-banner-inner">
+    <p>UNO Entertainment doesn't use tracking cookies today. If that changes — for analytics or
+    advertising — we'll ask first. Read our <a href="../privacy-policy.html">Privacy Policy</a> for details.</p>
+    <button type="button" class="cookie-banner-btn" onclick="unoCookieConsent()">Got It</button>
+  </div>
+</div>
+<script>
+(function() {
+  try {
+    if (!localStorage.getItem('uno_cookie_notice_seen')) {
+      var b = document.getElementById('uno-cookie-banner');
+      if (b) b.hidden = false;
+    }
+  } catch (e) {}
+})();
+function unoCookieConsent() {
+  try { localStorage.setItem('uno_cookie_notice_seen', '1'); } catch (e) {}
+  var b = document.getElementById('uno-cookie-banner');
+  if (b) b.hidden = true;
+}
+</script>
 </body>
 </html>

@@ -40,7 +40,7 @@
 </header>
 <div class="article-wrap">
   <a class="back-link" href="../index.html">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">5 days ago</div>
+  <div class="article-meta">6 days ago</div>
   <h1 class="article-title">Rio Da Yung OG’s “The World is M.I.N.E.” Tour Touches Down at the Regent Theater</h1>
   <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/Rio-Da-Yung-OG-at-the-Regent.png" alt="">
   <p class="article-summary">The Regent Theater in Los Angeles is set to become the epicenter of raw, unfiltered hip-hop on August 4th as Flint, Michigan’s grittiest export, Rio Da Yung OG , rolls through as part of his highly anticipated “The World is M.I.N.E.” Tour. For those who’ve been locked into his wave, Rio—born Da’mario Donshay Horne-McCullough—needs no introduction. He’s the rapper who turned the mundane miseries of street life into hypnotic, off-kilter poetry, delivering bars with a deadpan stare and a darkly comedic twist that catches you off guard every single time.</p>
@@ -85,9 +85,33 @@
       with them.</p>
       <p class="footer-copy">
         <span>&copy; 2026 UNO Entertainment. All Rights Reserved.</span>
+        <span><a href="../privacy-policy.html">Privacy Policy</a> &middot; <a href="../terms.html">Terms of Service</a></span>
       </p>
     </div>
   </div>
 </footer>
+
+<div id="uno-cookie-banner" class="cookie-banner" hidden>
+  <div class="cookie-banner-inner">
+    <p>UNO Entertainment doesn't use tracking cookies today. If that changes — for analytics or
+    advertising — we'll ask first. Read our <a href="../privacy-policy.html">Privacy Policy</a> for details.</p>
+    <button type="button" class="cookie-banner-btn" onclick="unoCookieConsent()">Got It</button>
+  </div>
+</div>
+<script>
+(function() {
+  try {
+    if (!localStorage.getItem('uno_cookie_notice_seen')) {
+      var b = document.getElementById('uno-cookie-banner');
+      if (b) b.hidden = false;
+    }
+  } catch (e) {}
+})();
+function unoCookieConsent() {
+  try { localStorage.setItem('uno_cookie_notice_seen', '1'); } catch (e) {}
+  var b = document.getElementById('uno-cookie-banner');
+  if (b) b.hidden = true;
+}
+</script>
 </body>
 </html>
