@@ -404,7 +404,7 @@ def header_html(prefix: str, active: str = None) -> str:
 <header>
   <a class="brand-link" href="{prefix}index.html">
     <img class="logo" src="{prefix}uno-logo.png" alt="UNO Entertainment">
-    <span class="tagline">Where Culture Gathers</span>
+    <span class="tagline">The Culture's Feed</span>
   </a>
   <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
   <label for="nav-toggle" class="nav-toggle-btn" aria-label="Menu">
