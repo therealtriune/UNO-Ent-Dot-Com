@@ -89,6 +89,15 @@ CATEGORY_LABELS = dict(CATEGORIES)
 
 ARTICLE_COUNT = len(ARTICLES)
 
+# Canonical domain, used to build absolute URLs for canonical links and
+# og:image / og:url (required by iMessage, Facebook, Twitter/X previews --
+# relative URLs don't work for those tags).
+SITE_URL = "https://unoent.com"
+DEFAULT_OG_IMAGE = f"{SITE_URL}/og-image.png"
+SITE_DESCRIPTION = (
+    "The latest hip-hop news, rumors, videos, music, and opinion. Where culture gathers."
+)
+
 # ---------------------------------------------------------------------------
 # Shared stylesheet
 # ---------------------------------------------------------------------------
@@ -329,6 +338,30 @@ def footer_html(prefix: str) -> str:
 </footer>"""
 
 
+def meta_html(prefix: str, title: str, description: str, canonical_url: str, image_url: str = None) -> str:
+    """Favicon links + Open Graph / Twitter card tags, shared by every page.
+    image_url and canonical_url must be absolute (http/https) -- social apps
+    like iMessage, Facebook, and Twitter/X ignore relative og:image URLs."""
+    image_url = image_url or DEFAULT_OG_IMAGE
+    return f"""
+<meta name="description" content="{escape(description)}">
+<link rel="canonical" href="{canonical_url}">
+<link rel="icon" href="{prefix}favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="{prefix}favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{prefix}favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{prefix}favicon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UNO Entertainment">
+<meta property="og:title" content="{escape(title)}">
+<meta property="og:description" content="{escape(description)}">
+<meta property="og:image" content="{image_url}">
+<meta property="og:url" content="{canonical_url}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{escape(title)}">
+<meta name="twitter:description" content="{escape(description)}">
+<meta name="twitter:image" content="{image_url}">"""
+
+
 def card_html(a: dict, prefix: str) -> str:
     thumb = a.get("thumbnail")
     thumb_html = (
@@ -404,12 +437,14 @@ def build_page(page_num: int, total_pages: int):
     prefix = "" if page_num == 1 else "../"
     cards = "\n".join(card_html(a, prefix) for a in page_articles)
     title = "UNO Entertainment" if page_num == 1 else f"UNO Entertainment | Page {page_num}"
+    canonical = SITE_URL + ("/" if page_num == 1 else f"/page/{page_num}.html")
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
+{meta_html(prefix, title, SITE_DESCRIPTION, canonical)}
 <link rel="stylesheet" href="{prefix}style.css">
 </head>
 <body>
@@ -490,12 +525,15 @@ def build_category(cat_key: str, cat_label: str):
             '<p style="color: var(--gray); font-size: 15px;">No stories in this category yet. Check back soon.</p>'
             if not page_articles else ""
         )
+        canonical = f"{SITE_URL}/category/{category_page_href(cat_key, page_num)}"
+        description = f"The latest {cat_label.lower()} in hip-hop and culture, curated by UNO Entertainment."
         html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{escape(title)}</title>
+{meta_html("../", title, description, canonical)}
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -523,12 +561,16 @@ def build_categories():
 def build_article(a: dict):
     thumb = a.get("thumbnail")
     hero_html = f'<img class="article-hero" src="{escape(thumb)}" alt="">' if thumb else ""
+    title = f"{a['title']} | UNO Entertainment"
+    canonical = f"{SITE_URL}/articles/{a['slug']}.html"
+    description = a.get("excerpt") or SITE_DESCRIPTION
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{escape(a['title'])} | UNO Entertainment</title>
+<title>{escape(title)}</title>
+{meta_html("../", title, description, canonical, image_url=thumb)}
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
