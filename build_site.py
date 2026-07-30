@@ -89,6 +89,95 @@ CATEGORY_LABELS = dict(CATEGORIES)
 
 ARTICLE_COUNT = len(ARTICLES)
 
+# ---------------------------------------------------------------------------
+# Thumbnail QA — catches the "logo instead of a photo" problem automatically
+# instead of relying on someone noticing it on the live site. Runs on every
+# build (including the scheduled GitHub Action) and writes any problems to
+# thumbnail_flags.json at the repo root, plus a warning line to the build
+# log. This never blocks the build — a flagged article still gets built and
+# published, it just gets logged so it can be fixed by hand later.
+#
+# Three things get flagged:
+#   1. No thumbnail at all.
+#   2. A thumbnail URL that matches a known site-logo/placeholder pattern —
+#      see LOGO_URL_PATTERNS in fetch_feeds.py; kept here as a duplicate,
+#      lightweight copy so build_site.py doesn't need to import that module.
+#   3. A thumbnail reused in a way that breaks the "max 2 uses, and never on
+#      the same rendered page" rule — computed against final sort order and
+#      pagination, the same way it was checked by hand for the 74-article
+#      cleanup pass.
+_LOGO_URL_PATTERNS = [
+    "logo-for-white-backgrounds", "logo-for-dark-backgrounds", "/og.jpg",
+    "/og-image", "site-logo", "sharing-default", "default-social",
+    "hu-logo", "shaderoom-logo", "-logo.png", "-logo.jpg", "/logo.png",
+    "/logo.jpg", "placeholder",
+]
+
+
+def _looks_like_logo(url):
+    if not url:
+        return False
+    lowered = url.lower()
+    return any(p in lowered for p in _LOGO_URL_PATTERNS)
+
+
+def check_thumbnails(articles):
+    flags = []
+    for i, a in enumerate(articles):
+        thumb = a.get("thumbnail")
+        if not thumb:
+            flags.append({"link": a["link"], "issue": "missing_thumbnail"})
+        elif _looks_like_logo(thumb):
+            flags.append({"link": a["link"], "issue": "logo_thumbnail", "thumbnail": thumb})
+
+    by_thumb = {}
+    for i, a in enumerate(articles):
+        thumb = a.get("thumbnail")
+        if thumb:
+            by_thumb.setdefault(thumb, []).append((i, a))
+
+    cat_index = {}
+    for cat_key, _ in CATEGORIES:
+        cat_articles = [a for a in articles if a.get("category") == cat_key]
+        for j, a in enumerate(cat_articles):
+            cat_index[a["link"]] = (cat_key, j // ARTICLES_PER_PAGE)
+
+    for thumb, uses in by_thumb.items():
+        if len(uses) > 2:
+            flags.append({
+                "issue": "overused_thumbnail",
+                "thumbnail": thumb,
+                "links": [a["link"] for _, a in uses],
+                "use_count": len(uses),
+            })
+        elif len(uses) == 2:
+            (i1, a1), (i2, a2) = uses
+            home_page_1, home_page_2 = i1 // ARTICLES_PER_PAGE, i2 // ARTICLES_PER_PAGE
+            if home_page_1 == home_page_2:
+                flags.append({
+                    "issue": "same_homepage_page",
+                    "thumbnail": thumb,
+                    "links": [a1["link"], a2["link"]],
+                })
+            cat1, cat2 = cat_index.get(a1["link"]), cat_index.get(a2["link"])
+            if cat1 and cat2 and cat1 == cat2:
+                flags.append({
+                    "issue": "same_category_page",
+                    "thumbnail": thumb,
+                    "links": [a1["link"], a2["link"]],
+                })
+
+    with open("thumbnail_flags.json", "w") as f:
+        json.dump(flags, f, indent=2)
+
+    if flags:
+        print(f"[!] thumbnail QA: {len(flags)} issue(s) flagged — see thumbnail_flags.json")
+    else:
+        print("[+] thumbnail QA: no issues found")
+
+    return flags
+
+
 # Canonical domain, used to build absolute URLs for canonical links and
 # og:image / og:url (required by iMessage, Facebook, Twitter/X previews --
 # relative URLs don't work for those tags).
@@ -603,6 +692,7 @@ def main():
     build_categories()
     for a in ARTICLES:
         build_article(a)
+    check_thumbnails(ARTICLES)
     from collections import Counter
     counts = Counter(a.get("category") for a in ARTICLES)
     cat_summary = ", ".join(f"{label} {counts.get(key, 0)}" for key, label in CATEGORIES)

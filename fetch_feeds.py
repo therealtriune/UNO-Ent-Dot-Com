@@ -64,7 +64,45 @@ OG_IMAGE_RE = re.compile(
 OG_IMAGE_RE_ALT = re.compile(
     r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']', re.IGNORECASE
 )
+PINTEREST_MEDIA_RE = re.compile(
+    r'pinterest\.com/pin/create/button[^"\']*[?&]media=([^"\'&]+)', re.IGNORECASE
+)
+CONTENT_IMG_RE = re.compile(
+    r'<img[^>]+src=["\']([^"\']+wp-content/uploads/[^"\']+)["\']', re.IGNORECASE
+)
 THUMBNAIL_TIMEOUT = 5.0
+
+# Some sources (The Shade Room and Hollywood Unlocked in particular) serve a
+# generic site logo as og:image on a meaningful chunk of their pages, even
+# though the page itself displays a real photo in the body. A thumbnail URL
+# matching any of these substrings is treated as "not a real photo" and
+# rejected, so we fall through to the body-image / RSS fallbacks instead of
+# ever putting a logo on the homepage.
+LOGO_URL_PATTERNS = [
+    "logo-for-white-backgrounds",
+    "logo-for-dark-backgrounds",
+    "/og.jpg",
+    "/og-image",
+    "site-logo",
+    "sharing-default",
+    "default-social",
+    "hu-logo",
+    "shaderoom-logo",
+    "-logo.png",
+    "-logo.jpg",
+    "/logo.png",
+    "/logo.jpg",
+    "placeholder",
+]
+
+
+def looks_like_logo(url: str | None) -> bool:
+    """True if a thumbnail URL matches a known site-logo/placeholder pattern
+    rather than a real article photo."""
+    if not url:
+        return False
+    lowered = url.lower()
+    return any(pattern in lowered for pattern in LOGO_URL_PATTERNS)
 
 
 def clean_text(raw_html: str) -> str:
@@ -176,18 +214,32 @@ def categorize(title: str, source_tags: list[str]) -> str:
     return "news"
 
 
-def fetch_og_image(article_url: str) -> str | None:
+def fetch_real_thumbnail(article_url: str) -> str | None:
     """
-    Fetch the article's own og:image meta tag -- the same high-resolution
-    hero image the source site uses when the story is shared on social
-    media. This is consistently better (and more consistently present)
-    than whatever thumbnail happens to be embedded in the RSS feed itself:
-    some feeds (e.g. HotNewHipHop's) don't carry a thumbnail at all, and
-    others carry a small WordPress-generated crop (e.g. "-300x300.jpg")
-    instead of the real hero image.
+    Fetch the article page once and try, in order, to find a real photo
+    (never a site logo/placeholder) to use as the thumbnail:
 
-    Returns None on any error -- a slow or broken fetch should never block
-    the rest of the pull, it just falls back to extract_thumbnail() below.
+      1. og:image meta tag -- the same high-resolution hero image the source
+         site uses when the story is shared on social media. Consistently
+         better (and more consistently present) than whatever thumbnail
+         happens to be embedded in the RSS feed itself: some feeds (e.g.
+         HotNewHipHop's) don't carry a thumbnail at all, and others carry a
+         small WordPress-generated crop (e.g. "-300x300.jpg") instead of the
+         real hero image. Rejected if it matches a known logo pattern (see
+         looks_like_logo) -- The Shade Room and Hollywood Unlocked both serve
+         a generic site logo as og:image on some pages even though the page
+         itself shows a real photo elsewhere.
+      2. The `media=` query param on a Pinterest share-button link embedded
+         in the page -- a reliable real-photo source on pages where og:image
+         is a logo.
+      3. The first wp-content/uploads image referenced anywhere in the page
+         HTML (a decent proxy for "the actual article photo" on WordPress
+         sites, which is what every source here runs on).
+
+    Returns None if the page can't be fetched or none of the above find a
+    non-logo image -- the caller falls back to extract_thumbnail() (RSS
+    fields) after this, and if that also comes up empty the article simply
+    gets no thumbnail rather than a logo.
     """
     if not article_url:
         return None
@@ -199,9 +251,24 @@ def fetch_og_image(article_url: str) -> str | None:
         )
         if resp.status_code != 200:
             return None
-        match = OG_IMAGE_RE.search(resp.text) or OG_IMAGE_RE_ALT.search(resp.text)
+        html = resp.text
+        match = OG_IMAGE_RE.search(html) or OG_IMAGE_RE_ALT.search(html)
         if match:
-            return unescape(match.group(1))
+            candidate = unescape(match.group(1))
+            if not looks_like_logo(candidate):
+                return candidate
+
+        match = PINTEREST_MEDIA_RE.search(html)
+        if match:
+            candidate = unescape(requests.utils.unquote(match.group(1)))
+            if not looks_like_logo(candidate):
+                return candidate
+
+        match = CONTENT_IMG_RE.search(html)
+        if match:
+            candidate = unescape(match.group(1))
+            if not looks_like_logo(candidate):
+                return candidate
     except requests.RequestException:
         pass
     return None
@@ -209,16 +276,22 @@ def fetch_og_image(article_url: str) -> str | None:
 
 def extract_thumbnail(entry) -> str | None:
     """Fallback: try the common places a thumbnail shows up in RSS/Media RSS,
-    used only if fetch_og_image() above couldn't get the real hero image."""
+    used only if fetch_real_thumbnail() above couldn't get a real photo.
+    Same logo rejection applies here -- an RSS-embedded thumbnail can be a
+    logo just as easily as an og:image can."""
+    candidates = []
     if "media_thumbnail" in entry and entry.media_thumbnail:
-        return entry.media_thumbnail[0].get("url")
+        candidates.append(entry.media_thumbnail[0].get("url"))
     if "media_content" in entry and entry.media_content:
-        return entry.media_content[0].get("url")
+        candidates.append(entry.media_content[0].get("url"))
     for key in ("summary", "description"):
         html = entry.get(key, "")
         match = IMG_SRC_RE.search(html)
         if match:
-            return match.group(1)
+            candidates.append(match.group(1))
+    for candidate in candidates:
+        if candidate and not looks_like_logo(candidate):
+            return candidate
     return None
 
 
@@ -254,7 +327,7 @@ def fetch_source(name: str, url: str) -> list[dict]:
         )
 
         link = entry.get("link")
-        thumbnail = fetch_og_image(link) or extract_thumbnail(entry)
+        thumbnail = fetch_real_thumbnail(link) or extract_thumbnail(entry)
 
         articles.append(
             {
@@ -284,7 +357,12 @@ def main():
     with open("articles.json", "w") as f:
         json.dump(all_articles, f, indent=2)
 
+    missing = [a["link"] for a in all_articles if not a.get("thumbnail")]
     print(f"\nWrote {len(all_articles)} articles to articles.json")
+    if missing:
+        print(f"[!] {len(missing)} article(s) have no thumbnail (needs a manual fix):")
+        for link in missing:
+            print(f"    {link}")
 
 
 if __name__ == "__main__":
