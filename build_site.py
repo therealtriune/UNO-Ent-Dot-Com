@@ -317,14 +317,36 @@ main { padding: 32px 5vw 80px; }
 .card-excerpt { font-size: 14px; color: var(--gray); line-height: 1.5; margin: 0 0 16px; flex: 1; }
 .card-link { font-size: 13px; font-weight: 700; color: var(--white); text-transform: uppercase;
   letter-spacing: 0.5px; border-bottom: 2px solid var(--red); padding-bottom: 3px; align-self: flex-start; }
-footer { padding: 40px 5vw 48px; border-top: 1px solid var(--border); color: var(--gray); font-size: 12px; line-height: 1.7; }
+footer { padding: 56px 5vw 0; border-top: 1px solid var(--border); color: var(--gray); font-size: 13px; line-height: 1.7; background: var(--bg-card); }
 footer strong { color: var(--white); }
-.footer-inner { display: flex; align-items: flex-start; gap: 24px; flex-wrap: wrap; }
-.footer-logo { height: 34px; width: auto; opacity: 0.85; flex-shrink: 0; }
-.footer-body { flex: 1; min-width: 240px; }
-.footer-contact { margin-top: 10px; }
-.footer-contact a { color: var(--red); text-decoration: none; font-weight: 700; }
-.footer-contact a:hover { text-decoration: underline; }
+footer a { color: var(--gray); text-decoration: none; }
+footer a:hover { color: var(--white); }
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-top { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; padding-bottom: 40px; }
+.footer-logo { height: 40px; width: auto; }
+.footer-tagline { margin: 0; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--red); }
+.footer-columns {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
+  padding-bottom: 40px; border-top: 1px solid var(--border); padding-top: 40px;
+}
+.footer-col h4 {
+  margin: 0 0 16px; font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.8px; color: var(--white);
+}
+.footer-col a { display: block; margin-bottom: 10px; font-size: 13px; }
+.footer-col p { margin: 0 0 10px; font-size: 13px; color: var(--gray); }
+.footer-col .footer-contact-email { color: var(--red); font-weight: 700; }
+.footer-col .footer-contact-email:hover { text-decoration: underline; }
+.footer-bottom { border-top: 1px solid var(--border); padding: 24px 0 28px; }
+.footer-source-note { margin: 0 0 16px; font-size: 12px; color: var(--gray); max-width: 720px; }
+.footer-copy {
+  margin: 0; font-size: 11px; color: #6b6b6b; display: flex; justify-content: space-between;
+  flex-wrap: wrap; gap: 8px;
+}
+@media (max-width: 640px) {
+  .footer-columns { grid-template-columns: 1fr; gap: 28px; text-align: center; }
+  .footer-copy { justify-content: center; text-align: center; }
+}
 
 .pagination { display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 48px; }
 .pagination a, .pagination span {
@@ -417,16 +439,44 @@ def header_html(prefix: str, active: str = None) -> str:
 
 
 def footer_html(prefix: str) -> str:
+    year = datetime.now(timezone.utc).year
     return f"""
 <footer>
   <div class="footer-inner">
-    <img class="footer-logo" src="{prefix}uno-logo.png" alt="UNO Entertainment">
-    <div class="footer-body">
-      <strong>About UNO Entertainment.</strong> We cover the latest in hip-hop and culture: new music, beef,
-      gossip, and the moments people are talking about. Every story here includes a summary and a link to the
-      original reporting from outlets like XXL, HotNewHipHop, and The Source. Full credit and the complete
-      story always live with them.
-      <div class="footer-contact">Questions or a story tip? Email us at <a href="mailto:support@unoent.com">support@unoent.com</a>.</div>
+    <div class="footer-top">
+      <a href="{prefix}index.html"><img class="footer-logo" src="{prefix}uno-logo.png" alt="UNO Entertainment"></a>
+      <p class="footer-tagline">The Culture's Feed</p>
+    </div>
+
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Sections</h4>
+        <a href="{prefix}index.html">Home</a>
+        <a href="{prefix}category/news.html">News</a>
+        <a href="{prefix}category/rumors.html">Rumors</a>
+        <a href="{prefix}category/videos.html">Videos</a>
+        <a href="{prefix}category/music.html">Music</a>
+        <a href="{prefix}category/opinion.html">Opinion</a>
+      </div>
+      <div class="footer-col">
+        <h4>About UNO Entertainment</h4>
+        <p>We cover the latest in hip-hop and culture: new music, beef, gossip, and the moments people
+        are talking about.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <p>Questions or a story tip?</p>
+        <a class="footer-contact-email" href="mailto:support@unoent.com">support@unoent.com</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-source-note">Every story here includes a summary and a link to the original reporting
+      from outlets like XXL, HotNewHipHop, and The Source. Full credit and the complete story always live
+      with them.</p>
+      <p class="footer-copy">
+        <span>&copy; {year} UNO Entertainment. All Rights Reserved.</span>
+      </p>
     </div>
   </div>
 </footer>"""
