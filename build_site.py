@@ -304,9 +304,9 @@ main { padding: 32px 5vw 80px; }
 }
 .card:hover { transform: translateY(-3px); background: var(--bg-card-hover); border-color: var(--red); }
 .card-thumb { width: 100%; height: 180px; object-fit: cover; background: #1c1c1c; display: block; }
-.card-thumb-placeholder {
-  display: flex; align-items: center; justify-content: center;
-  font-size: 44px; font-weight: 800; color: var(--red);
+.card-thumb-fallback {
+  object-fit: contain;
+  padding: 34px 44px;
   background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
 }
 .card-body { padding: 18px 20px 22px; display: flex; flex-direction: column; flex: 1; }
@@ -369,6 +369,11 @@ footer strong { color: var(--white); }
 .article-meta { font-size: 12px; color: var(--gray); margin-bottom: 14px; letter-spacing: 0.3px; }
 .article-title { font-size: 32px; line-height: 1.25; font-weight: 800; margin: 0 0 24px; color: var(--white); }
 .article-hero { width: 100%; max-height: 420px; object-fit: cover; border-radius: 10px; margin-bottom: 28px; border: 1px solid var(--border); }
+.article-hero-fallback {
+  object-fit: contain;
+  padding: 48px 60px;
+  background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+}
 .article-summary { font-size: 17px; line-height: 1.7; color: #e6e6e6; margin-bottom: 32px; }
 .outbound-cta {
   display: inline-flex; align-items: center; gap: 8px;
@@ -456,7 +461,7 @@ def card_html(a: dict, prefix: str) -> str:
     thumb_html = (
         f'<img src="{escape(thumb)}" alt="" loading="lazy" class="card-thumb">'
         if thumb
-        else f'<div class="card-thumb card-thumb-placeholder">&#9679;</div>'
+        else f'<img src="{prefix}uno-logo.png" alt="UNO Entertainment" loading="lazy" class="card-thumb card-thumb-fallback">'
     )
     cat_key = a.get("category")
     cat_label = CATEGORY_LABELS.get(cat_key)
@@ -649,7 +654,11 @@ def build_categories():
 
 def build_article(a: dict):
     thumb = a.get("thumbnail")
-    hero_html = f'<img class="article-hero" src="{escape(thumb)}" alt="">' if thumb else ""
+    hero_html = (
+        f'<img class="article-hero" src="{escape(thumb)}" alt="">'
+        if thumb
+        else '<img class="article-hero article-hero-fallback" src="../uno-logo.png" alt="UNO Entertainment">'
+    )
     title = f"{a['title']} | UNO Entertainment"
     canonical = f"{SITE_URL}/articles/{a['slug']}.html"
     description = a.get("excerpt") or SITE_DESCRIPTION
