@@ -34,6 +34,9 @@ jobs:
       - name: Pull latest articles
         run: python3 fetch_feeds.py
 
+      - name: Retry any missing thumbnails
+        run: python3 fix_missing_thumbnails.py
+
       - name: Rebuild site
         run: python3 build_site.py
 
