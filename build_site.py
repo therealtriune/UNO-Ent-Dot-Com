@@ -448,13 +448,13 @@ def header_html(prefix: str, active: str = None) -> str:
     filter pills (so they're reachable from article pages) but leaves all of
     them unhighlighted.
     """
-    pills = [f'<a class="{"active" if active == "all" else ""}" href="{prefix}index.html">All</a>']
+    pills = [f'<a class="{"active" if active == "all" else ""}" href="/">All</a>']
     for key, label in CATEGORIES:
         pills.append(f'<a class="{"active" if active == key else ""}" href="{prefix}category/{key}.html">{label}</a>')
 
     return f"""
 <header>
-  <a class="brand-link" href="{prefix}index.html">
+  <a class="brand-link" href="/">
     <img class="logo" src="{prefix}uno-logo.png" alt="UNO Entertainment">
     <span class="tagline">The Culture's Feed</span>
   </a>
@@ -506,14 +506,14 @@ def footer_html(prefix: str) -> str:
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
-      <a href="{prefix}index.html"><img class="footer-logo" src="{prefix}uno-logo.png" alt="UNO Entertainment"></a>
+      <a href="/"><img class="footer-logo" src="{prefix}uno-logo.png" alt="UNO Entertainment"></a>
       <p class="footer-tagline">The Culture's Feed</p>
     </div>
 
     <div class="footer-columns">
       <div class="footer-col">
         <h4>Sections</h4>
-        <a href="{prefix}index.html">Home</a>
+        <a href="/">Home</a>
         <a href="{prefix}category/news.html">News</a>
         <a href="{prefix}category/rumors.html">Rumors</a>
         <a href="{prefix}category/videos.html">Videos</a>
@@ -593,9 +593,13 @@ def card_html(a: dict, prefix: str) -> str:
 
 
 def page_href(target_page: int, current_page: int) -> str:
-    """Link from current_page to target_page, both 1-indexed."""
+    """Link from current_page to target_page, both 1-indexed. Page 1 always
+    links to the site root ("/") rather than index.html, both because it's
+    an absolute path (correct regardless of how deep current_page is) and
+    because it's what we want showing in the address bar / in anything
+    someone shares."""
     if target_page == 1:
-        return "../index.html" if current_page > 1 else "index.html"
+        return "/"
     return f"{target_page}.html" if current_page > 1 else f"page/{target_page}.html"
 
 
@@ -788,7 +792,7 @@ def build_article(a: dict):
 <body>
 {header_html("../", a.get("category"))}
 <div class="article-wrap">
-  <a class="back-link" href="../index.html">&larr; Back to UNO Entertainment</a>
+  <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">{escape(time_ago(a['date']))}</div>
   <h1 class="article-title">{escape(a['title'])}</h1>
   {hero_html}
