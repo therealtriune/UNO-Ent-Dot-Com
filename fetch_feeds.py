@@ -4,9 +4,19 @@ UNO Entertainment — feed aggregation script.
 
 Pulls the latest posts from each source's RSS feed, normalizes them into a
 common shape (source, title, excerpt, summary, thumbnail, link, date), and
-writes the result to articles.json. Run this on a schedule (cron / GitHub
-Actions / scheduled task) to keep the site fresh, then re-run build_site.py
-to regenerate the homepage and article pages.
+merges anything new into articles.json. Run this on a schedule (cron /
+GitHub Actions / scheduled task) to keep the site fresh, then re-run
+build_site.py to regenerate the homepage and article pages.
+
+RETENTION POLICY: articles.json is a permanent archive, not a rolling
+snapshot. Every run loads whatever's already on disk, skips any article
+whose link it's already seen (existing fields — including any manually
+patched thumbnail — are left untouched), and only fetches/appends articles
+it hasn't recorded before. Nothing is ever dropped here just because it
+aged out of a source's RSS feed. The one and only removal rule lives in
+check_links.py: an article is deleted from the site if and only if its
+outbound link is confirmed dead (404/410/451). Run that script separately
+(the "Check For Dead Links" workflow already does this on a schedule).
 
 WHERE "SUMMARY" COMES FROM (read this if you're building toward in-house):
   Every article page shows a short UNO Ent-voiced summary before linking out
@@ -295,14 +305,25 @@ def extract_thumbnail(entry) -> str | None:
     return None
 
 
-def fetch_source(name: str, url: str) -> list[dict]:
+def fetch_source(name: str, url: str, known_links: set[str]) -> list[dict]:
+    """Pull this source's recent entries and build full article records for
+    anything not already in known_links. Entries whose link is already
+    known are skipped entirely (no thumbnail fetch, no summary generation)
+    -- they're already archived in articles.json and this function never
+    touches or re-derives their existing fields."""
     parsed = feedparser.parse(url)
     if parsed.bozo and not parsed.entries:
         print(f"  [!] {name}: could not parse feed ({parsed.bozo_exception})")
         return []
 
     articles = []
+    skipped = 0
     for entry in parsed.entries[:MAX_PER_SOURCE]:
+        link = entry.get("link")
+        if link and link in known_links:
+            skipped += 1
+            continue
+
         title = clean_text(entry.get("title", ""))
         excerpt = clean_text(entry.get("summary", ""))[:EXCERPT_LENGTH].rstrip()
 
@@ -326,7 +347,6 @@ def fetch_source(name: str, url: str) -> list[dict]:
             else datetime.now(timezone.utc).isoformat()
         )
 
-        link = entry.get("link")
         thumbnail = fetch_real_thumbnail(link) or extract_thumbnail(entry)
 
         articles.append(
@@ -342,25 +362,42 @@ def fetch_source(name: str, url: str) -> list[dict]:
                 "date": date_iso,
             }
         )
-    print(f"  [+] {name}: pulled {len(articles)} articles")
+        if link:
+            known_links.add(link)  # guard against dupes within this same run
+
+    print(f"  [+] {name}: {len(articles)} new, {skipped} already archived")
     return articles
 
 
 def main():
     print("Pulling feeds for UNO Entertainment...")
-    all_articles = []
-    for name, url in SOURCES:
-        all_articles.extend(fetch_source(name, url))
 
+    try:
+        with open("articles.json") as f:
+            existing = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        existing = []
+
+    known_links = {a["link"] for a in existing if a.get("link")}
+    starting_count = len(existing)
+
+    new_articles = []
+    for name, url in SOURCES:
+        new_articles.extend(fetch_source(name, url, known_links))
+
+    all_articles = existing + new_articles
     all_articles.sort(key=lambda a: a["date"], reverse=True)
 
     with open("articles.json", "w") as f:
         json.dump(all_articles, f, indent=2)
 
-    missing = [a["link"] for a in all_articles if not a.get("thumbnail")]
-    print(f"\nWrote {len(all_articles)} articles to articles.json")
+    missing = [a["link"] for a in new_articles if not a.get("thumbnail")]
+    print(
+        f"\n{starting_count} archived + {len(new_articles)} new = "
+        f"{len(all_articles)} articles written to articles.json"
+    )
     if missing:
-        print(f"[!] {len(missing)} article(s) have no thumbnail (needs a manual fix):")
+        print(f"[!] {len(missing)} newly-fetched article(s) have no thumbnail (needs a manual fix):")
         for link in missing:
             print(f"    {link}")
 
