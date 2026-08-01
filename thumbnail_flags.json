@@ -1,5 +1,21 @@
 [
   {
+    "link": "https://www.hotnewhiphop.com/1004279-victor-wembanyamas-official-nike-logo-sneaker-news",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://www.hotnewhiphop.com/1004291-paul-pierce-child-support",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://www.hotnewhiphop.com/1004288-ava-dash-dame-money",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://www.hotnewhiphop.com/1004285-ray-j-princess-love-marriage-reconciliation",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://www.hotnewhiphop.com/1004282-brittney-griner-divorce-cherelle",
     "issue": "missing_thumbnail"
   },
@@ -14,5 +30,21 @@
   {
     "link": "https://www.hotnewhiphop.com/1004134-every-air-jordan-dropping-in-august-2026",
     "issue": "missing_thumbnail"
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/07/photo-output-9-scaled-e1785511436226.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/singles/mike-summers-a-k-a-seven-produces-t-fs-feature-heavy-roc-nation-debut-skanless-summers-the-legend-of-maniac-blue-album-review/",
+      "https://undergroundhiphopblog.com/albums/mike-summers-a-k-a-seven-produces-t-fs-feature-heavy-roc-nation-debut-skanless-summers-the-legend-of-maniac-blue-album-review/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/07/photo-output-9-scaled-e1785511436226.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/singles/mike-summers-a-k-a-seven-produces-t-fs-feature-heavy-roc-nation-debut-skanless-summers-the-legend-of-maniac-blue-album-review/",
+      "https://undergroundhiphopblog.com/albums/mike-summers-a-k-a-seven-produces-t-fs-feature-heavy-roc-nation-debut-skanless-summers-the-legend-of-maniac-blue-album-review/"
+    ]
   }
 ]
