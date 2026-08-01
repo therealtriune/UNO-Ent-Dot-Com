@@ -1,5 +1,53 @@
 [
   {
+    "link": "https://sports.yahoo.com/articles/ufc-belgrade-results-aleksandar-rakic-184643741.html",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://www.hotnewhiphop.com/1004358-bruce-wayne-befirst-flo-milli-atl-jacob",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://sports.yahoo.com/articles/ufc-belgrade-video-robert-valentin-180801499.html",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://www.hotnewhiphop.com/1004350-nike-kobe-5-protro-ny-vs-ny-sneaker-news",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://sports.yahoo.com/articles/ufc-belgrade-video-gilbert-urbina-174532880.html",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://sports.yahoo.com/articles/ufc-belgrade-video-noah-gugnon-172337823.html",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://www.hotnewhiphop.com/1004346-50-cent-jokes-diddy-not-in-the-closet-doc",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://sports.yahoo.com/articles/ufc-belgrade-video-tofiq-musayev-165803084.html",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://sports.yahoo.com/articles/ufc-belgrade-video-michael-oliveira-163622465.html",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://www.hotnewhiphop.com/1004342-wack-100-clarifies-airport-chase-big-u-future",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://www.hotnewhiphop.com/1004337-lil-uzi-vert-canceled-lollapalooza-set-new-birthday-ep",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://sports.yahoo.com/articles/ufc-belgrade-dennis-buzukja-protests-154653522.html",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://www.hotnewhiphop.com/1004333-maverick-almost-forever-lil-uzi-vert",
     "issue": "missing_thumbnail"
   },
@@ -94,6 +142,16 @@
   {
     "link": "https://www.hotnewhiphop.com/1004134-every-air-jordan-dropping-in-august-2026",
     "issue": "missing_thumbnail"
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/0be2b11f36539e4a3b50dc3dfd3451f984078fc7ed55bea06b55035961703386/lightyear_networkapi/resizefill_w1024_h576;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2F1d69aec1af02949b24063ee8a5c0d6c7",
+    "links": [
+      "https://sports.yahoo.com/articles/williams-loss-leaves-wales-without-130404061.html",
+      "https://sports.yahoo.com/articles/holley-sotomi-wins-silver-split-123902156.html",
+      "https://sports.yahoo.com/articles/ditcheva-outclasses-kielholtz-return-injury-055223748.html"
+    ],
+    "use_count": 3
   },
   {
     "issue": "same_homepage_page",
