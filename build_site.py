@@ -3,13 +3,22 @@
 UNO Entertainment — static site builder.
 
 Reads articles.json (produced by fetch_feeds.py) and renders:
-  - index.html                  homepage, page 1 (newest ARTICLES_PER_PAGE stories)
-  - page/2.html, page/3.html    older stories on the homepage, paginated
-  - category/<cat>.html         page 1 of a single category (news, rumors,
-                                 videos, music, opinion, sports), same pagination
-  - category/<cat>-2.html, ...  older stories within that category
-  - articles/<slug>.html        one page per story, with UNO Ent's own
-                                 summary, then a clear link out to the source
+  - index.html                       homepage, page 1 (newest ARTICLES_PER_PAGE stories)
+  - page/2/index.html, page/3/...    older stories on the homepage, paginated
+  - category/<cat>/index.html        page 1 of a single category (news, rumors,
+                                      videos, music, opinion, sports), same pagination
+  - category/<cat>/2/index.html ...  older stories within that category
+  - articles/<slug>/index.html       one page per story, with UNO Ent's own
+                                      summary, then a clear link out to the source
+
+Every generated page lives at its own directory + index.html (the same
+pattern the homepage has always used at the root) so the .html extension
+never shows up in the address bar or in anything someone shares -- just
+/category/sports/ or /articles/some-story/, not .../sports.html. Every
+internal link this file generates uses that clean, trailing-slash, absolute
+path (e.g. href="/articles/{slug}/"); only asset references (style.css, the
+logo, favicons) use the relative `prefix` arg, since those don't need a
+clean URL and are already correct at any folder depth.
 
 Categories are a curation layer, not a publisher directory: "exclusives" and
 "features" (tags some source RSS feeds use) don't get their own filter — that
@@ -453,7 +462,7 @@ def header_html(prefix: str, active: str = None) -> str:
     """
     pills = [f'<a class="{"active" if active == "all" else ""}" href="/">All</a>']
     for key, label in CATEGORIES:
-        pills.append(f'<a class="{"active" if active == key else ""}" href="{prefix}category/{key}.html">{label}</a>')
+        pills.append(f'<a class="{"active" if active == key else ""}" href="/category/{key}/">{label}</a>')
 
     return f"""
 <header>
@@ -482,7 +491,7 @@ def cookie_banner_html(prefix: str) -> str:
 <div id="uno-cookie-banner" class="cookie-banner" hidden>
   <div class="cookie-banner-inner">
     <p>UNO Entertainment doesn't use tracking cookies today. If that changes — for analytics or
-    advertising — we'll ask first. Read our <a href="{prefix}privacy-policy.html">Privacy Policy</a> for details.</p>
+    advertising — we'll ask first. Read our <a href="/privacy-policy/">Privacy Policy</a> for details.</p>
     <button type="button" class="cookie-banner-btn" onclick="unoCookieConsent()">Got It</button>
   </div>
 </div>
@@ -506,7 +515,7 @@ function unoCookieConsent() {{
 def footer_html(prefix: str) -> str:
     year = datetime.now(timezone.utc).year
     section_links = "".join(
-        f'\n        <a href="{prefix}category/{key}.html">{label}</a>' for key, label in CATEGORIES
+        f'\n        <a href="/category/{key}/">{label}</a>' for key, label in CATEGORIES
     )
     return f"""
 <footer>
@@ -539,7 +548,7 @@ def footer_html(prefix: str) -> str:
       with them.</p>
       <p class="footer-copy">
         <span>&copy; {year} UNO Entertainment. All Rights Reserved.</span>
-        <span><a href="{prefix}privacy-policy.html">Privacy Policy</a> &middot; <a href="{prefix}terms.html">Terms of Service</a></span>
+        <span><a href="/privacy-policy/">Privacy Policy</a> &middot; <a href="/terms/">Terms of Service</a></span>
       </p>
     </div>
   </div>
@@ -582,7 +591,7 @@ def card_html(a: dict, prefix: str) -> str:
     cat_label = CATEGORY_LABELS.get(cat_key)
     cat_html = f'<span class="card-category">{escape(cat_label)}</span><span class="card-dot">&middot;</span>' if cat_label else ""
     return f"""
-    <a class="card" href="{prefix}articles/{a['slug']}.html">
+    <a class="card" href="/articles/{a['slug']}/">
       {thumb_html}
       <div class="card-body">
         <div class="card-meta">{cat_html}{escape(time_ago(a['date']))}</div>
@@ -593,15 +602,15 @@ def card_html(a: dict, prefix: str) -> str:
     </a>"""
 
 
-def page_href(target_page: int, current_page: int) -> str:
-    """Link from current_page to target_page, both 1-indexed. Page 1 always
-    links to the site root ("/") rather than index.html, both because it's
-    an absolute path (correct regardless of how deep current_page is) and
-    because it's what we want showing in the address bar / in anything
-    someone shares."""
+def page_href(target_page: int) -> str:
+    """Absolute link to a homepage pagination page. Page 1 always links to
+    the site root ("/") rather than index.html; later pages link to
+    /page/{n}/ (which is page/{n}/index.html on disk) rather than
+    page/{n}.html, so the .html extension never shows up in the address bar
+    -- the same treatment the homepage itself has always had."""
     if target_page == 1:
         return "/"
-    return f"{target_page}.html" if current_page > 1 else f"page/{target_page}.html"
+    return f"/page/{target_page}/"
 
 
 def page_jump_html(current_page: int, total_pages: int, href_for) -> str:
@@ -627,14 +636,14 @@ def pagination_html(current_page: int, total_pages: int) -> str:
     if total_pages <= 1:
         return ""
     if current_page > 1:
-        prev = f'<a href="{page_href(current_page - 1, current_page)}">&larr; Newer</a>'
+        prev = f'<a href="{page_href(current_page - 1)}">&larr; Newer</a>'
     else:
         prev = '<span class="disabled">&larr; Newer</span>'
     if current_page < total_pages:
-        nxt = f'<a href="{page_href(current_page + 1, current_page)}">Older &rarr;</a>'
+        nxt = f'<a href="{page_href(current_page + 1)}">Older &rarr;</a>'
     else:
         nxt = '<span class="disabled">Older &rarr;</span>'
-    jump = page_jump_html(current_page, total_pages, lambda p: page_href(p, current_page))
+    jump = page_jump_html(current_page, total_pages, page_href)
     return f"""
   <nav class="pagination">
     {prev}
@@ -647,10 +656,11 @@ def pagination_html(current_page: int, total_pages: int) -> str:
 def build_page(page_num: int, total_pages: int):
     start = (page_num - 1) * ARTICLES_PER_PAGE
     page_articles = ARTICLES[start:start + ARTICLES_PER_PAGE]
-    prefix = "" if page_num == 1 else "../"
+    # page/{n}/index.html is 2 directories deep; index.html at the root is 0.
+    prefix = "" if page_num == 1 else "../../"
     cards = "\n".join(card_html(a, prefix) for a in page_articles)
     title = "UNO Entertainment" if page_num == 1 else f"UNO Entertainment | Page {page_num}"
-    canonical = SITE_URL + ("/" if page_num == 1 else f"/page/{page_num}.html")
+    canonical = SITE_URL + page_href(page_num)
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -677,8 +687,8 @@ def build_page(page_num: int, total_pages: int):
             f.write(html)
     else:
         import os
-        os.makedirs("page", exist_ok=True)
-        with open(f"page/{page_num}.html", "w") as f:
+        os.makedirs(f"page/{page_num}", exist_ok=True)
+        with open(f"page/{page_num}/index.html", "w") as f:
             f.write(html)
 
 
@@ -697,7 +707,12 @@ def build_pages():
 
 
 def category_page_href(cat_key: str, target_page: int) -> str:
-    return f"{cat_key}.html" if target_page == 1 else f"{cat_key}-{target_page}.html"
+    """Absolute link to a category page. Page 1 is /category/{cat}/ (i.e.
+    category/{cat}/index.html on disk); later pages are /category/{cat}/{n}/
+    -- same clean-URL treatment as page_href() above, never a bare .html."""
+    if target_page == 1:
+        return f"/category/{cat_key}/"
+    return f"/category/{cat_key}/{target_page}/"
 
 
 def category_pagination_html(cat_key: str, current_page: int, total_pages: int) -> str:
@@ -727,18 +742,19 @@ def build_category(cat_key: str, cat_label: str):
 
     cat_articles = [a for a in ARTICLES if a.get("category") == cat_key]
     total_pages = max(1, math.ceil(len(cat_articles) / ARTICLES_PER_PAGE))
-    os.makedirs("category", exist_ok=True)
 
     for page_num in range(1, total_pages + 1):
         start = (page_num - 1) * ARTICLES_PER_PAGE
         page_articles = cat_articles[start:start + ARTICLES_PER_PAGE]
-        cards = "\n".join(card_html(a, "../") for a in page_articles)
+        # category/{cat}/index.html is 2 directories deep, category/{cat}/{n}/index.html is 3.
+        prefix = "../../" if page_num == 1 else "../../../"
+        cards = "\n".join(card_html(a, prefix) for a in page_articles)
         title = f"{cat_label} | UNO Entertainment" + (f" (Page {page_num})" if page_num > 1 else "")
         empty_state = (
             '<p style="color: var(--gray); font-size: 15px;">No stories in this category yet. Check back soon.</p>'
             if not page_articles else ""
         )
-        canonical = f"{SITE_URL}/category/{category_page_href(cat_key, page_num)}"
+        canonical = f"{SITE_URL}{category_page_href(cat_key, page_num)}"
         description = f"The latest {cat_label.lower()} in hip-hop and culture, curated by UNO Entertainment."
         html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -746,11 +762,11 @@ def build_category(cat_key: str, cat_label: str):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{escape(title)}</title>
-{meta_html("../", title, description, canonical)}
-<link rel="stylesheet" href="../style.css">
+{meta_html(prefix, title, description, canonical)}
+<link rel="stylesheet" href="{prefix}style.css">
 </head>
 <body>
-{header_html("../", cat_key)}
+{header_html(prefix, cat_key)}
 <main>
   <div class="grid">
     {cards}
@@ -758,11 +774,13 @@ def build_category(cat_key: str, cat_label: str):
   {empty_state}
   {category_pagination_html(cat_key, page_num, total_pages)}
 </main>
-{footer_html("../")}
+{footer_html(prefix)}
 </body>
 </html>
 """
-        with open(f"category/{category_page_href(cat_key, page_num)}", "w") as f:
+        out_dir = f"category/{cat_key}" if page_num == 1 else f"category/{cat_key}/{page_num}"
+        os.makedirs(out_dir, exist_ok=True)
+        with open(f"{out_dir}/index.html", "w") as f:
             f.write(html)
 
 
@@ -772,14 +790,16 @@ def build_categories():
 
 
 def build_article(a: dict):
+    # articles/{slug}/index.html is 2 directories deep.
+    prefix = "../../"
     thumb = a.get("thumbnail")
     hero_html = (
         f'<img class="article-hero" src="{escape(thumb)}" alt="">'
         if thumb
-        else '<img class="article-hero article-hero-fallback" src="../uno-logo.png" alt="UNO Entertainment">'
+        else f'<img class="article-hero article-hero-fallback" src="{prefix}uno-logo.png" alt="UNO Entertainment">'
     )
     title = f"{a['title']} | UNO Entertainment"
-    canonical = f"{SITE_URL}/articles/{a['slug']}.html"
+    canonical = f"{SITE_URL}/articles/{a['slug']}/"
     description = a.get("excerpt") or SITE_DESCRIPTION
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -787,11 +807,11 @@ def build_article(a: dict):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{escape(title)}</title>
-{meta_html("../", title, description, canonical, image_url=thumb)}
-<link rel="stylesheet" href="../style.css">
+{meta_html(prefix, title, description, canonical, image_url=thumb)}
+<link rel="stylesheet" href="{prefix}style.css">
 </head>
 <body>
-{header_html("../", a.get("category"))}
+{header_html(prefix, a.get("category"))}
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">{escape(time_ago(a['date']))}</div>
@@ -803,13 +823,14 @@ def build_article(a: dict):
   </a>
   <p class="outbound-note">Original reporting by {escape(a['source'])}. This page is a summary. The full story, photos, and details live at the link above.</p>
 </div>
-{footer_html("../")}
+{footer_html(prefix)}
 </body>
 </html>
 """
     import os
-    os.makedirs("articles", exist_ok=True)
-    with open(f"articles/{a['slug']}.html", "w") as f:
+    out_dir = f"articles/{a['slug']}"
+    os.makedirs(out_dir, exist_ok=True)
+    with open(f"{out_dir}/index.html", "w") as f:
         f.write(html)
 
 
@@ -907,9 +928,13 @@ revision. Continued use of the Site after changes take effect means you accept t
 """
 
 
-def build_legal_page(filename: str, title: str, body_html: str):
+def build_legal_page(slug: str, title: str, body_html: str):
+    """slug is a URL slug like 'privacy-policy' or 'terms', not a filename --
+    this writes {slug}/index.html so the page is reachable at /{slug}/ with
+    no .html in the address bar."""
+    prefix = "../"
     full_title = f"{title} | UNO Entertainment"
-    canonical = f"{SITE_URL}/{filename}"
+    canonical = f"{SITE_URL}/{slug}/"
     description = f"{title} for UNO Entertainment."
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -917,21 +942,23 @@ def build_legal_page(filename: str, title: str, body_html: str):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{full_title}</title>
-{meta_html("", full_title, description, canonical)}
-<link rel="stylesheet" href="style.css">
+{meta_html(prefix, full_title, description, canonical)}
+<link rel="stylesheet" href="{prefix}style.css">
 </head>
 <body>
-{header_html("")}
+{header_html(prefix)}
 <div class="legal-wrap">
   <h1>{title}</h1>
   <p class="legal-updated">Effective {LEGAL_EFFECTIVE_DATE}</p>
   {body_html}
 </div>
-{footer_html("")}
+{footer_html(prefix)}
 </body>
 </html>
 """
-    with open(filename, "w") as f:
+    import os
+    os.makedirs(slug, exist_ok=True)
+    with open(f"{slug}/index.html", "w") as f:
         f.write(html)
 
 
@@ -942,17 +969,17 @@ def main():
     build_categories()
     for a in ARTICLES:
         build_article(a)
-    build_legal_page("privacy-policy.html", "Privacy Policy", PRIVACY_POLICY_BODY)
-    build_legal_page("terms.html", "Terms of Service", TERMS_BODY)
+    build_legal_page("privacy-policy", "Privacy Policy", PRIVACY_POLICY_BODY)
+    build_legal_page("terms", "Terms of Service", TERMS_BODY)
     check_thumbnails(ARTICLES)
     from collections import Counter
     counts = Counter(a.get("category") for a in ARTICLES)
     cat_summary = ", ".join(f"{label} {counts.get(key, 0)}" for key, label in CATEGORIES)
     print(
         f"Built {total_pages} homepage page(s) ({ARTICLES_PER_PAGE}/page) "
-        f"+ {ARTICLE_COUNT} article pages in articles/ "
+        f"+ {ARTICLE_COUNT} article pages in articles/*/ "
         f"+ category pages ({cat_summary}) "
-        f"+ privacy-policy.html + terms.html, plus style.css"
+        f"+ /privacy-policy/ + /terms/, plus style.css"
     )
 
 
