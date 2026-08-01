@@ -58,7 +58,26 @@ SOURCES = [
     ("Hollywood Unlocked", "https://hollywoodunlocked.com/feed"),
     ("The Shade Room", "https://theshaderoom.com/feed"),
     ("Underground Hip Hop Blog", "https://undergroundhiphopblog.com/feed"),
+    # Sports desk: ESPN doesn't run a taggable RSS feed the way the hip-hop
+    # blogs do (no rumor/video/album tags to hook categorize() into), and
+    # everything from these four feeds belongs in one place regardless of
+    # what it's about -- so it's routed straight to "sports" via
+    # SOURCE_CATEGORY_OVERRIDE below instead of going through categorize().
+    ("ESPN NBA", "https://www.espn.com/espn/rss/nba/news"),
+    ("ESPN NFL", "https://www.espn.com/espn/rss/nfl/news"),
+    ("ESPN Boxing", "https://www.espn.com/espn/rss/boxing/news"),
+    ("ESPN MMA", "https://www.espn.com/espn/rss/mma/news"),
 ]
+
+# Sources listed here always get this category, bypassing categorize()
+# entirely -- for feeds where every story belongs in the same bucket rather
+# than needing per-article classification.
+SOURCE_CATEGORY_OVERRIDE = {
+    "ESPN NBA": "sports",
+    "ESPN NFL": "sports",
+    "ESPN Boxing": "sports",
+    "ESPN MMA": "sports",
+}
 
 MAX_PER_SOURCE = 12
 EXCERPT_LENGTH = 160
@@ -169,13 +188,15 @@ def generate_summary(title: str, full_text: str, fallback_excerpt: str) -> str:
     return summary or fallback_excerpt
 
 
-# The 5 categories UNO Ent actually filters by. This is deliberately not the
+# The 6 categories UNO Ent actually filters by. This is deliberately not the
 # same list as what source RSS feeds tag things with — feeds throw in labels
 # like "Exclusive," "Feature," "Source Sports," etc. that are specific to how
 # that publisher organizes their own site. Those tags get read below (as a
 # hint) but never turn into their own filter; anything that isn't clearly
-# rumors/videos/music/opinion just falls through to "news."
-VALID_CATEGORIES = {"news", "rumors", "videos", "music", "opinion"}
+# rumors/videos/music/opinion just falls through to "news." "sports" is the
+# one exception: it's never reached via categorize() below -- it's assigned
+# directly via SOURCE_CATEGORY_OVERRIDE for the ESPN feeds.
+VALID_CATEGORIES = {"news", "rumors", "videos", "music", "opinion", "sports"}
 
 # RSS <category> tags → our taxonomy. Left side is lowercased substring match
 # against the tags a source puts on the entry.
@@ -337,8 +358,11 @@ def fetch_source(name: str, url: str, known_links: set[str]) -> list[dict]:
 
         summary = generate_summary(title, full_text, excerpt)
 
-        source_tags = [t.get("term", "") for t in entry.get("tags", []) if t.get("term")]
-        category = categorize(title, source_tags)
+        if name in SOURCE_CATEGORY_OVERRIDE:
+            category = SOURCE_CATEGORY_OVERRIDE[name]
+        else:
+            source_tags = [t.get("term", "") for t in entry.get("tags", []) if t.get("term")]
+            category = categorize(title, source_tags)
 
         pub = entry.get("published_parsed") or entry.get("updated_parsed")
         date_iso = (

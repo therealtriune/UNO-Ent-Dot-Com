@@ -6,7 +6,7 @@ Reads articles.json (produced by fetch_feeds.py) and renders:
   - index.html                  homepage, page 1 (newest ARTICLES_PER_PAGE stories)
   - page/2.html, page/3.html    older stories on the homepage, paginated
   - category/<cat>.html         page 1 of a single category (news, rumors,
-                                 videos, music, opinion), same pagination
+                                 videos, music, opinion, sports), same pagination
   - category/<cat>-2.html, ...  older stories within that category
   - articles/<slug>.html        one page per story, with UNO Ent's own
                                  summary, then a clear link out to the source
@@ -15,7 +15,9 @@ Categories are a curation layer, not a publisher directory: "exclusives" and
 "features" (tags some source RSS feeds use) don't get their own filter — that
 kind of label is specific to how XXL or HotNewHipHop organize their own site,
 not something a reader browsing UNO Ent needs. Those stories still show up
-in the main feed and in whichever of the five real categories fits them.
+in the main feed and in whichever of the six real categories fits them.
+"Sports" (basketball, football, boxing, UFC via ESPN's RSS feeds) is UNO
+Ent's one crossover section outside the hip-hop/culture beat.
 
 Homepage cards link to the internal article page first — NOT straight out to
 the source. The article page is where the outbound link lives. That's
@@ -84,6 +86,7 @@ CATEGORIES = [
     ("videos", "Videos"),
     ("music", "Music"),
     ("opinion", "Opinion"),
+    ("sports", "Sports"),
 ]
 CATEGORY_LABELS = dict(CATEGORIES)
 
@@ -502,6 +505,9 @@ function unoCookieConsent() {{
 
 def footer_html(prefix: str) -> str:
     year = datetime.now(timezone.utc).year
+    section_links = "".join(
+        f'\n        <a href="{prefix}category/{key}.html">{label}</a>' for key, label in CATEGORIES
+    )
     return f"""
 <footer>
   <div class="footer-inner">
@@ -513,12 +519,7 @@ def footer_html(prefix: str) -> str:
     <div class="footer-columns">
       <div class="footer-col">
         <h4>Sections</h4>
-        <a href="/">Home</a>
-        <a href="{prefix}category/news.html">News</a>
-        <a href="{prefix}category/rumors.html">Rumors</a>
-        <a href="{prefix}category/videos.html">Videos</a>
-        <a href="{prefix}category/music.html">Music</a>
-        <a href="{prefix}category/opinion.html">Opinion</a>
+        <a href="/">Home</a>{section_links}
       </div>
       <div class="footer-col">
         <h4>About UNO Entertainment</h4>
