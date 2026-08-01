@@ -368,6 +368,53 @@ def extract_thumbnail(entry) -> str | None:
     return None
 
 
+# Public read-through proxies, tried in order, used only as a fallback when
+# a direct feed fetch comes back with 0 entries. ESPN's RSS feeds return an
+# HTTP 202 "challenge accepted" response to GitHub Actions' runner IPs no
+# matter what headers are sent -- confirmed by testing (see fetch_source()
+# below) that a realistic browser UA/Accept/Referer set still gets 0
+# entries back, while the exact same URL fetched from a different IP (e.g.
+# a developer's machine) returns the feed fine. That's IP-based bot
+# mitigation, not a UA problem, so the fix has to be fetching from a
+# different origin IP rather than a different header. Each of these
+# services fetches the target URL server-side (from their own IP) and
+# echoes back the raw response body, so feedparser can parse the *content*
+# directly instead of re-requesting the original URL.
+FEED_PROXY_TEMPLATES = [
+    "https://api.allorigins.win/raw?url={url}",
+    "https://api.codetabs.com/v1/proxy?quest={url}",
+    "https://corsproxy.io/?url={url}",
+    "https://thingproxy.freeboard.io/fetch/{url}",
+]
+
+
+def fetch_via_proxy(name: str, url: str):
+    """Try each proxy in FEED_PROXY_TEMPLATES in turn; return the first
+    feedparser result that actually contains entries, or None if every
+    proxy fails or is itself blocked/down. Never raises -- a bad proxy is
+    just skipped, same as a bad direct fetch is skipped by the caller."""
+    import urllib.parse
+
+    encoded = urllib.parse.quote(url, safe="")
+    for template in FEED_PROXY_TEMPLATES:
+        proxy_url = template.format(url=encoded)
+        proxy_host = proxy_url.split("/")[2]
+        try:
+            resp = requests.get(proxy_url, timeout=THUMBNAIL_TIMEOUT, headers=REQUEST_HEADERS)
+            if resp.status_code != 200 or not resp.text.strip():
+                print(f"    [proxy] {name} via {proxy_host}: HTTP {resp.status_code}")
+                continue
+            parsed = feedparser.parse(resp.text)
+            if parsed.entries:
+                print(f"    [proxy] {name} via {proxy_host}: {len(parsed.entries)} entries")
+                return parsed
+            print(f"    [proxy] {name} via {proxy_host}: 0 entries")
+        except requests.RequestException as e:
+            print(f"    [proxy] {name} via {proxy_host}: {type(e).__name__}")
+            continue
+    return None
+
+
 def fetch_source(name: str, url: str, known_links: set[str]) -> list[dict]:
     """Pull this source's recent entries and build full article records for
     anything not already in known_links. Entries whose link is already
@@ -375,13 +422,20 @@ def fetch_source(name: str, url: str, known_links: set[str]) -> list[dict]:
     -- they're already archived in articles.json and this function never
     touches or re-derives their existing fields."""
     parsed = feedparser.parse(url, request_headers=FEED_REQUEST_HEADERS)
-    if parsed.bozo and not parsed.entries:
-        print(f"  [!] {name}: could not parse feed ({parsed.bozo_exception})")
-        return []
     if not parsed.entries:
         status = getattr(parsed, "status", "?")
-        print(f"  [!] {name}: 0 entries returned (HTTP {status}) -- likely blocked")
-        return []
+        reason = (
+            f"could not parse feed ({parsed.bozo_exception})"
+            if parsed.bozo
+            else f"0 entries returned (HTTP {status})"
+        )
+        print(f"  [!] {name}: {reason} -- retrying via proxy")
+        proxied = fetch_via_proxy(name, url)
+        if proxied and proxied.entries:
+            parsed = proxied
+        else:
+            print(f"  [!] {name}: proxy fallback also failed -- skipping this run")
+            return []
 
     articles = []
     skipped = 0
