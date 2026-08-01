@@ -97,11 +97,17 @@ TAG_RE = re.compile(r"<[^>]+>")
 IMG_SRC_RE = re.compile(r'<img[^>]+src="([^"]+)"')
 SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
 SLUG_RE = re.compile(r"[^a-z0-9]+")
+# Matches both <meta property="og:image" content="..."> (the OpenGraph spec)
+# and <meta name="og:image" content="..."> -- HotNewHipHop's SEO plugin emits
+# the "name" variant instead of "property", which the original property-only
+# regex silently missed (confirmed via the debug logging in
+# fetch_real_thumbnail(): the tag was present in the HTML on every failing
+# HotNewHipHop page, just never matched).
 OG_IMAGE_RE = re.compile(
-    r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']', re.IGNORECASE
+    r'<meta[^>]+(?:property|name)=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']', re.IGNORECASE
 )
 OG_IMAGE_RE_ALT = re.compile(
-    r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']', re.IGNORECASE
+    r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\']og:image["\']', re.IGNORECASE
 )
 PINTEREST_MEDIA_RE = re.compile(
     r'pinterest\.com/pin/create/button[^"\']*[?&]media=([^"\'&]+)', re.IGNORECASE
