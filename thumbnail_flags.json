@@ -1,5 +1,9 @@
 [
   {
+    "link": "https://www.hotnewhiphop.com/1004228-gut-genug-kitschkrieg-skepta-blumengarten",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://www.hotnewhiphop.com/1004225-you-can-always-come-back-home-jon-keith-chance-the-rapper",
     "issue": "missing_thumbnail"
   },
@@ -57,6 +61,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/07/IMG_5396-e1785477846643.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/brabus-and-lorinsers-briefly-mixes-ramirez-styles-old-new-ep-review/",
+      "https://undergroundhiphopblog.com/albums/brabus-and-lorinsers-briefly-mixes-ramirez-styles-old-and-new-ep-review/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/07/IMG_5396-e1785477846643.jpeg",
     "links": [
       "https://undergroundhiphopblog.com/albums/brabus-and-lorinsers-briefly-mixes-ramirez-styles-old-new-ep-review/",
