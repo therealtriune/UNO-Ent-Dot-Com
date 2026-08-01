@@ -99,7 +99,28 @@ PINTEREST_MEDIA_RE = re.compile(
 CONTENT_IMG_RE = re.compile(
     r'<img[^>]+src=["\']([^"\']+wp-content/uploads/[^"\']+)["\']', re.IGNORECASE
 )
-THUMBNAIL_TIMEOUT = 5.0
+THUMBNAIL_TIMEOUT = 8.0
+
+# A number of sources (ESPN in particular, and occasionally HotNewHipHop)
+# sit behind bot/WAF protection that's picky about what's fetching them.
+# feedparser's own default User-Agent ("python-feedparser/...") and the old
+# self-identifying "UNOEntBot/1.0" UA below both read as obvious bots and
+# get silently dropped (0 entries / connection refused) by some of these
+# WAFs -- especially from a datacenter IP range like GitHub Actions runners
+# use. Presenting a realistic desktop-Chrome UA plus the headers a real
+# browser sends alongside it (Accept, Accept-Language, Referer) is the
+# standard mitigation and is used for every outbound fetch in this file:
+# both the RSS pull itself (feedparser's request_headers) and the article
+# page fetch in fetch_real_thumbnail().
+REQUEST_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    ),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Referer": "https://www.google.com/",
+}
 
 # Some sources (The Shade Room and Hollywood Unlocked in particular) serve a
 # generic site logo as og:image on a meaningful chunk of their pages, even
@@ -278,7 +299,7 @@ def fetch_real_thumbnail(article_url: str) -> str | None:
         resp = requests.get(
             article_url,
             timeout=THUMBNAIL_TIMEOUT,
-            headers={"User-Agent": "Mozilla/5.0 (compatible; UNOEntBot/1.0)"},
+            headers=REQUEST_HEADERS,
         )
         if resp.status_code != 200:
             return None
@@ -332,9 +353,13 @@ def fetch_source(name: str, url: str, known_links: set[str]) -> list[dict]:
     known are skipped entirely (no thumbnail fetch, no summary generation)
     -- they're already archived in articles.json and this function never
     touches or re-derives their existing fields."""
-    parsed = feedparser.parse(url)
+    parsed = feedparser.parse(url, request_headers=REQUEST_HEADERS)
     if parsed.bozo and not parsed.entries:
         print(f"  [!] {name}: could not parse feed ({parsed.bozo_exception})")
+        return []
+    if not parsed.entries:
+        status = getattr(parsed, "status", "?")
+        print(f"  [!] {name}: 0 entries returned (HTTP {status}) -- likely blocked")
         return []
 
     articles = []
