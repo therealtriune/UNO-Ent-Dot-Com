@@ -122,6 +122,19 @@ REQUEST_HEADERS = {
     "Referer": "https://www.google.com/",
 }
 
+# Same UA/browser-fingerprint as REQUEST_HEADERS above, but with an Accept
+# header that prioritizes XML/RSS mime types over text/html. This matters:
+# ESPN's servers do content negotiation on the Accept header, and
+# REQUEST_HEADERS' html-first Accept (needed for the article-page thumbnail
+# scrape) was causing them to serve back an HTML page instead of the RSS
+# feed for that same URL -- feedparser would then choke trying to parse
+# that HTML as XML ("mismatched tag"). Used only for the feedparser.parse()
+# call in fetch_source(), never for the thumbnail page fetch.
+FEED_REQUEST_HEADERS = {
+    **REQUEST_HEADERS,
+    "Accept": "application/rss+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.7",
+}
+
 # Some sources (The Shade Room and Hollywood Unlocked in particular) serve a
 # generic site logo as og:image on a meaningful chunk of their pages, even
 # though the page itself displays a real photo in the body. A thumbnail URL
@@ -266,7 +279,7 @@ def categorize(title: str, source_tags: list[str]) -> str:
     return "news"
 
 
-def fetch_real_thumbnail(article_url: str) -> str | None:
+def fetch_real_thumbnail(article_url: str, debug: bool = False) -> str | None:
     """
     Fetch the article page once and try, in order, to find a real photo
     (never a site logo/placeholder) to use as the thumbnail:
@@ -302,6 +315,8 @@ def fetch_real_thumbnail(article_url: str) -> str | None:
             headers=REQUEST_HEADERS,
         )
         if resp.status_code != 200:
+            if debug:
+                print(f"    [thumbnail] {article_url}: HTTP {resp.status_code}")
             return None
         html = resp.text
         match = OG_IMAGE_RE.search(html) or OG_IMAGE_RE_ALT.search(html)
@@ -309,6 +324,8 @@ def fetch_real_thumbnail(article_url: str) -> str | None:
             candidate = unescape(match.group(1))
             if not looks_like_logo(candidate):
                 return candidate
+            if debug:
+                print(f"    [thumbnail] {article_url}: og:image rejected as logo ({candidate})")
 
         match = PINTEREST_MEDIA_RE.search(html)
         if match:
@@ -321,8 +338,12 @@ def fetch_real_thumbnail(article_url: str) -> str | None:
             candidate = unescape(match.group(1))
             if not looks_like_logo(candidate):
                 return candidate
-    except requests.RequestException:
-        pass
+
+        if debug:
+            print(f"    [thumbnail] {article_url}: fetched {len(html)} bytes, no usable image found")
+    except requests.RequestException as e:
+        if debug:
+            print(f"    [thumbnail] {article_url}: {type(e).__name__}: {e}")
     return None
 
 
@@ -353,7 +374,7 @@ def fetch_source(name: str, url: str, known_links: set[str]) -> list[dict]:
     known are skipped entirely (no thumbnail fetch, no summary generation)
     -- they're already archived in articles.json and this function never
     touches or re-derives their existing fields."""
-    parsed = feedparser.parse(url, request_headers=REQUEST_HEADERS)
+    parsed = feedparser.parse(url, request_headers=FEED_REQUEST_HEADERS)
     if parsed.bozo and not parsed.entries:
         print(f"  [!] {name}: could not parse feed ({parsed.bozo_exception})")
         return []

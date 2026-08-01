@@ -40,7 +40,7 @@ def main():
 
     fixed = 0
     for a in missing:
-        thumb = fetch_real_thumbnail(a.get("link"))
+        thumb = fetch_real_thumbnail(a.get("link"), debug=True)
         if thumb:
             a["thumbnail"] = thumb
             fixed += 1
