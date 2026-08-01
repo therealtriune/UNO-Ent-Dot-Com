@@ -1,5 +1,29 @@
 [
   {
+    "link": "https://www.hotnewhiphop.com/1004333-maverick-almost-forever-lil-uzi-vert",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://www.hotnewhiphop.com/1004329-is-ai-killing-creativity-hip-hop",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://www.hotnewhiphop.com/1004325-kendrick-lamar-7-year-old-lost-arms-birthday-call",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://www.hotnewhiphop.com/1004319-yg-responds-rumor-drake-funding-drakeo-the-ruler-investigation",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://www.hotnewhiphop.com/1004311-jake-paul-venuum-g63-mastodon-v3-sports-news",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://www.hotnewhiphop.com/1004305-jake-paul-pfl-merger-sports-news",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://www.hotnewhiphop.com/1004301-michael-jordan-erling-haaland-sneaker-news",
     "issue": "missing_thumbnail"
   },
@@ -77,6 +101,22 @@
     "links": [
       "https://undergroundhiphopblog.com/singles/mike-summers-a-k-a-seven-produces-t-fs-feature-heavy-roc-nation-debut-skanless-summers-the-legend-of-maniac-blue-album-review/",
       "https://undergroundhiphopblog.com/albums/mike-summers-a-k-a-seven-produces-t-fs-feature-heavy-roc-nation-debut-skanless-summers-the-legend-of-maniac-blue-album-review/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/07/photo-output-9-scaled-e1785511436226.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/singles/mike-summers-a-k-a-seven-produces-t-fs-feature-heavy-roc-nation-debut-skanless-summers-the-legend-of-maniac-blue-album-review/",
+      "https://undergroundhiphopblog.com/albums/mike-summers-a-k-a-seven-produces-t-fs-feature-heavy-roc-nation-debut-skanless-summers-the-legend-of-maniac-blue-album-review/"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/07/IMG_5396-e1785477846643.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/brabus-and-lorinsers-briefly-mixes-ramirez-styles-old-new-ep-review/",
+      "https://undergroundhiphopblog.com/albums/brabus-and-lorinsers-briefly-mixes-ramirez-styles-old-and-new-ep-review/"
     ]
   },
   {
