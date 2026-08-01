@@ -58,25 +58,35 @@ SOURCES = [
     ("Hollywood Unlocked", "https://hollywoodunlocked.com/feed"),
     ("The Shade Room", "https://theshaderoom.com/feed"),
     ("Underground Hip Hop Blog", "https://undergroundhiphopblog.com/feed"),
-    # Sports desk: ESPN doesn't run a taggable RSS feed the way the hip-hop
-    # blogs do (no rumor/video/album tags to hook categorize() into), and
+    # Sports desk: doesn't run a taggable RSS feed the way the hip-hop blogs
+    # do (no rumor/video/album tags to hook categorize() into), and
     # everything from these four feeds belongs in one place regardless of
     # what it's about -- so it's routed straight to "sports" via
     # SOURCE_CATEGORY_OVERRIDE below instead of going through categorize().
-    ("ESPN NBA", "https://www.espn.com/espn/rss/nba/news"),
-    ("ESPN NFL", "https://www.espn.com/espn/rss/nfl/news"),
-    ("ESPN Boxing", "https://www.espn.com/espn/rss/boxing/news"),
-    ("ESPN MMA", "https://www.espn.com/espn/rss/mma/news"),
+    #
+    # These were ESPN's own NBA/NFL/boxing/MMA RSS feeds originally, but
+    # ESPN's servers return an HTTP 202 "challenge" response to every fetch
+    # from GitHub Actions' runner IPs -- confirmed to be IP-based (not a
+    # header/UA problem: a realistic browser UA/Accept/Referer set made no
+    # difference), and a public-proxy fallback (allorigins, codetabs,
+    # corsproxy, thingproxy) was tried and also failed (timeouts / 521 / 403
+    # / connection errors -- free proxies are simply too unreliable for
+    # this). Swapped to Yahoo Sports' equivalent feeds instead, which don't
+    # block automated fetches and cover the same four verticals.
+    ("Yahoo Sports NBA", "https://sports.yahoo.com/nba/rss.xml"),
+    ("Yahoo Sports NFL", "https://sports.yahoo.com/nfl/rss.xml"),
+    ("Yahoo Sports Boxing", "https://sports.yahoo.com/boxing/rss.xml"),
+    ("Yahoo Sports MMA", "https://sports.yahoo.com/mma/rss.xml"),
 ]
 
 # Sources listed here always get this category, bypassing categorize()
 # entirely -- for feeds where every story belongs in the same bucket rather
 # than needing per-article classification.
 SOURCE_CATEGORY_OVERRIDE = {
-    "ESPN NBA": "sports",
-    "ESPN NFL": "sports",
-    "ESPN Boxing": "sports",
-    "ESPN MMA": "sports",
+    "Yahoo Sports NBA": "sports",
+    "Yahoo Sports NFL": "sports",
+    "Yahoo Sports Boxing": "sports",
+    "Yahoo Sports MMA": "sports",
 }
 
 MAX_PER_SOURCE = 12
@@ -229,7 +239,7 @@ def generate_summary(title: str, full_text: str, fallback_excerpt: str) -> str:
 # hint) but never turn into their own filter; anything that isn't clearly
 # rumors/videos/music/opinion just falls through to "news." "sports" is the
 # one exception: it's never reached via categorize() below -- it's assigned
-# directly via SOURCE_CATEGORY_OVERRIDE for the ESPN feeds.
+# directly via SOURCE_CATEGORY_OVERRIDE for the sports feeds.
 VALID_CATEGORIES = {"news", "rumors", "videos", "music", "opinion", "sports"}
 
 # RSS <category> tags → our taxonomy. Left side is lowercased substring match
@@ -340,7 +350,15 @@ def fetch_real_thumbnail(article_url: str, debug: bool = False) -> str | None:
                 return candidate
 
         if debug:
-            print(f"    [thumbnail] {article_url}: fetched {len(html)} bytes, no usable image found")
+            # Distinguish "the tag isn't there" from "the tag's there but our
+            # regex didn't match its exact attribute order/quoting" -- the
+            # fix is completely different depending on which one this is.
+            idx = html.lower().find("og:image")
+            if idx == -1:
+                print(f"    [thumbnail] {article_url}: fetched {len(html)} bytes, no 'og:image' substring anywhere in the HTML")
+            else:
+                snippet = html[max(0, idx - 80):idx + 120].replace("\n", " ")
+                print(f"    [thumbnail] {article_url}: fetched {len(html)} bytes, 'og:image' present but regex didn't match -- context: ...{snippet}...")
     except requests.RequestException as e:
         if debug:
             print(f"    [thumbnail] {article_url}: {type(e).__name__}: {e}")
