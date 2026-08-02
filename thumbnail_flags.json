@@ -1,5 +1,9 @@
 [
   {
+    "link": "https://sports.yahoo.com/nfl/breaking-news/article/texans-reportedly-add-former-no-1-pick-jadeveon-clowney-to-an-already-imposing-pass-rush-200253655.html",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/uros-medic-calls-leon-edwards-230046924.html",
     "issue": "missing_thumbnail"
   },
@@ -79,6 +83,30 @@
     "links": [
       "https://sports.yahoo.com/boxing/live/lamont-roach-vs-william-zepeda-live-results-round-by-round-updates-ring-walks-start-time-for-wbc-title-fight-063000008.html",
       "https://sports.yahoo.com/boxing/live/lamont-roach-vs-william-zepeda-live-results-round-by-round-updates-ring-walks-for-wbc-title-fight-063000008.html"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/1dec4f2dea8b5acb938c46964a7c8e754936e424a3e60444bd57b9bbf6d5bda0/lightyear_networkapi/resizefill_w1200;quality_80;format_webp/https:%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-07%2F61f475d3-97e1-4fa5-95c0-3ae8c8a48f6e",
+    "links": [
+      "https://sports.yahoo.com/nfl/live/nfl-news-live-updates-ricky-pearsall-to-miss-season-for-49ers-bills-cj-gardner-johnson-chiefs-rookie-cyrus-allen-carted-off-with-injuries-120227168.html",
+      "https://sports.yahoo.com/nfl/live/nfl-news-live-updates-49ers-wr-ricky-pearsall-saints-dt-bryan-bresee-out-for-season-120227168.html"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/1dec4f2dea8b5acb938c46964a7c8e754936e424a3e60444bd57b9bbf6d5bda0/lightyear_networkapi/resizefill_w1200;quality_80;format_webp/https:%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-07%2F61f475d3-97e1-4fa5-95c0-3ae8c8a48f6e",
+    "links": [
+      "https://sports.yahoo.com/nfl/live/nfl-news-live-updates-ricky-pearsall-to-miss-season-for-49ers-bills-cj-gardner-johnson-chiefs-rookie-cyrus-allen-carted-off-with-injuries-120227168.html",
+      "https://sports.yahoo.com/nfl/live/nfl-news-live-updates-49ers-wr-ricky-pearsall-saints-dt-bryan-bresee-out-for-season-120227168.html"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/07/photo-output-9-scaled-e1785511436226.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/singles/mike-summers-a-k-a-seven-produces-t-fs-feature-heavy-roc-nation-debut-skanless-summers-the-legend-of-maniac-blue-album-review/",
+      "https://undergroundhiphopblog.com/albums/mike-summers-a-k-a-seven-produces-t-fs-feature-heavy-roc-nation-debut-skanless-summers-the-legend-of-maniac-blue-album-review/"
     ]
   },
   {
