@@ -115,7 +115,31 @@ PINTEREST_MEDIA_RE = re.compile(
 CONTENT_IMG_RE = re.compile(
     r'<img[^>]+src=["\']([^"\']+wp-content/uploads/[^"\']+)["\']', re.IGNORECASE
 )
+# Some Yahoo Sports articles (confirmed on the "UFC Belgrade" video-recap
+# posts) are really just a wrapper around an embedded YouTube clip -- no
+# og:image, no wp-content image, and no plain <img> anywhere in the page or
+# the RSS content:encoded, just an <iframe src="youtube.com/embed/...">
+# (or occasionally a bare youtu.be link). YouTube guarantees a default
+# thumbnail at this URL for every public video ID, so this is a reliable
+# last-resort source for those pages.
+YOUTUBE_EMBED_RE = re.compile(
+    r'youtube(?:-nocookie)?\.com/embed/([a-zA-Z0-9_-]{6,})|youtu\.be/([a-zA-Z0-9_-]{6,})',
+    re.IGNORECASE,
+)
 THUMBNAIL_TIMEOUT = 8.0
+
+
+def youtube_thumbnail_from_html(html: str) -> str | None:
+    """Find an embedded YouTube video (iframe src or youtu.be link) in a
+    blob of HTML and return its default thumbnail URL, or None if no
+    YouTube embed is present."""
+    if not html:
+        return None
+    match = YOUTUBE_EMBED_RE.search(html)
+    if not match:
+        return None
+    video_id = match.group(1) or match.group(2)
+    return f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg"
 
 # A number of sources (ESPN in particular, and occasionally HotNewHipHop)
 # sit behind bot/WAF protection that's picky about what's fetching them.
@@ -316,6 +340,9 @@ def fetch_real_thumbnail(article_url: str, debug: bool = False) -> str | None:
       3. The first wp-content/uploads image referenced anywhere in the page
          HTML (a decent proxy for "the actual article photo" on WordPress
          sites, which is what every source here runs on).
+      4. An embedded YouTube video's default thumbnail, for pages that are
+         really just a wrapper around a video clip with no still photo
+         anywhere in the markup (see youtube_thumbnail_from_html).
 
     Returns None if the page can't be fetched or none of the above find a
     non-logo image -- the caller falls back to extract_thumbnail() (RSS
@@ -355,6 +382,10 @@ def fetch_real_thumbnail(article_url: str, debug: bool = False) -> str | None:
             if not looks_like_logo(candidate):
                 return candidate
 
+        candidate = youtube_thumbnail_from_html(html)
+        if candidate:
+            return candidate
+
         if debug:
             # Distinguish "the tag isn't there" from "the tag's there but our
             # regex didn't match its exact attribute order/quoting" -- the
@@ -386,6 +417,8 @@ def extract_thumbnail(entry) -> str | None:
         match = IMG_SRC_RE.search(html)
         if match:
             candidates.append(match.group(1))
+    if entry.get("content"):
+        candidates.append(youtube_thumbnail_from_html(entry["content"][0].get("value", "")))
     for candidate in candidates:
         if candidate and not looks_like_logo(candidate):
             return candidate
