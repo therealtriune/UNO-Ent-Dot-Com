@@ -94,8 +94,8 @@ CATEGORIES = [
     ("rumors", "Rumors"),
     ("videos", "Videos"),
     ("music", "Music"),
-    ("opinion", "Opinion"),
     ("sports", "Sports"),
+    ("opinion", "Opinion"),
 ]
 CATEGORY_LABELS = dict(CATEGORIES)
 
