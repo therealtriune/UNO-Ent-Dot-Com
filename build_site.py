@@ -25,7 +25,7 @@ Categories are a curation layer, not a publisher directory: "exclusives" and
 kind of label is specific to how XXL or HotNewHipHop organize their own site,
 not something a reader browsing UNO Ent needs. Those stories still show up
 in the main feed and in whichever of the six real categories fits them.
-"Sports" (basketball, football, boxing, UFC via ESPN's RSS feeds) is UNO
+"Sports" (basketball, football, boxing, UFC via Yahoo Sports' RSS feeds) is UNO
 Ent's one crossover section outside the hip-hop/culture beat.
 
 Homepage cards link to the internal article page first — NOT straight out to
@@ -198,6 +198,26 @@ DEFAULT_OG_IMAGE = f"{SITE_URL}/og-image.png"
 SITE_DESCRIPTION = (
     "The latest hip-hop news, rumors, videos, music, and opinion. Where culture gathers."
 )
+
+# Google Tag Manager container for unoent.com (GTM-KNZNCCPT). Feeds a GA4
+# property via a "Google Tag" configuration tag set up inside GTM itself --
+# nothing about the GA4 measurement ID lives in this file, so swapping
+# analytics providers later only ever means changing tags inside GTM, never
+# touching the site templates again.
+GTM_CONTAINER_ID = "GTM-KNZNCCPT"
+
+GTM_HEAD_SNIPPET = f"""<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
+new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+}})(window,document,'script','dataLayer','{GTM_CONTAINER_ID}');</script>
+<!-- End Google Tag Manager -->"""
+
+GTM_BODY_SNIPPET = f"""<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={GTM_CONTAINER_ID}"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->"""
 
 # ---------------------------------------------------------------------------
 # Shared stylesheet
@@ -664,6 +684,7 @@ def build_page(page_num: int, total_pages: int):
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
+{GTM_HEAD_SNIPPET}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
@@ -671,6 +692,7 @@ def build_page(page_num: int, total_pages: int):
 <link rel="stylesheet" href="{prefix}style.css">
 </head>
 <body>
+{GTM_BODY_SNIPPET}
 {header_html(prefix, "all")}
 <main>
   <div class="grid">
@@ -759,6 +781,7 @@ def build_category(cat_key: str, cat_label: str):
         html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
+{GTM_HEAD_SNIPPET}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{escape(title)}</title>
@@ -766,6 +789,7 @@ def build_category(cat_key: str, cat_label: str):
 <link rel="stylesheet" href="{prefix}style.css">
 </head>
 <body>
+{GTM_BODY_SNIPPET}
 {header_html(prefix, cat_key)}
 <main>
   <div class="grid">
@@ -804,6 +828,7 @@ def build_article(a: dict):
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
+{GTM_HEAD_SNIPPET}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{escape(title)}</title>
@@ -811,6 +836,7 @@ def build_article(a: dict):
 <link rel="stylesheet" href="{prefix}style.css">
 </head>
 <body>
+{GTM_BODY_SNIPPET}
 {header_html(prefix, a.get("category"))}
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
@@ -939,6 +965,7 @@ def build_legal_page(slug: str, title: str, body_html: str):
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
+{GTM_HEAD_SNIPPET}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{full_title}</title>
@@ -946,6 +973,7 @@ def build_legal_page(slug: str, title: str, body_html: str):
 <link rel="stylesheet" href="{prefix}style.css">
 </head>
 <body>
+{GTM_BODY_SNIPPET}
 {header_html(prefix)}
 <div class="legal-wrap">
   <h1>{title}</h1>
