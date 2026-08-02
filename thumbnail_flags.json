@@ -56,6 +56,22 @@
     "issue": "missing_thumbnail"
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/ad5e71deedd51979dc203cc0b6d76e1fbeb06cc64df31b99e962b966ffaa0074/lightyear_networkapi/resizefill_w1200;quality_80;format_webp/https:%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Fc9480bab-df6a-4da5-acde-17e8b3f78f57",
+    "links": [
+      "https://sports.yahoo.com/nfl/article/saints-wr-jalynn-polk-retires-from-football-at-age-24-203541145.html",
+      "https://sports.yahoo.com/nfl/article/saints-wr-jalynn-polk-retires-from-nfl-at-age-24-reports-203541145.html"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/ad5e71deedd51979dc203cc0b6d76e1fbeb06cc64df31b99e962b966ffaa0074/lightyear_networkapi/resizefill_w1200;quality_80;format_webp/https:%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Fc9480bab-df6a-4da5-acde-17e8b3f78f57",
+    "links": [
+      "https://sports.yahoo.com/nfl/article/saints-wr-jalynn-polk-retires-from-football-at-age-24-203541145.html",
+      "https://sports.yahoo.com/nfl/article/saints-wr-jalynn-polk-retires-from-nfl-at-age-24-reports-203541145.html"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://s.yimg.com/lo/mysterio/api/0be2b11f36539e4a3b50dc3dfd3451f984078fc7ed55bea06b55035961703386/lightyear_networkapi/resizefill_w1024_h576;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2F1d69aec1af02949b24063ee8a5c0d6c7",
     "links": [
@@ -98,7 +114,7 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/07/photo-output-9-scaled-e1785511436226.jpeg",
     "links": [
       "https://undergroundhiphopblog.com/singles/mike-summers-a-k-a-seven-produces-t-fs-feature-heavy-roc-nation-debut-skanless-summers-the-legend-of-maniac-blue-album-review/",
