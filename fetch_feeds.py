@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-UNO Entertainment — feed aggregation script.
+UNO Entertainment â feed aggregation script.
 
 Pulls the latest posts from each source's RSS feed, normalizes them into a
 common shape (source, title, excerpt, summary, thumbnail, link, date), and
@@ -10,8 +10,8 @@ build_site.py to regenerate the homepage and article pages.
 
 RETENTION POLICY: articles.json is a permanent archive, not a rolling
 snapshot. Every run loads whatever's already on disk, skips any article
-whose link it's already seen (existing fields — including any manually
-patched thumbnail — are left untouched), and only fetches/appends articles
+whose link it's already seen (existing fields â including any manually
+patched thumbnail â are left untouched), and only fetches/appends articles
 it hasn't recorded before. Nothing is ever dropped here just because it
 aged out of a source's RSS feed. The one and only removal rule lives in
 check_links.py: an article is deleted from the site if and only if its
@@ -21,22 +21,22 @@ outbound link is confirmed dead (404/410/451). Run that script separately
 WHERE "SUMMARY" COMES FROM (read this if you're building toward in-house):
   Every article page shows a short UNO Ent-voiced summary before linking out
   to the original story. Right now generate_summary() below does a simple
-  extractive summary — it pulls the opening sentences of the full article
+  extractive summary â it pulls the opening sentences of the full article
   body. That's a reasonable default, but it's still close to the source's
   own words.
 
   The natural upgrade path, in order:
     1. Swap generate_summary() for a call to an LLM (e.g. the Claude API)
        that reads full_text and writes 2-3 original sentences in UNO Ent's
-       voice. This is a small change — see the commented example in
+       voice. This is a small change â see the commented example in
        generate_summary() below.
     2. Once UNO Ent has writers, replace generate_summary()'s output with
        actual staff-written summaries or full original articles, stored
-       against the same slug. Nothing else in the site needs to change —
+       against the same slug. Nothing else in the site needs to change â
        build_site.py just renders whatever's in the "summary" field.
 
 Requires: pip install feedparser
-(feedparser handles gzip/compressed feeds automatically — some of the sources
+(feedparser handles gzip/compressed feeds automatically â some of the sources
 below serve compressed RSS that simple HTTP fetchers can choke on, so don't
 swap this out for a bare requests.get() without decompression handling.)
 """
@@ -108,6 +108,27 @@ OG_IMAGE_RE = re.compile(
 )
 OG_IMAGE_RE_ALT = re.compile(
     r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\']og:image["\']', re.IGNORECASE
+)
+# Fallback for the rare case where a feed entry's own <title>/<summary> come
+# back empty -- confirmed on two Yahoo Sports posts (a /videos/ post and a
+# /slideshows/ post): their RSS entries carry no title and no description at
+# all, even though the page itself has both via og:title/og:description.
+# Only used by fetch_real_title_and_excerpt() below, which is only called
+# when the normal RSS-derived title is empty, so this doesn't add a request
+# to the common path.
+OG_TITLE_RE = re.compile(
+    r'<meta[^>]+(?:property|name)=["\']og:title["\'][^>]+content=["\']([^"\']+)["\']', re.IGNORECASE
+)
+OG_TITLE_RE_ALT = re.compile(
+    r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\']og:title["\']', re.IGNORECASE
+)
+OG_DESC_RE = re.compile(
+    r'<meta[^>]+(?:property|name)=["\'](?:og:description|description)["\'][^>]+content=["\']([^"\']+)["\']',
+    re.IGNORECASE,
+)
+OG_DESC_RE_ALT = re.compile(
+    r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:description|description)["\']',
+    re.IGNORECASE,
 )
 PINTEREST_MEDIA_RE = re.compile(
     r'pinterest\.com/pin/create/button[^"\']*[?&]media=([^"\'&]+)', re.IGNORECASE
@@ -225,7 +246,7 @@ def generate_summary(title: str, full_text: str, fallback_excerpt: str) -> str:
     Produce the 2-3 sentence summary shown on the article page, before the
     outbound link to the source.
 
-    Default behavior: extractive — take the first few sentences of the full
+    Default behavior: extractive â take the first few sentences of the full
     article body. Good enough to ship with, but it stays close to the
     source's own phrasing, which is worth improving on.
 
@@ -250,7 +271,7 @@ def generate_summary(title: str, full_text: str, fallback_excerpt: str) -> str:
         return response.content[0].text.strip()
 
     That call costs a fraction of a cent per article and gives you an
-    original summary in UNO Ent's own voice — which is the version worth
+    original summary in UNO Ent's own voice â which is the version worth
     keeping once you're ready to make this feel less like syndication and
     more like your own editorial desk.
     """
@@ -263,7 +284,7 @@ def generate_summary(title: str, full_text: str, fallback_excerpt: str) -> str:
 
 
 # The 6 categories UNO Ent actually filters by. This is deliberately not the
-# same list as what source RSS feeds tag things with — feeds throw in labels
+# same list as what source RSS feeds tag things with â feeds throw in labels
 # like "Exclusive," "Feature," "Source Sports," etc. that are specific to how
 # that publisher organizes their own site. Those tags get read below (as a
 # hint) but never turn into their own filter; anything that isn't clearly
@@ -272,7 +293,7 @@ def generate_summary(title: str, full_text: str, fallback_excerpt: str) -> str:
 # directly via SOURCE_CATEGORY_OVERRIDE for the sports feeds.
 VALID_CATEGORIES = {"news", "rumors", "videos", "music", "opinion", "sports"}
 
-# RSS <category> tags → our taxonomy. Left side is lowercased substring match
+# RSS <category> tags â our taxonomy. Left side is lowercased substring match
 # against the tags a source puts on the entry.
 CATEGORY_TAG_MAP = {
     "rumor": "rumors", "gossip": "rumors", "dating": "rumors", "beef": "rumors",
@@ -296,12 +317,12 @@ def categorize(title: str, source_tags: list[str]) -> str:
     Assigns one of VALID_CATEGORIES. Order of preference:
       1. A source RSS <category> tag that maps cleanly onto our taxonomy.
       2. A keyword match against the title.
-      3. Default to "news" — the safe fallback for straight reporting,
+      3. Default to "news" â the safe fallback for straight reporting,
          legal/business news, and anything else that doesn't clearly fit
          rumors/videos/music/opinion.
 
     To upgrade this to something smarter than keyword-matching, swap it for
-    an LLM call the same way generate_summary() suggests — a single prompt
+    an LLM call the same way generate_summary() suggests â a single prompt
     that returns one of the 5 category keys works well and costs about the
     same as the summary call.
     """
@@ -400,6 +421,31 @@ def fetch_real_thumbnail(article_url: str, debug: bool = False) -> str | None:
         if debug:
             print(f"    [thumbnail] {article_url}: {type(e).__name__}: {e}")
     return None
+
+
+def fetch_real_title_and_excerpt(article_url: str) -> tuple[str, str]:
+    """
+    Fallback for feed entries whose <title>/<summary> came back empty from
+    feedparser -- confirmed on Yahoo Sports /videos/ and /slideshows/ posts,
+    which apparently ship RSS entries with no title or description field at
+    all. Fetches the page once and pulls og:title / og:description out of
+    it. Only called from fetch_source() when title is already empty, so this
+    never adds a request on the normal path where the feed title is present.
+    """
+    if not article_url:
+        return "", ""
+    try:
+        resp = requests.get(article_url, timeout=THUMBNAIL_TIMEOUT, headers=REQUEST_HEADERS)
+        if resp.status_code != 200:
+            return "", ""
+        html = resp.text
+        title_match = OG_TITLE_RE.search(html) or OG_TITLE_RE_ALT.search(html)
+        title = unescape(title_match.group(1)).strip() if title_match else ""
+        desc_match = OG_DESC_RE.search(html) or OG_DESC_RE_ALT.search(html)
+        excerpt = unescape(desc_match.group(1)).strip() if desc_match else ""
+        return title, excerpt
+    except requests.RequestException:
+        return "", ""
 
 
 def extract_thumbnail(entry) -> str | None:
@@ -504,6 +550,20 @@ def fetch_source(name: str, url: str, known_links: set[str]) -> list[dict]:
 
         title = clean_text(entry.get("title", ""))
         excerpt = clean_text(entry.get("summary", ""))[:EXCERPT_LENGTH].rstrip()
+
+        if not title:
+            fallback_title, fallback_excerpt = fetch_real_title_and_excerpt(link)
+            title = fallback_title
+            if not excerpt:
+                excerpt = fallback_excerpt[:EXCERPT_LENGTH].rstrip()
+            if not title:
+                # Feed gave no title AND the page itself has no og:title --
+                # skip rather than archive an untitled/unslugged record that
+                # would collide with every other untitled record at the ""
+                # slug. Rare; will be picked up on a later run if the page
+                # adds a title, since it's still unseen (not in known_links).
+                print(f"  [!] {name}: no title for {link} -- skipping")
+                continue
 
         # content:encoded (full article body) if the feed provides it,
         # otherwise fall back to the RSS description.
