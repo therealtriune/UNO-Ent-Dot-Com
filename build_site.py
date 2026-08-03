@@ -1021,11 +1021,37 @@ def build_legal_page(slug: str, title: str, body_html: str):
         f.write(html)
 
 
+def prune_stale_article_pages():
+    """
+    Removes articles/<slug>/ directories left over from articles that are no
+    longer in articles.json (e.g. dropped by check_links.py for a confirmed
+    dead source link). build_article() only ever writes/overwrites pages for
+    articles currently in ARTICLES -- it never deletes anything -- so without
+    this, a removed article's page stays live and reachable at its old URL
+    forever, even after it's gone from every listing on the site. Confirmed
+    on the HotNewHipHop Vini Jr/Jay-Z sneaker post: removed from
+    articles.json, but articles/vini-jr-.../index.html kept serving fine.
+    """
+    import os
+    import shutil
+    if not os.path.isdir("articles"):
+        return
+    current_slugs = {a["slug"] for a in ARTICLES}
+    removed = 0
+    for entry in os.listdir("articles"):
+        if entry not in current_slugs and os.path.isdir(f"articles/{entry}"):
+            shutil.rmtree(f"articles/{entry}")
+            removed += 1
+    if removed:
+        print(f"Pruned {removed} stale article page(s) no longer in articles.json")
+
+
 def main():
     with open("style.css", "w") as f:
         f.write(STYLE_CSS)
     total_pages = build_pages()
     build_categories()
+    prune_stale_article_pages()
     for a in ARTICLES:
         build_article(a)
     build_legal_page("privacy-policy", "Privacy Policy", PRIVACY_POLICY_BODY)
