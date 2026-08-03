@@ -626,7 +626,19 @@ def main():
     except (FileNotFoundError, json.JSONDecodeError):
         existing = []
 
-    known_links = {a["link"] for a in existing if a.get("link")}
+    # Links confirmed dead by check_links.py get recorded in dead_links.json so
+    # they're never re-added -- without this, a source's RSS feed can keep
+    # serving a stale entry for a page that 404s (confirmed with the
+    # HotNewHipHop Vini Jr/Jay-Z sneaker post: check_links.py removed it, then
+    # the very next run re-added it straight from the feed, since removal
+    # alone doesn't stop a source from continuing to list a dead link).
+    try:
+        with open("dead_links.json") as f:
+            dead_links = set(json.load(f))
+    except (FileNotFoundError, json.JSONDecodeError):
+        dead_links = set()
+
+    known_links = {a["link"] for a in existing if a.get("link")} | dead_links
     starting_count = len(existing)
 
     new_articles = []
