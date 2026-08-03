@@ -2,5 +2,17 @@
   {
     "link": "https://www.hotnewhiphop.com/1004487-vini-jr-jay-z-rare-jordans-sneaker-news",
     "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://sports.yahoo.com/articles/arman-tsarukyan-steamrolls-ankit-bainpuriya-011259511.html",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/312dc55eae26866adafc768f29e8978b55a45ba7a2f6ab40933d05e40df6e703/lightyear_networkapi/resizefill_w1024_h576;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2Fa06cdf3919b872f20dbae6cbeb35ed65",
+    "links": [
+      "https://sports.yahoo.com/articles/holley-sotomi-reacts-boxing-silver-140343988.html",
+      "https://sports.yahoo.com/articles/holley-sotomi-wins-silver-split-123902156.html"
+    ]
   }
 ]
