@@ -108,6 +108,20 @@ def main():
             json.dump(kept, f, indent=2)
         print(f"\nUpdated articles.json — removed {len(removed)} dead link(s).")
         print("Run build_site.py to regenerate the site without them.")
+
+        # Record these links permanently so fetch_feeds.py never re-adds them.
+        # Without this, a source's RSS feed can keep serving a stale entry for
+        # a page that's confirmed 404/410/451 -- removing it here alone
+        # doesn't stop the very next feed pull from pulling it right back in.
+        try:
+            with open("dead_links.json") as f:
+                dead_links = set(json.load(f))
+        except (FileNotFoundError, json.JSONDecodeError):
+            dead_links = set()
+        dead_links.update(a["link"] for a in removed if a.get("link"))
+        with open("dead_links.json", "w") as f:
+            json.dump(sorted(dead_links), f, indent=2)
+        print(f"Recorded {len(removed)} link(s) in dead_links.json so they won't come back.")
     else:
         print("\nNo dead links found — articles.json unchanged.")
 
