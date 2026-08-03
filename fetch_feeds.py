@@ -77,6 +77,7 @@ SOURCES = [
     ("Yahoo Sports NFL", "https://sports.yahoo.com/nfl/rss.xml"),
     ("Yahoo Sports Boxing", "https://sports.yahoo.com/boxing/rss.xml"),
     ("Yahoo Sports MMA", "https://sports.yahoo.com/mma/rss.xml"),
+    ("TMZ", "https://www.tmz.com/rss.xml"),
 ]
 
 # Sources listed here always get this category, bypassing categorize()
@@ -87,6 +88,12 @@ SOURCE_CATEGORY_OVERRIDE = {
     "Yahoo Sports NFL": "sports",
     "Yahoo Sports Boxing": "sports",
     "Yahoo Sports MMA": "sports",
+    # TMZ is a celebrity gossip outlet -- nearly everything it publishes is
+    # rumor/gossip content by nature, so route it straight to "rumors"
+    # rather than running it through categorize()'s keyword matching, which
+    # would default most of it to "news" since TMZ headlines rarely contain
+    # our rumor keywords.
+    "TMZ": "rumors",
 }
 
 MAX_PER_SOURCE = 12
