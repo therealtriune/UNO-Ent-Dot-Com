@@ -14,5 +14,21 @@
   {
     "link": "https://sports.yahoo.com/articles/islam-makhachev-rejects-khabib-retirement-052813758.html",
     "issue": "missing_thumbnail"
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/e167adb6e0065499f58aa2ab0b3fe4526c4e74fc532c27017dbcd4faf9c0736d/lightyear_networkapi/resizefill_w1200;quality_80;format_webp/https:%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F803d693d-a256-46bd-939c-773b3d5607c1",
+    "links": [
+      "https://sports.yahoo.com/boxing/article/boxing-watchlist-augusts-5-cant-miss-fights-from-teofimo-lopez-vs-rolly-romero-to-moses-itaumas-return-191821062.html",
+      "https://sports.yahoo.com/boxing/article/boxing-watchlist-augusts-5-cant-miss-fights-from-teofimo-lopez-vs-rolly-romero-to-moses-itaumas-big-moment-191821062.html"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/e167adb6e0065499f58aa2ab0b3fe4526c4e74fc532c27017dbcd4faf9c0736d/lightyear_networkapi/resizefill_w1200;quality_80;format_webp/https:%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F803d693d-a256-46bd-939c-773b3d5607c1",
+    "links": [
+      "https://sports.yahoo.com/boxing/article/boxing-watchlist-augusts-5-cant-miss-fights-from-teofimo-lopez-vs-rolly-romero-to-moses-itaumas-return-191821062.html",
+      "https://sports.yahoo.com/boxing/article/boxing-watchlist-augusts-5-cant-miss-fights-from-teofimo-lopez-vs-rolly-romero-to-moses-itaumas-big-moment-191821062.html"
+    ]
   }
 ]
