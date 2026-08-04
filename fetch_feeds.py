@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-UNO Entertainment â feed aggregation script.
+UNO Entertainment Ã¢ÂÂ feed aggregation script.
 
 Pulls the latest posts from each source's RSS feed, normalizes them into a
 common shape (source, title, excerpt, summary, thumbnail, link, date), and
@@ -10,8 +10,8 @@ build_site.py to regenerate the homepage and article pages.
 
 RETENTION POLICY: articles.json is a permanent archive, not a rolling
 snapshot. Every run loads whatever's already on disk, skips any article
-whose link it's already seen (existing fields â including any manually
-patched thumbnail â are left untouched), and only fetches/appends articles
+whose link it's already seen (existing fields Ã¢ÂÂ including any manually
+patched thumbnail Ã¢ÂÂ are left untouched), and only fetches/appends articles
 it hasn't recorded before. Nothing is ever dropped here just because it
 aged out of a source's RSS feed. The one and only removal rule lives in
 check_links.py: an article is deleted from the site if and only if its
@@ -21,22 +21,22 @@ outbound link is confirmed dead (404/410/451). Run that script separately
 WHERE "SUMMARY" COMES FROM (read this if you're building toward in-house):
   Every article page shows a short UNO Ent-voiced summary before linking out
   to the original story. Right now generate_summary() below does a simple
-  extractive summary â it pulls the opening sentences of the full article
+  extractive summary Ã¢ÂÂ it pulls the opening sentences of the full article
   body. That's a reasonable default, but it's still close to the source's
   own words.
 
   The natural upgrade path, in order:
     1. Swap generate_summary() for a call to an LLM (e.g. the Claude API)
        that reads full_text and writes 2-3 original sentences in UNO Ent's
-       voice. This is a small change â see the commented example in
+       voice. This is a small change Ã¢ÂÂ see the commented example in
        generate_summary() below.
     2. Once UNO Ent has writers, replace generate_summary()'s output with
        actual staff-written summaries or full original articles, stored
-       against the same slug. Nothing else in the site needs to change â
+       against the same slug. Nothing else in the site needs to change Ã¢ÂÂ
        build_site.py just renders whatever's in the "summary" field.
 
 Requires: pip install feedparser
-(feedparser handles gzip/compressed feeds automatically â some of the sources
+(feedparser handles gzip/compressed feeds automatically Ã¢ÂÂ some of the sources
 below serve compressed RSS that simple HTTP fetchers can choke on, so don't
 swap this out for a bare requests.get() without decompression handling.)
 """
@@ -253,7 +253,7 @@ def generate_summary(title: str, full_text: str, fallback_excerpt: str) -> str:
     Produce the 2-3 sentence summary shown on the article page, before the
     outbound link to the source.
 
-    Default behavior: extractive â take the first few sentences of the full
+    Default behavior: extractive Ã¢ÂÂ take the first few sentences of the full
     article body. Good enough to ship with, but it stays close to the
     source's own phrasing, which is worth improving on.
 
@@ -278,7 +278,7 @@ def generate_summary(title: str, full_text: str, fallback_excerpt: str) -> str:
         return response.content[0].text.strip()
 
     That call costs a fraction of a cent per article and gives you an
-    original summary in UNO Ent's own voice â which is the version worth
+    original summary in UNO Ent's own voice Ã¢ÂÂ which is the version worth
     keeping once you're ready to make this feel less like syndication and
     more like your own editorial desk.
     """
@@ -291,7 +291,7 @@ def generate_summary(title: str, full_text: str, fallback_excerpt: str) -> str:
 
 
 # The 6 categories UNO Ent actually filters by. This is deliberately not the
-# same list as what source RSS feeds tag things with â feeds throw in labels
+# same list as what source RSS feeds tag things with Ã¢ÂÂ feeds throw in labels
 # like "Exclusive," "Feature," "Source Sports," etc. that are specific to how
 # that publisher organizes their own site. Those tags get read below (as a
 # hint) but never turn into their own filter; anything that isn't clearly
@@ -300,7 +300,7 @@ def generate_summary(title: str, full_text: str, fallback_excerpt: str) -> str:
 # directly via SOURCE_CATEGORY_OVERRIDE for the sports feeds.
 VALID_CATEGORIES = {"news", "rumors", "videos", "music", "opinion", "sports"}
 
-# RSS <category> tags â our taxonomy. Left side is lowercased substring match
+# RSS <category> tags Ã¢ÂÂ our taxonomy. Left side is lowercased substring match
 # against the tags a source puts on the entry.
 CATEGORY_TAG_MAP = {
     "rumor": "rumors", "gossip": "rumors", "dating": "rumors", "beef": "rumors",
@@ -324,12 +324,12 @@ def categorize(title: str, source_tags: list[str]) -> str:
     Assigns one of VALID_CATEGORIES. Order of preference:
       1. A source RSS <category> tag that maps cleanly onto our taxonomy.
       2. A keyword match against the title.
-      3. Default to "news" â the safe fallback for straight reporting,
+      3. Default to "news" Ã¢ÂÂ the safe fallback for straight reporting,
          legal/business news, and anything else that doesn't clearly fit
          rumors/videos/music/opinion.
 
     To upgrade this to something smarter than keyword-matching, swap it for
-    an LLM call the same way generate_summary() suggests â a single prompt
+    an LLM call the same way generate_summary() suggests Ã¢ÂÂ a single prompt
     that returns one of the 5 category keys works well and costs about the
     same as the summary call.
     """
@@ -644,6 +644,41 @@ def main():
     new_articles = []
     for name, url in SOURCES:
         new_articles.extend(fetch_source(name, url, known_links))
+
+    # Sports was drowning out every other category -- 407 of 842 articles
+    # (48%) were sports before this went in, driven by four high-volume
+    # Yahoo Sports feeds vastly outproducing every hip-hop/culture source.
+    # Going forward, each run reshapes its own batch of newly-fetched
+    # articles toward a fixed target mix instead of just appending
+    # everything a feed happened to publish that hour. Categories that are
+    # naturally scarce (opinion, videos) simply keep whatever they
+    # produced -- the cap only ever bites on oversupplied categories.
+    TARGET_MIX_PCT = {
+        "news": 30,
+        "music": 15,
+        "rumors": 15,
+        "videos": 15,
+        "sports": 15,
+        "opinion": 10,
+    }
+    total_fetched = len(new_articles)
+    if total_fetched:
+        by_category = {}
+        for a in new_articles:
+            by_category.setdefault(a["category"], []).append(a)
+        balanced = []
+        deferred = 0
+        for cat, articles in by_category.items():
+            pct = TARGET_MIX_PCT.get(cat, 0)
+            target = (total_fetched * pct + 99) // 100
+            if len(articles) > target:
+                articles.sort(key=lambda a: a["date"], reverse=True)
+                deferred += len(articles) - target
+                articles = articles[:target]
+            balanced.extend(articles)
+        if deferred:
+            print(f"[balance] deferred {deferred} article(s) this run to keep the category mix on target")
+        new_articles = balanced
 
     all_articles = existing + new_articles
     all_articles.sort(key=lambda a: a["date"], reverse=True)
