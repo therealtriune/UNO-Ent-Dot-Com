@@ -1,5 +1,17 @@
 [
   {
+    "link": "https://sports.yahoo.com/articles/quillan-salkilld-reflects-journey-ufc-065713871.html",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://sports.yahoo.com/articles/ufc-331-card-just-got-042649018.html",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://sports.yahoo.com/articles/jake-paul-wants-challenge-ufc-034443526.html",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/chargers-assistant-coach-max-mccaffrey-214756233.html",
     "issue": "missing_thumbnail"
   },
@@ -12,12 +24,14 @@
     "issue": "missing_thumbnail"
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Nolan-Wells.jpg",
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Sidney-Starr-Mugshot.png",
     "links": [
-      "https://allhiphop.com/news/nolan-wells-case-grows-more-chaotic-as-illinois-man-accused-of-threatening-two-witnesses/",
-      "https://allhiphop.com/news/ohio-woman-accused-of-making-29-bomb-threats-over-nolan-wells-case/"
-    ]
+      "https://allhiphop.com/news/sidney-starrs-pocket-delivers-bizarre-surprise-during-arrest/",
+      "https://allhiphop.com/news/sidney-starr-disputes-charges-as-arrest-warrants-reveal-hotel-allegation/",
+      "https://allhiphop.com/news/sidney-starr-faces-life-in-prison-after-child-molestation-arrest/"
+    ],
+    "use_count": 3
   },
   {
     "issue": "same_category_page",
