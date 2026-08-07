@@ -12,12 +12,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: update-feed
+  group: check-links
   cancel-in-progress: false
 
 jobs:
   check-links:
     runs-on: ubuntu-latest
+        timeout-minutes: 20
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
