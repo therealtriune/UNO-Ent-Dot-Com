@@ -654,12 +654,12 @@ def main():
     # naturally scarce (opinion, videos) simply keep whatever they
     # produced -- the cap only ever bites on oversupplied categories.
     TARGET_MIX_PCT = {
-    "news": 32,
-    "music": 18,
-    "rumors": 17,
-    "videos": 18,
-    "sports": 5,
-    "opinion": 10,
+        "news": 32,
+        "music": 18,
+        "rumors": 17,
+        "videos": 18,
+        "sports": 5,
+        "opinion": 10,
     }
     total_fetched = len(new_articles)
     if total_fetched:
