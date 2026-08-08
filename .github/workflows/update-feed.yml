@@ -4,7 +4,7 @@ name: Update UNO Entertainment Feed
 # also be triggered manually from the Actions tab.
 on:
   schedule:
-    - cron: "*/30 * * * *"   # every 30 minutes. GitHub may delay this a bit
+    - cron: "*/15 * * * *"   # every 15 minutes. GitHub may delay this a bit
                               # under load — schedules aren't to-the-second.
   workflow_dispatch: {}
 
@@ -19,7 +19,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-        timeout-minutes: 10
+    timeout-minutes: 10
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
