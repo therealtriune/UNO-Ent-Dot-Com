@@ -24,11 +24,29 @@
     "issue": "missing_thumbnail"
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2023/06/hollywood-unlocked-logo-300x63-1.png",
     "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
+      "https://hollywoodunlocked.com/michael-jacksons-nephew-tj-offers-prayers-to-perez-hilton-following-self-harm-incident-despite-him-not-being-nice-to-his-family/",
+      "https://hollywoodunlocked.com/florida-dad-allegedly-killed-his-infant-son-with-a-leaf-blower-because-he-thought-it-would-be-fun/",
+      "https://hollywoodunlocked.com/father-of-apalachee-high-school-shooter-sentenced-to-15-years-in-prison/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
+      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
+      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
     ]
   },
   {
@@ -48,14 +66,6 @@
       "https://allhiphop.com/news/sidney-starr-faces-life-in-prison-after-child-molestation-arrest/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Nolan-Wells.jpg",
-    "links": [
-      "https://allhiphop.com/news/nolan-wells-case-grows-more-chaotic-as-illinois-man-accused-of-threatening-two-witnesses/",
-      "https://allhiphop.com/news/ohio-woman-accused-of-making-29-bomb-threats-over-nolan-wells-case/"
-    ]
   },
   {
     "issue": "same_category_page",
