@@ -515,7 +515,7 @@ footer a:hover { color: var(--white); }
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
 }
 .search-suggest-item {
-    display: flex;
+  display: flex;
   align-items: center;
   gap: 10px;
   padding: 8px 12px;
@@ -759,9 +759,11 @@ SEARCH_SUGGEST_JS = """
     });
     input.addEventListener("blur", function () { setTimeout(closePanel, 150); });
     document.addEventListener("click", function (e) { if (!bar.contains(e.target)) closePanel(); });
-    });
+  });
 })();
 """
+
+
 def footer_html(prefix: str) -> str:
     year = datetime.now(timezone.utc).year
     section_links = "".join(
@@ -803,7 +805,8 @@ def footer_html(prefix: str) -> str:
     </div>
   </div>
 </footer>
-{cookie_banner_html(prefix)}"""
+{cookie_banner_html(prefix)}
+<script>{SEARCH_SUGGEST_JS}</script>"""
 
 
 def meta_html(prefix: str, title: str, description: str, canonical_url: str, image_url: str = None) -> str:
