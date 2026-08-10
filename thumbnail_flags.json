@@ -1,9 +1,5 @@
 [
   {
-    "link": "https://sports.yahoo.com/fantasy/article/fantasy-football-qb-preview-draft-strategy-rankings-fades-and-sleepers-173310318.html",
-    "issue": "missing_thumbnail"
-  },
-  {
     "link": "https://sports.yahoo.com/articles/bellator-vet-kimbo-slice-jr-044932839.html",
     "issue": "missing_thumbnail"
   },
@@ -34,6 +30,16 @@
   {
     "link": "https://sports.yahoo.com/articles/carlos-prates-says-ll-ignore-022054345.html",
     "issue": "missing_thumbnail"
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Crime-scene.jpg",
+    "links": [
+      "https://allhiphop.com/news/racist-nut-job-chud-the-builder-back-on-the-streets-after-making-1m-bond/",
+      "https://allhiphop.com/news/playa-pat-faces-life-after-federal-drug-network-conviction/",
+      "https://allhiphop.com/news/dc-rapper-fat-swagg-gunned-down-family-demands-justice/"
+    ],
+    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
