@@ -490,13 +490,28 @@ footer a:hover { color: var(--white); }
                           
 .header-search { order: 2; }
 @media (max-width: 760px) {
+  /* Collapse to an icon-only button on mobile -- there isn't room for logo +
+     full text input + hamburger on one row, so the input is visually hidden
+     and tapping the circular red button submits the (empty) form to
+     /search/, where the visitor types their query on a dedicated page. */
   .header-search {
     order: 2;
-    flex: 1 1 auto;
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
     max-width: none;
-    min-width: 40px;
+    min-width: 0;
     margin: 0;
-    padding: 3px 3px 3px 10px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+  .header-search .search-input { display: none; }
+  .header-search button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 }
 
