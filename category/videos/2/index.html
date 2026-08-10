@@ -62,6 +62,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main>
   <div class="grid">
     
+    <a class="card" href="/articles/was-that-a-push-footage-shows-keyshia-cole-skrilla-in-the-studio-folks/">
+      <img src="https://theshaderoom.com/wp-content/uploads/2026/08/Keyshia-Cole-and-Skrilla-seen-music-studio-fan-questions.jpg" alt="" loading="lazy" class="card-thumb">
+      <div class="card-body">
+        <div class="card-meta"><span class="card-category">Videos</span><span class="card-dot">&middot;</span>2 days ago</div>
+        <h2 class="card-title">Was That A Push? Footage Shows Keyshia Cole &amp; Skrilla In The Studio &amp; Folks Have Questions (VIDEO)</h2>
+        <p class="card-excerpt">Fans have questions after seeing a video of Keyshia Cole and Skrilla together in the studio. The footage comes amid an apparent hard launch between the two musi</p>
+        <span class="card-link">Read More &rarr;</span>
+      </div>
+    </a>
+
+    <a class="card" href="/articles/cymphonique-brings-the-vocals-as-her-appearance-has-fans-doin-a-double/">
+      <img src="https://theshaderoom.com/wp-content/uploads/2026/08/Thats-Who-Cymphonique-Brings-The-Vocals-As-Her-Drastic-Appearance-Has-Fans-Asking-Questions-In-New-Clip.jpg" alt="" loading="lazy" class="card-thumb">
+      <div class="card-body">
+        <div class="card-meta"><span class="card-category">Videos</span><span class="card-dot">&middot;</span>3 days ago</div>
+        <h2 class="card-title">Cymphonique Brings The Vocals As Her Appearance Has Fans Doin’ A Double Take (VIDEO)</h2>
+        <p class="card-excerpt">Whew! Cymphonique is reminding folks that her vocals are still top-tier, but it’s not just her voice that has social media buzzing. The singer and actress recen</p>
+        <span class="card-link">Read More &rarr;</span>
+      </div>
+    </a>
+
     <a class="card" href="/articles/watch-north-west-sings-about-being-used-after-canceling-debut-tour/">
       <img src="https://thesource.com/wp-content/uploads/2026/06/DSC01852_northwest.jpg" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
@@ -161,26 +181,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="card-link">Read More &rarr;</span>
       </div>
     </a>
-
-    <a class="card" href="/articles/claressa-shields-dismisses-eva-marcille-claps-back-after-mz-shyneka-cl/">
-      <img src="https://theshaderoom.com/wp-content/uploads/2026/08/Claressa-Shields-Dismisses-Eva-Marcille-Warning-Mz-Shyneka-Papoose-Question-Videos-1-e1785992881297.jpg" alt="" loading="lazy" class="card-thumb">
-      <div class="card-body">
-        <div class="card-meta"><span class="card-category">Videos</span><span class="card-dot">&middot;</span>4 days ago</div>
-        <h2 class="card-title">Claressa Shields Dismisses Eva Marcille &amp; Claps Back After Mz. Shyneka Clarifies Her Intention Behind Papoose Question (VIDEOS)</h2>
-        <p class="card-excerpt">Claressa Shields isn’t letting up on anyone who comes for her! That appears to be the case in her latest clapback against a Streetz 94.5 FM host, Mz. Shyneka Ri</p>
-        <span class="card-link">Read More &rarr;</span>
-      </div>
-    </a>
-
-    <a class="card" href="/articles/gloss-up-celebrates-walking-unassisted-for-the-first-time-after-nearly/">
-      <img src="https://theshaderoom.com/wp-content/uploads/2026/08/IMG_3931-e1785974967786.jpeg" alt="" loading="lazy" class="card-thumb">
-      <div class="card-body">
-        <div class="card-meta"><span class="card-category">Videos</span><span class="card-dot">&middot;</span>4 days ago</div>
-        <h2 class="card-title">Gloss Up Celebrates Walking Unassisted For The First Time After Nearly Losing Her Foot In A Car Accident (VIDEO)</h2>
-        <p class="card-excerpt">Gloss Up has been pushing through a difficult recovery after nearly losing her foot in a serious car accident. Since undergoing surgery in July, she has stepped</p>
-        <span class="card-link">Read More &rarr;</span>
-      </div>
-    </a>
   </div>
   
   
@@ -271,6 +271,65 @@ function unoCookieConsent() {
   var b = document.getElementById('uno-cookie-banner');
   if (b) b.hidden = true;
 }
+</script>
+<script>
+(function () {
+  var CATEGORY_LABELS = { news: "News", rumors: "Rumors", videos: "Videos", music: "Music", sports: "Sports", opinion: "Opinion" };
+  var indexPromise = null;
+  function loadIndex() { if (!indexPromise) { indexPromise = fetch("/search-index.json").then(function (r) { return r.json(); }); } return indexPromise; }
+  function escapeHtml(s) { return (s || "").replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function scoreArticle(a, tokens) {
+    var title = (a.title || "").toLowerCase(), excerpt = (a.excerpt || "").toLowerCase(), source = (a.source || "").toLowerCase(), s = 0;
+    for (var i = 0; i < tokens.length; i++) { var t = tokens[i]; if (!t) continue; if (title.indexOf(t) !== -1) s += 3; if (excerpt.indexOf(t) !== -1) s += 1; if (source.indexOf(t) !== -1) s += 1; }
+    return s;
+  }
+  document.querySelectorAll(".search-bar").forEach(function (bar) {
+    var input = bar.querySelector(".search-input");
+    if (!input) return;
+    var panel = document.createElement("div");
+    panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
+    var debounceTimer = null, activeIndex = -1;
+    function closePanel() { panel.hidden = true; panel.innerHTML = ""; activeIndex = -1; }
+    function highlight(items) {
+      items.forEach(function (it, i) { it.classList.toggle("active", i === activeIndex); });
+      if (activeIndex > -1 && items[activeIndex]) { items[activeIndex].scrollIntoView({ block: "nearest" }); }
+    }
+    function renderSuggestions(items, q) {
+      activeIndex = -1;
+      if (!items.length) { panel.innerHTML = '<div class="search-suggest-empty">No matches for &ldquo;' + escapeHtml(q) + '&rdquo;</div>'; panel.hidden = false; return; }
+      panel.innerHTML = items.map(function (a) {
+        var thumb = a.thumbnail ? '<img src="' + escapeHtml(a.thumbnail) + '" alt="" loading="lazy">' : '<img src="/uno-logo.png" alt="" loading="lazy" class="search-suggest-fallback">';
+        var cat = CATEGORY_LABELS[a.category];
+        return '<a href="/articles/' + a.slug + '/" class="search-suggest-item">' + thumb + '<span class="search-suggest-text"><span class="search-suggest-title">' + escapeHtml(a.title) + '</span>' + (cat ? '<span class="search-suggest-cat">' + cat + '</span>' : '') + '</span></a>';
+      }).join("") + '<a href="/search/?q=' + encodeURIComponent(q) + '" class="search-suggest-viewall">See all results for &ldquo;' + escapeHtml(q) + '&rdquo; &rarr;</a>';
+      panel.hidden = false;
+    }
+    function runQuery(q) {
+      loadIndex().then(function (data) {
+        var tokens = q.toLowerCase().split(/\s+/).filter(Boolean), scored = [];
+        for (var i = 0; i < data.length; i++) { var s = scoreArticle(data[i], tokens); if (s > 0) scored.push([s, data[i]]); }
+        scored.sort(function (a, b) { if (b[0] !== a[0]) return b[0] - a[0]; return new Date(b[1].date) - new Date(a[1].date); });
+        renderSuggestions(scored.slice(0, 6).map(function (p) { return p[1]; }), q);
+      }).catch(function () { closePanel(); });
+    }
+    input.addEventListener("input", function () {
+      var q = input.value.trim();
+      clearTimeout(debounceTimer);
+      if (q.length < 2) { closePanel(); return; }
+      debounceTimer = setTimeout(function () { runQuery(q); }, 150);
+    });
+    input.addEventListener("keydown", function (e) {
+      if (panel.hidden) return;
+      var items = panel.querySelectorAll(".search-suggest-item");
+      if (e.key === "ArrowDown") { e.preventDefault(); activeIndex = Math.min(activeIndex + 1, items.length - 1); highlight(items); }
+      else if (e.key === "ArrowUp") { e.preventDefault(); activeIndex = Math.max(activeIndex - 1, -1); highlight(items); }
+      else if (e.key === "Enter") { if (activeIndex > -1 && items[activeIndex]) { e.preventDefault(); window.location.href = items[activeIndex].getAttribute("href"); } }
+      else if (e.key === "Escape") { closePanel(); }
+    });
+    input.addEventListener("blur", function () { setTimeout(closePanel, 150); });
+    document.addEventListener("click", function (e) { if (!bar.contains(e.target)) closePanel(); });
+  });
+})();
 </script>
 </body>
 </html>
