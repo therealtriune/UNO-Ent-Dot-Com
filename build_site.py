@@ -501,7 +501,7 @@ footer a:hover { color: var(--white); }
     height: 40px;
     max-width: none;
     min-width: 0;
-    margin: 0;
+    margin: 0 0 0 auto;
     padding: 0;
     justify-content: center;
     border-radius: 50%;
