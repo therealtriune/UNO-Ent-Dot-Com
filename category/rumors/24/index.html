@@ -62,6 +62,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main>
   <div class="grid">
     
+    <a class="card" href="/articles/oop-rasheeda-frost-sparks-mixed-reactions-after-participating-in-viral/">
+      <img src="https://theshaderoom.com/wp-content/uploads/2026/08/Rasheeda-Kirk-Frost-Sparks-Mixed-Reactions-Participates-Viral-Trend-I-Aint-Leaving-Video-e1785779926452.jpg" alt="" loading="lazy" class="card-thumb">
+      <div class="card-body">
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>1 week ago</div>
+        <h2 class="card-title">Oop! Rasheeda Frost Sparks Mixed Reactions After Participating In Viral Trend Using “I Ain’t Leaving Kirk” Lyrics (VIDEO)</h2>
+        <p class="card-excerpt">Last July, Rasheeda Frost let her supporters know: “I ain’t never leaving Kirk.” That line alone had the freestyle buzzing across the internet. While some found</p>
+        <span class="card-link">Read More &rarr;</span>
+      </div>
+    </a>
+
     <a class="card" href="/articles/nolan-wells-friends-raise-money-for-legal-fund-say-they-re-wrongly-bla/">
       <img src="https://imagez.tmz.com/image/4d/16by9/2026/07/14/4d8192ed4ffb4c05b4ba68b265b26a1c_xl.jpg" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
@@ -171,16 +181,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="card-link">Read More &rarr;</span>
       </div>
     </a>
-
-    <a class="card" href="/articles/sopranos-star-vincent-pastore-death-emergency-responders-desperately-t/">
-      <img src="https://imagez.tmz.com/image/53/16by9/2026/08/03/537e16b01cbf4d7f9878b5045db79644_xl.jpg" alt="" loading="lazy" class="card-thumb">
-      <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>1 week ago</div>
-        <h2 class="card-title">&#x27;Sopranos&#x27; Star Vincent Pastore Death: Emergency Responders Desperately Tried to Save Actor</h2>
-        <p class="card-excerpt">&quot;Sopranos&quot; actor Vincent Pastore was treated by first responders before he was pronounced dead at his New York City home...TMZ has learned. Law enforcement so</p>
-        <span class="card-link">Read More &rarr;</span>
-      </div>
-    </a>
   </div>
   
   
@@ -286,6 +286,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

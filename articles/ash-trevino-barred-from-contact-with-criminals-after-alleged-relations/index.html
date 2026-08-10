@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">just now</div>
+  <div class="article-meta">1 hour ago</div>
   <h1 class="article-title">Ash Trevino Barred From Contact With Criminals After Alleged Relationships With Inmates</h1>
   <img class="article-hero" src="https://imagez.tmz.com/image/60/16by9/2026/08/10/6091e4c5c2ab47b29881663e6cd598be_xl.jpg" alt="">
   <p class="article-summary">Social media star Ash Trevino is being ordered to avoid men and women with criminal records now that&#x27;s avoided jail time in her welfare fraud case … which is interesting, given authorities claim she had relationships with 50-75 inmates over the…</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

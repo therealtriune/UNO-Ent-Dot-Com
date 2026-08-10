@@ -62,6 +62,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main>
   <div class="grid">
     
+    <a class="card" href="/articles/influencer-ash-trevino-has-received-over-20-cameo-requests-since-guilt/">
+      <img src="https://imagez.tmz.com/image/2d/16by9/2026/08/07/2dedaa437f0a425c87eb9615c0766b94_xl.jpg" alt="" loading="lazy" class="card-thumb">
+      <div class="card-body">
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>2 days ago</div>
+        <h2 class="card-title">Influencer Ash Trevino Has Received Over 20 Cameo Requests Since Guilty Plea</h2>
+        <p class="card-excerpt">Ash Trevino&#x27;s gotta pay five-figures in restitution after pleading guilty to fraud this week...but she&#x27;s already got some Cameo cash coming in. TMZ has learne</p>
+        <span class="card-link">Read More &rarr;</span>
+      </div>
+    </a>
+
     <a class="card" href="/articles/rhoa-star-porsha-williams-scores-big-in-divorce-battle-gets-multimilli/">
       <img src="https://imagez.tmz.com/image/9e/16by9/2026/08/07/9ef5eecaf83b4c28a2d31232da44b188_xl.jpg" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
@@ -115,7 +125,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/in-n-out-shooting-horrifying-surveillance-footage-released/">
       <img src="https://imagez.tmz.com/image/ee/16by9/2026/08/07/ee3a6c74cb9e48e9b6ddfd3c3499e354_xl.jpg" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>2 days ago</div>
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>3 days ago</div>
         <h2 class="card-title">In-N-Out Shooting: Horrifying Surveillance Footage Released</h2>
         <p class="card-excerpt">Sickening new footage shows the recent mass shooting at an Idaho In-N-Out...and it&#x27;s tough to watch. Surveillance from inside and outside the Twin Falls locat</p>
         <span class="card-link">Read More &rarr;</span>
@@ -125,7 +135,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/summer-house-studs-carl-radke-vs-kyle-cooke-who-d-you-rather/">
       <img src="https://imagez.tmz.com/image/d2/16by9/2026/08/07/d2acabda40cf4ab090e30f9f5f4eaadc_xl.jpg" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>2 days ago</div>
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>3 days ago</div>
         <h2 class="card-title">&#x27;Summer House&#x27; Studs Carl Radke vs. Kyle Cooke Who&#x27;d You Rather?!</h2>
         <p class="card-excerpt">The &quot;Summer House&quot; crew and fans are still coolin&#x27; off from the Ciara vs. Amanda of it all, but Carl Radke and Kyle Cooke&#x27;s friendship is goin&#x27; strong and heati</p>
         <span class="card-link">Read More &rarr;</span>
@@ -168,16 +178,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>3 days ago</div>
         <h2 class="card-title">News Anchor Nearly Swears On Live TV After Seeing Car Crash in Real Time</h2>
         <p class="card-excerpt">Anything can happen on live TV...but news anchors don&#x27;t always catch themselves as well as this dude, who put the clamps on his mouth right before issuing a s</p>
-        <span class="card-link">Read More &rarr;</span>
-      </div>
-    </a>
-
-    <a class="card" href="/articles/dame-dash-calls-out-loren-lorosa-for-reporting-on-his-bankruptcy/">
-      <img src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Dame-Dash-Calls-Out-Loren-LoRosa-Reporting-Bankruptcy-scaled.jpg" alt="" loading="lazy" class="card-thumb">
-      <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>3 days ago</div>
-        <h2 class="card-title">Dame Dash Calls Out Loren LoRosa For Reporting On His Bankruptcy</h2>
-        <p class="card-excerpt">Loren LoRosa reported on a trustee questioning if Dame Dash is really bankrupt and asking for permission to sell Dame&#x27;s life rights. The post Dame Dash Calls Ou</p>
         <span class="card-link">Read More &rarr;</span>
       </div>
     </a>
@@ -286,6 +286,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

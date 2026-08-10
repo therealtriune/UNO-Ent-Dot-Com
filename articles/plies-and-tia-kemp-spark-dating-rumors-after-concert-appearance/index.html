@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">8 hours ago</div>
+  <div class="article-meta">9 hours ago</div>
   <h1 class="article-title">Plies And Tia Kemp Spark Dating Rumors After Concert Appearance</h1>
   <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2021/01/Screen-Shot-2021-01-15-at-1.06.50-PM-1004x628.png" alt="">
   <p class="article-summary">Plies may have just found the one woman capable of matching his particular brand of Florida swag. Bringing Tia Kemp onstage has the internet on fire…entertainment or entanglement. You already know Tia, affectionately called “Yuntie,” as already the center of attention.</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

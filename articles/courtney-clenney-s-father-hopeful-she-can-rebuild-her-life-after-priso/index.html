@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">2 hours ago</div>
+  <div class="article-meta">3 hours ago</div>
   <h1 class="article-title">Courtney Clenney&#x27;s Father Hopeful She Can Rebuild Her Life After Prison Sentence</h1>
   <img class="article-hero" src="https://imagez.tmz.com/image/af/16by9/2026/08/10/afac277d85904c2ab8d38b7a7582f29c_xl.jpg" alt="">
   <p class="article-summary">Courtney Clenney&#x27;s father, Kim, held court outside the courthouse Monday after his daughter pleaded guilty to manslaughter and was sentenced to 6 years in prison...and he hopes she&#x27;s able to rebuild her life when she gets out. In an emotional…</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

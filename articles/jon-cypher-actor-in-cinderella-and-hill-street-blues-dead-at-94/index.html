@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">just now</div>
+  <div class="article-meta">1 hour ago</div>
   <h1 class="article-title">Jon Cypher, Actor in &#x27;Cinderella&#x27; and &#x27;Hill Street Blues,&#x27; Dead at 94</h1>
   <img class="article-hero" src="https://imagez.tmz.com/image/41/16by9/2026/08/10/41f734ce0f5341ab815648625a14080c_xl.jpg" alt="">
   <p class="article-summary">Jon Cypher -- who famously played Prince Charming opposite Julie Andrews in the original TV production of &quot;Cinderella&quot; -- is dead. The actor died August 3 at his home in Central Point, Oregon, with his wife of 40 years, Carol Rosin, by his side...…</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

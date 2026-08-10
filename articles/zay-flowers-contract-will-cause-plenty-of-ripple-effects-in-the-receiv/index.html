@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">4 days ago</div>
+  <div class="article-meta">5 days ago</div>
   <h1 class="article-title">Zay Flowers contract will cause plenty of ripple effects in the receiver market</h1>
   <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/669bc6771a8edf11db3b6ceb5e0eef0a8bfa7ba8a247cac830fb9c354760e90f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F87c30463e0acd6dfbe7957a7ca048d18" alt="">
   <p class="article-summary">When the Ravens rewarded receiver Zay Flowers with a new deal that carries a new-money average of $35 million per year, plenty of other receivers surely took notice. The most obvious raised eyebrows belong to Rams receiver Puka Nacua and Cowboys receiver George Pickens. Nacua, who&#x27;s making $5.767 million in the final year of his rookie contract, has other issues that are complicating a long-term deal.</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

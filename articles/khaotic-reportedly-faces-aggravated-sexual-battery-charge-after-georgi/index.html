@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">20 hours ago</div>
+  <div class="article-meta">21 hours ago</div>
   <h1 class="article-title">Khaotic Reportedly Faces Aggravated Sexual Battery Charge After Georgia Extradition</h1>
   <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/Copy-of-AllHipHop.jpg" alt="">
   <p class="article-summary">Khaotic seemingly faces an aggravated sexual battery charge in Atlanta after the reality television personality was extradited from Miami following his arrest on an out of state fugitive warrant. The “Love &amp; Hip Hop: Miami” personality, whose legal name is Rubin Carlton McFadden, was booked in Atlanta on Aug. 5, 2026, according to an inmate record from the Atlanta Police Department.</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">3 hours ago</div>
+  <div class="article-meta">4 hours ago</div>
   <h1 class="article-title">Kylie Jenner&#x27;s Best Friend Stassie Skips 29th Birthday Celebration Amid Rumored Beef</h1>
   <img class="article-hero" src="https://imagez.tmz.com/image/d3/16by9/2026/08/10/d34332a7dad046bdbf9e65f19ae37742_xl.jpg" alt="">
   <p class="article-summary">Kylie Jenner&#x27;s longtime bestie Stassie Karanikolaou was noticeably absent from the reality star&#x27;s 29th birthday celebration...amid speculation the longtime gal pals may have hit a rough patch. Kylie celebrated her early birthday over the weekend…</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

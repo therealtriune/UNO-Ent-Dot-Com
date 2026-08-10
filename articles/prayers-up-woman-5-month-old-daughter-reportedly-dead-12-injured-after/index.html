@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">8 hours ago</div>
+  <div class="article-meta">9 hours ago</div>
   <h1 class="article-title">Prayers Up! Woman &amp; 5-Month-Old Daughter Reportedly Dead, 12 Injured After Boat Capsizes Near Statue Of Liberty</h1>
   <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Prayers-Up-Woman-amp-5-Month-Old-Daughter-Dead-12-Injured-After-Boat-Capsizes-Near-Statue-Of-Liberty-VIDEO.jpg" alt="">
   <p class="article-summary">Roomies, a night out on the water near one of New York City’s most iconic landmarks has reportedly turned tragic, with Sara Sanchez and her 5-month-old daughter, Antonella Garcia, losing their lives after a boat overturned in New York Harbor. Now, the vessel’s captain, Manuel Hernandez, is facing charges as authorities work to piece together what happened in the moments leading up to the fatal capsizing. RELATED: Say, WHAT?!</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

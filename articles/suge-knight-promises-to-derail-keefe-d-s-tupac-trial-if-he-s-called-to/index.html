@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">7 hours ago</div>
+  <div class="article-meta">8 hours ago</div>
   <h1 class="article-title">Suge Knight Promises To Derail Keefe D’s Tupac Trial If He’s Called To Testify</h1>
   <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/05/Suge-Knight.png" alt="">
   <p class="article-summary">Suge Knight is the only living eyewitness to Hip-Hop’s most infamous murder, yet he’s made it crystal clear he won’t help prosecutors put Duane “Keefe D” Davis away for Tupac’s death. The Death Row Records founder sat down with ABC News this week and doubled down on his refusal to testify, drawing a hard line between loyalty to his fallen brother and cooperation with the legal system. “This trial has nothing to do with me,” he told ABC News, adding that if prosecutors force him to the stand, “it don’t look good for them.” His reasoning cuts deeper than street code.</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

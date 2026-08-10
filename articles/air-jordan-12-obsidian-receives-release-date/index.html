@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">22 hours ago</div>
+  <div class="article-meta">23 hours ago</div>
   <h1 class="article-title">Air Jordan 12 “Obsidian” Receives Release Date</h1>
   <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/air-jordan-12-obsidian-2027-release-date.webp" alt="">
   <p class="article-summary">The Air Jordan 12 “Obsidian” now has a confirmed release date. It’s set to return January 23rd, 2027, for $215. That date marks the exact 30th anniversary of the colorway’s original debut back in 1997.</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

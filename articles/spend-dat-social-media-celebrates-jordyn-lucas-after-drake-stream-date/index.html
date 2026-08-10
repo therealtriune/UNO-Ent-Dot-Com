@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">8 hours ago</div>
+  <div class="article-meta">9 hours ago</div>
   <h1 class="article-title">Spend Dat! Social Media Celebrates Jordyn Lucas After Drake Stream Date Ends With $25K And A Birkin Bag (WATCH)</h1>
   <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/IMG_3204-e1786310561248.jpg" alt="">
   <p class="article-summary">If you know Jordyn Lucas, you know Drake has been on her list for a minute! So when the streamer finally got the chance to meet the Toronto rapper during his viral speed-dating stream, she made sure to enjoy every second and leave with $25,000 and a Birkin bag! Related: Jordyn Lucas Puts Skai Jackson On Blast As Streamer University Drama Has The Internet Talking (VIDEO) Jordyn Lucas Finally Meets Drake &amp; Leaves With $25K And A Birkin On Saturday, Aug.</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

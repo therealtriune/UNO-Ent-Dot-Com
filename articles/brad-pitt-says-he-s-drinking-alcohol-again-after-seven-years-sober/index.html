@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">7 hours ago</div>
+  <div class="article-meta">8 hours ago</div>
   <h1 class="article-title">Brad Pitt Says He&#x27;s Drinking Alcohol Again After Seven Years Sober</h1>
   <img class="article-hero" src="https://imagez.tmz.com/image/bc/16by9/2026/08/10/bcec175040614ef591aa0894d1795fcd_xl.jpg" alt="">
   <p class="article-summary">Brad Pitt says his seven-year run of sobriety is over...he&#x27;s drinking again, though he insists he&#x27;s learned he still needs to keep a tight leash on things. The actor opened up in a wide-ranging interview with Esquire...</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

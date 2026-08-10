@@ -95,7 +95,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/hooked-marjorie-s-fishing-trip-with-husband-steve-harvey-had-him-makin/">
       <img src="https://theshaderoom.com/wp-content/uploads/2026/08/Hooked-Marjories-Fishing-Trip-With-Husband-Steve-Harvey-Had-Him-Making-It-Official-VIDEOS.jpg" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Videos</span><span class="card-dot">&middot;</span>2 days ago</div>
+        <div class="card-meta"><span class="card-category">Videos</span><span class="card-dot">&middot;</span>3 days ago</div>
         <h2 class="card-title">Hooked! Marjorie’s Fishing Trip With Husband Steve Harvey Had Him Making It Official (VIDEOS)</h2>
         <p class="card-excerpt">There’s nothing like a little friendly competition to turn an ordinary day into a hilarious moment, and Marjorie Harvey and Steve Harvey proved just that. The c</p>
         <span class="card-link">Read More &rarr;</span>
@@ -286,6 +286,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

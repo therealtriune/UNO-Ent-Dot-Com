@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">3 hours ago</div>
+  <div class="article-meta">4 hours ago</div>
   <h1 class="article-title">Roc Nation Denies Jay-Z Album Rumor, But Look At What They Didn’t Say</h1>
   <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/07/Jay-Z-3.jpg" alt="">
   <p class="article-summary">Jay-Z Album Rumors Get Smacked Down By Roc Nation …However… Jay-Z album rumors just got a very carefully worded reality check from Roc Nation and I am paying close attention to what they did not say. Podcaster dude Ray Daniels recently stirred up the Hovie Hive when he claimed that Jay’s next album was “completely done.” Speaking as an insider, Daniels says the holdup allegedly involved securing some sort of partnership before releasing the project. I mean, this does not sound radically off base since Jay has done this several times.</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

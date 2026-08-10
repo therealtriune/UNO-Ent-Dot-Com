@@ -65,7 +65,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/oop-mz-shyneka-teases-remy-ma-interview-after-claressa-shields-alleged/">
       <img src="https://theshaderoom.com/wp-content/uploads/2026/08/Mz.-Shyneka-Teases-Remy-Ma-Interview-After-Claressa-Shields-Allegedly-Threatens-Her-Over-Papoose-Comments.png" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Videos</span><span class="card-dot">&middot;</span>3 days ago</div>
+        <div class="card-meta"><span class="card-category">Videos</span><span class="card-dot">&middot;</span>4 days ago</div>
         <h2 class="card-title">Oop! Mz. Shyneka Teases Remy Ma Interview After Claressa Shields Allegedly Threatens Her Over Papoose Comments (VIDEOS)</h2>
         <p class="card-excerpt">Whew, Roomies! Mz. Shyneka Richardson has entered the chat after Claressa Shields called her out for previously asking a question that she felt was “distasteful</p>
         <span class="card-link">Read More &rarr;</span>
@@ -125,7 +125,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/oop-eva-marcille-defends-mz-shyneka-after-claressa-shields-blasts-radi/">
       <img src="https://theshaderoom.com/wp-content/uploads/2026/08/Eva-Marcille-Defends-MzShyneka-Radio-Host-Streetz-945-Interview-Papoose-Remy-Ma.png" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Videos</span><span class="card-dot">&middot;</span>4 days ago</div>
+        <div class="card-meta"><span class="card-category">Videos</span><span class="card-dot">&middot;</span>5 days ago</div>
         <h2 class="card-title">Oop! Eva Marcille Defends Mz. Shyneka After Claressa Shields Blasts Radio Host Over Papoose Interview Question (VIDEO)</h2>
         <p class="card-excerpt">Claressa Shields has spun the block on a radio host who recently questioned her about dating “somebody’s husband.” Shields had already clocked Mz. Shyneka Richa</p>
         <span class="card-link">Read More &rarr;</span>
@@ -175,7 +175,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/saudi-led-group-takes-call-of-duty-maker-ea-private-in-55-billion-mega/">
       <img src="https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-04-at-2.55.54-PM.jpg" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Videos</span><span class="card-dot">&middot;</span>5 days ago</div>
+        <div class="card-meta"><span class="card-category">Videos</span><span class="card-dot">&middot;</span>6 days ago</div>
         <h2 class="card-title">Saudi-Led Group Takes ‘Call of Duty’ Maker EA Private in $55 Billion Mega Deal</h2>
         <p class="card-excerpt">Electronic Arts officially entered a new era on August 4, closing its $55 billion sale to an investment group led by Saudi Arabia’s Public Investment Fund. PIF</p>
         <span class="card-link">Read More &rarr;</span>
@@ -286,6 +286,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

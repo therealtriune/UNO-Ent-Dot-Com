@@ -62,10 +62,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main>
   <div class="grid">
     
+    <a class="card" href="/articles/erica-raven-announces-split-from-nle-choppa-after-engagement-pray-for-/">
+      <img src="https://theshaderoom.com/wp-content/uploads/2026/08/End-Of-The-Road-Erica-Raven-Reveals-Split-From-NLE-Choppa-After-Engagement-Pray-For-Me-VIDEO.jpg" alt="" loading="lazy" class="card-thumb">
+      <div class="card-body">
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>2 days ago</div>
+        <h2 class="card-title">Erica Raven Announces Split From NLE Choppa After Engagement: “Pray For Me” (VIDEO)</h2>
+        <p class="card-excerpt">Roomies, sometimes the person you thought you’d be walking into the next chapter with ends up being the person you have to learn to walk away from. Erica Raven</p>
+        <span class="card-link">Read More &rarr;</span>
+      </div>
+    </a>
+
     <a class="card" href="/articles/perez-hilton-remains-hospitalized-under-florida-s-baker-act-needs-surg/">
       <img src="https://imagez.tmz.com/image/95/16by9/2026/08/08/95cfdc00d2e94319b61a5cafd3487a3e_xl.jpg" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>1 day ago</div>
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>2 days ago</div>
         <h2 class="card-title">Perez Hilton Remains Hospitalized Under Florida&#x27;s Baker Act, Needs Surgery from Injuries</h2>
         <p class="card-excerpt">Perez Hilton&#x27;s family is sharing a major update on his well-being after his dangerous acts on a live stream earlier this week. His family told fans via his webs</p>
         <span class="card-link">Read More &rarr;</span>
@@ -75,7 +85,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/michael-b-jordan-singer-raye-spark-dating-rumors-after-six-flags-outin/">
       <img src="https://theshaderoom.com/wp-content/uploads/2026/08/Michael-B-Jordan-RAYE-Photos-Six-Flags-Magic-Mountain-Dating-Rumors-Social-Media-Reactions.png" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>1 day ago</div>
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>2 days ago</div>
         <h2 class="card-title">Michael B. Jordan &amp; Singer Raye Spark Dating Rumors After Six Flags Outing Is Caught On Camera (WATCH)</h2>
         <p class="card-excerpt">Is Michael B. Jordan off the dating market again? That’s what fans are assuming after he was spotted riding rollercoasters with singer Raye at an amusement park</p>
         <span class="card-link">Read More &rarr;</span>
@@ -85,7 +95,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/tommy-john-bids-farewell-to-baseball-fans-reportedly-in-hospice/">
       <img src="https://imagez.tmz.com/image/30/16by9/2026/08/08/309554b5ac6a4cfba8c2084acce27dd5_xl.jpg" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>1 day ago</div>
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>2 days ago</div>
         <h2 class="card-title">Tommy John Bids Farewell to Baseball Fans, Reportedly in Hospice</h2>
         <p class="card-excerpt">Baseball legend Tommy John is saying goodbye to the game and the fans who followed him for decades...penning an emotional farewell letter as he battles seriou</p>
         <span class="card-link">Read More &rarr;</span>
@@ -168,16 +178,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>2 days ago</div>
         <h2 class="card-title">Blake Lively, Ryan Reynolds All Smiles Month After Missing Taylor Swift Wedding</h2>
         <p class="card-excerpt">Blake Lively may have missed out on Taylor Swift&#x27;s wedding...but she&#x27;s all smiles a month later, soaking up some quality time with Ryan Reynolds, their kids a</p>
-        <span class="card-link">Read More &rarr;</span>
-      </div>
-    </a>
-
-    <a class="card" href="/articles/morrissey-cancels-entire-las-vegas-residency-one-week-before-first-sho/">
-      <img src="https://imagez.tmz.com/image/7c/16by9/2026/08/08/7cb5d5c90d6d4a389944feece4c97c84_xl.jpg" alt="" loading="lazy" class="card-thumb">
-      <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>2 days ago</div>
-        <h2 class="card-title">Morrissey Cancels Entire Las Vegas Residency One Week Before First Show</h2>
-        <p class="card-excerpt">Morrissey&#x27;s latest Vegas gamble is a bust...the singer has pulled the plug on his entire four-show Sin City residency just days before he was supposed to hit</p>
         <span class="card-link">Read More &rarr;</span>
       </div>
     </a>
@@ -286,6 +286,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

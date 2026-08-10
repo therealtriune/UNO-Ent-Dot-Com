@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">21 hours ago</div>
+  <div class="article-meta">22 hours ago</div>
   <h1 class="article-title">Matches To Make After UFC Vegas 120</h1>
   <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/e44ebc1d651d75b3320b77a9ade73423b65c2aa6e0ebf5297269e4beb8175caa/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F8afd5dc42ed96755895cebb02a57ecd2" alt="">
   <p class="article-summary">LAS VEGAS, NEVADA - AUGUST 08: Quillan Salkilld of Australia reacts after a submission victory against Mateusz Gamrot of Poland in a lightweight fight during the UFC Fight Night event at Meta APEX on August 08, 2026 in Las Vegas, Nevada. (Photo by Jeff Bottari/Zuffa LLC) UFC Vegas 120 went down last night (Sat., Aug. 8, 2026) from inside the the Meta Apex in Las Vegas, Nevada, which saw Quillan Salkilld defeat Mateusz Gamrot via first-round submission ( see it again here ).</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

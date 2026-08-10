@@ -62,6 +62,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main>
   <div class="grid">
     
+    <a class="card" href="/articles/former-miss-north-carolina-usa-says-she-was-targeted-due-to-her-conser/">
+      <img src="https://imagez.tmz.com/image/05/16by9/2026/08/08/05791f52e3754db29a32185c04b4d192_xl.jpg" alt="" loading="lazy" class="card-thumb">
+      <div class="card-body">
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>2 days ago</div>
+        <h2 class="card-title">Former Miss North Carolina USA Says She Was Targeted Due to Her &#x27;Conservative Christian&#x27; Beliefs</h2>
+        <p class="card-excerpt">The former Miss North Carolina USA 2026 has spoken out after she was stripped of her title after she allegedly said the n-word online -- and she firmly believes</p>
+        <span class="card-link">Read More &rarr;</span>
+      </div>
+    </a>
+
     <a class="card" href="/articles/florida-man-jailed-for-allegedly-killing-cats-with-blow-dryer-and-rag-/">
       <img src="https://imagez.tmz.com/image/fe/16by9/2026/08/08/feb48d5023554c99a258a8fedd93c887_xl.png" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
@@ -171,16 +181,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="card-link">Read More &rarr;</span>
       </div>
     </a>
-
-    <a class="card" href="/articles/influencer-ash-trevino-has-received-over-20-cameo-requests-since-guilt/">
-      <img src="https://imagez.tmz.com/image/2d/16by9/2026/08/07/2dedaa437f0a425c87eb9615c0766b94_xl.jpg" alt="" loading="lazy" class="card-thumb">
-      <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>2 days ago</div>
-        <h2 class="card-title">Influencer Ash Trevino Has Received Over 20 Cameo Requests Since Guilty Plea</h2>
-        <p class="card-excerpt">Ash Trevino&#x27;s gotta pay five-figures in restitution after pleading guilty to fraud this week...but she&#x27;s already got some Cameo cash coming in. TMZ has learne</p>
-        <span class="card-link">Read More &rarr;</span>
-      </div>
-    </a>
   </div>
   
   
@@ -286,6 +286,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

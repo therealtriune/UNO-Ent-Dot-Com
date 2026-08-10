@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">2 hours ago</div>
+  <div class="article-meta">3 hours ago</div>
   <h1 class="article-title">UFC 330: Make picks for Makhachev-Garry, Dern-Robertson title fights</h1>
   <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/dae3b54b30d1100ed161c38600747def8ce3c5e09be1e7e1de33a97843a76891/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2F96c893d0e8d340bd8fa0275f3cdba843" alt="">
   <p class="article-summary">We want your predictions for UFC 330. Our staff picks feature includes the consensus picks from MMA Junkie readers. Simply cast your vote for each bout below, and we&#x27;ll use the official tallies that are registered by Friday at noon ET (9 a.m.</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

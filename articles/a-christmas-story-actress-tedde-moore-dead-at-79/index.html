@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">10 hours ago</div>
+  <div class="article-meta">11 hours ago</div>
   <h1 class="article-title">&#x27;A Christmas Story&#x27; Actress Tedde Moore Dead at 79</h1>
   <img class="article-hero" src="https://imagez.tmz.com/image/12/16by9/2026/08/10/122c8c692e884d0ab4ff53d7e50f85a8_xl.jpg" alt="">
   <p class="article-summary">Actress Tedde Moore -- who famously played Miss Shields in &quot;A Christmas Story&quot; — has died. Moore passed away last Wednesday in Huntsville, Ontario, Canada, according to a Facebook post under her name. Her cause of death was not released.</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

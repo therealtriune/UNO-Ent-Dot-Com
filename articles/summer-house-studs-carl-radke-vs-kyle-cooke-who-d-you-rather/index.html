@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">2 days ago</div>
+  <div class="article-meta">3 days ago</div>
   <h1 class="article-title">&#x27;Summer House&#x27; Studs Carl Radke vs. Kyle Cooke Who&#x27;d You Rather?!</h1>
   <img class="article-hero" src="https://imagez.tmz.com/image/d2/16by9/2026/08/07/d2acabda40cf4ab090e30f9f5f4eaadc_xl.jpg" alt="">
   <p class="article-summary">The &quot;Summer House&quot; crew and fans are still coolin&#x27; off from the Ciara vs. Amanda of it all, but Carl Radke and Kyle Cooke&#x27;s friendship is goin&#x27; strong and heating up on socials...Sky&#x27;s out, thighs out!!!</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">1 day ago</div>
+  <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Michael B. Jordan &amp; Singer Raye Spark Dating Rumors After Six Flags Outing Is Caught On Camera (WATCH)</h1>
   <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Michael-B-Jordan-RAYE-Photos-Six-Flags-Magic-Mountain-Dating-Rumors-Social-Media-Reactions.png" alt="">
   <p class="article-summary">Is Michael B. Jordan off the dating market again? That’s what fans are assuming after he was spotted riding rollercoasters with singer Raye at an amusement park in California.</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

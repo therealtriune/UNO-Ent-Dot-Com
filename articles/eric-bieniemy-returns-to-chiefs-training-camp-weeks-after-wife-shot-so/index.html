@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">4 hours ago</div>
+  <div class="article-meta">5 hours ago</div>
   <h1 class="article-title">Eric Bieniemy Returns To Chiefs Training Camp Weeks After Wife Shot, Son Arrested</h1>
   <img class="article-hero" src="https://imagez.tmz.com/image/67/16by9/2026/08/10/67dc763949db4cfb9d8d90af08ae24fe_xl.jpg" alt="">
   <p class="article-summary">K.C. Chiefs offensive coordinator Eric Bieniemy is back on the practice field...just two weeks after his wife was allegedly shot by the couple&#x27;s son at their family home.</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

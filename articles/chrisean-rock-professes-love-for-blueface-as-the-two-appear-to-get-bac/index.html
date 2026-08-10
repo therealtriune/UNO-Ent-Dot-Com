@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">7 hours ago</div>
+  <div class="article-meta">8 hours ago</div>
   <h1 class="article-title">Chrisean Rock Professes Love For Blueface As The Two Appear To Get Back Together</h1>
   <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/blueface-chrisean-rock-2-scaled.jpg" alt="">
   <p class="article-summary">Blueface and Chrisean Rock have had a turbulent relationship. This relationship began years ago, and it ended around the same time Chrisean gave birth to their child, Chrisean Jr. Since that time, Blueface has refused to claim Chrisean Jr.</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

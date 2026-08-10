@@ -62,6 +62,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main>
   <div class="grid">
     
+    <a class="card" href="/articles/d-l-hughley-slams-nicki-minaj-for-going-after-dr-anthony-fauci/">
+      <img src="https://imagez.tmz.com/image/b6/16by9/2026/08/04/b6e579b7bb88440f9c56839043f01627_xl.jpg" alt="" loading="lazy" class="card-thumb">
+      <div class="card-body">
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>6 days ago</div>
+        <h2 class="card-title">D.L. Hughley Slams Nicki Minaj For Going After Dr. Anthony Fauci</h2>
+        <p class="card-excerpt">Nicki Minaj may sing about starships...but when it comes to real science, D.L. Hughley says she&#x27;s better off trusting Dr. Anthony Fauci -- and taking a look a</p>
+        <span class="card-link">Read More &rarr;</span>
+      </div>
+    </a>
+
     <a class="card" href="/articles/julian-newman-responds-after-sister-jaden-newman-s-alleged-sex-tapes-l/">
       <img src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/julian-newman-e1785872472884.webp" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
@@ -171,16 +181,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="card-link">Read More &rarr;</span>
       </div>
     </a>
-
-    <a class="card" href="/articles/georgina-rodriguez-promotes-body-positivity-after-fat-shaming-over-yac/">
-      <img src="https://imagez.tmz.com/image/83/16by9/2026/08/04/830ca5e1a49b4123828ac05e82761f0b_xl.jpg" alt="" loading="lazy" class="card-thumb">
-      <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>6 days ago</div>
-        <h2 class="card-title">Georgina Rodriguez Promotes Body Positivity After Fat-Shaming Over Yacht Photos</h2>
-        <p class="card-excerpt">Georgina Rodriguez is firing back at trolls criticizing her bikini body in recent yacht photos...she says her curves don&#x27;t determine her worth. Cristiano Rona</p>
-        <span class="card-link">Read More &rarr;</span>
-      </div>
-    </a>
   </div>
   
   
@@ -286,6 +286,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

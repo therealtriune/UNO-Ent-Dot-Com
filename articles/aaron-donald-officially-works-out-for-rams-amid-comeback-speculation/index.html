@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">4 days ago</div>
+  <div class="article-meta">5 days ago</div>
   <h1 class="article-title">Aaron Donald Officially Works Out For Rams Amid Comeback Speculation</h1>
   <img class="article-hero" src="https://imagez.tmz.com/image/6f/16by9/2026/08/05/6f24cfdd979b49f3b5245af2a6482327_xl.jpg" alt="">
   <p class="article-summary">31 NFL teams let out a collective &quot;oh boy&quot;...&#x27;cause Aaron Donald booked an official workout with the Los Angeles Rams -- meaning the future Hall of Famer might actually unretire to play alongside Myles Garrett. The 35-year-old defensive monster…</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

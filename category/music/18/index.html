@@ -62,6 +62,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main>
   <div class="grid">
     
+    <a class="card" href="/articles/she-swear-i-m-colorblind-song-by-open-mike-eagle-kenny-segal-feat-bill/">
+      <img src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/She-Swear-Im-Colorblind-Open-Mike-Eagle-Kenny-Segal-billy-woods.jpg" alt="" loading="lazy" class="card-thumb">
+      <div class="card-body">
+        <div class="card-meta"><span class="card-category">Music</span><span class="card-dot">&middot;</span>1 week ago</div>
+        <h2 class="card-title">She Swear I’m Colorblind – Song by Open Mike Eagle &amp; Kenny Segal feat. billy woods</h2>
+        <p class="card-excerpt">&quot;She Swear I&#x27;m Colorblind&quot; by Open Mike Eagle and Kenny Segal featuring billy woods is the latest &quot;DOOMED!&quot; single. The post She Swear I’m Colorblind – Song by</p>
+        <span class="card-link">Read More &rarr;</span>
+      </div>
+    </a>
+
+    <a class="card" href="/articles/nicki-minaj-wishes-dr-fauci-the-worst-feeding-tubes-will-be-his-portio/">
+      <img src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/2025-12-21T222429Z_1815839751_MT1USATODAY27866629_RTRMADP_3_NICKI-MINAJ-TAKES-THE-STAGE-WITH-ERIKA-KIRK-AT-THE-PHOENIX-2-scaled.jpg" alt="" loading="lazy" class="card-thumb">
+      <div class="card-body">
+        <div class="card-meta"><span class="card-category">Music</span><span class="card-dot">&middot;</span>1 week ago</div>
+        <h2 class="card-title">Nicki Minaj Wishes Dr. Fauci The Worst: “Feeding Tubes Will Be His Portion”</h2>
+        <p class="card-excerpt">Nicki Minaj chimes in after Fauci&#x27;s testimony at the COVID-19 hearing. The post Nicki Minaj Wishes Dr. Fauci The Worst: “Feeding Tubes Will Be His Portion” appe</p>
+        <span class="card-link">Read More &rarr;</span>
+      </div>
+    </a>
+
     <a class="card" href="/articles/resonance-frequency-album-by-homeboy-sandman-jack-splash/">
       <img src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/Resonance-Frequency-Homeboy-Sandman-Jack-Splash.jpg" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
@@ -158,26 +178,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="card-meta"><span class="card-category">Music</span><span class="card-dot">&middot;</span>1 week ago</div>
         <h2 class="card-title">“Top 85 Dead or Alive” Throws It Back to Crimeapple’s 2017 Extended Plays (EP Review)</h2>
         <p class="card-excerpt">Here we have the latest &amp; 20th extended play from Hackensack, New Jersey lyricist Crimeapple. Becoming a fan of his almost a decade ago with his 4th EP Sweet Dr</p>
-        <span class="card-link">Read More &rarr;</span>
-      </div>
-    </a>
-
-    <a class="card" href="/articles/sir-too-hort-2-drink-smoke-prod-by-lil-jon-could-be-the-most-gratifyin/">
-      <img src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/IMG_5388-e1785477759760.webp" alt="" loading="lazy" class="card-thumb">
-      <div class="card-body">
-        <div class="card-meta"><span class="card-category">Music</span><span class="card-dot">&middot;</span>1 week ago</div>
-        <h2 class="card-title">“Sir Too $hort 2: Drink &amp; Smoke” Prod. by Lil Jon Could Be the Most Gratifying Chapter of Too $hort’s Ongoing Trilogy (Album Review)</h2>
-        <p class="card-excerpt">Oakland, California emcee, songwriter, producer &amp; record executive Too $hort bridging the Sir Too $hort trilogy with his 22nd LP. Someone who’s been around for</p>
-        <span class="card-link">Read More &rarr;</span>
-      </div>
-    </a>
-
-    <a class="card" href="/articles/ai-generated-beats-plague-onyx-s-new-lp-it-all-started-in-brooklyn-alb/">
-      <img src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/IMG_5351-scaled-e1785477817553.jpeg" alt="" loading="lazy" class="card-thumb">
-      <div class="card-body">
-        <div class="card-meta"><span class="card-category">Music</span><span class="card-dot">&middot;</span>1 week ago</div>
-        <h2 class="card-title">AI-Generated Beats Plague Onyx’s New LP “It All Started in Brooklyn” (Album Review)</h2>
-        <p class="card-excerpt">Queens, New York duo Onyx consisting of Sticky Fingaz &amp; Fredro Starr dropping their 14th studio LP. Their debut Bacdafucup followed by All We Got Iz Us &amp; Shut ‘</p>
         <span class="card-link">Read More &rarr;</span>
       </div>
     </a>
@@ -286,6 +286,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

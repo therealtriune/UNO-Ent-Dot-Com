@@ -62,6 +62,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main>
   <div class="grid">
     
+    <a class="card" href="/articles/georgina-rodriguez-promotes-body-positivity-after-fat-shaming-over-yac/">
+      <img src="https://imagez.tmz.com/image/83/16by9/2026/08/04/830ca5e1a49b4123828ac05e82761f0b_xl.jpg" alt="" loading="lazy" class="card-thumb">
+      <div class="card-body">
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>6 days ago</div>
+        <h2 class="card-title">Georgina Rodriguez Promotes Body Positivity After Fat-Shaming Over Yacht Photos</h2>
+        <p class="card-excerpt">Georgina Rodriguez is firing back at trolls criticizing her bikini body in recent yacht photos...she says her curves don&#x27;t determine her worth. Cristiano Rona</p>
+        <span class="card-link">Read More &rarr;</span>
+      </div>
+    </a>
+
     <a class="card" href="/articles/pete-davidson-and-sarah-nader-had-first-date-energy-at-private-dinner/">
       <img src="https://imagez.tmz.com/image/f3/16by9/2026/08/04/f350682c7adc42ab810f9c4e82f1f95f_xl.jpg" alt="" loading="lazy" class="card-thumb">
       <div class="card-body">
@@ -171,16 +181,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="card-link">Read More &rarr;</span>
       </div>
     </a>
-
-    <a class="card" href="/articles/2027-met-gala-theme-sparks-early-backlash-over-john-galliano-tribute/">
-      <img src="https://thesource.com/wp-content/uploads/2026/08/HOyTfxlWUAArdZk.jpeg" alt="" loading="lazy" class="card-thumb">
-      <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>6 days ago</div>
-        <h2 class="card-title">2027 Met Gala Theme Sparks Early Backlash Over John Galliano Tribute</h2>
-        <p class="card-excerpt">The 2027 Met Gala is nine months away, but the controversy is already present, and it all boils down to the theme. This year’s theme is “John Galliano: Horizons</p>
-        <span class="card-link">Read More &rarr;</span>
-      </div>
-    </a>
   </div>
   
   
@@ -286,6 +286,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

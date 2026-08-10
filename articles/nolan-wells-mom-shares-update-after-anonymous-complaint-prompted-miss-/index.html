@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">4 days ago</div>
+  <div class="article-meta">5 days ago</div>
   <h1 class="article-title">Nolan Wells’ Mom Shares Update After Anonymous Complaint Prompted Miss. Board Of Nursing To Open Misconduct Investigation Against Her</h1>
   <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Nolan-Wells-Mom-Shares-Update-After-Anonymous-Complaint-Reportedly-Prompted-Miss.-Board-Of-Nursing-To-Open-Misconduct-Investigation-Against-Her.jpg" alt="">
   <p class="article-summary">Nolan Wells ‘ mom, Christine Wonsley, has shared an update after an anonymous complaint prompted the Mississippi Board of Nursing to open a professional misconduct investigation against her. RELATED: Illinois Man Third Arrested For Alleged Threats As Mississippi Official Says Circulating Nolan Wells Toxicology Report Is “Fraudulent” Ben Crump Speaks After Complaint Prompted Miss. Board Of Nursing To Open Misconduct Investigation Against Nolan Wells’ Mom On Wednesday, August 5, Ben Crump released a statement via his website.</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

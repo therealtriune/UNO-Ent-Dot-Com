@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">1 day ago</div>
+  <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Tommy John Bids Farewell to Baseball Fans, Reportedly in Hospice</h1>
   <img class="article-hero" src="https://imagez.tmz.com/image/30/16by9/2026/08/08/309554b5ac6a4cfba8c2084acce27dd5_xl.jpg" alt="">
   <p class="article-summary">Baseball legend Tommy John is saying goodbye to the game and the fans who followed him for decades...penning an emotional farewell letter as he battles serious health issues. Tommy wasn&#x27;t at Yankee Stadium for Saturday&#x27;s Old-Timers&#x27; Day…</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

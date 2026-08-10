@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">6 days ago</div>
+  <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Scott Eastwood Says Brad Pitt Broke Up Shia LaBeouf Confrontation on &#x27;Fury&#x27; Movie Set</h1>
   <img class="article-hero" src="https://imagez.tmz.com/image/54/16by9/2026/08/03/54c39aaa9461414ab1a5d068579b0f31_xl.png" alt="">
   <p class="article-summary">Scott Eastwood says he was ready to whoop Shia LaBeouf&#x27;s ass on the set of &quot;Fury&quot;...until Brad Pitt jumped in and broke it up. Scott revisited the tense encounter on Monday&#x27;s episode of &quot;Armchair Expert with Dax Shepard&quot;...</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;

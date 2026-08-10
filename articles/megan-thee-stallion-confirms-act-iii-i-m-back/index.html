@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">2 hours ago</div>
+  <div class="article-meta">3 hours ago</div>
   <h1 class="article-title">Megan Thee Stallion Confirms “ACT III”: “I’m Back”</h1>
   <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/megan-thee-stallion-new-album-scaled.jpg" alt="">
   <p class="article-summary">Megan Thee Stallion has been quiet on the music front as of late. Overall, fans have been hoping for a new album following the success of MEGAN and ACT II. There have been some singles and snippets here and there, but nothing concrete for fans to latch onto.</p>
@@ -167,6 +167,23 @@ function unoCookieConsent() {
   document.querySelectorAll(".search-bar").forEach(function (bar) {
     var input = bar.querySelector(".search-input");
     if (!input) return;
+    if (bar.classList.contains("header-search")) {
+      var toggleBtn = bar.querySelector('button[type="submit"]');
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+            e.preventDefault();
+            bar.classList.add("expanded");
+            input.focus();
+          }
+        });
+        document.addEventListener("click", function (e) {
+          if (!bar.contains(e.target) && bar.classList.contains("expanded") && !input.value) {
+            bar.classList.remove("expanded");
+          }
+        });
+      }
+    }
     var panel = document.createElement("div");
     panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
     var debounceTimer = null, activeIndex = -1;
