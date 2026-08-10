@@ -616,6 +616,7 @@ def header_html(prefix: str, active: str = None) -> str:
   <label for="nav-toggle" class="nav-toggle-btn" aria-label="Menu">
     <span></span><span></span><span></span>
   </label>
+  {search_bar_html("header-search")}
   <nav class="header-filters">
     {"".join(pills)}
   </nav>
