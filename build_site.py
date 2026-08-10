@@ -1270,7 +1270,7 @@ def build_legal_page(slug: str, title: str, body_html: str):
     """slug is a URL slug like 'privacy-policy' or 'terms', not a filename --
     this writes {slug}/index.html so the page is reachable at /{slug}/ with
     no .html in the address bar."""
-
+    prefix = "../"
     full_title = f"{title} | UNO Entertainment"
     canonical = f"{SITE_URL}/{slug}/"
     description = f"{title} for UNO Entertainment."
