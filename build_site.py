@@ -523,7 +523,7 @@ footer a:hover { color: var(--white); }
     border-radius: 999px;
     padding: 3px 3px 3px 14px;
     overflow: visible;
-}
+  }
   .header-search.expanded .search-input { display: block; }
   .header-search.expanded button { width: 30px; height: 30px; }
 }
