@@ -275,7 +275,7 @@ header {
   padding: 22px 5vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 16px;
   position: relative;
@@ -291,7 +291,7 @@ header .tagline {
   padding-left: 16px;
 }
 
-.header-filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.header-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-left: auto; }
 .header-filters a {
   font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px;
   color: var(--gray); text-decoration: none; padding: 7px 16px; border-radius: 999px;
@@ -456,6 +456,7 @@ footer a:hover { color: var(--white); }
   padding: 3px 3px 3px 16px;
   flex: 0 1 220px;
   min-width: 0;
+  position: relative;
 }
 .search-bar:focus-within { border-color: var(--red); }
 .search-bar input {
@@ -495,6 +496,53 @@ footer a:hover { color: var(--white); }
 @media (max-width: 600px) {
   .pagination-search { order: 99; flex-basis: 100%; max-width: 320px; margin: 0 auto; }
 }
+
+/* Live search suggestions dropdown -- populated by SEARCH_SUGGEST_JS as the
+   visitor types. Anchored to the .search-bar it belongs to (position:
+   relative set above), so header-search and pagination-search each get
+   their own independent panel. */
+.search-suggest {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  min-width: 260px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 50;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+}
+.search-suggest-item {
+    display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: var(--white);
+  border-bottom: 1px solid var(--border);
+}
+.search-suggest-item:last-of-type { border-bottom: none; }
+.search-suggest-item:hover, .search-suggest-item.active { background: var(--bg-card-hover); }
+.search-suggest-item img {
+  width: 40px; height: 40px; object-fit: cover; border-radius: 6px;
+  flex-shrink: 0; background: #1a1a1a;
+}
+.search-suggest-item img.search-suggest-fallback { object-fit: contain; padding: 6px; }
+.search-suggest-text { min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.search-suggest-title {
+  font-size: 13px; font-weight: 600; line-height: 1.3;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.search-suggest-cat { font-size: 10px; text-transform: uppercase; letter-spacing: 0.4px; color: var(--gray); }
+.search-suggest-empty { padding: 14px 12px; font-size: 13px; color: var(--gray); }
+.search-suggest-viewall {
+  display: block; padding: 10px 12px; font-size: 12px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.4px; color: var(--red);
+  text-decoration: none; text-align: center; background: rgba(224, 32, 46, 0.06);
+}
+.search-suggest-viewall:hover { background: rgba(224, 32, 46, 0.14); }
 
 /* Search results page */
 .search-status { color: var(--gray); font-size: 14px; margin: 0 0 24px; }
@@ -655,6 +703,65 @@ function unoCookieConsent() {{
 </script>"""
 
 
+SEARCH_SUGGEST_JS = """
+(function () {
+  var CATEGORY_LABELS = { news: "News", rumors: "Rumors", videos: "Videos", music: "Music", sports: "Sports", opinion: "Opinion" };
+  var indexPromise = null;
+  function loadIndex() { if (!indexPromise) { indexPromise = fetch("/search-index.json").then(function (r) { return r.json(); }); } return indexPromise; }
+  function escapeHtml(s) { return (s || "").replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function scoreArticle(a, tokens) {
+    var title = (a.title || "").toLowerCase(), excerpt = (a.excerpt || "").toLowerCase(), source = (a.source || "").toLowerCase(), s = 0;
+    for (var i = 0; i < tokens.length; i++) { var t = tokens[i]; if (!t) continue; if (title.indexOf(t) !== -1) s += 3; if (excerpt.indexOf(t) !== -1) s += 1; if (source.indexOf(t) !== -1) s += 1; }
+    return s;
+  }
+  document.querySelectorAll(".search-bar").forEach(function (bar) {
+    var input = bar.querySelector(".search-input");
+    if (!input) return;
+    var panel = document.createElement("div");
+    panel.className = "search-suggest"; panel.hidden = true; bar.appendChild(panel);
+    var debounceTimer = null, activeIndex = -1;
+    function closePanel() { panel.hidden = true; panel.innerHTML = ""; activeIndex = -1; }
+    function highlight(items) {
+      items.forEach(function (it, i) { it.classList.toggle("active", i === activeIndex); });
+      if (activeIndex > -1 && items[activeIndex]) { items[activeIndex].scrollIntoView({ block: "nearest" }); }
+    }
+    function renderSuggestions(items, q) {
+      activeIndex = -1;
+      if (!items.length) { panel.innerHTML = '<div class="search-suggest-empty">No matches for &ldquo;' + escapeHtml(q) + '&rdquo;</div>'; panel.hidden = false; return; }
+      panel.innerHTML = items.map(function (a) {
+        var thumb = a.thumbnail ? '<img src="' + escapeHtml(a.thumbnail) + '" alt="" loading="lazy">' : '<img src="/uno-logo.png" alt="" loading="lazy" class="search-suggest-fallback">';
+        var cat = CATEGORY_LABELS[a.category];
+        return '<a href="/articles/' + a.slug + '/" class="search-suggest-item">' + thumb + '<span class="search-suggest-text"><span class="search-suggest-title">' + escapeHtml(a.title) + '</span>' + (cat ? '<span class="search-suggest-cat">' + cat + '</span>' : '') + '</span></a>';
+      }).join("") + '<a href="/search/?q=' + encodeURIComponent(q) + '" class="search-suggest-viewall">See all results for &ldquo;' + escapeHtml(q) + '&rdquo; &rarr;</a>';
+      panel.hidden = false;
+    }
+    function runQuery(q) {
+      loadIndex().then(function (data) {
+        var tokens = q.toLowerCase().split(/\s+/).filter(Boolean), scored = [];
+        for (var i = 0; i < data.length; i++) { var s = scoreArticle(data[i], tokens); if (s > 0) scored.push([s, data[i]]); }
+        scored.sort(function (a, b) { if (b[0] !== a[0]) return b[0] - a[0]; return new Date(b[1].date) - new Date(a[1].date); });
+        renderSuggestions(scored.slice(0, 6).map(function (p) { return p[1]; }), q);
+      }).catch(function () { closePanel(); });
+    }
+    input.addEventListener("input", function () {
+      var q = input.value.trim();
+      clearTimeout(debounceTimer);
+      if (q.length < 2) { closePanel(); return; }
+      debounceTimer = setTimeout(function () { runQuery(q); }, 150);
+    });
+    input.addEventListener("keydown", function (e) {
+      if (panel.hidden) return;
+      var items = panel.querySelectorAll(".search-suggest-item");
+      if (e.key === "ArrowDown") { e.preventDefault(); activeIndex = Math.min(activeIndex + 1, items.length - 1); highlight(items); }
+      else if (e.key === "ArrowUp") { e.preventDefault(); activeIndex = Math.max(activeIndex - 1, -1); highlight(items); }
+      else if (e.key === "Enter") { if (activeIndex > -1 && items[activeIndex]) { e.preventDefault(); window.location.href = items[activeIndex].getAttribute("href"); } }
+      else if (e.key === "Escape") { closePanel(); }
+    });
+    input.addEventListener("blur", function () { setTimeout(closePanel, 150); });
+    document.addEventListener("click", function (e) { if (!bar.contains(e.target)) closePanel(); });
+    });
+})();
+"""
 def footer_html(prefix: str) -> str:
     year = datetime.now(timezone.utc).year
     section_links = "".join(
