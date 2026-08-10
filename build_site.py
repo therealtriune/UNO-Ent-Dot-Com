@@ -574,6 +574,28 @@ footer a:hover { color: var(--white); }
 # ---------------------------------------------------------------------------
 
 
+
+def search_bar_html(extra_class: str = "") -> str:
+    """A GET-submitting search form. Reused in the header (every page) and
+    next to the page-picker in pagination -- a page can render more than
+    one instance at once (e.g. the homepage has both), so every instance
+    shares the "search-input" class rather than an id, letting the search
+    page's own script prefill all of them from the URL on load. Submits to
+    /search/?q=... where search/index.html does the actual matching
+    client-side against search-index.json -- this is a static site with no
+    backend, so there's no server-side query handling to wire up."""
+    classes = ("search-bar " + extra_class).strip()
+    return f"""
+    <form class="{classes}" action="/search/" method="get" role="search">
+      <input type="search" name="q" class="search-input" placeholder="Search articles&hellip;" aria-label="Search articles" autocomplete="off">
+      <button type="submit" aria-label="Search">
+        <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="8.5" cy="8.5" r="6"></circle>
+          <line x1="13.2" y1="13.2" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </form>"""
+
 def header_html(prefix: str, active: str = None) -> str:
     """
     active is one of "all", a category key, or None. None still renders the
