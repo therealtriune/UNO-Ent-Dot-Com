@@ -513,6 +513,19 @@ footer a:hover { color: var(--white); }
     height: 100%;
     border-radius: 50%;
   }
+  /* Tapping the icon first expands the pill (via SEARCH_SUGGEST_JS below)
+     instead of submitting an empty query -- this is what actually shows
+     the input so a visitor can type. */
+  .header-search.expanded {
+    width: auto;
+    max-width: none;
+    flex: 1 1 auto;
+    border-radius: 999px;
+    padding: 3px 3px 3px 14px;
+    overflow: visible;
+}
+  .header-search.expanded .search-input { display: block; }
+  .header-search.expanded button { width: 30px; height: 30px; }
 }
 
 .pagination-search { flex-basis: 220px; }
