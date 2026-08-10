@@ -70,7 +70,8 @@ header .tagline {
 
 @media (max-width: 760px) {
   header .tagline { display: none; }
-  .nav-toggle-btn { display: flex; }
+  header { gap: 10px; }
+  .nav-toggle-btn { display: flex; order: 3; }
   .header-filters {
     display: none;
     position: absolute;
@@ -236,7 +237,14 @@ footer a:hover { color: var(--white); }
                           
 .header-search { order: 2; }
 @media (max-width: 760px) {
-  .header-search { flex-basis: 100%; max-width: 320px; margin: 8px auto 0; order: 3; }
+  .header-search {
+    order: 2;
+    flex: 1 1 auto;
+    max-width: none;
+    min-width: 40px;
+    margin: 0;
+    padding: 3px 3px 3px 10px;
+}
 }
 
 .pagination-search { flex-basis: 220px; }
