@@ -506,13 +506,13 @@ footer a:hover { color: var(--white); }
     justify-content: center;
     border-radius: 50%;
     overflow: hidden;
-}
+  }
   .header-search .search-input { display: none; }
   .header-search button {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-}
+  }
 }
 
 .pagination-search { flex-basis: 220px; }
