@@ -268,6 +268,7 @@ def clean_text(raw_html: str) -> str:
 
 def slugify(title: str) -> str:
     return SLUG_RE.sub("-", title.lower()).strip("-")[:70]
+  
 
 def looks_like_slug_title(title: str) -> bool:
     """True if a title is suspiciously slug-shaped -- all lowercase,
