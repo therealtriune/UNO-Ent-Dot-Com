@@ -1,5 +1,9 @@
 [
   {
+    "link": "https://sports.yahoo.com/fantasy/article/fantasy-football-qb-preview-draft-strategy-rankings-fades-and-sleepers-173310318.html",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/bellator-vet-kimbo-slice-jr-044932839.html",
     "issue": "missing_thumbnail"
   },
@@ -82,14 +86,6 @@
       "https://allhiphop.com/news/sidney-starr-faces-life-in-prison-after-child-molestation-arrest/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Nolan-Wells.jpg",
-    "links": [
-      "https://allhiphop.com/news/nolan-wells-case-grows-more-chaotic-as-illinois-man-accused-of-threatening-two-witnesses/",
-      "https://allhiphop.com/news/ohio-woman-accused-of-making-29-bomb-threats-over-nolan-wells-case/"
-    ]
   },
   {
     "issue": "same_category_page",
