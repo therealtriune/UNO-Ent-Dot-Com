@@ -489,7 +489,7 @@ footer a:hover { color: var(--white); }
                           
 .header-search { order: 2; }
 @media (max-width: 760px) {
-  .header-search { flex-basis: 100%; order: 3; }
+  .header-search { flex-basis: 100%; max-width: 320px; margin: 8px auto 0; order: 3; }
 }
 
 .pagination-search { flex-basis: 220px; }
