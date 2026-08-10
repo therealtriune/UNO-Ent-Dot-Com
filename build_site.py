@@ -1079,12 +1079,198 @@ revision. Continued use of the Site after changes take effect means you accept t
 <p>Questions about these Terms? Email us at <a href="mailto:support@unoent.com">support@unoent.com</a>.</p>
 """
 
+SEARCH_PAGE_JS = """
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var q = (params.get("q") || "").trim();
+
+  document.querySelectorAll(".search-input").forEach(function (el) {
+    el.value = q;
+  });
+
+  var statusEl = document.getElementById("search-status");
+  var resultsEl = document.getElementById("search-results");
+  var loadMoreBtn = document.getElementById("search-load-more");
+
+  var CATEGORY_LABELS = {
+    news: "News", rumors: "Rumors", videos: "Videos",
+    music: "Music", sports: "Sports", opinion: "Opinion"
+  };
+  var PAGE_SIZE = 24;
+  var shown = 0;
+  var matches = [];
+
+  function escapeHtml(s) {
+    return (s || "").replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function timeAgo(iso) {
+    var then = new Date(iso).getTime();
+    if (isNaN(then)) return "";
+    var diffSec = Math.max(0, (Date.now() - then) / 1000);
+    if (diffSec < 60) return "Just now";
+    if (diffSec < 3600) return Math.floor(diffSec / 60) + "m ago";
+    if (diffSec < 86400) return Math.floor(diffSec / 3600) + "h ago";
+    var days = Math.floor(diffSec / 86400);
+    if (days < 30) return days + "d ago";
+    var months = Math.floor(days / 30);
+    if (months < 12) return months + "mo ago";
+    return Math.floor(months / 12) + "y ago";
+  }
+
+  function cardHtml(a) {
+    var thumb = a.thumbnail
+      ? '<img src="' + escapeHtml(a.thumbnail) + '" alt="" loading="lazy" class="card-thumb">'
+      : '<img src="/uno-logo.png" alt="UNO Entertainment" loading="lazy" class="card-thumb card-thumb-fallback">';
+    var catLabel = CATEGORY_LABELS[a.category];
+    var catHtml = catLabel
+      ? '<span class="card-category">' + catLabel + '</span><span class="card-dot">&middot;</span>'
+      : "";
+    return (
+      '<a class="card" href="/articles/' + a.slug + '/">' +
+      thumb +
+      '<div class="card-body">' +
+      '<div class="card-meta">' + catHtml + timeAgo(a.date) + "</div>" +
+      '<h2 class="card-title">' + escapeHtml(a.title) + "</h2>" +
+      '<p class="card-excerpt">' + escapeHtml(a.excerpt) + "</p>" +
+      '<span class="card-link">Read More &rarr;</span>' +
+      "</div>" +
+      "</a>"
+    );
+  }
+
+  function scoreArticle(a, tokens) {
+    var title = (a.title || "").toLowerCase();
+    var excerpt = (a.excerpt || "").toLowerCase();
+    var source = (a.source || "").toLowerCase();
+    var s = 0;
+    for (var i = 0; i < tokens.length; i++) {
+      var t = tokens[i];
+      if (!t) continue;
+      if (title.indexOf(t) !== -1) s += 3;
+      if (excerpt.indexOf(t) !== -1) s += 1;
+      if (source.indexOf(t) !== -1) s += 1;
+    }
+    return s;
+  }
+
+  function renderMore() {
+    var next = matches.slice(shown, shown + PAGE_SIZE);
+    resultsEl.insertAdjacentHTML("beforeend", next.map(cardHtml).join(""));
+    shown += next.length;
+    if (loadMoreBtn) loadMoreBtn.hidden = shown >= matches.length;
+  }
+
+  function runSearch(index) {
+    if (!q) {
+      statusEl.textContent = "Type a keyword above to search UNO Entertainment's archive.";
+      return;
+    }
+    var tokens = q.toLowerCase().split(/\s+/).filter(Boolean);
+    var scored = [];
+    for (var i = 0; i < index.length; i++) {
+      var s = scoreArticle(index[i], tokens);
+      if (s > 0) scored.push([s, index[i]]);
+    }
+    scored.sort(function (a, b) {
+      if (b[0] !== a[0]) return b[0] - a[0];
+      return new Date(b[1].date) - new Date(a[1].date);
+    });
+    matches = scored.map(function (pair) { return pair[1]; });
+
+    if (!matches.length) {
+      statusEl.textContent = 'No results for “' + q + '”. Try a different keyword.';
+      return;
+    }
+    statusEl.textContent =
+      matches.length + (matches.length === 1 ? " result" : " results") +
+      ' for “' + q + '”';
+    renderMore();
+  }
+
+  if (loadMoreBtn) loadMoreBtn.addEventListener("click", renderMore);
+
+  fetch("/search-index.json")
+    .then(function (r) { return r.json(); })
+    .then(runSearch)
+    .catch(function () {
+      statusEl.textContent = "Search is temporarily unavailable — please try again shortly.";
+    });
+})();
+"""
+
+
+def build_search_index():
+    """Trimmed, JS-friendly index consumed by search/index.html's client-side
+    script. Deliberately excludes fields the search results don't render
+    (full summary, outbound link) to keep this file as small as possible --
+    it's fetched by every visitor who searches, unlike articles.json which
+    nothing in the browser ever loads directly. No indent -- this is a
+    machine-read asset, not something anyone needs to read on disk."""
+    index = [
+        {
+            "title": a["title"],
+            "excerpt": a.get("excerpt", ""),
+            "slug": a["slug"],
+            "category": a.get("category"),
+            "thumbnail": a.get("thumbnail"),
+            "date": a["date"],
+            "source": a.get("source", ""),
+        }
+        for a in ARTICLES
+    ]
+    with open("search-index.json", "w") as f:
+        json.dump(index, f, separators=(",", ":"))
+
+def build_search_page():
+    """/search/ -- a static shell with no server-rendered results. All
+    matching happens client-side in SEARCH_PAGE_JS against
+    search-index.json, since this is a static site with no backend to run a
+    real query against. Keeps the same header/pagination-adjacent search
+    bars working as plain GET forms (add /search/?q=... to the URL) even
+    with JS disabled; only the results themselves require JS to render."""
+    import os
+
+    prefix = "../"
+    title = "Search | UNO Entertainment"
+    canonical = f"{SITE_URL}/search/"
+    description = "Search UNO Entertainment's archive of hip-hop news, rumors, music, videos, sports, and opinion."
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+{GTM_HEAD_SNIPPET}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title}</title>
+{meta_html(prefix, title, description, canonical)}
+<link rel="stylesheet" href="{prefix}style.css">
+</head>
+<body>
+{GTM_BODY_SNIPPET}
+{header_html(prefix)}
+<main>
+  <p id="search-status" class="search-status">Loading&hellip;</p>
+  <div id="search-results" class="grid"></div>
+  <button id="search-load-more" type="button" class="search-load-more" hidden>Show more results</button>
+</main>
+{footer_html(prefix)}
+<script>
+{SEARCH_PAGE_JS}
+</script>
+</body>
+</html>
+"""
+    os.makedirs("search", exist_ok=True)
+    with open("search/index.html", "w") as f:
+        f.write(html)
 
 def build_legal_page(slug: str, title: str, body_html: str):
     """slug is a URL slug like 'privacy-policy' or 'terms', not a filename --
     this writes {slug}/index.html so the page is reachable at /{slug}/ with
     no .html in the address bar."""
-    prefix = "../"
+
     full_title = f"{title} | UNO Entertainment"
     canonical = f"{SITE_URL}/{slug}/"
     description = f"{title} for UNO Entertainment."
