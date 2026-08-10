@@ -269,6 +269,18 @@ def clean_text(raw_html: str) -> str:
 def slugify(title: str) -> str:
     return SLUG_RE.sub("-", title.lower()).strip("-")[:70]
 
+def looks_like_slug_title(title: str) -> bool:
+    """True if a title is suspiciously slug-shaped -- all lowercase,
+    hyphen-separated, no spaces -- which happens on sources whose own
+    <title>/og:title tag is itself a URL slug rather than real prose
+    (confirmed on a Yahoo Sports/MMA Junkie "reader picks" post, where the
+    RSS title field was literally "ufc-330-makhachev-vs-machado-..."). A
+    normal human-written title almost always has an uppercase letter or a
+    space somewhere, so this heuristic rarely misfires."""
+    if not title or " " in title or any(c.isupper() for c in title):
+        return False
+    return title.count("-") >= 2
+
 
 def generate_summary(title: str, full_text: str, fallback_excerpt: str) -> str:
     """
@@ -667,6 +679,26 @@ def main():
                     normalized_count += 1
     if normalized_count:
         print(f"[cleanup] normalized copy on {normalized_count} existing field(s)")
+
+    # Repair pass: on some sources the RSS/og:title metadata is itself a URL
+    # slug rather than real prose (see looks_like_slug_title) -- when that
+    # happens fetch_source()'s empty-title check never fires (the field
+    # technically isn't empty), so a slug ends up archived as the headline.
+    # Only the display title is touched here -- article["slug"] (and so the
+    # article's URL) is left exactly as first generated, since that URL may
+    # already be shared/indexed and must keep working.
+    repaired_count = 0
+    for article in existing:
+        if looks_like_slug_title(article.get("title", "")):
+            real_title, real_excerpt = fetch_real_title_and_excerpt(article.get("link"))
+            if real_title and not looks_like_slug_title(real_title):
+                print(f"  [repair] {article.get('slug')}: {article['title']!r} -> {real_title!r}")
+                article["title"] = real_title
+                if real_excerpt and not article.get("excerpt"):
+                    article["excerpt"] = real_excerpt[:EXCERPT_LENGTH].rstrip()
+                repaired_count += 1
+    if repaired_count:
+        print(f"[cleanup] repaired {repaired_count} slug-shaped title(s)")
 
     # Links confirmed dead by check_links.py get recorded in dead_links.json so
     # they're never re-added -- without this, a source's RSS feed can keep
