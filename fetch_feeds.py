@@ -104,6 +104,14 @@ TAG_RE = re.compile(r"<[^>]+>")
 IMG_SRC_RE = re.compile(r'<img[^>]+src="([^"]+)"')
 SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
 SLUG_RE = re.compile(r"[^a-z0-9]+")
+# Source feeds (TMZ especially) write copy with a spaced-out ellipsis --
+# "word ... word" -- as a house style for joining clauses. Collapsed to a
+# tight "word...word" by normalize_copy() below. Matched separately from
+# PUNCT_SPACE_RE (and always applied first) so its three dots never get
+# treated as a single stray punctuation mark by that second pass.
+ELLIPSIS_SPACE_RE = re.compile(r"\s*\.\.\.\s*")
+# Stray whitespace before a punctuation mark -- "word , word" -> "word, word".
+PUNCT_SPACE_RE = re.compile(r"\s+([.,!?;:])")
 # Matches both <meta property="og:image" content="..."> (the OpenGraph spec)
 # and <meta name="og:image" content="..."> -- HotNewHipHop's SEO plugin emits
 # the "name" variant instead of "property", which the original property-only
@@ -236,12 +244,25 @@ def looks_like_logo(url: str | None) -> bool:
     return any(pattern in lowered for pattern in LOGO_URL_PATTERNS)
 
 
+def normalize_copy(text: str) -> str:
+    """Tidy up recurring copy artifacts pulled in verbatim from source
+    feeds: a spaced-out ellipsis ("word ... word" -> "word...word") and
+    stray whitespace before punctuation ("word , word" -> "word, word").
+    Order matters -- the ellipsis pass has to run first, otherwise
+    PUNCT_SPACE_RE would trip over the first of the three dots."""
+    if not text:
+        return text
+    text = ELLIPSIS_SPACE_RE.sub("...", text)
+    text = PUNCT_SPACE_RE.sub(r"\1", text)
+    return re.sub(r"\s+", " ", text).strip()
+
 def clean_text(raw_html: str) -> str:
     """Strip HTML tags and collapse whitespace from a feed description."""
     if not raw_html:
         return ""
     text = unescape(TAG_RE.sub(" ", raw_html))
-    return re.sub(r"\s+", " ", text).strip()
+    text = re.sub(r"\s+", " ", text).strip()
+    return normalize_copy(text)
 
 
 def slugify(title: str) -> str:
@@ -447,9 +468,9 @@ def fetch_real_title_and_excerpt(article_url: str) -> tuple[str, str]:
             return "", ""
         html = resp.text
         title_match = OG_TITLE_RE.search(html) or OG_TITLE_RE_ALT.search(html)
-        title = unescape(title_match.group(1)).strip() if title_match else ""
+        title = normalize_copy(unescape(title_match.group(1)).strip()) if title_match else ""
         desc_match = OG_DESC_RE.search(html) or OG_DESC_RE_ALT.search(html)
-        excerpt = unescape(desc_match.group(1)).strip() if desc_match else ""
+        excerpt = normalize_copy(unescape(desc_match.group(1)).strip()) if desc_match else ""
         return title, excerpt
     except requests.RequestException:
         return "", ""
@@ -625,6 +646,26 @@ def main():
             existing = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         existing = []
+
+    # One-time (but safe to run every time -- it's idempotent) cleanup pass
+    # over the archive: normalize_copy() didn't exist when a chunk of these
+    # were first fetched, so their title/excerpt/summary can still carry the
+    # spaced-ellipsis and space-before-punctuation artifacts described at
+    # ELLIPSIS_SPACE_RE/PUNCT_SPACE_RE above. Fixing that here (rather than
+    # hand-editing articles.json) means the retention policy above still
+    # holds -- an article's fields are never re-derived from its source --
+    # while still cleaning up copy that's already archived.
+    normalized_count = 0
+    for article in existing:
+        for field in ("title", "excerpt", "summary"):
+            original = article.get(field)
+            if original:
+                cleaned = normalize_copy(original)
+                if cleaned != original:
+                    article[field] = cleaned
+                    normalized_count += 1
+    if normalized_count:
+        print(f"[cleanup] normalized copy on {normalized_count} existing field(s)")
 
     # Links confirmed dead by check_links.py get recorded in dead_links.json so
     # they're never re-added -- without this, a source's RSS feed can keep
