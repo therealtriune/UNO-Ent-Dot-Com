@@ -792,6 +792,7 @@ def pagination_html(current_page: int, total_pages: int) -> str:
     {prev}
     <span class="page-count">Page {current_page} of {total_pages}</span>
     {jump}
+    {search_bar_html("pagination-search")}
     {nxt}
   </nav>"""
 
@@ -877,6 +878,7 @@ def category_pagination_html(cat_key: str, current_page: int, total_pages: int) 
     {prev}
     <span class="page-count">Page {current_page} of {total_pages}</span>
     {jump}
+    {search_bar_html("pagination-search")}
     {nxt}
   </nav>"""
 
