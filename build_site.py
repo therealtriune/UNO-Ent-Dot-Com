@@ -444,6 +444,76 @@ footer a:hover { color: var(--white); }
   }
 }
 
+/* Search bar -- shared component in the header and next to the page-jump
+   dropdown in pagination. Reused as-is (no per-placement variants beyond
+   width/order) so it looks identical wherever it appears. */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px 3px 3px 16px;
+  flex: 0 1 220px;
+  min-width: 0;
+}
+.search-bar:focus-within { border-color: var(--red); }
+.search-bar input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-family: inherit;
+  font-size: 13px;
+  padding: 8px 0;
+}
+.search-bar input::placeholder { color: var(--gray); }
+.search-bar input::-webkit-search-cancel-button { filter: invert(1); opacity: 0.6; }
+.search-bar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: var(--red);
+  color: #fff;
+  flex-shrink: 0;
+}
+.search-bar button:hover { background: #c81a27; }
+                          
+.header-search { order: 2; }
+@media (max-width: 760px) {
+  .header-search { flex-basis: 100%; order: 3; }
+}
+
+.pagination-search { flex-basis: 220px; }
+@media (max-width: 600px) {
+  .pagination-search { order: 99; flex-basis: 100%; max-width: 320px; margin: 0 auto; }
+}
+
+/* Search results page */
+.search-status { color: var(--gray); font-size: 14px; margin: 0 0 24px; }
+.search-load-more {
+  display: block;
+  margin: 40px auto 0;
+  padding: 12px 28px;
+  border-radius: 999px;
+  background: var(--bg-card);
+  color: var(--white);
+  border: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+.search-load-more:hover { border-color: var(--red); color: var(--red); }
+
 /* Article page */
 .article-wrap { max-width: 720px; margin: 0 auto; padding: 48px 5vw 80px; }
 .back-link { display: inline-block; font-size: 13px; color: var(--gray); text-decoration: none; margin-bottom: 24px; }
