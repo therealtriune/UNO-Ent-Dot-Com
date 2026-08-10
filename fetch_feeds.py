@@ -256,6 +256,7 @@ def normalize_copy(text: str) -> str:
     text = PUNCT_SPACE_RE.sub(r"\1", text)
     return re.sub(r"\s+", " ", text).strip()
 
+
 def clean_text(raw_html: str) -> str:
     """Strip HTML tags and collapse whitespace from a feed description."""
     if not raw_html:
