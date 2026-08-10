@@ -1338,6 +1338,8 @@ def main():
     build_legal_page("privacy-policy", "Privacy Policy", PRIVACY_POLICY_BODY)
     build_legal_page("terms", "Terms of Service", TERMS_BODY)
     check_thumbnails(ARTICLES)
+    build_search_index()
+    build_search_page()
     from collections import Counter
     counts = Counter(a.get("category") for a in ARTICLES)
     cat_summary = ", ".join(f"{label} {counts.get(key, 0)}" for key, label in CATEGORIES)
@@ -1345,7 +1347,8 @@ def main():
         f"Built {total_pages} homepage page(s) ({ARTICLES_PER_PAGE}/page) "
         f"+ {ARTICLE_COUNT} article pages in articles/*/ "
         f"+ category pages ({cat_summary}) "
-        f"+ /privacy-policy/ + /terms/, plus style.css"
+        f"+ /privacy-policy/ + /terms/ "
+        f"+ /search/ (search-index.json, {ARTICLE_COUNT} articles), plus style.css"
     )
 
 
