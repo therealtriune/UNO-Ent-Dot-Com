@@ -41,6 +41,17 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Sidney-Starr-Mugshot.png",
+    "links": [
+      "https://allhiphop.com/news/sidney-starr-wants-out-of-jail-as-georgia-sex-case-advances/",
+      "https://allhiphop.com/news/sidney-starrs-pocket-delivers-bizarre-surprise-during-arrest/",
+      "https://allhiphop.com/news/sidney-starr-disputes-charges-as-arrest-warrants-reveal-hotel-allegation/",
+      "https://allhiphop.com/news/sidney-starr-faces-life-in-prison-after-child-molestation-arrest/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/04/source-logo_red1-2.png",
     "links": [
       "https://thesource.com/2026/08/12/source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop/?utm_source=rss&utm_medium=rss&utm_campaign=source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop",
@@ -115,15 +126,5 @@
       "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
       "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Sidney-Starr-Mugshot.png",
-    "links": [
-      "https://allhiphop.com/news/sidney-starrs-pocket-delivers-bizarre-surprise-during-arrest/",
-      "https://allhiphop.com/news/sidney-starr-disputes-charges-as-arrest-warrants-reveal-hotel-allegation/",
-      "https://allhiphop.com/news/sidney-starr-faces-life-in-prison-after-child-molestation-arrest/"
-    ],
-    "use_count": 3
   }
 ]
