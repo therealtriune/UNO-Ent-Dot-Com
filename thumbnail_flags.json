@@ -41,8 +41,19 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/04/source-logo_red1-2.png",
+    "links": [
+      "https://thesource.com/2026/08/12/source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop/?utm_source=rss&utm_medium=rss&utm_campaign=source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop",
+      "https://thesource.com/2026/08/11/nba-offseason-trae-young-lights-up-drew-league-with-triple-double/?utm_source=rss&utm_medium=rss&utm_campaign=nba-offseason-trae-young-lights-up-drew-league-with-triple-double",
+      "https://thesource.com/2026/08/07/mitch-mcconnell-discharged-rehab-center/?utm_source=rss&utm_medium=rss&utm_campaign=mitch-mcconnell-discharged-rehab-center"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2023/06/hollywood-unlocked-logo-300x63-1.png",
     "links": [
+      "https://hollywoodunlocked.com/perez-hiltons-mother-reportedly-steps-in-to-request-temporary-custody-of-his-three-children-following-distressing-self-harm-livestream-crisis/",
       "https://hollywoodunlocked.com/sip-n-slay-is-returning-to-nyc-this-month-and-its-bringing-big-boss-energy-for-women-creators/",
       "https://hollywoodunlocked.com/beyonce-and-parkwood-hit-with-copyright-infringement-lawsuit-over-alien-superstar-sample/",
       "https://hollywoodunlocked.com/kim-kardashians-home-broken-into-27-year-old-man-arrested-after-allegedly-taking-car-for-joyride/",
@@ -50,7 +61,7 @@
       "https://hollywoodunlocked.com/florida-dad-allegedly-killed-his-infant-son-with-a-leaf-blower-because-he-thought-it-would-be-fun/",
       "https://hollywoodunlocked.com/father-of-apalachee-high-school-shooter-sentenced-to-15-years-in-prison/"
     ],
-    "use_count": 6
+    "use_count": 7
   },
   {
     "issue": "overused_thumbnail",
