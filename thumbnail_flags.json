@@ -1,5 +1,9 @@
 [
   {
+    "link": "https://sports.yahoo.com/articles/bilal-hasan-books-ufc-debut-151342656.html",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/watch-ufc-330-start-time-042252708.html",
     "issue": "missing_thumbnail"
   },
@@ -45,18 +49,9 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/50-Cent-1.jpg",
-    "links": [
-      "https://allhiphop.com/news/jimmy-fallon-agrees-to-help-50-cent-develop-comedy-series/",
-      "https://allhiphop.com/news/50-cents-media-empire-keeps-growing-with-payday-deal/",
-      "https://allhiphop.com/news/shreveport-honors-the-showboys-g-unit-director-of-growth-signaling-50-cent-deal-could-be-stabilizing/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2023/06/hollywood-unlocked-logo-300x63-1.png",
     "links": [
+      "https://hollywoodunlocked.com/diddy-released-from-solitary-confinement-after-yard-throwdown/",
       "https://hollywoodunlocked.com/white-house-press-secretary-karoline-leavitt-leaves-the-podium-for-full-time-mom-duty/",
       "https://hollywoodunlocked.com/perez-hiltons-mother-reportedly-steps-in-to-request-temporary-custody-of-his-three-children-following-distressing-self-harm-livestream-crisis/",
       "https://hollywoodunlocked.com/sip-n-slay-is-returning-to-nyc-this-month-and-its-bringing-big-boss-energy-for-women-creators/",
@@ -66,7 +61,17 @@
       "https://hollywoodunlocked.com/florida-dad-allegedly-killed-his-infant-son-with-a-leaf-blower-because-he-thought-it-would-be-fun/",
       "https://hollywoodunlocked.com/father-of-apalachee-high-school-shooter-sentenced-to-15-years-in-prison/"
     ],
-    "use_count": 8
+    "use_count": 9
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/50-Cent-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/jimmy-fallon-agrees-to-help-50-cent-develop-comedy-series/",
+      "https://allhiphop.com/news/50-cents-media-empire-keeps-growing-with-payday-deal/",
+      "https://allhiphop.com/news/shreveport-honors-the-showboys-g-unit-director-of-growth-signaling-50-cent-deal-could-be-stabilizing/"
+    ],
+    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
