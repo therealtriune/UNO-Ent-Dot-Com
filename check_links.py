@@ -13,6 +13,12 @@ article is kept — those are usually a source site's bot-blocking or a
 transient outage, not proof the story is actually gone. A story that
 fails intermittently will just get re-checked next run.
 
+Checks run concurrently (MAX_WORKERS at a time) instead of one-by-one.
+Articles link out to many different source domains, so this doesn't
+hammer any single site the way sequential-with-delay was guarding
+against — it just gets through the whole dataset fast enough to fit in
+the workflow's timeout as the article count keeps growing.
+
 Requires: pip install requests
 
 Usage:
@@ -23,14 +29,14 @@ Usage:
 import argparse
 import json
 import sys
-import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
 TIMEOUT = 10
 USER_AGENT = "Mozilla/5.0 (compatible; UNOEntLinkChecker/1.0)"
 CONFIRMED_DEAD_CODES = {404, 410, 451}
-DELAY_BETWEEN_REQUESTS = 0.5  # be polite to source sites
+MAX_WORKERS = 20
 
 
 def check_url(url: str) -> tuple[str, int | None]:
@@ -46,7 +52,7 @@ def check_url(url: str) -> tuple[str, int | None]:
         if resp.status_code in (405, 403, 501):
             resp = requests.get(url, headers=headers, timeout=TIMEOUT, allow_redirects=True, stream=True)
             resp.close()
-    except requests.RequestException as e:
+    except requests.RequestException:
         return "warn", None
 
     code = resp.status_code
@@ -65,18 +71,33 @@ def main():
     with open("articles.json") as f:
         articles = json.load(f)
 
+    to_check = [(i, a["link"]) for i, a in enumerate(articles) if a.get("link")]
+    print(f"Checking {len(to_check)} links ({MAX_WORKERS} at a time)...\n")
+
+    results: dict[int, tuple[str, int | None]] = {}
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        future_to_index = {executor.submit(check_url, url): i for i, url in to_check}
+        done = 0
+        for future in as_completed(future_to_index):
+            i = future_to_index[future]
+            try:
+                results[i] = future.result()
+            except Exception:
+                results[i] = ("warn", None)
+            done += 1
+            if done % 200 == 0:
+                print(f"  ...{done}/{len(to_check)} checked")
+
     kept = []
     removed = []
     warned = []
 
-    print(f"Checking {len(articles)} links...\n")
-    for a in articles:
-        url = a.get("link")
-        if not url:
+    for i, a in enumerate(articles):
+        if i not in results:
             kept.append(a)
             continue
 
-        status, code = check_url(url)
+        status, code = results[i]
         label = a["title"][:60]
 
         if status == "dead":
@@ -89,8 +110,6 @@ def main():
             kept.append(a)
         else:
             kept.append(a)
-
-        time.sleep(DELAY_BETWEEN_REQUESTS)
 
     print(f"\n{len(kept)} kept, {len(removed)} confirmed dead, {len(warned)} warned (kept, will recheck).")
 
