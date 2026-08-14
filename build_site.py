@@ -99,6 +99,25 @@ CATEGORIES = [
 ]
 CATEGORY_LABELS = dict(CATEGORIES)
 
+# One genuinely distinct meta description per category, instead of a single
+# templated sentence with the category name swapped in — search engines can
+# treat near-identical descriptions across pages as low-value/duplicate, so
+# each of these is written to stand on its own.
+CATEGORY_DESCRIPTIONS = {
+    "news": "Breaking hip-hop news, curated daily — arrests, releases, beefs, "
+            "business moves, and everything else moving the culture right now.",
+    "rumors": "The hip-hop rumor mill, sorted and summarized — dating "
+              "speculation, industry whispers, and stories still developing.",
+    "videos": "New hip-hop music videos and visuals, rounded up as they drop "
+              "from your favorite artists.",
+    "music": "New singles, albums, and music news from hip-hop's biggest "
+             "names and its most interesting up-and-comers.",
+    "sports": "Basketball, football, boxing, and UFC news with a hip-hop "
+              "culture lens — where sports and the culture collide.",
+    "opinion": "Takes, analysis, and commentary on hip-hop culture from the "
+               "UNO Entertainment desk — not just what happened, but what it means.",
+}
+
 ARTICLE_COUNT = len(ARTICLES)
 
 # ---------------------------------------------------------------------------
@@ -782,7 +801,7 @@ SEARCH_SUGGEST_JS = """
       activeIndex = -1;
       if (!items.length) { panel.innerHTML = '<div class="search-suggest-empty">No matches for &ldquo;' + escapeHtml(q) + '&rdquo;</div>'; panel.hidden = false; return; }
       panel.innerHTML = items.map(function (a) {
-        var thumb = a.thumbnail ? '<img src="' + escapeHtml(a.thumbnail) + '" alt="" loading="lazy">' : '<img src="/uno-logo.png" alt="" loading="lazy" class="search-suggest-fallback">';
+        var thumb = a.thumbnail ? '<img src="' + escapeHtml(a.thumbnail) + '" alt="' + escapeHtml(a.title) + '" loading="lazy">' : '<img src="/uno-logo.png" alt="UNO Entertainment" loading="lazy" class="search-suggest-fallback">';
         var cat = CATEGORY_LABELS[a.category];
         return '<a href="/articles/' + a.slug + '/" class="search-suggest-item">' + thumb + '<span class="search-suggest-text"><span class="search-suggest-title">' + escapeHtml(a.title) + '</span>' + (cat ? '<span class="search-suggest-cat">' + cat + '</span>' : '') + '</span></a>';
       }).join("") + '<a href="/search/?q=' + encodeURIComponent(q) + '" class="search-suggest-viewall">See all results for &ldquo;' + escapeHtml(q) + '&rdquo; &rarr;</a>';
@@ -889,7 +908,7 @@ def meta_html(prefix: str, title: str, description: str, canonical_url: str, ima
 def card_html(a: dict, prefix: str) -> str:
     thumb = a.get("thumbnail")
     thumb_html = (
-        f'<img src="{escape(thumb)}" alt="" loading="lazy" class="card-thumb">'
+        f'<img src="{escape(thumb)}" alt="{escape(a["title"])}" loading="lazy" class="card-thumb">'
         if thumb
         else f'<img src="{prefix}uno-logo.png" alt="UNO Entertainment" loading="lazy" class="card-thumb card-thumb-fallback">'
     )
@@ -968,6 +987,7 @@ def build_page(page_num: int, total_pages: int):
     cards = "\n".join(card_html(a, prefix) for a in page_articles)
     title = "UNO Entertainment" if page_num == 1 else f"UNO Entertainment | Page {page_num}"
     canonical = SITE_URL + page_href(page_num)
+    description = SITE_DESCRIPTION if page_num == 1 else f"{SITE_DESCRIPTION} (Page {page_num})"
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -975,7 +995,8 @@ def build_page(page_num: int, total_pages: int):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
-{meta_html(prefix, title, SITE_DESCRIPTION, canonical)}
+{meta_html(prefix, title, description, canonical)}
+{website_jsonld() if page_num == 1 else ""}
 <link rel="stylesheet" href="{prefix}style.css">
 </head>
 <body>
@@ -1065,7 +1086,11 @@ def build_category(cat_key: str, cat_label: str):
             if not page_articles else ""
         )
         canonical = f"{SITE_URL}{category_page_href(cat_key, page_num)}"
-        description = f"The latest {cat_label.lower()} in hip-hop and culture, curated by UNO Entertainment."
+        base_description = CATEGORY_DESCRIPTIONS.get(
+            cat_key,
+            f"The latest {cat_label.lower()} in hip-hop and culture, curated by UNO Entertainment.",
+        )
+        description = base_description if page_num == 1 else f"{base_description} (Page {page_num})"
         html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1101,12 +1126,67 @@ def build_categories():
         build_category(cat_key, cat_label)
 
 
+def article_jsonld(a: dict, canonical: str, description: str) -> str:
+    """NewsArticle structured data for one article page. Lets Google show
+    richer results (byline, publish date, article thumbnail) and is one of
+    the signals used to qualify for Google News / Top Stories surfaces."""
+    thumb = a.get("thumbnail") or DEFAULT_OG_IMAGE
+    try:
+        date_iso = datetime.fromisoformat(a["date"].replace("Z", "+00:00")).isoformat()
+    except (ValueError, KeyError):
+        date_iso = datetime.now(timezone.utc).isoformat()
+    data = {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": a["title"][:110],
+        "description": description,
+        "image": [thumb],
+        "datePublished": date_iso,
+        "dateModified": date_iso,
+        "author": {"@type": "Organization", "name": "UNO Entertainment"},
+        "publisher": {
+            "@type": "Organization",
+            "name": "UNO Entertainment",
+            "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/og-image.png"},
+        },
+        "mainEntityOfPage": {"@type": "WebPage", "@id": canonical},
+    }
+    return f'<script type="application/ld+json">{json.dumps(data)}</script>'
+
+
+def website_jsonld() -> str:
+    """WebSite + Organization structured data for the homepage — lets Google
+    associate unoent.com's name/logo with the site and enables the sitelinks
+    search box in results."""
+    data = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "UNO Entertainment",
+        "url": SITE_URL,
+        "description": SITE_DESCRIPTION,
+        "publisher": {
+            "@type": "Organization",
+            "name": "UNO Entertainment",
+            "logo": {"@type": "ImageObject", "url": f"{SITE_URL}/og-image.png"},
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": f"{SITE_URL}/search/?q={{search_term_string}}",
+            },
+            "query-input": "required name=search_term_string",
+        },
+    }
+    return f'<script type="application/ld+json">{json.dumps(data)}</script>'
+
+
 def build_article(a: dict):
     # articles/{slug}/index.html is 2 directories deep.
     prefix = "../../"
     thumb = a.get("thumbnail")
     hero_html = (
-        f'<img class="article-hero" src="{escape(thumb)}" alt="">'
+        f'<img class="article-hero" src="{escape(thumb)}" alt="{escape(a["title"])}">'
         if thumb
         else f'<img class="article-hero article-hero-fallback" src="{prefix}uno-logo.png" alt="UNO Entertainment">'
     )
@@ -1121,6 +1201,7 @@ def build_article(a: dict):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{escape(title)}</title>
 {meta_html(prefix, title, description, canonical, image_url=thumb)}
+{article_jsonld(a, canonical, description)}
 <link rel="stylesheet" href="{prefix}style.css">
 </head>
 <body>
@@ -1285,7 +1366,7 @@ SEARCH_PAGE_JS = """
 
   function cardHtml(a) {
     var thumb = a.thumbnail
-      ? '<img src="' + escapeHtml(a.thumbnail) + '" alt="" loading="lazy" class="card-thumb">'
+      ? '<img src="' + escapeHtml(a.thumbnail) + '" alt="' + escapeHtml(a.title) + '" loading="lazy" class="card-thumb">'
       : '<img src="/uno-logo.png" alt="UNO Entertainment" loading="lazy" class="card-thumb card-thumb-fallback">';
     var catLabel = CATEGORY_LABELS[a.category];
     var catHtml = catLabel
@@ -1490,6 +1571,63 @@ def prune_stale_article_pages():
         print(f"Pruned {removed} stale article page(s) no longer in articles.json")
 
 
+def build_robots_txt():
+    """robots.txt pointing crawlers at sitemap.xml. No paths are disallowed
+    -- everything on the Site is meant to be indexed."""
+    content = f"""User-agent: *
+Allow: /
+
+Sitemap: {SITE_URL}/sitemap.xml
+"""
+    with open("robots.txt", "w") as f:
+        f.write(content)
+
+
+def build_sitemap(total_pages: int):
+    """XML sitemap covering every clean-URL page the Site generates:
+    homepage + pagination, every category (+ its pagination), every article
+    page, the legal pages, and search. Article <lastmod> uses the article's
+    own published date; listing pages use "now" since their content changes
+    on every feed refresh."""
+    import math
+
+    now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    urls = []
+
+    for page_num in range(1, total_pages + 1):
+        urls.append((SITE_URL + page_href(page_num), now_iso))
+
+    for cat_key, _ in CATEGORIES:
+        cat_articles = [a for a in ARTICLES if a.get("category") == cat_key]
+        cat_total_pages = max(1, math.ceil(len(cat_articles) / ARTICLES_PER_PAGE))
+        for page_num in range(1, cat_total_pages + 1):
+            urls.append((f"{SITE_URL}{category_page_href(cat_key, page_num)}", now_iso))
+
+    for a in ARTICLES:
+        try:
+            lastmod = datetime.fromisoformat(a["date"].replace("Z", "+00:00")).strftime("%Y-%m-%dT%H:%M:%SZ")
+        except (ValueError, KeyError):
+            lastmod = now_iso
+        urls.append((f"{SITE_URL}/articles/{a['slug']}/", lastmod))
+
+    urls.append((f"{SITE_URL}/privacy-policy/", now_iso))
+    urls.append((f"{SITE_URL}/terms/", now_iso))
+    urls.append((f"{SITE_URL}/search/", now_iso))
+
+    entries = "\n".join(
+        f"  <url>\n    <loc>{escape(loc)}</loc>\n    <lastmod>{lastmod}</lastmod>\n  </url>"
+        for loc, lastmod in urls
+    )
+    xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{entries}
+</urlset>
+"""
+    with open("sitemap.xml", "w") as f:
+        f.write(xml)
+    return len(urls)
+
+
 def main():
     with open("style.css", "w") as f:
         f.write(STYLE_CSS)
@@ -1503,6 +1641,8 @@ def main():
     check_thumbnails(ARTICLES)
     build_search_index()
     build_search_page()
+    build_robots_txt()
+    sitemap_url_count = build_sitemap(total_pages)
     from collections import Counter
     counts = Counter(a.get("category") for a in ARTICLES)
     cat_summary = ", ".join(f"{label} {counts.get(key, 0)}" for key, label in CATEGORIES)
@@ -1511,7 +1651,8 @@ def main():
         f"+ {ARTICLE_COUNT} article pages in articles/*/ "
         f"+ category pages ({cat_summary}) "
         f"+ /privacy-policy/ + /terms/ "
-        f"+ /search/ (search-index.json, {ARTICLE_COUNT} articles), plus style.css"
+        f"+ /search/ (search-index.json, {ARTICLE_COUNT} articles) "
+        f"+ robots.txt + sitemap.xml ({sitemap_url_count} URLs), plus style.css"
     )
 
 
