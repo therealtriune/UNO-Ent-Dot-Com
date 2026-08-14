@@ -118,6 +118,82 @@ CATEGORY_DESCRIPTIONS = {
                "UNO Entertainment desk — not just what happened, but what it means.",
 }
 
+# ---------------------------------------------------------------------------
+# Topic hubs — persistent pages for the names that show up again and again
+# across the archive (an artist, or a running storyline like a trial). These
+# aren't a 7th filter pill in the header alongside News/Rumors/etc. — they're
+# a second, orthogonal way of slicing the same archive, so a reader (or a
+# search engine) landing on "Drake" can see everything UNO Ent has on him
+# regardless of which category any individual story got filed under.
+#
+# Matching is done by regex against each article's own title+excerpt text at
+# build time — there's no separate "artists" field to maintain by hand, and
+# because it's re-derived on every build, a topic hub is never stale: it
+# picks up new matching stories automatically as fetch_feeds.py adds them.
+# \b word-boundary patterns are required (not bare substrings) — an early,
+# looser version of this that matched "BIA" and "Ye" as plain substrings
+# produced false positives inside unrelated words ("Arabian", "yesterday").
+#
+# This list was seeded by scanning the live archive for the top recurring
+# names and keeping anything with at least 4 matching articles today — worth
+# revisiting periodically as the archive grows (some names currently just
+# under that bar, like Nas, will clear it soon).
+TOPICS = [
+    ("drake", "Drake", [r"\bDrake\b"]),
+    ("tupac-shakur", "Tupac Shakur", [r"\bTupac\b", r"\b2Pac\b"]),
+    ("diddy", "Diddy", [r"\bDiddy\b", r"\bSean Combs\b"]),
+    ("cardi-b", "Cardi B", [r"\bCardi B\b"]),
+    ("keefe-d", "Keefe D", [r"\bKeefe D\b"]),
+    ("blueface", "Blueface", [r"\bBlueface\b"]),
+    ("asap-rocky", "A$AP Rocky", [r"\bA\$AP Rocky\b", r"\bAsap Rocky\b"]),
+    ("50-cent", "50 Cent", [r"\b50 Cent\b"]),
+    ("chris-brown", "Chris Brown", [r"\bChris Brown\b"]),
+    ("usher", "Usher", [r"\bUsher\b"]),
+    ("nba-youngboy", "NBA YoungBoy", [r"\bNBA YoungBoy\b", r"\bYoungBoy\b"]),
+    ("jay-z", "Jay-Z", [r"\bJay-Z\b", r"\bJay Z\b"]),
+    ("kendrick-lamar", "Kendrick Lamar", [r"\bKendrick Lamar\b", r"\bKendrick\b"]),
+    ("nicki-minaj", "Nicki Minaj", [r"\bNicki Minaj\b", r"\bNicki\b"]),
+    ("tyga", "Tyga", [r"\bTyga\b"]),
+    ("megan-thee-stallion", "Megan Thee Stallion", [r"\bMegan Thee Stallion\b"]),
+    ("kanye-west", "Kanye West", [r"\bKanye West\b", r"\bKanye\b", r"\bYe\b"]),
+    ("beyonce", "Beyoncé", [r"\bBeyonc"]),
+    ("kim-kardashian", "Kim Kardashian", [r"\bKim Kardashian\b"]),
+    ("rick-ross", "Rick Ross", [r"\bRick Ross\b"]),
+    ("latto", "Latto", [r"\bLatto\b"]),
+    ("lil-durk", "Lil Durk", [r"\bLil Durk\b"]),
+    ("21-savage", "21 Savage", [r"\b21 Savage\b"]),
+    ("eminem", "Eminem", [r"\bEminem\b"]),
+    ("doja-cat", "Doja Cat", [r"\bDoja Cat\b"]),
+    ("lil-uzi-vert", "Lil Uzi Vert", [r"\bLil Uzi Vert\b"]),
+    ("boosie", "Boosie", [r"\bBoosie\b"]),
+    ("the-game", "The Game", [r"\bThe Game\b"]),
+    ("young-thug", "Young Thug", [r"\bYoung Thug\b"]),
+]
+TOPIC_LABELS = {slug: name for slug, name, _ in TOPICS}
+# Deliberately case-sensitive (no re.IGNORECASE): names in feed titles/
+# excerpts are consistently capitalized, and case-sensitivity is what keeps
+# a short pattern like "\bYe\b" from matching the common lowercase word
+# "ye" (dialect/slang for "you") instead of just Kanye West's stage name.
+TOPIC_PATTERNS = {
+    slug: re.compile("|".join(patterns)) for slug, _, patterns in TOPICS
+}
+
+
+def topic_articles(slug: str) -> list:
+    pattern = TOPIC_PATTERNS[slug]
+    return [
+        a for a in ARTICLES
+        if pattern.search(a.get("title", "") + " " + a.get("excerpt", ""))
+    ]
+
+
+def article_topic_slugs(a: dict) -> list:
+    """Every topic slug this article matches, in TOPICS order — used to link
+    an article page to its topic hub(s) (see build_article)."""
+    blob = a.get("title", "") + " " + a.get("excerpt", "")
+    return [slug for slug, pattern in TOPIC_PATTERNS.items() if pattern.search(blob)]
+
+
 ARTICLE_COUNT = len(ARTICLES)
 
 # ---------------------------------------------------------------------------
@@ -638,6 +714,9 @@ footer a:hover { color: var(--white); }
 }
 .outbound-cta:hover { background: #c81a27; }
 .outbound-note { font-size: 12px; color: var(--gray); margin-top: 14px; }
+.article-related-topics { font-size: 13px; color: var(--gray); margin-top: 24px; }
+.article-related-topics a { color: var(--red); font-weight: 700; text-decoration: none; }
+.article-related-topics a:hover { text-decoration: underline; }
 .comments-wrap { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
 .comments-heading { font-size: 20px; font-weight: 800; margin: 0 0 20px; color: var(--white); }
 
@@ -670,6 +749,40 @@ footer a:hover { color: var(--white); }
 .legal-wrap p { font-size: 15px; line-height: 1.7; color: #e6e6e6; margin: 0 0 16px; }
 .legal-wrap a { color: var(--red); text-decoration: none; font-weight: 700; }
 .legal-wrap a:hover { text-decoration: underline; }
+
+/* Topic hub pages (/topic/{slug}/) and the /topics/ directory */
+.topic-hub-heading { margin: 0 0 28px; }
+.topic-hub-heading h1 { font-size: 30px; font-weight: 800; margin: 0 0 8px; color: var(--white); }
+.topic-hub-sub { font-size: 14px; color: var(--gray); margin: 0; }
+.topic-index-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+.topic-index-item {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+  padding: 16px 18px; text-decoration: none;
+}
+.topic-index-item:hover { background: var(--bg-card-hover); border-color: var(--gray); }
+.topic-index-name { font-size: 15px; font-weight: 700; color: var(--white); }
+.topic-index-count { font-size: 12px; color: var(--gray); flex-shrink: 0; }
+
+/* Hip-Hop Beef Tracker pillar page (/hip-hop-beef-tracker/) */
+.beef-tracker-intro { font-size: 15px; line-height: 1.7; color: #e6e6e6; max-width: 760px; margin: 0 0 40px; }
+.beef-entry {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
+  padding: 24px 26px; margin-bottom: 20px;
+}
+.beef-entry-header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 10px; }
+.beef-entry-title { font-size: 19px; font-weight: 800; color: var(--white); margin: 0; }
+.beef-entry-status {
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+  padding: 4px 12px; border-radius: 999px; flex-shrink: 0;
+}
+.beef-entry-status.active { background: rgba(224, 32, 46, 0.16); color: var(--red); }
+.beef-entry-status.dormant { background: rgba(154, 154, 154, 0.16); color: var(--gray); }
+.beef-entry-updated { font-size: 12px; color: var(--gray); margin: 0 0 12px; }
+.beef-entry-summary { font-size: 15px; line-height: 1.65; color: #e6e6e6; margin: 0 0 14px; }
+.beef-entry-links { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.beef-entry-links a { font-size: 13px; font-weight: 700; color: var(--red); text-decoration: none; }
+.beef-entry-links a:hover { text-decoration: underline; }
 """
 
 # ---------------------------------------------------------------------------
@@ -853,6 +966,8 @@ def footer_html(prefix: str) -> str:
       <div class="footer-col">
         <h4>Sections</h4>
         <a href="/">Home</a>{section_links}
+        <a href="/topics/">Topics</a>
+        <a href="/hip-hop-beef-tracker/">Beef Tracker</a>
       </div>
       <div class="footer-col">
         <h4>About UNO Entertainment</h4>
@@ -1126,6 +1241,375 @@ def build_categories():
         build_category(cat_key, cat_label)
 
 
+# ---------------------------------------------------------------------------
+# Topic hub pages — same page shape as a category page (paginated grid of
+# cards), but scoped to a topic match instead of a category field, and living
+# under topic/ instead of category/.
+# ---------------------------------------------------------------------------
+
+
+def topic_page_href(slug: str, target_page: int) -> str:
+    if target_page == 1:
+        return f"/topic/{slug}/"
+    return f"/topic/{slug}/{target_page}/"
+
+
+def topic_pagination_html(slug: str, current_page: int, total_pages: int) -> str:
+    if total_pages <= 1:
+        return ""
+    if current_page > 1:
+        prev = f'<a href="{topic_page_href(slug, current_page - 1)}">&larr; Newer</a>'
+    else:
+        prev = '<span class="disabled">&larr; Newer</span>'
+    if current_page < total_pages:
+        nxt = f'<a href="{topic_page_href(slug, current_page + 1)}">Older &rarr;</a>'
+    else:
+        nxt = '<span class="disabled">Older &rarr;</span>'
+    jump = page_jump_html(current_page, total_pages, lambda p: topic_page_href(slug, p))
+    return f"""
+  <nav class="pagination">
+    {prev}
+    <span class="page-count">Page {current_page} of {total_pages}</span>
+    {jump}
+    {search_bar_html("pagination-search")}
+    {nxt}
+  </nav>"""
+
+
+def build_topic(slug: str, name: str):
+    import math
+    import os
+
+    articles = topic_articles(slug)
+    if not articles:
+        # Nothing matches yet -- don't publish an empty hub page. It'll get
+        # built automatically as soon as the archive picks up a matching
+        # story (this function re-runs on every build).
+        return False
+    total_pages = max(1, math.ceil(len(articles) / ARTICLES_PER_PAGE))
+
+    for page_num in range(1, total_pages + 1):
+        start = (page_num - 1) * ARTICLES_PER_PAGE
+        page_articles = articles[start:start + ARTICLES_PER_PAGE]
+        # topic/{slug}/index.html is 2 directories deep, topic/{slug}/{n}/index.html is 3.
+        prefix = "../../" if page_num == 1 else "../../../"
+        cards = "\n".join(card_html(a, prefix) for a in page_articles)
+        title = f"{name} News | UNO Entertainment" + (f" (Page {page_num})" if page_num > 1 else "")
+        canonical = f"{SITE_URL}{topic_page_href(slug, page_num)}"
+        base_description = (
+            f"Every UNO Entertainment story on {name} -- news, rumors, and updates, "
+            f"all in one place."
+        )
+        description = base_description if page_num == 1 else f"{base_description} (Page {page_num})"
+        html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+{GTM_HEAD_SNIPPET}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{escape(title)}</title>
+{meta_html(prefix, title, description, canonical)}
+<link rel="stylesheet" href="{prefix}style.css">
+</head>
+<body>
+{GTM_BODY_SNIPPET}
+{header_html(prefix)}
+<main>
+  <div class="topic-hub-heading">
+    <h1>{escape(name)}</h1>
+    <p class="topic-hub-sub">Every UNO Entertainment story on {escape(name)}, newest first.</p>
+  </div>
+  <div class="grid">
+    {cards}
+  </div>
+  {topic_pagination_html(slug, page_num, total_pages)}
+</main>
+{footer_html(prefix)}
+</body>
+</html>
+"""
+        out_dir = f"topic/{slug}" if page_num == 1 else f"topic/{slug}/{page_num}"
+        os.makedirs(out_dir, exist_ok=True)
+        with open(f"{out_dir}/index.html", "w") as f:
+            f.write(html)
+    return True
+
+
+def build_topics_index(live_topics: list) -> None:
+    """/topics/ -- a directory linking to every currently-live topic hub, so
+    hub pages are always reachable by following links from the site (never
+    orphan pages that only exist in the sitemap) and a visitor can browse
+    "who does UNO Ent cover a lot of" at a glance. live_topics is the list of
+    (slug, name, article_count) for topics that actually published a page --
+    a topic with 0 matches today is left out until it has something to show."""
+    import os
+
+    prefix = "../"
+    title = "Topics | UNO Entertainment"
+    canonical = f"{SITE_URL}/topics/"
+    description = "Browse UNO Entertainment's coverage by artist and storyline -- every topic hub in one place."
+    items = "\n".join(
+        f'    <a class="topic-index-item" href="/topic/{slug}/">'
+        f'<span class="topic-index-name">{escape(name)}</span>'
+        f'<span class="topic-index-count">{count} {"story" if count == 1 else "stories"}</span></a>'
+        for slug, name, count in live_topics
+    )
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+{GTM_HEAD_SNIPPET}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title}</title>
+{meta_html(prefix, title, description, canonical)}
+<link rel="stylesheet" href="{prefix}style.css">
+</head>
+<body>
+{GTM_BODY_SNIPPET}
+{header_html(prefix)}
+<main>
+  <div class="topic-hub-heading">
+    <h1>Topics</h1>
+    <p class="topic-hub-sub">Browse UNO Entertainment's coverage by artist and storyline.</p>
+  </div>
+  <div class="topic-index-grid">
+{items}
+  </div>
+</main>
+{footer_html(prefix)}
+</body>
+</html>
+"""
+    os.makedirs("topics", exist_ok=True)
+    with open("topics/index.html", "w") as f:
+        f.write(html)
+
+
+# ---------------------------------------------------------------------------
+# Hip-Hop Beef Tracker — a single evergreen pillar page at
+# /hip-hop-beef-tracker/ rounding up the storylines UNO Ent has covered the
+# most (curated below, not auto-detected — matching two names co-occurring
+# in an article is a decent signal for a topic hub, but "is this actually an
+# active beef" takes a human call fabrication). Every claim in SUMMARY below
+# is a paraphrase of something already reported in one of the linked
+# ARTICLE_SLUGS -- nothing here should ever assert a fact that isn't backed
+# by an article already in the archive.
+#
+# MAINTENANCE: this needs a human pass periodically, the same way the
+# category/topic lists above do -- add a new entry when a storyline UNO Ent
+# is covering repeatedly doesn't have one yet, flip STATUS to "dormant" once
+# a beef goes quiet for a while, and add newer ARTICLE_SLUGS to an existing
+# entry as the story develops. build_beef_tracker() below only ever links to
+# slugs that still exist in ARTICLES (a slug removed by check_links.py's
+# dead-link pruning is silently dropped from an entry's link list, never
+# left as a broken link), and computes "last updated" from whichever of an
+# entry's still-live articles is newest -- but it doesn't invent new
+# entries or new claims on its own.
+BEEF_TRACKER = [
+    {
+        "slug": "drake-kendrick-lamar",
+        "title": "Drake vs. Kendrick Lamar",
+        "status": "active",
+        "summary": (
+            "Their 2024 lyrical war never fully cooled off. Drake has kept "
+            "referencing the battle -- including barking along to Kendrick's "
+            "\"Not Like Us\" in a viral clip -- and the beef has since pulled "
+            "in a second front: Drake trading shots with Jay-Z as tension "
+            "with Roc Nation escalates, with Kendrick's name coming up in "
+            "that conversation too."
+        ),
+        "article_slugs": [
+            "drake-takes-more-shots-at-jay-z-as-roc-nation-beef-intensifies",
+            "drake-makes-a-rare-admission-about-his-battle-with-kendrick-lamar",
+            "drake-barks-to-the-beat-of-not-like-us-in-new-viral-video-edit",
+        ],
+        "topic_slugs": ["drake", "kendrick-lamar", "jay-z"],
+    },
+    {
+        "slug": "doja-cat-tyga",
+        "title": "Doja Cat vs. Tyga",
+        "status": "active",
+        "summary": (
+            "Doja Cat publicly tore into Tyga over his new album $TARFACE, "
+            "accusing him of leaning on AI in its production and calling him "
+            "out during a livestream. Tyga pushed back, insisting the album "
+            "isn't \"totally AI\" and responding directly to her criticism."
+        ),
+        "article_slugs": [
+            "doja-cat-brutally-disses-tyga-his-tarface-album",
+            "tyga-insists-tarface-album-not-totally-ai-responds-to-doja-cat",
+            "doja-cat-calls-tyga-a-penis-for-releasing-a-i-album",
+        ],
+        "topic_slugs": ["doja-cat", "tyga"],
+    },
+    {
+        "slug": "cardi-b-bia",
+        "title": "Cardi B vs. BIA",
+        "status": "active",
+        "summary": (
+            "A long-running feud between Cardi B and BIA flared back up: BIA "
+            "made clear she wouldn't apologize to Cardi the way she had to "
+            "Doja Cat, and Cardi responded by accusing BIA of spreading "
+            "rumors about her relationship with Offset during an X Spaces "
+            "conversation."
+        ),
+        "article_slugs": [
+            "bia-revives-cardi-b-feud-cardi-b-unleashes-explosive-response",
+            "cardi-b-reignites-feud-with-bia-over-offset-cheating-rumors",
+        ],
+        "topic_slugs": ["cardi-b"],
+    },
+    {
+        "slug": "rick-ross-50-cent",
+        "title": "Rick Ross vs. 50 Cent",
+        "status": "active",
+        "summary": (
+            "50 Cent mocked Rick Ross's album sales and a sparse Detroit "
+            "crowd; Ross fired back with his own streaming numbers for "
+            "*Set In Stone* and challenged 50's business record, and the "
+            "back-and-forth has since spilled into jokes about liquor "
+            "brands and sneaker deals."
+        ),
+        "article_slugs": [
+            "rick-ross-challenges-50-cent-s-business-record-after-album-sales-jab",
+            "rick-ross-challenges-50-cent-s-sales-jokes-with-his-own-math",
+            "50-cent-insists-rick-ross-career-is-over-after-low-album-sales",
+        ],
+        "topic_slugs": ["rick-ross", "50-cent"],
+    },
+    {
+        "slug": "50-cent-diddy",
+        "title": "50 Cent vs. Diddy",
+        "status": "dormant",
+        "summary": (
+            "Not a diss-track beef so much as a running war of press hits: "
+            "Diddy has accused Lil Rod of stealing private footage and "
+            "feeding it to 50 Cent's Netflix documentary, and 50 has kept "
+            "needling Diddy over the ongoing Tupac murder-trial coverage, "
+            "including a public jab at Keefe D over his claims."
+        ),
+        "article_slugs": [
+            "exclusive-diddy-claims-lil-rod-sold-stolen-footage-into-50-cent-s-netf",
+            "50-cent-clowns-keefe-d-for-claiming-diddy-didn-t-murder-tupac",
+        ],
+        "topic_slugs": ["50-cent", "diddy", "keefe-d"],
+    },
+]
+
+
+def beef_tracker_jsonld(live_entries: list) -> str:
+    """ItemList structured data for the tracker -- lets Google understand
+    this is a curated list of distinct storylines, not one long article."""
+    data = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Hip-Hop Beef Tracker",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i + 1,
+                "name": entry["title"],
+                "url": f"{SITE_URL}/hip-hop-beef-tracker/#{entry['slug']}",
+            }
+            for i, entry in enumerate(live_entries)
+        ],
+    }
+    return f'<script type="application/ld+json">{json.dumps(data)}</script>'
+
+
+def build_beef_tracker():
+    """/hip-hop-beef-tracker/ -- one evergreen page, not paginated. Returns
+    the list of entries that actually rendered (had at least one surviving
+    article link) so main()/build_sitemap can both use it as the single
+    source of truth, same pattern as build_topic_hubs()."""
+    import os
+
+    article_by_slug = {a["slug"]: a for a in ARTICLES}
+    live_entries = []
+    entries_html = []
+    for entry in BEEF_TRACKER:
+        live_articles = [article_by_slug[s] for s in entry["article_slugs"] if s in article_by_slug]
+        if not live_articles:
+            # Every source article for this storyline has since been pruned
+            # (dead link) -- skip rather than publish an unsourced claim.
+            continue
+        live_entries.append(entry)
+        last_updated = max(live_articles, key=lambda a: a["date"])["date"]
+        links = " &middot; ".join(
+            f'<a href="/articles/{a["slug"]}/">{escape(a["title"])}</a>' for a in live_articles
+        )
+        topic_links = " &middot; ".join(
+            f'<a href="/topic/{slug}/">{escape(TOPIC_LABELS[slug])}</a>'
+            for slug in entry["topic_slugs"]
+            if slug in TOPIC_LABELS and topic_articles(slug)
+        )
+        entries_html.append(f"""
+  <article class="beef-entry" id="{entry['slug']}">
+    <div class="beef-entry-header">
+      <h2 class="beef-entry-title">{escape(entry['title'])}</h2>
+      <span class="beef-entry-status {entry['status']}">{entry['status']}</span>
+    </div>
+    <p class="beef-entry-updated">Last updated {escape(time_ago(last_updated))}</p>
+    <p class="beef-entry-summary">{escape(entry['summary'])}</p>
+    <div class="beef-entry-links">{links}{" &middot; " + topic_links if topic_links else ""}</div>
+  </article>""")
+
+    prefix = "../"
+    title = "Hip-Hop Beef Tracker | UNO Entertainment"
+    canonical = f"{SITE_URL}/hip-hop-beef-tracker/"
+    description = (
+        "Every hip-hop beef UNO Entertainment is tracking right now -- who's "
+        "involved, what started it, and where each storyline stands."
+    )
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+{GTM_HEAD_SNIPPET}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title}</title>
+{meta_html(prefix, title, description, canonical)}
+{beef_tracker_jsonld(live_entries)}
+<link rel="stylesheet" href="{prefix}style.css">
+</head>
+<body>
+{GTM_BODY_SNIPPET}
+{header_html(prefix)}
+<main>
+  <div class="topic-hub-heading">
+    <h1>Hip-Hop Beef Tracker</h1>
+    <p class="topic-hub-sub">Every storyline UNO Entertainment is following right now, updated as it develops.</p>
+  </div>
+  <p class="beef-tracker-intro">From lyrical wars to X Spaces callouts, this is where UNO Ent keeps score.
+  Each entry links back to the stories behind it -- click through for the full picture, or check the linked
+  artist hub for everything else we've covered on them.</p>
+{"".join(entries_html)}
+</main>
+{footer_html(prefix)}
+</body>
+</html>
+"""
+    os.makedirs("hip-hop-beef-tracker", exist_ok=True)
+    with open("hip-hop-beef-tracker/index.html", "w") as f:
+        f.write(html)
+    return live_entries
+
+
+def build_topic_hubs():
+    """Builds every topic hub with at least one matching article today, plus
+    the /topics/ directory linking to all of them. Returns the list of
+    (slug, name, article_count) that actually got published, for the
+    sitemap and the topics-index page to both use as their single source of
+    truth."""
+    live_topics = []
+    for slug, name, _ in TOPICS:
+        count = len(topic_articles(slug))
+        if count > 0 and build_topic(slug, name):
+            live_topics.append((slug, name, count))
+    build_topics_index(live_topics)
+    return live_topics
+
+
 def article_jsonld(a: dict, canonical: str, description: str) -> str:
     """NewsArticle structured data for one article page. Lets Google show
     richer results (byline, publish date, article thumbnail) and is one of
@@ -1193,6 +1677,19 @@ def build_article(a: dict):
     title = f"{a['title']} | UNO Entertainment"
     canonical = f"{SITE_URL}/articles/{a['slug']}/"
     description = a.get("excerpt") or SITE_DESCRIPTION
+    # Link this article to any topic hub(s) its title/excerpt matches -- the
+    # main reason topic hubs get any inbound links at all beyond /topics/,
+    # and it points the reader at more coverage on the same person/story
+    # right where they're already reading about them.
+    matched_topics = [
+        (slug, TOPIC_LABELS[slug]) for slug in article_topic_slugs(a) if topic_articles(slug)
+    ]
+    related_topics_html = ""
+    if matched_topics:
+        links = " &middot; ".join(
+            f'<a href="/topic/{slug}/">{escape(name)}</a>' for slug, name in matched_topics
+        )
+        related_topics_html = f'<p class="article-related-topics">More on: {links}</p>'
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1217,6 +1714,7 @@ def build_article(a: dict):
     Read The Full Story On {escape(a['source'])} &rarr;
   </a>
   <p class="outbound-note">Original reporting by {escape(a['source'])}. This page is a summary. The full story, photos, and details live at the link above.</p>
+  {related_topics_html}
   {disqus_html(canonical, a['slug'])}
 </div>
 {footer_html(prefix)}
@@ -1583,12 +2081,15 @@ Sitemap: {SITE_URL}/sitemap.xml
         f.write(content)
 
 
-def build_sitemap(total_pages: int):
+def build_sitemap(total_pages: int, live_topics: list, beef_tracker_live: list):
     """XML sitemap covering every clean-URL page the Site generates:
-    homepage + pagination, every category (+ its pagination), every article
-    page, the legal pages, and search. Article <lastmod> uses the article's
-    own published date; listing pages use "now" since their content changes
-    on every feed refresh."""
+    homepage + pagination, every category (+ its pagination), every topic
+    hub (+ its pagination), every article page, the legal pages, /topics/,
+    and search. Article <lastmod> uses the article's own published date;
+    listing pages use "now" since their content changes on every feed
+    refresh. live_topics is the (slug, name, count) list build_topic_hubs()
+    already computed -- reused here instead of recomputing which topics are
+    actually live."""
     import math
 
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -1602,6 +2103,16 @@ def build_sitemap(total_pages: int):
         cat_total_pages = max(1, math.ceil(len(cat_articles) / ARTICLES_PER_PAGE))
         for page_num in range(1, cat_total_pages + 1):
             urls.append((f"{SITE_URL}{category_page_href(cat_key, page_num)}", now_iso))
+
+    for slug, _, count in live_topics:
+        topic_total_pages = max(1, math.ceil(count / ARTICLES_PER_PAGE))
+        for page_num in range(1, topic_total_pages + 1):
+            urls.append((f"{SITE_URL}{topic_page_href(slug, page_num)}", now_iso))
+    if live_topics:
+        urls.append((f"{SITE_URL}/topics/", now_iso))
+
+    if beef_tracker_live:
+        urls.append((f"{SITE_URL}/hip-hop-beef-tracker/", now_iso))
 
     for a in ARTICLES:
         try:
@@ -1633,6 +2144,8 @@ def main():
         f.write(STYLE_CSS)
     total_pages = build_pages()
     build_categories()
+    live_topics = build_topic_hubs()
+    beef_tracker_live = build_beef_tracker()
     prune_stale_article_pages()
     for a in ARTICLES:
         build_article(a)
@@ -1642,7 +2155,7 @@ def main():
     build_search_index()
     build_search_page()
     build_robots_txt()
-    sitemap_url_count = build_sitemap(total_pages)
+    sitemap_url_count = build_sitemap(total_pages, live_topics, beef_tracker_live)
     from collections import Counter
     counts = Counter(a.get("category") for a in ARTICLES)
     cat_summary = ", ".join(f"{label} {counts.get(key, 0)}" for key, label in CATEGORIES)
@@ -1650,6 +2163,8 @@ def main():
         f"Built {total_pages} homepage page(s) ({ARTICLES_PER_PAGE}/page) "
         f"+ {ARTICLE_COUNT} article pages in articles/*/ "
         f"+ category pages ({cat_summary}) "
+        f"+ {len(live_topics)} topic hub(s) + /topics/ "
+        f"+ /hip-hop-beef-tracker/ ({len(beef_tracker_live)} storylines) "
         f"+ /privacy-policy/ + /terms/ "
         f"+ /search/ (search-index.json, {ARTICLE_COUNT} articles) "
         f"+ robots.txt + sitemap.xml ({sitemap_url_count} URLs), plus style.css"
