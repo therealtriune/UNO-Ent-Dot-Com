@@ -53,6 +53,26 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Tupac-Shakur.jpg",
+    "links": [
+      "https://allhiphop.com/news/tupacs-cousin-confronts-keefe-ds-bragging-after-jury-selection-at-court/",
+      "https://allhiphop.com/news/keefe-d-trial-turns-courtroom-into-daily-lottery/",
+      "https://allhiphop.com/news/keffe-d-refuses-plea-deal-days-before-trial-begins/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2025/09/unnamed-48.jpg",
+    "links": [
+      "https://thesource.com/2026/08/14/cardi-bia-feud-offset-cheating-rumors/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-bia-feud-offset-cheating-rumors",
+      "https://thesource.com/2026/08/05/cardi-b-kash-doll-ah-ha-remix/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-kash-doll-ah-ha-remix",
+      "https://thesource.com/2026/08/04/cardi-b-four-diamond-singles/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-four-diamond-singles"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2023/06/hollywood-unlocked-logo-300x63-1.png",
     "links": [
       "https://hollywoodunlocked.com/sidney-starr-pleads-for-bond-insists-shes-no-flight-risk-amid-serious-child-sex-assault-charges/",
