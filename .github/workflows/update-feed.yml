@@ -44,7 +44,7 @@ jobs:
       - name: Commit and push if changed
         run: |
           git config user.name "uno-ent-bot"
-                    git add articles.json thumbnail_flags.json index.html style.css search-index.json articles/ page/ category/ privacy-policy/ terms/ search/
+          git add articles.json thumbnail_flags.json index.html style.css search-index.json robots.txt sitemap.xml articles/ page/ category/ privacy-policy/ terms/ search/
           if git diff --cached --quiet; then
             echo "No new articles — nothing to commit."
           else

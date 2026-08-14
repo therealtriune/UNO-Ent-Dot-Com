@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-UNO Entertainment Ã¢ÂÂ feed aggregation script.
+UNO Entertainment -- feed aggregation script.
 
 Pulls the latest posts from each source's RSS feed, normalizes them into a
 common shape (source, title, excerpt, summary, thumbnail, link, date), and
@@ -10,8 +10,8 @@ build_site.py to regenerate the homepage and article pages.
 
 RETENTION POLICY: articles.json is a permanent archive, not a rolling
 snapshot. Every run loads whatever's already on disk, skips any article
-whose link it's already seen (existing fields Ã¢ÂÂ including any manually
-patched thumbnail Ã¢ÂÂ are left untouched), and only fetches/appends articles
+whose link it's already seen (existing fields -- including any manually
+patched thumbnail -- are left untouched), and only fetches/appends articles
 it hasn't recorded before. Nothing is ever dropped here just because it
 aged out of a source's RSS feed. The one and only removal rule lives in
 check_links.py: an article is deleted from the site if and only if its
@@ -21,22 +21,22 @@ outbound link is confirmed dead (404/410/451). Run that script separately
 WHERE "SUMMARY" COMES FROM (read this if you're building toward in-house):
   Every article page shows a short UNO Ent-voiced summary before linking out
   to the original story. Right now generate_summary() below does a simple
-  extractive summary Ã¢ÂÂ it pulls the opening sentences of the full article
+  extractive summary -- it pulls the opening sentences of the full article
   body. That's a reasonable default, but it's still close to the source's
   own words.
 
   The natural upgrade path, in order:
     1. Swap generate_summary() for a call to an LLM (e.g. the Claude API)
        that reads full_text and writes 2-3 original sentences in UNO Ent's
-       voice. This is a small change Ã¢ÂÂ see the commented example in
+       voice. This is a small change -- see the commented example in
        generate_summary() below.
     2. Once UNO Ent has writers, replace generate_summary()'s output with
        actual staff-written summaries or full original articles, stored
-       against the same slug. Nothing else in the site needs to change Ã¢ÂÂ
+       against the same slug. Nothing else in the site needs to change --
        build_site.py just renders whatever's in the "summary" field.
 
 Requires: pip install feedparser
-(feedparser handles gzip/compressed feeds automatically Ã¢ÂÂ some of the sources
+(feedparser handles gzip/compressed feeds automatically -- some of the sources
 below serve compressed RSS that simple HTTP fetchers can choke on, so don't
 swap this out for a bare requests.get() without decompression handling.)
 """
@@ -112,6 +112,14 @@ SLUG_RE = re.compile(r"[^a-z0-9]+")
 ELLIPSIS_SPACE_RE = re.compile(r"\s*\.\.\.\s*")
 # Stray whitespace before a punctuation mark -- "word , word" -> "word, word".
 PUNCT_SPACE_RE = re.compile(r"\s+([.,!?;:])")
+# Some source CMSes (confirmed on AllHipHop) leak an internal debug/QA
+# annotation straight into their own og:description meta tag, e.g. "...the
+# Tupac murder trial. (127 characters)". It's their bug, not ours, but since
+# fetch_real_title_and_excerpt() copies og:description verbatim, it was
+# passing straight through into UNO Ent's own meta descriptions too. Stripped
+# here so it can never leak into an excerpt again, regardless of which
+# source it comes from.
+DEBUG_CHAR_COUNT_RE = re.compile(r"\s*\(\d+\s*characters?\)\s*$", re.IGNORECASE)
 # Matches both <meta property="og:image" content="..."> (the OpenGraph spec)
 # and <meta name="og:image" content="..."> -- HotNewHipHop's SEO plugin emits
 # the "name" variant instead of "property", which the original property-only
@@ -246,14 +254,17 @@ def looks_like_logo(url: str | None) -> bool:
 
 def normalize_copy(text: str) -> str:
     """Tidy up recurring copy artifacts pulled in verbatim from source
-    feeds: a spaced-out ellipsis ("word ... word" -> "word...word") and
-    stray whitespace before punctuation ("word , word" -> "word, word").
-    Order matters -- the ellipsis pass has to run first, otherwise
-    PUNCT_SPACE_RE would trip over the first of the three dots."""
+    feeds: a spaced-out ellipsis ("word ... word" -> "word...word"), stray
+    whitespace before punctuation ("word , word" -> "word, word"), and a
+    trailing "(N characters)" debug annotation some source CMSes leak into
+    their own meta tags. Order matters -- the ellipsis pass has to run
+    first, otherwise PUNCT_SPACE_RE would trip over the first of the three
+    dots."""
     if not text:
         return text
     text = ELLIPSIS_SPACE_RE.sub("...", text)
     text = PUNCT_SPACE_RE.sub(r"\1", text)
+    text = DEBUG_CHAR_COUNT_RE.sub("", text)
     return re.sub(r"\s+", " ", text).strip()
 
 
@@ -268,7 +279,7 @@ def clean_text(raw_html: str) -> str:
 
 def slugify(title: str) -> str:
     return SLUG_RE.sub("-", title.lower()).strip("-")[:70]
-  
+
 
 def looks_like_slug_title(title: str) -> bool:
     """True if a title is suspiciously slug-shaped -- all lowercase,
@@ -288,7 +299,7 @@ def generate_summary(title: str, full_text: str, fallback_excerpt: str) -> str:
     Produce the 2-3 sentence summary shown on the article page, before the
     outbound link to the source.
 
-    Default behavior: extractive Ã¢ÂÂ take the first few sentences of the full
+    Default behavior: extractive -- take the first few sentences of the full
     article body. Good enough to ship with, but it stays close to the
     source's own phrasing, which is worth improving on.
 
@@ -313,7 +324,7 @@ def generate_summary(title: str, full_text: str, fallback_excerpt: str) -> str:
         return response.content[0].text.strip()
 
     That call costs a fraction of a cent per article and gives you an
-    original summary in UNO Ent's own voice Ã¢ÂÂ which is the version worth
+    original summary in UNO Ent's own voice -- which is the version worth
     keeping once you're ready to make this feel less like syndication and
     more like your own editorial desk.
     """
@@ -326,7 +337,7 @@ def generate_summary(title: str, full_text: str, fallback_excerpt: str) -> str:
 
 
 # The 6 categories UNO Ent actually filters by. This is deliberately not the
-# same list as what source RSS feeds tag things with Ã¢ÂÂ feeds throw in labels
+# same list as what source RSS feeds tag things with -- feeds throw in labels
 # like "Exclusive," "Feature," "Source Sports," etc. that are specific to how
 # that publisher organizes their own site. Those tags get read below (as a
 # hint) but never turn into their own filter; anything that isn't clearly
@@ -335,7 +346,7 @@ def generate_summary(title: str, full_text: str, fallback_excerpt: str) -> str:
 # directly via SOURCE_CATEGORY_OVERRIDE for the sports feeds.
 VALID_CATEGORIES = {"news", "rumors", "videos", "music", "opinion", "sports"}
 
-# RSS <category> tags Ã¢ÂÂ our taxonomy. Left side is lowercased substring match
+# RSS <category> tags -- our taxonomy. Left side is lowercased substring match
 # against the tags a source puts on the entry.
 CATEGORY_TAG_MAP = {
     "rumor": "rumors", "gossip": "rumors", "dating": "rumors", "beef": "rumors",
@@ -359,12 +370,12 @@ def categorize(title: str, source_tags: list[str]) -> str:
     Assigns one of VALID_CATEGORIES. Order of preference:
       1. A source RSS <category> tag that maps cleanly onto our taxonomy.
       2. A keyword match against the title.
-      3. Default to "news" Ã¢ÂÂ the safe fallback for straight reporting,
+      3. Default to "news" -- the safe fallback for straight reporting,
          legal/business news, and anything else that doesn't clearly fit
          rumors/videos/music/opinion.
 
     To upgrade this to something smarter than keyword-matching, swap it for
-    an LLM call the same way generate_summary() suggests Ã¢ÂÂ a single prompt
+    an LLM call the same way generate_summary() suggests -- a single prompt
     that returns one of the 5 category keys works well and costs about the
     same as the summary call.
     """
