@@ -366,6 +366,9 @@ footer a:hover { color: var(--white); }
 }
 .outbound-cta:hover { background: #c81a27; }
 .outbound-note { font-size: 12px; color: var(--gray); margin-top: 14px; }
+.article-related-topics { font-size: 13px; color: var(--gray); margin-top: 24px; }
+.article-related-topics a { color: var(--red); font-weight: 700; text-decoration: none; }
+.article-related-topics a:hover { text-decoration: underline; }
 .comments-wrap { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
 .comments-heading { font-size: 20px; font-weight: 800; margin: 0 0 20px; color: var(--white); }
 
@@ -398,3 +401,37 @@ footer a:hover { color: var(--white); }
 .legal-wrap p { font-size: 15px; line-height: 1.7; color: #e6e6e6; margin: 0 0 16px; }
 .legal-wrap a { color: var(--red); text-decoration: none; font-weight: 700; }
 .legal-wrap a:hover { text-decoration: underline; }
+
+/* Topic hub pages (/topic/{slug}/) and the /topics/ directory */
+.topic-hub-heading { margin: 0 0 28px; }
+.topic-hub-heading h1 { font-size: 30px; font-weight: 800; margin: 0 0 8px; color: var(--white); }
+.topic-hub-sub { font-size: 14px; color: var(--gray); margin: 0; }
+.topic-index-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+.topic-index-item {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+  padding: 16px 18px; text-decoration: none;
+}
+.topic-index-item:hover { background: var(--bg-card-hover); border-color: var(--gray); }
+.topic-index-name { font-size: 15px; font-weight: 700; color: var(--white); }
+.topic-index-count { font-size: 12px; color: var(--gray); flex-shrink: 0; }
+
+/* Hip-Hop Beef Tracker pillar page (/hip-hop-beef-tracker/) */
+.beef-tracker-intro { font-size: 15px; line-height: 1.7; color: #e6e6e6; max-width: 760px; margin: 0 0 40px; }
+.beef-entry {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
+  padding: 24px 26px; margin-bottom: 20px;
+}
+.beef-entry-header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 10px; }
+.beef-entry-title { font-size: 19px; font-weight: 800; color: var(--white); margin: 0; }
+.beef-entry-status {
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+  padding: 4px 12px; border-radius: 999px; flex-shrink: 0;
+}
+.beef-entry-status.active { background: rgba(224, 32, 46, 0.16); color: var(--red); }
+.beef-entry-status.dormant { background: rgba(154, 154, 154, 0.16); color: var(--gray); }
+.beef-entry-updated { font-size: 12px; color: var(--gray); margin: 0 0 12px; }
+.beef-entry-summary { font-size: 15px; line-height: 1.65; color: #e6e6e6; margin: 0 0 14px; }
+.beef-entry-links { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.beef-entry-links a { font-size: 13px; font-weight: 700; color: var(--red); text-decoration: none; }
+.beef-entry-links a:hover { text-decoration: underline; }
