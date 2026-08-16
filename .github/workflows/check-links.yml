@@ -41,7 +41,7 @@ jobs:
         run: |
           git config user.name "uno-ent-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add articles.json thumbnail_flags.json index.html style.css articles/ page/ category/ privacy-policy/ terms/
+          git add articles.json thumbnail_flags.json index.html style.css search-index.json robots.txt sitemap.xml articles/ page/ category/ topic/ topics/ hip-hop-beef-tracker/ privacy-policy/ terms/ search/
           if git diff --cached --quiet; then
             echo "No dead links found — nothing to commit."
           else

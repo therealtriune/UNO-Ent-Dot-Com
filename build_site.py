@@ -42,6 +42,25 @@ import re
 from datetime import datetime, timezone
 from html import escape
 
+
+def jsonld_script(data: dict) -> str:
+    """Serialize a dict as a <script type="application/ld+json"> tag, safely.
+
+    json.dumps() only performs JSON escaping, not HTML escaping. Embedding
+    untrusted content (e.g. RSS-derived article titles/excerpts) via a raw
+    json.dumps() inside an HTML <script> tag allows a "</script>" sequence
+    in the data to close the script early and inject arbitrary markup/script
+    (stored XSS). Escaping '<', '>', and '&' as unicode escapes neutralizes
+    this while remaining valid, semantically-identical JSON.
+    """
+    payload = json.dumps(data)
+    payload = (
+        payload.replace("<", "\\u003c")
+        .replace(">", "\\u003e")
+        .replace("&", "\\u0026")
+    )
+    return f'<script type="application/ld+json">{payload}</script>'
+
 with open("articles.json") as f:
     ARTICLES = json.load(f)
 
@@ -1514,7 +1533,7 @@ def beef_tracker_jsonld(live_entries: list) -> str:
             for i, entry in enumerate(live_entries)
         ],
     }
-    return f'<script type="application/ld+json">{json.dumps(data)}</script>'
+    return jsonld_script(data)
 
 
 def build_beef_tracker():
@@ -1635,7 +1654,7 @@ def article_jsonld(a: dict, canonical: str, description: str) -> str:
         },
         "mainEntityOfPage": {"@type": "WebPage", "@id": canonical},
     }
-    return f'<script type="application/ld+json">{json.dumps(data)}</script>'
+    return jsonld_script(data)
 
 
 def website_jsonld() -> str:
@@ -1662,7 +1681,7 @@ def website_jsonld() -> str:
             "query-input": "required name=search_term_string",
         },
     }
-    return f'<script type="application/ld+json">{json.dumps(data)}</script>'
+    return jsonld_script(data)
 
 
 def build_article(a: dict):
