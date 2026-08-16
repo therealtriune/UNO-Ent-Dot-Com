@@ -46,5 +46,17 @@ jobs:
             echo "No dead links found — nothing to commit."
           else
             git commit -m "Auto-update: remove dead links $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
+            # update-feed.yml runs every 15 minutes and pushes to main
+            # independently of this workflow, so our push can land between
+            # its checkout and push (or vice versa). Retry with a rebase
+            # instead of failing the whole run on that race.
+            for i in 1 2 3 4 5; do
+              if git push; then
+                break
+              fi
+              echo "Push rejected (likely raced with another workflow run) — rebasing and retrying ($i/5)..."
+              git fetch origin main
+              git rebase origin/main
+              sleep $((i * 3))
+            done
           fi
