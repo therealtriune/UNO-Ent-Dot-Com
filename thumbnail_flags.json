@@ -1,5 +1,13 @@
 [
   {
+    "link": "https://sports.yahoo.com/articles/cris-cyborg-opens-motivates-her-071018240.html",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://sports.yahoo.com/articles/ufc-333-islam-makhachev-next-063910596.html",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/santa-margarita-high-tight-end-113000986.html",
     "issue": "missing_thumbnail"
   },
@@ -138,6 +146,14 @@
       "https://allhiphop.com/news/dc-rapper-fat-swagg-gunned-down-family-demands-justice/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
+      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
   },
   {
     "issue": "same_category_page",
