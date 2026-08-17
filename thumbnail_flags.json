@@ -57,6 +57,16 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/02/Ray-J-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/ray-j-calls-out-jake-paul-after-orlando-brown-victory/",
+      "https://allhiphop.com/ahhplus/watch-the-ray-j-win-over-orlando-brown-boxing-at-claressa-shields-undercard/",
+      "https://allhiphop.com/news/ray-j-beats-orlando-brown-as-atlanta-crowd-boos-quiet-final-round/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2023/06/hollywood-unlocked-logo-300x63-1.png",
     "links": [
       "https://hollywoodunlocked.com/update-perez-hilton-was-also-treated-for-overdose-following-horrifying-live-stream-event/",
