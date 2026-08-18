@@ -65,6 +65,17 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2025/09/unnamed-48.jpg",
+    "links": [
+      "https://thesource.com/2026/08/18/cardi-b-to-make-history-with-first-ever-headlining-stadium-concert-in-the-caribbean/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-to-make-history-with-first-ever-headlining-stadium-concert-in-the-caribbean",
+      "https://thesource.com/2026/08/14/cardi-bia-feud-offset-cheating-rumors/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-bia-feud-offset-cheating-rumors",
+      "https://thesource.com/2026/08/05/cardi-b-kash-doll-ah-ha-remix/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-kash-doll-ah-ha-remix",
+      "https://thesource.com/2026/08/04/cardi-b-four-diamond-singles/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-four-diamond-singles"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/AllHipHop-34.jpg",
     "links": [
       "https://allhiphop.com/news/exclusive-lil-durk-challenges-stalking-claim-before-high-stakes-august-trial/",
@@ -136,16 +147,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2025/09/unnamed-48.jpg",
-    "links": [
-      "https://thesource.com/2026/08/14/cardi-bia-feud-offset-cheating-rumors/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-bia-feud-offset-cheating-rumors",
-      "https://thesource.com/2026/08/05/cardi-b-kash-doll-ah-ha-remix/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-kash-doll-ah-ha-remix",
-      "https://thesource.com/2026/08/04/cardi-b-four-diamond-singles/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-four-diamond-singles"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/50-Cent-1.jpg",
     "links": [
       "https://allhiphop.com/news/jimmy-fallon-agrees-to-help-50-cent-develop-comedy-series/",
@@ -177,6 +178,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
+      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
