@@ -1,5 +1,9 @@
 [
   {
+    "link": "https://sports.yahoo.com/articles/carlos-prates-sends-michael-morales-175019259.html",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/packers-players-could-play-surprisingly-140000530.html",
     "issue": "missing_thumbnail"
   },
@@ -62,6 +66,16 @@
   {
     "link": "https://sports.yahoo.com/articles/yair-rodriguez-returns-against-jean-054557860.html",
     "issue": "missing_thumbnail"
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/06/Chrisean-Rock.png",
+    "links": [
+      "https://allhiphop.com/news/chrisean-rock-defends-street-fight-after-blueface-baby-shower/",
+      "https://allhiphop.com/news/chrisean-rock-declares-she-blueface-are-bigger-than-beyonce-jay-z/",
+      "https://allhiphop.com/rumors/is-chrisean-rock-in-serious-legal-trouble-internet-goes-crazy-over-ronnie-doe-investigation/"
+    ],
+    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
@@ -190,14 +204,6 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   }
 ]
