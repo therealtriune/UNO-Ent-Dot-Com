@@ -1,5 +1,9 @@
 [
   {
+    "link": "https://sports.yahoo.com/articles/carlos-prates-chilling-promise-islam-063313952.html",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/cris-cyborg-opens-motivates-her-071018240.html",
     "issue": "missing_thumbnail"
   },
@@ -184,7 +188,7 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
