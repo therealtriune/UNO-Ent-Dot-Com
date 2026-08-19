@@ -1,9 +1,5 @@
 [
   {
-    "link": "https://sports.yahoo.com/articles/dana-whites-contender-series-88-224036543.html",
-    "issue": "missing_thumbnail"
-  },
-  {
     "link": "https://sports.yahoo.com/articles/carlos-prates-sends-michael-morales-175019259.html",
     "issue": "missing_thumbnail"
   },
@@ -70,6 +66,17 @@
   {
     "link": "https://sports.yahoo.com/articles/yair-rodriguez-returns-against-jean-054557860.html",
     "issue": "missing_thumbnail"
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Tupac-Shakur.jpg",
+    "links": [
+      "https://allhiphop.com/news/tupacs-sister-reveals-what-real-justice-means-in-murder-case/",
+      "https://allhiphop.com/news/tupacs-cousin-confronts-keefe-ds-bragging-after-jury-selection-at-court/",
+      "https://allhiphop.com/news/keefe-d-trial-turns-courtroom-into-daily-lottery/",
+      "https://allhiphop.com/news/keffe-d-refuses-plea-deal-days-before-trial-begins/"
+    ],
+    "use_count": 4
   },
   {
     "issue": "overused_thumbnail",
@@ -174,16 +181,6 @@
       "https://allhiphop.com/news/ohio-woman-accused-of-making-29-bomb-threats-over-nolan-wells-case/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Tupac-Shakur.jpg",
-    "links": [
-      "https://allhiphop.com/news/tupacs-cousin-confronts-keefe-ds-bragging-after-jury-selection-at-court/",
-      "https://allhiphop.com/news/keefe-d-trial-turns-courtroom-into-daily-lottery/",
-      "https://allhiphop.com/news/keffe-d-refuses-plea-deal-days-before-trial-begins/"
-    ],
-    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
