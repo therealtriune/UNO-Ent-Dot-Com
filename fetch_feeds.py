@@ -43,7 +43,7 @@ swap this out for a bare requests.get() without decompression handling.)
 
 import json
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from html import unescape
 
 import feedparser
@@ -663,6 +663,165 @@ def fetch_source(name: str, url: str, known_links: set[str]) -> list[dict]:
     return articles
 
 
+# ---------------------------------------------------------------------------
+# VladTV -- no RSS feed exists for this source (confirmed: /feed, /rss,
+# /rss.xml all return empty/no valid XML, and the homepage's <head> carries
+# no <link rel="alternate" type="application/rss+xml"> pointing to one
+# either). The homepage itself, however, IS server-rendered with a "Latest
+# Videos" grid of entries -- fetched with a plain requests.get() (same as
+# every other source here), no JS execution needed. Each individual article
+# page is also server-rendered and carries real og:title/og:image tags plus
+# a body paragraph summarizing the video's content, which is where the real
+# excerpt (not the generic "Watch the full interview..." og:description CTA)
+# comes from. This is a scrape, not a feed parse, so it's inherently more
+# fragile than the RSS sources above -- if VladTV changes its markup, this
+# will start returning 0 entries (caught below the same way an empty RSS
+# feed is) rather than raising.
+VLADTV_HOMEPAGE = "https://www.vladtv.com/"
+VLADTV_ENTRY_RE = re.compile(
+    r'<div class="entry" id="entry-(\d+)">.*?<a href="(/article/\d+/[^"]+)"',
+    re.IGNORECASE | re.DOTALL,
+)
+# Absolute publish timestamp shown in an article page's byline, e.g.
+# "Aug 19, 2026 4:00 PM". No timezone is ever printed on the page, so this
+# is parsed assuming US/Eastern (VladTV's newsroom is US-based) -- an
+# approximation, but one that only affects sort granularity within a single
+# fetch run, not correctness of the site.
+VLADTV_DATE_RE = re.compile(
+    r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+"
+    r"(\d{1,2}),\s*(\d{4})\s+(\d{1,2}):(\d{2})\s*([AP]M)",
+)
+VLADTV_MONTHS = {
+    "Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6,
+    "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12,
+}
+VLADTV_EASTERN = timezone(timedelta(hours=-4))
+VLADTV_BODY_RE = re.compile(r'<div class="article-body"[^>]*>(.*?)(?:<div class="article-meta"|<h2)', re.IGNORECASE | re.DOTALL)
+VLADTV_PARA_RE = re.compile(r"<p[^>]*>(.*?)</p>", re.IGNORECASE | re.DOTALL)
+# Boilerplate lines that show up inside .article-body alongside the real
+# summary paragraph(s) -- the YouTube-membership paywall CTA, "Part N:"
+# cross-links to related interviews, a "--------" divider, and raw ad-slot
+# JS that leaks in because the div isn't cleanly scoped to just prose.
+VLADTV_BODY_JUNK_PREFIXES = ("watch the full interview", "part 1:", "part 2:", "part 3:")
+
+
+def fetch_vladtv_article(article_url: str) -> dict | None:
+    """Fetch one VladTV article page and pull title (og:title), a real
+    excerpt (the narrative paragraph(s) in .article-body, not the generic
+    og:description CTA), thumbnail (og:image), and an approximate publish
+    date out of it. Returns None if the page can't be fetched or has no
+    title -- same "skip rather than archive junk" rule fetch_source() uses."""
+    try:
+        resp = requests.get(article_url, timeout=THUMBNAIL_TIMEOUT, headers=REQUEST_HEADERS)
+        if resp.status_code != 200:
+            return None
+        html = resp.text
+    except requests.RequestException:
+        return None
+
+    title_match = OG_TITLE_RE.search(html) or OG_TITLE_RE_ALT.search(html)
+    title = normalize_copy(unescape(title_match.group(1)).strip()) if title_match else ""
+    if not title:
+        return None
+
+    excerpt = ""
+    body_match = VLADTV_BODY_RE.search(html)
+    if body_match:
+        paras = []
+        for para_html in VLADTV_PARA_RE.findall(body_match.group(1)):
+            text = clean_text(para_html)
+            if not text or "freestar" in text.lower():
+                continue
+            if text.lower().startswith(VLADTV_BODY_JUNK_PREFIXES):
+                continue
+            if set(text) <= {"-"}:
+                continue
+            paras.append(text)
+        excerpt = " ".join(paras)[:EXCERPT_LENGTH].rstrip()
+
+    thumb_match = OG_IMAGE_RE.search(html) or OG_IMAGE_RE_ALT.search(html)
+    thumbnail = unescape(thumb_match.group(1)) if thumb_match else None
+    if thumbnail and looks_like_logo(thumbnail):
+        thumbnail = None
+
+    date_iso = datetime.now(timezone.utc).isoformat()
+    date_match = VLADTV_DATE_RE.search(html)
+    if date_match:
+        mon_str, day, year, hour, minute, ampm = date_match.groups()
+        month = VLADTV_MONTHS.get(mon_str[:3])
+        if month:
+            hour = int(hour) % 12
+            if ampm.upper() == "PM":
+                hour += 12
+            try:
+                dt = datetime(int(year), month, int(day), hour, int(minute), tzinfo=VLADTV_EASTERN)
+                date_iso = dt.astimezone(timezone.utc).isoformat()
+            except ValueError:
+                pass
+
+    return {"title": title, "excerpt": excerpt, "thumbnail": thumbnail, "date": date_iso}
+
+
+def fetch_vladtv(known_links: set[str]) -> list[dict]:
+    """VladTV has no RSS feed (confirmed -- see comment above), so this
+    scrapes the homepage's server-rendered 'Latest Videos' grid for entry
+    links instead of parsing a feed, then fetches each new article's own
+    page for title/excerpt/thumbnail/date. Every VladTV story is a video
+    interview/commentary clip (an embedded YouTube player on every article
+    page), so it's routed straight to the "videos" category rather than
+    through categorize()."""
+    name = "VladTV"
+    try:
+        resp = requests.get(VLADTV_HOMEPAGE, timeout=THUMBNAIL_TIMEOUT, headers=REQUEST_HEADERS)
+        if resp.status_code != 200:
+            print(f"  [!] {name}: HTTP {resp.status_code} on homepage -- skipping this run")
+            return []
+        html = resp.text
+    except requests.RequestException as e:
+        print(f"  [!] {name}: {type(e).__name__}: {e} -- skipping this run")
+        return []
+
+    entries = VLADTV_ENTRY_RE.findall(html)
+    if not entries:
+        print(f"  [!] {name}: 0 entries found on homepage (markup may have changed) -- skipping this run")
+        return []
+
+    articles = []
+    skipped = 0
+    for _entry_id, href in entries[:MAX_PER_SOURCE]:
+        link = "https://www.vladtv.com" + href
+        if link in known_links:
+            skipped += 1
+            continue
+
+        details = fetch_vladtv_article(link)
+        if not details:
+            print(f"  [!] {name}: could not fetch/parse {link} -- skipping")
+            continue
+
+        title = details["title"]
+        excerpt = details["excerpt"]
+        summary = generate_summary(title, excerpt, excerpt)
+
+        articles.append(
+            {
+                "source": name,
+                "title": title,
+                "slug": slugify(title),
+                "excerpt": excerpt,
+                "summary": summary,
+                "category": "videos",
+                "link": link,
+                "thumbnail": details["thumbnail"],
+                "date": details["date"],
+            }
+        )
+        known_links.add(link)
+
+    print(f"  [+] {name}: {len(articles)} new, {skipped} already archived")
+    return articles
+
+
 def main():
     print("Pulling feeds for UNO Entertainment...")
 
@@ -730,6 +889,7 @@ def main():
     new_articles = []
     for name, url in SOURCES:
         new_articles.extend(fetch_source(name, url, known_links))
+    new_articles.extend(fetch_vladtv(known_links))
 
     # Sports was drowning out every other category -- 407 of 842 articles
     # (48%) were sports before this went in, driven by four high-volume
