@@ -92,6 +92,16 @@
     "issue": "missing_thumbnail"
   },
   {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/09/NBA-YoungBoy.png",
+    "links": [
+      "https://allhiphop.com/news/nba-youngboys-south-korea-move-demands-serious-sobriety-strategy/",
+      "https://allhiphop.com/news/nba-youngboy-leaves-america-forever-settles-in-south-korea/",
+      "https://allhiphop.com/news/nba-youngboys-insane-bentley-speeding-arrest-bodycam-footage-released/"
+    ],
+    "use_count": 3
+  },
+  {
     "issue": "same_homepage_page",
     "thumbnail": "https://townsquare.media/site/812/files/2026/08/attachment-young-ma-photo.jpg?w=1200&format=natural",
     "links": [
