@@ -93,6 +93,17 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
+    "links": [
+      "https://allhiphop.com/news/exclusive-lil-durk-jury-selection-slows-after-juror-says-defendants-look-guilty/",
+      "https://allhiphop.com/news/lil-durk-loses-key-battle-over-seized-phone-evidence-before-trial/",
+      "https://allhiphop.com/news/lil-durk-pissed-me-off-video-to-be-used-against-him-in-high-stakes-trial/",
+      "https://allhiphop.com/news/lil-durk-puts-drill-rap-authenticity-at-center-of-expert-witness-fight/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2023/06/hollywood-unlocked-logo-300x63-1.png",
     "links": [
       "https://hollywoodunlocked.com/ari-aint-playing-ariana-grande-tells-team-trump-to-never-touch-her-music-again-your-truth-is-not-real/",
@@ -137,14 +148,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://townsquare.media/site/812/files/2026/08/attachment-young-ma-photo.jpg?w=1200&format=natural",
-    "links": [
-      "https://www.xxlmag.com/how-sobriety-faith-and-a-decade-of-defying-the-odds-redefined-young-m-as-next-chapter/",
-      "https://www.xxlmag.com/young-m-a-interview-album/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Tupac-Shakur.jpg",
     "links": [
@@ -155,16 +158,6 @@
       "https://allhiphop.com/news/keffe-d-refuses-plea-deal-days-before-trial-begins/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
-    "links": [
-      "https://allhiphop.com/news/lil-durk-loses-key-battle-over-seized-phone-evidence-before-trial/",
-      "https://allhiphop.com/news/lil-durk-pissed-me-off-video-to-be-used-against-him-in-high-stakes-trial/",
-      "https://allhiphop.com/news/lil-durk-puts-drill-rap-authenticity-at-center-of-expert-witness-fight/"
-    ],
-    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
@@ -275,6 +268,14 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
+      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   }
 ]
