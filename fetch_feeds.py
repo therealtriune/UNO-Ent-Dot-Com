@@ -254,6 +254,15 @@ LOGO_URL_PATTERNS = [
     "/logo.png",
     "/logo.jpg",
     "placeholder",
+    # Broader catch-all: the previous patterns only matched "logo" right at
+    # the end of the filename (e.g. "-logo.png") or as part of a specific
+    # known site's naming convention (e.g. "hu-logo", "shaderoom-logo").
+    # Hollywood Unlocked's actual site-logo file --
+    # "hollywood-unlocked-logo-300x63-1.png" -- has "logo" in the middle of
+    # the filename, flanked by hyphens on both sides, so none of the above
+    # matched it and it slipped through as a "real" thumbnail on 17
+    # articles. "-logo-" catches that shape generically, for any source.
+    "-logo-",
 ]
 
 
