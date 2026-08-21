@@ -64,10 +64,6 @@
     "issue": "missing_thumbnail"
   },
   {
-    "link": "https://hollywoodunlocked.com/update-perez-hilton-was-also-treated-for-overdose-following-horrifying-live-stream-event/",
-    "issue": "missing_thumbnail"
-  },
-  {
     "link": "https://sports.yahoo.com/articles/santa-margarita-high-tight-end-113000986.html",
     "issue": "missing_thumbnail"
   },
@@ -92,27 +88,11 @@
     "issue": "missing_thumbnail"
   },
   {
-    "link": "https://hollywoodunlocked.com/perez-hiltons-mother-reportedly-steps-in-to-request-temporary-custody-of-his-three-children-following-distressing-self-harm-livestream-crisis/",
-    "issue": "missing_thumbnail"
-  },
-  {
     "link": "https://sports.yahoo.com/articles/usa-today-sports-mma-junkie-043159554.html",
     "issue": "missing_thumbnail"
   },
   {
-    "link": "https://hollywoodunlocked.com/sip-n-slay-is-returning-to-nyc-this-month-and-its-bringing-big-boss-energy-for-women-creators/",
-    "issue": "missing_thumbnail"
-  },
-  {
-    "link": "https://hollywoodunlocked.com/beyonce-and-parkwood-hit-with-copyright-infringement-lawsuit-over-alien-superstar-sample/",
-    "issue": "missing_thumbnail"
-  },
-  {
     "link": "https://sports.yahoo.com/articles/arman-tsarukyan-vs-dillon-danis-041029729.html",
-    "issue": "missing_thumbnail"
-  },
-  {
-    "link": "https://hollywoodunlocked.com/kim-kardashians-home-broken-into-27-year-old-man-arrested-after-allegedly-taking-car-for-joyride/",
     "issue": "missing_thumbnail"
   },
   {
@@ -121,10 +101,6 @@
   },
   {
     "link": "https://sports.yahoo.com/articles/top-undefeated-prospects-collide-noche-041509133.html",
-    "issue": "missing_thumbnail"
-  },
-  {
-    "link": "https://hollywoodunlocked.com/michael-jacksons-nephew-tj-offers-prayers-to-perez-hilton-following-self-harm-incident-despite-him-not-being-nice-to-his-family/",
     "issue": "missing_thumbnail"
   },
   {
@@ -145,14 +121,6 @@
   },
   {
     "link": "https://sports.yahoo.com/articles/yair-rodriguez-returns-against-jean-054557860.html",
-    "issue": "missing_thumbnail"
-  },
-  {
-    "link": "https://hollywoodunlocked.com/florida-dad-allegedly-killed-his-infant-son-with-a-leaf-blower-because-he-thought-it-would-be-fun/",
-    "issue": "missing_thumbnail"
-  },
-  {
-    "link": "https://hollywoodunlocked.com/father-of-apalachee-high-school-shooter-sentenced-to-15-years-in-prison/",
     "issue": "missing_thumbnail"
   },
   {
@@ -317,6 +285,14 @@
       "https://allhiphop.com/news/dc-rapper-fat-swagg-gunned-down-family-demands-justice/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
+      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
   },
   {
     "issue": "same_category_page",
