@@ -159,6 +159,20 @@ PINTEREST_MEDIA_RE = re.compile(
 CONTENT_IMG_RE = re.compile(
     r'<img[^>]+src=["\']([^"\']+wp-content/uploads/[^"\']+)["\']', re.IGNORECASE
 )
+# Yahoo Sports articles never carry an og:image tag at all, so they always
+# fall through the checks above. Most of them are short wire-service blurbs
+# (Sherdog, MMA Junkie one-paragraph items) that genuinely have no article
+# photo in the page -- just a small 56px author/source avatar icon served
+# through Yahoo's "mysterio" image-resize CDN with a "resizefill_h56" (fixed
+# small height) transform in the URL. Longer syndicated pieces (SB Nation,
+# USA Today, etc.) do sometimes carry a real hero photo through the same
+# CDN, but with a "resizefill_w" (large width) transform instead -- that's
+# the one reliable signal that distinguishes a real photo from an avatar
+# icon on this CDN, so only that pattern is matched here.
+YAHOO_HERO_IMG_RE = re.compile(
+    r'<img[^>]+src=["\'](https://s\.yimg\.com/lo/mysterio/api/[^"\']*resizefill_w\d{3,}[^"\']*)["\']',
+    re.IGNORECASE,
+)
 # Some Yahoo Sports articles (confirmed on the "UFC Belgrade" video-recap
 # posts) are really just a wrapper around an embedded YouTube clip -- no
 # og:image, no wp-content image, and no plain <img> anywhere in the page or
@@ -451,6 +465,12 @@ def fetch_real_thumbnail(article_url: str, debug: bool = False) -> str | None:
                 return candidate
 
         match = CONTENT_IMG_RE.search(html)
+        if match:
+            candidate = unescape(match.group(1))
+            if not looks_like_logo(candidate):
+                return candidate
+
+        match = YAHOO_HERO_IMG_RE.search(html)
         if match:
             candidate = unescape(match.group(1))
             if not looks_like_logo(candidate):
