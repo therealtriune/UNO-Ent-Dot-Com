@@ -124,6 +124,19 @@
     "issue": "missing_thumbnail"
   },
   {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Tupac-Shakur.jpg",
+    "links": [
+      "https://allhiphop.com/news/keefe-d-melts-down-in-court-says-prosecutors-cops-target-him-for-beatings/",
+      "https://allhiphop.com/news/keefe-d-blamed-compton-police-for-tupac-killing-in-fbi-profer-interview/",
+      "https://allhiphop.com/news/tupacs-sister-reveals-what-real-justice-means-in-murder-case/",
+      "https://allhiphop.com/news/tupacs-cousin-confronts-keefe-ds-bragging-after-jury-selection-at-court/",
+      "https://allhiphop.com/news/keefe-d-trial-turns-courtroom-into-daily-lottery/",
+      "https://allhiphop.com/news/keffe-d-refuses-plea-deal-days-before-trial-begins/"
+    ],
+    "use_count": 6
+  },
+  {
     "issue": "same_homepage_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
     "links": [
@@ -162,14 +175,6 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Game.jpg",
-    "links": [
-      "https://allhiphop.com/news/the-game-releases-the-documentary-iii-tonight-after-years-of-delays/",
-      "https://allhiphop.com/rumors/did-the-game-just-pick-a-side-in-drakes-biggest-rap-war/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/09/NBA-YoungBoy.png",
     "links": [
@@ -188,16 +193,12 @@
     ]
   },
   {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Tupac-Shakur.jpg",
+    "issue": "same_category_page",
+    "thumbnail": "https://townsquare.media/site/812/files/2026/08/attachment-young-ma-photo.jpg?w=1200&format=natural",
     "links": [
-      "https://allhiphop.com/news/keefe-d-blamed-compton-police-for-tupac-killing-in-fbi-profer-interview/",
-      "https://allhiphop.com/news/tupacs-sister-reveals-what-real-justice-means-in-murder-case/",
-      "https://allhiphop.com/news/tupacs-cousin-confronts-keefe-ds-bragging-after-jury-selection-at-court/",
-      "https://allhiphop.com/news/keefe-d-trial-turns-courtroom-into-daily-lottery/",
-      "https://allhiphop.com/news/keffe-d-refuses-plea-deal-days-before-trial-begins/"
-    ],
-    "use_count": 5
+      "https://www.xxlmag.com/how-sobriety-faith-and-a-decade-of-defying-the-odds-redefined-young-m-as-next-chapter/",
+      "https://www.xxlmag.com/young-m-a-interview-album/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
