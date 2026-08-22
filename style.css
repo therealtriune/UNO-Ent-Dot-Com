@@ -113,9 +113,18 @@ header .tagline {
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
+/* Standalone mobile-header-row copy of the toggle -- hidden above the
+   mobile breakpoint, where the nav-pill copy inside .header-filters
+   (below) is used instead. See the mobile media query for its visible
+   styling; this just keeps it out of the desktop layout. */
+.theme-toggle-btn-mobile { display: none; }
+
 /* Light/dark toggle -- last pill inside .header-filters itself (right
    after Opinion), styled to match those pills exactly so it reads as
-   part of the nav bar instead of a separate floating control. */
+   part of the nav bar instead of a separate floating control. On mobile
+   this copy is hidden (see media query) in favor of the standalone
+   .theme-toggle-btn-mobile button that sits in the visible header row,
+   so the control doesn't require opening the hamburger menu to reach. */
 .header-filters .theme-toggle-btn {
   display: inline-flex;
   align-items: center;
@@ -136,7 +145,25 @@ header .tagline {
 @media (max-width: 760px) {
   header .tagline { display: none; }
   header { gap: 10px; }
-  .nav-toggle-btn { display: flex; order: 3; }
+  /* Visible header row on mobile, left to right: logo, search, theme
+     toggle, hamburger. The theme toggle lives here (not just inside the
+     hamburger's dropdown) so switching themes doesn't require opening the
+     menu first. */
+  .theme-toggle-btn-mobile {
+    display: inline-flex;
+    order: 3;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--gray);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .nav-toggle-btn { display: flex; order: 4; }
   .header-filters {
     display: none;
     position: absolute;
@@ -145,14 +172,17 @@ header .tagline {
     right: 0;
     flex-direction: column;
     align-items: stretch;
-    background: #000;
+    background: var(--bg-card);
     border-bottom: 4px solid var(--red);
     padding: 10px 5vw 20px;
     gap: 6px;
     z-index: 30;
   }
   .header-filters a { padding: 13px 16px; border-radius: 6px; text-align: left; }
-  .header-filters .theme-toggle-btn { padding: 13px 16px; border-radius: 6px; justify-content: flex-start; }
+  /* The dropdown's own toggle copy is redundant now that the standalone
+     mobile-row button above is always reachable, so it's dropped here
+     rather than shown twice. */
+  .header-filters .theme-toggle-btn-desktop { display: none; }
   .nav-toggle-checkbox:checked ~ .header-filters { display: flex; }
   .nav-toggle-checkbox:checked ~ .nav-toggle-btn span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-toggle-checkbox:checked ~ .nav-toggle-btn span:nth-child(2) { opacity: 0; }

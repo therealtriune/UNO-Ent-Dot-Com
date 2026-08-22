@@ -519,9 +519,18 @@ header .tagline {
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
+/* Standalone mobile-header-row copy of the toggle -- hidden above the
+   mobile breakpoint, where the nav-pill copy inside .header-filters
+   (below) is used instead. See the mobile media query for its visible
+   styling; this just keeps it out of the desktop layout. */
+.theme-toggle-btn-mobile { display: none; }
+
 /* Light/dark toggle -- last pill inside .header-filters itself (right
    after Opinion), styled to match those pills exactly so it reads as
-   part of the nav bar instead of a separate floating control. */
+   part of the nav bar instead of a separate floating control. On mobile
+   this copy is hidden (see media query) in favor of the standalone
+   .theme-toggle-btn-mobile button that sits in the visible header row,
+   so the control doesn't require opening the hamburger menu to reach. */
 .header-filters .theme-toggle-btn {
   display: inline-flex;
   align-items: center;
@@ -542,7 +551,25 @@ header .tagline {
 @media (max-width: 760px) {
   header .tagline { display: none; }
   header { gap: 10px; }
-  .nav-toggle-btn { display: flex; order: 3; }
+  /* Visible header row on mobile, left to right: logo, search, theme
+     toggle, hamburger. The theme toggle lives here (not just inside the
+     hamburger's dropdown) so switching themes doesn't require opening the
+     menu first. */
+  .theme-toggle-btn-mobile {
+    display: inline-flex;
+    order: 3;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--gray);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .nav-toggle-btn { display: flex; order: 4; }
   .header-filters {
     display: none;
     position: absolute;
@@ -551,14 +578,17 @@ header .tagline {
     right: 0;
     flex-direction: column;
     align-items: stretch;
-    background: #000;
+    background: var(--bg-card);
     border-bottom: 4px solid var(--red);
     padding: 10px 5vw 20px;
     gap: 6px;
     z-index: 30;
   }
   .header-filters a { padding: 13px 16px; border-radius: 6px; text-align: left; }
-  .header-filters .theme-toggle-btn { padding: 13px 16px; border-radius: 6px; justify-content: flex-start; }
+  /* The dropdown's own toggle copy is redundant now that the standalone
+     mobile-row button above is always reachable, so it's dropped here
+     rather than shown twice. */
+  .header-filters .theme-toggle-btn-desktop { display: none; }
   .nav-toggle-checkbox:checked ~ .header-filters { display: flex; }
   .nav-toggle-checkbox:checked ~ .nav-toggle-btn span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-toggle-checkbox:checked ~ .nav-toggle-btn span:nth-child(2) { opacity: 0; }
@@ -981,13 +1011,22 @@ def header_html(prefix: str, active: str = None) -> str:
     <span class="tagline">The Culture's Feed</span>
   </a>
   <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+  <button type="button" class="theme-toggle-btn theme-toggle-btn-mobile" aria-label="Switch to light mode" title="Switch to light mode">
+    <svg class="theme-icon-sun" viewBox="0 0 20 20" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <circle cx="10" cy="10" r="4"></circle>
+      <path d="M10 1.5v2.4M10 16.1v2.4M3.5 3.5l1.7 1.7M14.8 14.8l1.7 1.7M1.5 10h2.4M16.1 10h2.4M3.5 16.5l1.7-1.7M14.8 5.2l1.7-1.7"></path>
+    </svg>
+    <svg class="theme-icon-moon" viewBox="0 0 20 20" width="15" height="15" fill="currentColor">
+      <path d="M17.3 13.3A8 8 0 016.7 2.7a.6.6 0 00-.7-.85A8 8 0 1018.15 14a.6.6 0 00-.85-.7z"></path>
+    </svg>
+  </button>
   <label for="nav-toggle" class="nav-toggle-btn" aria-label="Menu">
     <span></span><span></span><span></span>
   </label>
   {search_bar_html("header-search")}
   <nav class="header-filters">
     {"".join(pills)}
-    <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Switch to light mode" title="Switch to light mode">
+    <button type="button" class="theme-toggle-btn theme-toggle-btn-desktop" aria-label="Switch to light mode" title="Switch to light mode">
       <svg class="theme-icon-sun" viewBox="0 0 20 20" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
         <circle cx="10" cy="10" r="4"></circle>
         <path d="M10 1.5v2.4M10 16.1v2.4M3.5 3.5l1.7 1.7M14.8 14.8l1.7 1.7M1.5 10h2.4M16.1 10h2.4M3.5 16.5l1.7-1.7M14.8 5.2l1.7-1.7"></path>
@@ -1000,25 +1039,34 @@ def header_html(prefix: str, active: str = None) -> str:
 </header>
 <script>
 (function() {{
-  var btn = document.getElementById('theme-toggle-btn');
-  if (!btn) return;
+  // Two toggle buttons exist in the DOM (one styled as a nav pill for
+  // desktop, one styled as a standalone icon button for the mobile header
+  // row) so the control is reachable without opening the hamburger menu on
+  // mobile. Only one is ever visible at a time per the CSS media query, but
+  // both are kept in sync here in case that ever changes.
+  var btns = document.querySelectorAll('.theme-toggle-btn');
+  if (!btns.length) return;
   function applyLabel() {{
     var isLight = document.documentElement.getAttribute('data-theme') === 'light';
     var label = isLight ? 'Switch to dark mode' : 'Switch to light mode';
-    btn.setAttribute('aria-label', label);
-    btn.setAttribute('title', label);
+    btns.forEach(function(btn) {{
+      btn.setAttribute('aria-label', label);
+      btn.setAttribute('title', label);
+    }});
   }}
   applyLabel();
-  btn.addEventListener('click', function() {{
-    var isLight = document.documentElement.getAttribute('data-theme') === 'light';
-    if (isLight) {{
-      document.documentElement.removeAttribute('data-theme');
-      try {{ localStorage.setItem('uno_theme', 'dark'); }} catch (e) {{}}
-    }} else {{
-      document.documentElement.setAttribute('data-theme', 'light');
-      try {{ localStorage.setItem('uno_theme', 'light'); }} catch (e) {{}}
-    }}
-    applyLabel();
+  btns.forEach(function(btn) {{
+    btn.addEventListener('click', function() {{
+      var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+      if (isLight) {{
+        document.documentElement.removeAttribute('data-theme');
+        try {{ localStorage.setItem('uno_theme', 'dark'); }} catch (e) {{}}
+      }} else {{
+        document.documentElement.setAttribute('data-theme', 'light');
+        try {{ localStorage.setItem('uno_theme', 'light'); }} catch (e) {{}}
+      }}
+      applyLabel();
+    }});
   }});
 }})();
 </script>"""
