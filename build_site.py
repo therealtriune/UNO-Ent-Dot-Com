@@ -877,6 +877,25 @@ footer a:hover { color: var(--text); }
   animation: none;
 }
 .article-summary { font-size: 17px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 32px; }
+/* Hand-authored article bodies (UNO Ent originals, not RSS summaries) --
+   set via an article's optional "body_html" field in articles.json, which
+   fully replaces the single-paragraph .article-summary block below with
+   real multi-paragraph HTML the article was written with directly. Reuses
+   the same typography as .article-summary so it reads identically. */
+.article-body { font-size: 17px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 8px; }
+.article-body p { margin: 0 0 18px; }
+.article-body h2 { font-size: 21px; font-weight: 800; color: var(--text); margin: 32px 0 14px; }
+.article-body a { color: var(--red); font-weight: 700; text-decoration: none; }
+.article-body a:hover { text-decoration: underline; }
+.article-body .outbound-cta { margin: 8px 0 24px; }
+/* Responsive 16:9 video embed for hand-authored posts that include a
+   YouTube (or similar) player inline -- e.g. a music release announcement
+   embedding the official video. */
+.article-video-embed {
+  position: relative; width: 100%; aspect-ratio: 16 / 9; margin: 4px 0 28px;
+  border-radius: 10px; overflow: hidden; border: 1px solid var(--border); background: #000;
+}
+.article-video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .outbound-cta {
   display: inline-flex; align-items: center; gap: 8px;
   background: var(--red); color: #fff; text-decoration: none;
@@ -888,6 +907,101 @@ footer a:hover { color: var(--text); }
 .article-related-topics { font-size: 13px; color: var(--gray); margin-top: 24px; }
 .article-related-topics a { color: var(--red); font-weight: 700; text-decoration: none; }
 .article-related-topics a:hover { text-decoration: underline; }
+
+/* Premium "feature" layout -- opt-in via an article's "layout": "feature"
+   field, used for hand-authored UNO Ent originals that should read like a
+   magazine feature rather than a wire-summary post (see .article-body
+   above for the plain version). Structurally separate from .article-wrap
+   so a feature's full-bleed hero doesn't affect any of the other 3500+
+   standard article pages. Design language: brand red stays the primary
+   accent (CTAs, drop cap), a restrained gold is layered in as the second
+   "premium" accent for dividers/labels only -- two accent colors, used
+   sparingly, is what keeps this feeling classy instead of loud. */
+:root { --gold: #c9a24b; }
+.feature-hero {
+  position: relative; width: 100%; max-height: 720px; overflow: hidden;
+  background: #000;
+}
+.feature-hero-img { width: 100%; height: 100%; max-height: 720px; object-fit: cover; display: block; opacity: 0.92; }
+.feature-hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.05) 22%, rgba(0,0,0,0.15) 55%, rgba(0,0,0,0.92) 100%);
+  display: flex; align-items: flex-end;
+}
+.feature-topbar { position: absolute; top: 0; left: 0; right: 0; z-index: 5; padding: 20px 5vw 0; }
+.feature-topbar .back-link {
+  display: inline-flex; align-items: center; gap: 6px; color: #fff;
+  background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.25);
+  padding: 8px 16px; border-radius: 999px; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.3px; margin: 0; backdrop-filter: blur(4px);
+}
+.feature-topbar .back-link:hover { background: rgba(0,0,0,0.6); color: #fff; }
+.feature-hero-inner { max-width: 820px; margin: 0 auto; padding: 40px 5vw 44px; width: 100%; box-sizing: border-box; }
+.feature-kicker {
+  display: inline-flex; align-items: center; gap: 8px;
+  color: #fff; background: var(--red);
+  font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
+  padding: 8px 16px; margin-bottom: 20px; border-bottom: 2px solid var(--gold);
+}
+.feature-title {
+  color: #fff; font-size: 48px; line-height: 1.08; font-weight: 800; margin: 0 0 18px;
+  letter-spacing: -0.5px; text-transform: uppercase; text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+.feature-byline {
+  display: flex; align-items: center; gap: 10px; color: #cfcfcf;
+  font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+}
+.feature-byline strong { color: var(--gold); font-weight: 800; }
+.feature-byline .dot { color: var(--gold); }
+.feature-wrap { max-width: 720px; margin: 0 auto; padding: 48px 5vw 80px; }
+.feature-body { font-size: 18px; line-height: 1.8; color: var(--text-secondary); }
+.feature-body p { margin: 0 0 22px; }
+.feature-body > p:first-of-type::first-letter {
+  float: left; font-size: 76px; line-height: 0.78; font-weight: 800; color: var(--red);
+  padding: 6px 10px 0 0; font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+.feature-body h2 {
+  font-size: 13px; font-weight: 800; color: var(--text); margin: 48px 0 20px;
+  text-transform: uppercase; letter-spacing: 2px; padding-bottom: 12px;
+  border-bottom: 3px solid var(--gold); display: inline-block;
+}
+.feature-body a { color: var(--red); font-weight: 700; text-decoration: none; }
+.feature-body a:hover { text-decoration: underline; }
+.feature-body .outbound-cta { margin: 10px 0 28px; border-radius: 2px; text-transform: uppercase; letter-spacing: 1px; }
+.feature-pullquote {
+  position: relative; margin: 40px 0; padding: 8px 0 8px 40px;
+  font-size: 30px; line-height: 1.35; font-weight: 800; color: var(--text);
+  letter-spacing: -0.3px;
+}
+.feature-pullquote::before {
+  content: "\201C"; position: absolute; left: -4px; top: -18px;
+  font-size: 76px; font-weight: 800; color: var(--gold); line-height: 1; font-family: Georgia, serif;
+}
+.feature-video-caption {
+  display: block; color: var(--red); font-size: 11px; font-weight: 800;
+  letter-spacing: 1.6px; text-transform: uppercase; margin: 0 0 12px;
+}
+.feature-gallery-section { margin: 48px 0; }
+.feature-section-label {
+  display: block; color: var(--gold); font-size: 11px; font-weight: 800;
+  letter-spacing: 2px; text-transform: uppercase; margin: 0 0 16px;
+}
+.feature-gallery { column-count: 2; column-gap: 12px; }
+.feature-gallery img {
+  width: 100%; display: block; margin: 0 0 12px; border-radius: 2px;
+  border: 1px solid var(--border); transition: transform 0.2s ease, filter 0.2s ease;
+  break-inside: avoid;
+}
+.feature-gallery img:hover { transform: scale(1.015); filter: brightness(1.05); }
+@media (max-width: 640px) {
+  .feature-title { font-size: 30px; }
+  .feature-hero { max-height: 480px; }
+  .feature-hero-inner { padding: 30px 6vw 28px; }
+  .feature-body { font-size: 17px; }
+  .feature-body > p:first-of-type::first-letter { font-size: 56px; }
+  .feature-pullquote { font-size: 22px; padding-left: 30px; }
+  .feature-pullquote::before { font-size: 56px; top: -14px; }
+}
 .comments-wrap { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
 .comments-heading { font-size: 20px; font-weight: 800; margin: 0 0 20px; color: var(--text); }
 .comments-load-btn {
@@ -913,7 +1027,8 @@ footer a:hover { color: var(--text); }
 .cookie-banner-inner a { color: var(--red); font-weight: 700; text-decoration: none; }
 .cookie-banner-inner a:hover { text-decoration: underline; }
 .cookie-banner-btn {
-  background: var(--red); color: #fff; border: none; border-radius: 6px;
+  -webkit-appearance: none; appearance: none;
+  background: var(--red) !important; color: #fff !important; border: none; border-radius: 6px;
   font-weight: 700; font-size: 13px; padding: 11px 26px; cursor: pointer;
   text-transform: uppercase; letter-spacing: 0.5px; flex-shrink: 0;
 }
@@ -1913,6 +2028,19 @@ def build_article(a: dict):
         if thumb
         else f'<img class="article-hero article-hero-fallback" src="{prefix}uno-logo.png" alt="UNO Entertainment">'
     )
+    # Hand-authored UNO Ent originals set "body_html" directly (full control
+    # over paragraphs, subheads, embedded video, custom CTAs) instead of
+    # going through the standard RSS-summary + "Read Full Story On {source}"
+    # outbound-CTA block every scraped article uses.
+    if a.get("body_html"):
+        body_class = "feature-body" if a.get("layout") == "feature" else "article-body"
+        body_html = f'<div class="{body_class}">{a["body_html"]}</div>'
+    else:
+        body_html = f'''<p class="article-summary">{escape(a.get('summary') or a.get('excerpt', ''))}</p>
+  <a class="outbound-cta" href="{escape(a['link'])}" target="_blank" rel="noopener noreferrer">
+    Read The Full Story On {escape(a['source'])} &rarr;
+  </a>
+  <p class="outbound-note">Original reporting by {escape(a['source'])}. This page is a summary. The full story, photos, and details live at the link above.</p>'''
     title = f"{a['title']} | UNO Entertainment"
     canonical = f"{SITE_URL}/articles/{a['slug']}/"
     description = a.get("excerpt") or SITE_DESCRIPTION
@@ -1929,6 +2057,76 @@ def build_article(a: dict):
             f'<a href="/topic/{slug}/">{escape(name)}</a>' for slug, name in matched_topics
         )
         related_topics_html = f'<p class="article-related-topics">More on: {links}</p>'
+    # "feature" layout -- opt-in via a["layout"] == "feature" -- swaps the
+    # standard capped-height article-wrap for a full-bleed hero with the
+    # kicker/headline/byline overlaid on the image, magazine-style. See the
+    # .feature-* CSS block for the visual design. Every other article page
+    # (the other 3500+) never sets "layout", so they're unaffected.
+    if a.get("layout") == "feature":
+        word_count = len(re.sub(r"<[^>]+>", " ", body_html).split())
+        read_mins = max(1, round(word_count / 200))
+        dot = '<span class="dot">&middot;</span>'
+        # Default byline for hand-authored UNO Ent originals -- all of
+        # today's feature-layout content is written by Figure Infinite for
+        # UNO Ent Media; a["byline"] can still override this per-article.
+        byline = a.get("byline") or (
+            f"<strong>By Figure Infinite</strong> for UNO Ent Media {dot} "
+            f"{escape(time_ago(a['date']))} {dot} {read_mins} min read"
+        )
+        kicker = escape(a.get("kicker") or CATEGORY_LABELS.get(a.get("category"), "Feature"))
+        if thumb:
+            feature_hero = f'''<div class="feature-hero">
+  <div class="feature-topbar">
+    <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
+  </div>
+  <img class="feature-hero-img" src="{escape(thumb)}" alt="{escape(a['title'])}">
+  <div class="feature-hero-overlay">
+    <div class="feature-hero-inner">
+      <span class="feature-kicker">{kicker}</span>
+      <h1 class="feature-title">{escape(a['title'])}</h1>
+      <div class="feature-byline">{byline}</div>
+    </div>
+  </div>
+</div>'''
+        else:
+            feature_hero = f'''<div class="feature-topbar" style="position:static;padding:24px 5vw 0;">
+  <a class="back-link" href="/" style="color:var(--text);background:none;border:1px solid var(--border);">&larr; Back to UNO Entertainment</a>
+</div>
+<h1 class="feature-title" style="color:var(--text);padding:16px 5vw 0;text-shadow:none;">{escape(a['title'])}</h1>'''
+        gallery = a.get("gallery") or []
+        gallery_html = ""
+        if gallery:
+            imgs = "".join(
+                f'<img src="{escape(src)}" alt="{escape(a["title"])}" loading="lazy">'
+                for src in gallery
+            )
+            gallery_html = f'''<div class="feature-gallery-section">
+  <span class="feature-section-label">In Frame</span>
+  <div class="feature-gallery">{imgs}</div>
+</div>'''
+        # Allow the article's body_html to place the gallery mid-content via
+        # a "{{GALLERY}}" marker (e.g. right before a "Booking & Contact"
+        # section) instead of always tacking it on at the very end.
+        if gallery_html and "{{GALLERY}}" in body_html:
+            body_html = body_html.replace("{{GALLERY}}", gallery_html)
+            gallery_html = ""
+        content_html = f'''{feature_hero}
+<div class="feature-wrap">
+  {body_html}
+  {gallery_html}
+  {related_topics_html}
+  {disqus_html(canonical, a['slug'])}
+</div>'''
+    else:
+        content_html = f'''<div class="article-wrap">
+  <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
+  <div class="article-meta">{escape(time_ago(a['date']))}</div>
+  <h1 class="article-title">{escape(a['title'])}</h1>
+  {hero_html}
+  {body_html}
+  {related_topics_html}
+  {disqus_html(canonical, a['slug'])}
+</div>'''
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1944,19 +2142,7 @@ def build_article(a: dict):
 <body>
 {GTM_BODY_SNIPPET}
 {header_html(prefix, a.get("category"))}
-<div class="article-wrap">
-  <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">{escape(time_ago(a['date']))}</div>
-  <h1 class="article-title">{escape(a['title'])}</h1>
-  {hero_html}
-  <p class="article-summary">{escape(a.get('summary') or a.get('excerpt', ''))}</p>
-  <a class="outbound-cta" href="{escape(a['link'])}" target="_blank" rel="noopener noreferrer">
-    Read The Full Story On {escape(a['source'])} &rarr;
-  </a>
-  <p class="outbound-note">Original reporting by {escape(a['source'])}. This page is a summary. The full story, photos, and details live at the link above.</p>
-  {related_topics_html}
-  {disqus_html(canonical, a['slug'])}
-</div>
+{content_html}
 {footer_html(prefix)}
 </body>
 </html>
