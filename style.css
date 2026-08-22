@@ -64,9 +64,9 @@ header img.logo { height: 52px; width: auto; display: block; }
    fill swapped -- see the comment on uno-logo-dark.png's generation).
    Only one is ever visible at a time, toggled the same way as the
    sun/moon icons below. */
-.logo-light-mode { display: none; }
-[data-theme="light"] .logo-dark-mode { display: none; }
-[data-theme="light"] .logo-light-mode { display: block; }
+img.logo.logo-light-mode { display: none; }
+[data-theme="light"] img.logo.logo-dark-mode { display: none; }
+[data-theme="light"] img.logo.logo-light-mode { display: block; }
 header .tagline {
   color: var(--gray);
   font-size: 12px;
