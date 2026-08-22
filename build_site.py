@@ -840,7 +840,9 @@ def header_html(prefix: str, active: str = None) -> str:
     pills = [f'<a class="{"active" if active == "all" else ""}" href="/">All</a>']
     for key, label in CATEGORIES:
         pills.append(f'<a class="{"active" if active == key else ""}" href="/category/{key}/">{label}</a>')
-    pills.append(f'<a class="{"active" if active == "about" else ""}" href="/about/">About</a>')
+    # About intentionally isn't in this top nav -- it's linked from the
+    # footer's "About UNO Entertainment" column instead, so it doesn't
+    # compete for space with the actual content categories up here.
 
     return f"""
 <header>
