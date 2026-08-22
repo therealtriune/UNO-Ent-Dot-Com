@@ -14,15 +14,15 @@
 }
 /* Light mode -- opt-in only (see THEME_INIT_SNIPPET/theme-toggle-btn below),
    default experience stays exactly the dark theme above for anyone who
-   hasn't explicitly switched. The header, footer, and the UNO-logo
-   thumbnail/hero fallback placeholders are deliberately NOT re-themed here
-   -- uno-logo.png is a near-white mark designed to sit on a dark surface
-   (confirmed by sampling its pixels), so those three surfaces stay on
-   their original dark literal colors in both themes rather than going
-   invisible on a light background. Everything else (page background,
-   cards, borders, body text, shimmer, cookie banner, comments, pagination,
-   search dropdown, legal/topic pages) follows the toggle via these
-   variables.
+   hasn't explicitly switched. Everything, including the header and footer,
+   follows the toggle via these variables. The UNO-logo thumbnail/hero
+   fallback placeholders are the one exception -- uno-logo.png is a
+   near-white mark designed to sit on a dark surface, so those content-area
+   placeholder badges stay on their original dark literal colors in both
+   themes rather than going invisible. The header and footer logos are
+   handled separately: they swap between uno-logo.png (dark theme) and
+   uno-logo-dark.png (light theme) via the .logo-dark-mode/.logo-light-mode
+   toggle below, so they don't need this exception.
 */
 [data-theme="light"] {
   --bg: #f7f7f5;
@@ -64,9 +64,16 @@ header img.logo { height: 52px; width: auto; display: block; }
    fill swapped -- see the comment on uno-logo-dark.png's generation).
    Only one is ever visible at a time, toggled the same way as the
    sun/moon icons below. */
-img.logo.logo-light-mode { display: none; }
-[data-theme="light"] img.logo.logo-dark-mode { display: none; }
-[data-theme="light"] img.logo.logo-light-mode { display: block; }
+.logo-light-mode { display: none; }
+[data-theme="light"] .logo-dark-mode { display: none; }
+[data-theme="light"] .logo-light-mode { display: block; }
+/* header img.logo sets display:block with higher specificity than the
+   generic rules above, so the header's own logo pair needs an explicit
+   override at matching specificity (the footer logos have no competing
+   display rule, so the generic rules above are enough for them). */
+header img.logo.logo-light-mode { display: none; }
+[data-theme="light"] header img.logo.logo-dark-mode { display: none; }
+[data-theme="light"] header img.logo.logo-light-mode { display: block; }
 header .tagline {
   color: var(--gray);
   font-size: 12px;
