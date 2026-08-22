@@ -8,6 +8,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KNZNCCPT');</script>
 <!-- End Google Tag Manager -->
+<script>
+(function() {
+  try {
+    if (localStorage.getItem('uno_theme') === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  } catch (e) {}
+})();
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UNO Entertainment | Page 14</title>
@@ -56,10 +65,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </svg>
       </button>
     </form>
+  <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Switch to light mode" title="Switch to light mode">
+    <svg class="theme-icon-sun" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <circle cx="10" cy="10" r="4"></circle>
+      <path d="M10 1.5v2.4M10 16.1v2.4M3.5 3.5l1.7 1.7M14.8 14.8l1.7 1.7M1.5 10h2.4M16.1 10h2.4M3.5 16.5l1.7-1.7M14.8 5.2l1.7-1.7"></path>
+    </svg>
+    <svg class="theme-icon-moon" viewBox="0 0 20 20" width="18" height="18" fill="currentColor">
+      <path d="M17.3 13.3A8 8 0 016.7 2.7a.6.6 0 00-.7-.85A8 8 0 1018.15 14a.6.6 0 00-.85-.7z"></path>
+    </svg>
+  </button>
   <nav class="header-filters">
     <a class="active" href="/">All</a><a class="" href="/category/news/">News</a><a class="" href="/category/rumors/">Rumors</a><a class="" href="/category/videos/">Videos</a><a class="" href="/category/music/">Music</a><a class="" href="/category/sports/">Sports</a><a class="" href="/category/opinion/">Opinion</a>
   </nav>
 </header>
+<script>
+(function() {
+  var btn = document.getElementById('theme-toggle-btn');
+  if (!btn) return;
+  function applyLabel() {
+    var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    var label = isLight ? 'Switch to dark mode' : 'Switch to light mode';
+    btn.setAttribute('aria-label', label);
+    btn.setAttribute('title', label);
+  }
+  applyLabel();
+  btn.addEventListener('click', function() {
+    var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    if (isLight) {
+      document.documentElement.removeAttribute('data-theme');
+      try { localStorage.setItem('uno_theme', 'dark'); } catch (e) {}
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      try { localStorage.setItem('uno_theme', 'light'); } catch (e) {}
+    }
+    applyLabel();
+  });
+})();
+</script>
 <main>
   <div class="grid">
     
@@ -86,7 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/trina-drops-major-news-seventh-studio-album-will-mark-end-of-recording/">
       <img src="https://allhiphop.com/wp-content/uploads/2022/09/Trina.jpg" alt="Trina Drops Major News: Seventh Studio Album Will Mark End of Recording Career" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Music</span><span class="card-dot">&middot;</span>22 hours ago</div>
+        <div class="card-meta"><span class="card-category">Music</span><span class="card-dot">&middot;</span>23 hours ago</div>
         <h2 class="card-title">Trina Drops Major News: Seventh Studio Album Will Mark End of Recording Career</h2>
         <p class="card-excerpt">Trina announces her seventh studio album will be her final project after 25+ years in hip-hop, ending a 7-year gap since her last release.</p>
         <span class="card-link">Read More &rarr;</span>
@@ -96,7 +138,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/mama-june-s-daughter-pumpkin-says-her-onlyfans-got-her-kid-rejected-fr/">
       <img src="https://imagez.tmz.com/image/3b/16by9/2026/08/21/3bf5941bcadd434f8d83ff54aefb3c00_xl.jpg" alt="Mama June&#x27;s Daughter Pumpkin Says Her OnlyFans Got Her Kid Rejected From School" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>22 hours ago</div>
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>23 hours ago</div>
         <h2 class="card-title">Mama June&#x27;s Daughter Pumpkin Says Her OnlyFans Got Her Kid Rejected From School</h2>
         <p class="card-excerpt">Mama June&#x27;s daughter Pumpkin says her X-rated online presence cost her daughter a spot at a private elementary school...telling TMZ the school pulled the kid&#x27;s</p>
         <span class="card-link">Read More &rarr;</span>
@@ -106,7 +148,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/here-s-mmamania-com-s-ufc-sacramento-betting-odds-weekend-lock-what-s-/">
       <img src="https://s.yimg.com/lo/mysterio/api/eea0a8902975ee50adb5a2355cf2db8c4dd07a4cf0f8eac6a312ebd91879c24c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2Fa9553b19f5d3b0931933399ab5de9bd3.jpg" alt="Here’s MMAmania.com’s UFC Sacramento betting odds ‘Weekend Lock’ … what’s yours?" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>22 hours ago</div>
+        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>23 hours ago</div>
         <h2 class="card-title">Here’s MMAmania.com’s UFC Sacramento betting odds ‘Weekend Lock’ … what’s yours?</h2>
         <p class="card-excerpt">UFC Sacramento is less than 24 hours away … It all goes down this weekend (Sat., Aug. 22, 2026), inside Golden 1 Center in Sacramento, California. In the main e</p>
         <span class="card-link">Read More &rarr;</span>
@@ -116,7 +158,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/josh-hokit-wants-tom-aspinall-stripped-vows-to-reset-heavyweight/">
       <img src="https://s.yimg.com/lo/mysterio/api/afc305c1eec28a59ceedd8b1faa961a9163b3d83c5ad12d24727fed2727b60f1/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2F4c6dd2afe850e779933e68d5cd0b7b73.jpg" alt="Josh Hokit wants Tom Aspinall stripped, vows to &#x27;reset&#x27; heavyweight" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>22 hours ago</div>
+        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>23 hours ago</div>
         <h2 class="card-title">Josh Hokit wants Tom Aspinall stripped, vows to &#x27;reset&#x27; heavyweight</h2>
         <p class="card-excerpt">Josh Hokit had plenty to say about Tom Aspinall and Alex Pereira, while calling out Ciryl Gane.</p>
         <span class="card-link">Read More &rarr;</span>

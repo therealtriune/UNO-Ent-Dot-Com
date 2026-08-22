@@ -333,6 +333,24 @@ GTM_BODY_SNIPPET = f"""<!-- Google Tag Manager (noscript) -->
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->"""
 
+# Light/dark theme -- applied as early as possible in <head>, before the
+# stylesheet loads, so a visitor who previously chose light mode never sees
+# a flash of the default dark theme on load. The default (no saved
+# preference) stays dark, matching the site's existing look for everyone
+# who hasn't explicitly opted into light mode -- see the theme-toggle-btn
+# in header_html() for how the choice gets made and saved. Wrapped in
+# try/except since localStorage can throw in some browsers (e.g. private
+# mode with storage blocked), and that should never break page load.
+THEME_INIT_SNIPPET = """<script>
+(function() {
+  try {
+    if (localStorage.getItem('uno_theme') === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  } catch (e) {}
+})();
+</script>"""
+
 # Disqus comments, article pages only. Disqus hosts the whole thread (storage,
 # moderation, spam filtering, and the Google/Facebook/Microsoft/Apple/Twitter
 # login prompts) -- this site never touches a visitor's login or comment data
@@ -392,15 +410,44 @@ STYLE_CSS = """
   --bg-card: #141414;
   --bg-card-hover: #1c1c1c;
   --red: #e0202e;
-  --white: #f5f5f5;
+  --text: #f5f5f5;
+  --text-secondary: #e6e6e6;
   --gray: #9a9a9a;
   --border: #262626;
+  --shimmer-1: #161616;
+  --shimmer-2: #232323;
+  --search-cancel-filter: invert(1);
+}
+/* Light mode -- opt-in only (see THEME_INIT_SNIPPET/theme-toggle-btn below),
+   default experience stays exactly the dark theme above for anyone who
+   hasn't explicitly switched. The header, footer, and the UNO-logo
+   thumbnail/hero fallback placeholders are deliberately NOT re-themed here
+   -- uno-logo.png is a near-white mark designed to sit on a dark surface
+   (confirmed by sampling its pixels), so those three surfaces stay on
+   their original dark literal colors in both themes rather than going
+   invisible on a light background. Everything else (page background,
+   cards, borders, body text, shimmer, cookie banner, comments, pagination,
+   search dropdown, legal/topic pages) follows the toggle via these
+   variables.
+*/
+[data-theme="light"] {
+  --bg: #f7f7f5;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0f0ee;
+  --red: #e0202e;
+  --text: #161616;
+  --text-secondary: #2c2c2c;
+  --gray: #6b6b6b;
+  --border: #e0e0dd;
+  --shimmer-1: #e9e9e6;
+  --shimmer-2: #f6f6f4;
+  --search-cancel-filter: none;
 }
 * { box-sizing: border-box; }
 body {
   margin: 0;
   background: var(--bg);
-  color: var(--white);
+  color: var(--text);
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 a { color: inherit; }
@@ -417,8 +464,12 @@ header {
 }
 header a.brand-link { display: flex; align-items: center; gap: 16px; text-decoration: none; }
 header img.logo { height: 52px; width: auto; display: block; }
+/* Header nav (tagline, filter pills, hamburger) is deliberately NOT themed
+   -- the header itself stays the fixed dark surface described above in
+   both light and dark mode, so these use literal colors instead of the
+   --text/--gray/--border variables that flip with [data-theme="light"]. */
 header .tagline {
-  color: var(--gray);
+  color: #9a9a9a;
   font-size: 12px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
@@ -429,10 +480,10 @@ header .tagline {
 .header-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-left: auto; }
 .header-filters a {
   font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px;
-  color: var(--gray); text-decoration: none; padding: 7px 16px; border-radius: 999px;
-  border: 1px solid var(--border);
+  color: #9a9a9a; text-decoration: none; padding: 7px 16px; border-radius: 999px;
+  border: 1px solid #262626;
 }
-.header-filters a:hover { color: var(--white); border-color: var(--gray); }
+.header-filters a:hover { color: #f5f5f5; border-color: #9a9a9a; }
 .header-filters a.active { color: #fff; background: var(--red); border-color: var(--red); }
 
 /* Mobile hamburger menu -- hidden checkbox drives a CSS-only dropdown, no JS. */
@@ -451,15 +502,42 @@ header .tagline {
   display: block;
   height: 2px;
   width: 100%;
-  background: var(--white);
+  background: #f5f5f5;
   border-radius: 2px;
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
+/* Light/dark toggle -- lives inside <header>, which (like the icon colors
+   above) stays on its fixed dark literal colors in both themes, not the
+   --text/--gray tokens the rest of the page follows. order:3 places it
+   right after the search bar (order:2) on both desktop and mobile; the
+   hamburger gets bumped to order:4 in the mobile media query below so it
+   stays the rightmost element there. */
+.theme-toggle-btn {
+  order: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  background: transparent;
+  border: 1px solid #262626;
+  border-radius: 50%;
+  color: #9a9a9a;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.theme-toggle-btn:hover { color: #f5f5f5; border-color: #9a9a9a; }
+.theme-icon-moon { display: none; }
+[data-theme="light"] .theme-icon-sun { display: none; }
+[data-theme="light"] .theme-icon-moon { display: block; }
+
 @media (max-width: 760px) {
   header .tagline { display: none; }
   header { gap: 10px; }
-  .nav-toggle-btn { display: flex; order: 3; }
+  .nav-toggle-btn { display: flex; order: 4; }
   .header-filters {
     display: none;
     position: absolute;
@@ -501,7 +579,7 @@ main { padding: 32px 5vw 80px; }
 .card:hover { transform: translateY(-3px); background: var(--bg-card-hover); border-color: var(--red); }
 .card-thumb {
   width: 100%; height: 180px; object-fit: cover; display: block;
-  background: linear-gradient(100deg, #161616 30%, #232323 50%, #161616 70%);
+  background: linear-gradient(100deg, var(--shimmer-1) 30%, var(--shimmer-2) 50%, var(--shimmer-1) 70%);
   background-size: 300% 100%;
   animation: thumb-shimmer 1.4s ease-in-out infinite;
 }
@@ -519,32 +597,35 @@ main { padding: 32px 5vw 80px; }
 .card-meta { font-size: 11px; color: var(--gray); margin-bottom: 10px; letter-spacing: 0.3px; }
 .card-category { color: var(--red); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
 .card-dot { margin: 0 6px; }
-.card-title { font-size: 18px; line-height: 1.3; margin: 0 0 10px; font-weight: 800; color: var(--white); }
+.card-title { font-size: 18px; line-height: 1.3; margin: 0 0 10px; font-weight: 800; color: var(--text); }
 .card-excerpt { font-size: 14px; color: var(--gray); line-height: 1.5; margin: 0 0 16px; flex: 1; }
-.card-link { font-size: 13px; font-weight: 700; color: var(--white); text-transform: uppercase;
+.card-link { font-size: 13px; font-weight: 700; color: var(--text); text-transform: uppercase;
   letter-spacing: 0.5px; border-bottom: 2px solid var(--red); padding-bottom: 3px; align-self: flex-start; }
-footer { padding: 56px 5vw 0; border-top: 1px solid var(--border); color: var(--gray); font-size: 13px; line-height: 1.7; background: var(--bg-card); }
-footer strong { color: var(--white); }
-footer a { color: var(--gray); text-decoration: none; }
-footer a:hover { color: var(--white); }
+/* Footer is also deliberately NOT themed, same reasoning as the header
+   above -- it carries the same near-white uno-logo.png watermark, so it
+   stays on its original dark literal colors in both light and dark mode. */
+footer { padding: 56px 5vw 0; border-top: 1px solid #262626; color: #9a9a9a; font-size: 13px; line-height: 1.7; background: #141414; }
+footer strong { color: #f5f5f5; }
+footer a { color: #9a9a9a; text-decoration: none; }
+footer a:hover { color: #f5f5f5; }
 .footer-inner { max-width: 1200px; margin: 0 auto; }
 .footer-top { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; padding-bottom: 40px; }
 .footer-logo { height: 40px; width: auto; }
 .footer-tagline { margin: 0; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--red); }
 .footer-columns {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
-  padding-bottom: 40px; border-top: 1px solid var(--border); padding-top: 40px;
+  padding-bottom: 40px; border-top: 1px solid #262626; padding-top: 40px;
 }
 .footer-col h4 {
   margin: 0 0 16px; font-size: 12px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.8px; color: var(--white);
+  letter-spacing: 0.8px; color: #f5f5f5;
 }
 .footer-col a { display: block; margin-bottom: 10px; font-size: 13px; }
-.footer-col p { margin: 0 0 10px; font-size: 13px; color: var(--gray); }
+.footer-col p { margin: 0 0 10px; font-size: 13px; color: #9a9a9a; }
 .footer-col .footer-contact-email { color: var(--red); font-weight: 700; }
 .footer-col .footer-contact-email:hover { text-decoration: underline; }
-.footer-bottom { border-top: 1px solid var(--border); padding: 24px 0 28px; }
-.footer-source-note { margin: 0 0 16px; font-size: 12px; color: var(--gray); max-width: 720px; }
+.footer-bottom { border-top: 1px solid #262626; padding: 24px 0 28px; }
+.footer-source-note { margin: 0 0 16px; font-size: 12px; color: #9a9a9a; max-width: 720px; }
 .footer-copy {
   margin: 0; font-size: 11px; color: #6b6b6b; display: flex; justify-content: space-between;
   flex-wrap: wrap; gap: 8px;
@@ -559,7 +640,7 @@ footer a:hover { color: var(--white); }
   font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
   padding: 10px 18px; border-radius: 6px; text-decoration: none;
 }
-.pagination a { color: var(--white); border: 1px solid var(--border); }
+.pagination a { color: var(--text); border: 1px solid var(--border); }
 .pagination a:hover { border-color: var(--red); color: var(--red); }
 .pagination .disabled { color: #4a4a4a; border: 1px solid var(--border); opacity: 0.5; }
 .pagination .page-count { color: var(--gray); border: none; text-transform: none; letter-spacing: 0; font-weight: 400; }
@@ -568,7 +649,7 @@ footer a:hover { color: var(--white); }
   color: var(--gray); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
 }
 .page-jump select {
-  background: var(--bg-card); color: var(--white); border: 1px solid var(--border);
+  background: var(--bg-card); color: var(--text); border: 1px solid var(--border);
   border-radius: 6px; padding: 9px 14px; font-size: 13px; font-weight: 700;
   font-family: inherit; cursor: pointer;
 }
@@ -611,13 +692,13 @@ footer a:hover { color: var(--white); }
   background: transparent;
   border: none;
   outline: none;
-  color: var(--white);
+  color: var(--text);
   font-family: inherit;
   font-size: 13px;
   padding: 8px 0;
 }
 .search-bar input::placeholder { color: var(--gray); }
-.search-bar input::-webkit-search-cancel-button { filter: invert(1); opacity: 0.6; }
+.search-bar input::-webkit-search-cancel-button { filter: var(--search-cancel-filter); opacity: 0.6; }
 .search-bar button {
   display: flex;
   align-items: center;
@@ -701,7 +782,7 @@ footer a:hover { color: var(--white); }
   gap: 10px;
   padding: 8px 12px;
   text-decoration: none;
-  color: var(--white);
+  color: var(--text);
   border-bottom: 1px solid var(--border);
 }
 .search-suggest-item:last-of-type { border-bottom: none; }
@@ -733,7 +814,7 @@ footer a:hover { color: var(--white); }
   padding: 12px 28px;
   border-radius: 999px;
   background: var(--bg-card);
-  color: var(--white);
+  color: var(--text);
   border: 1px solid var(--border);
   font-size: 13px;
   font-weight: 700;
@@ -746,13 +827,13 @@ footer a:hover { color: var(--white); }
 /* Article page */
 .article-wrap { max-width: 720px; margin: 0 auto; padding: 48px 5vw 80px; }
 .back-link { display: inline-block; font-size: 13px; color: var(--gray); text-decoration: none; margin-bottom: 24px; }
-.back-link:hover { color: var(--white); }
+.back-link:hover { color: var(--text); }
 .article-meta { font-size: 12px; color: var(--gray); margin-bottom: 14px; letter-spacing: 0.3px; }
-.article-title { font-size: 32px; line-height: 1.25; font-weight: 800; margin: 0 0 24px; color: var(--white); }
+.article-title { font-size: 32px; line-height: 1.25; font-weight: 800; margin: 0 0 24px; color: var(--text); }
 .article-hero {
   width: 100%; max-height: 420px; object-fit: cover; border-radius: 10px;
   margin-bottom: 28px; border: 1px solid var(--border);
-  background: linear-gradient(100deg, #161616 30%, #232323 50%, #161616 70%);
+  background: linear-gradient(100deg, var(--shimmer-1) 30%, var(--shimmer-2) 50%, var(--shimmer-1) 70%);
   background-size: 300% 100%;
   animation: thumb-shimmer 1.4s ease-in-out infinite;
 }
@@ -762,7 +843,7 @@ footer a:hover { color: var(--white); }
   background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
   animation: none;
 }
-.article-summary { font-size: 17px; line-height: 1.7; color: #e6e6e6; margin-bottom: 32px; }
+.article-summary { font-size: 17px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 32px; }
 .outbound-cta {
   display: inline-flex; align-items: center; gap: 8px;
   background: var(--red); color: #fff; text-decoration: none;
@@ -775,7 +856,7 @@ footer a:hover { color: var(--white); }
 .article-related-topics a { color: var(--red); font-weight: 700; text-decoration: none; }
 .article-related-topics a:hover { text-decoration: underline; }
 .comments-wrap { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
-.comments-heading { font-size: 20px; font-weight: 800; margin: 0 0 20px; color: var(--white); }
+.comments-heading { font-size: 20px; font-weight: 800; margin: 0 0 20px; color: var(--text); }
 .comments-load-btn {
   background: var(--red); color: #fff; border: none; border-radius: 6px;
   font-weight: 700; font-size: 14px; padding: 12px 22px; cursor: pointer;
@@ -787,7 +868,7 @@ footer a:hover { color: var(--white); }
 /* Cookie consent banner */
 .cookie-banner {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 200;
-  background: #101010; border-top: 1px solid var(--border);
+  background: var(--bg-card); border-top: 1px solid var(--border);
   padding: 16px 5vw; box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.4);
 }
 .cookie-banner[hidden] { display: none; }
@@ -807,16 +888,16 @@ footer a:hover { color: var(--white); }
 
 /* Legal pages (Privacy Policy, Terms of Service) */
 .legal-wrap { max-width: 760px; margin: 0 auto; padding: 48px 5vw 80px; }
-.legal-wrap h1 { font-size: 30px; font-weight: 800; margin: 0 0 8px; color: var(--white); }
+.legal-wrap h1 { font-size: 30px; font-weight: 800; margin: 0 0 8px; color: var(--text); }
 .legal-wrap .legal-updated { font-size: 12px; color: var(--gray); margin-bottom: 36px; letter-spacing: 0.3px; }
-.legal-wrap h2 { font-size: 18px; font-weight: 700; margin: 36px 0 12px; color: var(--white); }
-.legal-wrap p { font-size: 15px; line-height: 1.7; color: #e6e6e6; margin: 0 0 16px; }
+.legal-wrap h2 { font-size: 18px; font-weight: 700; margin: 36px 0 12px; color: var(--text); }
+.legal-wrap p { font-size: 15px; line-height: 1.7; color: var(--text-secondary); margin: 0 0 16px; }
 .legal-wrap a { color: var(--red); text-decoration: none; font-weight: 700; }
 .legal-wrap a:hover { text-decoration: underline; }
 
 /* Topic hub pages (/topic/{slug}/) and the /topics/ directory */
 .topic-hub-heading { margin: 0 0 28px; }
-.topic-hub-heading h1 { font-size: 30px; font-weight: 800; margin: 0 0 8px; color: var(--white); }
+.topic-hub-heading h1 { font-size: 30px; font-weight: 800; margin: 0 0 8px; color: var(--text); }
 .topic-hub-sub { font-size: 14px; color: var(--gray); margin: 0; }
 .topic-index-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
 .topic-index-item {
@@ -825,17 +906,17 @@ footer a:hover { color: var(--white); }
   padding: 16px 18px; text-decoration: none;
 }
 .topic-index-item:hover { background: var(--bg-card-hover); border-color: var(--gray); }
-.topic-index-name { font-size: 15px; font-weight: 700; color: var(--white); }
+.topic-index-name { font-size: 15px; font-weight: 700; color: var(--text); }
 .topic-index-count { font-size: 12px; color: var(--gray); flex-shrink: 0; }
 
 /* Hip-Hop Beef Tracker pillar page (/hip-hop-beef-tracker/) */
-.beef-tracker-intro { font-size: 15px; line-height: 1.7; color: #e6e6e6; max-width: 760px; margin: 0 0 40px; }
+.beef-tracker-intro { font-size: 15px; line-height: 1.7; color: var(--text-secondary); max-width: 760px; margin: 0 0 40px; }
 .beef-entry {
   background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
   padding: 24px 26px; margin-bottom: 20px;
 }
 .beef-entry-header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 10px; }
-.beef-entry-title { font-size: 19px; font-weight: 800; color: var(--white); margin: 0; }
+.beef-entry-title { font-size: 19px; font-weight: 800; color: var(--text); margin: 0; }
 .beef-entry-status {
   font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
   padding: 4px 12px; border-radius: 999px; flex-shrink: 0;
@@ -843,7 +924,7 @@ footer a:hover { color: var(--white); }
 .beef-entry-status.active { background: rgba(224, 32, 46, 0.16); color: var(--red); }
 .beef-entry-status.dormant { background: rgba(154, 154, 154, 0.16); color: var(--gray); }
 .beef-entry-updated { font-size: 12px; color: var(--gray); margin: 0 0 12px; }
-.beef-entry-summary { font-size: 15px; line-height: 1.65; color: #e6e6e6; margin: 0 0 14px; }
+.beef-entry-summary { font-size: 15px; line-height: 1.65; color: var(--text-secondary); margin: 0 0 14px; }
 .beef-entry-links { display: flex; flex-wrap: wrap; gap: 8px 18px; }
 .beef-entry-links a { font-size: 13px; font-weight: 700; color: var(--red); text-decoration: none; }
 .beef-entry-links a:hover { text-decoration: underline; }
@@ -900,10 +981,43 @@ def header_html(prefix: str, active: str = None) -> str:
     <span></span><span></span><span></span>
   </label>
   {search_bar_html("header-search")}
+  <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Switch to light mode" title="Switch to light mode">
+    <svg class="theme-icon-sun" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <circle cx="10" cy="10" r="4"></circle>
+      <path d="M10 1.5v2.4M10 16.1v2.4M3.5 3.5l1.7 1.7M14.8 14.8l1.7 1.7M1.5 10h2.4M16.1 10h2.4M3.5 16.5l1.7-1.7M14.8 5.2l1.7-1.7"></path>
+    </svg>
+    <svg class="theme-icon-moon" viewBox="0 0 20 20" width="18" height="18" fill="currentColor">
+      <path d="M17.3 13.3A8 8 0 016.7 2.7a.6.6 0 00-.7-.85A8 8 0 1018.15 14a.6.6 0 00-.85-.7z"></path>
+    </svg>
+  </button>
   <nav class="header-filters">
     {"".join(pills)}
   </nav>
-</header>"""
+</header>
+<script>
+(function() {{
+  var btn = document.getElementById('theme-toggle-btn');
+  if (!btn) return;
+  function applyLabel() {{
+    var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    var label = isLight ? 'Switch to dark mode' : 'Switch to light mode';
+    btn.setAttribute('aria-label', label);
+    btn.setAttribute('title', label);
+  }}
+  applyLabel();
+  btn.addEventListener('click', function() {{
+    var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    if (isLight) {{
+      document.documentElement.removeAttribute('data-theme');
+      try {{ localStorage.setItem('uno_theme', 'dark'); }} catch (e) {{}}
+    }} else {{
+      document.documentElement.setAttribute('data-theme', 'light');
+      try {{ localStorage.setItem('uno_theme', 'light'); }} catch (e) {{}}
+    }}
+    applyLabel();
+  }});
+}})();
+</script>"""
 
 
 def cookie_banner_html(prefix: str) -> str:
@@ -1175,6 +1289,7 @@ def build_page(page_num: int, total_pages: int):
 <html lang="en">
 <head>
 {GTM_HEAD_SNIPPET}
+{THEME_INIT_SNIPPET}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
@@ -1278,6 +1393,7 @@ def build_category(cat_key: str, cat_label: str):
 <html lang="en">
 <head>
 {GTM_HEAD_SNIPPET}
+{THEME_INIT_SNIPPET}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{escape(title)}</title>
@@ -1373,6 +1489,7 @@ def build_topic(slug: str, name: str):
 <html lang="en">
 <head>
 {GTM_HEAD_SNIPPET}
+{THEME_INIT_SNIPPET}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{escape(title)}</title>
@@ -1426,6 +1543,7 @@ def build_topics_index(live_topics: list) -> None:
 <html lang="en">
 <head>
 {GTM_HEAD_SNIPPET}
+{THEME_INIT_SNIPPET}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
@@ -1633,6 +1751,7 @@ def build_beef_tracker():
 <html lang="en">
 <head>
 {GTM_HEAD_SNIPPET}
+{THEME_INIT_SNIPPET}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
@@ -1762,6 +1881,7 @@ def build_article(a: dict):
 <html lang="en">
 <head>
 {GTM_HEAD_SNIPPET}
+{THEME_INIT_SNIPPET}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{escape(title)}</title>
@@ -2051,6 +2171,7 @@ def build_search_page():
 <html lang="en">
 <head>
 {GTM_HEAD_SNIPPET}
+{THEME_INIT_SNIPPET}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
@@ -2098,6 +2219,7 @@ def build_about_page():
 <html lang="en">
 <head>
 {GTM_HEAD_SNIPPET}
+{THEME_INIT_SNIPPET}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{full_title}</title>
@@ -2134,6 +2256,7 @@ def build_legal_page(slug: str, title: str, body_html: str):
 <html lang="en">
 <head>
 {GTM_HEAD_SNIPPET}
+{THEME_INIT_SNIPPET}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{full_title}</title>

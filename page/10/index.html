@@ -8,6 +8,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KNZNCCPT');</script>
 <!-- End Google Tag Manager -->
+<script>
+(function() {
+  try {
+    if (localStorage.getItem('uno_theme') === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  } catch (e) {}
+})();
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UNO Entertainment | Page 10</title>
@@ -56,10 +65,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </svg>
       </button>
     </form>
+  <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Switch to light mode" title="Switch to light mode">
+    <svg class="theme-icon-sun" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <circle cx="10" cy="10" r="4"></circle>
+      <path d="M10 1.5v2.4M10 16.1v2.4M3.5 3.5l1.7 1.7M14.8 14.8l1.7 1.7M1.5 10h2.4M16.1 10h2.4M3.5 16.5l1.7-1.7M14.8 5.2l1.7-1.7"></path>
+    </svg>
+    <svg class="theme-icon-moon" viewBox="0 0 20 20" width="18" height="18" fill="currentColor">
+      <path d="M17.3 13.3A8 8 0 016.7 2.7a.6.6 0 00-.7-.85A8 8 0 1018.15 14a.6.6 0 00-.85-.7z"></path>
+    </svg>
+  </button>
   <nav class="header-filters">
     <a class="active" href="/">All</a><a class="" href="/category/news/">News</a><a class="" href="/category/rumors/">Rumors</a><a class="" href="/category/videos/">Videos</a><a class="" href="/category/music/">Music</a><a class="" href="/category/sports/">Sports</a><a class="" href="/category/opinion/">Opinion</a>
   </nav>
 </header>
+<script>
+(function() {
+  var btn = document.getElementById('theme-toggle-btn');
+  if (!btn) return;
+  function applyLabel() {
+    var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    var label = isLight ? 'Switch to dark mode' : 'Switch to light mode';
+    btn.setAttribute('aria-label', label);
+    btn.setAttribute('title', label);
+  }
+  applyLabel();
+  btn.addEventListener('click', function() {
+    var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    if (isLight) {
+      document.documentElement.removeAttribute('data-theme');
+      try { localStorage.setItem('uno_theme', 'dark'); } catch (e) {}
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      try { localStorage.setItem('uno_theme', 'light'); } catch (e) {}
+    }
+    applyLabel();
+  });
+})();
+</script>
 <main>
   <div class="grid">
     
@@ -76,7 +118,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/would-you-cut-electric-robert-henry-or-physical-kaytron-allen-commande/">
       <img src="https://s.yimg.com/lo/mysterio/api/b19bfbb95b05441bcedd06142b0fff49adcf6b0cc80695c31fc10880e4118c2c/lightyear_networkapi/resizefill_w543_h592%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F9b4b446066758badefd4be4a840b8327.jpg" alt="Would you cut electric Robert Henry or physical Kaytron Allen? Commanders fans have voted" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>12 hours ago</div>
+        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>13 hours ago</div>
         <h2 class="card-title">Would you cut electric Robert Henry or physical Kaytron Allen? Commanders fans have voted</h2>
         <p class="card-excerpt">Hogs Haven readers vote on the brutal math of a 53-man roster crunch, with a tough choice at running back</p>
         <span class="card-link">Read More &rarr;</span>
@@ -86,7 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/49ers-news-we-re-on-to-las-vegas/">
       <img src="https://s.yimg.com/lo/mysterio/api/cd863795cefcf0a801ae38b6e3baa5b6dcb4b7e873d14842d3eee20c323bb4e8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F5b916baa54bc3a149f63d20287aac4b9.jpg" alt="49ers News: We’re on to Las Vegas" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>12 hours ago</div>
+        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>13 hours ago</div>
         <h2 class="card-title">49ers News: We’re on to Las Vegas</h2>
         <p class="card-excerpt">Your daily San Francisco 49ers news for Saturday, August 22nd, 2026</p>
         <span class="card-link">Read More &rarr;</span>
@@ -106,7 +148,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/riley-moss-left-week-2-preseason-game-with-rib-injury/">
       <img src="https://s.yimg.com/lo/mysterio/api/9fdf031314fb03a9536e6c48f2d3b8e6588369599af3fd11d7f380c7674986dc/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F55530a1d954e848ec533879ae9aa535a.jpg" alt="Riley Moss left Week 2 preseason game with rib injury" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>13 hours ago</div>
+        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>14 hours ago</div>
         <h2 class="card-title">Riley Moss left Week 2 preseason game with rib injury</h2>
         <p class="card-excerpt">The best outcome of any preseason game is to emerge with as few injuries as possible.</p>
         <span class="card-link">Read More &rarr;</span>
@@ -116,7 +158,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/three-reasons-why-the-jaguars-lost-to-the-panthers/">
       <img src="https://s.yimg.com/lo/mysterio/api/5d73a9ef1df5730f0cf5a4f7c1ea45317899081338f5614f75aa48a942c4f413/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2Ff6a588a35884e917f48ce5e54d3fc01e.jpg" alt="Three reasons why the Jaguars lost to the Panthers" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>13 hours ago</div>
+        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>14 hours ago</div>
         <h2 class="card-title">Three reasons why the Jaguars lost to the Panthers</h2>
         <p class="card-excerpt">Three takeaways from the Jaguars’ 34-17 loss to the Panthers</p>
         <span class="card-link">Read More &rarr;</span>
@@ -126,7 +168,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/anthony-edwards-baby-mama-ayesha-howard-happy-for-other-baby-mama-s-ch/">
       <img src="https://imagez.tmz.com/image/a2/16by9/2026/08/21/a2324dd286ce4084bfba378d360944fb_xl.jpg" alt="Anthony Edwards&#x27; Baby Mama Ayesha Howard Happy For Other Baby Mama&#x27;s Child Support Win" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>13 hours ago</div>
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>14 hours ago</div>
         <h2 class="card-title">Anthony Edwards&#x27; Baby Mama Ayesha Howard Happy For Other Baby Mama&#x27;s Child Support Win</h2>
         <p class="card-excerpt">Anthony Edwards&#x27; baby mamas aren&#x27;t squabbling...in fact, one of them is publicly saying she loves how much child support the other is getting from the NBA star.</p>
         <span class="card-link">Read More &rarr;</span>
@@ -136,7 +178,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/liane-v-benjamin-hot-shots-to-celebrate-her-40th-birthday/">
       <img src="https://imagez.tmz.com/image/1b/16by9/2026/08/18/1bde88c65d2f492892e63ce7c592d403_xl.jpg" alt="Liane V Benjamin Hot Shots to Celebrate Her 40th Birthday" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>13 hours ago</div>
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>14 hours ago</div>
         <h2 class="card-title">Liane V Benjamin Hot Shots to Celebrate Her 40th Birthday</h2>
         <p class="card-excerpt">Liane V Benjamin just turned the big 4-0...and hitting such a major milestone is certainly cause for celebration! The influencer has blessed us over the years w</p>
         <span class="card-link">Read More &rarr;</span>

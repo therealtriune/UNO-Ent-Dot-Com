@@ -8,6 +8,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KNZNCCPT');</script>
 <!-- End Google Tag Manager -->
+<script>
+(function() {
+  try {
+    if (localStorage.getItem('uno_theme') === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  } catch (e) {}
+})();
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UNO Entertainment | Page 11</title>
@@ -56,10 +65,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </svg>
       </button>
     </form>
+  <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Switch to light mode" title="Switch to light mode">
+    <svg class="theme-icon-sun" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <circle cx="10" cy="10" r="4"></circle>
+      <path d="M10 1.5v2.4M10 16.1v2.4M3.5 3.5l1.7 1.7M14.8 14.8l1.7 1.7M1.5 10h2.4M16.1 10h2.4M3.5 16.5l1.7-1.7M14.8 5.2l1.7-1.7"></path>
+    </svg>
+    <svg class="theme-icon-moon" viewBox="0 0 20 20" width="18" height="18" fill="currentColor">
+      <path d="M17.3 13.3A8 8 0 016.7 2.7a.6.6 0 00-.7-.85A8 8 0 1018.15 14a.6.6 0 00-.85-.7z"></path>
+    </svg>
+  </button>
   <nav class="header-filters">
     <a class="active" href="/">All</a><a class="" href="/category/news/">News</a><a class="" href="/category/rumors/">Rumors</a><a class="" href="/category/videos/">Videos</a><a class="" href="/category/music/">Music</a><a class="" href="/category/sports/">Sports</a><a class="" href="/category/opinion/">Opinion</a>
   </nav>
 </header>
+<script>
+(function() {
+  var btn = document.getElementById('theme-toggle-btn');
+  if (!btn) return;
+  function applyLabel() {
+    var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    var label = isLight ? 'Switch to dark mode' : 'Switch to light mode';
+    btn.setAttribute('aria-label', label);
+    btn.setAttribute('title', label);
+  }
+  applyLabel();
+  btn.addEventListener('click', function() {
+    var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    if (isLight) {
+      document.documentElement.removeAttribute('data-theme');
+      try { localStorage.setItem('uno_theme', 'dark'); } catch (e) {}
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      try { localStorage.setItem('uno_theme', 'light'); } catch (e) {}
+    }
+    applyLabel();
+  });
+})();
+</script>
 <main>
   <div class="grid">
     
@@ -86,7 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/coffee-essentials-for-the-perfect-at-home-brew/">
       <img src="https://imagez.tmz.com/image/72/16by9/2026/08/19/72db2e9c9d4d4f519f89c595cb1c5322_xl.jpg" alt="Coffee Essentials For The Perfect At-Home Brew" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>14 hours ago</div>
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>15 hours ago</div>
         <h2 class="card-title">Coffee Essentials For The Perfect At-Home Brew</h2>
         <p class="card-excerpt">TMZ may collect a share of sales or other compensation from links on this page. Your coffee routine deserves a little upgrade … and you deserve a barista qualit</p>
         <span class="card-link">Read More &rarr;</span>
@@ -96,7 +138,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/celebrity-summer-vacations-2026-see-the-hottest-getaways/">
       <img src="https://imagez.tmz.com/image/93/16by9/2026/08/18/93575b3efedb423e95a2494c1074d53c_xl.jpg" alt="Celebrity Summer Vacations 2026: See the Hottest Getaways" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>14 hours ago</div>
+        <div class="card-meta"><span class="card-category">Rumors</span><span class="card-dot">&middot;</span>15 hours ago</div>
         <h2 class="card-title">Celebrity Summer Vacations 2026: See the Hottest Getaways</h2>
         <p class="card-excerpt">From tropical beaches to luxury European escapes, see where your fave celebrities are vacationing this summer...Check out the gallery &#x27;cuz it&#x27;s stacked with sex</p>
         <span class="card-link">Read More &rarr;</span>
@@ -106,7 +148,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/packers-depth-chart-who-played-for-green-bay-s-1s-and-2s-vs-the-bronco/">
       <img src="https://s.yimg.com/lo/mysterio/api/e385beab2109f30f85dafe99c6e5ce09c0593d0f050006112f1df3a2d3b26125/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F94b4e55660bc743fa7c115bda3ac8f4f.jpg" alt="Packers Depth Chart: Who played for Green Bay’s 1s and 2s vs. the Broncos?" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>14 hours ago</div>
+        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>15 hours ago</div>
         <h2 class="card-title">Packers Depth Chart: Who played for Green Bay’s 1s and 2s vs. the Broncos?</h2>
         <p class="card-excerpt">Packers DB Kamal Hadden quickly overtook Kitan Oladapo as Javon Bullard’s backup upon returning to the field</p>
         <span class="card-link">Read More &rarr;</span>
@@ -116,7 +158,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/josh-hokit-lashes-out-at-ufc-heavyweight-division/">
       <img src="https://s.yimg.com/lo/mysterio/api/fa4fbad9f002f31d01ae585448d815362e2a9d6b47516e63bae295d5e78c7322/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fheavy_214%2F8503c385d94b924dd39c471604dd50c3.jpg" alt="Josh Hokit Lashes Out at UFC Heavyweight Division" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>14 hours ago</div>
+        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>15 hours ago</div>
         <h2 class="card-title">Josh Hokit Lashes Out at UFC Heavyweight Division</h2>
         <p class="card-excerpt">UFC heavyweight contender Josh Hokit lashed out at the heavyweight division, accusing champion Tom Aspinall of sitting on the sidelines. Hokit is one of the hot</p>
         <span class="card-link">Read More &rarr;</span>
@@ -136,7 +178,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/pfl-tampa-cris-cyborg-vs-ketlen-vieira-ceremonial-weigh-ins/">
       <img src="https://s.yimg.com/lo/mysterio/api/95a2845bcc01a5ea6d3200d4df21eda258415d533fa22e2f70f4c606a772e4dd/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmmaweekly.com%2Ff2f0b6379f3e81c5ac925cb32c4d3d22.jpg" alt="PFL Tampa: Cris Cyborg vs Ketlen Vieira Ceremonial Weigh-Ins" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>15 hours ago</div>
+        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>16 hours ago</div>
         <h2 class="card-title">PFL Tampa: Cris Cyborg vs Ketlen Vieira Ceremonial Weigh-Ins</h2>
         <p class="card-excerpt">Cris Cyborg defends her PFL Women&#x27;s Featherweight World Title against Ketlen Vieira as the PFL lands in Tampa on Saturday.</p>
         <span class="card-link">Read More &rarr;</span>
@@ -176,7 +218,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/pfl-tampa-live-results-cris-cyborg-vs-ketlen-vieira-updates-round-by-r/">
       <img src="https://s.yimg.com/lo/mysterio/api/ce91639e67a5466a69e60b269394ac3db56e181bad5f4c41639a43a853a54a02/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fpfl-20260821-mb7-7413_2995.jpg" alt="PFL Tampa live results: Cris Cyborg vs. Ketlen Vieira updates, round-by-round scoring and highlights" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>16 hours ago</div>
+        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>17 hours ago</div>
         <h2 class="card-title">PFL Tampa live results: Cris Cyborg vs. Ketlen Vieira updates, round-by-round scoring and highlights</h2>
         <p class="card-excerpt">Follow PFL Tampa with live results and round-by-round updates for Saturday&#x27;s Cris Cyborg vs. Ketlen Vieira fight card.</p>
         <span class="card-link">Read More &rarr;</span>

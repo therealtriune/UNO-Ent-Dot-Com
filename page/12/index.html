@@ -8,6 +8,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KNZNCCPT');</script>
 <!-- End Google Tag Manager -->
+<script>
+(function() {
+  try {
+    if (localStorage.getItem('uno_theme') === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  } catch (e) {}
+})();
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UNO Entertainment | Page 12</title>
@@ -56,10 +65,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </svg>
       </button>
     </form>
+  <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Switch to light mode" title="Switch to light mode">
+    <svg class="theme-icon-sun" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <circle cx="10" cy="10" r="4"></circle>
+      <path d="M10 1.5v2.4M10 16.1v2.4M3.5 3.5l1.7 1.7M14.8 14.8l1.7 1.7M1.5 10h2.4M16.1 10h2.4M3.5 16.5l1.7-1.7M14.8 5.2l1.7-1.7"></path>
+    </svg>
+    <svg class="theme-icon-moon" viewBox="0 0 20 20" width="18" height="18" fill="currentColor">
+      <path d="M17.3 13.3A8 8 0 016.7 2.7a.6.6 0 00-.7-.85A8 8 0 1018.15 14a.6.6 0 00-.85-.7z"></path>
+    </svg>
+  </button>
   <nav class="header-filters">
     <a class="active" href="/">All</a><a class="" href="/category/news/">News</a><a class="" href="/category/rumors/">Rumors</a><a class="" href="/category/videos/">Videos</a><a class="" href="/category/music/">Music</a><a class="" href="/category/sports/">Sports</a><a class="" href="/category/opinion/">Opinion</a>
   </nav>
 </header>
+<script>
+(function() {
+  var btn = document.getElementById('theme-toggle-btn');
+  if (!btn) return;
+  function applyLabel() {
+    var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    var label = isLight ? 'Switch to dark mode' : 'Switch to light mode';
+    btn.setAttribute('aria-label', label);
+    btn.setAttribute('title', label);
+  }
+  applyLabel();
+  btn.addEventListener('click', function() {
+    var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    if (isLight) {
+      document.documentElement.removeAttribute('data-theme');
+      try { localStorage.setItem('uno_theme', 'dark'); } catch (e) {}
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      try { localStorage.setItem('uno_theme', 'light'); } catch (e) {}
+    }
+    applyLabel();
+  });
+})();
+</script>
 <main>
   <div class="grid">
     
@@ -96,7 +138,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/nick-chubb-announces-nfl-retirement-after-8-seasons/">
       <img src="https://s.yimg.com/lo/mysterio/api/9aa24efdf575e8576ed9d9effb1da8e288df5be9afd23b91f5f2228c0ac5224a/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F79a606e72bb105f4bd12e41e074e460b.jpg" alt="Nick Chubb Announces NFL Retirement After 8 Seasons" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>17 hours ago</div>
+        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>18 hours ago</div>
         <h2 class="card-title">Nick Chubb Announces NFL Retirement After 8 Seasons</h2>
         <p class="card-excerpt">This evening I a heartfelt social media posting former Bulldog great Nick Chubb announced his retirement after eight NFL seasons. The Ground Hound from Cedartow</p>
         <span class="card-link">Read More &rarr;</span>
@@ -116,7 +158,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/bo-nix-shines-in-broncos-preseason-return-instant-analysis-grades/">
       <img src="https://s.yimg.com/lo/mysterio/api/d6826c8204af32bfc09893c0c34f33575c421063d1a2b3efb3fa791632edafa2/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2Fe1e905206f6c13f9c24e099f9c2e00bd.jpg" alt="Bo Nix shines in Broncos preseason return: Instant analysis, grades" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>18 hours ago</div>
+        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>19 hours ago</div>
         <h2 class="card-title">Bo Nix shines in Broncos preseason return: Instant analysis, grades</h2>
         <p class="card-excerpt">Bo Nix was back in the Broncos lineup for the first time since suffering a fractured ankle in the playoffs. Here&#x27;s a breakdown of how he played.</p>
         <span class="card-link">Read More &rarr;</span>
@@ -126,7 +168,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/stock-report-after-the-steelers-17-0-preseason-loss-to-the-new-york-je/">
       <img src="https://s.yimg.com/lo/mysterio/api/d297b31388e30fc69dd9c9e394435f238fc677f62dd888315151d785cd9bfc0a/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F0350dd0c9fd84c17cc5da6ffd90e64d4.jpg" alt="Stock report after the Steelers’ 17-0 preseason loss to the New York Jets" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>18 hours ago</div>
+        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>19 hours ago</div>
         <h2 class="card-title">Stock report after the Steelers’ 17-0 preseason loss to the New York Jets</h2>
         <p class="card-excerpt">Who stood out and who hurt their own stock in the Steelers second preseason game of the 2026 season?</p>
         <span class="card-link">Read More &rarr;</span>
@@ -136,7 +178,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/jets-geno-smith-silencing-critics-of-his-qb1-status-with-impressive-dr/">
       <img src="https://s.yimg.com/lo/mysterio/api/e355bac84ce8fc27b75949d08bfffad0c58a967a68865ac76043949001fa9b28/lightyear_networkapi/resizefill_w444_h250%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsny_articles_235%2Fa64384e4d2c1109f0e8e17efb728acb3.jpg" alt="Jets&#x27; Geno Smith silencing critics of his QB1 status with impressive drive in first preseason start" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>18 hours ago</div>
+        <div class="card-meta"><span class="card-category">Sports</span><span class="card-dot">&middot;</span>19 hours ago</div>
         <h2 class="card-title">Jets&#x27; Geno Smith silencing critics of his QB1 status with impressive drive in first preseason start</h2>
         <p class="card-excerpt">After a couple of weeks of iffy practice play and missing a preseason start due to injury, Geno Smith showed why he&#x27;s the Jets&#x27; QB1 on Friday night against the</p>
         <span class="card-link">Read More &rarr;</span>
@@ -146,7 +188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="card" href="/articles/walmart-to-accept-apple-pay-google-pay-and-other-tap-to-pay-options-na/">
       <img src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/Walmart-to-Accept-Apple-Pay-Google-Pay-and-Other-Tap-to-Pay-Options-Nationwide.jpg" alt="Walmart to Accept Apple Pay, Google Pay, and Other Tap-to-Pay Options Nationwide" loading="lazy" class="card-thumb" onload="this.style.animation='none'">
       <div class="card-body">
-        <div class="card-meta"><span class="card-category">News</span><span class="card-dot">&middot;</span>18 hours ago</div>
+        <div class="card-meta"><span class="card-category">News</span><span class="card-dot">&middot;</span>19 hours ago</div>
         <h2 class="card-title">Walmart to Accept Apple Pay, Google Pay, and Other Tap-to-Pay Options Nationwide</h2>
         <p class="card-excerpt">Walmart is introducing Apple Pay, Google Pay, and other tap-to-pay payment methods at its stores, marking a major change to the retailer’s checkout experience.</p>
         <span class="card-link">Read More &rarr;</span>
