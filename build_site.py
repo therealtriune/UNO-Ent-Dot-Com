@@ -840,6 +840,7 @@ def header_html(prefix: str, active: str = None) -> str:
     pills = [f'<a class="{"active" if active == "all" else ""}" href="/">All</a>']
     for key, label in CATEGORIES:
         pills.append(f'<a class="{"active" if active == key else ""}" href="/category/{key}/">{label}</a>')
+    pills.append(f'<a class="{"active" if active == "about" else ""}" href="/about/">About</a>')
 
     return f"""
 <header>
@@ -987,11 +988,12 @@ def footer_html(prefix: str) -> str:
         <a href="/">Home</a>{section_links}
         <a href="/topics/">Topics</a>
         <a href="/hip-hop-beef-tracker/">Beef Tracker</a>
+        <a href="/about/">About</a>
       </div>
       <div class="footer-col">
         <h4>About UNO Entertainment</h4>
-        <p>We cover the latest in hip-hop and culture: new music, beef, gossip, and the moments people
-        are talking about.</p>
+        <p>Los Angeles. Hip-hop and culture, summarized. Credit always goes back to the source.</p>
+        <a href="/about/">Read more</a>
       </div>
       <div class="footer-col">
         <h4>Get In Touch</h4>
@@ -2027,6 +2029,52 @@ def build_search_page():
     with open("search/index.html", "w") as f:
         f.write(html)
 
+ABOUT_BODY = """
+  <p>UNO Entertainment is The Culture's Feed. Hip-hop news, new music, beef, and the stories people actually talk about, pulled into one place.</p>
+  <p>We're based in Los Angeles. Every story on this site is a short original summary with a link to the outlet that reported it. XXL, HotNewHipHop, The Source, and the rest of the desk get the credit.</p>
+  <h2>What you'll find</h2>
+  <p>The feed. Artist <a href="/topics/">topic hubs</a>. And the <a href="/hip-hop-beef-tracker/">Hip-Hop Beef Tracker</a>, where we keep score on the storylines that are still live.</p>
+  <h2>Story tips</h2>
+  <p><a href="mailto:support@unoent.com">support@unoent.com</a></p>
+"""
+
+
+def build_about_page():
+    """/about/ -- who UNO Entertainment is. Same chrome as legal pages, with
+    an About-active header pill and a location line instead of an effective date."""
+    prefix = "../"
+    title = "About UNO Entertainment"
+    full_title = f"{title} | UNO Entertainment"
+    canonical = f"{SITE_URL}/about/"
+    description = "UNO Entertainment is The Culture's Feed. Hip-hop and culture news from Los Angeles."
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+{GTM_HEAD_SNIPPET}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{full_title}</title>
+{meta_html(prefix, full_title, description, canonical)}
+<link rel="stylesheet" href="{prefix}style.css">
+</head>
+<body>
+{GTM_BODY_SNIPPET}
+{header_html(prefix, "about")}
+<div class="legal-wrap">
+  <h1>{title}</h1>
+  <p class="legal-updated">The Culture's Feed &middot; Los Angeles</p>
+  {ABOUT_BODY}
+</div>
+{footer_html(prefix)}
+</body>
+</html>
+"""
+    import os
+    os.makedirs("about", exist_ok=True)
+    with open("about/index.html", "w") as f:
+        f.write(html)
+
+
 def build_legal_page(slug: str, title: str, body_html: str):
     """slug is a URL slug like 'privacy-policy' or 'terms', not a filename --
     this writes {slug}/index.html so the page is reachable at /{slug}/ with
@@ -2140,6 +2188,7 @@ def build_sitemap(total_pages: int, live_topics: list, beef_tracker_live: list):
             lastmod = now_iso
         urls.append((f"{SITE_URL}/articles/{a['slug']}/", lastmod))
 
+    urls.append((f"{SITE_URL}/about/", now_iso))
     urls.append((f"{SITE_URL}/privacy-policy/", now_iso))
     urls.append((f"{SITE_URL}/terms/", now_iso))
     urls.append((f"{SITE_URL}/search/", now_iso))
@@ -2168,6 +2217,7 @@ def main():
     prune_stale_article_pages()
     for a in ARTICLES:
         build_article(a)
+    build_about_page()
     build_legal_page("privacy-policy", "Privacy Policy", PRIVACY_POLICY_BODY)
     build_legal_page("terms", "Terms of Service", TERMS_BODY)
     check_thumbnails(ARTICLES)
@@ -2184,7 +2234,7 @@ def main():
         f"+ category pages ({cat_summary}) "
         f"+ {len(live_topics)} topic hub(s) + /topics/ "
         f"+ /hip-hop-beef-tracker/ ({len(beef_tracker_live)} storylines) "
-        f"+ /privacy-policy/ + /terms/ "
+        f"+ /about/ + /privacy-policy/ + /terms/ "
         f"+ /search/ (search-index.json, {ARTICLE_COUNT} articles) "
         f"+ robots.txt + sitemap.xml ({sitemap_url_count} URLs), plus style.css"
     )
