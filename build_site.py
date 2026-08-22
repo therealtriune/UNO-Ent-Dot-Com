@@ -452,7 +452,7 @@ body {
 }
 a { color: inherit; }
 header {
-  background: #000;
+  background: var(--bg-card);
   border-bottom: 4px solid var(--red);
   padding: 22px 5vw;
   display: flex;
@@ -464,12 +464,17 @@ header {
 }
 header a.brand-link { display: flex; align-items: center; gap: 16px; text-decoration: none; }
 header img.logo { height: 52px; width: auto; display: block; }
-/* Header nav (tagline, filter pills, hamburger) is deliberately NOT themed
-   -- the header itself stays the fixed dark surface described above in
-   both light and dark mode, so these use literal colors instead of the
-   --text/--gray/--border variables that flip with [data-theme="light"]. */
+/* Two logo variants -- uno-logo.png is a near-white mark for the dark
+   theme, uno-logo-dark.png is a near-black recolor of the exact same
+   artwork for the light theme (same file, same shapes, just the letter
+   fill swapped -- see the comment on uno-logo-dark.png's generation).
+   Only one is ever visible at a time, toggled the same way as the
+   sun/moon icons below. */
+.logo-light-mode { display: none; }
+[data-theme="light"] .logo-dark-mode { display: none; }
+[data-theme="light"] .logo-light-mode { display: block; }
 header .tagline {
-  color: #9a9a9a;
+  color: var(--gray);
   font-size: 12px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
@@ -480,10 +485,10 @@ header .tagline {
 .header-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-left: auto; }
 .header-filters a {
   font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px;
-  color: #9a9a9a; text-decoration: none; padding: 7px 16px; border-radius: 999px;
-  border: 1px solid #262626;
+  color: var(--gray); text-decoration: none; padding: 7px 16px; border-radius: 999px;
+  border: 1px solid var(--border);
 }
-.header-filters a:hover { color: #f5f5f5; border-color: #9a9a9a; }
+.header-filters a:hover { color: var(--text); border-color: var(--gray); }
 .header-filters a.active { color: #fff; background: var(--red); border-color: var(--red); }
 
 /* Mobile hamburger menu -- hidden checkbox drives a CSS-only dropdown, no JS. */
@@ -502,31 +507,27 @@ header .tagline {
   display: block;
   height: 2px;
   width: 100%;
-  background: #f5f5f5;
+  background: var(--text);
   border-radius: 2px;
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
-/* Light/dark toggle -- now the last pill inside .header-filters itself
-   (right after Opinion), styled to match those pills exactly so it reads
-   as part of the nav bar instead of a separate floating control. Same
-   fixed dark-literal colors as the rest of the header, not the
-   --text/--gray tokens the themed page content follows -- see the header
-   comment above. On mobile it naturally ends up as the last row in the
-   hamburger dropdown, following the same pills it's grouped with. */
+/* Light/dark toggle -- last pill inside .header-filters itself (right
+   after Opinion), styled to match those pills exactly so it reads as
+   part of the nav bar instead of a separate floating control. */
 .header-filters .theme-toggle-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 7px 16px;
   background: transparent;
-  border: 1px solid #262626;
+  border: 1px solid var(--border);
   border-radius: 999px;
-  color: #9a9a9a;
+  color: var(--gray);
   cursor: pointer;
   line-height: 1;
 }
-.header-filters .theme-toggle-btn:hover { color: #f5f5f5; border-color: #9a9a9a; }
+.header-filters .theme-toggle-btn:hover { color: var(--text); border-color: var(--gray); }
 .theme-icon-moon { display: none; }
 [data-theme="light"] .theme-icon-sun { display: none; }
 [data-theme="light"] .theme-icon-moon { display: block; }
@@ -599,33 +600,30 @@ main { padding: 32px 5vw 80px; }
 .card-excerpt { font-size: 14px; color: var(--gray); line-height: 1.5; margin: 0 0 16px; flex: 1; }
 .card-link { font-size: 13px; font-weight: 700; color: var(--text); text-transform: uppercase;
   letter-spacing: 0.5px; border-bottom: 2px solid var(--red); padding-bottom: 3px; align-self: flex-start; }
-/* Footer is also deliberately NOT themed, same reasoning as the header
-   above -- it carries the same near-white uno-logo.png watermark, so it
-   stays on its original dark literal colors in both light and dark mode. */
-footer { padding: 56px 5vw 0; border-top: 1px solid #262626; color: #9a9a9a; font-size: 13px; line-height: 1.7; background: #141414; }
-footer strong { color: #f5f5f5; }
-footer a { color: #9a9a9a; text-decoration: none; }
-footer a:hover { color: #f5f5f5; }
+footer { padding: 56px 5vw 0; border-top: 1px solid var(--border); color: var(--gray); font-size: 13px; line-height: 1.7; background: var(--bg-card); }
+footer strong { color: var(--text); }
+footer a { color: var(--gray); text-decoration: none; }
+footer a:hover { color: var(--text); }
 .footer-inner { max-width: 1200px; margin: 0 auto; }
 .footer-top { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; padding-bottom: 40px; }
 .footer-logo { height: 40px; width: auto; }
 .footer-tagline { margin: 0; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--red); }
 .footer-columns {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
-  padding-bottom: 40px; border-top: 1px solid #262626; padding-top: 40px;
+  padding-bottom: 40px; border-top: 1px solid var(--border); padding-top: 40px;
 }
 .footer-col h4 {
   margin: 0 0 16px; font-size: 12px; font-weight: 700; text-transform: uppercase;
-  letter-spacing: 0.8px; color: #f5f5f5;
+  letter-spacing: 0.8px; color: var(--text);
 }
 .footer-col a { display: block; margin-bottom: 10px; font-size: 13px; }
-.footer-col p { margin: 0 0 10px; font-size: 13px; color: #9a9a9a; }
+.footer-col p { margin: 0 0 10px; font-size: 13px; color: var(--gray); }
 .footer-col .footer-contact-email { color: var(--red); font-weight: 700; }
 .footer-col .footer-contact-email:hover { text-decoration: underline; }
-.footer-bottom { border-top: 1px solid #262626; padding: 24px 0 28px; }
-.footer-source-note { margin: 0 0 16px; font-size: 12px; color: #9a9a9a; max-width: 720px; }
+.footer-bottom { border-top: 1px solid var(--border); padding: 24px 0 28px; }
+.footer-source-note { margin: 0 0 16px; font-size: 12px; color: var(--gray); max-width: 720px; }
 .footer-copy {
-  margin: 0; font-size: 11px; color: #6b6b6b; display: flex; justify-content: space-between;
+  margin: 0; font-size: 11px; color: var(--gray); display: flex; justify-content: space-between;
   flex-wrap: wrap; gap: 8px;
 }
 @media (max-width: 640px) {
@@ -971,7 +969,8 @@ def header_html(prefix: str, active: str = None) -> str:
     return f"""
 <header>
   <a class="brand-link" href="/">
-    <img class="logo" src="{prefix}uno-logo.png" alt="UNO Entertainment">
+    <img class="logo logo-dark-mode" src="{prefix}uno-logo.png" alt="UNO Entertainment">
+    <img class="logo logo-light-mode" src="{prefix}uno-logo-dark.png" alt="UNO Entertainment">
     <span class="tagline">The Culture's Feed</span>
   </a>
   <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
@@ -1137,7 +1136,7 @@ def footer_html(prefix: str) -> str:
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
-      <a href="/"><img class="footer-logo" src="{prefix}uno-logo.png" alt="UNO Entertainment"></a>
+      <a href="/"><img class="footer-logo logo-dark-mode" src="{prefix}uno-logo.png" alt="UNO Entertainment"><img class="footer-logo logo-light-mode" src="{prefix}uno-logo-dark.png" alt="UNO Entertainment"></a>
       <p class="footer-tagline">The Culture's Feed</p>
     </div>
 
