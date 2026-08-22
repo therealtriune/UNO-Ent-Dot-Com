@@ -507,29 +507,26 @@ header .tagline {
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
-/* Light/dark toggle -- lives inside <header>, which (like the icon colors
-   above) stays on its fixed dark literal colors in both themes, not the
-   --text/--gray tokens the rest of the page follows. order:3 places it
-   right after the search bar (order:2) on both desktop and mobile; the
-   hamburger gets bumped to order:4 in the mobile media query below so it
-   stays the rightmost element there. */
-.theme-toggle-btn {
-  order: 3;
-  display: flex;
+/* Light/dark toggle -- now the last pill inside .header-filters itself
+   (right after Opinion), styled to match those pills exactly so it reads
+   as part of the nav bar instead of a separate floating control. Same
+   fixed dark-literal colors as the rest of the header, not the
+   --text/--gray tokens the themed page content follows -- see the header
+   comment above. On mobile it naturally ends up as the last row in the
+   hamburger dropdown, following the same pills it's grouped with. */
+.header-filters .theme-toggle-btn {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  flex-shrink: 0;
+  padding: 7px 16px;
   background: transparent;
   border: 1px solid #262626;
-  border-radius: 50%;
+  border-radius: 999px;
   color: #9a9a9a;
   cursor: pointer;
-  padding: 0;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  line-height: 1;
 }
-.theme-toggle-btn:hover { color: #f5f5f5; border-color: #9a9a9a; }
+.header-filters .theme-toggle-btn:hover { color: #f5f5f5; border-color: #9a9a9a; }
 .theme-icon-moon { display: none; }
 [data-theme="light"] .theme-icon-sun { display: none; }
 [data-theme="light"] .theme-icon-moon { display: block; }
@@ -537,7 +534,7 @@ header .tagline {
 @media (max-width: 760px) {
   header .tagline { display: none; }
   header { gap: 10px; }
-  .nav-toggle-btn { display: flex; order: 4; }
+  .nav-toggle-btn { display: flex; order: 3; }
   .header-filters {
     display: none;
     position: absolute;
@@ -553,6 +550,7 @@ header .tagline {
     z-index: 30;
   }
   .header-filters a { padding: 13px 16px; border-radius: 6px; text-align: left; }
+  .header-filters .theme-toggle-btn { padding: 13px 16px; border-radius: 6px; justify-content: flex-start; }
   .nav-toggle-checkbox:checked ~ .header-filters { display: flex; }
   .nav-toggle-checkbox:checked ~ .nav-toggle-btn span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-toggle-checkbox:checked ~ .nav-toggle-btn span:nth-child(2) { opacity: 0; }
@@ -981,17 +979,17 @@ def header_html(prefix: str, active: str = None) -> str:
     <span></span><span></span><span></span>
   </label>
   {search_bar_html("header-search")}
-  <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Switch to light mode" title="Switch to light mode">
-    <svg class="theme-icon-sun" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-      <circle cx="10" cy="10" r="4"></circle>
-      <path d="M10 1.5v2.4M10 16.1v2.4M3.5 3.5l1.7 1.7M14.8 14.8l1.7 1.7M1.5 10h2.4M16.1 10h2.4M3.5 16.5l1.7-1.7M14.8 5.2l1.7-1.7"></path>
-    </svg>
-    <svg class="theme-icon-moon" viewBox="0 0 20 20" width="18" height="18" fill="currentColor">
-      <path d="M17.3 13.3A8 8 0 016.7 2.7a.6.6 0 00-.7-.85A8 8 0 1018.15 14a.6.6 0 00-.85-.7z"></path>
-    </svg>
-  </button>
   <nav class="header-filters">
     {"".join(pills)}
+    <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Switch to light mode" title="Switch to light mode">
+      <svg class="theme-icon-sun" viewBox="0 0 20 20" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2.4M10 16.1v2.4M3.5 3.5l1.7 1.7M14.8 14.8l1.7 1.7M1.5 10h2.4M16.1 10h2.4M3.5 16.5l1.7-1.7M14.8 5.2l1.7-1.7"></path>
+      </svg>
+      <svg class="theme-icon-moon" viewBox="0 0 20 20" width="15" height="15" fill="currentColor">
+        <path d="M17.3 13.3A8 8 0 016.7 2.7a.6.6 0 00-.7-.85A8 8 0 1018.15 14a.6.6 0 00-.85-.7z"></path>
+      </svg>
+    </button>
   </nav>
 </header>
 <script>

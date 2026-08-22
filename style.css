@@ -101,29 +101,26 @@ header .tagline {
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
-/* Light/dark toggle -- lives inside <header>, which (like the icon colors
-   above) stays on its fixed dark literal colors in both themes, not the
-   --text/--gray tokens the rest of the page follows. order:3 places it
-   right after the search bar (order:2) on both desktop and mobile; the
-   hamburger gets bumped to order:4 in the mobile media query below so it
-   stays the rightmost element there. */
-.theme-toggle-btn {
-  order: 3;
-  display: flex;
+/* Light/dark toggle -- now the last pill inside .header-filters itself
+   (right after Opinion), styled to match those pills exactly so it reads
+   as part of the nav bar instead of a separate floating control. Same
+   fixed dark-literal colors as the rest of the header, not the
+   --text/--gray tokens the themed page content follows -- see the header
+   comment above. On mobile it naturally ends up as the last row in the
+   hamburger dropdown, following the same pills it's grouped with. */
+.header-filters .theme-toggle-btn {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  flex-shrink: 0;
+  padding: 7px 16px;
   background: transparent;
   border: 1px solid #262626;
-  border-radius: 50%;
+  border-radius: 999px;
   color: #9a9a9a;
   cursor: pointer;
-  padding: 0;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  line-height: 1;
 }
-.theme-toggle-btn:hover { color: #f5f5f5; border-color: #9a9a9a; }
+.header-filters .theme-toggle-btn:hover { color: #f5f5f5; border-color: #9a9a9a; }
 .theme-icon-moon { display: none; }
 [data-theme="light"] .theme-icon-sun { display: none; }
 [data-theme="light"] .theme-icon-moon { display: block; }
@@ -131,7 +128,7 @@ header .tagline {
 @media (max-width: 760px) {
   header .tagline { display: none; }
   header { gap: 10px; }
-  .nav-toggle-btn { display: flex; order: 4; }
+  .nav-toggle-btn { display: flex; order: 3; }
   .header-filters {
     display: none;
     position: absolute;
@@ -147,6 +144,7 @@ header .tagline {
     z-index: 30;
   }
   .header-filters a { padding: 13px 16px; border-radius: 6px; text-align: left; }
+  .header-filters .theme-toggle-btn { padding: 13px 16px; border-radius: 6px; justify-content: flex-start; }
   .nav-toggle-checkbox:checked ~ .header-filters { display: flex; }
   .nav-toggle-checkbox:checked ~ .nav-toggle-btn span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav-toggle-checkbox:checked ~ .nav-toggle-btn span:nth-child(2) { opacity: 0; }
