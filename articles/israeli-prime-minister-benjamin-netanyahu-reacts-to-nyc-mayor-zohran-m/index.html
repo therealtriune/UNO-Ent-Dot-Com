@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Israeli Prime Minister Benjamin Netanyahu Reacts To NYC Mayor Zohran Mamdani Seeking September Arrest Of ‘War Criminal’ — ‘This Hate-Spewing Elected Official Is Pitting New Yorkers Against Jews’</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/07/Israeli-Prime-Minister-Benjamin-Netanyahu-Reacts-To-NYC-Mayor-Zohran-Mamdani-Seeking-September-Arrest-Of-‘War-Criminal-—-‘This-Hate-Spewing-Elected-Official-Is-Pitting-New-Yorkers-Against-Jews.jpg" alt="Israeli Prime Minister Benjamin Netanyahu Reacts To NYC Mayor Zohran Mamdani Seeking September Arrest Of ‘War Criminal’ — ‘This Hate-Spewing Elected Official Is Pitting New Yorkers Against Jews’">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/07/Israeli-Prime-Minister-Benjamin-Netanyahu-Reacts-To-NYC-Mayor-Zohran-Mamdani-Seeking-September-Arrest-Of-‘War-Criminal-—-‘This-Hate-Spewing-Elected-Official-Is-Pitting-New-Yorkers-Against-Jews.jpg" alt="Israeli Prime Minister Benjamin Netanyahu Reacts To NYC Mayor Zohran Mamdani Seeking September Arrest Of ‘War Criminal’ — ‘This Hate-Spewing Elected Official Is Pitting New Yorkers Against Jews’" onload="this.style.animation='none'">
   <p class="article-summary">Israeli Prime Minister Benjamin Netanyahu is firing back at NYC Mayor Zohran Mamdani ’s repeated calls to arrest the foreign leader, and “war criminal,” upon his arrival in September for the U.N. General Assembly. RELATED: Tamika Mallory And Rapper-Turned-Activist Mysonne Linen Join NYC Mayor-Elect Zohran Mamdani’s Public Safety Transition Team To Help Shape Crime And Policing Policy On July 21, Mamdani shared a video to social media calling Netanyahu a “war criminal” and calling for his arrest upon touching down in his city.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/israeli-prime-minister-benjamin-netanyahu-reacts-to-nyc-mayor-zohran-mamdani-seeking-september-arrest-of-war-criminal-this-hate-spewing-elected-official-is-pitting/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/israeli-prime-minister-benjamin-netanyahu-reacts-to-nyc-mayor-zohran-m/";
-      this.page.identifier = "israeli-prime-minister-benjamin-netanyahu-reacts-to-nyc-mayor-zohran-m";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/israeli-prime-minister-benjamin-netanyahu-reacts-to-nyc-mayor-zohran-m/";
+          this.page.identifier = "israeli-prime-minister-benjamin-netanyahu-reacts-to-nyc-mayor-zohran-m";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

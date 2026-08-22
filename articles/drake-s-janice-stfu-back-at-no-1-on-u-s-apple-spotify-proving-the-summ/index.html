@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Drake’s ‘Janice STFU’ Back at No. 1 on U.S. Apple, Spotify Proving the Summer Smash Is Bigger Than a Diss Record</h1>
-  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-14-at-5.04.02-PM.jpg" alt="Drake’s ‘Janice STFU’ Back at No. 1 on U.S. Apple, Spotify Proving the Summer Smash Is Bigger Than a Diss Record">
+  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-14-at-5.04.02-PM.jpg" alt="Drake’s ‘Janice STFU’ Back at No. 1 on U.S. Apple, Spotify Proving the Summer Smash Is Bigger Than a Diss Record" onload="this.style.animation='none'">
   <p class="article-summary">Three months later, Drake’s “Janice STFU” is still moving like it just dropped. The ICEMAN standout and arguable song of the summer has climbed back to the No. 1 rap position on… The post Drake’s ‘Janice STFU’ Back at No.</p>
   <a class="outbound-cta" href="https://thesource.com/2026/08/14/drakes-janice-stfu-back-at-no-1-on-apple-spotify-proving-the-summer-smash-is-bigger-than-a-diss-record/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=drakes-janice-stfu-back-at-no-1-on-apple-spotify-proving-the-summer-smash-is-bigger-than-a-diss-record" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Source &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/drake-s-janice-stfu-back-at-no-1-on-u-s-apple-spotify-proving-the-summ/";
-      this.page.identifier = "drake-s-janice-stfu-back-at-no-1-on-u-s-apple-spotify-proving-the-summ";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/drake-s-janice-stfu-back-at-no-1-on-u-s-apple-spotify-proving-the-summ/";
+          this.page.identifier = "drake-s-janice-stfu-back-at-no-1-on-u-s-apple-spotify-proving-the-summ";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

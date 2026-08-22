@@ -252,7 +252,7 @@ function unoCookieConsent() {
 
   function cardHtml(a) {
     var thumb = a.thumbnail
-      ? '<img src="' + escapeHtml(a.thumbnail) + '" alt="' + escapeHtml(a.title) + '" loading="lazy" class="card-thumb">'
+      ? '<img src="' + escapeHtml(a.thumbnail) + '" alt="' + escapeHtml(a.title) + '" loading="lazy" class="card-thumb" onload="this.style.animation='none'">'
       : '<img src="/uno-logo.png" alt="UNO Entertainment" loading="lazy" class="card-thumb card-thumb-fallback">';
     var catLabel = CATEGORY_LABELS[a.category];
     var catHtml = catLabel

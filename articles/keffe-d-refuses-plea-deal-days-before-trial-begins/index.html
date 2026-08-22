@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Keffe D Refuses Plea Deal Days Before Trial Begins</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2023/10/Tupac-Shakur.jpg" alt="Keffe D Refuses Plea Deal Days Before Trial Begins">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2023/10/Tupac-Shakur.jpg" alt="Keffe D Refuses Plea Deal Days Before Trial Begins" onload="this.style.animation='none'">
   <p class="article-summary">Keffe D sat down behind bars just days before his trial kicks off, and the whole thing’s a contradiction wrapped in a contradiction. He’s denying everything about Tupac’s 1996 murder, yet he’s already told the world his version of events in a 2019 memoir and multiple interviews. The 63-year-old faces charges for orchestrating the killing, but when 8 News Now investigators pressed him on whether he had anything to do with it, he was crystal clear.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/keffe-d-refuses-plea-deal-days-before-trial-begins/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/keffe-d-refuses-plea-deal-days-before-trial-begins/";
-      this.page.identifier = "keffe-d-refuses-plea-deal-days-before-trial-begins";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/keffe-d-refuses-plea-deal-days-before-trial-begins/";
+          this.page.identifier = "keffe-d-refuses-plea-deal-days-before-trial-begins";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

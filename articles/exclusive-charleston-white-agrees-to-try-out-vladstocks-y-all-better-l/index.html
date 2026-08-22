@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">EXCLUSIVE: Charleston White Agrees to Try Out VladStocks: Y&#x27;all Better Listen to the Jew!</h1>
-  <img class="article-hero" src="https://www.vladtv.com/images/size_fs/video-315810.jpg?ver=1787252365" alt="EXCLUSIVE: Charleston White Agrees to Try Out VladStocks: Y&#x27;all Better Listen to the Jew!">
+  <img class="article-hero" src="https://www.vladtv.com/images/size_fs/video-315810.jpg?ver=1787252365" alt="EXCLUSIVE: Charleston White Agrees to Try Out VladStocks: Y&#x27;all Better Listen to the Jew!" onload="this.style.animation='none'">
   <p class="article-summary">Part 16: Charleston White: Pooh Shiesty Will Do 20 Years &amp; Not Care Until His Mom Dies Part 1: Charleston White on Getting Shot At in Houston &amp; Why He Blames J.</p>
   <a class="outbound-cta" href="https://www.vladtv.com/article/315810/charleston-white-agrees-to-try-out-vladstocks-yall-better-listen-to-the" target="_blank" rel="noopener noreferrer">
     Read The Full Story On VladTV &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/exclusive-charleston-white-agrees-to-try-out-vladstocks-y-all-better-l/";
-      this.page.identifier = "exclusive-charleston-white-agrees-to-try-out-vladstocks-y-all-better-l";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/exclusive-charleston-white-agrees-to-try-out-vladstocks-y-all-better-l/";
+          this.page.identifier = "exclusive-charleston-white-agrees-to-try-out-vladstocks-y-all-better-l";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Deshaun Watson on the reception he&#x27;ll get from Browns fans: &quot;I don&#x27;t care&quot;</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/bfc3874ed023af8704056a7613234872d13233be08aca912d8026c1f4fc7de66/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2Ff36bcc0b75f0f5c50a0e990cb11e7e9b.jpg" alt="Deshaun Watson on the reception he&#x27;ll get from Browns fans: &quot;I don&#x27;t care&quot;">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/bfc3874ed023af8704056a7613234872d13233be08aca912d8026c1f4fc7de66/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2Ff36bcc0b75f0f5c50a0e990cb11e7e9b.jpg" alt="Deshaun Watson on the reception he&#x27;ll get from Browns fans: &quot;I don&#x27;t care&quot;" onload="this.style.animation='none'">
   <p class="article-summary">Browns quarterback Deshaun Watson has regularly been booed in Cleveland, and that may happen again on Saturday, when the Browns play their preseason home opener. Watson isn&#x27;t worried about it. Asked what kind of reaction he thinks he&#x27;ll get from Browns fans on Saturday at the stadium, Watson said it doesn&#x27;t matter to him.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/deshaun-watson-reception-hell-browns-081701119.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/deshaun-watson-on-the-reception-he-ll-get-from-browns-fans-i-don-t-car/";
-      this.page.identifier = "deshaun-watson-on-the-reception-he-ll-get-from-browns-fans-i-don-t-car";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/deshaun-watson-on-the-reception-he-ll-get-from-browns-fans-i-don-t-car/";
+          this.page.identifier = "deshaun-watson-on-the-reception-he-ll-get-from-browns-fans-i-don-t-car";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

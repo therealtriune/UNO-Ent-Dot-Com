@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">6 days ago</div>
   <h1 class="article-title">Former NBA coach Mike D&#x27;Antoni inducted into Basketball Hall of Fame</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/3d51211890e3e14438f36ef4f1e339afa08d529762262c0bf251c6c948ef59f9/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F3b336eebbf8ad66110a805b387f2fff1.jpg" alt="Former NBA coach Mike D&#x27;Antoni inducted into Basketball Hall of Fame">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/3d51211890e3e14438f36ef4f1e339afa08d529762262c0bf251c6c948ef59f9/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F3b336eebbf8ad66110a805b387f2fff1.jpg" alt="Former NBA coach Mike D&#x27;Antoni inducted into Basketball Hall of Fame" onload="this.style.animation='none'">
   <p class="article-summary">Mike D&#x27;Antoni has his prints all over the modern game of basketball. The coach, who began his NBA career as an assistant with the Denver Nuggets in the 1997-98 season before becoming head coach of the Phoenix Suns in the 2003-04 season, is being inducted into the Naismith Memorial Basketball Hall of Fame Saturday, Aug. 15 as part of the class of 2026.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/former-nba-coach-mike-dantoni-233455839.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NBA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/former-nba-coach-mike-d-antoni-inducted-into-basketball-hall-of-fame/";
-      this.page.identifier = "former-nba-coach-mike-d-antoni-inducted-into-basketball-hall-of-fame";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/former-nba-coach-mike-d-antoni-inducted-into-basketball-hall-of-fame/";
+          this.page.identifier = "former-nba-coach-mike-d-antoni-inducted-into-basketball-hall-of-fame";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

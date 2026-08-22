@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">11 hours ago</div>
   <h1 class="article-title">Would you cut electric Robert Henry or physical Kaytron Allen? Commanders fans have voted</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/b19bfbb95b05441bcedd06142b0fff49adcf6b0cc80695c31fc10880e4118c2c/lightyear_networkapi/resizefill_w543_h592%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F9b4b446066758badefd4be4a840b8327.jpg" alt="Would you cut electric Robert Henry or physical Kaytron Allen? Commanders fans have voted">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/b19bfbb95b05441bcedd06142b0fff49adcf6b0cc80695c31fc10880e4118c2c/lightyear_networkapi/resizefill_w543_h592%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F9b4b446066758badefd4be4a840b8327.jpg" alt="Would you cut electric Robert Henry or physical Kaytron Allen? Commanders fans have voted" onload="this.style.animation='none'">
   <p class="article-summary">The h ardest decisions belong to the best rosters A deep roster complicates the final roster cutdown to 53 players. In the early stages of a franchise rebuild, roster cuts are straightforward because the talent drop-off past the top 35 players is steep. However, when depth increases across the board, NFL front offices are forced to expose genuinely talented players to waivers.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/cut-electric-robert-henry-physical-090000314.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/would-you-cut-electric-robert-henry-or-physical-kaytron-allen-commande/";
-      this.page.identifier = "would-you-cut-electric-robert-henry-or-physical-kaytron-allen-commande";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/would-you-cut-electric-robert-henry-or-physical-kaytron-allen-commande/";
+          this.page.identifier = "would-you-cut-electric-robert-henry-or-physical-kaytron-allen-commande";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

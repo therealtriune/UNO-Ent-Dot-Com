@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Mackenzie Dern vs. Gillian Robertson breakdown for UFC 330 title bout</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/e354118e3efa8f0e4cfbd4d99cbe61946ad5365ce20eef14f22c60bf4ee80039/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fcf-images.us-east-1.prod.boltdns.net%2Fv1%2Fjit%2F6415665815001%2F78a94785-bfa7-4619-8615-d466f7d5ca89%2Fmain%2F1280x720%2F47s221ms%2Fmatch%2Fimage.jpg" alt="Mackenzie Dern vs. Gillian Robertson breakdown for UFC 330 title bout">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/e354118e3efa8f0e4cfbd4d99cbe61946ad5365ce20eef14f22c60bf4ee80039/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fcf-images.us-east-1.prod.boltdns.net%2Fv1%2Fjit%2F6415665815001%2F78a94785-bfa7-4619-8615-d466f7d5ca89%2Fmain%2F1280x720%2F47s221ms%2Fmatch%2Fimage.jpg" alt="Mackenzie Dern vs. Gillian Robertson breakdown for UFC 330 title bout" onload="this.style.animation='none'">
   <p class="article-summary">MMA Junkie fight analyst Dan Tom previews the UFC 330 co-main event women&#x27;s strawweight title fight between champion Mackenzie Dern and challenger Gillian Rober</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/videos/mackenzie-dern-vs-gillian-robertson-175353221.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/mackenzie-dern-vs-gillian-robertson-breakdown-for-ufc-330-title-bout/";
-      this.page.identifier = "mackenzie-dern-vs-gillian-robertson-breakdown-for-ufc-330-title-bout";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/mackenzie-dern-vs-gillian-robertson-breakdown-for-ufc-330-title-bout/";
+          this.page.identifier = "mackenzie-dern-vs-gillian-robertson-breakdown-for-ufc-330-title-bout";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

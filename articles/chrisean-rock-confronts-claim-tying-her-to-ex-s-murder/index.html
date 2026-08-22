@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Chrisean Rock Confronts Claim Tying Her To Ex&#x27;s Murder</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2023/09/Chrisean-Rock.png" alt="Chrisean Rock Confronts Claim Tying Her To Ex&#x27;s Murder">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2023/09/Chrisean-Rock.png" alt="Chrisean Rock Confronts Claim Tying Her To Ex&#x27;s Murder" onload="this.style.animation='none'">
   <p class="article-summary">Chrisean Rock is denying any involvement in the death of her ex-boyfriend Karon &quot;Ronny Doe&quot; Cann, addressing the case directly during a recent livestream. Police say gunfire erupted near Severn Tree Boulevard and Sea Pine Circle the evening of February 3, 2025, and arriving officers found Cann down outside a home in the area, suffering from gunshot wounds. He was rushed to University of Maryland Baltimore Washington Medical Center, where he later died.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/chrisean-rock-confronts-claim-tying-her-to-exs-murder/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/chrisean-rock-confronts-claim-tying-her-to-ex-s-murder/";
-      this.page.identifier = "chrisean-rock-confronts-claim-tying-her-to-ex-s-murder";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/chrisean-rock-confronts-claim-tying-her-to-ex-s-murder/";
+          this.page.identifier = "chrisean-rock-confronts-claim-tying-her-to-ex-s-murder";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

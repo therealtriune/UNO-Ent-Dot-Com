@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">6 days ago</div>
   <h1 class="article-title">Islam Makhachev shatters major UFC record with win over Ian Machado Garry in tense title clash</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/789bf5e2b7c988afd1826d1025cf1810e34c6dd5fc4bfd6cf367f6564562d2f5/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_independent_us_sports_articles_270%2F197a366cd95abf391b7844f47a04a5f0.jpg" alt="Islam Makhachev shatters major UFC record with win over Ian Machado Garry in tense title clash">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/789bf5e2b7c988afd1826d1025cf1810e34c6dd5fc4bfd6cf367f6564562d2f5/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_independent_us_sports_articles_270%2F197a366cd95abf391b7844f47a04a5f0.jpg" alt="Islam Makhachev shatters major UFC record with win over Ian Machado Garry in tense title clash" onload="this.style.animation='none'">
   <p class="article-summary">Islam Makhachev retained the UFC welterweight title against Ian Machado Garry on Saturday, and the victory marked a major piece of history. As Makhachev outpointed the divisive Irish star in the main event of UFC 330, he reached a record-breaking 17th consecutive win in the promotion. In doing so, he went clear of the legendary Anderson Silva, although there were moments when victory looked far from assured.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/islam-makhachev-shatters-major-ufc-044305545.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/islam-makhachev-shatters-major-ufc-record-with-win-over-ian-machado-ga/";
-      this.page.identifier = "islam-makhachev-shatters-major-ufc-record-with-win-over-ian-machado-ga";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/islam-makhachev-shatters-major-ufc-record-with-win-over-ian-machado-ga/";
+          this.page.identifier = "islam-makhachev-shatters-major-ufc-record-with-win-over-ian-machado-ga";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Nevaeh Calls Chrisean Rock A Baby Disabler &amp; Blueface Thought Insult About His Son Was Funny</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png" alt="Nevaeh Calls Chrisean Rock A Baby Disabler &amp; Blueface Thought Insult About His Son Was Funny">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png" alt="Nevaeh Calls Chrisean Rock A Baby Disabler &amp; Blueface Thought Insult About His Son Was Funny" onload="this.style.animation='none'">
   <p class="article-summary">Blueface had to pump the brakes on his livestream when his pregnant girlfriend Nevaeh decided to take a public shot at his ex. During a recent broadcast, the two were joking around when Nevaeh made a comment that caught everyone’s attention, calling Chrisean Rock a “baby disabler” right there on camera. The moment was awkward enough on its own, but what happened next made it even more uncomfortable for viewers.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/nevaeh-calls-chrisean-rock-a-baby-disabler-blueface-thought-insult-about-his-son-was-funny/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/nevaeh-calls-chrisean-rock-a-baby-disabler-blueface-thought-insult-abo/";
-      this.page.identifier = "nevaeh-calls-chrisean-rock-a-baby-disabler-blueface-thought-insult-abo";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/nevaeh-calls-chrisean-rock-a-baby-disabler-blueface-thought-insult-abo/";
+          this.page.identifier = "nevaeh-calls-chrisean-rock-a-baby-disabler-blueface-thought-insult-abo";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

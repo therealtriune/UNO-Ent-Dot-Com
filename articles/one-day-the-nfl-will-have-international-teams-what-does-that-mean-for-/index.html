@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 days ago</div>
   <h1 class="article-title">One day, the NFL will have international teams. What does that mean for you?</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/0ead2e2e37760047acc7218b043bccc668b697b0eb84c81bc75f77b3a5dc502e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F0ec63967-a15e-49e3-a663-722a3aba878a" alt="One day, the NFL will have international teams. What does that mean for you?">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/0ead2e2e37760047acc7218b043bccc668b697b0eb84c81bc75f77b3a5dc502e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F0ec63967-a15e-49e3-a663-722a3aba878a" alt="One day, the NFL will have international teams. What does that mean for you?" onload="this.style.animation='none'">
   <p class="article-summary">Imagine a Super Bowl Sunday in the not-too-distant future where you settle down to watch the Big Game. Before kickoff, there&#x27;s a performance of &quot;God Save The King&quot; — this year&#x27;s contest is in London&#x27;s Wembley Stadium, after all, it&#x27;s just polite — and then it&#x27;s time for the Paris Berets to face the Madrid Matadors. As you get comfortable on the couch, maybe you spend a moment thinking about when the &quot;N&quot; in &quot;NFL&quot; stood for just one nation … and then it&#x27;s game time.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/nfl/article/one-day-the-nfl-will-have-international-teams-what-does-that-mean-for-you-163744441.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/one-day-the-nfl-will-have-international-teams-what-does-that-mean-for-/";
-      this.page.identifier = "one-day-the-nfl-will-have-international-teams-what-does-that-mean-for-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/one-day-the-nfl-will-have-international-teams-what-does-that-mean-for-/";
+          this.page.identifier = "one-day-the-nfl-will-have-international-teams-what-does-that-mean-for-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Cardi B Calls BS on BIA Saying Her Diss Track Was All True</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/ef/16by9/2026/08/14/efd02fb5ef634293baac9a4d53148155_xl.jpg" alt="Cardi B Calls BS on BIA Saying Her Diss Track Was All True">
+  <img class="article-hero" src="https://imagez.tmz.com/image/ef/16by9/2026/08/14/efd02fb5ef634293baac9a4d53148155_xl.jpg" alt="Cardi B Calls BS on BIA Saying Her Diss Track Was All True" onload="this.style.animation='none'">
   <p class="article-summary">Cardi B is calling BS on BIA, claiming her diss track was all true...and warning her rap rival she&#x27;s got plenty of dirt tucked away. Cardi came out swinging in a Spaces chat on X...repeatedly demanding, &quot;What&#x27;s true?&quot; before launching into a…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/14/cardi-b-says-bia-diss-track-is-full-of-lies/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/cardi-b-calls-bs-on-bia-saying-her-diss-track-was-all-true/";
-      this.page.identifier = "cardi-b-calls-bs-on-bia-saying-her-diss-track-was-all-true";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/cardi-b-calls-bs-on-bia-saying-her-diss-track-was-all-true/";
+          this.page.identifier = "cardi-b-calls-bs-on-bia-saying-her-diss-track-was-all-true";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

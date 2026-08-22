@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">QVC&#x27;s Tori Brattin Gets Emotional Over Jimmy Fallon Invite, After Viral On-Air Blooper</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/d5/16by9/2026/08/12/d5f957e4420e4c068097ae2851e5c477_xl.png" alt="QVC&#x27;s Tori Brattin Gets Emotional Over Jimmy Fallon Invite, After Viral On-Air Blooper">
+  <img class="article-hero" src="https://imagez.tmz.com/image/d5/16by9/2026/08/12/d5f957e4420e4c068097ae2851e5c477_xl.png" alt="QVC&#x27;s Tori Brattin Gets Emotional Over Jimmy Fallon Invite, After Viral On-Air Blooper" onload="this.style.animation='none'">
   <p class="article-summary">QVC&#x27;s viral wig-mogul Tori Brattin is reacting to all the love she&#x27;s received since her on-air blooper, describing the moment Jimmy Fallon called to invite her on &quot;The Tonight Show.&quot; Toni hopped on the &quot;TMZ Podcast&quot; and caught up with TMZ&#x27;s Alexa…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/13/toni-brattin-cries-over-going-on-jimmy-fallon/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/qvc-s-tori-brattin-gets-emotional-over-jimmy-fallon-invite-after-viral/";
-      this.page.identifier = "qvc-s-tori-brattin-gets-emotional-over-jimmy-fallon-invite-after-viral";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/qvc-s-tori-brattin-gets-emotional-over-jimmy-fallon-invite-after-viral/";
+          this.page.identifier = "qvc-s-tori-brattin-gets-emotional-over-jimmy-fallon-invite-after-viral";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

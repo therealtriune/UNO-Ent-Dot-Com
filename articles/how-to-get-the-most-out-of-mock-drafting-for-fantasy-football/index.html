@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">How to get the most out of mock drafting for fantasy football</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/1e842be92a5eddd17f4367d2f3bec51436ee8c376cd42b5b2527482ed75ce0aa/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Feeb23acd-8e8b-4bdc-ad19-23f277fbd2e2" alt="How to get the most out of mock drafting for fantasy football">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/1e842be92a5eddd17f4367d2f3bec51436ee8c376cd42b5b2527482ed75ce0aa/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Feeb23acd-8e8b-4bdc-ad19-23f277fbd2e2" alt="How to get the most out of mock drafting for fantasy football" onload="this.style.animation='none'">
   <p class="article-summary">If you want to get better at anything, it&#x27;s all about reps. I&#x27;ve spent hours on the driving range, and my golf handicap came down as a result. Muhammed Ali once said, &quot;The fight is won or lost far away from witnesses.&quot; I&#x27;ve always loved that quote.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/fantasy/article/how-to-get-the-most-out-of-mock-drafting-for-fantasy-football-173618079.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/how-to-get-the-most-out-of-mock-drafting-for-fantasy-football/";
-      this.page.identifier = "how-to-get-the-most-out-of-mock-drafting-for-fantasy-football";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/how-to-get-the-most-out-of-mock-drafting-for-fantasy-football/";
+          this.page.identifier = "how-to-get-the-most-out-of-mock-drafting-for-fantasy-football";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

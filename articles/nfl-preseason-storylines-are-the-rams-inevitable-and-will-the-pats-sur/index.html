@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">NFL preseason storylines: are the Rams inevitable and will the Pats survive scandal?</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/e541a73c01b868460ef4020302951635611805112bdd78e7fbff050f4ff9ade6/lightyear_networkapi/resizefill_w1000_h800%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_guardian_765%2F2db192af208a344cfc38675dc47562fe.jpg" alt="NFL preseason storylines: are the Rams inevitable and will the Pats survive scandal?">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/e541a73c01b868460ef4020302951635611805112bdd78e7fbff050f4ff9ade6/lightyear_networkapi/resizefill_w1000_h800%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_guardian_765%2F2db192af208a344cfc38675dc47562fe.jpg" alt="NFL preseason storylines: are the Rams inevitable and will the Pats survive scandal?" onload="this.style.animation='none'">
   <p class="article-summary">Justin Herbert, Myles Garrett and Mike Vrabel will be in the spotlight this season. Composite: AP; The Boston Globe/Getty Images Can the Seahawks run it forward? Winning the Super Bowl back in February puts the Seattle Seahawks in line to become the 10th team, and the ninth franchise, to repeat as champions (the Pittsburgh Steelers went back-to-back twice in the 1970s).</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/nfl-preseason-storylines-rams-inevitable-090023414.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/nfl-preseason-storylines-are-the-rams-inevitable-and-will-the-pats-sur/";
-      this.page.identifier = "nfl-preseason-storylines-are-the-rams-inevitable-and-will-the-pats-sur";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/nfl-preseason-storylines-are-the-rams-inevitable-and-will-the-pats-sur/";
+          this.page.identifier = "nfl-preseason-storylines-are-the-rams-inevitable-and-will-the-pats-sur";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

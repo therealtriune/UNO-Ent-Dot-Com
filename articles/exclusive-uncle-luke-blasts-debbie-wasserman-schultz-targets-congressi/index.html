@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">EXCLUSIVE: Uncle Luke Blasts Debbie Wasserman Schultz &amp; Targets Congressional Black Caucus Over Florida Primary</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/uncle-luke-and-debbie-wasserman-schultz.jpg" alt="EXCLUSIVE: Uncle Luke Blasts Debbie Wasserman Schultz &amp; Targets Congressional Black Caucus Over Florida Primary">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/uncle-luke-and-debbie-wasserman-schultz.jpg" alt="EXCLUSIVE: Uncle Luke Blasts Debbie Wasserman Schultz &amp; Targets Congressional Black Caucus Over Florida Primary" onload="this.style.animation='none'">
   <p class="article-summary">Uncle Luke is battling a political heavyweight for a South Florida congressional seat that has been represented by Black lawmakers for more than three decades. Debbie Wasserman Schultz, an 11-term incumbent representing Florida’s 25th Congressional District, entered the Democratic primary for the newly redrawn 20th District. Wasserman Schultz lives inside the newly drawn 22nd District, which leans Republican, while District 20 remains Florida’s safest Democratic congressional seat.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/uncle-luke-blasts-debbie-wasserman-schultz-targets-congressional-black-caucus-over-florida-primary/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/exclusive-uncle-luke-blasts-debbie-wasserman-schultz-targets-congressi/";
-      this.page.identifier = "exclusive-uncle-luke-blasts-debbie-wasserman-schultz-targets-congressi";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/exclusive-uncle-luke-blasts-debbie-wasserman-schultz-targets-congressi/";
+          this.page.identifier = "exclusive-uncle-luke-blasts-debbie-wasserman-schultz-targets-congressi";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

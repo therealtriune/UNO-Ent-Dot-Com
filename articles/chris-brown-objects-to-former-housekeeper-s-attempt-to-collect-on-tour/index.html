@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Chris Brown Objects To Former Housekeeper’s Attempt To Collect On Tour Royalties Amid Lawsuit (UPDATE)</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Chris-Brown-lawsuit-Maria-Avila-tour-royalties-future-earnings-13-million-judgement-.jpg" alt="Chris Brown Objects To Former Housekeeper’s Attempt To Collect On Tour Royalties Amid Lawsuit (UPDATE)">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Chris-Brown-lawsuit-Maria-Avila-tour-royalties-future-earnings-13-million-judgement-.jpg" alt="Chris Brown Objects To Former Housekeeper’s Attempt To Collect On Tour Royalties Amid Lawsuit (UPDATE)" onload="this.style.animation='none'">
   <p class="article-summary">Chris Brown filed documents to keep his former housekeeper away from his tour royalties. The ‘Residuals’ singer was ordered to pay Maria Avila $13 million after she won a lawsuit claiming his dog attacked her back in 2020. RELATED: Chris Brown Has Folks In Their Feelings After Stepping In For A Fan &amp; Sending Her Boss A Message (VIDEO) Chris Brown Files Court Documents To Protect Tour Royalties Chris Brown recently filed documents to prevent his former housekeeper from receiving his tour royalties, according to TMZ.</p>
   <a class="outbound-cta" href="https://theshaderoom.com/chris-brown-objects-to-former-housekeepers-attempt-to-collect-on-tour-royalties-amid-lawsuit-update/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/chris-brown-objects-to-former-housekeeper-s-attempt-to-collect-on-tour/";
-      this.page.identifier = "chris-brown-objects-to-former-housekeeper-s-attempt-to-collect-on-tour";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/chris-brown-objects-to-former-housekeeper-s-attempt-to-collect-on-tour/";
+          this.page.identifier = "chris-brown-objects-to-former-housekeeper-s-attempt-to-collect-on-tour";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">6 days ago</div>
   <h1 class="article-title">Kirk Herbstreit raves about Steelers rookie after electric preseason debut</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/39939f223ea876b04ddfda390e9408eec234b78f2ebc8e35bfc96eab65b15f6a/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F3ab42e99ba6dba8aa9462df9792739ba.jpg" alt="Kirk Herbstreit raves about Steelers rookie after electric preseason debut">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/39939f223ea876b04ddfda390e9408eec234b78f2ebc8e35bfc96eab65b15f6a/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F3ab42e99ba6dba8aa9462df9792739ba.jpg" alt="Kirk Herbstreit raves about Steelers rookie after electric preseason debut" onload="this.style.animation='none'">
   <p class="article-summary">PITTSBURGH, PENNSYLVANIA - AUGUST 13: Kaden Wetjen #10 of the Pittsburgh Steelers is wrapped up by Nick Niemann #31 of the Green Bay Packers during the first quarter at Acrisure Stadium on August 13, 2026 in Pittsburgh, Pennsylvania. (Photo by Joe Sargent/Getty Images) | Getty Images Kaden Wetjen did not need long to make an impression in his first NFL game. The Pittsburgh Steelers rookie wide receiver and return specialist turned heads during Thursday night’s 28-9 preseason victory over the Green Bay Packers, catching two passes for 79 yards and a touchdown while displaying the explosive speed that made him one of college football’s most dangerous return specialists.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/kirk-herbstreit-raves-steelers-rookie-234805247.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/kirk-herbstreit-raves-about-steelers-rookie-after-electric-preseason-d/";
-      this.page.identifier = "kirk-herbstreit-raves-about-steelers-rookie-after-electric-preseason-d";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/kirk-herbstreit-raves-about-steelers-rookie-after-electric-preseason-d/";
+          this.page.identifier = "kirk-herbstreit-raves-about-steelers-rookie-after-electric-preseason-d";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

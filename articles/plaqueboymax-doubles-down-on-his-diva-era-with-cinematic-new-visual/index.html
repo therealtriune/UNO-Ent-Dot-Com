@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">PlaqueBoyMax Doubles Down on His ‘DIVA’ Era With Cinematic New Visual</h1>
-  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/07/Screenshot-2026-07-31-at-3.03.41-PM.jpg" alt="PlaqueBoyMax Doubles Down on His ‘DIVA’ Era With Cinematic New Visual">
+  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/07/Screenshot-2026-07-31-at-3.03.41-PM.jpg" alt="PlaqueBoyMax Doubles Down on His ‘DIVA’ Era With Cinematic New Visual" onload="this.style.animation='none'">
   <p class="article-summary">PlaqueBoyMax is leaning all the way into his latest artistic chapter. The streamer and rapper released the official video for “DIVA,” delivering a polished visual packed with rain-soaked performance scenes,… The post PlaqueBoyMax Doubles Down on His ‘DIVA’ Era With Cinematic New Visual appeared first on.</p>
   <a class="outbound-cta" href="https://thesource.com/2026/07/31/plaqueboymax-doubles-down-on-his-diva-era-with-cinematic-new-visual/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=plaqueboymax-doubles-down-on-his-diva-era-with-cinematic-new-visual" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Source &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/plaqueboymax-doubles-down-on-his-diva-era-with-cinematic-new-visual/";
-      this.page.identifier = "plaqueboymax-doubles-down-on-his-diva-era-with-cinematic-new-visual";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/plaqueboymax-doubles-down-on-his-diva-era-with-cinematic-new-visual/";
+          this.page.identifier = "plaqueboymax-doubles-down-on-his-diva-era-with-cinematic-new-visual";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

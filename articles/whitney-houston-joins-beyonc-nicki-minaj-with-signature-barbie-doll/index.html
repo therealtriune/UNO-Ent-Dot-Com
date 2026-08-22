@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Whitney Houston Joins Beyoncé &amp; Nicki Minaj With Signature Barbie Doll</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2022/10/20221016_133056_0000.png" alt="Whitney Houston Joins Beyoncé &amp; Nicki Minaj With Signature Barbie Doll">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2022/10/20221016_133056_0000.png" alt="Whitney Houston Joins Beyoncé &amp; Nicki Minaj With Signature Barbie Doll" onload="this.style.animation='none'">
   <p class="article-summary">Whitney Houston is being immortalized in plastic form as Mattel dropped a brand-new Barbie Signature doll celebrating the legendary singer on August 9, which would’ve been her 63rd birthday. The collector’s item features Whitney in that iconic lilac tank dress from her “I Wanna Dance With Somebody (Who Loves Me)” music video, priced at $60 and created in close collaboration with Pat Houston, Executor of The Whitney E. Houston Estate.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/whitney-houston-joins-beyonce-nicki-minaj-with-signature-barbie-doll/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/whitney-houston-joins-beyonc-nicki-minaj-with-signature-barbie-doll/";
-      this.page.identifier = "whitney-houston-joins-beyonc-nicki-minaj-with-signature-barbie-doll";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/whitney-houston-joins-beyonc-nicki-minaj-with-signature-barbie-doll/";
+          this.page.identifier = "whitney-houston-joins-beyonc-nicki-minaj-with-signature-barbie-doll";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

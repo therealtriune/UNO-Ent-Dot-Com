@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Why Some Fans Are Upset Over Eminem x Air Jordan 4 “Encore” Release</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-83293216-scaled-e1786532560443.jpg" alt="Why Some Fans Are Upset Over Eminem x Air Jordan 4 “Encore” Release">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-83293216-scaled-e1786532560443.jpg" alt="Why Some Fans Are Upset Over Eminem x Air Jordan 4 “Encore” Release" onload="this.style.animation='none'">
   <p class="article-summary">Collectors aren’t exactly celebrating the Eminem x Air Jordan 4 “Encore” retro news. While plenty of fans are excited to finally get a shot at the pair, longtime owners are voicing some frustration over what a larger release means. The pushback comes down to exclusivity.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005545-eminem-x-air-jordan-4-encore-sneaker-news-2" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/why-some-fans-are-upset-over-eminem-x-air-jordan-4-encore-release/";
-      this.page.identifier = "why-some-fans-are-upset-over-eminem-x-air-jordan-4-encore-release";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/why-some-fans-are-upset-over-eminem-x-air-jordan-4-encore-release/";
+          this.page.identifier = "why-some-fans-are-upset-over-eminem-x-air-jordan-4-encore-release";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

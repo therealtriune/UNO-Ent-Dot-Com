@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Aggressive Patriots defense stacking interceptions in Eagles joint practices</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/cb0b6ffc16fffb6c66cae5b6f773f79af7d64bd4075c5d91d53a24be4877fc0c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F8587eee79f9d404d1a8485950682237d.jpg" alt="Aggressive Patriots defense stacking interceptions in Eagles joint practices">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/cb0b6ffc16fffb6c66cae5b6f773f79af7d64bd4075c5d91d53a24be4877fc0c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F8587eee79f9d404d1a8485950682237d.jpg" alt="Aggressive Patriots defense stacking interceptions in Eagles joint practices" onload="this.style.animation='none'">
   <p class="article-summary">FOXBOROUGH, MASSACHUSETTS - AUGUST 20: Marcus Jones #25 of the New England Patriots runs during a joint practice with the Philadelphia Eagles at Gillette Stadium on August 20, 2026 in Foxborough, Massachusetts. (Photo by Billie Weiss/Getty Images) | Getty Images On Thursday, the commencement of the New England Patriots’ joint practice marked the end of a two-day session with the Philadelphia Eagles, where New England’s defense secured seven interceptions across both workouts. With only one turnover through the first six practices of training camp, veteran safety Kevin Byard challenged the safeties to secure more takeaways, Dell Pettus shared earlier this summer.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/aggressive-patriots-defense-stacking-interceptions-100000451.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/aggressive-patriots-defense-stacking-interceptions-in-eagles-joint-pra/";
-      this.page.identifier = "aggressive-patriots-defense-stacking-interceptions-in-eagles-joint-pra";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/aggressive-patriots-defense-stacking-interceptions-in-eagles-joint-pra/";
+          this.page.identifier = "aggressive-patriots-defense-stacking-interceptions-in-eagles-joint-pra";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

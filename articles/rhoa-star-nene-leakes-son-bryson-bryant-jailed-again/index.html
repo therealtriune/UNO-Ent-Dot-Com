@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">&#x27;RHOA&#x27; Star NeNe Leakes&#x27; Son Bryson Bryant Jailed Again</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/b1/16by9/2026/08/04/b10a61bf18cb46d68189486c7f74d426_xl.jpg" alt="&#x27;RHOA&#x27; Star NeNe Leakes&#x27; Son Bryson Bryant Jailed Again">
+  <img class="article-hero" src="https://imagez.tmz.com/image/b1/16by9/2026/08/04/b10a61bf18cb46d68189486c7f74d426_xl.jpg" alt="&#x27;RHOA&#x27; Star NeNe Leakes&#x27; Son Bryson Bryant Jailed Again" onload="this.style.animation='none'">
   <p class="article-summary">&#x27;Real Housewives of Atlanta&#x27; alum NeNe Leakes&#x27; son Bryson Bryant is back behind bars after allegedly failing to comply with a court order...TMZ has learned. According to jail records obtained by TMZ, Bryson was booked into the Gwinnett County…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/04/nene-leakes-son-bryson-bryant-back-in-jail/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/rhoa-star-nene-leakes-son-bryson-bryant-jailed-again/";
-      this.page.identifier = "rhoa-star-nene-leakes-son-bryson-bryant-jailed-again";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/rhoa-star-nene-leakes-son-bryson-bryant-jailed-again/";
+          this.page.identifier = "rhoa-star-nene-leakes-son-bryson-bryant-jailed-again";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

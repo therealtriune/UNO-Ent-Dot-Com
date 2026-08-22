@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">5 days ago</div>
   <h1 class="article-title">Rodney Harrison&#x27;s son, Christian, could be &quot;heartbeat&quot; of Arkansas defense</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/6db5f2468e350c21ed1b847a308a46f73d1626e67fbcfa96c86f301e0c27a840/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F9c75577a22d2d640a03d174d7e5b6cf5.jpg" alt="Rodney Harrison&#x27;s son, Christian, could be &quot;heartbeat&quot; of Arkansas defense">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/6db5f2468e350c21ed1b847a308a46f73d1626e67fbcfa96c86f301e0c27a840/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F9c75577a22d2d640a03d174d7e5b6cf5.jpg" alt="Rodney Harrison&#x27;s son, Christian, could be &quot;heartbeat&quot; of Arkansas defense" onload="this.style.animation='none'">
   <p class="article-summary">As college football season approaches, safety Christian Harrison is preparing for his first season at Arkansas. The son of Patriots Hall of Famer Rodney Harrison, Christian has already made an impression on his new coach. &quot;I think he has a chance to be the heartbeat of our defense with some of the stuff he can do,&quot; Razorbacks coach Ryan Silverfield said Sunday, via Jacob Davis of SI.com.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/rodney-harrisons-son-christian-could-030718107.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/rodney-harrison-s-son-christian-could-be-heartbeat-of-arkansas-defense/";
-      this.page.identifier = "rodney-harrison-s-son-christian-could-be-heartbeat-of-arkansas-defense";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/rodney-harrison-s-son-christian-could-be-heartbeat-of-arkansas-defense/";
+          this.page.identifier = "rodney-harrison-s-son-christian-could-be-heartbeat-of-arkansas-defense";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

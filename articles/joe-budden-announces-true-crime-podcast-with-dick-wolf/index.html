@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Joe Budden Announces True Crime Podcast With Dick Wolf</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/Joe-Budden-True-Crime-Podcast-Dick-Wolf-scaled-e1785521314311.jpg" alt="Joe Budden Announces True Crime Podcast With Dick Wolf">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/Joe-Budden-True-Crime-Podcast-Dick-Wolf-scaled-e1785521314311.jpg" alt="Joe Budden Announces True Crime Podcast With Dick Wolf" onload="this.style.animation='none'">
   <p class="article-summary">Joe Budden recently sat down for a conversation with Forbes to talk about his massive podcast earnings and what&#x27;s next for his independent media career. He revealed he has a new true crime podcast on the way called Crime In America, which is coming in August in collaboration with Law &amp; Order creator Dick Wolf. As hosts, Budden and Wolf will dive into the popular genre, analyze stories, and tell some of their own.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004230-joe-budden-true-crime-podcast-dick-wolf" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/joe-budden-announces-true-crime-podcast-with-dick-wolf/";
-      this.page.identifier = "joe-budden-announces-true-crime-podcast-with-dick-wolf";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/joe-budden-announces-true-crime-podcast-with-dick-wolf/";
+          this.page.identifier = "joe-budden-announces-true-crime-podcast-with-dick-wolf";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

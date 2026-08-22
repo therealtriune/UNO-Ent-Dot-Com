@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">23 hours ago</div>
   <h1 class="article-title">DeMar DeRozan reportedly to sign with Denver Nuggets, giving team needed depth</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/159e848677e398cccd22fdc9fa031598e8931fe9b12468e875eb274668abfa8e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fnbcsports.com%2F45a36f7c9dca5e739a6c390829116ee4.jpg" alt="DeMar DeRozan reportedly to sign with Denver Nuggets, giving team needed depth">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/159e848677e398cccd22fdc9fa031598e8931fe9b12468e875eb274668abfa8e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fnbcsports.com%2F45a36f7c9dca5e739a6c390829116ee4.jpg" alt="DeMar DeRozan reportedly to sign with Denver Nuggets, giving team needed depth" onload="this.style.animation='none'">
   <p class="article-summary">News of Klay Thompson heading to Miami made DeMar DeRozan&#x27;s choice much clearer, so he&#x27;s made the call. DeRozan will sign as a free agent with the Denver Nuggets, reports NBA insider Chris Haynes. While the terms of the deal are not mentioned, because Denver is over the second apron all it can offer is the veteran minimum of $3.9 million.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/demar-derozan-reportedly-sign-denver-210847281.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NBA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/demar-derozan-reportedly-to-sign-with-denver-nuggets-giving-team-neede/";
-      this.page.identifier = "demar-derozan-reportedly-to-sign-with-denver-nuggets-giving-team-neede";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/demar-derozan-reportedly-to-sign-with-denver-nuggets-giving-team-neede/";
+          this.page.identifier = "demar-derozan-reportedly-to-sign-with-denver-nuggets-giving-team-neede";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

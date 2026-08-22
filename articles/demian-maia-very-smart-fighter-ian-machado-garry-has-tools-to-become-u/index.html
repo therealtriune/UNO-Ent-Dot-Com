@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Demian Maia: &#x27;Very smart fighter&#x27; Ian Machado Garry has tools to become UFC champ</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/fa541f3dea23be208ccc4c315d5b42d0410807e9d827629235d991b718362df8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2Fdaa6e50b17f2cd6b75871e4cf7473bae" alt="Demian Maia: &#x27;Very smart fighter&#x27; Ian Machado Garry has tools to become UFC champ">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/fa541f3dea23be208ccc4c315d5b42d0410807e9d827629235d991b718362df8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2Fdaa6e50b17f2cd6b75871e4cf7473bae" alt="Demian Maia: &#x27;Very smart fighter&#x27; Ian Machado Garry has tools to become UFC champ" onload="this.style.animation='none'">
   <p class="article-summary">Demian Maia has helped Ian Machado Garry grow leaps and bounds in his grappling. Machado Garry (17-1 MMA, 10-1 UFC) challenges welterweight champion Islam Makhachev (28-1 MMA, 17-1 UFC) in Saturday&#x27;s UFC 330 main event at Xfinity Mobile Arena in Philadelphia ( Paramount+ ). Since working with Maia, Machado Garry has shown off his improved grappling – especially when he stuffed all seven of former champion Belal Muhammad &#x27;s takedowns en route to a unanimous decision win at UFC Fight Night 265.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/demian-maia-very-smart-fighter-220025841.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/demian-maia-very-smart-fighter-ian-machado-garry-has-tools-to-become-u/";
-      this.page.identifier = "demian-maia-very-smart-fighter-ian-machado-garry-has-tools-to-become-u";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/demian-maia-very-smart-fighter-ian-machado-garry-has-tools-to-become-u/";
+          this.page.identifier = "demian-maia-very-smart-fighter-ian-machado-garry-has-tools-to-become-u";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

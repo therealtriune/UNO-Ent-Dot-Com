@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">What NFL greats said backstage after Roger Craig&#x27;s dementia revelation | Exclusive</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/97291ccf0f899eb72c1f8b9c717172438c1db03abbabb06bebeabf2357e1ef82/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F768d1a45e8faef778eb5517cad6482f2" alt="What NFL greats said backstage after Roger Craig&#x27;s dementia revelation | Exclusive">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/97291ccf0f899eb72c1f8b9c717172438c1db03abbabb06bebeabf2357e1ef82/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F768d1a45e8faef778eb5517cad6482f2" alt="What NFL greats said backstage after Roger Craig&#x27;s dementia revelation | Exclusive" onload="this.style.animation='none'">
   <p class="article-summary">CANTON, Ohio – Minutes after Roger Craig announced that he has been diagnosed with dementia during a 10-minute videotaped acceptance speech, Emmitt Smith zipped past me and shook his head. “It’s a brutal game,” Smith, the NFL’s all-time leading rusher, said as I stood near a side entrance to the stage where the Pro Football Hall of Fame enshrinement ceremonies were conducted on Saturday inside Tom Benson Stadium. Craig, 66, won three Super Bowls with the San Francisco 49ers and in 1985 became the first player in NFL history to rush for 1,000 yards and notch 1,000 yards receiving in the same season.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/nfl-greats-said-backstage-roger-113116970.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/what-nfl-greats-said-backstage-after-roger-craig-s-dementia-revelation/";
-      this.page.identifier = "what-nfl-greats-said-backstage-after-roger-craig-s-dementia-revelation";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/what-nfl-greats-said-backstage-after-roger-craig-s-dementia-revelation/";
+          this.page.identifier = "what-nfl-greats-said-backstage-after-roger-craig-s-dementia-revelation";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

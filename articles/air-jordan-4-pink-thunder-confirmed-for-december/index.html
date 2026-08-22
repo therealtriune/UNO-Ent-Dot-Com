@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 hours ago</div>
   <h1 class="article-title">Air Jordan 4 “Pink Thunder” Confirmed for December</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/HQQEaZYWIAAqeaG-e1787416037325.jpg" alt="Air Jordan 4 “Pink Thunder” Confirmed for December">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/HQQEaZYWIAAqeaG-e1787416037325.jpg" alt="Air Jordan 4 “Pink Thunder” Confirmed for December" onload="this.style.animation='none'">
   <p class="article-summary">The Air Jordan 4 “Pink Thunder” now has a confirmed release date. It’s set to drop on December 19th for $220 in women’s exclusive sizing. Black covers most of the upper, keeping the familiar Thunder look intact.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006812-air-jordan-4-pink-thunder-sneaker-news-3" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/air-jordan-4-pink-thunder-confirmed-for-december/";
-      this.page.identifier = "air-jordan-4-pink-thunder-confirmed-for-december";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/air-jordan-4-pink-thunder-confirmed-for-december/";
+          this.page.identifier = "air-jordan-4-pink-thunder-confirmed-for-december";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

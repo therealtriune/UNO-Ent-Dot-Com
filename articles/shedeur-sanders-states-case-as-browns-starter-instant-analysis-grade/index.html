@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 hour ago</div>
   <h1 class="article-title">Shedeur Sanders states case as Browns starter: Instant analysis, grade</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/e0efa6ee051c052d590f63911ad153ae79525bb4679cef5b9a8b7953d657744b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F074a311ea0e1b8e8865fd627d63e1e00.jpg" alt="Shedeur Sanders states case as Browns starter: Instant analysis, grade">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/e0efa6ee051c052d590f63911ad153ae79525bb4679cef5b9a8b7953d657744b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F074a311ea0e1b8e8865fd627d63e1e00.jpg" alt="Shedeur Sanders states case as Browns starter: Instant analysis, grade" onload="this.style.animation='none'">
   <p class="article-summary">Shedeur Sanders was granted an opportunity to stake his claim to the Cleveland Browns &#x27; starting job during the team&#x27;s preseason Week 2 game against the Buffalo Bills. After backing up Deshaun Watson in the first preseason contest, Sanders was granted the opportunity to start against the Bills. Sanders did not disappoint in his extended look.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/shedeur-sanders-states-case-browns-194219936.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/shedeur-sanders-states-case-as-browns-starter-instant-analysis-grade/";
-      this.page.identifier = "shedeur-sanders-states-case-as-browns-starter-instant-analysis-grade";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/shedeur-sanders-states-case-as-browns-starter-instant-analysis-grade/";
+          this.page.identifier = "shedeur-sanders-states-case-as-browns-starter-instant-analysis-grade";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

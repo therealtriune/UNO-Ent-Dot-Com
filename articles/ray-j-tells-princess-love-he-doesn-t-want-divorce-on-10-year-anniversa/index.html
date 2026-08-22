@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Ray J Tells Princess Love He Doesn’t Want Divorce On 10-Year Anniversary</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Ray-J-Princess-Love-Doesnt-Want-Divorce-10-Year-Anniversary-scaled-e1786804624432.jpg" alt="Ray J Tells Princess Love He Doesn’t Want Divorce On 10-Year Anniversary">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Ray-J-Princess-Love-Doesnt-Want-Divorce-10-Year-Anniversary-scaled-e1786804624432.jpg" alt="Ray J Tells Princess Love He Doesn’t Want Divorce On 10-Year Anniversary" onload="this.style.animation='none'">
   <p class="article-summary">Ray J is currently gearing up for his boxing match with Orlando Brown tonight (Saturday, August 15), but he had something to get off his chest before. To celebrate the ten-year anniversary of when he and Princess Love got married, he dedicated an Instagram post to her that reflects on their turbulent history. “10 years later, after everything we’ve been through, somehow it all still comes back to love,” Ray captioned a picture of Princess on the social media platform.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006017-ray-j-princess-love-doesnt-want-divorce-10-year-anniversary" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ray-j-tells-princess-love-he-doesn-t-want-divorce-on-10-year-anniversa/";
-      this.page.identifier = "ray-j-tells-princess-love-he-doesn-t-want-divorce-on-10-year-anniversa";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ray-j-tells-princess-love-he-doesn-t-want-divorce-on-10-year-anniversa/";
+          this.page.identifier = "ray-j-tells-princess-love-he-doesn-t-want-divorce-on-10-year-anniversa";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Briton Hennessy in talks for undisputed title fight</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/171d976a8d7b4a14d08f0a24e6cc98539c18212fab67ef1b5ca8bbeeacb6cc9b/lightyear_networkapi/resizefill_w819_h461%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2F3af8669f566830eb3e4c229b900fc065.jpg" alt="Briton Hennessy in talks for undisputed title fight">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/171d976a8d7b4a14d08f0a24e6cc98539c18212fab67ef1b5ca8bbeeacb6cc9b/lightyear_networkapi/resizefill_w819_h461%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2F3af8669f566830eb3e4c229b900fc065.jpg" alt="Briton Hennessy in talks for undisputed title fight" onload="this.style.animation='none'">
   <p class="article-summary">Unbeaten bantamweight Francesca Hennessy - daughter of promoter Mick Hennessy - made her pro debut in September 2023 [Getty Images] Francesca Hennessy is in talks to fight undisputed bantamweight world champion Dina Thorslund in the United Kingdom later this year, BBC Sport understands. Promotional outfit Boxxer has offered Danish fighter Thorslund close to £250,000 to face 21-year-old Hennessy in the UK in November or December. Hennessy, the number one ranked challenger with the WBC, would become the youngest undisputed world champion in four-belt history if she defeats Thorslund.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/briton-hennessy-talks-undisputed-title-095945342.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports Boxing &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/briton-hennessy-in-talks-for-undisputed-title-fight/";
-      this.page.identifier = "briton-hennessy-in-talks-for-undisputed-title-fight";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/briton-hennessy-in-talks-for-undisputed-title-fight/";
+          this.page.identifier = "briton-hennessy-in-talks-for-undisputed-title-fight";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

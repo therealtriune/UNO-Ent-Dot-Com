@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">“Dead Serious” Proves Blaze Ya Dead Homie Hasn’t Lost His Focus (Album Review)</h1>
-  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5709-e1786678153433.jpeg" alt="“Dead Serious” Proves Blaze Ya Dead Homie Hasn’t Lost His Focus (Album Review)">
+  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5709-e1786678153433.jpeg" alt="“Dead Serious” Proves Blaze Ya Dead Homie Hasn’t Lost His Focus (Album Review)" onload="this.style.animation='none'">
   <p class="article-summary">Mt. Clemens, Michigan rapper Blaze Ya Dead Homie awakening from a 6 year slumber for his 8th studio LP. Originally 1/2 of the 2 Krazy Devils, the Insane Clown Posse eventually signed him to Psychopathic Records &amp; his eponymous debut EP as well as his full-length debut 1 Less G n da Hood would become some of the hatchet’s most beloved material at the turn of the millennium.</p>
   <a class="outbound-cta" href="https://undergroundhiphopblog.com/albums/dead-serious-proves-blaze-ya-dead-homie-hasnt-lost-his-focus-album-review/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Underground Hip Hop Blog &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/dead-serious-proves-blaze-ya-dead-homie-hasn-t-lost-his-focus-album-re/";
-      this.page.identifier = "dead-serious-proves-blaze-ya-dead-homie-hasn-t-lost-his-focus-album-re";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/dead-serious-proves-blaze-ya-dead-homie-hasn-t-lost-his-focus-album-re/";
+          this.page.identifier = "dead-serious-proves-blaze-ya-dead-homie-hasn-t-lost-his-focus-album-re";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

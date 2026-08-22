@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Mama June&#x27;s Daughter Pumpkin Says She Made $15K in One Day on OnlyFans</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/b5/16by9/2026/08/20/b561f8fd47bb4e2fa5f71715ae30f97f_xl.jpg" alt="Mama June&#x27;s Daughter Pumpkin Says She Made $15K in One Day on OnlyFans">
+  <img class="article-hero" src="https://imagez.tmz.com/image/b5/16by9/2026/08/20/b561f8fd47bb4e2fa5f71715ae30f97f_xl.jpg" alt="Mama June&#x27;s Daughter Pumpkin Says She Made $15K in One Day on OnlyFans" onload="this.style.animation='none'">
   <p class="article-summary">Mama June&#x27;s daughter Pumpkin says OnlyFans is paying off in a major way...revealing she recently had her biggest day yet on the platform, pulling in as much as $15K. Pumpkin joined TMZ&#x27;s Towanda Robinson on the &quot;TMZ Podcast&quot; and told us she…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/20/mama-junes-daughter-pumpkin-reveals-onlyfans-salary/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/mama-june-s-daughter-pumpkin-says-she-made-15k-in-one-day-on-onlyfans/";
-      this.page.identifier = "mama-june-s-daughter-pumpkin-says-she-made-15k-in-one-day-on-onlyfans";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/mama-june-s-daughter-pumpkin-says-she-made-15k-in-one-day-on-onlyfans/";
+          this.page.identifier = "mama-june-s-daughter-pumpkin-says-she-made-15k-in-one-day-on-onlyfans";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

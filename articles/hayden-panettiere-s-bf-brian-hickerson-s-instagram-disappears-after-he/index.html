@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 days ago</div>
   <h1 class="article-title">Hayden Panettiere&#x27;s BF Brian Hickerson&#x27;s Instagram Disappears After Her Death</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/bb/16by9/2026/08/18/bbaf48e4e2934619905c72018893a630_xl.jpg" alt="Hayden Panettiere&#x27;s BF Brian Hickerson&#x27;s Instagram Disappears After Her Death">
+  <img class="article-hero" src="https://imagez.tmz.com/image/bb/16by9/2026/08/18/bbaf48e4e2934619905c72018893a630_xl.jpg" alt="Hayden Panettiere&#x27;s BF Brian Hickerson&#x27;s Instagram Disappears After Her Death" onload="this.style.animation='none'">
   <p class="article-summary">Hayden Panettiere&#x27;s boyfriend Brian Hickerson completely vanished from Instagram in the wake of her death...and it&#x27;s unclear who pulled the plug. Brian&#x27;s profile was still active when Hayden&#x27;s death was first reported Sunday...but it has since…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/18/brian-hickerson-instagram-disappears/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/hayden-panettiere-s-bf-brian-hickerson-s-instagram-disappears-after-he/";
-      this.page.identifier = "hayden-panettiere-s-bf-brian-hickerson-s-instagram-disappears-after-he";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/hayden-panettiere-s-bf-brian-hickerson-s-instagram-disappears-after-he/";
+          this.page.identifier = "hayden-panettiere-s-bf-brian-hickerson-s-instagram-disappears-after-he";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

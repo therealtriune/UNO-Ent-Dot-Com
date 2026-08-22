@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Lil Durk Trial Evidence Includes 6ix9ine, Wack 100, &amp; Akademiks Interviews</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/durk-1-scaled-e1787182287655.jpg" alt="Lil Durk Trial Evidence Includes 6ix9ine, Wack 100, &amp; Akademiks Interviews">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/durk-1-scaled-e1787182287655.jpg" alt="Lil Durk Trial Evidence Includes 6ix9ine, Wack 100, &amp; Akademiks Interviews" onload="this.style.animation='none'">
   <p class="article-summary">Federal prosecutors will be allowed to show jurors a piece of Hip Hop media they say helps explain the motive behind Lil Durk ’s alleged murder-for-hire plot. It comes as an old DJ Akademiks interview where 6ix9ine and Wack 100 mocked the Chicago rapper for supposedly failing to retaliate after King Von ’s death. U.S.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006453-lil-durk-trial-evidence" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/lil-durk-trial-evidence-includes-6ix9ine-wack-100-akademiks-interviews/";
-      this.page.identifier = "lil-durk-trial-evidence-includes-6ix9ine-wack-100-akademiks-interviews";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/lil-durk-trial-evidence-includes-6ix9ine-wack-100-akademiks-interviews/";
+          this.page.identifier = "lil-durk-trial-evidence-includes-6ix9ine-wack-100-akademiks-interviews";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

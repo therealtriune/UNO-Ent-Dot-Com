@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">13 hours ago</div>
   <h1 class="article-title">Broncos coach Sean Payton on preseason performance vs. Packers: &quot;That wasn&#x27;t good enough&quot;</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/7a18335e62f06ae80c09ae5d52b19b8e81e541efa91107ce92c7a2a21dc7faf0/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F717484a0a9b509ab42a97b9407042d2f.jpg" alt="Broncos coach Sean Payton on preseason performance vs. Packers: &quot;That wasn&#x27;t good enough&quot;">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/7a18335e62f06ae80c09ae5d52b19b8e81e541efa91107ce92c7a2a21dc7faf0/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F717484a0a9b509ab42a97b9407042d2f.jpg" alt="Broncos coach Sean Payton on preseason performance vs. Packers: &quot;That wasn&#x27;t good enough&quot;" onload="this.style.animation='none'">
   <p class="article-summary">The Broncos had a rough outing in their preseason home opener against the Packers. And even though the 33-13 loss doesn&#x27;t matter, coach Sean Payton wasn&#x27;t happy with the performance. “Obviously that wasn’t good enough,&quot; Payton told reporters after the game.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/broncos-coach-sean-payton-preseason-074032703.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/broncos-coach-sean-payton-on-preseason-performance-vs-packers-that-was/";
-      this.page.identifier = "broncos-coach-sean-payton-on-preseason-performance-vs-packers-that-was";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/broncos-coach-sean-payton-on-preseason-performance-vs-packers-that-was/";
+          this.page.identifier = "broncos-coach-sean-payton-on-preseason-performance-vs-packers-that-was";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

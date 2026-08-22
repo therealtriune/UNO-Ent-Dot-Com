@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Drake May Have Just Confirmed He Has Beef With Lil Yachty</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/lil-yachty-summer-smash-2024-5.webp" alt="Drake May Have Just Confirmed He Has Beef With Lil Yachty">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/lil-yachty-summer-smash-2024-5.webp" alt="Drake May Have Just Confirmed He Has Beef With Lil Yachty" onload="this.style.animation='none'">
   <p class="article-summary">Drake and Lil Yachty were some of each other’s closest musical collaborators in the 2020s, as Her Loss, For All The Dogs, and their past friendship show. But since the Kendrick Lamar battle, the conversation around their dynamic has been much more about unconfirmed beef speculation. During Drizzy’s Kick-livestreamed giveaway for Stake’s ninth anniversary, he made some comments that DJ Akademiks and many others took as a sneak diss towards Yachty.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005248-drake-may-have-confirmed-beef-lil-yachty" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/drake-may-have-just-confirmed-he-has-beef-with-lil-yachty/";
-      this.page.identifier = "drake-may-have-just-confirmed-he-has-beef-with-lil-yachty";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/drake-may-have-just-confirmed-he-has-beef-with-lil-yachty/";
+          this.page.identifier = "drake-may-have-just-confirmed-he-has-beef-with-lil-yachty";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

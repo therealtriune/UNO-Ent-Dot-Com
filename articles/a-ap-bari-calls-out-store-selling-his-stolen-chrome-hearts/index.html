@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">5 days ago</div>
   <h1 class="article-title">A$AP Bari Calls Out Store Selling His Stolen Chrome Hearts</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-665853090-scaled-e1786925992801.jpg" alt="A$AP Bari Calls Out Store Selling His Stolen Chrome Hearts">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-665853090-scaled-e1786925992801.jpg" alt="A$AP Bari Calls Out Store Selling His Stolen Chrome Hearts" onload="this.style.animation='none'">
   <p class="article-summary">A$AP Bari is putting a Dallas store on blast, claiming they’re moving his own stolen Chrome Hearts pieces. He shared the callout directly to his Instagram story, tagging the account @sacrecydallas in the process. Bari posted s ide-by-side shots of black leather Chrome Hearts pants next to a green suede pair, both loaded with the brand’s signature cross and skull hardware.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006150-aap-bari-fake-chrome-hearts-streetwear-news" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/a-ap-bari-calls-out-store-selling-his-stolen-chrome-hearts/";
-      this.page.identifier = "a-ap-bari-calls-out-store-selling-his-stolen-chrome-hearts";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/a-ap-bari-calls-out-store-selling-his-stolen-chrome-hearts/";
+          this.page.identifier = "a-ap-bari-calls-out-store-selling-his-stolen-chrome-hearts";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Rob Lowe Says He Was Bullied For Being &#x27;Pretty&#x27; While Growing Up</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/be/16by9/2026/08/20/be759c90c8cf4284b1014c128f0dd46d_xl.png" alt="Rob Lowe Says He Was Bullied For Being &#x27;Pretty&#x27; While Growing Up">
+  <img class="article-hero" src="https://imagez.tmz.com/image/be/16by9/2026/08/20/be759c90c8cf4284b1014c128f0dd46d_xl.png" alt="Rob Lowe Says He Was Bullied For Being &#x27;Pretty&#x27; While Growing Up" onload="this.style.animation='none'">
   <p class="article-summary">Rob Lowe says he wasn&#x27;t a cute kid, he was a pretty one...which made his life difficult as a boy growing up in the 1960s and 1970s. The actor had Oprah Winfrey on his &quot;Literally!&quot; podcast...and they ended up discussing his childhood -- with…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/20/rob-lowe-says-he-was-bullied-for-good-looks/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/rob-lowe-says-he-was-bullied-for-being-pretty-while-growing-up/";
-      this.page.identifier = "rob-lowe-says-he-was-bullied-for-being-pretty-while-growing-up";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/rob-lowe-says-he-was-bullied-for-being-pretty-while-growing-up/";
+          this.page.identifier = "rob-lowe-says-he-was-bullied-for-being-pretty-while-growing-up";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

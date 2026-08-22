@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Celina Powell Arrested In Miami After Driving With Suspended License</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-2188494114-scaled.jpg" alt="Celina Powell Arrested In Miami After Driving With Suspended License">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-2188494114-scaled.jpg" alt="Celina Powell Arrested In Miami After Driving With Suspended License" onload="this.style.animation='none'">
   <p class="article-summary">Celina Powell found herself in legal trouble once again after an outing in Miami reportedly ended with her arrest. According to TMZ, the social media personality was taken into custody Thursday evening after police surrounded her pink Lamborghini Urus outside a Target in Midtown Miami. Several patrol cars reportedly arrived at the scene around 5:40 p.m.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004930-celina-powell-arrested-miami-hip-hop-news" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/celina-powell-arrested-in-miami-after-driving-with-suspended-license/";
-      this.page.identifier = "celina-powell-arrested-in-miami-after-driving-with-suspended-license";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/celina-powell-arrested-in-miami-after-driving-with-suspended-license/";
+          this.page.identifier = "celina-powell-arrested-in-miami-after-driving-with-suspended-license";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

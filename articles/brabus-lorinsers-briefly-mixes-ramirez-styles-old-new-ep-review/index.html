@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">“Brabus &amp; Lorinsers” Briefly Mixes Ramirez’ Styles Old &amp; New (EP Review)</h1>
-  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/IMG_5396-e1785477846643.jpeg" alt="“Brabus &amp; Lorinsers” Briefly Mixes Ramirez’ Styles Old &amp; New (EP Review)">
+  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/IMG_5396-e1785477846643.jpeg" alt="“Brabus &amp; Lorinsers” Briefly Mixes Ramirez’ Styles Old &amp; New (EP Review)" onload="this.style.animation='none'">
   <p class="article-summary">San Francisco, California emcee Ramirez ending the month with his 13th extended play. Emerging as a longtime affiliate of the $uicideboy$, he would go on to co-found to the New Orleans-based indie label G*59 Record$ with them &amp; build himself as an artist by dropping 8 mixtapes along with his last dozen EPs &amp; 5 full-lengths. Tha Playa$ Manual was his best LP yet with it’s g-funk production from Rocci, coming off the sequel under his newly formed EMPIRE Distribution imprint Velvet Note Records nearly 13 months earlier following his amicable G*59 departure to drop Brabus &amp; Lorinsers.</p>
   <a class="outbound-cta" href="https://undergroundhiphopblog.com/albums/brabus-and-lorinsers-briefly-mixes-ramirez-styles-old-and-new-ep-review/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Underground Hip Hop Blog &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/brabus-lorinsers-briefly-mixes-ramirez-styles-old-new-ep-review/";
-      this.page.identifier = "brabus-lorinsers-briefly-mixes-ramirez-styles-old-new-ep-review";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/brabus-lorinsers-briefly-mixes-ramirez-styles-old-new-ep-review/";
+          this.page.identifier = "brabus-lorinsers-briefly-mixes-ramirez-styles-old-new-ep-review";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Q-Unique’s 5th LP “The QR Code” Prod. by DJ Rhettmatic Celebrates the Culture’s Principles (Album Review)</h1>
-  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg" alt="Q-Unique’s 5th LP “The QR Code” Prod. by DJ Rhettmatic Celebrates the Culture’s Principles (Album Review)">
+  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg" alt="Q-Unique’s 5th LP “The QR Code” Prod. by DJ Rhettmatic Celebrates the Culture’s Principles (Album Review)" onload="this.style.animation='none'">
   <p class="article-summary">Los Angeles, California deejay/producer DJ Rhettmatic teaming up with Brooklyn, New York emcee, singer &amp; producer Q-Unique for his 4th studio LP. Emerging as 1/4 of the Arsonists &amp; the lead singer of the 3-man hard rock outfit Stillwill, he’s also built up impressive solo discography for himself since the Uncle Howie Records-backed Vengeance is Mine nearly 2 decades back at this point. He would follow it up the previous decade with Between Heaven &amp; Hell alongside BlaQ Coffee and The Mechanic before Stillwill bassist Fieldy of KoЯn fame produced the Pound for Pound EP.</p>
   <a class="outbound-cta" href="https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Underground Hip Hop Blog &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/q-unique-s-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cul/";
-      this.page.identifier = "q-unique-s-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cul";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/q-unique-s-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cul/";
+          this.page.identifier = "q-unique-s-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cul";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

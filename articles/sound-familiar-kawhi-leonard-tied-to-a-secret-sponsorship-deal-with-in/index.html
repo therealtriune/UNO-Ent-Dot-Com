@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Sound familiar? Kawhi Leonard tied to a secret sponsorship deal with Intuit Dome scoreboard maker</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/3fa54de9d16b984b19f00175973d9f1c631804d405fccecfe6d44371975a24de/lightyear_networkapi/resizefill_w840_h560%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fla_times_articles_853%2F060d2fb94fe9a27b9ed23c2b7abb2463" alt="Sound familiar? Kawhi Leonard tied to a secret sponsorship deal with Intuit Dome scoreboard maker">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/3fa54de9d16b984b19f00175973d9f1c631804d405fccecfe6d44371975a24de/lightyear_networkapi/resizefill_w840_h560%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fla_times_articles_853%2F060d2fb94fe9a27b9ed23c2b7abb2463" alt="Sound familiar? Kawhi Leonard tied to a secret sponsorship deal with Intuit Dome scoreboard maker" onload="this.style.animation='none'">
   <p class="article-summary">Kawhi Leonard attends a press conference July 7 where former teammate Kyle Lowry signed a one-day contract to retire as a Toronto Raptor. (Chris Young / The Canadian Press via AP) Clippers star Kawhi Leonard had a second lucrative undisclosed sponsorship agreement with a company doing business with the team, Pablo Torre reported Thursday night on his podcast. Scoreboard manufacturer Daktronics, which built the $100 million video board at the Clippers’ Intuit Dome, hired Leonard to a multi-million dollar endorsement deal, according to Torre.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/sound-familiar-kawhi-leonard-tied-154107830.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NBA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/sound-familiar-kawhi-leonard-tied-to-a-secret-sponsorship-deal-with-in/";
-      this.page.identifier = "sound-familiar-kawhi-leonard-tied-to-a-secret-sponsorship-deal-with-in";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/sound-familiar-kawhi-leonard-tied-to-a-secret-sponsorship-deal-with-in/";
+          this.page.identifier = "sound-familiar-kawhi-leonard-tied-to-a-secret-sponsorship-deal-with-in";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -338,6 +338,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 # login prompts) -- this site never touches a visitor's login or comment data
 # directly. page.url/page.identifier are set per-article below so each story
 # gets its own thread even if the title or URL slug is ever reused.
+#
+# Click-to-load rather than auto-embedded: with zero engagement so far on
+# every article, an immediately-visible empty comment box (login prompt,
+# empty textarea, "Be the first to comment") reads as "nobody reads this
+# site" to a visitor -- and to a prospective advertiser or sponsor doing
+# due diligence before a deal. This shows a plain "Show Comments" button
+# instead and only mounts the real Disqus thread when someone actually
+# clicks it, so the empty state is never the default view. Once real
+# comment activity builds up, this can be swapped back to always-on embed.
 DISQUS_SHORTNAME = "unoent"
 
 
@@ -345,17 +354,29 @@ def disqus_html(page_url: str, page_identifier: str) -> str:
     return f"""
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {{
-      this.page.url = "{page_url}";
-      this.page.identifier = "{page_identifier}";
-    }};
     (function() {{
-      var d = document, s = d.createElement('script');
-      s.src = 'https://{DISQUS_SHORTNAME}.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {{
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {{
+          this.page.url = "{page_url}";
+          this.page.identifier = "{page_identifier}";
+        }};
+        var d = document, s = d.createElement('script');
+        s.src = 'https://{DISQUS_SHORTNAME}.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }}, {{ once: true }});
     }})();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -478,11 +499,21 @@ main { padding: 32px 5vw 80px; }
   transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
 }
 .card:hover { transform: translateY(-3px); background: var(--bg-card-hover); border-color: var(--red); }
-.card-thumb { width: 100%; height: 180px; object-fit: cover; background: #1c1c1c; display: block; }
+.card-thumb {
+  width: 100%; height: 180px; object-fit: cover; display: block;
+  background: linear-gradient(100deg, #161616 30%, #232323 50%, #161616 70%);
+  background-size: 300% 100%;
+  animation: thumb-shimmer 1.4s ease-in-out infinite;
+}
 .card-thumb-fallback {
   object-fit: contain;
   padding: 34px 44px;
   background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+  animation: none;
+}
+@keyframes thumb-shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
 }
 .card-body { padding: 18px 20px 22px; display: flex; flex-direction: column; flex: 1; }
 .card-meta { font-size: 11px; color: var(--gray); margin-bottom: 10px; letter-spacing: 0.3px; }
@@ -718,11 +749,18 @@ footer a:hover { color: var(--white); }
 .back-link:hover { color: var(--white); }
 .article-meta { font-size: 12px; color: var(--gray); margin-bottom: 14px; letter-spacing: 0.3px; }
 .article-title { font-size: 32px; line-height: 1.25; font-weight: 800; margin: 0 0 24px; color: var(--white); }
-.article-hero { width: 100%; max-height: 420px; object-fit: cover; border-radius: 10px; margin-bottom: 28px; border: 1px solid var(--border); }
+.article-hero {
+  width: 100%; max-height: 420px; object-fit: cover; border-radius: 10px;
+  margin-bottom: 28px; border: 1px solid var(--border);
+  background: linear-gradient(100deg, #161616 30%, #232323 50%, #161616 70%);
+  background-size: 300% 100%;
+  animation: thumb-shimmer 1.4s ease-in-out infinite;
+}
 .article-hero-fallback {
   object-fit: contain;
   padding: 48px 60px;
   background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+  animation: none;
 }
 .article-summary { font-size: 17px; line-height: 1.7; color: #e6e6e6; margin-bottom: 32px; }
 .outbound-cta {
@@ -738,6 +776,13 @@ footer a:hover { color: var(--white); }
 .article-related-topics a:hover { text-decoration: underline; }
 .comments-wrap { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
 .comments-heading { font-size: 20px; font-weight: 800; margin: 0 0 20px; color: var(--white); }
+.comments-load-btn {
+  background: var(--red); color: #fff; border: none; border-radius: 6px;
+  font-weight: 700; font-size: 14px; padding: 12px 22px; cursor: pointer;
+  letter-spacing: 0.3px;
+}
+.comments-load-btn:hover { background: #c81a27; }
+.comments-load-note { font-size: 13px; color: var(--gray); margin-top: 10px; }
 
 /* Cookie consent banner */
 .cookie-banner {
@@ -1046,7 +1091,7 @@ def meta_html(prefix: str, title: str, description: str, canonical_url: str, ima
 def card_html(a: dict, prefix: str) -> str:
     thumb = a.get("thumbnail")
     thumb_html = (
-        f'<img src="{escape(thumb)}" alt="{escape(a["title"])}" loading="lazy" class="card-thumb">'
+        f'<img src="{escape(thumb)}" alt="{escape(a["title"])}" loading="lazy" class="card-thumb" onload="this.style.animation=\'none\'">'
         if thumb
         else f'<img src="{prefix}uno-logo.png" alt="UNO Entertainment" loading="lazy" class="card-thumb card-thumb-fallback">'
     )
@@ -1693,7 +1738,7 @@ def build_article(a: dict):
     prefix = "../../"
     thumb = a.get("thumbnail")
     hero_html = (
-        f'<img class="article-hero" src="{escape(thumb)}" alt="{escape(a["title"])}">'
+        f'<img class="article-hero" src="{escape(thumb)}" alt="{escape(a["title"])}" onload="this.style.animation=\'none\'">'
         if thumb
         else f'<img class="article-hero article-hero-fallback" src="{prefix}uno-logo.png" alt="UNO Entertainment">'
     )
@@ -1887,7 +1932,7 @@ SEARCH_PAGE_JS = """
 
   function cardHtml(a) {
     var thumb = a.thumbnail
-      ? '<img src="' + escapeHtml(a.thumbnail) + '" alt="' + escapeHtml(a.title) + '" loading="lazy" class="card-thumb">'
+      ? '<img src="' + escapeHtml(a.thumbnail) + '" alt="' + escapeHtml(a.title) + '" loading="lazy" class="card-thumb" onload="this.style.animation=\'none\'">'
       : '<img src="/uno-logo.png" alt="UNO Entertainment" loading="lazy" class="card-thumb card-thumb-fallback">';
     var catLabel = CATEGORY_LABELS[a.category];
     var catHtml = catLabel

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">6 days ago</div>
   <h1 class="article-title">Patriots training camp notebook: Offense preps for Seattle’s environment</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/615b917dbda35663e821478185a6fa95999e5e54ea7c16caaf9a6cf0f9d4b222/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2Fc62960e5e73ac4af51d9d2273688a3b4.jpg" alt="Patriots training camp notebook: Offense preps for Seattle’s environment">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/615b917dbda35663e821478185a6fa95999e5e54ea7c16caaf9a6cf0f9d4b222/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2Fc62960e5e73ac4af51d9d2273688a3b4.jpg" alt="Patriots training camp notebook: Offense preps for Seattle’s environment" onload="this.style.animation='none'">
   <p class="article-summary">FOXBOROUGH, MA - AUGUST 06: New England Patriots head coach Mike Vrabel arrives to New England Patriots training camp on August 6, 2026 at Gillette Stadium in Foxborough, Massachusetts. (Photo by Summer Lamont/Icon Sportswire via Getty Images) | Icon Sportswire via Getty Images The New England Patriots were back on the practice fields for the second straight day on Sunday but dialed down the intensity to a walkthrough session. Here’s what went down on the back practice fields.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/patriots-training-camp-notebook-offense-171437101.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/patriots-training-camp-notebook-offense-preps-for-seattle-s-environmen/";
-      this.page.identifier = "patriots-training-camp-notebook-offense-preps-for-seattle-s-environmen";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/patriots-training-camp-notebook-offense-preps-for-seattle-s-environmen/";
+          this.page.identifier = "patriots-training-camp-notebook-offense-preps-for-seattle-s-environmen";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

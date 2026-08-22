@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Remy Ma Might Have A Legal Threat From Papoose</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/06/Remy-Ma.png" alt="Remy Ma Might Have A Legal Threat From Papoose">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/06/Remy-Ma.png" alt="Remy Ma Might Have A Legal Threat From Papoose" onload="this.style.animation='none'">
   <p class="article-summary">Remy Ma turned a viral freestyle into a legal headache thanks to Papoose. Brother man has allegedly demanded a new song from his ex-wife to be be removed from the whole internet. It is hard to believe this is still going on like this and once upon a time they were preaching “Black Love.” The estranged couple’s conflict is now in the attorney-phase, since Remy released “W.Y.F.L.” or Why You F#cking Lying.” She went at Papoose over allegations involving ghostwriting, their intimate relationship and, of course his love affair with boxing champion Claressa Shields.</p>
   <a class="outbound-cta" href="https://allhiphop.com/rumors/remy-ma-might-have-a-legal-threat-from-papoose/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/remy-ma-might-have-a-legal-threat-from-papoose/";
-      this.page.identifier = "remy-ma-might-have-a-legal-threat-from-papoose";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/remy-ma-might-have-a-legal-threat-from-papoose/";
+          this.page.identifier = "remy-ma-might-have-a-legal-threat-from-papoose";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

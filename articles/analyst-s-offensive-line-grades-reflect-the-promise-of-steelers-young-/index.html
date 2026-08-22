@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Analyst’s offensive line grades reflect the promise of Steelers’ young core</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/a0b7357f131fae811985ef3650e804ad8c74cf55e514522beb6e0229b9a6093c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F2f165939d8925e5b3cd769b37894cd93" alt="Analyst’s offensive line grades reflect the promise of Steelers’ young core">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/a0b7357f131fae811985ef3650e804ad8c74cf55e514522beb6e0229b9a6093c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F2f165939d8925e5b3cd769b37894cd93" alt="Analyst’s offensive line grades reflect the promise of Steelers’ young core" onload="this.style.animation='none'">
   <p class="article-summary">PITTSBURGH, PENNSYLVANIA - DECEMBER 15: Zach Frazier #54 of the Pittsburgh Steelers looks on during the national anthem prior to an NFL football game against the Miami Dolphins at Pennsylvania on December 15, 2025 in Pittsburgh, Pennsylvania. (Photo by Michael Owens/Getty Images) | Getty Images We’re still three days away from seeing the Steelers suit up for their first game action of the 2026 season. Even if most of Pittsburgh’s fans remain skeptical of the team’s ceiling this year — a sentiment I share, for what it’s worth — it’s important to remember that seasons can still be enjoyable and progress can be tracked even in the seasons that don’t end with hoisting the Lombardi trophy.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/analyst-offensive-line-grades-reflect-195214141.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/analyst-s-offensive-line-grades-reflect-the-promise-of-steelers-young-/";
-      this.page.identifier = "analyst-s-offensive-line-grades-reflect-the-promise-of-steelers-young-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/analyst-s-offensive-line-grades-reflect-the-promise-of-steelers-young-/";
+          this.page.identifier = "analyst-s-offensive-line-grades-reflect-the-promise-of-steelers-young-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Eric Bieniemy Returns To Chiefs Training Camp Weeks After Wife Shot, Son Arrested</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/67/16by9/2026/08/10/67dc763949db4cfb9d8d90af08ae24fe_xl.jpg" alt="Eric Bieniemy Returns To Chiefs Training Camp Weeks After Wife Shot, Son Arrested">
+  <img class="article-hero" src="https://imagez.tmz.com/image/67/16by9/2026/08/10/67dc763949db4cfb9d8d90af08ae24fe_xl.jpg" alt="Eric Bieniemy Returns To Chiefs Training Camp Weeks After Wife Shot, Son Arrested" onload="this.style.animation='none'">
   <p class="article-summary">K.C. Chiefs offensive coordinator Eric Bieniemy is back on the practice field...just two weeks after his wife was allegedly shot by the couple&#x27;s son at their family home.</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/10/eric-bieniemy-returns-chiefs-training-camp-after-shooting/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/eric-bieniemy-returns-to-chiefs-training-camp-weeks-after-wife-shot-so/";
-      this.page.identifier = "eric-bieniemy-returns-to-chiefs-training-camp-weeks-after-wife-shot-so";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/eric-bieniemy-returns-to-chiefs-training-camp-weeks-after-wife-shot-so/";
+          this.page.identifier = "eric-bieniemy-returns-to-chiefs-training-camp-weeks-after-wife-shot-so";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

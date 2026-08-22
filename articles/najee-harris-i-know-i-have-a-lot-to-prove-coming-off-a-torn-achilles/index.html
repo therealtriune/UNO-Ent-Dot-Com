@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Najee Harris: I know I have a lot to prove coming off a torn Achilles</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/5dabbd09abda152b38c5b5730b03fa1f35a0d5f991d2056063b5af701f34e72a/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F2c290969b76c5d40cd954506098bc6fd.jpg" alt="Najee Harris: I know I have a lot to prove coming off a torn Achilles">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/5dabbd09abda152b38c5b5730b03fa1f35a0d5f991d2056063b5af701f34e72a/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F2c290969b76c5d40cd954506098bc6fd.jpg" alt="Najee Harris: I know I have a lot to prove coming off a torn Achilles" onload="this.style.animation='none'">
   <p class="article-summary">The Giants signed running back Najee Harris on Tuesday and he said at a press conference that he thinks he has &quot;a good opportunity&quot; to contribute because of how John Harbaugh-coached teams approach offensive football. Before Harris can contribute anything to the offense, he&#x27;ll need to show that he&#x27;s healthy. Harris tore his Achilles while playing for the Chargers early last season and he was cleared to return to football work a couple of months ago.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/najee-harris-know-lot-prove-111005676.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/najee-harris-i-know-i-have-a-lot-to-prove-coming-off-a-torn-achilles/";
-      this.page.identifier = "najee-harris-i-know-i-have-a-lot-to-prove-coming-off-a-torn-achilles";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/najee-harris-i-know-i-have-a-lot-to-prove-coming-off-a-torn-achilles/";
+          this.page.identifier = "najee-harris-i-know-i-have-a-lot-to-prove-coming-off-a-torn-achilles";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

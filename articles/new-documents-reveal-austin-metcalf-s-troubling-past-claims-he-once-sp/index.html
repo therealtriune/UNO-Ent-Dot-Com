@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">New Documents Reveal Austin Metcalf’s Troubling Past — Claims He Once Spray Painted “K*ll All Blacks” And Also Used Racial Slurs In School</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/IMG_9485.jpeg" alt="New Documents Reveal Austin Metcalf’s Troubling Past — Claims He Once Spray Painted “K*ll All Blacks” And Also Used Racial Slurs In School">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/IMG_9485.jpeg" alt="New Documents Reveal Austin Metcalf’s Troubling Past — Claims He Once Spray Painted “K*ll All Blacks” And Also Used Racial Slurs In School" onload="this.style.animation='none'">
   <p class="article-summary">The legal battle surrounding Karmelo Anthony has just taken an explosive turn. New, previously withheld records have surfaced, detailing a history of racist graffiti, slurs, and violent allegations involving the victim, Austin Metcalf—information that the jury never heard during Anthony’s initial murder trial. Anthony, who was convicted in June for the April 2025 fatal stabbing of Metcalf at a Frisco high school track meet, is currently serving a 35-year sentence.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/new-documents-reveal-austin-metcalfs-troubling-past-claims-he-once-spray-painted-kll-all-blacks-and-also-used-racial-slurs-in-school/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/new-documents-reveal-austin-metcalf-s-troubling-past-claims-he-once-sp/";
-      this.page.identifier = "new-documents-reveal-austin-metcalf-s-troubling-past-claims-he-once-sp";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/new-documents-reveal-austin-metcalf-s-troubling-past-claims-he-once-sp/";
+          this.page.identifier = "new-documents-reveal-austin-metcalf-s-troubling-past-claims-he-once-sp";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

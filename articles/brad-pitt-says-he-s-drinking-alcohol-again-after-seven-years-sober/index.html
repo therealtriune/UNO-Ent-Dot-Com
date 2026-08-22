@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Brad Pitt Says He&#x27;s Drinking Alcohol Again After Seven Years Sober</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/bc/16by9/2026/08/10/bcec175040614ef591aa0894d1795fcd_xl.jpg" alt="Brad Pitt Says He&#x27;s Drinking Alcohol Again After Seven Years Sober">
+  <img class="article-hero" src="https://imagez.tmz.com/image/bc/16by9/2026/08/10/bcec175040614ef591aa0894d1795fcd_xl.jpg" alt="Brad Pitt Says He&#x27;s Drinking Alcohol Again After Seven Years Sober" onload="this.style.animation='none'">
   <p class="article-summary">Brad Pitt says his seven-year run of sobriety is over...he&#x27;s drinking again, though he insists he&#x27;s learned he still needs to keep a tight leash on things. The actor opened up in a wide-ranging interview with Esquire...</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/10/brad-pitt-no-longer-sober/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/brad-pitt-says-he-s-drinking-alcohol-again-after-seven-years-sober/";
-      this.page.identifier = "brad-pitt-says-he-s-drinking-alcohol-again-after-seven-years-sober";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/brad-pitt-says-he-s-drinking-alcohol-again-after-seven-years-sober/";
+          this.page.identifier = "brad-pitt-says-he-s-drinking-alcohol-again-after-seven-years-sober";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

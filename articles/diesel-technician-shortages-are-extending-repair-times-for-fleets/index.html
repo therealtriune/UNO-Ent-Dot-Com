@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Diesel technician shortages are extending repair times for fleets</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/f3e27989dddc2a04e50eb56dd6a365d6.jpg" alt="Diesel technician shortages are extending repair times for fleets">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/f3e27989dddc2a04e50eb56dd6a365d6.jpg" alt="Diesel technician shortages are extending repair times for fleets" onload="this.style.animation='none'">
   <p class="article-summary">The diesel technician shortage is stretching shop capacity nationwide, turning repairs that once took a few days into waits that stretch past two weeks. Fleets are adapting by tightening preventive maintenance schedules, training drivers to handle light repairs, and locking in priority slots with trusted shops. Outsourcing to managed maintenance providers and adopting predictive diagnostics are helping close the remaining gap.</p>
   <a class="outbound-cta" href="https://allhiphop.com/blogs/diesel-technician-shortages-are-extending-repair-times-for-fleets/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/diesel-technician-shortages-are-extending-repair-times-for-fleets/";
-      this.page.identifier = "diesel-technician-shortages-are-extending-repair-times-for-fleets";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/diesel-technician-shortages-are-extending-repair-times-for-fleets/";
+          this.page.identifier = "diesel-technician-shortages-are-extending-repair-times-for-fleets";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

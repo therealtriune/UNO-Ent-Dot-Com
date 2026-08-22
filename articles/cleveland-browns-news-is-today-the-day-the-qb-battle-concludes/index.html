@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">10 hours ago</div>
   <h1 class="article-title">Cleveland Browns news: Is today the day the QB battle concludes?</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/f426f92e079f879b18fc830461a40033ec779e0a6765a29494094b90965e7743/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F5d51805d8e4525745c21c4243c4ef1bf.jpg" alt="Cleveland Browns news: Is today the day the QB battle concludes?">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/f426f92e079f879b18fc830461a40033ec779e0a6765a29494094b90965e7743/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F5d51805d8e4525745c21c4243c4ef1bf.jpg" alt="Cleveland Browns news: Is today the day the QB battle concludes?" onload="this.style.animation='none'">
   <p class="article-summary">BEREA, OHIO - APRIL 21: Shedeur Sanders #2 of the Cleveland Browns looks on as Deshaun Watson #4 runs a drill during a voluntary veteran minicamp at CrossCountry Mortgage Campus on April 21, 2026 in Berea, Ohio. (Photo by Nick Cammett/Getty Images) | Getty Images Dawgs By Nature 2 different recent lists do not have high hopes for Browns, Spencer Fano in 2026 (Barry Shuck) – “As the NFL regular season becomes more and more in view, certain media outlets will put out preseason lists. You know, top quarterbacks, who are the best EDGE rushers, who will have the most receiving targets, and so on.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/cleveland-browns-news-today-day-103000125.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/cleveland-browns-news-is-today-the-day-the-qb-battle-concludes/";
-      this.page.identifier = "cleveland-browns-news-is-today-the-day-the-qb-battle-concludes";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/cleveland-browns-news-is-today-the-day-the-qb-battle-concludes/";
+          this.page.identifier = "cleveland-browns-news-is-today-the-day-the-qb-battle-concludes";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

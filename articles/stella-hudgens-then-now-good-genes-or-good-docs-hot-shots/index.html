@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Stella Hudgens Then &amp; Now Good Genes or Good Docs?! Hot Shots</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/11/16by9/2026/07/28/11f871d1884e46688d367632fbe6b0bb_xl.jpg" alt="Stella Hudgens Then &amp; Now Good Genes or Good Docs?! Hot Shots">
+  <img class="article-hero" src="https://imagez.tmz.com/image/11/16by9/2026/07/28/11f871d1884e46688d367632fbe6b0bb_xl.jpg" alt="Stella Hudgens Then &amp; Now Good Genes or Good Docs?! Hot Shots" onload="this.style.animation='none'">
   <p class="article-summary">Are Stella Hudgens&#x27; looks over the years catching your eye?! Here is a 22-year-old version of the actress at a Refinery29 party in Los Angeles back in 2017 (left). And, nearly a decade later, Sexy Stella has been turning heads all summer with her…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/02/stella-hudgens-hot-pictures/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/stella-hudgens-then-now-good-genes-or-good-docs-hot-shots/";
-      this.page.identifier = "stella-hudgens-then-now-good-genes-or-good-docs-hot-shots";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/stella-hudgens-then-now-good-genes-or-good-docs-hot-shots/";
+          this.page.identifier = "stella-hudgens-then-now-good-genes-or-good-docs-hot-shots";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

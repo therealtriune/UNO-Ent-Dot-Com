@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">In-N-Out President Speaks Out After Idaho Shooting Reportedly Leaves 3 Dead &amp; Several Injured (PHOTO)</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/In-N-Out-President-Speaks-Out-After-Idaho-Shooting-Reportedly-Leaves-3-Dead-Several-Injured.jpg" alt="In-N-Out President Speaks Out After Idaho Shooting Reportedly Leaves 3 Dead &amp; Several Injured (PHOTO)">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/In-N-Out-President-Speaks-Out-After-Idaho-Shooting-Reportedly-Leaves-3-Dead-Several-Injured.jpg" alt="In-N-Out President Speaks Out After Idaho Shooting Reportedly Leaves 3 Dead &amp; Several Injured (PHOTO)" onload="this.style.animation='none'">
   <p class="article-summary">A normal weekend outing turned into a heartbreaking scene in Idaho, leaving a community searching for answers after chaos erupted at a popular restaurant. Authorities are now investigating what happened at an In-N-Out in Twin Falls, where a deadly shooting left multiple people killed and others injured as witnesses described a terrifying scene unfolding in real time. RELATED: Say, WHAT?!</p>
   <a class="outbound-cta" href="https://theshaderoom.com/in-n-out-idaho-suspect-company-president-responds-the-shade-room/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/in-n-out-president-speaks-out-after-idaho-shooting-reportedly-leaves-3/";
-      this.page.identifier = "in-n-out-president-speaks-out-after-idaho-shooting-reportedly-leaves-3";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/in-n-out-president-speaks-out-after-idaho-shooting-reportedly-leaves-3/";
+          this.page.identifier = "in-n-out-president-speaks-out-after-idaho-shooting-reportedly-leaves-3";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

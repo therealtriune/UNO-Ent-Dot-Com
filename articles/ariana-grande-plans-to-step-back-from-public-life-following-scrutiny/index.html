@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Ariana Grande Plans To Step Back From Public Life Following Scrutiny</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_2235.jpeg" alt="Ariana Grande Plans To Step Back From Public Life Following Scrutiny">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_2235.jpeg" alt="Ariana Grande Plans To Step Back From Public Life Following Scrutiny" onload="this.style.animation='none'">
   <p class="article-summary">The internet is undefeated when it comes to being toxic, and it taking a toll on pop royalty Ariana Grande. In an exclusive statement to PEOPLE, a representative for Ariana Grande confirmed that the superstar will be taking an extended break from public facing work and visibility once she wraps up her grueling Eternal Sunshine Tour this September. For a girl who has literally been giving us vocals, blockbuster films like Wicked, and non-stop visual drops for over a decade, the news leaves fans a little concerned while other completely understand.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/ariana-grande-plans-to-step-back-from-public-life-following-scrutiny/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ariana-grande-plans-to-step-back-from-public-life-following-scrutiny/";
-      this.page.identifier = "ariana-grande-plans-to-step-back-from-public-life-following-scrutiny";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ariana-grande-plans-to-step-back-from-public-life-following-scrutiny/";
+          this.page.identifier = "ariana-grande-plans-to-step-back-from-public-life-following-scrutiny";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

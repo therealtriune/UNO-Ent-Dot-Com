@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Eminem Puts Over 100 Signed Sneakers Up For Auction</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2025-11-27T202452Z_1609420489_MT1USATODAY27690467_RTRMADP_3_NFL-GREEN-BAY-PACKERS-AT-DETROIT-LIONS-scaled.jpg" alt="Eminem Puts Over 100 Signed Sneakers Up For Auction">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2025-11-27T202452Z_1609420489_MT1USATODAY27690467_RTRMADP_3_NFL-GREEN-BAY-PACKERS-AT-DETROIT-LIONS-scaled.jpg" alt="Eminem Puts Over 100 Signed Sneakers Up For Auction" onload="this.style.animation='none'">
   <p class="article-summary">Eminem is giving fans a real shot at owning a piece of his personal sneaker collection. He put more than 100 autographed pairs up for auction this week, including two of the ultra-rare Air Jordan 3 “Slim Shady” player exclusives. Only 45 pairs of that Air Jordan 3 colorway were ever made.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006338-signed-eminem-sneakers-auction-sneaker-news" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/eminem-puts-over-100-signed-sneakers-up-for-auction/";
-      this.page.identifier = "eminem-puts-over-100-signed-sneakers-up-for-auction";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/eminem-puts-over-100-signed-sneakers-up-for-auction/";
+          this.page.identifier = "eminem-puts-over-100-signed-sneakers-up-for-auction";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

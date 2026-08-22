@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">PFL Charlotte results: Brian Battle edges Dalton Rosta in hometown win</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/94f954448f919ab801d4b6dc24068169b0cb0bce1a8514f6e665d4b7008b9bc1/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2F9c7ca7e3238f6d360b5ceb849490bbbc" alt="PFL Charlotte results: Brian Battle edges Dalton Rosta in hometown win">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/94f954448f919ab801d4b6dc24068169b0cb0bce1a8514f6e665d4b7008b9bc1/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2F9c7ca7e3238f6d360b5ceb849490bbbc" alt="PFL Charlotte results: Brian Battle edges Dalton Rosta in hometown win" onload="this.style.animation='none'">
   <p class="article-summary">Bryan Battle&#x27;s hometown showdown was a success. Battle, winner of season 29 of The Ultimate Fighter, picked up his first win under the PFL banner by beating Dalton Rosta in the main event of PFL Charlotte, which took place Friday at Bojangles Coliseum in North Carolina. Battle (13-3) defeated Rosta (11-4) in a split decision that read 29-28 on all three judges&#x27; scorecards – two in favor of Battle and one for Rosta.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/pfl-charlotte-results-brian-battle-044353469.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/pfl-charlotte-results-brian-battle-edges-dalton-rosta-in-hometown-win/";
-      this.page.identifier = "pfl-charlotte-results-brian-battle-edges-dalton-rosta-in-hometown-win";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/pfl-charlotte-results-brian-battle-edges-dalton-rosta-in-hometown-win/";
+          this.page.identifier = "pfl-charlotte-results-brian-battle-edges-dalton-rosta-in-hometown-win";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

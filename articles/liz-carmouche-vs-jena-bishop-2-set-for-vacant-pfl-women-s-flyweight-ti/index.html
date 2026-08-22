@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Liz Carmouche vs. Jena Bishop 2 set for vacant PFL women&#x27;s flyweight title</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/ead248da7718e6972d384424eb5f55596ac7b153abfefff16e0cc164dcd6ade6/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2F13e621ead01dba98ab2f43dc09ad17cf.jpg" alt="Liz Carmouche vs. Jena Bishop 2 set for vacant PFL women&#x27;s flyweight title">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/ead248da7718e6972d384424eb5f55596ac7b153abfefff16e0cc164dcd6ade6/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2F13e621ead01dba98ab2f43dc09ad17cf.jpg" alt="Liz Carmouche vs. Jena Bishop 2 set for vacant PFL women&#x27;s flyweight title" onload="this.style.animation='none'">
   <p class="article-summary">The PFL women&#x27;s flyweight division will soon have a champion. Liz Carmouche and Jena Bishop are set to rematch for the vacant PFL women&#x27;s flyweight title in the main event of PFL Chicago, which takes place on Oct. 16 at the Wintrust Arena.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/liz-carmouche-vs-jena-bishop-195426128.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/liz-carmouche-vs-jena-bishop-2-set-for-vacant-pfl-women-s-flyweight-ti/";
-      this.page.identifier = "liz-carmouche-vs-jena-bishop-2-set-for-vacant-pfl-women-s-flyweight-ti";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/liz-carmouche-vs-jena-bishop-2-set-for-vacant-pfl-women-s-flyweight-ti/";
+          this.page.identifier = "liz-carmouche-vs-jena-bishop-2-set-for-vacant-pfl-women-s-flyweight-ti";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

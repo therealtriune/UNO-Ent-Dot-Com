@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Dana White Shuts Down UFC Government Weather Conspiracy Theory</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/80/16by9/2026/08/13/8050a86c590845459cf17c70a249fe0d_xl.jpg" alt="Dana White Shuts Down UFC Government Weather Conspiracy Theory">
+  <img class="article-hero" src="https://imagez.tmz.com/image/80/16by9/2026/08/13/8050a86c590845459cf17c70a249fe0d_xl.jpg" alt="Dana White Shuts Down UFC Government Weather Conspiracy Theory" onload="this.style.animation='none'">
   <p class="article-summary">Dana White&#x27;s knocking out the biggest UFC conspiracy theory! It all centers around the massive storm bearing down on the D.C. area before Freedom 250, only to split right before soaking 1600 Penn., saving the historic event, but also sending the…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/15/dana-white-denies-freedom-250-weather-conspiracy-theory/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/dana-white-shuts-down-ufc-government-weather-conspiracy-theory/";
-      this.page.identifier = "dana-white-shuts-down-ufc-government-weather-conspiracy-theory";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/dana-white-shuts-down-ufc-government-weather-conspiracy-theory/";
+          this.page.identifier = "dana-white-shuts-down-ufc-government-weather-conspiracy-theory";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">UFC 330 video: Mackenzie Dern vs. Gillian Robertson final faceoff</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/872283f932c9370a3d70ce19ff32a5de2da6b7f66260f48994b57fb3e3e3136e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2Fb83fefde67f2b88383f7530e60f9bb70.jpg" alt="UFC 330 video: Mackenzie Dern vs. Gillian Robertson final faceoff">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/872283f932c9370a3d70ce19ff32a5de2da6b7f66260f48994b57fb3e3e3136e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2Fb83fefde67f2b88383f7530e60f9bb70.jpg" alt="UFC 330 video: Mackenzie Dern vs. Gillian Robertson final faceoff" onload="this.style.animation='none'">
   <p class="article-summary">PHILADELPHIA – Mackenzie Dern and Gillian Robertson concluded fight week activities for their UFC 330 title fight with a final staredown at Friday&#x27;s ceremonial weigh-in. Dern (16-5 MMA, 11-5 UFC) will put the strawweight title she won in October on the line for the first time when she meets streaking first-time title challenger Robertson (17-8 MMA, 14-6 UFC) in the co-main event of Saturday&#x27;s card at Xfinity Mobile Arena ( Paramount+ ). There has been little drama in the lead-up to the title contest, but the tension was there as Dern and Robertson locked eyes one last time before sharing the octagon.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/ufc-330-video-mackenzie-dern-223734704.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ufc-330-video-mackenzie-dern-vs-gillian-robertson-final-faceoff/";
-      this.page.identifier = "ufc-330-video-mackenzie-dern-vs-gillian-robertson-final-faceoff";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ufc-330-video-mackenzie-dern-vs-gillian-robertson-final-faceoff/";
+          this.page.identifier = "ufc-330-video-mackenzie-dern-vs-gillian-robertson-final-faceoff";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

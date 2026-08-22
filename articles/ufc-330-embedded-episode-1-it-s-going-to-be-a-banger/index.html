@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">UFC 330 Embedded, Episode 1: &#x27;It&#x27;s going to be a banger&#x27;</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/639994fd96e215e1f5c6aec34fd1176e8ce6dc03e1443d635eefe09254ce69bb/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmmaweekly.com%2Fc69e0cdadbb7ecfa1f7b2edac3edd917" alt="UFC 330 Embedded, Episode 1: &#x27;It&#x27;s going to be a banger&#x27;">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/639994fd96e215e1f5c6aec34fd1176e8ce6dc03e1443d635eefe09254ce69bb/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmmaweekly.com%2Fc69e0cdadbb7ecfa1f7b2edac3edd917" alt="UFC 330 Embedded, Episode 1: &#x27;It&#x27;s going to be a banger&#x27;" onload="this.style.animation='none'">
   <p class="article-summary">On the first episode of UFC 330 Embedded, welterweight champ Islam Makhachev makes coffee for his team before training; Strawweight champion Mackenzie Dern focuses on her grappling defense; Donte Johnson trains with Middleweight champ Sean Strickland; Vicente Luque fishes with his son; Gillian Robertson prepares for her first UFC title fight; Edson Barboza reflects on how he became a fighter. UFC 330 Countdown gives a behind-the-scenes look during fight week. The UFC 330 main event features a welterweight title bout between champion Islam Makhahev and No.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/ufc-330-embedded-episode-1-041257842.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ufc-330-embedded-episode-1-it-s-going-to-be-a-banger/";
-      this.page.identifier = "ufc-330-embedded-episode-1-it-s-going-to-be-a-banger";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ufc-330-embedded-episode-1-it-s-going-to-be-a-banger/";
+          this.page.identifier = "ufc-330-embedded-episode-1-it-s-going-to-be-a-banger";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">NFL Top 100 Players of 2026: JSN makes top 10, but only 3 Seahawks featured</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/3651ac049bf0e60c2054ca7a7dc7bb034b4f15edd7c207c58bd58a2af2500fe0/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F99d89b59227261f4e3a331a05d562328.jpg" alt="NFL Top 100 Players of 2026: JSN makes top 10, but only 3 Seahawks featured">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/3651ac049bf0e60c2054ca7a7dc7bb034b4f15edd7c207c58bd58a2af2500fe0/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F99d89b59227261f4e3a331a05d562328.jpg" alt="NFL Top 100 Players of 2026: JSN makes top 10, but only 3 Seahawks featured" onload="this.style.animation='none'">
   <p class="article-summary">After a historic season in which he led the league with an astounding 1,793 receiving yards and earned the NFL Offensive Player of the Year award, Seattle Seahawks wide receiver Jaxon Smith-Njigba continues to earn his flowers. Seattle’s star receiver was named one of the final 10 players on the NFL Top 100 Players of 2026 list, meaning he’ll join linebacker Ernest Jones IV (No.97) and quarterback Sam Darnold (No. 21) as the lone Seahawks on the ranking.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/nfl-top-100-players-2026-201526020.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/nfl-top-100-players-of-2026-jsn-makes-top-10-but-only-3-seahawks-featu/";
-      this.page.identifier = "nfl-top-100-players-of-2026-jsn-makes-top-10-but-only-3-seahawks-featu";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/nfl-top-100-players-of-2026-jsn-makes-top-10-but-only-3-seahawks-featu/";
+          this.page.identifier = "nfl-top-100-players-of-2026-jsn-makes-top-10-but-only-3-seahawks-featu";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

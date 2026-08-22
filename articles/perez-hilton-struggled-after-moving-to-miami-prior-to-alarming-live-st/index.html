@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Perez Hilton Struggled After Moving to Miami, Prior to Alarming Live Stream</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/42/16by9/2026/08/05/423a1549dba642308b2add22f085d421_xl.jpg" alt="Perez Hilton Struggled After Moving to Miami, Prior to Alarming Live Stream">
+  <img class="article-hero" src="https://imagez.tmz.com/image/42/16by9/2026/08/05/423a1549dba642308b2add22f085d421_xl.jpg" alt="Perez Hilton Struggled After Moving to Miami, Prior to Alarming Live Stream" onload="this.style.animation='none'">
   <p class="article-summary">Perez Hilton&#x27;s move from Las Vegas to Miami was meant to put his family first, but TMZ has learned the major life change took an emotional toll on him before his alarming live stream and hospitalization. Sources with direct knowledge tell TMZ...…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/05/perez-hilton-was-unhappy-after-he-moved-to-miami/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/perez-hilton-struggled-after-moving-to-miami-prior-to-alarming-live-st/";
-      this.page.identifier = "perez-hilton-struggled-after-moving-to-miami-prior-to-alarming-live-st";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/perez-hilton-struggled-after-moving-to-miami-prior-to-alarming-live-st/";
+          this.page.identifier = "perez-hilton-struggled-after-moving-to-miami-prior-to-alarming-live-st";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

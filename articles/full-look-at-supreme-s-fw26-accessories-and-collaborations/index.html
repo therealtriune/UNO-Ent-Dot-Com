@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 days ago</div>
   <h1 class="article-title">Full Look At Supreme’s FW26 Accessories And Collaborations</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-958402532-scaled.jpg" alt="Full Look At Supreme’s FW26 Accessories And Collaborations">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-958402532-scaled.jpg" alt="Full Look At Supreme’s FW26 Accessories And Collaborations" onload="this.style.animation='none'">
   <p class="article-summary">Supreme’s Fall/Winter 2026 collection is officially here, and it’s shaping up to be one of the brand’s biggest seasons in years. The full lookbook dropped Monday, with the season itself set to release Thursday, August 20th. This season features over 30 brand collaborations, spanning everything from outerwear to gaming hardware.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006272-supreme-fall-winter-2026-streetwear-news" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/full-look-at-supreme-s-fw26-accessories-and-collaborations/";
-      this.page.identifier = "full-look-at-supreme-s-fw26-accessories-and-collaborations";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/full-look-at-supreme-s-fw26-accessories-and-collaborations/";
+          this.page.identifier = "full-look-at-supreme-s-fw26-accessories-and-collaborations";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

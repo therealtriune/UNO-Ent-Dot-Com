@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">The Drake Dog Leash Photos Take A Wild Twist With Goth Girl</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/09/Drake-9.png" alt="The Drake Dog Leash Photos Take A Wild Twist With Goth Girl">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/09/Drake-9.png" alt="The Drake Dog Leash Photos Take A Wild Twist With Goth Girl" onload="this.style.animation='none'">
   <p class="article-summary">Drake has somehow gone from barking for a goth woman to appearing on a dog leash, and we may need a forensic laboratory before this story is over. 40-year-old Drake is a dog on leash for a Goth girl in new photo. pic.twitter.com/DienjHutK2 — Red Media (@RedMedia_us) August 17, 2026 Photos circulating online appear to show Drake wearing a collar and being led around on all fours by a goth woman that is allegedly 19.</p>
   <a class="outbound-cta" href="https://allhiphop.com/rumors/the-drake-dog-leash-photos-take-a-wild-twist-with-goth-girl/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/the-drake-dog-leash-photos-take-a-wild-twist-with-goth-girl/";
-      this.page.identifier = "the-drake-dog-leash-photos-take-a-wild-twist-with-goth-girl";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/the-drake-dog-leash-photos-take-a-wild-twist-with-goth-girl/";
+          this.page.identifier = "the-drake-dog-leash-photos-take-a-wild-twist-with-goth-girl";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

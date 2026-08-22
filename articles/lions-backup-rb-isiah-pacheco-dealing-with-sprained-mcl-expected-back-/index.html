@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Lions backup RB Isiah Pacheco dealing with sprained MCL, expected back for Week 1</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/5754edef8040b78922e06a75c3dfaad15b24409c5c10c3efa0ee3fc626cb778b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F6905f036-004b-410b-a35c-5477ea0d5432" alt="Lions backup RB Isiah Pacheco dealing with sprained MCL, expected back for Week 1">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/5754edef8040b78922e06a75c3dfaad15b24409c5c10c3efa0ee3fc626cb778b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F6905f036-004b-410b-a35c-5477ea0d5432" alt="Lions backup RB Isiah Pacheco dealing with sprained MCL, expected back for Week 1" onload="this.style.animation='none'">
   <p class="article-summary">Detroit Lions head coach Dan Campbell told reporters Monday morning that backup running back Isiah Pacheco is dealing with an MCL sprain. Pacheco is expected back for Week 1, when the Lions will open their 2026 campaign with a home game against the New Orleans Saints. The 27-year-old RB signed with Detroit on a one-year, $1.81 million deal to back up starting running back Jahmyr Gibbs.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/nfl/article/lions-backup-rb-isiah-pacheco-dealing-with-sprained-mcl-expected-back-for-week-1-142735185.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/lions-backup-rb-isiah-pacheco-dealing-with-sprained-mcl-expected-back-/";
-      this.page.identifier = "lions-backup-rb-isiah-pacheco-dealing-with-sprained-mcl-expected-back-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/lions-backup-rb-isiah-pacheco-dealing-with-sprained-mcl-expected-back-/";
+          this.page.identifier = "lions-backup-rb-isiah-pacheco-dealing-with-sprained-mcl-expected-back-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">The creator economy is giving hip-hop talent more ways to earn</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/dc8a5e235bfa4f6059d5c883a6f5e2d1.jpg" alt="The creator economy is giving hip-hop talent more ways to earn">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/dc8a5e235bfa4f6059d5c883a6f5e2d1.jpg" alt="The creator economy is giving hip-hop talent more ways to earn" onload="this.style.animation='none'">
   <p class="article-summary">The creator economy gives hip-hop talent more ways to earn from music, skills, audience attention, and personal brands. Artists can combine streaming, direct sales, memberships, production work, licensing, brand partnerships, and digital content instead of relying on one paycheck. A strong song can still change a career, but one release no longer has to carry the whole business.</p>
   <a class="outbound-cta" href="https://allhiphop.com/blogs/the-creator-economy-is-giving-hip-hop-talent-more-ways-to-earn/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/the-creator-economy-is-giving-hip-hop-talent-more-ways-to-earn/";
-      this.page.identifier = "the-creator-economy-is-giving-hip-hop-talent-more-ways-to-earn";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/the-creator-economy-is-giving-hip-hop-talent-more-ways-to-earn/";
+          this.page.identifier = "the-creator-economy-is-giving-hip-hop-talent-more-ways-to-earn";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

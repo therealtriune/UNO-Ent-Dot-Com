@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">ScHoolboy Q Announces “10 Years Of Blank Face LP” Tour: How To Buy Tickets</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/schoolboy-q-tour-scaled.jpg" alt="ScHoolboy Q Announces “10 Years Of Blank Face LP” Tour: How To Buy Tickets">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/schoolboy-q-tour-scaled.jpg" alt="ScHoolboy Q Announces “10 Years Of Blank Face LP” Tour: How To Buy Tickets" onload="this.style.animation='none'">
   <p class="article-summary">ScHoolboy Q has been in the game for a while now, and there is no doubt that he has some incredible albums in his discography. Some are heralded as classics, while others are considered among the best released in that given year. One of his albums that seems to be subject to debate is the Blank Face LP.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004548-schoolboy-q-tour-how-to-cop-tickets" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/schoolboy-q-announces-10-years-of-blank-face-lp-tour-how-to-buy-ticket/";
-      this.page.identifier = "schoolboy-q-announces-10-years-of-blank-face-lp-tour-how-to-buy-ticket";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/schoolboy-q-announces-10-years-of-blank-face-lp-tour-how-to-buy-ticket/";
+          this.page.identifier = "schoolboy-q-announces-10-years-of-blank-face-lp-tour-how-to-buy-ticket";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

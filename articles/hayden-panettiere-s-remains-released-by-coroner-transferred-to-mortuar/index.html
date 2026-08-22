@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Hayden Panettiere&#x27;s Remains Released by Coroner, Transferred to Mortuary</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/e6/16by9/2026/08/19/e659c5b0f51f4b8cb09cc7c987a3c2c2_xl.jpg" alt="Hayden Panettiere&#x27;s Remains Released by Coroner, Transferred to Mortuary">
+  <img class="article-hero" src="https://imagez.tmz.com/image/e6/16by9/2026/08/19/e659c5b0f51f4b8cb09cc7c987a3c2c2_xl.jpg" alt="Hayden Panettiere&#x27;s Remains Released by Coroner, Transferred to Mortuary" onload="this.style.animation='none'">
   <p class="article-summary">Hayden Panettiere&#x27;s remains have been released from a South Carolina coroner&#x27;s office -- and are now in the hands of her family, TMZ has learned. A rep for the Greenville Coroner&#x27;s Office tells TMZ...the actress&#x27; body was transferred Tuesday…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/19/hayden-panettiere-remains-transferred-to-mortuary/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/hayden-panettiere-s-remains-released-by-coroner-transferred-to-mortuar/";
-      this.page.identifier = "hayden-panettiere-s-remains-released-by-coroner-transferred-to-mortuar";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/hayden-panettiere-s-remains-released-by-coroner-transferred-to-mortuar/";
+          this.page.identifier = "hayden-panettiere-s-remains-released-by-coroner-transferred-to-mortuar";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

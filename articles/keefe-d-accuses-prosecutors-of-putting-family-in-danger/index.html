@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">20 hours ago</div>
   <h1 class="article-title">Keefe D Accuses Prosecutors Of Putting Family In Danger</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/tupac1-2-scaled-e1787352989530.jpg" alt="Keefe D Accuses Prosecutors Of Putting Family In Danger">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/tupac1-2-scaled-e1787352989530.jpg" alt="Keefe D Accuses Prosecutors Of Putting Family In Danger" onload="this.style.animation='none'">
   <p class="article-summary">A dispute over personal information spilled into open court during the Tupac Shakur murder trial when Duane “Keefe D” Davis accused prosecutors of repeatedly making his family’s addresses public. Speaking directly to the judge, Davis said the exposure has already had consequences at home and argued that his relatives are being put in danger while he remains on trial. “They keep giving out my address.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006769-tupac-trial-keefe-d-home-vandalized" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/keefe-d-accuses-prosecutors-of-putting-family-in-danger/";
-      this.page.identifier = "keefe-d-accuses-prosecutors-of-putting-family-in-danger";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/keefe-d-accuses-prosecutors-of-putting-family-in-danger/";
+          this.page.identifier = "keefe-d-accuses-prosecutors-of-putting-family-in-danger";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Cheating Husband Charged with Murdering Wife, Allegedly Tried Covering Up As Suicide</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/e1/16by9/2026/08/20/e1f577c80760490cb8e332d07a4a6bd1_xl.jpg" alt="Cheating Husband Charged with Murdering Wife, Allegedly Tried Covering Up As Suicide">
+  <img class="article-hero" src="https://imagez.tmz.com/image/e1/16by9/2026/08/20/e1f577c80760490cb8e332d07a4a6bd1_xl.jpg" alt="Cheating Husband Charged with Murdering Wife, Allegedly Tried Covering Up As Suicide" onload="this.style.animation='none'">
   <p class="article-summary">A Colorado man has been charged with murdering his wife after claiming she died by suicide when she was found dead in their bathroom. Patrick Theodore Barnett was arrested by the Lakewood Police Department in Colorado days after his wife, Lindsey…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/20/colorado-husband-charged-with-murdering-wife-claiming-suicide/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/cheating-husband-charged-with-murdering-wife-allegedly-tried-covering-/";
-      this.page.identifier = "cheating-husband-charged-with-murdering-wife-allegedly-tried-covering-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/cheating-husband-charged-with-murdering-wife-allegedly-tried-covering-/";
+          this.page.identifier = "cheating-husband-charged-with-murdering-wife-allegedly-tried-covering-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 days ago</div>
   <h1 class="article-title">“Souled Out” Celebrates Action Figure 973’s Birthday Recapping His Trips to London &amp; Paris (EP Review)</h1>
-  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5870-e1787013691160.jpeg" alt="“Souled Out” Celebrates Action Figure 973’s Birthday Recapping His Trips to London &amp; Paris (EP Review)">
+  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5870-e1787013691160.jpeg" alt="“Souled Out” Celebrates Action Figure 973’s Birthday Recapping His Trips to London &amp; Paris (EP Review)" onload="this.style.animation='none'">
   <p class="article-summary">Belleville, New Jersey emcee/producer Action Figure 973 celebrating his born day with his 14th expedited play. For a while at this point, his first couple mixtapes followed by his last 13 EPs &amp; the full-length debut DOOM Was Right over a year ago giving flowers to one of my all-time personal favorite albums Madvillainy have each established himself as a promisingly skilled luchador who so happens to rap. The Most Interesting Man in the World got with Machacha for his sophomore effort last October, coming off What Would Harley Race Do?</p>
   <a class="outbound-cta" href="https://undergroundhiphopblog.com/albums/souled-out-celebrates-action-figure-973s-birthday-recapping-his-trips-to-london-and-paris-ep-review/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Underground Hip Hop Blog &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/souled-out-celebrates-action-figure-973-s-birthday-recapping-his-trips/";
-      this.page.identifier = "souled-out-celebrates-action-figure-973-s-birthday-recapping-his-trips";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/souled-out-celebrates-action-figure-973-s-birthday-recapping-his-trips/";
+          this.page.identifier = "souled-out-celebrates-action-figure-973-s-birthday-recapping-his-trips";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

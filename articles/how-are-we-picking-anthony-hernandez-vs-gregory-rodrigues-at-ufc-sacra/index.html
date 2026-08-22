@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">7 hours ago</div>
   <h1 class="article-title">How are we picking Anthony Hernandez vs. Gregory Rodrigues at UFC Sacramento?</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/2e265d195f3e99f1824f932149271d215a471885e0c9c6ab00e11c2937eaa10b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2F8f56a49695fb70269e34d5fc581201c5.jpg" alt="How are we picking Anthony Hernandez vs. Gregory Rodrigues at UFC Sacramento?">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/2e265d195f3e99f1824f932149271d215a471885e0c9c6ab00e11c2937eaa10b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2F8f56a49695fb70269e34d5fc581201c5.jpg" alt="How are we picking Anthony Hernandez vs. Gregory Rodrigues at UFC Sacramento?" onload="this.style.animation='none'">
   <p class="article-summary">The UFC is in California’s capital city for the first time in more than seven years, and a pair of middleweight contenders top the card. UFC Fight Night 285 (Paramount+) takes place Saturday at Golden1 Center in Sacramento. Get pick results from our 11 editors, writers, radio hosts and videographers, as well as additional analysis, below.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/picking-anthony-hernandez-vs-gregory-130138602.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/how-are-we-picking-anthony-hernandez-vs-gregory-rodrigues-at-ufc-sacra/";
-      this.page.identifier = "how-are-we-picking-anthony-hernandez-vs-gregory-rodrigues-at-ufc-sacra";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/how-are-we-picking-anthony-hernandez-vs-gregory-rodrigues-at-ufc-sacra/";
+          this.page.identifier = "how-are-we-picking-anthony-hernandez-vs-gregory-rodrigues-at-ufc-sacra";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

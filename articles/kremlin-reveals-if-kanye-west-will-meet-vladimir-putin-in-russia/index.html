@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">23 hours ago</div>
   <h1 class="article-title">Kremlin Reveals If Kanye West Will Meet Vladimir Putin In Russia</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Kremlin-Kanye-West-Meet-Vladimir-Putin-Russia.jpg" alt="Kremlin Reveals If Kanye West Will Meet Vladimir Putin In Russia">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Kremlin-Kanye-West-Meet-Vladimir-Putin-Russia.jpg" alt="Kremlin Reveals If Kanye West Will Meet Vladimir Putin In Russia" onload="this.style.animation='none'">
   <p class="article-summary">Kanye West has tried before to perform in Russia, and to meet with the nation’s president Vladimir Putin. For his concerts in the country later this year, it seems like he might have a chance to sit down with the politician. But according to the Kremlin, the seat of Russian government, they have no plans to talk to Ye.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006739-kremlin-kanye-west-meet-vladimir-putin-russia" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/kremlin-reveals-if-kanye-west-will-meet-vladimir-putin-in-russia/";
-      this.page.identifier = "kremlin-reveals-if-kanye-west-will-meet-vladimir-putin-in-russia";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/kremlin-reveals-if-kanye-west-will-meet-vladimir-putin-in-russia/";
+          this.page.identifier = "kremlin-reveals-if-kanye-west-will-meet-vladimir-putin-in-russia";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

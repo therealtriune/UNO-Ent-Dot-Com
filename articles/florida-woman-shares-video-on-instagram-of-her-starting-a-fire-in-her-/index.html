@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Florida Woman Shares Video On Instagram Of Her Starting A Fire In Her Kitchen And Pouring Hot Wax On Her Children</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/IMG_9244.jpeg" alt="Florida Woman Shares Video On Instagram Of Her Starting A Fire In Her Kitchen And Pouring Hot Wax On Her Children">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/IMG_9244.jpeg" alt="Florida Woman Shares Video On Instagram Of Her Starting A Fire In Her Kitchen And Pouring Hot Wax On Her Children" onload="this.style.animation='none'">
   <p class="article-summary">A Miami-Dade mother is behind bars after a disturbing sequence of events that left authorities stunned. 26-year-old Meliza Campos-Sanchez is facing serious charges, including child abuse, child neglect, and arson, following a terrifying incident at her home. According to arrest reports, the Miami-Dade Sheriff’s Office responded to a call on Sunday regarding an intentional fire set in the kitchen of a residence on the 4200 block of Southwest 95th Avenue.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/florida-woman-shares-video-on-instagram-of-her-starting-a-fire-in-her-kitchen-and-pouring-hot-wax-on-her-children/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/florida-woman-shares-video-on-instagram-of-her-starting-a-fire-in-her-/";
-      this.page.identifier = "florida-woman-shares-video-on-instagram-of-her-starting-a-fire-in-her-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/florida-woman-shares-video-on-instagram-of-her-starting-a-fire-in-her-/";
+          this.page.identifier = "florida-woman-shares-video-on-instagram-of-her-starting-a-fire-in-her-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Keefe D Denied Request To Post Bail Ahead Of Tupac Trial</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2017-05-09T233105Z_2108659121_MT1USATODAY10049241_RTRMADP_3_JUL-23-1993-USA-TUPAC-SHAKUR-FROM-THE-FILM-POETIC-1-scaled.jpg" alt="Keefe D Denied Request To Post Bail Ahead Of Tupac Trial">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2017-05-09T233105Z_2108659121_MT1USATODAY10049241_RTRMADP_3_JUL-23-1993-USA-TUPAC-SHAKUR-FROM-THE-FILM-POETIC-1-scaled.jpg" alt="Keefe D Denied Request To Post Bail Ahead Of Tupac Trial" onload="this.style.animation='none'">
   <p class="article-summary">We’re inching closer and closer to Keefe D’s trial surrounding the murder of Tupac Shakur. However, it looks like it will be an uphill battle for him. Over the past few weeks, we’ve received new updates on the case, including the court’s decision to allow his 2008 police interview to be presented as evidence.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004655-keefe-d-bail-request-tupac-trial" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/keefe-d-denied-request-to-post-bail-ahead-of-tupac-trial/";
-      this.page.identifier = "keefe-d-denied-request-to-post-bail-ahead-of-tupac-trial";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/keefe-d-denied-request-to-post-bail-ahead-of-tupac-trial/";
+          this.page.identifier = "keefe-d-denied-request-to-post-bail-ahead-of-tupac-trial";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

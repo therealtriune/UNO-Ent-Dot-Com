@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">NBA Christmas Games Highlighted by LeBron’s Return to Los Angeles</h1>
-  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/HPcGwlmXQAAMq9w.jpeg" alt="NBA Christmas Games Highlighted by LeBron’s Return to Los Angeles">
+  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/HPcGwlmXQAAMq9w.jpeg" alt="NBA Christmas Games Highlighted by LeBron’s Return to Los Angeles" onload="this.style.animation='none'">
   <p class="article-summary">The NBA will feature five games on Christmas Day for the 19th consecutive year, with ABC and ESPN televising every matchup on Friday, Dec. 25. The schedule includes the first… The post NBA Christmas Games Highlighted by LeBron’s Return to Los Angeles appeared first on.</p>
   <a class="outbound-cta" href="https://thesource.com/2026/08/12/2026-nba-christmas-day-schedule/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=2026-nba-christmas-day-schedule" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Source &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/nba-christmas-games-highlighted-by-lebron-s-return-to-los-angeles/";
-      this.page.identifier = "nba-christmas-games-highlighted-by-lebron-s-return-to-los-angeles";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/nba-christmas-games-highlighted-by-lebron-s-return-to-los-angeles/";
+          this.page.identifier = "nba-christmas-games-highlighted-by-lebron-s-return-to-los-angeles";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

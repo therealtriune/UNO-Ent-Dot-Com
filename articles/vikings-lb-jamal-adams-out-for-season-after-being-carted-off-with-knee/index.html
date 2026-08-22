@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">5 days ago</div>
   <h1 class="article-title">Vikings LB Jamal Adams out for season after being carted off with knee injury in preseason opener</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/bfb0dcdc3b22fd0a9f1cdec1a2769fbfddddb7e92a63c887e4c65b08ca1bc2ae/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F13f1bb68-524f-4795-99b3-83470c51c171" alt="Vikings LB Jamal Adams out for season after being carted off with knee injury in preseason opener">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/bfb0dcdc3b22fd0a9f1cdec1a2769fbfddddb7e92a63c887e4c65b08ca1bc2ae/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F13f1bb68-524f-4795-99b3-83470c51c171" alt="Vikings LB Jamal Adams out for season after being carted off with knee injury in preseason opener" onload="this.style.animation='none'">
   <p class="article-summary">Jamal Adams&#x27; season is over. The Minnesota Vikings linebacker, who was carted off in their preseason opener on Saturday, sustained a season-ending knee injury, according to the NFL Network&#x27;s Ian Rapoport. Specifics of the knee injury are not yet known, though Adams won&#x27;t be back on the field now until 2027.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/nfl/breaking-news/article/vikings-lb-jamal-adams-out-for-season-after-being-carted-off-with-knee-injury-in-preseason-opener-232245548.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/vikings-lb-jamal-adams-out-for-season-after-being-carted-off-with-knee/";
-      this.page.identifier = "vikings-lb-jamal-adams-out-for-season-after-being-carted-off-with-knee";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/vikings-lb-jamal-adams-out-for-season-after-being-carted-off-with-knee/";
+          this.page.identifier = "vikings-lb-jamal-adams-out-for-season-after-being-carted-off-with-knee";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

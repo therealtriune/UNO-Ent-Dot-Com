@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">6 days ago</div>
   <h1 class="article-title">Jeremiah Wells: UFC 330 curtain jerker mega-upset like a movie</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/781568d0aac68ca1044b9cef3d478cfd293ab96b8951b339edc415032ddd4212/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2F445c00a25974fc8e60207df057430006.jpg" alt="Jeremiah Wells: UFC 330 curtain jerker mega-upset like a movie">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/781568d0aac68ca1044b9cef3d478cfd293ab96b8951b339edc415032ddd4212/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2F445c00a25974fc8e60207df057430006.jpg" alt="Jeremiah Wells: UFC 330 curtain jerker mega-upset like a movie" onload="this.style.animation='none'">
   <p class="article-summary">PHILADELPHIA – Jeremiah Wells met the media Saturday after his win over Myktybek Orolbai at UFC 330. Wells (14-4-1 MMA, 6-2 UFC) pulled off an all-time upset when he choked Orolbai (16-3-1 MMA, 5-2 UFC) out cold with a third-round guillotine to open the prelims at Xfinity Mobile Arena in Philadelphia. Orolbai was a -1400 betting favorite in the fight and was up two rounds on the scorecards when Wells caught him with a right hand that stunned him.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/jeremiah-wells-ufc-330-curtain-175132527.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/jeremiah-wells-ufc-330-curtain-jerker-mega-upset-like-a-movie/";
-      this.page.identifier = "jeremiah-wells-ufc-330-curtain-jerker-mega-upset-like-a-movie";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/jeremiah-wells-ufc-330-curtain-jerker-mega-upset-like-a-movie/";
+          this.page.identifier = "jeremiah-wells-ufc-330-curtain-jerker-mega-upset-like-a-movie";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

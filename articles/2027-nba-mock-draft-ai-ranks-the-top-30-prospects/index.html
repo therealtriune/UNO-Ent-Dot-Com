@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">2027 NBA mock draft: AI ranks the top 30 prospects</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/e5c071ad22d6bd4bd318702bd7173172abbf3f46c739b1a768e635907d6331ec/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F477022bec67279d2ad7aca2d774cfef8.jpg" alt="2027 NBA mock draft: AI ranks the top 30 prospects">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/e5c071ad22d6bd4bd318702bd7173172abbf3f46c739b1a768e635907d6331ec/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F477022bec67279d2ad7aca2d774cfef8.jpg" alt="2027 NBA mock draft: AI ranks the top 30 prospects" onload="this.style.animation='none'">
   <p class="article-summary">If the early expert predictions are accurate, the 2027 NBA Draft doesn&#x27;t have an obvious No. 1 pick like Cooper Flagg in 2025 or a rare collection of players who project as future All-Stars near the top of the class like the 2026 draft. There is, however, an emerging consensus forming that Kansas freshman Tyran Stokes is the player most likely to open the season atop draft boards.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/2027-nba-mock-draft-ai-100628298.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NBA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/2027-nba-mock-draft-ai-ranks-the-top-30-prospects/";
-      this.page.identifier = "2027-nba-mock-draft-ai-ranks-the-top-30-prospects";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/2027-nba-mock-draft-ai-ranks-the-top-30-prospects/";
+          this.page.identifier = "2027-nba-mock-draft-ai-ranks-the-top-30-prospects";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

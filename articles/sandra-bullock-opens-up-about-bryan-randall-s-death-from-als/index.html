@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Sandra Bullock Opens Up About Bryan Randall&#x27;s Death From ALS</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/61/16by9/2026/08/19/61ce36c64c3e4e50bc6b8d6d18a86c43_xl.png" alt="Sandra Bullock Opens Up About Bryan Randall&#x27;s Death From ALS">
+  <img class="article-hero" src="https://imagez.tmz.com/image/61/16by9/2026/08/19/61ce36c64c3e4e50bc6b8d6d18a86c43_xl.png" alt="Sandra Bullock Opens Up About Bryan Randall&#x27;s Death From ALS" onload="this.style.animation='none'">
   <p class="article-summary">Sandra Bullock is finally opening up about her partner Bryan Randall&#x27;s death...explaining why she kept the details of his ALS diagnosis to herself. The actress appeared on the &quot;SmartLess&quot; podcast this week...telling Jason Bateman, Sean Hayes,…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/19/sandra-bullock-talks-about-bryan-randall-death/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/sandra-bullock-opens-up-about-bryan-randall-s-death-from-als/";
-      this.page.identifier = "sandra-bullock-opens-up-about-bryan-randall-s-death-from-als";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/sandra-bullock-opens-up-about-bryan-randall-s-death-from-als/";
+          this.page.identifier = "sandra-bullock-opens-up-about-bryan-randall-s-death-from-als";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">6 days ago</div>
   <h1 class="article-title">Dana White on Potential UFC Return for Khabib Nurmagomedov</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/627b42ebe08883ad2ee9d6e750596c31ed454a7c11c5fdd0d822fe5545a1fd81/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fheavy_214%2Fc98b2905ed034b93740bf230588d2904.jpg" alt="Dana White on Potential UFC Return for Khabib Nurmagomedov">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/627b42ebe08883ad2ee9d6e750596c31ed454a7c11c5fdd0d822fe5545a1fd81/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fheavy_214%2Fc98b2905ed034b93740bf230588d2904.jpg" alt="Dana White on Potential UFC Return for Khabib Nurmagomedov" onload="this.style.animation='none'">
   <p class="article-summary">Khabib Nurmagomedov UFC Getty UFC president Dana White commented on a potential return to the UFC for Hall of Famer Khabib Nurmagomedov. The former UFC lightweight champion retired in 2021 following an amazing career that saw him go 29-0 in MMA and 13-0 in the UFC. Despite being undefeated, he retired from the game in the prime of his career as he made a promise to his family that he would walk away with his health intact.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/dana-white-potential-ufc-return-085253901.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/dana-white-on-potential-ufc-return-for-khabib-nurmagomedov/";
-      this.page.identifier = "dana-white-on-potential-ufc-return-for-khabib-nurmagomedov";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/dana-white-on-potential-ufc-return-for-khabib-nurmagomedov/";
+          this.page.identifier = "dana-white-on-potential-ufc-return-for-khabib-nurmagomedov";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

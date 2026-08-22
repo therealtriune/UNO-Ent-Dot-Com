@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Social Media Sounds OFF After Claressa Shields Trains Big Lex Ahead Of Her Boxing Match Against Tesehki (VIDEO)</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/07/IMG_2531-e1785555508602.jpg" alt="Social Media Sounds OFF After Claressa Shields Trains Big Lex Ahead Of Her Boxing Match Against Tesehki (VIDEO)">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/07/IMG_2531-e1785555508602.jpg" alt="Social Media Sounds OFF After Claressa Shields Trains Big Lex Ahead Of Her Boxing Match Against Tesehki (VIDEO)" onload="this.style.animation='none'">
   <p class="article-summary">Claressa Shields is throwing her support behind ‘Baddies’ star Big Lex ahead of her highly anticipated boxing match against fellow cast member Tesehki. After the undisputed boxing champion shared footage of the pair training together, fans quickly flooded social media with reactions, debating whether Shields’ coaching will be enough to help Big Lex compete with Tesehki. Related: Not The One!</p>
   <a class="outbound-cta" href="https://theshaderoom.com/social-media-sounds-off-claressa-shields-trains-big-lexboxing-match-tesehki-video/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/social-media-sounds-off-after-claressa-shields-trains-big-lex-ahead-of/";
-      this.page.identifier = "social-media-sounds-off-after-claressa-shields-trains-big-lex-ahead-of";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/social-media-sounds-off-after-claressa-shields-trains-big-lex-ahead-of/";
+          this.page.identifier = "social-media-sounds-off-after-claressa-shields-trains-big-lex-ahead-of";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

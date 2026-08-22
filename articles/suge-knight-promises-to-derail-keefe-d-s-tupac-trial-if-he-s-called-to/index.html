@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Suge Knight Promises To Derail Keefe D’s Tupac Trial If He’s Called To Testify</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/05/Suge-Knight.png" alt="Suge Knight Promises To Derail Keefe D’s Tupac Trial If He’s Called To Testify">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/05/Suge-Knight.png" alt="Suge Knight Promises To Derail Keefe D’s Tupac Trial If He’s Called To Testify" onload="this.style.animation='none'">
   <p class="article-summary">Suge Knight is the only living eyewitness to Hip-Hop’s most infamous murder, yet he’s made it crystal clear he won’t help prosecutors put Duane “Keefe D” Davis away for Tupac’s death. The Death Row Records founder sat down with ABC News this week and doubled down on his refusal to testify, drawing a hard line between loyalty to his fallen brother and cooperation with the legal system. “This trial has nothing to do with me,” he told ABC News, adding that if prosecutors force him to the stand, “it don’t look good for them.” His reasoning cuts deeper than street code.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/suge-knight-promises-to-derail-keefe-ds-tupac-trial-if-hes-called-to-testify/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/suge-knight-promises-to-derail-keefe-d-s-tupac-trial-if-he-s-called-to/";
-      this.page.identifier = "suge-knight-promises-to-derail-keefe-d-s-tupac-trial-if-he-s-called-to";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/suge-knight-promises-to-derail-keefe-d-s-tupac-trial-if-he-s-called-to/";
+          this.page.identifier = "suge-knight-promises-to-derail-keefe-d-s-tupac-trial-if-he-s-called-to";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

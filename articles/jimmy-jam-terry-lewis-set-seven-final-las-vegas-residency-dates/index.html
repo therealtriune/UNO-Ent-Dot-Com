@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Jimmy Jam &amp; Terry Lewis Set Seven Final Las Vegas Residency Dates</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2023/11/20231115_143520_0000.png" alt="Jimmy Jam &amp; Terry Lewis Set Seven Final Las Vegas Residency Dates">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2023/11/20231115_143520_0000.png" alt="Jimmy Jam &amp; Terry Lewis Set Seven Final Las Vegas Residency Dates" onload="this.style.animation='none'">
   <p class="article-summary">Jimmy Jam &amp; Terry Lewis are bringing their catalog back to Las Vegas for seven final shows, closing their first residency with serious R&amp;B firepower. According to The Venetian’s listing, “Nothing But Hits” returns to Voltaire on September 23, 25, 26 and 30, followed by October 1, 2 and 3. “Bringing ‘Nothing But Hits’ back to the stage to finish our first Vegas residency is such an exciting opportunity and we look forward to creating even more memories from songs that shaped generations of music fans,” Jimmy Jam said.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/jimmy-jam-terry-lewis-set-seven-final-las-vegas-residency-dates/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/jimmy-jam-terry-lewis-set-seven-final-las-vegas-residency-dates/";
-      this.page.identifier = "jimmy-jam-terry-lewis-set-seven-final-las-vegas-residency-dates";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/jimmy-jam-terry-lewis-set-seven-final-las-vegas-residency-dates/";
+          this.page.identifier = "jimmy-jam-terry-lewis-set-seven-final-las-vegas-residency-dates";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">With Lakers latest sale, is it finally time for the franchise to clean house?</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/81ff57b83092372afb9de3ec17d58afe27da7c3d3e5c3e36fb7d1662266e3247/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2022-04%2F0d4860d0-ba2b-11ec-bfcf-945998d7dbc9" alt="With Lakers latest sale, is it finally time for the franchise to clean house?">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/81ff57b83092372afb9de3ec17d58afe27da7c3d3e5c3e36fb7d1662266e3247/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2022-04%2F0d4860d0-ba2b-11ec-bfcf-945998d7dbc9" alt="With Lakers latest sale, is it finally time for the franchise to clean house?" onload="this.style.animation='none'">
   <p class="article-summary">When the NBA officially approved the $10 billion sale of the Lakers to a group led by Los Angeles Dodgers owner Mark Walter in October 2025, it was supposed to signal an end to the mom-and-pop shop era of a franchise once owned by the Buss family. We figured the purchase would send an influx of financial resources into scouting and analyses that could better help the Lakers compete on par with their status as one of the league&#x27;s premier franchises. After all, the Lakers have, with the exception of one championship, largely been poorly run since the 2013 death of Dr.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/nba/article/with-lakers-latest-sale-is-it-finally-time-for-the-franchise-to-clean-house-183030332.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NBA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/with-lakers-latest-sale-is-it-finally-time-for-the-franchise-to-clean-/";
-      this.page.identifier = "with-lakers-latest-sale-is-it-finally-time-for-the-franchise-to-clean-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/with-lakers-latest-sale-is-it-finally-time-for-the-franchise-to-clean-/";
+          this.page.identifier = "with-lakers-latest-sale-is-it-finally-time-for-the-franchise-to-clean-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

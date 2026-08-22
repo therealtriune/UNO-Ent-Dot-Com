@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Cardi B Wants The “Hoes” Outside, Regardless Of Their History With Her Exes</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/cardi-scaled-e1785881126618.jpg" alt="Cardi B Wants The “Hoes” Outside, Regardless Of Their History With Her Exes">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/cardi-scaled-e1785881126618.jpg" alt="Cardi B Wants The “Hoes” Outside, Regardless Of Their History With Her Exes" onload="this.style.animation='none'">
   <p class="article-summary">A packed guest list matters more to Cardi B than vetting every woman’s romantic résumé. During a livestream, the Bronx rapper floated the idea of hosting what she described as a party “for the hoes,” making it clear that she wanted women who came prepared to keep the energy high rather than stand around watching everyone else have fun. Moreover, Cardi was so committed to the atmosphere that even a complicated connection to her personal life would not automatically cost someone an invitation.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004664-cardi-b-party-hoes-stefon-diggs-offset" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/cardi-b-wants-the-hoes-outside-regardless-of-their-history-with-her-ex/";
-      this.page.identifier = "cardi-b-wants-the-hoes-outside-regardless-of-their-history-with-her-ex";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/cardi-b-wants-the-hoes-outside-regardless-of-their-history-with-her-ex/";
+          this.page.identifier = "cardi-b-wants-the-hoes-outside-regardless-of-their-history-with-her-ex";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

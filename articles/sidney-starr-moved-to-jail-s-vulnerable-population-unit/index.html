@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Sidney Starr Moved To Jail’s Vulnerable-Population Unit</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/sidney-starr1-scaled.jpg" alt="Sidney Starr Moved To Jail’s Vulnerable-Population Unit">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/sidney-starr1-scaled.jpg" alt="Sidney Starr Moved To Jail’s Vulnerable-Population Unit" onload="this.style.animation='none'">
   <p class="article-summary">Safety concerns, not the allegations against her, determined where Sidney Starr is being held inside the Fulton County Jail. The Love &amp; Hip Hop: New York alum has reportedly been placed in a vulnerable-population dormitory designated for LGBTQ detainees after identifying herself as a transgender woman during the jail’s intake process. A representative for the Fulton County Sheriff’s Office told TMZ that Starr’s housing assignment was unrelated to the sexual-offense charges that led to her arrest.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004667-sidney-starr-vulnerable-jail" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/sidney-starr-moved-to-jail-s-vulnerable-population-unit/";
-      this.page.identifier = "sidney-starr-moved-to-jail-s-vulnerable-population-unit";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/sidney-starr-moved-to-jail-s-vulnerable-population-unit/";
+          this.page.identifier = "sidney-starr-moved-to-jail-s-vulnerable-population-unit";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

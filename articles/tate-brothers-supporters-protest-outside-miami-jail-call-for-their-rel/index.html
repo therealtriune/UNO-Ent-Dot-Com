@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Tate Brothers&#x27; Supporters Protest Outside Miami Jail, Call for Their Release</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/52/16by9/2026/08/13/52d8d4627e8840ce901535ec2a36aa87_xl.jpg" alt="Tate Brothers&#x27; Supporters Protest Outside Miami Jail, Call for Their Release">
+  <img class="article-hero" src="https://imagez.tmz.com/image/52/16by9/2026/08/13/52d8d4627e8840ce901535ec2a36aa87_xl.jpg" alt="Tate Brothers&#x27; Supporters Protest Outside Miami Jail, Call for Their Release" onload="this.style.animation='none'">
   <p class="article-summary">Andrew and Tristan Tate have a group of supporters fighting in their corner...with protesters taking to the streets Thursday outside the Miami jail where the brothers are being held and demanding their release. A crowd gathered outside Federal…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/13/andrew-tristan-tate-supporters-protest-outside-jail/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/tate-brothers-supporters-protest-outside-miami-jail-call-for-their-rel/";
-      this.page.identifier = "tate-brothers-supporters-protest-outside-miami-jail-call-for-their-rel";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/tate-brothers-supporters-protest-outside-miami-jail-call-for-their-rel/";
+          this.page.identifier = "tate-brothers-supporters-protest-outside-miami-jail-call-for-their-rel";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

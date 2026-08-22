@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Cowboys countdown to kickoff: Top 100 iconic games – Day 29</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/0242b808d7392ad0071b5f27360f0b28ef513ff2c24cbd4a56d4584c186b9821/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F0c4bb4ad190241c9f4d1d403dd32c769.jpg" alt="Cowboys countdown to kickoff: Top 100 iconic games – Day 29">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/0242b808d7392ad0071b5f27360f0b28ef513ff2c24cbd4a56d4584c186b9821/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F0c4bb4ad190241c9f4d1d403dd32c769.jpg" alt="Cowboys countdown to kickoff: Top 100 iconic games – Day 29" onload="this.style.animation='none'">
   <p class="article-summary">ORCHARD PARK, NY - OCTOBER 8: Nick Folk #6 of the Dallas Cowboys celebrates his game winning field goal with seconds left as Jabari Greer #33 of the Buffalo Bills watches at Ralph Wilson Stadium October 8, 2007 in Orchard Park, New York. Dallas won 25-24. (Photo by Rick Stewart/Getty Images) | Getty Images It is Day 29 of our 100-day countdown to kickoff.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/cowboys-countdown-kickoff-top-100-190000424.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/cowboys-countdown-to-kickoff-top-100-iconic-games-day-29/";
-      this.page.identifier = "cowboys-countdown-to-kickoff-top-100-iconic-games-day-29";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/cowboys-countdown-to-kickoff-top-100-iconic-games-day-29/";
+          this.page.identifier = "cowboys-countdown-to-kickoff-top-100-iconic-games-day-29";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Darryl Strawberry Says Nick Kyrgios Needs Support, Not Punishment After Coke Suspension</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/92/16by9/2026/08/19/9250e6807f5b411c986045a19fa39518_xl.jpg" alt="Darryl Strawberry Says Nick Kyrgios Needs Support, Not Punishment After Coke Suspension">
+  <img class="article-hero" src="https://imagez.tmz.com/image/92/16by9/2026/08/19/9250e6807f5b411c986045a19fa39518_xl.jpg" alt="Darryl Strawberry Says Nick Kyrgios Needs Support, Not Punishment After Coke Suspension" onload="this.style.animation='none'">
   <p class="article-summary">Darryl Strawberry has a message for anyone writing Nick Kyrgios off after the tennis star’s positive cocaine test...ease up! The former MLB slugger -- who famously battled drug abuse during his own playing days -- is now a pastor helping others…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/21/darryl-strawberry-says-nick-kyrgios-needs-help-after-cocaine-suspension/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/darryl-strawberry-says-nick-kyrgios-needs-support-not-punishment-after/";
-      this.page.identifier = "darryl-strawberry-says-nick-kyrgios-needs-support-not-punishment-after";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/darryl-strawberry-says-nick-kyrgios-needs-support-not-punishment-after/";
+          this.page.identifier = "darryl-strawberry-says-nick-kyrgios-needs-support-not-punishment-after";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

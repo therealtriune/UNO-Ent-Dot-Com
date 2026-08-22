@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">California Woman Who Disappeared in July Involved Foul Play, Police Believe</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/e0/16by9/2026/08/19/e00f4128f7e942ce885c7d449133ec8a_xl.jpg" alt="California Woman Who Disappeared in July Involved Foul Play, Police Believe">
+  <img class="article-hero" src="https://imagez.tmz.com/image/e0/16by9/2026/08/19/e00f4128f7e942ce885c7d449133ec8a_xl.jpg" alt="California Woman Who Disappeared in July Involved Foul Play, Police Believe" onload="this.style.animation='none'">
   <p class="article-summary">A California woman&#x27;s disappearance after leaving work last month may have involved foul play, police announced Tuesday. The Fairfield Police Department said in a news release that Chantel Brooks&#x27; vanishing potentially involved &quot;foul play&quot; -- but…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/19/chantel-brooks-disappearance-may-have-involved-foul-play/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/california-woman-who-disappeared-in-july-involved-foul-play-police-bel/";
-      this.page.identifier = "california-woman-who-disappeared-in-july-involved-foul-play-police-bel";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/california-woman-who-disappeared-in-july-involved-foul-play-police-bel/";
+          this.page.identifier = "california-woman-who-disappeared-in-july-involved-foul-play-police-bel";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

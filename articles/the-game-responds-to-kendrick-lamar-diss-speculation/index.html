@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">The Game Responds To Kendrick Lamar Diss Speculation</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/The-Game-Responds-Kendrick-Lamar-Diss-Speculation-scaled.jpg" alt="The Game Responds To Kendrick Lamar Diss Speculation">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/The-Game-Responds-Kendrick-Lamar-Diss-Speculation-scaled.jpg" alt="The Game Responds To Kendrick Lamar Diss Speculation" onload="this.style.animation='none'">
   <p class="article-summary">The Game just dropped his new album The Documentary 3, which is causing a lot of debate on the timeline for various reasons. Chief among them is Kendrick Lamar diss speculation, as a few moments on the tracklist indicate there could be escalating tensions between the Compton MCs. Specifically, there are various lyrical references to the Drake battle, a feature from Drizzy, and a few bars which some fans believe could be at K.Dot’s expense.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006687-the-game-responds-kendrick-lamar-diss-speculation" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/the-game-responds-to-kendrick-lamar-diss-speculation/";
-      this.page.identifier = "the-game-responds-to-kendrick-lamar-diss-speculation";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/the-game-responds-to-kendrick-lamar-diss-speculation/";
+          this.page.identifier = "the-game-responds-to-kendrick-lamar-diss-speculation";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

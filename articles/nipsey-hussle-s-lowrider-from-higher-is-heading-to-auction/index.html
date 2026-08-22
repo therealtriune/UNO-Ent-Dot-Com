@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Nipsey Hussle’s Lowrider From “Higher” Is Heading To Auction</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-1080925116-scaled.jpg" alt="Nipsey Hussle’s Lowrider From “Higher” Is Heading To Auction">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-1080925116-scaled.jpg" alt="Nipsey Hussle’s Lowrider From “Higher” Is Heading To Auction" onload="this.style.animation='none'">
   <p class="article-summary">A custom 1959 Chevrolet Impala tied to Nipsey Hussle is heading to auction this week, with bidding expected to reach well into six figures. The Baby Blue lowrider also carries a presale estimate between $175,000 and $225,000. The car appeared alongside Nipsey and John Legend in DJ Khaled ’s 2019 video for “Higher.” The footage was shot just before Nipsey was killed outside his Marathon Clothing store that March.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005500-nipsey-hussle-lowrider-up-for-sale-music-news" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/nipsey-hussle-s-lowrider-from-higher-is-heading-to-auction/";
-      this.page.identifier = "nipsey-hussle-s-lowrider-from-higher-is-heading-to-auction";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/nipsey-hussle-s-lowrider-from-higher-is-heading-to-auction/";
+          this.page.identifier = "nipsey-hussle-s-lowrider-from-higher-is-heading-to-auction";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

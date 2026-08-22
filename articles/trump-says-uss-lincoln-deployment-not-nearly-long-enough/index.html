@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Trump Says USS Lincoln Deployment &#x27;Not Nearly Long Enough&#x27;</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/68/16by9/2026/08/14/68f4557e9a604ce28928233076ce4da7_xl.png" alt="Trump Says USS Lincoln Deployment &#x27;Not Nearly Long Enough&#x27;">
+  <img class="article-hero" src="https://imagez.tmz.com/image/68/16by9/2026/08/14/68f4557e9a604ce28928233076ce4da7_xl.png" alt="Trump Says USS Lincoln Deployment &#x27;Not Nearly Long Enough&#x27;" onload="this.style.animation='none'">
   <p class="article-summary">Donald Trump doesn&#x27;t think sailors aboard the USS Abraham Lincoln have been stuck at sea too long...in fact, he says their nearly 9-month deployment hasn&#x27;t been long enough. POTUS was asked by reporters Friday at Joint Base Andrews about families…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/14/trump-reacts-to-uss-lincoln-deployment-complaints/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/trump-says-uss-lincoln-deployment-not-nearly-long-enough/";
-      this.page.identifier = "trump-says-uss-lincoln-deployment-not-nearly-long-enough";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/trump-says-uss-lincoln-deployment-not-nearly-long-enough/";
+          this.page.identifier = "trump-says-uss-lincoln-deployment-not-nearly-long-enough";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

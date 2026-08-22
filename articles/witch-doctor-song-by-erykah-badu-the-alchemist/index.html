@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Witch Doctor — Song by Erykah Badu &amp; The Alchemist</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Screenshot-2026-08-13-at-2.12.52-PM.png" alt="Witch Doctor — Song by Erykah Badu &amp; The Alchemist">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Screenshot-2026-08-13-at-2.12.52-PM.png" alt="Witch Doctor — Song by Erykah Badu &amp; The Alchemist" onload="this.style.animation='none'">
   <p class="article-summary">Erykah Badu and The Alchemist continue building anticipation for their collaborative album with their newest single “Witch Doctor.” The song spans nearly six and a half minutes and gives Badu plenty of room to experiment over Alchemist’s soulful, percussion-heavy production. She plays with the idea of a “witch” as a medium while dropping references to fictional witches and other familiar names from pop culture. The record follows their previously released “Next To You” and offers another glimpse into their unlikely but fitting creative partnership.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005762-witch-doctor-erykah-badu-the-alchemist" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/witch-doctor-song-by-erykah-badu-the-alchemist/";
-      this.page.identifier = "witch-doctor-song-by-erykah-badu-the-alchemist";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/witch-doctor-song-by-erykah-badu-the-alchemist/";
+          this.page.identifier = "witch-doctor-song-by-erykah-badu-the-alchemist";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

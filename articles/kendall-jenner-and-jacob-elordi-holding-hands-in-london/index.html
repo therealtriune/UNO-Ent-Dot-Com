@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Kendall Jenner and Jacob Elordi Holding Hands in London</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/28/16by9/2026/08/21/28806a6932bf48e49758235c7631609b_xl.jpg" alt="Kendall Jenner and Jacob Elordi Holding Hands in London">
+  <img class="article-hero" src="https://imagez.tmz.com/image/28/16by9/2026/08/21/28806a6932bf48e49758235c7631609b_xl.jpg" alt="Kendall Jenner and Jacob Elordi Holding Hands in London" onload="this.style.animation='none'">
   <p class="article-summary">Kendall Jenner and Jacob Elordi are taking their relationship across the pond...enjoying a date night in London, but stopping short of taking their relationship to the next level. The two stars were spotted holding hands in England on Thursday…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/21/kendall-jenner-jacob-elordi-together-in-england/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/kendall-jenner-and-jacob-elordi-holding-hands-in-london/";
-      this.page.identifier = "kendall-jenner-and-jacob-elordi-holding-hands-in-london";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/kendall-jenner-and-jacob-elordi-holding-hands-in-london/";
+          this.page.identifier = "kendall-jenner-and-jacob-elordi-holding-hands-in-london";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

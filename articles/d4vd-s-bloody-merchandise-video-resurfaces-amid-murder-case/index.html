@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">D4vd’s Bloody Merchandise Video Resurfaces Amid Murder Case</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/04/D4vd.jpg" alt="D4vd’s Bloody Merchandise Video Resurfaces Amid Murder Case">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/04/D4vd.jpg" alt="D4vd’s Bloody Merchandise Video Resurfaces Amid Murder Case" onload="this.style.animation='none'">
   <p class="article-summary">D4vd has another nightmare viral moment as an old promotional video showing his fake blood-stained shirt races across social media. The clip shows the jailed singer buying detergent while wearing merchandise splashed with fake blood to promote his 2025 album, Withered. The stunt looks darker now because D4vd, legally David Anthony Burke, faces trial over 14-year-old Celeste Rivas Hernandez’s killing.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/d4vds-bloody-merchandise-video-resurfaces-amid-murder-case/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/d4vd-s-bloody-merchandise-video-resurfaces-amid-murder-case/";
-      this.page.identifier = "d4vd-s-bloody-merchandise-video-resurfaces-amid-murder-case";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/d4vd-s-bloody-merchandise-video-resurfaces-amid-murder-case/";
+          this.page.identifier = "d4vd-s-bloody-merchandise-video-resurfaces-amid-murder-case";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Malcolm-Jamal Warner&#x27;s Mom Reaches Settlement With His Daughter&#x27;s Guardians Over Money</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/b0/16by9/2026/08/13/b005b39e7cdb45e191359f96289dd0a9_xl.jpg" alt="Malcolm-Jamal Warner&#x27;s Mom Reaches Settlement With His Daughter&#x27;s Guardians Over Money">
+  <img class="article-hero" src="https://imagez.tmz.com/image/b0/16by9/2026/08/13/b005b39e7cdb45e191359f96289dd0a9_xl.jpg" alt="Malcolm-Jamal Warner&#x27;s Mom Reaches Settlement With His Daughter&#x27;s Guardians Over Money" onload="this.style.animation='none'">
   <p class="article-summary">Malcolm-Jamal Warner&#x27;s mom, Pamela Warner, worked out a settlement with the actor&#x27;s daughter&#x27;s guardians over her inheriting a portion of his fortune...TMZ has learned. Pamela tells us the agreement was hashed out with the guardians for…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/13/malcolm-jamal-warner-mother-settles-with-his-daughters-guardians/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/malcolm-jamal-warner-s-mom-reaches-settlement-with-his-daughter-s-guar/";
-      this.page.identifier = "malcolm-jamal-warner-s-mom-reaches-settlement-with-his-daughter-s-guar";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/malcolm-jamal-warner-s-mom-reaches-settlement-with-his-daughter-s-guar/";
+          this.page.identifier = "malcolm-jamal-warner-s-mom-reaches-settlement-with-his-daughter-s-guar";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

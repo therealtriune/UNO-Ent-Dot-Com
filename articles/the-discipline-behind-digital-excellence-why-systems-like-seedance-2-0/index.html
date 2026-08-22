@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">The Discipline Behind Digital Excellence — Why Systems Like Seedance 2.0 and Seedance 2.5 Define Modern Creative Authority</h1>
-  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/image.png" alt="The Discipline Behind Digital Excellence — Why Systems Like Seedance 2.0 and Seedance 2.5 Define Modern Creative Authority">
+  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/image.png" alt="The Discipline Behind Digital Excellence — Why Systems Like Seedance 2.0 and Seedance 2.5 Define Modern Creative Authority" onload="this.style.animation='none'">
   <p class="article-summary">Excellence Is No Longer Accidental In today’s digital landscape, excellence is rarely the result of random brilliance. It is engineered, refined, and consistently reproduced through disciplined systems that eliminate unpredictability.… The post The Discipline Behind Digital Excellence — Why Systems Like Seedance 2.0 and Seedance 2.5 Define Modern Creative Authority appeared first on.</p>
   <a class="outbound-cta" href="https://thesource.com/2026/08/02/the-discipline-behind-digital-excellence-why-systems-like-seedance-2-0-and-seedance-2-5-define-modern-creative-authority/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=the-discipline-behind-digital-excellence-why-systems-like-seedance-2-0-and-seedance-2-5-define-modern-creative-authority" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Source &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/the-discipline-behind-digital-excellence-why-systems-like-seedance-2-0/";
-      this.page.identifier = "the-discipline-behind-digital-excellence-why-systems-like-seedance-2-0";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/the-discipline-behind-digital-excellence-why-systems-like-seedance-2-0/";
+          this.page.identifier = "the-discipline-behind-digital-excellence-why-systems-like-seedance-2-0";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

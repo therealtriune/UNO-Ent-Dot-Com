@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 hours ago</div>
   <h1 class="article-title">Last Laugh! Scotty Gets Her Get-Back After Lemuel Plummer Calls Her A ‘Bird’ In Video (WATCH)</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/GettyImages-2248170263-e1787362939548.jpg" alt="Last Laugh! Scotty Gets Her Get-Back After Lemuel Plummer Calls Her A ‘Bird’ In Video (WATCH)">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/GettyImages-2248170263-e1787362939548.jpg" alt="Last Laugh! Scotty Gets Her Get-Back After Lemuel Plummer Calls Her A ‘Bird’ In Video (WATCH)" onload="this.style.animation='none'">
   <p class="article-summary">Scotty and Lemuel Plummer had social media cracking up. It all started after Lemuel shared a video of Scotty chasing a bird and decided to make a joke that didn’t seem to go over well after the internet chimed in. Scotty wasn’t about to let him get the last laugh, and her response had the internet laughing more.</p>
   <a class="outbound-cta" href="https://theshaderoom.com/last-laugh-scotty-gets-her-get-back-after-lemuel-plummer-calls-her-a-bird-in-video-watch/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/last-laugh-scotty-gets-her-get-back-after-lemuel-plummer-calls-her-a-b/";
-      this.page.identifier = "last-laugh-scotty-gets-her-get-back-after-lemuel-plummer-calls-her-a-b";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/last-laugh-scotty-gets-her-get-back-after-lemuel-plummer-calls-her-a-b/";
+          this.page.identifier = "last-laugh-scotty-gets-her-get-back-after-lemuel-plummer-calls-her-a-b";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

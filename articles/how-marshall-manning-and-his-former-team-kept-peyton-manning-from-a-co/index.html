@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">How Marshall Manning and his former team kept Peyton Manning from a coaching career</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/ecd241d8f64215fc2750dce7564b92b1c2f98fc7297990115884442dd8ea819d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2Fcffe22641bddeaf4d4c9571fe3019b4d.jpg" alt="How Marshall Manning and his former team kept Peyton Manning from a coaching career">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/ecd241d8f64215fc2750dce7564b92b1c2f98fc7297990115884442dd8ea819d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2Fcffe22641bddeaf4d4c9571fe3019b4d.jpg" alt="How Marshall Manning and his former team kept Peyton Manning from a coaching career" onload="this.style.animation='none'">
   <p class="article-summary">When Peyton Manning retired from the NFL in 2016, many wondered if a future as a head coach or general manager was in the cards. Back in 2022, Manning answered that interview in an interview with Colin Cowherd. The short answer: no to both.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/marshall-manning-former-team-kept-153553690.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/how-marshall-manning-and-his-former-team-kept-peyton-manning-from-a-co/";
-      this.page.identifier = "how-marshall-manning-and-his-former-team-kept-peyton-manning-from-a-co";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/how-marshall-manning-and-his-former-team-kept-peyton-manning-from-a-co/";
+          this.page.identifier = "how-marshall-manning-and-his-former-team-kept-peyton-manning-from-a-co";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

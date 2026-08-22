@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">6 days ago</div>
   <h1 class="article-title">Lexington Park Shooting Leaves 1 Dead, 4 Injured as Officials Promise Support</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/10/16by9/2026/08/16/109dbc67b2c241e0b0b56230cb17cdf7_xl.png" alt="Lexington Park Shooting Leaves 1 Dead, 4 Injured as Officials Promise Support">
+  <img class="article-hero" src="https://imagez.tmz.com/image/10/16by9/2026/08/16/109dbc67b2c241e0b0b56230cb17cdf7_xl.png" alt="Lexington Park Shooting Leaves 1 Dead, 4 Injured as Officials Promise Support" onload="this.style.animation='none'">
   <p class="article-summary">A shooting at a downtown Lexington park left one person dead and four others injured Saturday evening...prompting an outpouring of grief from Kentucky leaders and a renewed push for community support. Lexington Police Chief Lawrence Weathers said…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/16/fatal-shooting-in-lexington-kentucky-at-park/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/lexington-park-shooting-leaves-1-dead-4-injured-as-officials-promise-s/";
-      this.page.identifier = "lexington-park-shooting-leaves-1-dead-4-injured-as-officials-promise-s";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/lexington-park-shooting-leaves-1-dead-4-injured-as-officials-promise-s/";
+          this.page.identifier = "lexington-park-shooting-leaves-1-dead-4-injured-as-officials-promise-s";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

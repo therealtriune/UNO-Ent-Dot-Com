@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">50 Cent Shrugs Off Diddy’s ‘The Reckoning’ Lawsuit</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/50-cent.jpg" alt="50 Cent Shrugs Off Diddy’s ‘The Reckoning’ Lawsuit">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/50-cent.jpg" alt="50 Cent Shrugs Off Diddy’s ‘The Reckoning’ Lawsuit" onload="this.style.animation='none'">
   <p class="article-summary">The accusation Diddy made before Sean Combs: The Reckoning ever reached Netflix has now become part of an actual court fight. Sean Combs is accusing Rodney “Lil Rod” Jones of improperly obtaining private footage and selling it for use in the four-part docuseries, but one person noticeably absent from the countersuit is executive producer 50 Cent. Asked about the filing this week, 50 pointed directly to that distinction.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006545-50-cent-diddy-lawsuit-documentary" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/50-cent-shrugs-off-diddy-s-the-reckoning-lawsuit/";
-      this.page.identifier = "50-cent-shrugs-off-diddy-s-the-reckoning-lawsuit";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/50-cent-shrugs-off-diddy-s-the-reckoning-lawsuit/";
+          this.page.identifier = "50-cent-shrugs-off-diddy-s-the-reckoning-lawsuit";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

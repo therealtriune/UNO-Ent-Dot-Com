@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">NFL Star Trent Williams Sued By Car Dealer For Allegedly Not Paying Porsche Lease</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/a5/16by9/2026/08/07/a5d2897818534bb1842a0dddf561fc6f_xl.jpg" alt="NFL Star Trent Williams Sued By Car Dealer For Allegedly Not Paying Porsche Lease">
+  <img class="article-hero" src="https://imagez.tmz.com/image/a5/16by9/2026/08/07/a5d2897818534bb1842a0dddf561fc6f_xl.jpg" alt="NFL Star Trent Williams Sued By Car Dealer For Allegedly Not Paying Porsche Lease" onload="this.style.animation='none'">
   <p class="article-summary">Trent Williams has allegedly been hoarding his 49ers gold...because a car company claims the NFL star hasn&#x27;t paid his lease in years. The offensive lineman is being sued by OpenRoad Auto Group -- a car dealer in Washington -- which claims in 2011…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/09/trent-williams-sued-by-auto-group-for-allegedly-not-paying-car-lease/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/nfl-star-trent-williams-sued-by-car-dealer-for-allegedly-not-paying-po/";
-      this.page.identifier = "nfl-star-trent-williams-sued-by-car-dealer-for-allegedly-not-paying-po";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/nfl-star-trent-williams-sued-by-car-dealer-for-allegedly-not-paying-po/";
+          this.page.identifier = "nfl-star-trent-williams-sued-by-car-dealer-for-allegedly-not-paying-po";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

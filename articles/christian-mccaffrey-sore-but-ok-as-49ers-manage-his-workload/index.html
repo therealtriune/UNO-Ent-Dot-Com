@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Christian McCaffrey sore, but OK as 49ers manage his workload</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/d7c93451258709c17e6f5811812a8065bd63a78d4bd2297ff6fe037618fe84f6/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F32b66384a92356e913744a50c6cce0da" alt="Christian McCaffrey sore, but OK as 49ers manage his workload">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/d7c93451258709c17e6f5811812a8065bd63a78d4bd2297ff6fe037618fe84f6/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F32b66384a92356e913744a50c6cce0da" alt="Christian McCaffrey sore, but OK as 49ers manage his workload" onload="this.style.animation='none'">
   <p class="article-summary">While Christian McCaffrey did not practice on Monday, the team is not concerned about his status heading into the season. Offensive coordinator Klay Kubiak told reporters after the session that the club was &quot;just managing&quot; McCaffrey&#x27;s workload with the off day. &quot;He’s a little sore, but he’s doing fine, so we’ll just kind of manage him as we go,&quot; Kubiak said in his press conference.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/christian-mccaffrey-sore-ok-49ers-193409374.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/christian-mccaffrey-sore-but-ok-as-49ers-manage-his-workload/";
-      this.page.identifier = "christian-mccaffrey-sore-but-ok-as-49ers-manage-his-workload";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/christian-mccaffrey-sore-but-ok-as-49ers-manage-his-workload/";
+          this.page.identifier = "christian-mccaffrey-sore-but-ok-as-49ers-manage-his-workload";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Travis Kelce and Patrick Mahomes Called Out For Claims About Their Kansas City Steakhouse</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/4e/16by9/2026/08/06/4e8bd9745cc649a0b3b7b8f1a448932c_xl.jpg" alt="Travis Kelce and Patrick Mahomes Called Out For Claims About Their Kansas City Steakhouse">
+  <img class="article-hero" src="https://imagez.tmz.com/image/4e/16by9/2026/08/06/4e8bd9745cc649a0b3b7b8f1a448932c_xl.jpg" alt="Travis Kelce and Patrick Mahomes Called Out For Claims About Their Kansas City Steakhouse" onload="this.style.animation='none'">
   <p class="article-summary">Travis Kelce and Patrick Mahomes are being called out for allegedly downplaying their role in a Kansas City steakhouse, after being hit with a federal lawsuit...TMZ has learned. According to court docs obtained by TMZ, the company 1587 Sneakers,…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/06/travis-kelce-patrick-mahomes-kansas-city-steakhouse-lawsuit/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/travis-kelce-and-patrick-mahomes-called-out-for-claims-about-their-kan/";
-      this.page.identifier = "travis-kelce-and-patrick-mahomes-called-out-for-claims-about-their-kan";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/travis-kelce-and-patrick-mahomes-called-out-for-claims-about-their-kan/";
+          this.page.identifier = "travis-kelce-and-patrick-mahomes-called-out-for-claims-about-their-kan";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

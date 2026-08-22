@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Irish boxer Reeves &#x27;making progress&#x27; in hospital</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/25ba0413bad6eda30fa5640a8743afd328c94ef8fd53a293c36b9db9e9ed95f1/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2Ff56eea53be1f9ae328f3a380457bd6ac" alt="Irish boxer Reeves &#x27;making progress&#x27; in hospital">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/25ba0413bad6eda30fa5640a8743afd328c94ef8fd53a293c36b9db9e9ed95f1/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2Ff56eea53be1f9ae328f3a380457bd6ac" alt="Irish boxer Reeves &#x27;making progress&#x27; in hospital" onload="this.style.animation='none'">
   <p class="article-summary">Lee Reeves was hospitalised after his knockout defeat by Gary Cully on Saturday night [Getty Images] Queensberry promoter Frank Warren has said that Irish boxer Lee Reeves is &quot;making progress&quot; after being hospitalised following his fight in Dublin on Saturday night. The 31-year-old&#x27;s condition was described as &quot;critical but stable&quot; after he was admitted for treatment following his defeat to Gary Cully. Reeves was fighting for the vacant BUI Celtic super-lightweight title but was knocked out in the 10th round at the 3Arena.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/irish-boxer-reeves-making-progress-204741833.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports Boxing &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/irish-boxer-reeves-making-progress-in-hospital/";
-      this.page.identifier = "irish-boxer-reeves-making-progress-in-hospital";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/irish-boxer-reeves-making-progress-in-hospital/";
+          this.page.identifier = "irish-boxer-reeves-making-progress-in-hospital";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

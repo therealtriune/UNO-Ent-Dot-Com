@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Joshua Karty running out of chances to extend NFL career</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/0cde689c323893e85ff608c919d2a3e3adc46bb0f889dc4440abc50bb9aedbad/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F51cbe9aefdd65c338a0cd96caefd319a.jpg" alt="Joshua Karty running out of chances to extend NFL career">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/0cde689c323893e85ff608c919d2a3e3adc46bb0f889dc4440abc50bb9aedbad/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F51cbe9aefdd65c338a0cd96caefd319a.jpg" alt="Joshua Karty running out of chances to extend NFL career" onload="this.style.animation='none'">
   <p class="article-summary">INGLEWOOD, CA - OCTOBER 02: Joshua Karty #16 of the Los Angeles Rams lines up before the snap during an NFL football game against the San Francisco 49ers at SoFi Stadium on October 2, 2025 in Inglewood, California. (Photo by Cooper Neill/Getty Images) | Getty Images Former Los Angeles Rams kicker Joshua Karty is still searching for a home ahead of Week 2 of the preseason. Karty’s options have been limited since the Rams cut him last season, but Tennessee might be a destination if their kicking situation goes south.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/joshua-karty-running-chances-extend-184500924.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/joshua-karty-running-out-of-chances-to-extend-nfl-career/";
-      this.page.identifier = "joshua-karty-running-out-of-chances-to-extend-nfl-career";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/joshua-karty-running-out-of-chances-to-extend-nfl-career/";
+          this.page.identifier = "joshua-karty-running-out-of-chances-to-extend-nfl-career";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

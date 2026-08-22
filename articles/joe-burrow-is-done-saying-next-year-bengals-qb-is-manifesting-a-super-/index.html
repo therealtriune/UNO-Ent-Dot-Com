@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Joe Burrow is done saying ‘Next Year’; Bengals QB is manifesting a Super Bowl this season</h1>
-  <img class="article-hero" src="https://img.youtube.com/vi/-aV5oWCqPtc/hqdefault.jpg" alt="Joe Burrow is done saying ‘Next Year’; Bengals QB is manifesting a Super Bowl this season">
+  <img class="article-hero" src="https://img.youtube.com/vi/-aV5oWCqPtc/hqdefault.jpg" alt="Joe Burrow is done saying ‘Next Year’; Bengals QB is manifesting a Super Bowl this season" onload="this.style.animation='none'">
   <p class="article-summary">Jan 15, 2023; Cincinnati, Ohio, USA; Cincinnati Bengals wide receiver Ja&#x27;Marr Chase (1) and quarterback Joe Burrow (9) warm up before an NFL wild-card playoff football game between the Baltimore Ravens and the Cincinnati Bengals during a wild card game at Paycor Stadium. Mandatory Credit: Kareem Elgazzar-USA TODAY Sports Joe Burrow isn’t interested in talking about the Cincinnati Bengals’ Super Bowl window as something that might still be open down the road. He wants it to happen now.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/joe-burrow-done-saying-next-211532598.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/joe-burrow-is-done-saying-next-year-bengals-qb-is-manifesting-a-super-/";
-      this.page.identifier = "joe-burrow-is-done-saying-next-year-bengals-qb-is-manifesting-a-super-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/joe-burrow-is-done-saying-next-year-bengals-qb-is-manifesting-a-super-/";
+          this.page.identifier = "joe-burrow-is-done-saying-next-year-bengals-qb-is-manifesting-a-super-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

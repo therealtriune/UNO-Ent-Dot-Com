@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">$68,000 For Nothing: Ice Spice’s Canceled EKU Concert Still Pays Out</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/01/Ice-Spice.jpg" alt="$68,000 For Nothing: Ice Spice’s Canceled EKU Concert Still Pays Out">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/01/Ice-Spice.jpg" alt="$68,000 For Nothing: Ice Spice’s Canceled EKU Concert Still Pays Out" onload="this.style.animation='none'">
   <p class="article-summary">Ice Spice just canceled her Eastern Kentucky University concert, and she’s still walking away with $68,000. EKU had agreed to pay the rapper $275,000 for a single 50-minute set at the Fall 2026 Big E Welcome Concert. That show, scheduled for August 21 at Alumni Coliseum, is officially off the school’s calendar now.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/68000-for-nothing-ice-spices-canceled-eku-concert-still-pays-out/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/68-000-for-nothing-ice-spice-s-canceled-eku-concert-still-pays-out/";
-      this.page.identifier = "68-000-for-nothing-ice-spice-s-canceled-eku-concert-still-pays-out";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/68-000-for-nothing-ice-spice-s-canceled-eku-concert-still-pays-out/";
+          this.page.identifier = "68-000-for-nothing-ice-spice-s-canceled-eku-concert-still-pays-out";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

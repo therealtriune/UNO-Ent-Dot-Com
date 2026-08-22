@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 hours ago</div>
   <h1 class="article-title">Buffalo Bills Star Ed Oliver&#x27;s 2-Year-Old Son Dies After Drowning</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/42/16by9/2026/07/01/42d6e2e1ba4b4e7c888bf32a1fa21a43_xl.jpg" alt="Buffalo Bills Star Ed Oliver&#x27;s 2-Year-Old Son Dies After Drowning">
+  <img class="article-hero" src="https://imagez.tmz.com/image/42/16by9/2026/07/01/42d6e2e1ba4b4e7c888bf32a1fa21a43_xl.jpg" alt="Buffalo Bills Star Ed Oliver&#x27;s 2-Year-Old Son Dies After Drowning" onload="this.style.animation='none'">
   <p class="article-summary">Buffalo Bills star Ed Oliver is mourning an unimaginable loss after his 2-year-old son, Ed, drowned in the swimming pool at the NFL player&#x27;s Texas home...TMZ Sports has learned. According to local officials, deputies responded to an in-progress…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/22/ed-oliver-son-dead/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/buffalo-bills-star-ed-oliver-s-2-year-old-son-dies-after-drowning/";
-      this.page.identifier = "buffalo-bills-star-ed-oliver-s-2-year-old-son-dies-after-drowning";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/buffalo-bills-star-ed-oliver-s-2-year-old-son-dies-after-drowning/";
+          this.page.identifier = "buffalo-bills-star-ed-oliver-s-2-year-old-son-dies-after-drowning";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

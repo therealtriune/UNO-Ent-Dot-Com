@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Milwaukee Rappers Lil Shiesty, Funny $Money Murdered</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/murder.jpg" alt="Milwaukee Rappers Lil Shiesty, Funny $Money Murdered">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/murder.jpg" alt="Milwaukee Rappers Lil Shiesty, Funny $Money Murdered" onload="this.style.animation='none'">
   <p class="article-summary">A Milwaukee recording studio became the scene of a double homicide Monday afternoon, taking the lives of two rappers connected through the city’s growing Hip Hop scene. Police were called to a building near 31st Street and Cameron Avenue around 3:40 p.m., where they found 21-year-old Daquaiseon Evans and 33-year-old Quentene Williams dead from gunshot wounds. A 28-year-old was arrested in connection with the shooting.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006443-milwaukee-rappers-lil-shiesty-funny-money-murder" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/milwaukee-rappers-lil-shiesty-funny-money-murdered/";
-      this.page.identifier = "milwaukee-rappers-lil-shiesty-funny-money-murdered";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/milwaukee-rappers-lil-shiesty-funny-money-murdered/";
+          this.page.identifier = "milwaukee-rappers-lil-shiesty-funny-money-murdered";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

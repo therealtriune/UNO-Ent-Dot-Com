@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Perez Hilton’s Mother Reportedly Steps In to Request Temporary Custody of His Three Children Following Distressing Self-Harm Livestream Crisis</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_2853.jpeg" alt="Perez Hilton’s Mother Reportedly Steps In to Request Temporary Custody of His Three Children Following Distressing Self-Harm Livestream Crisis">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_2853.jpeg" alt="Perez Hilton’s Mother Reportedly Steps In to Request Temporary Custody of His Three Children Following Distressing Self-Harm Livestream Crisis" onload="this.style.animation='none'">
   <p class="article-summary">Things have taken an even more serious turn following the disturbing mental health emergency involving veteran celebrity gossip blogger Perez Hilton. After the 48-year-old internet personality, born Mario Lavandeira Jr., was rushed to a Miami hospital after self-harming during a horrifying TikTok live broadcast, reports indicate his family is taking legal steps to ensure his three young children are fully protected. As previously reported, family members have confirmed that Perez’s kids, ages 13, 11, and 8, were actually inside his Miami home alongside his sister and niece just moments before the stream started.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/perez-hiltons-mother-reportedly-steps-in-to-request-temporary-custody-of-his-three-children-following-distressing-self-harm-livestream-crisis/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/perez-hilton-s-mother-reportedly-steps-in-to-request-temporary-custody/";
-      this.page.identifier = "perez-hilton-s-mother-reportedly-steps-in-to-request-temporary-custody";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/perez-hilton-s-mother-reportedly-steps-in-to-request-temporary-custody/";
+          this.page.identifier = "perez-hilton-s-mother-reportedly-steps-in-to-request-temporary-custody";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

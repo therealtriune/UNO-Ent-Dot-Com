@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Tua Tagovailoa&#x27;s brother throws 5 TDs, hands Team USA first loss in 14 years</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/b1a2144cb757b0a8da8d83204dc002d2ba35269b2570222062aaec2f4b5bbdcb/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F7900aecfc33c2a37fd4640b065e308a3.jpg" alt="Tua Tagovailoa&#x27;s brother throws 5 TDs, hands Team USA first loss in 14 years">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/b1a2144cb757b0a8da8d83204dc002d2ba35269b2570222062aaec2f4b5bbdcb/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F7900aecfc33c2a37fd4640b065e308a3.jpg" alt="Tua Tagovailoa&#x27;s brother throws 5 TDs, hands Team USA first loss in 14 years" onload="this.style.animation='none'">
   <p class="article-summary">For the first time in 14 years, Team USA has lost a competitive flag football match. American Samoa defeated the United States 38-32 on Friday, Aug. 14, at the 2026 World Flag tournament in Dusseldorf, Germany.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/tua-tagovailoas-brother-throws-5-205311518.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/tua-tagovailoa-s-brother-throws-5-tds-hands-team-usa-first-loss-in-14-/";
-      this.page.identifier = "tua-tagovailoa-s-brother-throws-5-tds-hands-team-usa-first-loss-in-14-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/tua-tagovailoa-s-brother-throws-5-tds-hands-team-usa-first-loss-in-14-/";
+          this.page.identifier = "tua-tagovailoa-s-brother-throws-5-tds-hands-team-usa-first-loss-in-14-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

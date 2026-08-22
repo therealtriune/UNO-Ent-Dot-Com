@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">21 hours ago</div>
   <h1 class="article-title">Jets QB Geno Smith gets first preseason action, looks good in lone drive that ends with TD</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/33ce269afecbfce1102f01d93f57ae172c67a61e5b24ae48570d9fa166680dbe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Feee1c401-7f31-47c0-8ff1-a28d2366f9b8" alt="Jets QB Geno Smith gets first preseason action, looks good in lone drive that ends with TD">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/33ce269afecbfce1102f01d93f57ae172c67a61e5b24ae48570d9fa166680dbe/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Feee1c401-7f31-47c0-8ff1-a28d2366f9b8" alt="Jets QB Geno Smith gets first preseason action, looks good in lone drive that ends with TD" onload="this.style.animation='none'">
   <p class="article-summary">New York Jets coach Aaron Glenn&#x27;s job security might rest on whether Geno Smith can have a big rebound this season. Smith got just one drive in Friday&#x27;s preseason game against the Steelers, but Glenn was obviously happy with what he saw. Because Smith&#x27;s night was done after a perfect drive.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/nfl/article/jets-qb-geno-smith-gets-first-preseason-action-looks-good-in-lone-drive-that-ends-with-td-232807609.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/jets-qb-geno-smith-gets-first-preseason-action-looks-good-in-lone-driv/";
-      this.page.identifier = "jets-qb-geno-smith-gets-first-preseason-action-looks-good-in-lone-driv";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/jets-qb-geno-smith-gets-first-preseason-action-looks-good-in-lone-driv/";
+          this.page.identifier = "jets-qb-geno-smith-gets-first-preseason-action-looks-good-in-lone-driv";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">T.I. Makes Another Remarkable Accomplishment</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/04/Your-paragraph-text-101.jpg" alt="T.I. Makes Another Remarkable Accomplishment">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/04/Your-paragraph-text-101.jpg" alt="T.I. Makes Another Remarkable Accomplishment" onload="this.style.animation='none'">
   <p class="article-summary">T.I. turned his retirement lap into a victory lap as “Let ’Em Know” earned an RIAA Platinum plaque while the Atlanta rap heavyweight prepared to close his recording career with “Kill the King.” “Maaaan in all the touring,traveling and vacationing wit the family… I forgot to tell yall that this happened!!!! #LetEmKnow #Platinum S/O all the DJs the PDs &amp; Da Dopest fans in the world who made this possible,” he said on Instagram.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/t-i-makes-another-remarkable-accomplishment/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/t-i-makes-another-remarkable-accomplishment/";
-      this.page.identifier = "t-i-makes-another-remarkable-accomplishment";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/t-i-makes-another-remarkable-accomplishment/";
+          this.page.identifier = "t-i-makes-another-remarkable-accomplishment";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

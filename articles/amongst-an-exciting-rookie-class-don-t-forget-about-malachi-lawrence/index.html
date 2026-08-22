@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Amongst an exciting rookie class, don’t forget about Malachi Lawrence</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/0f1e162f9a700bdfdde638129096b674f161cedd8daa6aede7f063c7abb6d254/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F2ddc688fb57895547239bcf6782adeae" alt="Amongst an exciting rookie class, don’t forget about Malachi Lawrence">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/0f1e162f9a700bdfdde638129096b674f161cedd8daa6aede7f063c7abb6d254/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F2ddc688fb57895547239bcf6782adeae" alt="Amongst an exciting rookie class, don’t forget about Malachi Lawrence" onload="this.style.animation='none'">
   <p class="article-summary">May 1, 2026; Frisco, TX, USA; Dallas Cowboys linebacker Malachi Lawrence (57) goes through a drill during practice at the Ford Center at the Star Training Facility in Frisco, Texas. Mandatory Credit: Chris Jones-Imagn Images | Chris Jones-Imagn Images On Thursday, we received our first dose of real football as the Hall of Fame game had a fantastic finish. What stood out was how impressive the rookies were during the contest.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/amongst-exciting-rookie-class-don-153000794.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/amongst-an-exciting-rookie-class-don-t-forget-about-malachi-lawrence/";
-      this.page.identifier = "amongst-an-exciting-rookie-class-don-t-forget-about-malachi-lawrence";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/amongst-an-exciting-rookie-class-don-t-forget-about-malachi-lawrence/";
+          this.page.identifier = "amongst-an-exciting-rookie-class-don-t-forget-about-malachi-lawrence";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

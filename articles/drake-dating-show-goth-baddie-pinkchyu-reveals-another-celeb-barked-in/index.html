@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Drake Dating Show &#x27;Goth Baddie&#x27; Pinkchyu Reveals Another Celeb Barked in Her DMs</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/19/16by9/2026/08/13/19cdbf0227ce4567a54829179b1edffb_xl.png" alt="Drake Dating Show &#x27;Goth Baddie&#x27; Pinkchyu Reveals Another Celeb Barked in Her DMs">
+  <img class="article-hero" src="https://imagez.tmz.com/image/19/16by9/2026/08/13/19cdbf0227ce4567a54829179b1edffb_xl.png" alt="Drake Dating Show &#x27;Goth Baddie&#x27; Pinkchyu Reveals Another Celeb Barked in Her DMs" onload="this.style.animation='none'">
   <p class="article-summary">Pinkchyu has another huge musician barking for her just like Drake did...only this time, the dog imitation is going down in her DMs. The viral &quot;goth baddie&quot; tells TMZ...a big-time musician sent her an audio recording of them barking like a dog…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/14/pinkchyu-says-famous-musician-contacted-her-after-drake-dating-show/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/drake-dating-show-goth-baddie-pinkchyu-reveals-another-celeb-barked-in/";
-      this.page.identifier = "drake-dating-show-goth-baddie-pinkchyu-reveals-another-celeb-barked-in";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/drake-dating-show-goth-baddie-pinkchyu-reveals-another-celeb-barked-in/";
+          this.page.identifier = "drake-dating-show-goth-baddie-pinkchyu-reveals-another-celeb-barked-in";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

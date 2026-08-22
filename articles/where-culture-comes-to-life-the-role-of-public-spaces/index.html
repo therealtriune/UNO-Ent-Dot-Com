@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Where culture comes to life: The role of public spaces</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/707b373477584d7d6167ab577aad8a1e.jpg" alt="Where culture comes to life: The role of public spaces">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/707b373477584d7d6167ab577aad8a1e.jpg" alt="Where culture comes to life: The role of public spaces" onload="this.style.animation='none'">
   <p class="article-summary">Public spaces give culture a visible, shared home. Parks, plazas, sidewalks, markets, and gathering areas let people meet, celebrate, perform, remember history, and shape community identity together. A city can tell you who it is before anyone says a word.</p>
   <a class="outbound-cta" href="https://allhiphop.com/blogs/where-culture-comes-to-life-the-role-of-public-spaces/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/where-culture-comes-to-life-the-role-of-public-spaces/";
-      this.page.identifier = "where-culture-comes-to-life-the-role-of-public-spaces";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/where-culture-comes-to-life-the-role-of-public-spaces/";
+          this.page.identifier = "where-culture-comes-to-life-the-role-of-public-spaces";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">5 hours ago</div>
   <h1 class="article-title">Eagles News: Willie Lampkin is “a bowling ball of knives”</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/3764220ce82ff3b793ca1272453d67ede9d04d5b540558ded9b5681fe563dcd6/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F96ad5a2bbe2ae7650865c2386b80f6a2.jpg" alt="Eagles News: Willie Lampkin is “a bowling ball of knives”">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/3764220ce82ff3b793ca1272453d67ede9d04d5b540558ded9b5681fe563dcd6/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F96ad5a2bbe2ae7650865c2386b80f6a2.jpg" alt="Eagles News: Willie Lampkin is “a bowling ball of knives”" onload="this.style.animation='none'">
   <p class="article-summary">PHILADELPHIA, PA - AUGUST 01: Philadelphia Eagles guard Willie Lampkin #61 runs a drill during the Philadelphia Eagles training camp on August 1st, 2026 at Jefferson Health Training Complex in Philadelphia, PA. (Photo by Terence Lewis/Icon Sportswire via Getty Images) | Icon Sportswire via Getty Images Let’s get to the Philadelphia Eagles news and links … Eagles notebook: Their star of joint practices, a great nickname and more – NBCSP Bowling ball of knives. Eagles second-year offensive lineman Willie Lampkin has become a fan favorite this summer.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/eagles-news-willie-lampkin-bowling-153122766.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/eagles-news-willie-lampkin-is-a-bowling-ball-of-knives/";
-      this.page.identifier = "eagles-news-willie-lampkin-is-a-bowling-ball-of-knives";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/eagles-news-willie-lampkin-is-a-bowling-ball-of-knives/";
+          this.page.identifier = "eagles-news-willie-lampkin-is-a-bowling-ball-of-knives";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

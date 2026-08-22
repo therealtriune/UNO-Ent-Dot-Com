@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Courtney Clenney Accepts Plea Deal in Fatal Stabbing of Christian Obumseli, Could Walk Free in Under 2 Years</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_2721.jpeg" alt="Courtney Clenney Accepts Plea Deal in Fatal Stabbing of Christian Obumseli, Could Walk Free in Under 2 Years">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_2721.jpeg" alt="Courtney Clenney Accepts Plea Deal in Fatal Stabbing of Christian Obumseli, Could Walk Free in Under 2 Years" onload="this.style.animation='none'">
   <p class="article-summary">#Socialites, come get into this: Courtney Clenney, the OnlyFans influencer known online as “Courtney Tailor,” has officially agreed to a plea deal in the April 2022 fatal stabbing of her 27-year-old Black boyfriend, Christian Obumseli. Instead of facing a jury on second-degree murder charges that could have locked her tale in the slammer for life, the 30-year-old social media personality agreed to plead guilty to manslaughter. Reports indicate that due to time already served since her August 2022 arrest, Clenney could be stepping foot back into the real world in less than two years.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/courtney-clenney-accepts-plea-deal-in-fatal-stabbing-of-christian-obumseli-could-walk-free-in-under-2-years/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/courtney-clenney-accepts-plea-deal-in-fatal-stabbing-of-christian-obum/";
-      this.page.identifier = "courtney-clenney-accepts-plea-deal-in-fatal-stabbing-of-christian-obum";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/courtney-clenney-accepts-plea-deal-in-fatal-stabbing-of-christian-obum/";
+          this.page.identifier = "courtney-clenney-accepts-plea-deal-in-fatal-stabbing-of-christian-obum";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

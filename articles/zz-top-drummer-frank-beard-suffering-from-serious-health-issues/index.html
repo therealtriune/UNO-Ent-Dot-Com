@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">ZZ Top Drummer Frank Beard Suffering From Serious Health Issues</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/b9/16by9/2026/08/10/b9a8f8f5b800455ba2bbc645db25b183_xl.jpg" alt="ZZ Top Drummer Frank Beard Suffering From Serious Health Issues">
+  <img class="article-hero" src="https://imagez.tmz.com/image/b9/16by9/2026/08/10/b9a8f8f5b800455ba2bbc645db25b183_xl.jpg" alt="ZZ Top Drummer Frank Beard Suffering From Serious Health Issues" onload="this.style.animation='none'">
   <p class="article-summary">Frank Beard -- the longtime drummer of the rock band ZZ Top -- is dealing with serious health issues...and it&#x27;s so bad it&#x27;s affecting their tour...TMZ has learned. The health update comes just days after ZZ Top cancelled their August 5 show at…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/10/zz-top-drummer-frank-beard-suffering-health-issues/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/zz-top-drummer-frank-beard-suffering-from-serious-health-issues/";
-      this.page.identifier = "zz-top-drummer-frank-beard-suffering-from-serious-health-issues";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/zz-top-drummer-frank-beard-suffering-from-serious-health-issues/";
+          this.page.identifier = "zz-top-drummer-frank-beard-suffering-from-serious-health-issues";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

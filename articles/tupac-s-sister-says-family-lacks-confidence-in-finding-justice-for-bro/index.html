@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Tupac’s Sister Says Family Lacks Confidence In Finding Justice For Brother’s Murder</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2017-05-09T233105Z_2108659121_MT1USATODAY10049241_RTRMADP_3_JUL-23-1993-USA-TUPAC-SHAKUR-FROM-THE-FILM-POETIC-6-scaled.jpg" alt="Tupac’s Sister Says Family Lacks Confidence In Finding Justice For Brother’s Murder">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2017-05-09T233105Z_2108659121_MT1USATODAY10049241_RTRMADP_3_JUL-23-1993-USA-TUPAC-SHAKUR-FROM-THE-FILM-POETIC-6-scaled.jpg" alt="Tupac’s Sister Says Family Lacks Confidence In Finding Justice For Brother’s Murder" onload="this.style.animation='none'">
   <p class="article-summary">After 30 years, the murder of Tupac Shakur is finally on trial, but whether we find out who actually killed ‘Pac remains to be seen. As Keefe D’s case moves through the court, friends, fans, and family members hope that they’ll see justice. Unfortunately, the Shakur family has “low expectations” that something positive could come out of this.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006440-tupac-sister-keefe-d-trial" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/tupac-s-sister-says-family-lacks-confidence-in-finding-justice-for-bro/";
-      this.page.identifier = "tupac-s-sister-says-family-lacks-confidence-in-finding-justice-for-bro";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/tupac-s-sister-says-family-lacks-confidence-in-finding-justice-for-bro/";
+          this.page.identifier = "tupac-s-sister-says-family-lacks-confidence-in-finding-justice-for-bro";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

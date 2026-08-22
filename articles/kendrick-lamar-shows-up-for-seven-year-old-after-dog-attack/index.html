@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Kendrick Lamar Shows Up For Seven-Year-Old After Dog Attack</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/12/Kendrick-Lamar.jpg" alt="Kendrick Lamar Shows Up For Seven-Year-Old After Dog Attack">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/12/Kendrick-Lamar.jpg" alt="Kendrick Lamar Shows Up For Seven-Year-Old After Dog Attack" onload="this.style.animation='none'">
   <p class="article-summary">Kendrick Lamar made a seven-year-old Detroit kid’s birthday wish come true with a surprise phone call that’s got the whole city talking about what compassion looks like. Romell Frazier Jr. lost both his arms in a pit bull attack back in March, and after months of recovery and rehabilitation, his one request was simple: he wanted to hear from his favorite rapper.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/kendrick-lamar-shows-up-for-seven-year-old-after-dog-attack/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/kendrick-lamar-shows-up-for-seven-year-old-after-dog-attack/";
-      this.page.identifier = "kendrick-lamar-shows-up-for-seven-year-old-after-dog-attack";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/kendrick-lamar-shows-up-for-seven-year-old-after-dog-attack/";
+          this.page.identifier = "kendrick-lamar-shows-up-for-seven-year-old-after-dog-attack";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

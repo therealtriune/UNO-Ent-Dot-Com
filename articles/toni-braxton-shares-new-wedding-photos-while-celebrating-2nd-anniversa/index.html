@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Toni Braxton Shares New Wedding Photos While Celebrating 2nd Anniversary With Birdman, Social Media Users Ask ‘Where’s The Groom?’</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/Toni-Braxton-Shares-New-Wedding-Photos-While-Celebrating-2nd-Anniversary-With-Birdman-Social-Media-Users-Ask-‘Wheres-The-Groom.jpg" alt="Toni Braxton Shares New Wedding Photos While Celebrating 2nd Anniversary With Birdman, Social Media Users Ask ‘Where’s The Groom?’">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/Toni-Braxton-Shares-New-Wedding-Photos-While-Celebrating-2nd-Anniversary-With-Birdman-Social-Media-Users-Ask-‘Wheres-The-Groom.jpg" alt="Toni Braxton Shares New Wedding Photos While Celebrating 2nd Anniversary With Birdman, Social Media Users Ask ‘Where’s The Groom?’" onload="this.style.animation='none'">
   <p class="article-summary">#Socialites, join us in wishing Toni Braxton and her husband Bryan “Birdman” Williams a happy second wedding anniversary! Today marks two years of marriage for the R&amp;B legend and music mogul and rapper. RELATED: Toni Braxton And Birdman Reportedly Got Married Last Year, Almost Divorced But Called It Off The two first started dating in 2016.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/toni-braxton-shares-new-wedding-photos-while-celebrating-2nd-anniversary-with-birdman-social-media-users-ask-wheres-the-groom/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/toni-braxton-shares-new-wedding-photos-while-celebrating-2nd-anniversa/";
-      this.page.identifier = "toni-braxton-shares-new-wedding-photos-while-celebrating-2nd-anniversa";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/toni-braxton-shares-new-wedding-photos-while-celebrating-2nd-anniversa/";
+          this.page.identifier = "toni-braxton-shares-new-wedding-photos-while-celebrating-2nd-anniversa";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

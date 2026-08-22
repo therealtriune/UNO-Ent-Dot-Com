@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Roc Nation CEO Desiree Perez Threatened With Death Outside Roc Nation HQ In Terrifying Confrontation</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/05/Desiree-Perez-and-Jay-Z.jpg" alt="Roc Nation CEO Desiree Perez Threatened With Death Outside Roc Nation HQ In Terrifying Confrontation">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/05/Desiree-Perez-and-Jay-Z.jpg" alt="Roc Nation CEO Desiree Perez Threatened With Death Outside Roc Nation HQ In Terrifying Confrontation" onload="this.style.animation='none'">
   <p class="article-summary">Desiree Perez found herself in the crosshairs of a disturbing campaign that started quietly in May and escalated into direct confrontation outside her workplace. The Roc Nation CEO, who co-founded the powerhouse agency alongside Jay-Z, became the target of a homeless man’s violent obsession that manifested through social media threats, music lyrics, and face-to-face intimidation. Law enforcement sources confirmed the menace showed up at the company’s West 26th Street headquarters in Chelsea around 7:30 P.M.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/roc-nation-ceo-desiree-perez-threatened-with-death-outside-roc-nation-hq-in-terrifying-confrontation/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/roc-nation-ceo-desiree-perez-threatened-with-death-outside-roc-nation-/";
-      this.page.identifier = "roc-nation-ceo-desiree-perez-threatened-with-death-outside-roc-nation-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/roc-nation-ceo-desiree-perez-threatened-with-death-outside-roc-nation-/";
+          this.page.identifier = "roc-nation-ceo-desiree-perez-threatened-with-death-outside-roc-nation-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

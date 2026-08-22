@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">&#x27;Highlander&#x27; Star Christopher Lambert Collapses at Pittsburgh Comic Con, on the Mend</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/f9/16by9/2026/08/08/f91ec22361b9458589d4e25a0a0a7edc_xl.jpg" alt="&#x27;Highlander&#x27; Star Christopher Lambert Collapses at Pittsburgh Comic Con, on the Mend">
+  <img class="article-hero" src="https://imagez.tmz.com/image/f9/16by9/2026/08/08/f91ec22361b9458589d4e25a0a0a7edc_xl.jpg" alt="&#x27;Highlander&#x27; Star Christopher Lambert Collapses at Pittsburgh Comic Con, on the Mend" onload="this.style.animation='none'">
   <p class="article-summary">&quot;Highlander&quot; star Christopher Lambert suffered a medical emergency at a convention Saturday and was whisked away by an ambulance, TMZ has learned. Christopher was signing autographs at the Steel City Con in Pittsburgh, Pennsylvania when he suddenly…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/08/highlander-star-christopher-lambert-collapses-at-comic-con/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/highlander-star-christopher-lambert-collapses-at-pittsburgh-comic-con-/";
-      this.page.identifier = "highlander-star-christopher-lambert-collapses-at-pittsburgh-comic-con-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/highlander-star-christopher-lambert-collapses-at-pittsburgh-comic-con-/";
+          this.page.identifier = "highlander-star-christopher-lambert-collapses-at-pittsburgh-comic-con-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

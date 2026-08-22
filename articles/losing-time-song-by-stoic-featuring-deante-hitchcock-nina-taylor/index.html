@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">LOSING TIME – Song by Stoic featuring Deante’ Hitchcock &amp; Nina Taylor</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/losing-time.jpg" alt="LOSING TIME – Song by Stoic featuring Deante’ Hitchcock &amp; Nina Taylor">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/losing-time.jpg" alt="LOSING TIME – Song by Stoic featuring Deante’ Hitchcock &amp; Nina Taylor" onload="this.style.animation='none'">
   <p class="article-summary">With producer Stoic looking to drop his new album, PAELLA!, the artist has just come through with a new single, featuring the likes of Deante’ Hitchcock and Nina Taylor. Taylor comes through with the hook on this track, and it is absolutely gorgeous.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004524-losing-time-stoic-deante-hitcock-nina-taylor" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/losing-time-song-by-stoic-featuring-deante-hitchcock-nina-taylor/";
-      this.page.identifier = "losing-time-song-by-stoic-featuring-deante-hitchcock-nina-taylor";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/losing-time-song-by-stoic-featuring-deante-hitchcock-nina-taylor/";
+          this.page.identifier = "losing-time-song-by-stoic-featuring-deante-hitchcock-nina-taylor";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

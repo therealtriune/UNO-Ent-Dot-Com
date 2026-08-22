@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">MIKE SUMMERS a.k.a. Seven Produces Psychopathic’s New Artist Wakko the Kidd’s Sophomore Effort “Infinity” (Album Review)</h1>
-  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5670-e1786366124150.jpeg" alt="MIKE SUMMERS a.k.a. Seven Produces Psychopathic’s New Artist Wakko the Kidd’s Sophomore Effort “Infinity” (Album Review)">
+  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5670-e1786366124150.jpeg" alt="MIKE SUMMERS a.k.a. Seven Produces Psychopathic’s New Artist Wakko the Kidd’s Sophomore Effort “Infinity” (Album Review)" onload="this.style.animation='none'">
   <p class="article-summary">Hollywood, California rapper &amp; entrepreneur Wakko the Kidd staying busy with his sophomore effort. Introducing himself in the summer of 2018 off his debut single “Multiple Racks”, he would go on to launch his own strain of cannabis called Airheadz a year later. However a couple summers ago, the Insane Clown Posse signed him to Psychopathic Records &amp; has performed at many of their events like the Gathering of the Juggalos or Hallowicked.</p>
   <a class="outbound-cta" href="https://undergroundhiphopblog.com/albums/mike-summers-a-k-a-seven-produces-psychopathics-new-artist-wakko-the-kidds-sophomore-effort-infinity-album-review/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Underground Hip Hop Blog &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/mike-summers-a-k-a-seven-produces-psychopathic-s-new-artist-wakko-the-/";
-      this.page.identifier = "mike-summers-a-k-a-seven-produces-psychopathic-s-new-artist-wakko-the-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/mike-summers-a-k-a-seven-produces-psychopathic-s-new-artist-wakko-the-/";
+          this.page.identifier = "mike-summers-a-k-a-seven-produces-psychopathic-s-new-artist-wakko-the-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

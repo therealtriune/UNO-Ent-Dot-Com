@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Man Convicted In Pop Smoke’s Murder Gets Four Years For Fentanyl Case</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/pop-smoke-scaled-e1786752564785.jpg" alt="Man Convicted In Pop Smoke’s Murder Gets Four Years For Fentanyl Case">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/pop-smoke-scaled-e1786752564785.jpg" alt="Man Convicted In Pop Smoke’s Murder Gets Four Years For Fentanyl Case" onload="this.style.animation='none'">
   <p class="article-summary">A second conviction will move one of the people responsible for Pop Smoke’s killing out of the juvenile system and into adult custody. Deijae Devon Jester, who was 15 when the Brooklyn rapper was fatally shot during a 2020 home invasion, was sentenced Thursday (August 13) to four years after pleading no contest in a fentanyl case tied to the juvenile facility where he was being held. Jester, now 21, admitted to possessing 25 fentanyl-laced pills that prosecutors say his mother, Nickia Randall, tried to pass to him during a December 2025 visit at Barry J.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005996-pop-smoke-deijae-jester-fentanyl" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/man-convicted-in-pop-smoke-s-murder-gets-four-years-for-fentanyl-case/";
-      this.page.identifier = "man-convicted-in-pop-smoke-s-murder-gets-four-years-for-fentanyl-case";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/man-convicted-in-pop-smoke-s-murder-gets-four-years-for-fentanyl-case/";
+          this.page.identifier = "man-convicted-in-pop-smoke-s-murder-gets-four-years-for-fentanyl-case";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

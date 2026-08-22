@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Streamer Deen The Great Faces Felony Robbery Charge &amp; 15 Years In Prison</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/07/Image-7-31-26-at-9.21-PM.jpg" alt="Streamer Deen The Great Faces Felony Robbery Charge &amp; 15 Years In Prison">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/07/Image-7-31-26-at-9.21-PM.jpg" alt="Streamer Deen The Great Faces Felony Robbery Charge &amp; 15 Years In Prison" onload="this.style.animation='none'">
   <p class="article-summary">Deen The Great is facing legal trouble that could carry significant consequences after Florida prosecutors charged the popular streamer with felony robbery in connection with an alleged confrontation aboard a yacht in Miami. The former boxer faces up to 15 years in prison if convicted on felony robbery charges. Deen, whose legal name is Nurideen Shabazz, was also charged with misdemeanor battery stemming from an alleged incident on May 27 involving a woman, according to court documents.</p>
   <a class="outbound-cta" href="https://allhiphop.com/ahhplus/streamer-deen-the-great-faces-felony-robbery-charge/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/streamer-deen-the-great-faces-felony-robbery-charge-15-years-in-prison/";
-      this.page.identifier = "streamer-deen-the-great-faces-felony-robbery-charge-15-years-in-prison";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/streamer-deen-the-great-faces-felony-robbery-charge-15-years-in-prison/";
+          this.page.identifier = "streamer-deen-the-great-faces-felony-robbery-charge-15-years-in-prison";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

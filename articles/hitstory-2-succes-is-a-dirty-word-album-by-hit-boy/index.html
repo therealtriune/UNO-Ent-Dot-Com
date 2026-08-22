@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">HITStory 2: Succes Is A Dirty Word – Album by Hit-Boy</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/HITStory-2-Success-Is-A-Dirty-Word-Hit-Boy.jpg" alt="HITStory 2: Succes Is A Dirty Word – Album by Hit-Boy">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/HITStory-2-Success-Is-A-Dirty-Word-Hit-Boy.jpg" alt="HITStory 2: Succes Is A Dirty Word – Album by Hit-Boy" onload="this.style.animation='none'">
   <p class="article-summary">Hit-Boy had a lot to share with fans this week, as he put out HITStory 2: Success Is A Dirty Word on streaming services after an initial June release. Not only that, but he also dropped the original HITStory on streaming 14 years after its release. HITStory 2 is even more dramatic, all-encompassing, and punchy than the original, showing Hit’s growth as a producer and MC over his lauded career.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006030-hitstory-2-succes-is-a-dirty-word-hit-boy" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/hitstory-2-succes-is-a-dirty-word-album-by-hit-boy/";
-      this.page.identifier = "hitstory-2-succes-is-a-dirty-word-album-by-hit-boy";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/hitstory-2-succes-is-a-dirty-word-album-by-hit-boy/";
+          this.page.identifier = "hitstory-2-succes-is-a-dirty-word-album-by-hit-boy";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

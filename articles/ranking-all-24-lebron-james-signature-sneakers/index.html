@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Ranking All 24 LeBron James Signature Sneakers</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/2009-08-24T211037Z_189391071_MT1USATODAY3901143_RTRMADP_3_NBA-LEBRON-JAMES-IN-BEIJING.jpg" alt="Ranking All 24 LeBron James Signature Sneakers">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/2009-08-24T211037Z_189391071_MT1USATODAY3901143_RTRMADP_3_NBA-LEBRON-JAMES-IN-BEIJING.jpg" alt="Ranking All 24 LeBron James Signature Sneakers" onload="this.style.animation='none'">
   <p class="article-summary">LeBron James has been wearing Nike signatures since before he played a single NBA game, and over the course of 23 seasons he has built one of the deepest and most storied signature shoe catalogs in the history of the sport. From his rookie debut in Cleveland to back-to-back championships in Miami, a return home to Northeast Ohio, a Laker era that produced another title, and now a move to Philadelphia that has the sneaker world buzzing again, every chapter of his career has a shoe attached to it. With the LeBron 24 freshly leaked and his 76ers story just getting started, there has never been a better time to rank all 24 of them from worst to best.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1003787-lebron-james-signature-sneakers-ranked" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ranking-all-24-lebron-james-signature-sneakers/";
-      this.page.identifier = "ranking-all-24-lebron-james-signature-sneakers";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ranking-all-24-lebron-james-signature-sneakers/";
+          this.page.identifier = "ranking-all-24-lebron-james-signature-sneakers";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

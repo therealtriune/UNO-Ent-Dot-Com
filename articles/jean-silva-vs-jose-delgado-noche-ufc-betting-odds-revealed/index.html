@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Jean Silva vs. Jose Delgado Noche UFC Betting Odds Revealed</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/8eec739c377a2023f623f5bb870e1899636e1331620a1462b376683456826d50/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fheavy_214%2F4bd3026278980d194cd1348b89ceed1c.jpg" alt="Jean Silva vs. Jose Delgado Noche UFC Betting Odds Revealed">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/8eec739c377a2023f623f5bb870e1899636e1331620a1462b376683456826d50/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fheavy_214%2F4bd3026278980d194cd1348b89ceed1c.jpg" alt="Jean Silva vs. Jose Delgado Noche UFC Betting Odds Revealed" onload="this.style.animation='none'">
   <p class="article-summary">Jean Silva Getty The opening betting odds have been revealed for the upcoming Noche UFC main event between featherweights Jean Silva and Jose Delgado. Silva was set to fight Yair Rodriguez in the Noche UFC headliner, an event that takes place on September 12 at Desert Diamond Arena in Glendale, Arizona. However, a Rodriguez injury in training camp led to him pulling out of the fight and being replaced by Delgado, who is getting the first chance in his UFC career to headline a card.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/jean-silva-vs-jose-delgado-055714314.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/jean-silva-vs-jose-delgado-noche-ufc-betting-odds-revealed/";
-      this.page.identifier = "jean-silva-vs-jose-delgado-noche-ufc-betting-odds-revealed";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/jean-silva-vs-jose-delgado-noche-ufc-betting-odds-revealed/";
+          this.page.identifier = "jean-silva-vs-jose-delgado-noche-ufc-betting-odds-revealed";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

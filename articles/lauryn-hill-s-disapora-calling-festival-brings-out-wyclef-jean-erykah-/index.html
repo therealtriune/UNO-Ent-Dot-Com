@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Lauryn Hill&#x27;s Disapora Calling! Festival Brings Out Wyclef Jean, Erykah Badu &amp; More Stars</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/ff/16by9/2026/08/09/ff5db8ba77bc40628a7e7f19bff0ad99_xl.jpg" alt="Lauryn Hill&#x27;s Disapora Calling! Festival Brings Out Wyclef Jean, Erykah Badu &amp; More Stars">
+  <img class="article-hero" src="https://imagez.tmz.com/image/ff/16by9/2026/08/09/ff5db8ba77bc40628a7e7f19bff0ad99_xl.jpg" alt="Lauryn Hill&#x27;s Disapora Calling! Festival Brings Out Wyclef Jean, Erykah Badu &amp; More Stars" onload="this.style.animation='none'">
   <p class="article-summary">Lauryn Hill&#x27;s Diaspora Calling! festival rang some big stars...and they answered -- rocking a crowd of 35,000 in the United Kingdom on Friday.</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/09/lauryn-hill-diaspora-calling-festival/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/lauryn-hill-s-disapora-calling-festival-brings-out-wyclef-jean-erykah-/";
-      this.page.identifier = "lauryn-hill-s-disapora-calling-festival-brings-out-wyclef-jean-erykah-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/lauryn-hill-s-disapora-calling-festival-brings-out-wyclef-jean-erykah-/";
+          this.page.identifier = "lauryn-hill-s-disapora-calling-festival-brings-out-wyclef-jean-erykah-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

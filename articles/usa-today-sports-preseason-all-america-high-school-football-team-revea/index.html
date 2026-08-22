@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">6 days ago</div>
   <h1 class="article-title">USA TODAY Sports preseason All-America High School Football Team revealed</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/248a4ad37aad8a8b147f4e1af147d2e57822c85aad6d34e00ba81c722e4f78a6/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F03ff93beea83b96abcef00bd49964881.png" alt="USA TODAY Sports preseason All-America High School Football Team revealed">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/248a4ad37aad8a8b147f4e1af147d2e57822c85aad6d34e00ba81c722e4f78a6/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F03ff93beea83b96abcef00bd49964881.png" alt="USA TODAY Sports preseason All-America High School Football Team revealed" onload="this.style.animation='none'">
   <p class="article-summary">Elite high school football players have spent years fighting up the depth chart, getting collegiate notice and becoming stars. With the start of the 2026 football season approaching, its time for the upperclassmen in 2027 and 2028 to shine, and the underclassmen to begin making their names known. USA TODAY Sports is proud to present its preseason All-America team, highlighting 36 players on both sides of the ball who are primed to become household names now and in the future.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/usa-today-sports-preseason-america-133035988.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/usa-today-sports-preseason-all-america-high-school-football-team-revea/";
-      this.page.identifier = "usa-today-sports-preseason-all-america-high-school-football-team-revea";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/usa-today-sports-preseason-all-america-high-school-football-team-revea/";
+          this.page.identifier = "usa-today-sports-preseason-all-america-high-school-football-team-revea";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

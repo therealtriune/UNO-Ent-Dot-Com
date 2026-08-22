@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Statue of Liberty Boat Tragedy: Woman and Infant Dead After Vessel Capsizes</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/62/16by9/2026/08/09/6247c20741fa4e1ab53df15cff44ee5d_xl.jpg" alt="Statue of Liberty Boat Tragedy: Woman and Infant Dead After Vessel Capsizes">
+  <img class="article-hero" src="https://imagez.tmz.com/image/62/16by9/2026/08/09/6247c20741fa4e1ab53df15cff44ee5d_xl.jpg" alt="Statue of Liberty Boat Tragedy: Woman and Infant Dead After Vessel Capsizes" onload="this.style.animation='none'">
   <p class="article-summary">Two people died -- including a 5-month-old girl -- and 12 others plunged into the waters near NYC&#x27;s Statue of Liberty after their boat capsized Saturday night, according to law enforcement. NYPD sources tell TMZ...the terrifying incident occurred…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/09/woman-and-infant-die-after-boat-overturns-near-statue-of-liberty/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/statue-of-liberty-boat-tragedy-woman-and-infant-dead-after-vessel-caps/";
-      this.page.identifier = "statue-of-liberty-boat-tragedy-woman-and-infant-dead-after-vessel-caps";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/statue-of-liberty-boat-tragedy-woman-and-infant-dead-after-vessel-caps/";
+          this.page.identifier = "statue-of-liberty-boat-tragedy-woman-and-infant-dead-after-vessel-caps";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

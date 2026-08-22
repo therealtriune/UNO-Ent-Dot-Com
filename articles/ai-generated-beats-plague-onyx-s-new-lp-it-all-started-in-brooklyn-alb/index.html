@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">AI-Generated Beats Plague Onyx’s New LP “It All Started in Brooklyn” (Album Review)</h1>
-  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/IMG_5351-scaled-e1785477817553.jpeg" alt="AI-Generated Beats Plague Onyx’s New LP “It All Started in Brooklyn” (Album Review)">
+  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/IMG_5351-scaled-e1785477817553.jpeg" alt="AI-Generated Beats Plague Onyx’s New LP “It All Started in Brooklyn” (Album Review)" onload="this.style.animation='none'">
   <p class="article-summary">Queens, New York duo Onyx consisting of Sticky Fingaz &amp; Fredro Starr dropping their 14th studio LP. Their debut Bacdafucup followed by All We Got Iz Us &amp; Shut ‘Em Down under Def Jam Recordings are rightfully considered by many to be East Coast classics, releasing 2 mediocre albums in the early 2000s returning in 2014 with the Snowgoons produced #WAKEDAFUCUP. The sequel Snowmads was great &amp; I also enjoyed Onyx vs.</p>
   <a class="outbound-cta" href="https://undergroundhiphopblog.com/albums/ai-generated-beats-plague-onyxs-new-lp-it-all-started-in-brooklyn-album-review/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Underground Hip Hop Blog &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ai-generated-beats-plague-onyx-s-new-lp-it-all-started-in-brooklyn-alb/";
-      this.page.identifier = "ai-generated-beats-plague-onyx-s-new-lp-it-all-started-in-brooklyn-alb";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ai-generated-beats-plague-onyx-s-new-lp-it-all-started-in-brooklyn-alb/";
+          this.page.identifier = "ai-generated-beats-plague-onyx-s-new-lp-it-all-started-in-brooklyn-alb";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

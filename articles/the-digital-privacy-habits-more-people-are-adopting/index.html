@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">The digital privacy habits more people are adopting</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/262b68925fa91ff3a30cfd2c67b8b779.jpeg" alt="The digital privacy habits more people are adopting">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/262b68925fa91ff3a30cfd2c67b8b779.jpeg" alt="The digital privacy habits more people are adopting" onload="this.style.animation='none'">
   <p class="article-summary">Data breaches and identity theft are threatening the online safety of millions of Americans. In response, more people are adopting digital privacy habits like stronger passwords, privacy audits, data broker removal, and tighter control over what they share online. Personal data has never been more valuable, and most people have spent years giving it away without thinking twice.</p>
   <a class="outbound-cta" href="https://allhiphop.com/blogs/the-digital-privacy-habits-more-people-are-adopting/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/the-digital-privacy-habits-more-people-are-adopting/";
-      this.page.identifier = "the-digital-privacy-habits-more-people-are-adopting";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/the-digital-privacy-habits-more-people-are-adopting/";
+          this.page.identifier = "the-digital-privacy-habits-more-people-are-adopting";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

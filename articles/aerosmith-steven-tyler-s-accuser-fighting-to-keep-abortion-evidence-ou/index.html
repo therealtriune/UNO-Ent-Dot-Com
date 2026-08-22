@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Aerosmith Steven Tyler’s Accuser Fighting to Keep Abortion Evidence Out of Court</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/2a/16by9/2026/08/13/2ad3acde0ce34ceca0638e07b0fb1f44_xl.jpg" alt="Aerosmith Steven Tyler’s Accuser Fighting to Keep Abortion Evidence Out of Court">
+  <img class="article-hero" src="https://imagez.tmz.com/image/2a/16by9/2026/08/13/2ad3acde0ce34ceca0638e07b0fb1f44_xl.jpg" alt="Aerosmith Steven Tyler’s Accuser Fighting to Keep Abortion Evidence Out of Court" onload="this.style.animation='none'">
   <p class="article-summary">Steven Tyler is fighting his teen abuse accuser over abortion evidence in their upcoming trial...TMZ has learned. According to new legal docs, obtained by TMZ, Steven and Julia Holcomb are going back and forth over whether the jury should be able…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/13/steven-tyler-fighting-accuser-over-abortion-evidence-in-court-battle/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/aerosmith-steven-tyler-s-accuser-fighting-to-keep-abortion-evidence-ou/";
-      this.page.identifier = "aerosmith-steven-tyler-s-accuser-fighting-to-keep-abortion-evidence-ou";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/aerosmith-steven-tyler-s-accuser-fighting-to-keep-abortion-evidence-ou/";
+          this.page.identifier = "aerosmith-steven-tyler-s-accuser-fighting-to-keep-abortion-evidence-ou";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

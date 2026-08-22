@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">From the Bronx to LA: Cash Cobain Hits the Stage in True Religion’s ‘True Spotlight’ Episode 2</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/07/img_1756.png" alt="From the Bronx to LA: Cash Cobain Hits the Stage in True Religion’s ‘True Spotlight’ Episode 2">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/07/img_1756.png" alt="From the Bronx to LA: Cash Cobain Hits the Stage in True Religion’s ‘True Spotlight’ Episode 2" onload="this.style.animation='none'">
   <p class="article-summary">Cash Cobain is taking his talent across the country, and True Religion is giving fans a front-row seat to all the magic! Episode 2 of True Religion’s original documentary series, True Spotlight, dropped Friday, July 24, and it is all about Bronx artist and producer. This newest episode follows Cash all the way to Los Angeles as he gets ready for one of the biggest moments of his career, his debut performance at the famous Blue Note.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/from-the-bronx-to-la-cash-cobain-hits-the-stage-in-true-religions-true-spotlight-episode-2/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/from-the-bronx-to-la-cash-cobain-hits-the-stage-in-true-religion-s-tru/";
-      this.page.identifier = "from-the-bronx-to-la-cash-cobain-hits-the-stage-in-true-religion-s-tru";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/from-the-bronx-to-la-cash-cobain-hits-the-stage-in-true-religion-s-tru/";
+          this.page.identifier = "from-the-bronx-to-la-cash-cobain-hits-the-stage-in-true-religion-s-tru";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

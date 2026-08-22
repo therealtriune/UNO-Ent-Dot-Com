@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Trump Aide Natalie Harp Worked in White House Over a Year Without Security Clearance</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/10/16by9/2026/08/19/10dbe49df5fe4e2e88d7e5575395dd9b_xl.jpg" alt="Trump Aide Natalie Harp Worked in White House Over a Year Without Security Clearance">
+  <img class="article-hero" src="https://imagez.tmz.com/image/10/16by9/2026/08/19/10dbe49df5fe4e2e88d7e5575395dd9b_xl.jpg" alt="Trump Aide Natalie Harp Worked in White House Over a Year Without Security Clearance" onload="this.style.animation='none'">
   <p class="article-summary">Donald Trump&#x27;s ever-present aide Natalie Harp reportedly spent more than a year working inside the White House without a security clearance...despite rarely leaving the president&#x27;s side. Harp didn&#x27;t complete the paperwork needed to kick off her…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/19/donald-trump-aide-natalie-harp-worked-without-security-clearance/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/trump-aide-natalie-harp-worked-in-white-house-over-a-year-without-secu/";
-      this.page.identifier = "trump-aide-natalie-harp-worked-in-white-house-over-a-year-without-secu";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/trump-aide-natalie-harp-worked-in-white-house-over-a-year-without-secu/";
+          this.page.identifier = "trump-aide-natalie-harp-worked-in-white-house-over-a-year-without-secu";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

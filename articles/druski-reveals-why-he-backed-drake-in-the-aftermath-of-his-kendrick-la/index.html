@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Druski Reveals Why He Backed Drake In The Aftermath Of His Kendrick Lamar Battle</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/druski-drake-scaled.jpg" alt="Druski Reveals Why He Backed Drake In The Aftermath Of His Kendrick Lamar Battle">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/druski-drake-scaled.jpg" alt="Druski Reveals Why He Backed Drake In The Aftermath Of His Kendrick Lamar Battle" onload="this.style.animation='none'">
   <p class="article-summary">Druski has become one of the biggest comedians in the world, and his work has garnered the attention of superstars like Drake and Jack Harlow. In fact, just a few years ago, Druski and Harlow were looking to be the next dynamic duo in the comedy world. The comedian’s rise to fame has been truly impressive to watch.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006421-druski-drake-kendrick-lamar-beef" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/druski-reveals-why-he-backed-drake-in-the-aftermath-of-his-kendrick-la/";
-      this.page.identifier = "druski-reveals-why-he-backed-drake-in-the-aftermath-of-his-kendrick-la";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/druski-reveals-why-he-backed-drake-in-the-aftermath-of-his-kendrick-la/";
+          this.page.identifier = "druski-reveals-why-he-backed-drake-in-the-aftermath-of-his-kendrick-la";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

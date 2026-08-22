@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Yikes! Footage Shows Amusement Park Guests Stranded Upside Down On New Jersey Boardwalk Ride (VIDEO)</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Amusement-Park-Guests-Stranded-Upside-Down-New-Jersey-Boardwalk-Ride-Wipeout-Playlands-Castaway-Cove-Ocean-City-Boardwalk.jpg" alt="Yikes! Footage Shows Amusement Park Guests Stranded Upside Down On New Jersey Boardwalk Ride (VIDEO)">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Amusement-Park-Guests-Stranded-Upside-Down-New-Jersey-Boardwalk-Ride-Wipeout-Playlands-Castaway-Cove-Ocean-City-Boardwalk.jpg" alt="Yikes! Footage Shows Amusement Park Guests Stranded Upside Down On New Jersey Boardwalk Ride (VIDEO)" onload="this.style.animation='none'">
   <p class="article-summary">Guests at an amusement park were stranded upside down after a ride malfunctioned on Sunday, July 5. Terrifying footage captured people suspended mid-air on the ride in Ocean City, New Jersey. RELATED: Man Passes Away After Riding Roller Coaster At New Florida Amusement Park Epic Universe Riders Stranded Upside Down On New Jersey Amusement Park Ride Video captured guests visiting Playland’s Castaway Cove at the Ocean City Boardwalk in Ocean City, New Jersey, stranded upside down on the ride Wipe Out.</p>
   <a class="outbound-cta" href="https://theshaderoom.com/footage-shows-amusement-park-guests-stranded-upside-down-new-jersey-boardwalk-ride-video/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/yikes-footage-shows-amusement-park-guests-stranded-upside-down-on-new-/";
-      this.page.identifier = "yikes-footage-shows-amusement-park-guests-stranded-upside-down-on-new-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/yikes-footage-shows-amusement-park-guests-stranded-upside-down-on-new-/";
+          this.page.identifier = "yikes-footage-shows-amusement-park-guests-stranded-upside-down-on-new-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

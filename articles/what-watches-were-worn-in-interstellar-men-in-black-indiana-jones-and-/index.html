@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">15 weeks ago</div>
   <h1 class="article-title">What Watches Were Worn in Interstellar, Men in Black, Indiana Jones, and The Life Aquatic?</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/ca/16by9/2026/04/30/ca738ce91a564bd882c93d15b376bf68_xl.jpg" alt="What Watches Were Worn in Interstellar, Men in Black, Indiana Jones, and The Life Aquatic?">
+  <img class="article-hero" src="https://imagez.tmz.com/image/ca/16by9/2026/04/30/ca738ce91a564bd882c93d15b376bf68_xl.jpg" alt="What Watches Were Worn in Interstellar, Men in Black, Indiana Jones, and The Life Aquatic?" onload="this.style.animation='none'">
   <p class="article-summary">TMZ may collect a share of sales or other compensation from links on this page. Some of the coolest watches don&#x27;t just tell time...they steal scenes.</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/05/08/famous-movie-watches-available-on-amazon/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/what-watches-were-worn-in-interstellar-men-in-black-indiana-jones-and-/";
-      this.page.identifier = "what-watches-were-worn-in-interstellar-men-in-black-indiana-jones-and-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/what-watches-were-worn-in-interstellar-men-in-black-indiana-jones-and-/";
+          this.page.identifier = "what-watches-were-worn-in-interstellar-men-in-black-indiana-jones-and-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

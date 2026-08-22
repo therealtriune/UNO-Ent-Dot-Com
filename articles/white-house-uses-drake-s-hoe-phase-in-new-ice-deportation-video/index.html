@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">White House Uses Drake’s “Hoe Phase” In New ICE Deportation Video</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/11/Donald-Trump.jpg" alt="White House Uses Drake’s “Hoe Phase” In New ICE Deportation Video">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/11/Donald-Trump.jpg" alt="White House Uses Drake’s “Hoe Phase” In New ICE Deportation Video" onload="this.style.animation='none'">
   <p class="article-summary">Drake is back inside White House deportation propaganda after his music accompanied another social video celebrating arrests by federal immigration agents. The latest White House TikTok uses “Hoe Phase” beneath footage of President Donald Trump, ICE operations and people being placed into custody. “Let us remind you if you’re here illegally, you’re going home,” the administration wrote alongside the video posted Friday.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/white-house-uses-drakes-hoe-phase-in-new-ice-deportation-video/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/white-house-uses-drake-s-hoe-phase-in-new-ice-deportation-video/";
-      this.page.identifier = "white-house-uses-drake-s-hoe-phase-in-new-ice-deportation-video";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/white-house-uses-drake-s-hoe-phase-in-new-ice-deportation-video/";
+          this.page.identifier = "white-house-uses-drake-s-hoe-phase-in-new-ice-deportation-video";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

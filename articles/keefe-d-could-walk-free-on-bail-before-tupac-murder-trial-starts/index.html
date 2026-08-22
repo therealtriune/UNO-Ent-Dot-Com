@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Keefe D Could Walk Free On Bail Before Tupac Murder Trial Starts</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2022/09/Tupac-Shakur.jpg" alt="Keefe D Could Walk Free On Bail Before Tupac Murder Trial Starts">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2022/09/Tupac-Shakur.jpg" alt="Keefe D Could Walk Free On Bail Before Tupac Murder Trial Starts" onload="this.style.animation='none'">
   <p class="article-summary">Keefe D might be walking out of a Las Vegas detention center before the jury even gets seated in the Tupac murder trial. During a pre-trial hearing, the judge signaled she’s willing to let the former Compton gang leader post bail, a move that caught prosecutors completely off guard and set the stage for a dramatic final week before opening arguments. The defense team has been aggressively pushing for Keefe D’s release, and the judge’s comments suggest they’ve got a real shot at it.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/keefe-d-could-walk-free-on-bail-before-tupac-murder-trial-starts/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/keefe-d-could-walk-free-on-bail-before-tupac-murder-trial-starts/";
-      this.page.identifier = "keefe-d-could-walk-free-on-bail-before-tupac-murder-trial-starts";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/keefe-d-could-walk-free-on-bail-before-tupac-murder-trial-starts/";
+          this.page.identifier = "keefe-d-could-walk-free-on-bail-before-tupac-murder-trial-starts";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

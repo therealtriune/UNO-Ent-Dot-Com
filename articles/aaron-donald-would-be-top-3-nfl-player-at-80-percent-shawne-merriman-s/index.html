@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Aaron Donald Would Be &#x27;Top 3&#x27; NFL Player At 80 Percent, Shawne Merriman Says</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/87/16by9/2026/08/07/871ff903c4a0456d9980222507a3ab89_xl.png" alt="Aaron Donald Would Be &#x27;Top 3&#x27; NFL Player At 80 Percent, Shawne Merriman Says">
+  <img class="article-hero" src="https://imagez.tmz.com/image/87/16by9/2026/08/07/871ff903c4a0456d9980222507a3ab89_xl.png" alt="Aaron Donald Would Be &#x27;Top 3&#x27; NFL Player At 80 Percent, Shawne Merriman Says" onload="this.style.animation='none'">
   <p class="article-summary">Aaron Donald is still Aaron Donald no matter how much Aaron Donald ya get...so says Shawne Merriman, who tells TMZ Sports even if the All-Pro defensive tackle comes back at 80% -- he&#x27;s one of the best players in the NFL. The Los Angeles Rams…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/10/shawne-merriman-on-aaron-donald/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/aaron-donald-would-be-top-3-nfl-player-at-80-percent-shawne-merriman-s/";
-      this.page.identifier = "aaron-donald-would-be-top-3-nfl-player-at-80-percent-shawne-merriman-s";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/aaron-donald-would-be-top-3-nfl-player-at-80-percent-shawne-merriman-s/";
+          this.page.identifier = "aaron-donald-would-be-top-3-nfl-player-at-80-percent-shawne-merriman-s";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

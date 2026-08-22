@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">50 Cent Clowns Keefe D For Claiming Diddy Didn’t Murder Tupac</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/50-Cent-Keefe-D-Diddy-Didnt-Murder-Tupac-scaled.jpg" alt="50 Cent Clowns Keefe D For Claiming Diddy Didn’t Murder Tupac">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/50-Cent-Keefe-D-Diddy-Didnt-Murder-Tupac-scaled.jpg" alt="50 Cent Clowns Keefe D For Claiming Diddy Didn’t Murder Tupac" onload="this.style.animation='none'">
   <p class="article-summary">Diddy has long denied theories that he had something to do with the murder of Tupac. While he has his own legal battle to deal with, Duane “Keefe D” Davis is the main suspect of this murder investigation, and he will face trial later this month. During an interview, Keefe D claimed Sean Combs wasn’t responsible for the murder, which contradicts his previous statements.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005173-50-cent-keefe-d-diddy-didnt-murder-tupac" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/50-cent-clowns-keefe-d-for-claiming-diddy-didn-t-murder-tupac/";
-      this.page.identifier = "50-cent-clowns-keefe-d-for-claiming-diddy-didn-t-murder-tupac";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/50-cent-clowns-keefe-d-for-claiming-diddy-didn-t-murder-tupac/";
+          this.page.identifier = "50-cent-clowns-keefe-d-for-claiming-diddy-didn-t-murder-tupac";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

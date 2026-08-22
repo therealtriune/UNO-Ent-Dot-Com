@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Future Denies Big U &amp; Wack 100 Claims By Reposting Doe Boy’s Video</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/Future-Denies-Big-U-Wack-100-Claims-Repost-Doe-Boy-Video-scaled-e1785512286729.jpg" alt="Future Denies Big U &amp; Wack 100 Claims By Reposting Doe Boy’s Video">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/Future-Denies-Big-U-Wack-100-Claims-Repost-Doe-Boy-Video-scaled-e1785512286729.jpg" alt="Future Denies Big U &amp; Wack 100 Claims By Reposting Doe Boy’s Video" onload="this.style.animation='none'">
   <p class="article-summary">Future has been pretty busy these days with his new album The Real Me, but he’s still finding time to respond to Internet chatter. New federal charges against Eugene “Big U” Henley made allegations resurface about him and Wack 100 chasing down Fewtch back when he was with Ciara at the LAX airport almost four years ago. Doe Boy had blasted these claims when Wack made them back in 2022, a response that is as relevant as ever.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004198-future-denies-big-u-wack-100-claims-repost-doe-boy-video" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/future-denies-big-u-wack-100-claims-by-reposting-doe-boy-s-video/";
-      this.page.identifier = "future-denies-big-u-wack-100-claims-by-reposting-doe-boy-s-video";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/future-denies-big-u-wack-100-claims-by-reposting-doe-boy-s-video/";
+          this.page.identifier = "future-denies-big-u-wack-100-claims-by-reposting-doe-boy-s-video";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

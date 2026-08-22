@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">23 hours ago</div>
   <h1 class="article-title">Klint Kubiak: Raiders have to get a lot better very fast at wide receiver</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/a1288ad2362daba724a5915490ab4cb9d089890f0321907ab4f651d5eb6fdd4d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F365be48d369bcfa68ecc845157ece1a8.jpg" alt="Klint Kubiak: Raiders have to get a lot better very fast at wide receiver">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/a1288ad2362daba724a5915490ab4cb9d089890f0321907ab4f651d5eb6fdd4d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F365be48d369bcfa68ecc845157ece1a8.jpg" alt="Klint Kubiak: Raiders have to get a lot better very fast at wide receiver" onload="this.style.animation='none'">
   <p class="article-summary">The Raiders have to get better at wide receiver in a hurry. That&#x27;s the word from head coach Klint Kubiak, who said in reviewing Thursday&#x27;s preseason game that the wide receiver group needs improvement between now and Week One. Asked what he learned about his wide receivers at the joint practice and preseason game with the Texans, Kubiak sounded decidedly negative.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/klint-kubiak-raiders-lot-better-210446062.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/klint-kubiak-raiders-have-to-get-a-lot-better-very-fast-at-wide-receiv/";
-      this.page.identifier = "klint-kubiak-raiders-have-to-get-a-lot-better-very-fast-at-wide-receiv";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/klint-kubiak-raiders-have-to-get-a-lot-better-very-fast-at-wide-receiv/";
+          this.page.identifier = "klint-kubiak-raiders-have-to-get-a-lot-better-very-fast-at-wide-receiv";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Veteran QB Teddy Bridgewater tells Lions he is stepping away from football</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/70ec46b0c8c2b15e36997db29fb9b0a7e14e0d6a8398187b9cc924391d36fe7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Fb11dcb79-551b-4fa7-90a4-e1d8a4122629" alt="Veteran QB Teddy Bridgewater tells Lions he is stepping away from football">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/70ec46b0c8c2b15e36997db29fb9b0a7e14e0d6a8398187b9cc924391d36fe7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Fb11dcb79-551b-4fa7-90a4-e1d8a4122629" alt="Veteran QB Teddy Bridgewater tells Lions he is stepping away from football" onload="this.style.animation='none'">
   <p class="article-summary">Detroit Lions head coach Dan Campbell said in a press conference on Sunday that veteran quarterback Teddy Bridgewater let the franchise know he would be stepping away from the team. Bridgwater had been in training camp with the Lions as the presumed backup to Jared Goff. With Detroit’s only other quarterback at camp being Luke Altmyer, the team is expected to bring in more quarterbacks for workouts with the hope of a quarterback battle to determine Goff’s backup for the upcoming season.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/nfl/article/veteran-qb-teddy-bridgewater-tells-lions-he-is-stepping-away-from-football-170853854.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/veteran-qb-teddy-bridgewater-tells-lions-he-is-stepping-away-from-foot/";
-      this.page.identifier = "veteran-qb-teddy-bridgewater-tells-lions-he-is-stepping-away-from-foot";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/veteran-qb-teddy-bridgewater-tells-lions-he-is-stepping-away-from-foot/";
+          this.page.identifier = "veteran-qb-teddy-bridgewater-tells-lions-he-is-stepping-away-from-foot";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

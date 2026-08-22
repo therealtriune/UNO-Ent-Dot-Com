@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Chix On Netflix -- Guess The &#x27;Outer Banks&#x27; Babe</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/31/16by9/2026/08/18/31e24ddb548a4ff3872bb2f8b10ee520_xl.jpg" alt="Chix On Netflix -- Guess The &#x27;Outer Banks&#x27; Babe">
+  <img class="article-hero" src="https://imagez.tmz.com/image/31/16by9/2026/08/18/31e24ddb548a4ff3872bb2f8b10ee520_xl.jpg" alt="Chix On Netflix -- Guess The &#x27;Outer Banks&#x27; Babe" onload="this.style.animation='none'">
   <p class="article-summary">Can you uncover this week&#x27;s Cheek of the Week mystery?! Here are your clues: Back in 2020, she auditioned for &quot;Outer Banks&quot; and made her debut on the hit show during Season 2. She&#x27;s tough, fearless and worked on a ship before joining the Pogues.…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/19/carlacia-grant-from-outer-banks-hot-pictures/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/chix-on-netflix-guess-the-outer-banks-babe/";
-      this.page.identifier = "chix-on-netflix-guess-the-outer-banks-babe";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/chix-on-netflix-guess-the-outer-banks-babe/";
+          this.page.identifier = "chix-on-netflix-guess-the-outer-banks-babe";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

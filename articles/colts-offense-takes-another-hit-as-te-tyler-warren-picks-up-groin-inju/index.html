@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Colts offense takes another hit as TE Tyler Warren picks up groin injury</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/ec25d8ee9ef22c794c1034d3c730e9942ab7882bfd6ae82e1f7d6dc45a5dc0c1/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Fc2890a8d-f483-45bf-8092-a7833809347e" alt="Colts offense takes another hit as TE Tyler Warren picks up groin injury">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/ec25d8ee9ef22c794c1034d3c730e9942ab7882bfd6ae82e1f7d6dc45a5dc0c1/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Fc2890a8d-f483-45bf-8092-a7833809347e" alt="Colts offense takes another hit as TE Tyler Warren picks up groin injury" onload="this.style.animation='none'">
   <p class="article-summary">Indianapolis Colts tight end Tyler Warren is dealing with a groin injury, head coach Shane Steichen confirmed on Wednesday. Warren had left practice with an injury but returned to watch the end of practice with his teammates, leaving many to wonder how bad the injury was. While Steichen confirmed that it is a groin injury for the tight end, he did not give any insight into how severe the injury was or if it could sideline Warren for the beginning of the season.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/nfl/article/colts-offense-takes-another-hit-as-te-tyler-warren-picks-up-groin-injury-221859645.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/colts-offense-takes-another-hit-as-te-tyler-warren-picks-up-groin-inju/";
-      this.page.identifier = "colts-offense-takes-another-hit-as-te-tyler-warren-picks-up-groin-inju";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/colts-offense-takes-another-hit-as-te-tyler-warren-picks-up-groin-inju/";
+          this.page.identifier = "colts-offense-takes-another-hit-as-te-tyler-warren-picks-up-groin-inju";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

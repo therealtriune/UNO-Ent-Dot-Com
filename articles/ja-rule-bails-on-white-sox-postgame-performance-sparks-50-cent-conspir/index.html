@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Ja Rule Bails On White Sox Postgame Performance &amp; Sparks 50 Cent Conspiracy</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/10/Ja-Rule-1.png" alt="Ja Rule Bails On White Sox Postgame Performance &amp; Sparks 50 Cent Conspiracy">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/10/Ja-Rule-1.png" alt="Ja Rule Bails On White Sox Postgame Performance &amp; Sparks 50 Cent Conspiracy" onload="this.style.animation='none'">
   <p class="article-summary">Ja Rule left Chicago White Sox fans hanging on Friday night when he couldn’t make it to Rate Field for a postgame concert that was supposed to cap off African American Heritage Night. The Hip-Hop icon cited unexpected travel issues as the reason for the no-show, forcing the team to announce the cancellation on the video board during the 9th inning while the Sox were getting blown out 8-2 by the Cleveland Guardians. According to USA TODAY, White Sox reporter James Fegan confirmed the announcement came through the video board during the game against Cleveland.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/ja-rule-bails-on-white-sox-postgame-performance-sparks-50-cent-conspiracy/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ja-rule-bails-on-white-sox-postgame-performance-sparks-50-cent-conspir/";
-      this.page.identifier = "ja-rule-bails-on-white-sox-postgame-performance-sparks-50-cent-conspir";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ja-rule-bails-on-white-sox-postgame-performance-sparks-50-cent-conspir/";
+          this.page.identifier = "ja-rule-bails-on-white-sox-postgame-performance-sparks-50-cent-conspir";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Durability, experience attracted Patriots to free agent signing Greg Van Roten</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/b6f52d7fe2b30856e4c11ad27dd55e1b8b695cc31322472893009da99874a30d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2Fc73cd742760a270cb113735e806e9df4.jpg" alt="Durability, experience attracted Patriots to free agent signing Greg Van Roten">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/b6f52d7fe2b30856e4c11ad27dd55e1b8b695cc31322472893009da99874a30d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2Fc73cd742760a270cb113735e806e9df4.jpg" alt="Durability, experience attracted Patriots to free agent signing Greg Van Roten" onload="this.style.animation='none'">
   <p class="article-summary">ORCHARD PARK, NEW YORK - AUGUST 09: Greg Van Roten #74 of the New York Giants looks on prior to an NFL Preseason 2025 game between New York Giants and Buffalo Bills at Highmark Stadium on August 09, 2025 in Orchard Park, New York. (Photo by Bryan Bennett/Getty Images) | Getty Images Coming out of their preseason opener with both of their top interior offensive line backups injured, the New England Patriots opted to proactively address the issue. After signing Darrian Dalcourt and Joseph Michalski two days after their 13-13 tie with the Indianapolis Colts, they also brought in a 12-year veteran earlier this week to further bolster the group.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/durability-experience-attracted-patriots-free-193828653.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/durability-experience-attracted-patriots-to-free-agent-signing-greg-va/";
-      this.page.identifier = "durability-experience-attracted-patriots-to-free-agent-signing-greg-va";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/durability-experience-attracted-patriots-to-free-agent-signing-greg-va/";
+          this.page.identifier = "durability-experience-attracted-patriots-to-free-agent-signing-greg-va";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

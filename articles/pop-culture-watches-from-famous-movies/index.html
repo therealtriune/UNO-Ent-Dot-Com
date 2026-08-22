@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Pop Culture Watches from Famous Movies</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/c1/16by9/2026/08/11/c1f49f76997942af951063e6bc48a50d_xl.jpg" alt="Pop Culture Watches from Famous Movies">
+  <img class="article-hero" src="https://imagez.tmz.com/image/c1/16by9/2026/08/11/c1f49f76997942af951063e6bc48a50d_xl.jpg" alt="Pop Culture Watches from Famous Movies" onload="this.style.animation='none'">
   <p class="article-summary">TMZ may collect a share of sales or other compensation from links on this page. The small details matter on the big screen … even down to the watches being worn by the film&#x27;s stars. While it may seem trivial, timepieces can help tell a…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/15/pop-culture-watches-from-famous-movies/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/pop-culture-watches-from-famous-movies/";
-      this.page.identifier = "pop-culture-watches-from-famous-movies";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/pop-culture-watches-from-famous-movies/";
+          this.page.identifier = "pop-culture-watches-from-famous-movies";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Here’s The Real Reason Why J. Cole Got Emotional During “Love Yourz” Performance</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2017-05-09T233108Z_1661376933_MT1USATODAY10049243_RTRMADP_3_JULY-28-2016-CHICAGO-IL-USA-RECORDING-ARTIST-J-COLE-scaled.jpg" alt="Here’s The Real Reason Why J. Cole Got Emotional During “Love Yourz” Performance">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2017-05-09T233108Z_1661376933_MT1USATODAY10049243_RTRMADP_3_JULY-28-2016-CHICAGO-IL-USA-RECORDING-ARTIST-J-COLE-scaled.jpg" alt="Here’s The Real Reason Why J. Cole Got Emotional During “Love Yourz” Performance" onload="this.style.animation='none'">
   <p class="article-summary">The criticism of J Cole as of late has largely centered on nitpicking decisions he made two years ago during a rap beef he admittedly wanted nothing to do with. However, The Fall Off and everything that occurred after its release have indicated that he’s basically come to peace with the online narratives. That includes criticism from media personalities like Mal, who accused him of being performative when he teared up on stage to “Love Yourz.” Well, it turns out that J Cole wasn’t just trying to win back public favor by his emotional performance–there was something that actually triggered those tears.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006404-j-cole-emotional-love-yourz-performance-explained" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/here-s-the-real-reason-why-j-cole-got-emotional-during-love-yourz-perf/";
-      this.page.identifier = "here-s-the-real-reason-why-j-cole-got-emotional-during-love-yourz-perf";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/here-s-the-real-reason-why-j-cole-got-emotional-during-love-yourz-perf/";
+          this.page.identifier = "here-s-the-real-reason-why-j-cole-got-emotional-during-love-yourz-perf";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

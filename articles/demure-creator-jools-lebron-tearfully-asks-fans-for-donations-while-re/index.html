@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">‘Demure’ Creator Jools Lebron Tearfully Asks Fans For Donations While Revealing Addiction ‘Severely Destroyed’ Her Teeth, Later Deletes GoFundMe After Backlash</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/‘Demure-Creator-Jools-Lebron-Tearfully-Asks-Fans-For-Donations-While-Revealing-Addiction-‘Severely-Destroyed-Her-Teeth-Later-Deletes-GoFundMe-After-Backlash.png" alt="‘Demure’ Creator Jools Lebron Tearfully Asks Fans For Donations While Revealing Addiction ‘Severely Destroyed’ Her Teeth, Later Deletes GoFundMe After Backlash">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/‘Demure-Creator-Jools-Lebron-Tearfully-Asks-Fans-For-Donations-While-Revealing-Addiction-‘Severely-Destroyed-Her-Teeth-Later-Deletes-GoFundMe-After-Backlash.png" alt="‘Demure’ Creator Jools Lebron Tearfully Asks Fans For Donations While Revealing Addiction ‘Severely Destroyed’ Her Teeth, Later Deletes GoFundMe After Backlash" onload="this.style.animation='none'">
   <p class="article-summary">Jools Lebron — the transgender influencer who went viral for created the “very demure” trend — is facing backlash after tearfully asking fans for donations while revealing her past addiction “severely destroyed” her teeth. RELATED: ‘Demure’ Named Word Of The Year By Dictionary.com On Saturday (August 8), Lebron took to her TikTok with a nearly 5-minute video detailing her situation about needing dental implants. The influencer began the video, “My teeth are falling out of my head and I need your help.” Over the video, she wrote, “My teeth are rotting.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/demure-creator-jools-lebron-tearfully-asks-fans-for-donations-while-revealing-addiction-severely-destroyed-her-teeth-later-deletes-gofundme-after-backlash/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/demure-creator-jools-lebron-tearfully-asks-fans-for-donations-while-re/";
-      this.page.identifier = "demure-creator-jools-lebron-tearfully-asks-fans-for-donations-while-re";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/demure-creator-jools-lebron-tearfully-asks-fans-for-donations-while-re/";
+          this.page.identifier = "demure-creator-jools-lebron-tearfully-asks-fans-for-donations-while-re";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

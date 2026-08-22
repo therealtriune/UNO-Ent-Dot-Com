@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 days ago</div>
   <h1 class="article-title">Andrew Gillum Leaves Jail for Rehab After Alleged Positive Meth Test</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/32/16by9/2026/08/17/32297d1381464cb2b9d80ae1284b4a4a_xl.jpg" alt="Andrew Gillum Leaves Jail for Rehab After Alleged Positive Meth Test">
+  <img class="article-hero" src="https://imagez.tmz.com/image/32/16by9/2026/08/17/32297d1381464cb2b9d80ae1284b4a4a_xl.jpg" alt="Andrew Gillum Leaves Jail for Rehab After Alleged Positive Meth Test" onload="this.style.animation='none'">
   <p class="article-summary">Andrew Gillum is swapping jail for rehab...but the court will still be keeping close tabs on him. According to new legal documents obtained by TMZ, a judge ordered the former Florida gubernatorial candidate released from the Baldwin County Jail…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/17/andrew-gillum-enters-rehab-under-court-order/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/andrew-gillum-leaves-jail-for-rehab-after-alleged-positive-meth-test/";
-      this.page.identifier = "andrew-gillum-leaves-jail-for-rehab-after-alleged-positive-meth-test";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/andrew-gillum-leaves-jail-for-rehab-after-alleged-positive-meth-test/";
+          this.page.identifier = "andrew-gillum-leaves-jail-for-rehab-after-alleged-positive-meth-test";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Is Patrick Mahomes playing today? Chiefs QB&#x27;s status for preseason Week 1 vs Rams</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/9e615143675ca4995c2ccd45d47747a9a88d51126d54be8a503c949366644b73/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2Fd86a096552803f7702526076ff178366.jpg" alt="Is Patrick Mahomes playing today? Chiefs QB&#x27;s status for preseason Week 1 vs Rams">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/9e615143675ca4995c2ccd45d47747a9a88d51126d54be8a503c949366644b73/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2Fd86a096552803f7702526076ff178366.jpg" alt="Is Patrick Mahomes playing today? Chiefs QB&#x27;s status for preseason Week 1 vs Rams" onload="this.style.animation='none'">
   <p class="article-summary">The Kansas City Chiefs are playing their first preseason game on Saturday, Aug. 15, when they host the Los Angeles Rams at Arrowhead Stadium in Kansas City. Chiefs fans will have to wait a little bit longer before they see their star quarterback, Patrick Mahomes, back on the field.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/patrick-mahomes-playing-today-chiefs-103107609.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/is-patrick-mahomes-playing-today-chiefs-qb-s-status-for-preseason-week/";
-      this.page.identifier = "is-patrick-mahomes-playing-today-chiefs-qb-s-status-for-preseason-week";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/is-patrick-mahomes-playing-today-chiefs-qb-s-status-for-preseason-week/";
+          this.page.identifier = "is-patrick-mahomes-playing-today-chiefs-qb-s-status-for-preseason-week";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

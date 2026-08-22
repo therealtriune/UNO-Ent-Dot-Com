@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Angel Reese Points Out The Person Who Threw A Sex Toy On The Court During Dream-Sparks Game</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/IMG_9487.jpeg" alt="Angel Reese Points Out The Person Who Threw A Sex Toy On The Court During Dream-Sparks Game">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/IMG_9487.jpeg" alt="Angel Reese Points Out The Person Who Threw A Sex Toy On The Court During Dream-Sparks Game" onload="this.style.animation='none'">
   <p class="article-summary">Things got very weird on the WNBA court this week, but Angel Reese was ready to call out the chaos. During the third quarter of the Atlanta Dream’s blowout 124-88 win over the Los Angeles Sparks on Thursday, Aug. 20, the game was interrupted by a shocking projectile: a bright green sex toy.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/angel-reese-points-out-the-person-who-threw-a-sex-toy-on-the-court-during-dream-sparks-game/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/angel-reese-points-out-the-person-who-threw-a-sex-toy-on-the-court-dur/";
-      this.page.identifier = "angel-reese-points-out-the-person-who-threw-a-sex-toy-on-the-court-dur";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/angel-reese-points-out-the-person-who-threw-a-sex-toy-on-the-court-dur/";
+          this.page.identifier = "angel-reese-points-out-the-person-who-threw-a-sex-toy-on-the-court-dur";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

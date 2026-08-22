@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">12 hours ago</div>
   <h1 class="article-title">Anthony Edwards&#x27; Baby Mama Ayesha Howard Happy For Other Baby Mama&#x27;s Child Support Win</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/a2/16by9/2026/08/21/a2324dd286ce4084bfba378d360944fb_xl.jpg" alt="Anthony Edwards&#x27; Baby Mama Ayesha Howard Happy For Other Baby Mama&#x27;s Child Support Win">
+  <img class="article-hero" src="https://imagez.tmz.com/image/a2/16by9/2026/08/21/a2324dd286ce4084bfba378d360944fb_xl.jpg" alt="Anthony Edwards&#x27; Baby Mama Ayesha Howard Happy For Other Baby Mama&#x27;s Child Support Win" onload="this.style.animation='none'">
   <p class="article-summary">Anthony Edwards&#x27; baby mamas aren&#x27;t squabbling...in fact, one of them is publicly saying she loves how much child support the other is getting from the NBA star. Ayesha Howard -- the mother of Anthony&#x27;s one-year-old daughter -- tells TMZ...she&#x27;s…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/22/anthony-edwards-baby-mama-happy-for-other-womans-child-support-win/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/anthony-edwards-baby-mama-ayesha-howard-happy-for-other-baby-mama-s-ch/";
-      this.page.identifier = "anthony-edwards-baby-mama-ayesha-howard-happy-for-other-baby-mama-s-ch";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/anthony-edwards-baby-mama-ayesha-howard-happy-for-other-baby-mama-s-ch/";
+          this.page.identifier = "anthony-edwards-baby-mama-ayesha-howard-happy-for-other-baby-mama-s-ch";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

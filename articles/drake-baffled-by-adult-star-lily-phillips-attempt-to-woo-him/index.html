@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Drake Baffled By Adult Star Lily Phillips’ Attempt To Woo Him</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Drake-Baffled-Adult-Star-Lily-Phillips.jpg" alt="Drake Baffled By Adult Star Lily Phillips’ Attempt To Woo Him">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Drake-Baffled-Adult-Star-Lily-Phillips.jpg" alt="Drake Baffled By Adult Star Lily Phillips’ Attempt To Woo Him" onload="this.style.animation='none'">
   <p class="article-summary">Drake has been diving deeper and deeper into the content creation world, as his latest giveaway livestream with Stake and Kick indicates. As part of the event last night (Saturday, August 8), he and Nelk’s Kyle Forgeard hosted a “20 v 1” event with various women competing for his heart. One of them was adult film star Lily Phillips, and their interaction quickly got fans raising their eyebrows.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005256-drake-baffled-adult-star-lily-phillips" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/drake-baffled-by-adult-star-lily-phillips-attempt-to-woo-him/";
-      this.page.identifier = "drake-baffled-by-adult-star-lily-phillips-attempt-to-woo-him";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/drake-baffled-by-adult-star-lily-phillips-attempt-to-woo-him/";
+          this.page.identifier = "drake-baffled-by-adult-star-lily-phillips-attempt-to-woo-him";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Signs: Cornell Students Eat Bear In Dorm, University Reacts Swiftly</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/Copy-of-AllHipHop-3.jpg" alt="Signs: Cornell Students Eat Bear In Dorm, University Reacts Swiftly">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/Copy-of-AllHipHop-3.jpg" alt="Signs: Cornell Students Eat Bear In Dorm, University Reacts Swiftly" onload="this.style.animation='none'">
   <p class="article-summary">It has been a while since we had a good “ Signs The World Is Coming To An End. ” That changes right now. Aaron Chin, whoever and wherever you are bud, have changed everything.</p>
   <a class="outbound-cta" href="https://allhiphop.com/rumors/signs-cornell-students-eat-bear-in-dorm-university-reacts-swiftly/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/signs-cornell-students-eat-bear-in-dorm-university-reacts-swiftly/";
-      this.page.identifier = "signs-cornell-students-eat-bear-in-dorm-university-reacts-swiftly";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/signs-cornell-students-eat-bear-in-dorm-university-reacts-swiftly/";
+          this.page.identifier = "signs-cornell-students-eat-bear-in-dorm-university-reacts-swiftly";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

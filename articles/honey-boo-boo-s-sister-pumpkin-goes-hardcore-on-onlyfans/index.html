@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Honey Boo Boo&#x27;s Sister Pumpkin Goes Hardcore on OnlyFans</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/8f/16by9/2026/08/05/8f83b4b4e7784f28ab642256f5bab590_xl.jpg" alt="Honey Boo Boo&#x27;s Sister Pumpkin Goes Hardcore on OnlyFans">
+  <img class="article-hero" src="https://imagez.tmz.com/image/8f/16by9/2026/08/05/8f83b4b4e7784f28ab642256f5bab590_xl.jpg" alt="Honey Boo Boo&#x27;s Sister Pumpkin Goes Hardcore on OnlyFans" onload="this.style.animation='none'">
   <p class="article-summary">Pumpkin is diving into hardcore sex on her OnlyFans account...and Honey Boo Boo&#x27;s sister tells TMZ there&#x27;s enough dessert for seconds and thirds. Here&#x27;s the deal...</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/05/lauryn-efird-is-doing-hardcore-adult-videos-on-onlyfans/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/honey-boo-boo-s-sister-pumpkin-goes-hardcore-on-onlyfans/";
-      this.page.identifier = "honey-boo-boo-s-sister-pumpkin-goes-hardcore-on-onlyfans";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/honey-boo-boo-s-sister-pumpkin-goes-hardcore-on-onlyfans/";
+          this.page.identifier = "honey-boo-boo-s-sister-pumpkin-goes-hardcore-on-onlyfans";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

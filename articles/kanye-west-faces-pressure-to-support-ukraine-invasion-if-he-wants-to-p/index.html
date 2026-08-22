@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Kanye West Faces Pressure To Support Ukraine Invasion If He Wants To Perform In Russia</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2020-12-02T193648Z_595854088_MT1USATODAY15258483_RTRMADP_3_FEBRUARY-8-2009-LOS-ANGELES-CA-USA-KANYE-WEST-PERFORMS-3-scaled.jpg" alt="Kanye West Faces Pressure To Support Ukraine Invasion If He Wants To Perform In Russia">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2020-12-02T193648Z_595854088_MT1USATODAY15258483_RTRMADP_3_FEBRUARY-8-2009-LOS-ANGELES-CA-USA-KANYE-WEST-PERFORMS-3-scaled.jpg" alt="Kanye West Faces Pressure To Support Ukraine Invasion If He Wants To Perform In Russia" onload="this.style.animation='none'">
   <p class="article-summary">It’s been a wild run for Kanye West in 2026 as he attempts to repair his public image after years of self-sabotage. BULLY wasn’t the comeback album that he expected, but perhaps it was a starting point for a much longer journey to r egaining acceptance from mainstream America. And that might even be a bit more difficult for him in the near future as he prepares to perform in Russia in October.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006510-kanye-west-russia-performance-ukraine-pressure" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/kanye-west-faces-pressure-to-support-ukraine-invasion-if-he-wants-to-p/";
-      this.page.identifier = "kanye-west-faces-pressure-to-support-ukraine-invasion-if-he-wants-to-p";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/kanye-west-faces-pressure-to-support-ukraine-invasion-if-he-wants-to-p/";
+          this.page.identifier = "kanye-west-faces-pressure-to-support-ukraine-invasion-if-he-wants-to-p";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

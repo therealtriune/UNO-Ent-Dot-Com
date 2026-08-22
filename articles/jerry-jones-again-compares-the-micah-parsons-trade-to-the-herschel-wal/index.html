@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Jerry Jones again compares the Micah Parsons trade to the Herschel Walker trade</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/b61949d2beda67792a120980d39691b3facfc46a6eb6cbee287c987b3238e533/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F14410ebc891d922e1d52181b1c7d46f9.jpg" alt="Jerry Jones again compares the Micah Parsons trade to the Herschel Walker trade">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/b61949d2beda67792a120980d39691b3facfc46a6eb6cbee287c987b3238e533/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F14410ebc891d922e1d52181b1c7d46f9.jpg" alt="Jerry Jones again compares the Micah Parsons trade to the Herschel Walker trade" onload="this.style.animation='none'">
   <p class="article-summary">After the Cowboys traded Micah Parsons to the Packers last year, Dallas owner and G.M. Jerry Jones compared the move to the Herschel Walker trade from 1989. On Thursday, Jerry did it again.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/jerry-jones-again-compares-micah-043520173.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/jerry-jones-again-compares-the-micah-parsons-trade-to-the-herschel-wal/";
-      this.page.identifier = "jerry-jones-again-compares-the-micah-parsons-trade-to-the-herschel-wal";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/jerry-jones-again-compares-the-micah-parsons-trade-to-the-herschel-wal/";
+          this.page.identifier = "jerry-jones-again-compares-the-micah-parsons-trade-to-the-herschel-wal";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

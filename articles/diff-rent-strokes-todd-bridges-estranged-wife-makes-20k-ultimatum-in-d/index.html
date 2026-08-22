@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">&#x27;Diff&#x27;rent Strokes&#x27; Todd Bridges&#x27; Estranged Wife Makes $20K Ultimatum in Divorce</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/4b/16by9/2026/08/11/4b919df3d6dd474b9c8bc2a89cdb803b_xl.jpg" alt="&#x27;Diff&#x27;rent Strokes&#x27; Todd Bridges&#x27; Estranged Wife Makes $20K Ultimatum in Divorce">
+  <img class="article-hero" src="https://imagez.tmz.com/image/4b/16by9/2026/08/11/4b919df3d6dd474b9c8bc2a89cdb803b_xl.jpg" alt="&#x27;Diff&#x27;rent Strokes&#x27; Todd Bridges&#x27; Estranged Wife Makes $20K Ultimatum in Divorce" onload="this.style.animation='none'">
   <p class="article-summary">Todd Bridges&#x27; estranged wife is giving him three choices for his official website...pay her more than $20K, let her keep running it and sharing in the profits, or watch it disappear from the internet. According to new court docs, obtained by TMZ,…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/11/todd-bridges-divorce-case-ultimatum/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/diff-rent-strokes-todd-bridges-estranged-wife-makes-20k-ultimatum-in-d/";
-      this.page.identifier = "diff-rent-strokes-todd-bridges-estranged-wife-makes-20k-ultimatum-in-d";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/diff-rent-strokes-todd-bridges-estranged-wife-makes-20k-ultimatum-in-d/";
+          this.page.identifier = "diff-rent-strokes-todd-bridges-estranged-wife-makes-20k-ultimatum-in-d";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

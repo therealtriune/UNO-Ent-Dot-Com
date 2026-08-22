@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Is Drake Tarnishing His Legacy By Streaming On Kick?</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Drake-Tarnishing-Legacy-Streaming-Kick.jpg" alt="Is Drake Tarnishing His Legacy By Streaming On Kick?">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Drake-Tarnishing-Legacy-Streaming-Kick.jpg" alt="Is Drake Tarnishing His Legacy By Streaming On Kick?" onload="this.style.animation='none'">
   <p class="article-summary">HotNewHipHop is doing livestreams every Friday on hip-hop’s buzzing topics, and Aron and I had a lot to discuss this week. Drake caused debate via his Kick stream for Stake’s ninth anniversary, Kanye West is still garnering discussion for his concerts, Megan Thee Stallion and NBA YoungBoy gave us some surprising interviews, and we celebrated the 53rd birthday of hip-hop. But we kicked things off with a New Music Friday roundup.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006021-drake-tarnishing-legacy-streaming-kick" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/is-drake-tarnishing-his-legacy-by-streaming-on-kick/";
-      this.page.identifier = "is-drake-tarnishing-his-legacy-by-streaming-on-kick";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/is-drake-tarnishing-his-legacy-by-streaming-on-kick/";
+          this.page.identifier = "is-drake-tarnishing-his-legacy-by-streaming-on-kick";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 hours ago</div>
   <h1 class="article-title">Action Bronson Previews 2 Upcoming New Balance 2811 Colorways</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-537971218-scaled.jpg" alt="Action Bronson Previews 2 Upcoming New Balance 2811 Colorways">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-537971218-scaled.jpg" alt="Action Bronson Previews 2 Upcoming New Balance 2811 Colorways" onload="this.style.animation='none'">
   <p class="article-summary">Action Bronson just gave fans a detailed look at two upcoming colorways of his signature New Balance 2811. The photos show a light, off-white pair alongside a darker black and red option, side by side. The off-white pair leans into a soft, mixed palette.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006841-action-bronson-new-balance-2811-sneaker-news" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/action-bronson-previews-2-upcoming-new-balance-2811-colorways/";
-      this.page.identifier = "action-bronson-previews-2-upcoming-new-balance-2811-colorways";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/action-bronson-previews-2-upcoming-new-balance-2811-colorways/";
+          this.page.identifier = "action-bronson-previews-2-upcoming-new-balance-2811-colorways";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Mac Miller’s The Divine Feminine Celebrates 10th Anniversary with Expanded Reissue</h1>
-  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2019/09/third-man-arrested-charged-drugs-related-to-mac-miller-death.jpg" alt="Mac Miller’s The Divine Feminine Celebrates 10th Anniversary with Expanded Reissue">
+  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2019/09/third-man-arrested-charged-drugs-related-to-mac-miller-death.jpg" alt="Mac Miller’s The Divine Feminine Celebrates 10th Anniversary with Expanded Reissue" onload="this.style.animation='none'">
   <p class="article-summary">A decade after its original release, Mac Miller’s soulful, jazz-inflected masterpiece The Divine Feminine is receiving a special 10th-anniversary expanded edition, complete with previously unreleased tracks from the legendary late… The post Mac Miller’s The Divine Feminine Celebrates 10th Anniversary with Expanded Reissue appeared first on.</p>
   <a class="outbound-cta" href="https://thesource.com/2026/08/21/mac-millers-the-divine-feminine-celebrates-10th-anniversary-with-expanded-reissue/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=mac-millers-the-divine-feminine-celebrates-10th-anniversary-with-expanded-reissue" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Source &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/mac-miller-s-the-divine-feminine-celebrates-10th-anniversary-with-expa/";
-      this.page.identifier = "mac-miller-s-the-divine-feminine-celebrates-10th-anniversary-with-expa";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/mac-miller-s-the-divine-feminine-celebrates-10th-anniversary-with-expa/";
+          this.page.identifier = "mac-miller-s-the-divine-feminine-celebrates-10th-anniversary-with-expa";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

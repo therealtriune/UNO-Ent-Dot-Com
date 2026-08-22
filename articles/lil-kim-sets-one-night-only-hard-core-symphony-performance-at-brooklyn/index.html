@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Lil’ Kim Sets One-Night-Only ‘Hard Core Symphony’ Performance at Brooklyn’s Kings Theatre</h1>
-  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2022/02/Lil-Kim-Fenty-X.jpg" alt="Lil’ Kim Sets One-Night-Only ‘Hard Core Symphony’ Performance at Brooklyn’s Kings Theatre">
+  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2022/02/Lil-Kim-Fenty-X.jpg" alt="Lil’ Kim Sets One-Night-Only ‘Hard Core Symphony’ Performance at Brooklyn’s Kings Theatre" onload="this.style.animation='none'">
   <p class="article-summary">Grammy Award-winning hip-hop pioneer Lil’ Kim is set to reimagine her historic debut album for an orchestral stage. On Thursday, November 19, 2026, the artist known as “The Queen Bee”… The post Lil’ Kim Sets One-Night-Only ‘Hard Core Symphony’ Performance at Brooklyn’s Kings Theatre appeared first on.</p>
   <a class="outbound-cta" href="https://thesource.com/2026/08/21/lil-kim-sets-one-night-only-hard-core-symphony-performance-at-brooklyns-kings-theatre/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=lil-kim-sets-one-night-only-hard-core-symphony-performance-at-brooklyns-kings-theatre" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Source &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/lil-kim-sets-one-night-only-hard-core-symphony-performance-at-brooklyn/";
-      this.page.identifier = "lil-kim-sets-one-night-only-hard-core-symphony-performance-at-brooklyn";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/lil-kim-sets-one-night-only-hard-core-symphony-performance-at-brooklyn/";
+          this.page.identifier = "lil-kim-sets-one-night-only-hard-core-symphony-performance-at-brooklyn";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

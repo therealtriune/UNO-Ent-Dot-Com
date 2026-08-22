@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Anthony Joshua condemned for ‘reckless and stupid’ golf-cart antics, months after car crash</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/9101fb9dfb7358c92d4e013e3c5739b7eba04cdcc390870112fdb753fddc63c9/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_independent_us_sports_articles_270%2F3b4c032789c580397ef508c29bff161f.png" alt="Anthony Joshua condemned for ‘reckless and stupid’ golf-cart antics, months after car crash">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/9101fb9dfb7358c92d4e013e3c5739b7eba04cdcc390870112fdb753fddc63c9/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_independent_us_sports_articles_270%2F3b4c032789c580397ef508c29bff161f.png" alt="Anthony Joshua condemned for ‘reckless and stupid’ golf-cart antics, months after car crash" onload="this.style.animation='none'">
   <p class="article-summary">Anthony Joshua has been accused of engaging in “reckless and stupid” behaviour, after he shared a video of himself climbing along the edge of a moving golf cart, eight months after he survived a fatal car crash. In December, 10 days after Joshua stopped YouTuber-turned-boxer Jake Paul, the British heavyweight was a passenger in an accident in Nigeria, which claimed the lives of two of his teammates: Sina Ghami and Latif “Latz” Ayodele. Many fans were therefore surprised when Joshua, 36, shared a video on his Instagram story on Tuesday, which showed the former world champion shuffling along the edge of a golf cart, which appeared to be driven by a friend as another filmed from a different cart.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/anthony-joshua-condemned-reckless-stupid-152701613.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports Boxing &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/anthony-joshua-condemned-for-reckless-and-stupid-golf-cart-antics-mont/";
-      this.page.identifier = "anthony-joshua-condemned-for-reckless-and-stupid-golf-cart-antics-mont";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/anthony-joshua-condemned-for-reckless-and-stupid-golf-cart-antics-mont/";
+          this.page.identifier = "anthony-joshua-condemned-for-reckless-and-stupid-golf-cart-antics-mont";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

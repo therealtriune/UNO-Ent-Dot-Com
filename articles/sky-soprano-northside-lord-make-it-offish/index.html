@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Sky Soprano &amp; Northside Lord Make It “Offish”</h1>
-  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/Screenshot-2026-07-27-at-3.12.44-PM.png" alt="Sky Soprano &amp; Northside Lord Make It “Offish”">
+  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/Screenshot-2026-07-27-at-3.12.44-PM.png" alt="Sky Soprano &amp; Northside Lord Make It “Offish”" onload="this.style.animation='none'">
   <p class="article-summary">Straight outta Brooklyn, where every block tells a story and every move is earned, Sky Soprano connects with Queens’ own Northside Lord for their new collaboration “It’s Offish.” Two boroughs, one mission — this short but potent visual captures the essence of New York Hip-Hop in its rawest form. Sky Soprano brings that Brooklyn grit while Northside Lord reps Queens with equal intensity, trading bars over a gritty backdrop that demands attention. The chemistry is undeniable, proving that when NYC’s finest link up, the results speak for themselves.</p>
   <a class="outbound-cta" href="https://undergroundhiphopblog.com/videos/sky-soprano-northside-lord-make-it-offish/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Underground Hip Hop Blog &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/sky-soprano-northside-lord-make-it-offish/";
-      this.page.identifier = "sky-soprano-northside-lord-make-it-offish";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/sky-soprano-northside-lord-make-it-offish/";
+          this.page.identifier = "sky-soprano-northside-lord-make-it-offish";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 hour ago</div>
   <h1 class="article-title">Jaidyn Alexis Goes Off On Blueface For Disrespecting Their Kids After Newborn</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Jaidyn-Alexis-Blueface-Disrespecting-Kids-After-Newborn-scaled.jpg" alt="Jaidyn Alexis Goes Off On Blueface For Disrespecting Their Kids After Newborn">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Jaidyn-Alexis-Blueface-Disrespecting-Kids-After-Newborn-scaled.jpg" alt="Jaidyn Alexis Goes Off On Blueface For Disrespecting Their Kids After Newborn" onload="this.style.animation='none'">
   <p class="article-summary">Jaidyn Alexis shares two children with Blueface: their son Javaughn and their daughter Journey, who sometimes goes by the nickname Pinkface. They have tried their best to keep up a solid coparenting relationship even amid lots of drama, and things are not getting any easier. Following the birth of his son with Nevaeh Akira, Johnathan Jr., she responded to a comment he made about their kids and their family dynamic.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006851-jaidyn-alexis-blueface-disrespecting-kids-after-newborn" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/jaidyn-alexis-goes-off-on-blueface-for-disrespecting-their-kids-after-/";
-      this.page.identifier = "jaidyn-alexis-goes-off-on-blueface-for-disrespecting-their-kids-after-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/jaidyn-alexis-goes-off-on-blueface-for-disrespecting-their-kids-after-/";
+          this.page.identifier = "jaidyn-alexis-goes-off-on-blueface-for-disrespecting-their-kids-after-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

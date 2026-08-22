@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Ransom Breaks Down “The Price of Clarity” (Album Review)</h1>
-  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5875-e1787066267384.jpeg" alt="Ransom Breaks Down “The Price of Clarity” (Album Review)">
+  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5875-e1787066267384.jpeg" alt="Ransom Breaks Down “The Price of Clarity” (Album Review)" onload="this.style.animation='none'">
   <p class="article-summary">I believe this might be the 7th solo LP from Jersey City wordsmith Ransom. Coming up as 1/2 of the short-lived duo A-Team alongside Hitchcock, he branched out on his own in 2008 following their disbandment beginning with the full-length debut Street Cinema &amp; the Statik Selektah-produced sophomore effort The Proposal. These last several years have been his biggest so far whether it be the 5 EPs that he put out produced by Nicholas Craven &amp; 7 based around the 7 deadly sins, Heavy’s the Head entirely produced by Big Ghost Ltd., the Rome Streetz collab album Coup de Grâce, Chaos is My Ladder, Director’s Cut 4 &amp; Deleted Scenes 2.</p>
   <a class="outbound-cta" href="https://undergroundhiphopblog.com/albums/ransom-breaks-down-the-price-of-clarity-album-review/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Underground Hip Hop Blog &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ransom-breaks-down-the-price-of-clarity-album-review/";
-      this.page.identifier = "ransom-breaks-down-the-price-of-clarity-album-review";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ransom-breaks-down-the-price-of-clarity-album-review/";
+          this.page.identifier = "ransom-breaks-down-the-price-of-clarity-album-review";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Chris Brown Invites Fan Onstage Who Allegedly Dissed His Ex Diamond</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Chris-Brown-Invites-Fan-Onstage-Dissed-Ex-Diamond-scaled.jpg" alt="Chris Brown Invites Fan Onstage Who Allegedly Dissed His Ex Diamond">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Chris-Brown-Invites-Fan-Onstage-Dissed-Ex-Diamond-scaled.jpg" alt="Chris Brown Invites Fan Onstage Who Allegedly Dissed His Ex Diamond" onload="this.style.animation='none'">
   <p class="article-summary">Chris Brown has already caused some commotion with his tour guests, which he’s inviting alongside Usher on their joint tour to have a special moment with them. But some fans took particular note of a recent female guest at a show, as she’s someone who has allegedly dissed Brown’s ex Diamond on social media before. As caught by Livebitez on Instagram, the singer serenaded the woman, who goes by Kareema Divine online, as her wrists were tied to a pole.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004443-chris-brown-invites-fan-onstage-dissed-ex-diamond" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/chris-brown-invites-fan-onstage-who-allegedly-dissed-his-ex-diamond/";
-      this.page.identifier = "chris-brown-invites-fan-onstage-who-allegedly-dissed-his-ex-diamond";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/chris-brown-invites-fan-onstage-who-allegedly-dissed-his-ex-diamond/";
+          this.page.identifier = "chris-brown-invites-fan-onstage-who-allegedly-dissed-his-ex-diamond";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

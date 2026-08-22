@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Matt Rife Tells Ghost Hunter with Autism to Kill Himself, Comedian Claims He Was Being Bullied</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/76/16by9/2026/08/07/764ace7aeba34a949e1d84f71b7d9e1c_xl.jpg" alt="Matt Rife Tells Ghost Hunter with Autism to Kill Himself, Comedian Claims He Was Being Bullied">
+  <img class="article-hero" src="https://imagez.tmz.com/image/76/16by9/2026/08/07/764ace7aeba34a949e1d84f71b7d9e1c_xl.jpg" alt="Matt Rife Tells Ghost Hunter with Autism to Kill Himself, Comedian Claims He Was Being Bullied" onload="this.style.animation='none'">
   <p class="article-summary">Matt Rife may not be a specter or spirit -- but he&#x27;s now in the crosshairs of the ghost hunting community...because he told a paranormal expert with autism to kill himself. Here&#x27;s the deal...</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/07/matt-rife-goes-after-autistic-paranormal-investigator-online/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/matt-rife-tells-ghost-hunter-with-autism-to-kill-himself-comedian-clai/";
-      this.page.identifier = "matt-rife-tells-ghost-hunter-with-autism-to-kill-himself-comedian-clai";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/matt-rife-tells-ghost-hunter-with-autism-to-kill-himself-comedian-clai/";
+          this.page.identifier = "matt-rife-tells-ghost-hunter-with-autism-to-kill-himself-comedian-clai";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

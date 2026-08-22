@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">5 days ago</div>
   <h1 class="article-title">Heartbreaking Update: Friend Found Hayden Panettiere Unresponsive From Apparent Cardiac Arrest, Police Say</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_3644.jpeg" alt="Heartbreaking Update: Friend Found Hayden Panettiere Unresponsive From Apparent Cardiac Arrest, Police Say">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_3644.jpeg" alt="Heartbreaking Update: Friend Found Hayden Panettiere Unresponsive From Apparent Cardiac Arrest, Police Say" onload="this.style.animation='none'">
   <p class="article-summary">As we previously reported, Hayden Panettiere, the girl we watched grow up on our screens from “Heroes,” “Nashville,” to “Bring It On: All Or Nothing,” was pronounced dead Sunday afternoon inside a home in Greenville, South Carolina, and the details coming out are gutting a whole generation that grew up with her. According to Page Six, officers and EMS rolled up around 1:50 p.m. after a call came in about an unresponsive female and a suspected “overdose,” at the location.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/heartbreaking-update-friend-found-hayden-panettiere-unresponsive-from-apparent-cardiac-arrest-police-say/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/heartbreaking-update-friend-found-hayden-panettiere-unresponsive-from-/";
-      this.page.identifier = "heartbreaking-update-friend-found-hayden-panettiere-unresponsive-from-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/heartbreaking-update-friend-found-hayden-panettiere-unresponsive-from-/";
+          this.page.identifier = "heartbreaking-update-friend-found-hayden-panettiere-unresponsive-from-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

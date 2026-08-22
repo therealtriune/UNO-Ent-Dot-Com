@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Surrogate McKenna West Ordered Not To Interfere With Biological Parents&#x27; Medical Choices</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/00/16by9/2026/08/13/0091f8c21f3a4745a78aafdc18466156_xl.jpg" alt="Surrogate McKenna West Ordered Not To Interfere With Biological Parents&#x27; Medical Choices">
+  <img class="article-hero" src="https://imagez.tmz.com/image/00/16by9/2026/08/13/0091f8c21f3a4745a78aafdc18466156_xl.jpg" alt="Surrogate McKenna West Ordered Not To Interfere With Biological Parents&#x27; Medical Choices" onload="this.style.animation='none'">
   <p class="article-summary">McKenna West -- the surrogate who ran off to Texas to have a California couple&#x27;s baby without their consent -- will have absolutely no authority over the baby to whom she gave birth, this according to legal docs obtained by TMZ. We&#x27;ve obtained a…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/13/surrogate-mckenna-west-ordered-not-to-interfere-with-biological-parents-medical-choices/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/surrogate-mckenna-west-ordered-not-to-interfere-with-biological-parent/";
-      this.page.identifier = "surrogate-mckenna-west-ordered-not-to-interfere-with-biological-parent";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/surrogate-mckenna-west-ordered-not-to-interfere-with-biological-parent/";
+          this.page.identifier = "surrogate-mckenna-west-ordered-not-to-interfere-with-biological-parent";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

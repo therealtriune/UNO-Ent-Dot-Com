@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">22 hours ago</div>
   <h1 class="article-title">Ravens&#x27; Rashod Bateman arrested, faces family violence charge. What we know</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/0c92a055403171e85b8810a3fe09d7fb9481cb5874ee8b5a20fb22db71392086/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2Ff9b518e16e3b64cba9e5111404b960a2.jpg" alt="Ravens&#x27; Rashod Bateman arrested, faces family violence charge. What we know">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/0c92a055403171e85b8810a3fe09d7fb9481cb5874ee8b5a20fb22db71392086/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2Ff9b518e16e3b64cba9e5111404b960a2.jpg" alt="Ravens&#x27; Rashod Bateman arrested, faces family violence charge. What we know" onload="this.style.animation='none'">
   <p class="article-summary">Editor&#x27;s note: This story contains mentions of possible domestic violence. Those facing domestic abuse can call the National Domestic Violence Hotline at 1-800-799-SAFE (7233) or visit its website for a virtual chat. Rashod Bateman has been accused of family violence in Georgia, according to court records obtained by TMZ.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/ravens-rashod-bateman-arrested-faces-224506871.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ravens-rashod-bateman-arrested-faces-family-violence-charge-what-we-kn/";
-      this.page.identifier = "ravens-rashod-bateman-arrested-faces-family-violence-charge-what-we-kn";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ravens-rashod-bateman-arrested-faces-family-violence-charge-what-we-kn/";
+          this.page.identifier = "ravens-rashod-bateman-arrested-faces-family-violence-charge-what-we-kn";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

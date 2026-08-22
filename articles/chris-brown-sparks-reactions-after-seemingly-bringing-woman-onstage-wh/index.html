@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Chris Brown Sparks Reactions After Seemingly Bringing Woman Onstage Who Previously Threw Shade At Diamond Brown (PHOTOS + VIDEOS)</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/She-Aint-You-Chris-Brown-Seemingly-Brings-Woman-Onstage-Who-Previously-Spoke-On-Diamond-amp-Fans-Are-Side-Eyeing-PHOTOS-VIDEOS.jpg" alt="Chris Brown Sparks Reactions After Seemingly Bringing Woman Onstage Who Previously Threw Shade At Diamond Brown (PHOTOS + VIDEOS)">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/She-Aint-You-Chris-Brown-Seemingly-Brings-Woman-Onstage-Who-Previously-Spoke-On-Diamond-amp-Fans-Are-Side-Eyeing-PHOTOS-VIDEOS.jpg" alt="Chris Brown Sparks Reactions After Seemingly Bringing Woman Onstage Who Previously Threw Shade At Diamond Brown (PHOTOS + VIDEOS)" onload="this.style.animation='none'">
   <p class="article-summary">Alright now! Chris Brown’s latest tour moment has fans talking, but this time the conversation isn’t just about the performance. A recent onstage appearance involving a guest has sparked reactions online, with some fans revisiting past social media drama connected to Brown’s personal life and his ongoing legal situation with his ex, Diamond Brown.</p>
   <a class="outbound-cta" href="https://theshaderoom.com/chris-brown-woman-onstage-previously-spoke-diamond-brown-video-shade-room/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/chris-brown-sparks-reactions-after-seemingly-bringing-woman-onstage-wh/";
-      this.page.identifier = "chris-brown-sparks-reactions-after-seemingly-bringing-woman-onstage-wh";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/chris-brown-sparks-reactions-after-seemingly-bringing-woman-onstage-wh/";
+          this.page.identifier = "chris-brown-sparks-reactions-after-seemingly-bringing-woman-onstage-wh";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

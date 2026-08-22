@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">UFC Vegas 120 post-fight show: Reaction to Quillan Salkilld’s eye-opening destruction of Mateusz Gamrot</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/d4c41390839a872c244f0bbc2fd49d78272db4c2e6d4619cf60c9cd16269290f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F924707fd507922f842f128ba656ae368" alt="UFC Vegas 120 post-fight show: Reaction to Quillan Salkilld’s eye-opening destruction of Mateusz Gamrot">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/d4c41390839a872c244f0bbc2fd49d78272db4c2e6d4619cf60c9cd16269290f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F924707fd507922f842f128ba656ae368" alt="UFC Vegas 120 post-fight show: Reaction to Quillan Salkilld’s eye-opening destruction of Mateusz Gamrot" onload="this.style.animation='none'">
   <p class="article-summary">LAS VEGAS, NEVADA - AUGUST 08: Quillan Salkilld of Australia reacts after a submission victory against Mateusz Gamrot of Poland in a lightweight fight during the UFC Fight Night event at Meta APEX on August 08, 2026 in Las Vegas, Nevada. (Photo by Jeff Bottari/Zuffa LLC) Quillan Salkilld sent a message to the rest of the lightweight division on Saturday night with a first-round finish of Mateusz Gamrot — but it wasn’t just the fact that he got the quick stoppage, it was how Salkilld did it against one of the division’s best grapplers. Following the win, Salkilld called for a top-five fighter.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/ufc-vegas-120-post-fight-041455989.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ufc-vegas-120-post-fight-show-reaction-to-quillan-salkilld-s-eye-openi/";
-      this.page.identifier = "ufc-vegas-120-post-fight-show-reaction-to-quillan-salkilld-s-eye-openi";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ufc-vegas-120-post-fight-show-reaction-to-quillan-salkilld-s-eye-openi/";
+          this.page.identifier = "ufc-vegas-120-post-fight-show-reaction-to-quillan-salkilld-s-eye-openi";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

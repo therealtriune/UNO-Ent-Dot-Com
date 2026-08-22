@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">BREAKING: Judge John Roach Has Been Removed From Overseeing Karmelo Anthony’s Appeal Efforts</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_3834.jpeg" alt="BREAKING: Judge John Roach Has Been Removed From Overseeing Karmelo Anthony’s Appeal Efforts">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_3834.jpeg" alt="BREAKING: Judge John Roach Has Been Removed From Overseeing Karmelo Anthony’s Appeal Efforts" onload="this.style.animation='none'">
   <p class="article-summary">Big movement out of Collin County, Texas this week. Judge John Roach Jr., the man who presided over Karmelo Anthony’s murder trial and sentencing, has officially been recused from the case going forward. RELATED: Karmelo Anthony Secures New Pro Bono Legal Team; High-Profile Appellate, Civil Rights, And Criminal Defense Attorneys Ready To Fight Austin Metcalf Murder Conviction &amp; 35-Year Sentence The decision came down this Wednesday morning from visiting Judge Sid Harle, who was brought in from San Antonio specifically to weigh whether Roach could stay impartial after everything that’s gone down since Anthony was sentenced to 35 years back in June.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/breaking-judge-john-roach-has-been-removed-from-overseeing-karmelo-anthonys-appeal-efforts/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/breaking-judge-john-roach-has-been-removed-from-overseeing-karmelo-ant/";
-      this.page.identifier = "breaking-judge-john-roach-has-been-removed-from-overseeing-karmelo-ant";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/breaking-judge-john-roach-has-been-removed-from-overseeing-karmelo-ant/";
+          this.page.identifier = "breaking-judge-john-roach-has-been-removed-from-overseeing-karmelo-ant";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Pooh Shiesty Eyes Billboard 200 as ‘All Eyes on Shiest’ Projected to Sell 40K Amid Federal Case</h1>
-  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-12-at-1.00.45-PM.jpg" alt="Pooh Shiesty Eyes Billboard 200 as ‘All Eyes on Shiest’ Projected to Sell 40K Amid Federal Case">
+  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-12-at-1.00.45-PM.jpg" alt="Pooh Shiesty Eyes Billboard 200 as ‘All Eyes on Shiest’ Projected to Sell 40K Amid Federal Case" onload="this.style.animation='none'">
   <p class="article-summary">Pooh Shiesty is back in the Billboard conversation while his legal situation continues to grow more serious. The Memphis rapper’s debut studio album, All Eyes on Shiest, is projected to enter… The post Pooh Shiesty Eyes Billboard 200 as ‘All Eyes on Shiest’ Projected to Sell 40K Amid Federal Case appeared first on.</p>
   <a class="outbound-cta" href="https://thesource.com/2026/08/12/pooh-shiesty-eyes-billboard-200-as-all-eyes-on-shiest-projected-to-sell-40k-amid-federal-case/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=pooh-shiesty-eyes-billboard-200-as-all-eyes-on-shiest-projected-to-sell-40k-amid-federal-case" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Source &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/pooh-shiesty-eyes-billboard-200-as-all-eyes-on-shiest-projected-to-sel/";
-      this.page.identifier = "pooh-shiesty-eyes-billboard-200-as-all-eyes-on-shiest-projected-to-sel";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/pooh-shiesty-eyes-billboard-200-as-all-eyes-on-shiest-projected-to-sel/";
+          this.page.identifier = "pooh-shiesty-eyes-billboard-200-as-all-eyes-on-shiest-projected-to-sel";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">5 days ago</div>
   <h1 class="article-title">Hayden Panettiere Death: Fire Engine and Coroner&#x27;s Truck Photographed At Scene</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/0e/16by9/2026/08/17/0e11cbf6cd3942cfbc689d8ec59a8cfe_xl.jpg" alt="Hayden Panettiere Death: Fire Engine and Coroner&#x27;s Truck Photographed At Scene">
+  <img class="article-hero" src="https://imagez.tmz.com/image/0e/16by9/2026/08/17/0e11cbf6cd3942cfbc689d8ec59a8cfe_xl.jpg" alt="Hayden Panettiere Death: Fire Engine and Coroner&#x27;s Truck Photographed At Scene" onload="this.style.animation='none'">
   <p class="article-summary">Amid Hayden Panettiere&#x27;s suspected drug overdose death, the fire department and coroner&#x27;s office raced to the scene -- and TMZ obtained photos of the emergency response. In one photo, you can see a fire truck parked and multiple ambulances outside…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/17/hayden-panettiere-fire-truck-coroner-vehicle-at-death-scene/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/hayden-panettiere-death-fire-engine-and-coroner-s-truck-photographed-a/";
-      this.page.identifier = "hayden-panettiere-death-fire-engine-and-coroner-s-truck-photographed-a";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/hayden-panettiere-death-fire-engine-and-coroner-s-truck-photographed-a/";
+          this.page.identifier = "hayden-panettiere-death-fire-engine-and-coroner-s-truck-photographed-a";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

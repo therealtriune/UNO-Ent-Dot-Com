@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Mark Zuckerberg Under Fire For His Yacht Allegedly Failing to Help Stranded Boat</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/02/16by9/2026/08/10/02779b0a7d354fb68d3efa1abeee2e68_xl.jpg" alt="Mark Zuckerberg Under Fire For His Yacht Allegedly Failing to Help Stranded Boat">
+  <img class="article-hero" src="https://imagez.tmz.com/image/02/16by9/2026/08/10/02779b0a7d354fb68d3efa1abeee2e68_xl.jpg" alt="Mark Zuckerberg Under Fire For His Yacht Allegedly Failing to Help Stranded Boat" onload="this.style.animation='none'">
   <p class="article-summary">Mark Zuckerberg is taking some heat for his yacht not giving any assistance to a skiff that ran out of fuel...but the Meta CEO says there&#x27;s nothing to see here. The drama reportedly began last Monday night when a cruise ship took a detour to help…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/10/mark-zuckerberg-yacht-fails-to-assist-skiff-in-alaska/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/mark-zuckerberg-under-fire-for-his-yacht-allegedly-failing-to-help-str/";
-      this.page.identifier = "mark-zuckerberg-under-fire-for-his-yacht-allegedly-failing-to-help-str";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/mark-zuckerberg-under-fire-for-his-yacht-allegedly-failing-to-help-str/";
+          this.page.identifier = "mark-zuckerberg-under-fire-for-his-yacht-allegedly-failing-to-help-str";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

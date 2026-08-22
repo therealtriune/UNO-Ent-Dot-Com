@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Trump Administration Proposes New FDA Rule Targeting Ultra-Processed Food Additives</h1>
-  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2025/09/Screen-Shot-2025-09-30-at-11.00.09-AM.png" alt="Trump Administration Proposes New FDA Rule Targeting Ultra-Processed Food Additives">
+  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2025/09/Screen-Shot-2025-09-30-at-11.00.09-AM.png" alt="Trump Administration Proposes New FDA Rule Targeting Ultra-Processed Food Additives" onload="this.style.animation='none'">
   <p class="article-summary">The Trump administration has announced a major regulatory proposal aimed at ultra-processed foods, targeting a long-standing loophole in federal food safety oversight. Health and Human Services Secretary Robert F. Kennedy… The post Trump Administration Proposes New FDA Rule Targeting Ultra-Processed Food Additives appeared first on.</p>
   <a class="outbound-cta" href="https://thesource.com/2026/08/11/trump-administration-proposes-new-fda-rule-targeting-ultra-processed-food-additives/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=trump-administration-proposes-new-fda-rule-targeting-ultra-processed-food-additives" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Source &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/trump-administration-proposes-new-fda-rule-targeting-ultra-processed-f/";
-      this.page.identifier = "trump-administration-proposes-new-fda-rule-targeting-ultra-processed-f";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/trump-administration-proposes-new-fda-rule-targeting-ultra-processed-f/";
+          this.page.identifier = "trump-administration-proposes-new-fda-rule-targeting-ultra-processed-f";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

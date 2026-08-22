@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Frank Reich &#x27;fired up&#x27; about progress of Jets offense, &#x27;laser-focused&#x27; Geno Smith</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/1921491348b589b58de7ef4f0d8c756dc4d23bf688d996d8f17735a09186e423/lightyear_networkapi/resizefill_w444_h250%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsny_articles_235%2F214da2b2c9ddda86b4a24736eb64abeb" alt="Frank Reich &#x27;fired up&#x27; about progress of Jets offense, &#x27;laser-focused&#x27; Geno Smith">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/1921491348b589b58de7ef4f0d8c756dc4d23bf688d996d8f17735a09186e423/lightyear_networkapi/resizefill_w444_h250%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsny_articles_235%2F214da2b2c9ddda86b4a24736eb64abeb" alt="Frank Reich &#x27;fired up&#x27; about progress of Jets offense, &#x27;laser-focused&#x27; Geno Smith" onload="this.style.animation='none'">
   <p class="article-summary">Jets offensive coordinator Frank Reich said he is “really fired up” about the progress his side of the ball has made in the early goings of training camp. “It’s been outstanding,” Reich said. “Came back from the spring, feel like we picked right up, we didn’t have to go back and totally reset the deck.” This is Reich’s first NFL training camp since 2023 during his lone season as head coach of the Panthers, which went south in a hurry and ended after a 1-10 start.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/frank-reich-fired-progress-jets-151550367.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/frank-reich-fired-up-about-progress-of-jets-offense-laser-focused-geno/";
-      this.page.identifier = "frank-reich-fired-up-about-progress-of-jets-offense-laser-focused-geno";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/frank-reich-fired-up-about-progress-of-jets-offense-laser-focused-geno/";
+          this.page.identifier = "frank-reich-fired-up-about-progress-of-jets-offense-laser-focused-geno";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

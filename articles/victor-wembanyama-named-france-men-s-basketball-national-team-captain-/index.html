@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Victor Wembanyama named France men&#x27;s basketball national team captain at age 22</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/f208e2b5de67d7a848b62357f41183ccfc7ddcffb89321624f170babfcb5d619/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fnbcsports.com%2Ff20d52ad27da2b40c11cc33042fa3dfd.jpg" alt="Victor Wembanyama named France men&#x27;s basketball national team captain at age 22">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/f208e2b5de67d7a848b62357f41183ccfc7ddcffb89321624f170babfcb5d619/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fnbcsports.com%2Ff20d52ad27da2b40c11cc33042fa3dfd.jpg" alt="Victor Wembanyama named France men&#x27;s basketball national team captain at age 22" onload="this.style.animation='none'">
   <p class="article-summary">Victor Wembanyama is taking over as captain of the French men&#x27;s basketball national team at age 22 ahead of 2027 FIBA World Cup qualifiers later this month. Wembanyama, who succeeds Rudy Gobert as captain, was chosen for &quot;his exemplary character, his work ethic and for the future,&quot; national team head coach Frédéric Fauthoux said, according to a translation of a French basketball federation press release. Wembanyama marked the occasion by delivering a speech to his teammates, noting &quot;the veterans I watched play for the French national team when I was little.&quot; &quot;Being captain is first and foremost about setting an example, being a leader, through performance on the court, knowing the systems, the opponents, and bringing calm,&quot; Wembanyama said, according to the federation.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/victor-wembanyama-named-france-mens-171438149.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NBA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/victor-wembanyama-named-france-men-s-basketball-national-team-captain-/";
-      this.page.identifier = "victor-wembanyama-named-france-men-s-basketball-national-team-captain-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/victor-wembanyama-named-france-men-s-basketball-national-team-captain-/";
+          this.page.identifier = "victor-wembanyama-named-france-men-s-basketball-national-team-captain-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

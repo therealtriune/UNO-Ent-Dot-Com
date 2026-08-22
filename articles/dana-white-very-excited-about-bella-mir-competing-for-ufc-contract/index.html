@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Dana White &#x27;very excited&#x27; about Bella Mir competing for UFC contract</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/75b301a6637f3091dd0ad11fd7cbfb5040b3639ff6a56930610bf44d10a7014d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2F9477abce6b7e22730bfed52c193c680e.jpg" alt="Dana White &#x27;very excited&#x27; about Bella Mir competing for UFC contract">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/75b301a6637f3091dd0ad11fd7cbfb5040b3639ff6a56930610bf44d10a7014d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2F9477abce6b7e22730bfed52c193c680e.jpg" alt="Dana White &#x27;very excited&#x27; about Bella Mir competing for UFC contract" onload="this.style.animation='none'">
   <p class="article-summary">LAS VEGAS – Dana White sees big things in Bella Mir&#x27;s future. Mir (4-0), the daughter of former UFC heavyweight champion Frank Mir, will look to secure a UFC contract when she takes on Alex Apodaca (3-1) in the featured women&#x27;s bantamweight bout at Dana White&#x27;s Contender Series 89 on Aug. 25 from Meta APEX in Las Vegas ( Paramount+ ).</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/dana-white-very-excited-bella-152014194.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/dana-white-very-excited-about-bella-mir-competing-for-ufc-contract/";
-      this.page.identifier = "dana-white-very-excited-about-bella-mir-competing-for-ufc-contract";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/dana-white-very-excited-about-bella-mir-competing-for-ufc-contract/";
+          this.page.identifier = "dana-white-very-excited-about-bella-mir-competing-for-ufc-contract";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

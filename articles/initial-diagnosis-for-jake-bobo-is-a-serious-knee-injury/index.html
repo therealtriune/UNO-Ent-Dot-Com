@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Initial diagnosis for Jake Bobo is a &quot;serious knee injury&quot;</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/638956635b5e43d8d7300e67bc26357365fe2b75e1b8f943fc4cad28f6db1358/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F8752bbff02a0581e203ed942a77d1061.jpg" alt="Initial diagnosis for Jake Bobo is a &quot;serious knee injury&quot;">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/638956635b5e43d8d7300e67bc26357365fe2b75e1b8f943fc4cad28f6db1358/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F8752bbff02a0581e203ed942a77d1061.jpg" alt="Initial diagnosis for Jake Bobo is a &quot;serious knee injury&quot;" onload="this.style.animation='none'">
   <p class="article-summary">Jake Bobo&#x27;s injury looked bad when it happened during a joint practice with the Titans, and when both teams took a knee, it was an indication it was as bad as it looked. &quot;We said a prayer for him. Hate to see it,&quot; Seahawks coach Mike Macdonald said, via video from Bob Condotta of the Seattle Times.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/initial-diagnosis-jake-bobo-serious-184503782.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/initial-diagnosis-for-jake-bobo-is-a-serious-knee-injury/";
-      this.page.identifier = "initial-diagnosis-for-jake-bobo-is-a-serious-knee-injury";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/initial-diagnosis-for-jake-bobo-is-a-serious-knee-injury/";
+          this.page.identifier = "initial-diagnosis-for-jake-bobo-is-a-serious-knee-injury";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

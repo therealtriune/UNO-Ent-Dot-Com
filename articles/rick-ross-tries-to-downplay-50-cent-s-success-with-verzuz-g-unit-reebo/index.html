@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 hours ago</div>
   <h1 class="article-title">Rick Ross Tries To Downplay 50 Cent’s Success With Verzuz &amp; G-Unit Reeboks</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Rick-Ross-50-Cent-Verzuz-G-Unit-Reeboks-scaled.jpg" alt="Rick Ross Tries To Downplay 50 Cent’s Success With Verzuz &amp; G-Unit Reeboks">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Rick-Ross-50-Cent-Verzuz-G-Unit-Reeboks-scaled.jpg" alt="Rick Ross Tries To Downplay 50 Cent’s Success With Verzuz &amp; G-Unit Reeboks" onload="this.style.animation='none'">
   <p class="article-summary">50 Cent has a lot to celebrate this weekend, as he popped out as a special guest for the Joe and Donnell Jones Verzuz and also had his Reebok sneakers relaunch in collaboration with G-Unit sell out quickly. But with success comes scrutiny. His longtime rival Rick Ross has responded to these achievements, which the G-Unit mogul trolled him over on Instagram.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006805-rick-ross-50-cent-verzuz-g-unit-reeboks" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/rick-ross-tries-to-downplay-50-cent-s-success-with-verzuz-g-unit-reebo/";
-      this.page.identifier = "rick-ross-tries-to-downplay-50-cent-s-success-with-verzuz-g-unit-reebo";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/rick-ross-tries-to-downplay-50-cent-s-success-with-verzuz-g-unit-reebo/";
+          this.page.identifier = "rick-ross-tries-to-downplay-50-cent-s-success-with-verzuz-g-unit-reebo";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

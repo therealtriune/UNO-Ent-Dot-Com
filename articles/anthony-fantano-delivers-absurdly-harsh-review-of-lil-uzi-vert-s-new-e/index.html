@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Anthony Fantano Delivers Absurdly Harsh Review Of Lil Uzi Vert’s New EP</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/lil-uzi-vert-new-ep-scaled.jpg" alt="Anthony Fantano Delivers Absurdly Harsh Review Of Lil Uzi Vert’s New EP">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/lil-uzi-vert-new-ep-scaled.jpg" alt="Anthony Fantano Delivers Absurdly Harsh Review Of Lil Uzi Vert’s New EP" onload="this.style.animation='none'">
   <p class="article-summary">Anthony Fantano is known for giving some harsh reviews on his YouTube channel, TheNeedleDrop. Over the years, he has given albums deemed by the public as classics mediocre scores. Of course, his My Beautiful Dark Twisted Fantasy review is a perfect example of this.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005483-anthony-fantano-lil-uzi-vert-review" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/anthony-fantano-delivers-absurdly-harsh-review-of-lil-uzi-vert-s-new-e/";
-      this.page.identifier = "anthony-fantano-delivers-absurdly-harsh-review-of-lil-uzi-vert-s-new-e";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/anthony-fantano-delivers-absurdly-harsh-review-of-lil-uzi-vert-s-new-e/";
+          this.page.identifier = "anthony-fantano-delivers-absurdly-harsh-review-of-lil-uzi-vert-s-new-e";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

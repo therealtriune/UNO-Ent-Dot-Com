@@ -275,6 +275,75 @@ def looks_like_logo(url: str | None) -> bool:
     return any(pattern in lowered for pattern in LOGO_URL_PATTERNS)
 
 
+# Some sources (The Shade Room, TMZ, HotNewHipHop especially) publish
+# headlines with asterisk-censored profanity baked right in -- "F*ck",
+# "S***", "B*tch", "A**hole". The site is trying to sell ad space to
+# general advertisers, labels, PR firms, and artists, and a headline like
+# that is exactly what an automated brand-safety scanner (the kind ad
+# platforms run before agreeing to place a buy) flags, whether or not the
+# word is technically spelled out. soften_title() below replaces just
+# those specific censored roots with a milder word, leaving everything
+# else in the headline (including legitimate stylized artist names like
+# "diamond*", which doesn't match any of these word-internal patterns)
+# untouched. Deliberately an explicit list rather than "any word with an
+# asterisk in it" -- that broader rule would also catch stage names.
+PROFANITY_SOFTEN_PATTERNS = [
+    # f*ck / f**k / f*cking / f*ckin / motherf*cker -- no leading \b since
+    # this needs to also match inside a compound word like "motherf*cker".
+    # Captures whatever letters follow the censored "ck" (e.g. "ing", "in",
+    # "er") and reattaches them to the replacement so the grammar still
+    # roughly holds together.
+    (re.compile(r"f\*+ck(\w*)", re.IGNORECASE), lambda m: "screw" + (m.group(1) or "")),
+    # f**k -- only the "k" survives censorship (u and c both starred out),
+    # as opposed to f*ck above where the "ck" survives. Confirmed both
+    # styles appear in the archive from different sources.
+    (re.compile(r"f\*+k(\w*)", re.IGNORECASE), lambda m: "screw" + (m.group(1) or "")),
+    # Bare "f***"/"f**" with no visible "ck" (the whole rest of the word is
+    # asterisked out) -- runs after the "ck"-specific rule above so that
+    # variant gets first crack at anything with a real "ck" in it. The
+    # trailing (?!\w) (rather than \b) is deliberate throughout this list:
+    # \b only fires at a word/non-word transition, and an asterisk itself is
+    # a non-word character, so "\b" immediately after a run of asterisks
+    # silently fails to match whenever the *next* character is also
+    # non-word -- which is exactly the common case of a censored word
+    # sitting right next to a closing quote mark or comma, e.g. 'bulls***,'
+    # or a curly quote in ‘A**’. (?!\w) has no such blind spot.
+    (re.compile(r"\bf\*{2,4}(?!\w)", re.IGNORECASE), "screw"),
+    (re.compile(r"\bbulls\*+\w*(?!\w)", re.IGNORECASE), "nonsense"),
+    # sh*t / sh**t / sh*t-talk -- stem "sh" catches this before the more
+    # generic bare "s***" rule below gets a chance to.
+    (re.compile(r"\bsh\*+\w*(?!\w)", re.IGNORECASE), "stuff"),
+    # s*** / s**** -- fully redacted down to just the first letter, no "h"
+    # visible (confirmed on a Robert O'Neil headline and a Crip Mac one).
+    (re.compile(r"\bs\*{2,4}(?!\w)", re.IGNORECASE), "stuff"),
+    (re.compile(r"\bb\*+tch\b", re.IGNORECASE), "her"),
+    (re.compile(r"\bb\*+h\b", re.IGNORECASE), "her"),
+    (re.compile(r"\ba\*+hole\b", re.IGNORECASE), "jerk"),
+    (re.compile(r"\ba\*+(?!\w)", re.IGNORECASE), "rear"),
+    (re.compile(r"\bh\*+e\b", re.IGNORECASE), "her"),
+    (re.compile(r"\br\*+pe\b", re.IGNORECASE), "assault"),
+]
+# Deliberately NOT in the list above: "k*ll" (confirmed only in a headline
+# quoting an alleged racist statement verbatim in a news report -- softening
+# a direct quote would misrepresent what was actually said/reported, which
+# is a bigger problem than the asterisk itself).
+
+
+def soften_title(title: str) -> str:
+    """Replace known asterisk-censored profanity roots in a headline with a
+    milder word, for brand-safety reasons -- see PROFANITY_SOFTEN_PATTERNS
+    above. A no-op on any title without a "*" in it (the overwhelming
+    majority), so this is cheap to call unconditionally. Only matches
+    specific known curse-word roots, not "any word with an asterisk in it"
+    -- that broader rule would also strip legitimate stylized artist names
+    like "diamond*", which this correctly leaves untouched."""
+    if not title or "*" not in title:
+        return title
+    for pattern, replacement in PROFANITY_SOFTEN_PATTERNS:
+        title = pattern.sub(replacement, title)
+    return title
+
+
 def normalize_copy(text: str) -> str:
     """Tidy up recurring copy artifacts pulled in verbatim from source
     feeds: a spaced-out ellipsis ("word ... word" -> "word...word"), stray
@@ -302,6 +371,35 @@ def clean_text(raw_html: str) -> str:
 
 def slugify(title: str) -> str:
     return SLUG_RE.sub("-", title.lower()).strip("-")[:70]
+
+
+def normalize_title_for_dedupe(title: str) -> str:
+    """Collapse a title down to just its lowercase letters/digits, so two
+    headlines that are the same story but differ only in punctuation --
+    curly vs. straight quotes, an extra exclamation point, whitespace --
+    still compare equal. This is intentionally coarser than slugify()
+    (which keeps hyphens and a length cap for use as a URL segment) --
+    here we want a pure identity check, not something URL-safe."""
+    return SLUG_RE.sub("", title.lower())
+
+
+def republish_dedupe_key(source: str, title: str, date_iso: str) -> str:
+    """Identity key for catching a source republishing the exact same
+    story under a brand-new URL -- confirmed on The Shade Room, which
+    republished "Last Laugh! Scotty..." under two different links with the
+    *same* published timestamp, one title using a curly-quote 'Bird' and
+    the other a straight-quote "Bird". Link-based dedupe alone let both
+    through as separate archive entries.
+
+    Deliberately keyed on (source, normalized title, exact date) rather
+    than title alone: several sources run recurring daily features that
+    reuse the identical title every time (TMZ's "TMZ Streaming Live..."
+    and "Stars and Scars -- You Be the Judge" polls, both confirmed in the
+    archive) -- those are genuinely different posts on different days that
+    happen to share a title, not duplicates, and must not collide here.
+    Requiring the *same* timestamp as well is what tells a true same-minute
+    republish apart from a legitimately new post with a recycled headline."""
+    return f"{source}|{normalize_title_for_dedupe(title)}|{date_iso}"
 
 
 def looks_like_slug_title(title: str) -> bool:
@@ -600,12 +698,14 @@ def fetch_via_proxy(name: str, url: str):
     return None
 
 
-def fetch_source(name: str, url: str, known_links: set[str]) -> list[dict]:
+def fetch_source(name: str, url: str, known_links: set[str], known_dedupe_keys: set[str]) -> list[dict]:
     """Pull this source's recent entries and build full article records for
-    anything not already in known_links. Entries whose link is already
-    known are skipped entirely (no thumbnail fetch, no summary generation)
-    -- they're already archived in articles.json and this function never
-    touches or re-derives their existing fields."""
+    anything not already in known_links or known_titles. Entries whose link
+    is already known are skipped entirely (no thumbnail fetch, no summary
+    generation) -- they're already archived in articles.json and this
+    function never touches or re-derives their existing fields. The
+    republish check catches the case where a source republishes the exact
+    same story under a brand-new URL (see republish_dedupe_key)."""
     parsed = feedparser.parse(url, request_headers=FEED_REQUEST_HEADERS)
     if not parsed.entries:
         status = getattr(parsed, "status", "?")
@@ -630,12 +730,12 @@ def fetch_source(name: str, url: str, known_links: set[str]) -> list[dict]:
             skipped += 1
             continue
 
-        title = clean_text(entry.get("title", ""))
+        title = soften_title(clean_text(entry.get("title", "")))
         excerpt = clean_text(entry.get("summary", ""))[:EXCERPT_LENGTH].rstrip()
 
         if not title:
             fallback_title, fallback_excerpt = fetch_real_title_and_excerpt(link)
-            title = fallback_title
+            title = soften_title(fallback_title)
             if not excerpt:
                 excerpt = fallback_excerpt[:EXCERPT_LENGTH].rstrip()
             if not title:
@@ -670,6 +770,11 @@ def fetch_source(name: str, url: str, known_links: set[str]) -> list[dict]:
             else datetime.now(timezone.utc).isoformat()
         )
 
+        dedupe_key = republish_dedupe_key(name, title, date_iso)
+        if dedupe_key in known_dedupe_keys:
+            skipped += 1
+            continue
+
         thumbnail = fetch_real_thumbnail(link) or extract_thumbnail(entry)
 
         articles.append(
@@ -687,6 +792,7 @@ def fetch_source(name: str, url: str, known_links: set[str]) -> list[dict]:
         )
         if link:
             known_links.add(link)  # guard against dupes within this same run
+        known_dedupe_keys.add(dedupe_key)
 
     print(f"  [+] {name}: {len(articles)} new, {skipped} already archived")
     return articles
@@ -791,7 +897,7 @@ def fetch_vladtv_article(article_url: str) -> dict | None:
     return {"title": title, "excerpt": excerpt, "thumbnail": thumbnail, "date": date_iso}
 
 
-def fetch_vladtv(known_links: set[str]) -> list[dict]:
+def fetch_vladtv(known_links: set[str], known_dedupe_keys: set[str]) -> list[dict]:
     """VladTV has no RSS feed (confirmed -- see comment above), so this
     scrapes the homepage's server-rendered 'Latest Videos' grid for entry
     links instead of parsing a feed, then fetches each new article's own
@@ -828,9 +934,14 @@ def fetch_vladtv(known_links: set[str]) -> list[dict]:
             print(f"  [!] {name}: could not fetch/parse {link} -- skipping")
             continue
 
-        title = details["title"]
+        title = soften_title(details["title"])
         excerpt = details["excerpt"]
         summary = generate_summary(title, excerpt, excerpt)
+
+        dedupe_key = republish_dedupe_key(name, title, details["date"])
+        if dedupe_key in known_dedupe_keys:
+            skipped += 1
+            continue
 
         articles.append(
             {
@@ -846,6 +957,7 @@ def fetch_vladtv(known_links: set[str]) -> list[dict]:
             }
         )
         known_links.add(link)
+        known_dedupe_keys.add(dedupe_key)
 
     print(f"  [+] {name}: {len(articles)} new, {skipped} already archived")
     return articles
@@ -880,6 +992,23 @@ def main():
     if normalized_count:
         print(f"[cleanup] normalized copy on {normalized_count} existing field(s)")
 
+    # Brand-safety pass: soften any known asterisk-censored profanity
+    # already sitting in the archive's titles (see soften_title /
+    # PROFANITY_SOFTEN_PATTERNS above). Same idempotent-cleanup shape as
+    # the normalize_copy pass just above -- titles aren't re-derived from
+    # the source, just cleaned up in place. Only the display title is
+    # touched, never article["slug"], so existing article URLs don't move.
+    softened_count = 0
+    for article in existing:
+        original_title = article.get("title")
+        if original_title:
+            cleaned_title = soften_title(original_title)
+            if cleaned_title != original_title:
+                article["title"] = cleaned_title
+                softened_count += 1
+    if softened_count:
+        print(f"[cleanup] softened profanity in {softened_count} existing title(s)")
+
     # Repair pass: on some sources the RSS/og:title metadata is itself a URL
     # slug rather than real prose (see looks_like_slug_title) -- when that
     # happens fetch_source()'s empty-title check never fires (the field
@@ -892,6 +1021,7 @@ def main():
         if looks_like_slug_title(article.get("title", "")):
             real_title, real_excerpt = fetch_real_title_and_excerpt(article.get("link"))
             if real_title and not looks_like_slug_title(real_title):
+                real_title = soften_title(real_title)
                 print(f"  [repair] {article.get('slug')}: {article['title']!r} -> {real_title!r}")
                 article["title"] = real_title
                 if real_excerpt and not article.get("excerpt"):
@@ -913,12 +1043,17 @@ def main():
         dead_links = set()
 
     known_links = {a["link"] for a in existing if a.get("link")} | dead_links
+    known_dedupe_keys = {
+        republish_dedupe_key(a.get("source", ""), a["title"], a.get("date", ""))
+        for a in existing
+        if a.get("title")
+    }
     starting_count = len(existing)
 
     new_articles = []
     for name, url in SOURCES:
-        new_articles.extend(fetch_source(name, url, known_links))
-    new_articles.extend(fetch_vladtv(known_links))
+        new_articles.extend(fetch_source(name, url, known_links, known_dedupe_keys))
+    new_articles.extend(fetch_vladtv(known_links, known_dedupe_keys))
 
     # Sports was drowning out every other category -- 407 of 842 articles
     # (48%) were sports before this went in, driven by four high-volume

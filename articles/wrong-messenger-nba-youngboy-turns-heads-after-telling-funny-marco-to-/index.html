@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Wrong Messenger? NBA YoungBoy Turns Heads After Telling Funny Marco To Never Trust A Cheating Husband (VIDEO)</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/NBA-YoungBoy-Funny-Marco-Interview-Never-Trust-Cheating-Husband-Wife-Jazlyn-Mychelle-Social-Media-Reactions.jpg" alt="Wrong Messenger? NBA YoungBoy Turns Heads After Telling Funny Marco To Never Trust A Cheating Husband (VIDEO)">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/NBA-YoungBoy-Funny-Marco-Interview-Never-Trust-Cheating-Husband-Wife-Jazlyn-Mychelle-Social-Media-Reactions.jpg" alt="Wrong Messenger? NBA YoungBoy Turns Heads After Telling Funny Marco To Never Trust A Cheating Husband (VIDEO)" onload="this.style.animation='none'">
   <p class="article-summary">NBA YoungBoy had the internet scratching their heads after a clip of his interview with Funny Marco circulated online. In it, he speaks of never trusting a man who would betray his wife with infidelity. Fans quickly weighed in with “right message, wrong messenger” vibes.</p>
   <a class="outbound-cta" href="https://theshaderoom.com/nba-youngboy-funny-marco-interview-never-trust-cheating-husband-wife-jazlyn-mychelle-social-media-reactions/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/wrong-messenger-nba-youngboy-turns-heads-after-telling-funny-marco-to-/";
-      this.page.identifier = "wrong-messenger-nba-youngboy-turns-heads-after-telling-funny-marco-to-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/wrong-messenger-nba-youngboy-turns-heads-after-telling-funny-marco-to-/";
+          this.page.identifier = "wrong-messenger-nba-youngboy-turns-heads-after-telling-funny-marco-to-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

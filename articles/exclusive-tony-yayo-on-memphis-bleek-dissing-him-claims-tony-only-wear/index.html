@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">EXCLUSIVE: Tony Yayo on Memphis Bleek Dissing Him, Claims Tony Only Wears Passport Chain with 50 Cent</h1>
-  <img class="article-hero" src="https://www.vladtv.com/images/size_fs/video-315796.jpg?ver=1787162248" alt="EXCLUSIVE: Tony Yayo on Memphis Bleek Dissing Him, Claims Tony Only Wears Passport Chain with 50 Cent">
+  <img class="article-hero" src="https://www.vladtv.com/images/size_fs/video-315796.jpg?ver=1787162248" alt="EXCLUSIVE: Tony Yayo on Memphis Bleek Dissing Him, Claims Tony Only Wears Passport Chain with 50 Cent" onload="this.style.animation='none'">
   <p class="article-summary">Part 9: Tony Yayo: 50 Cent Was in a Bad Mood When He Ended My G-Unit Sneaker Deal Part 1: Tony Yayo: Keefe D is Getting Life in Prison for Killing 2Pac Without</p>
   <a class="outbound-cta" href="https://www.vladtv.com/article/315796/tony-yayo-on-memphis-bleek-dissing-him-claims-tony-only-wears-passport" target="_blank" rel="noopener noreferrer">
     Read The Full Story On VladTV &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/exclusive-tony-yayo-on-memphis-bleek-dissing-him-claims-tony-only-wear/";
-      this.page.identifier = "exclusive-tony-yayo-on-memphis-bleek-dissing-him-claims-tony-only-wear";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/exclusive-tony-yayo-on-memphis-bleek-dissing-him-claims-tony-only-wear/";
+          this.page.identifier = "exclusive-tony-yayo-on-memphis-bleek-dissing-him-claims-tony-only-wear";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

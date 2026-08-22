@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Jefe in &#x27;Three Amigos!&#x27; &#x27;Memba Him?!</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/ae/16by9/2026/07/29/ae27a8e02d854d25aed575f5d6cc0fb3_xl.jpg" alt="Jefe in &#x27;Three Amigos!&#x27; &#x27;Memba Him?!">
+  <img class="article-hero" src="https://imagez.tmz.com/image/ae/16by9/2026/07/29/ae27a8e02d854d25aed575f5d6cc0fb3_xl.jpg" alt="Jefe in &#x27;Three Amigos!&#x27; &#x27;Memba Him?!" onload="this.style.animation='none'">
   <p class="article-summary">Cuban-American actor Tony Plana was 33 years old when he played the rough-and-tumble bandito, Jefe in the 1986 comedy/western film &quot;Three Amigos!&quot; Tony shared the big screen with Steve Martin, Martin Short, and Chevy Chase. Guess what he looks like…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/03/tony-plana-as-jefe-in-three-amigos/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/jefe-in-three-amigos-memba-him/";
-      this.page.identifier = "jefe-in-three-amigos-memba-him";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/jefe-in-three-amigos-memba-him/";
+          this.page.identifier = "jefe-in-three-amigos-memba-him";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

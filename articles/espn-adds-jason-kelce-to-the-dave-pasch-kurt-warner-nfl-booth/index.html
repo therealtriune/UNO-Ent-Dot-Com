@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">ESPN adds Jason Kelce to the Dave Pasch/Kurt Warner NFL booth</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/e3e30c0799f2635ee9052d6b0d8302a1c52a3e63b36980a1e0bf9c78116e8c84/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2Ff45516eb2ce1310d3de20c789ab553ad.jpg" alt="ESPN adds Jason Kelce to the Dave Pasch/Kurt Warner NFL booth">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/e3e30c0799f2635ee9052d6b0d8302a1c52a3e63b36980a1e0bf9c78116e8c84/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2Ff45516eb2ce1310d3de20c789ab553ad.jpg" alt="ESPN adds Jason Kelce to the Dave Pasch/Kurt Warner NFL booth" onload="this.style.animation='none'">
   <p class="article-summary">\n When Travis Kelce retires from the NFL, he&#x27;ll likely land in an NFL broadcast booth. His brother, Jason, is getting a head start. As expected, Jason Kelce will participate in the calling of games for ESPNFL in 2026.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/espn-adds-jason-kelce-dave-140857272.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/espn-adds-jason-kelce-to-the-dave-pasch-kurt-warner-nfl-booth/";
-      this.page.identifier = "espn-adds-jason-kelce-to-the-dave-pasch-kurt-warner-nfl-booth";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/espn-adds-jason-kelce-to-the-dave-pasch-kurt-warner-nfl-booth/";
+          this.page.identifier = "espn-adds-jason-kelce-to-the-dave-pasch-kurt-warner-nfl-booth";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

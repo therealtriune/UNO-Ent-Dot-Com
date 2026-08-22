@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Too Real! Cardi B Thanks Old Navy For “Full-Circle Moment” As New Ambassador: “I Used To Steal From You Guys In High School”</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_3052.jpeg" alt="Too Real! Cardi B Thanks Old Navy For “Full-Circle Moment” As New Ambassador: “I Used To Steal From You Guys In High School”">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_3052.jpeg" alt="Too Real! Cardi B Thanks Old Navy For “Full-Circle Moment” As New Ambassador: “I Used To Steal From You Guys In High School”" onload="this.style.animation='none'">
   <p class="article-summary">One thing about Belcalis Almanzar she’s going to keep it a stack! The Bronx-bred rap superstar recently became the face of Old Navy’s Fall “Most Wanted Denim” campaign, and she couldn’t be more happier about the successful launch. RELATED: Cardi B Sweeps Hip-Hop Categories At The 2026 AMAs — Wins Best Female Hip-Hop Artist, Best Hip-Hop Song &amp; Best Hip-Hop Album Taking to Instagram Live to celebrate, the Grammy winner kept it 1000% real about her chaotic past with the brand, laughing about how she used to boost from the store back in her high school days.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/too-real-cardi-b-thanks-old-navy-for-full-circle-moment-as-new-ambassador-i-used-to-steal-from-you-guys-in-high-school-%f0%9f%a4%a3/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/too-real-cardi-b-thanks-old-navy-for-full-circle-moment-as-new-ambassa/";
-      this.page.identifier = "too-real-cardi-b-thanks-old-navy-for-full-circle-moment-as-new-ambassa";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/too-real-cardi-b-thanks-old-navy-for-full-circle-moment-as-new-ambassa/";
+          this.page.identifier = "too-real-cardi-b-thanks-old-navy-for-full-circle-moment-as-new-ambassa";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

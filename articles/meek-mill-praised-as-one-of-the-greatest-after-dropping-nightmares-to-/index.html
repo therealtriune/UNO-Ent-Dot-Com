@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Meek Mill Praised As One Of The Greatest After Dropping “Nightmares To Dreams”</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/2019-06-03T163934Z_1082966572_MT1USATODAY12823750_RTRMADP_3_JUNE-2-2019-EAST-RUTHERFORD-NJ-USA-MEEK-MILL-PERFORMS-scaled.jpg" alt="Meek Mill Praised As One Of The Greatest After Dropping “Nightmares To Dreams”">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/2019-06-03T163934Z_1082966572_MT1USATODAY12823750_RTRMADP_3_JUNE-2-2019-EAST-RUTHERFORD-NJ-USA-MEEK-MILL-PERFORMS-scaled.jpg" alt="Meek Mill Praised As One Of The Greatest After Dropping “Nightmares To Dreams”" onload="this.style.animation='none'">
   <p class="article-summary">Over the past few years, Meek Mill ’s intro to Dreams &amp; Nightmares has been celebrated and cemented as a classic in its own right. That’s not to say that people haven’t given him or that song its credit in the past, but after a decade, the song has formed a life of its own. The Philadelphia Eagles adopted it as their unofficial anthem.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004144-meek-mill-nightmares-to-dreams-reaction" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/meek-mill-praised-as-one-of-the-greatest-after-dropping-nightmares-to-/";
-      this.page.identifier = "meek-mill-praised-as-one-of-the-greatest-after-dropping-nightmares-to-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/meek-mill-praised-as-one-of-the-greatest-after-dropping-nightmares-to-/";
+          this.page.identifier = "meek-mill-praised-as-one-of-the-greatest-after-dropping-nightmares-to-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

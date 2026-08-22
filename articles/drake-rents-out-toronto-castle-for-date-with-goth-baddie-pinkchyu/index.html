@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Drake Rents Out Toronto Castle for Date With &#x27;Goth Baddie&#x27; Pinkchyu</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/8f/16by9/2026/08/20/8fba817eb4b54b0f96679ebed4395ed0_xl.jpg" alt="Drake Rents Out Toronto Castle for Date With &#x27;Goth Baddie&#x27; Pinkchyu">
+  <img class="article-hero" src="https://imagez.tmz.com/image/8f/16by9/2026/08/20/8fba817eb4b54b0f96679ebed4395ed0_xl.jpg" alt="Drake Rents Out Toronto Castle for Date With &#x27;Goth Baddie&#x27; Pinkchyu" onload="this.style.animation='none'">
   <p class="article-summary">Drake is pulling out all the stops for his &quot;goth baddie&quot; Pinkchyu...flying her to Toronto and taking over an entire castle for their latest date. A source tells TMZ...Drake flew Pinkchyu north of the border this past week and rented out Casa…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/20/drake-goth-girl-pinkchyu-toronto-castle-date/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/drake-rents-out-toronto-castle-for-date-with-goth-baddie-pinkchyu/";
-      this.page.identifier = "drake-rents-out-toronto-castle-for-date-with-goth-baddie-pinkchyu";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/drake-rents-out-toronto-castle-for-date-with-goth-baddie-pinkchyu/";
+          this.page.identifier = "drake-rents-out-toronto-castle-for-date-with-goth-baddie-pinkchyu";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

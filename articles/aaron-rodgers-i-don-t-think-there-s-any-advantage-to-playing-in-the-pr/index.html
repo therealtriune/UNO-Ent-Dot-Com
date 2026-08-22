@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Aaron Rodgers: I don&#x27;t think there&#x27;s any advantage to playing in the preseason</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/68c7eb00fe56a62e747757f4e6eaad72cb9773f59696a4e90bbdc1f778562c35/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F2ab15c5383a7054cacafd50a9822e6a3.jpg" alt="Aaron Rodgers: I don&#x27;t think there&#x27;s any advantage to playing in the preseason">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/68c7eb00fe56a62e747757f4e6eaad72cb9773f59696a4e90bbdc1f778562c35/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F2ab15c5383a7054cacafd50a9822e6a3.jpg" alt="Aaron Rodgers: I don&#x27;t think there&#x27;s any advantage to playing in the preseason" onload="this.style.animation='none'">
   <p class="article-summary">Steelers head coach Mike McCarthy said on Tuesday that the team was still deciding whether to play quarterback Aaron Rodgers against the Packers on Thursday and he&#x27;s said more than once that Rodgers has expressed to him that he wants to play in the preseason. Rodgers hasn&#x27;t done that during his own media sessions and that continued to be the case when he was asked if he wants to play on Tuesday. &quot;It’s preseason, it’s not real football,&quot; Rodgers said.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/aaron-rodgers-dont-think-theres-114251115.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/aaron-rodgers-i-don-t-think-there-s-any-advantage-to-playing-in-the-pr/";
-      this.page.identifier = "aaron-rodgers-i-don-t-think-there-s-any-advantage-to-playing-in-the-pr";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/aaron-rodgers-i-don-t-think-there-s-any-advantage-to-playing-in-the-pr/";
+          this.page.identifier = "aaron-rodgers-i-don-t-think-there-s-any-advantage-to-playing-in-the-pr";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

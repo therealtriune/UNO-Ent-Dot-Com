@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Ray J Says He’d Reconcile With Princess Love Under Certain Conditions</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/ray-j-scaled.jpg" alt="Ray J Says He’d Reconcile With Princess Love Under Certain Conditions">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/ray-j-scaled.jpg" alt="Ray J Says He’d Reconcile With Princess Love Under Certain Conditions" onload="this.style.animation='none'">
   <p class="article-summary">Reconciliation isn’t off the table for Ray J and Princess Love. It just comes with a long list of conditions. The singer and reality television star says he’d welcome the opportunity to rebuild his marriage, but only if both he and Princess Love are willing to make significant changes.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004285-ray-j-princess-love-marriage-reconciliation" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ray-j-says-he-d-reconcile-with-princess-love-under-certain-conditions/";
-      this.page.identifier = "ray-j-says-he-d-reconcile-with-princess-love-under-certain-conditions";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ray-j-says-he-d-reconcile-with-princess-love-under-certain-conditions/";
+          this.page.identifier = "ray-j-says-he-d-reconcile-with-princess-love-under-certain-conditions";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

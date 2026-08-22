@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Tyga’s “$TARFACE” Album Receives Pitchfork’s First 0/10 Score In 19 Years</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/tyga-starface-review-scaled.jpg" alt="Tyga’s “$TARFACE” Album Receives Pitchfork’s First 0/10 Score In 19 Years">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/tyga-starface-review-scaled.jpg" alt="Tyga’s “$TARFACE” Album Receives Pitchfork’s First 0/10 Score In 19 Years" onload="this.style.animation='none'">
   <p class="article-summary">Tyga dropped his new album $TARFACE a couple of weeks ago as he looked to turn himself into an 80s pop star. This new alter ego-driven album has proven to be polarizing, especially in light of songs like Fenix Flexin’s “RUBBERZ,” which takes on a similar aesthetic. Recently, the artist admitted that the album was aided by AI.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005560-tyga-starface-pitchfork-review" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/tyga-s-tarface-album-receives-pitchfork-s-first-0-10-score-in-19-years/";
-      this.page.identifier = "tyga-s-tarface-album-receives-pitchfork-s-first-0-10-score-in-19-years";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/tyga-s-tarface-album-receives-pitchfork-s-first-0-10-score-in-19-years/";
+          this.page.identifier = "tyga-s-tarface-album-receives-pitchfork-s-first-0-10-score-in-19-years";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

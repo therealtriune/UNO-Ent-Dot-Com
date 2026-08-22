@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Rod Wave Hit With 90GB Evidence Dump In Georgia Shooting Case</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-2254018481-scaled.jpg" alt="Rod Wave Hit With 90GB Evidence Dump In Georgia Shooting Case">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-2254018481-scaled.jpg" alt="Rod Wave Hit With 90GB Evidence Dump In Georgia Shooting Case" onload="this.style.animation='none'">
   <p class="article-summary">Things aren’t looking too stellar for Rod Wave these days as the rapper’s legal troubles hover over his head. The rapper’s ongoing criminal case in George reached a new phase when prosecutors turned over a substantial collection of evidence to the rapper’s defense. According to All Hip Hop, the 26-year-old artist is facing 14 charges connected to an April 2025 incident at his Milton residence.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005609-rod-wave-evidence-georgia-shooting-case" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/rod-wave-hit-with-90gb-evidence-dump-in-georgia-shooting-case/";
-      this.page.identifier = "rod-wave-hit-with-90gb-evidence-dump-in-georgia-shooting-case";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/rod-wave-hit-with-90gb-evidence-dump-in-georgia-shooting-case/";
+          this.page.identifier = "rod-wave-hit-with-90gb-evidence-dump-in-georgia-shooting-case";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

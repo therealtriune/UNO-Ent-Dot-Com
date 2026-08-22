@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Aaron Donald works out for the Rams, what&#x27;s a realistic expectation if he does come back?</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/32fe99aa4aabf65b7448bfa49951fda7854e0da6a0b5784ceb0c02eaec35f7b4/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2024-03%2Fdcee1510-e2e6-11ee-8fbb-aafe5587f911" alt="Aaron Donald works out for the Rams, what&#x27;s a realistic expectation if he does come back?">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/32fe99aa4aabf65b7448bfa49951fda7854e0da6a0b5784ceb0c02eaec35f7b4/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2024-03%2Fdcee1510-e2e6-11ee-8fbb-aafe5587f911" alt="Aaron Donald works out for the Rams, what&#x27;s a realistic expectation if he does come back?" onload="this.style.animation='none'">
   <p class="article-summary">There was something humorous about the NFL&#x27;s transaction wire including that Aaron Donald, who might get his number retired by the Los Angeles Rams someday, having an official workout with the Rams. Donald has been considering a comeback, and for those hoping to see it happen, Wednesday&#x27;s news seemed pretty good. ESPN&#x27;s Adam Schefter explained that Donald wanted to wear a helmet as he worked out, and because he used team equipment the Rams had to report it as a workout.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/nfl/article/aaron-donald-works-out-for-the-rams-whats-a-realistic-expectation-if-he-does-come-back-223654447.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/aaron-donald-works-out-for-the-rams-what-s-a-realistic-expectation-if-/";
-      this.page.identifier = "aaron-donald-works-out-for-the-rams-what-s-a-realistic-expectation-if-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/aaron-donald-works-out-for-the-rams-what-s-a-realistic-expectation-if-/";
+          this.page.identifier = "aaron-donald-works-out-for-the-rams-what-s-a-realistic-expectation-if-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 days ago</div>
   <h1 class="article-title">Tupac Murder Trial Opens With Officer Recalling Rapper’s Refusal To Identify Shooter</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/tupactrial-e1787010878605.jpg" alt="Tupac Murder Trial Opens With Officer Recalling Rapper’s Refusal To Identify Shooter">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/tupactrial-e1787010878605.jpg" alt="Tupac Murder Trial Opens With Officer Recalling Rapper’s Refusal To Identify Shooter" onload="this.style.animation='none'">
   <p class="article-summary">Nearly 30 years after Tupac Shakur was fatally shot in Las Vegas, jurors are finally hearing the case against the only man ever charged in his killing. Opening statements began Monday in Duane “Keefe D” Davis’ murder trial, followed by testimony from a former Las Vegas police officer who said Tupac refused to identify whoever attacked him even as he was being rushed to the hospital. Retired officer Garry Dale became the prosecution’s first witness after a jury was selected last week.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006252-tupac-trial-las-vegas-officer-testifies" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/tupac-murder-trial-opens-with-officer-recalling-rapper-s-refusal-to-id/";
-      this.page.identifier = "tupac-murder-trial-opens-with-officer-recalling-rapper-s-refusal-to-id";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/tupac-murder-trial-opens-with-officer-recalling-rapper-s-refusal-to-id/";
+          this.page.identifier = "tupac-murder-trial-opens-with-officer-recalling-rapper-s-refusal-to-id";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

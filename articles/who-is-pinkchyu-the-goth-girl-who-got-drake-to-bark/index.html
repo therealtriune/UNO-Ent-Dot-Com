@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Who Is Pinkchyu? The Goth Girl Who Got Drake To Bark</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/who-is-pinkchyu.jpg" alt="Who Is Pinkchyu? The Goth Girl Who Got Drake To Bark">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/who-is-pinkchyu.jpg" alt="Who Is Pinkchyu? The Goth Girl Who Got Drake To Bark" onload="this.style.animation='none'">
   <p class="article-summary">Pinkchyu, real name Lin Lamar, is going viral all over social media right now thanks to her big win during Drake ’s recent 20v1 dating game. Of course, her big moment came when she was able to make Drake bark on command. A move that has led to widespread discourse online, including criticism of Drizzy’s life choices as he approaches 40 years old.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005475-who-is-pinkchyu-drake" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/who-is-pinkchyu-the-goth-girl-who-got-drake-to-bark/";
-      this.page.identifier = "who-is-pinkchyu-the-goth-girl-who-got-drake-to-bark";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/who-is-pinkchyu-the-goth-girl-who-got-drake-to-bark/";
+          this.page.identifier = "who-is-pinkchyu-the-goth-girl-who-got-drake-to-bark";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

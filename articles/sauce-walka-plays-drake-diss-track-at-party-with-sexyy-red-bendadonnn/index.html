@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">6 days ago</div>
   <h1 class="article-title">Sauce Walka Plays Drake “Diss Track” At Party With Sexyy Red &amp; BenDaDonnn</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Sauce-Walka-Drake-Diss-Track-Party-Sexyy-Red-BenDaDonnn-scaled-e1786907065400.jpg" alt="Sauce Walka Plays Drake “Diss Track” At Party With Sexyy Red &amp; BenDaDonnn">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Sauce-Walka-Drake-Diss-Track-Party-Sexyy-Red-BenDaDonnn-scaled-e1786907065400.jpg" alt="Sauce Walka Plays Drake “Diss Track” At Party With Sexyy Red &amp; BenDaDonnn" onload="this.style.animation='none'">
   <p class="article-summary">Sauce Walka, BenDaDonnn, and Sexyy Red were some of many stars who attended the Streamer Prom earlier this week. They also hit up an after party at Sauce’s home city of Houston, over which fans have been scrutinizing a curious moment. Walka walked in the club and played his track “Baby Mama Drama,” which is a bit of a Drake diss.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006118-sauce-walka-drake-diss-track-party-sexyy-red-bendadonnn" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/sauce-walka-plays-drake-diss-track-at-party-with-sexyy-red-bendadonnn/";
-      this.page.identifier = "sauce-walka-plays-drake-diss-track-at-party-with-sexyy-red-bendadonnn";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/sauce-walka-plays-drake-diss-track-at-party-with-sexyy-red-bendadonnn/";
+          this.page.identifier = "sauce-walka-plays-drake-diss-track-at-party-with-sexyy-red-bendadonnn";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

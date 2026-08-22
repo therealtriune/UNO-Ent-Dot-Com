@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Pop Out, Then! Lil Kim And Royal Reign Sizzle At Amazon Kids Back-To-School Runway Show (VIDEO)</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/07/Lil-Kim-Royal-Reign-Amazon-Kids-Back-To-School-Runway-Show-Rookie-Kids.jpg" alt="Pop Out, Then! Lil Kim And Royal Reign Sizzle At Amazon Kids Back-To-School Runway Show (VIDEO)">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/07/Lil-Kim-Royal-Reign-Amazon-Kids-Back-To-School-Runway-Show-Rookie-Kids.jpg" alt="Pop Out, Then! Lil Kim And Royal Reign Sizzle At Amazon Kids Back-To-School Runway Show (VIDEO)" onload="this.style.animation='none'">
   <p class="article-summary">Lil Kim supported her daughter Royal Reign at the Amazon Kids Back-To-School Runway Show in New York City on Wednesday, July 30. Twelve-year-old Royal walked in the runway show, and a video of the mother-daughter duo has gone viral. RELATED: Get It!</p>
   <a class="outbound-cta" href="https://theshaderoom.com/pop-out-then-lil-kim-and-royal-reign-sizzle-at-amazon-kids-back-to-school-runway-show-video/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/pop-out-then-lil-kim-and-royal-reign-sizzle-at-amazon-kids-back-to-sch/";
-      this.page.identifier = "pop-out-then-lil-kim-and-royal-reign-sizzle-at-amazon-kids-back-to-sch";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/pop-out-then-lil-kim-and-royal-reign-sizzle-at-amazon-kids-back-to-sch/";
+          this.page.identifier = "pop-out-then-lil-kim-and-royal-reign-sizzle-at-amazon-kids-back-to-sch";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

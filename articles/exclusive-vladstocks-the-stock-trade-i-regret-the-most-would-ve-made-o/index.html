@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">EXCLUSIVE: VladStocks: The Stock Trade I Regret the Most, Would&#x27;ve Made Over $1M Today</h1>
-  <img class="article-hero" src="https://www.vladtv.com/images/size_fs/video-315803.jpg?ver=1787234569" alt="EXCLUSIVE: VladStocks: The Stock Trade I Regret the Most, Would&#x27;ve Made Over $1M Today">
+  <img class="article-hero" src="https://www.vladtv.com/images/size_fs/video-315803.jpg?ver=1787234569" alt="EXCLUSIVE: VladStocks: The Stock Trade I Regret the Most, Would&#x27;ve Made Over $1M Today" onload="this.style.animation='none'">
   <p class="article-summary">Part 23: VladStocks: How I Borrowed $1M and NEVER Plan on Paying it Back! Watch the full episode to see whether Vlad is buying shares. Become a VladStocks Membe</p>
   <a class="outbound-cta" href="https://www.vladtv.com/article/315803/vladstocks-the-stock-trade-i-regret-the-most-wouldve-made-over-1m-today" target="_blank" rel="noopener noreferrer">
     Read The Full Story On VladTV &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/exclusive-vladstocks-the-stock-trade-i-regret-the-most-would-ve-made-o/";
-      this.page.identifier = "exclusive-vladstocks-the-stock-trade-i-regret-the-most-would-ve-made-o";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/exclusive-vladstocks-the-stock-trade-i-regret-the-most-would-ve-made-o/";
+          this.page.identifier = "exclusive-vladstocks-the-stock-trade-i-regret-the-most-would-ve-made-o";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

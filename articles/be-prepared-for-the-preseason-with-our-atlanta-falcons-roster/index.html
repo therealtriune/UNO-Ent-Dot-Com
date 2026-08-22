@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Be prepared for the preseason with our Atlanta Falcons roster</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/ac9b0468837f245c57c771e9042f17e256215f69d825b6c04b7c635507ffff58/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F6daf61e8ded8c8af6586742970376575.jpg" alt="Be prepared for the preseason with our Atlanta Falcons roster">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/ac9b0468837f245c57c771e9042f17e256215f69d825b6c04b7c635507ffff58/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F6daf61e8ded8c8af6586742970376575.jpg" alt="Be prepared for the preseason with our Atlanta Falcons roster" onload="this.style.animation='none'">
   <p class="article-summary">ATLANTA, GA - DECEMBER 29: Running back Bijan Robinson (7) of the Atlanta Falcons breaks free during the second half of the Monday night NFL game between the Atlanta Falcons and the Los Angeles Rams on December 29, 2025 at the Mercedes-Benz Stadium in Atlanta, Georgia. (Photo by David J. Griffin/Icon Sportswire via Getty Images) | Icon Sportswire via Getty Images The Falcons preseason is upon us, with Atlanta facing off against the Denver Broncos in Week 1, the Indianapolis Colts in Week 2, and the Miami Dolphins in Week 3.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/prepared-preseason-atlanta-falcons-roster-182309581.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/be-prepared-for-the-preseason-with-our-atlanta-falcons-roster/";
-      this.page.identifier = "be-prepared-for-the-preseason-with-our-atlanta-falcons-roster";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/be-prepared-for-the-preseason-with-our-atlanta-falcons-roster/";
+          this.page.identifier = "be-prepared-for-the-preseason-with-our-atlanta-falcons-roster";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

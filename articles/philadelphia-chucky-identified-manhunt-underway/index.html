@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Philadelphia &#x27;Chucky&#x27; Identified, Manhunt Underway</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/21/16by9/2026/08/20/218450b8772b4441b75dec32db1dc618_xl.jpg" alt="Philadelphia &#x27;Chucky&#x27; Identified, Manhunt Underway">
+  <img class="article-hero" src="https://imagez.tmz.com/image/21/16by9/2026/08/20/218450b8772b4441b75dec32db1dc618_xl.jpg" alt="Philadelphia &#x27;Chucky&#x27; Identified, Manhunt Underway" onload="this.style.animation='none'">
   <p class="article-summary">The &quot;Chucky&quot; look-alike running around Philadelphia terrorizing citizens has finally been identified...and a manhunt is underway to capture the lunatic. Police in Philly say the dude seen wearing all black while donning a Chucky-like mask is…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/20/police-identify-philadelphia-man-wearing-doll-mask/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/philadelphia-chucky-identified-manhunt-underway/";
-      this.page.identifier = "philadelphia-chucky-identified-manhunt-underway";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/philadelphia-chucky-identified-manhunt-underway/";
+          this.page.identifier = "philadelphia-chucky-identified-manhunt-underway";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

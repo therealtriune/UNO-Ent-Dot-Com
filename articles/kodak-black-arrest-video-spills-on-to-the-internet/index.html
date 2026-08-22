@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Kodak Black Arrest Video Spills On To The Internet</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/11/Kodak-Black-1.png" alt="Kodak Black Arrest Video Spills On To The Internet">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/11/Kodak-Black-1.png" alt="Kodak Black Arrest Video Spills On To The Internet" onload="this.style.animation='none'">
   <p class="article-summary">Kodak Black keeps finding himself in situations where the cameras roll and the charges stack up faster than his album releases ever could. A 15-minute video surfaced showing his May arrest, where he surrendered to authorities in Broward County, stepping out of an SUV before officers conducted a pat-down and placed him in handcuffs. The footage captures the moment his legal troubles became visual evidence, another chapter in what’s become a recurring pattern of law enforcement encounters.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/kodak-black-arrest-video-spills-on-to-the-internet/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/kodak-black-arrest-video-spills-on-to-the-internet/";
-      this.page.identifier = "kodak-black-arrest-video-spills-on-to-the-internet";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/kodak-black-arrest-video-spills-on-to-the-internet/";
+          this.page.identifier = "kodak-black-arrest-video-spills-on-to-the-internet";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

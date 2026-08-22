@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Tyga Pushes Back On AI Criticism Over $TARFACE</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/tyga-1-scaled-e1786663749697.jpg" alt="Tyga Pushes Back On AI Criticism Over $TARFACE">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/tyga-1-scaled-e1786663749697.jpg" alt="Tyga Pushes Back On AI Criticism Over $TARFACE" onload="this.style.animation='none'">
   <p class="article-summary">The backlash surrounding $TARFACE has moved beyond whether Tyga used artificial intelligence and into a debate over how much A.I. is enough to change the way an album is described. After Pitchfork gave the project a rare 0.0 rating and criticized its use of the technology, Tyga sat down with TMZ to push back on the idea that he handed an entire album over to a machine.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005809-tyga-denies-starface-ai-album" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/tyga-pushes-back-on-ai-criticism-over-tarface/";
-      this.page.identifier = "tyga-pushes-back-on-ai-criticism-over-tarface";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/tyga-pushes-back-on-ai-criticism-over-tarface/";
+          this.page.identifier = "tyga-pushes-back-on-ai-criticism-over-tarface";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Name Game! Jada Wallace Shows Off New Tattoo In Honor Of Her &amp; Chris Brown’s Son Arrow (PHOTO)</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Name-Game-Jada-Wallace-Shows-Off-New-Tattoo-In-Honor-Of-Baby-Arrow-amp-We-Cant-Get-Over-It-PHOTO.jpg" alt="Name Game! Jada Wallace Shows Off New Tattoo In Honor Of Her &amp; Chris Brown’s Son Arrow (PHOTO)">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Name-Game-Jada-Wallace-Shows-Off-New-Tattoo-In-Honor-Of-Baby-Arrow-amp-We-Cant-Get-Over-It-PHOTO.jpg" alt="Name Game! Jada Wallace Shows Off New Tattoo In Honor Of Her &amp; Chris Brown’s Son Arrow (PHOTO)" onload="this.style.animation='none'">
   <p class="article-summary">Roomies, Jada Wallace and Chris Brown’s little one is clearly keeping his mama wrapped around his finger! A new photo has social media zooming in on a tiny detail Jada appears to have added as a permanent tribute to her baby boy, while Arrow was busy stealing the spotlight in the sweetest way. RELATED: Daddy Duties!</p>
   <a class="outbound-cta" href="https://theshaderoom.com/jada-wallace-shows-off-new-tattoo-in-honor-of-baby-arrow-we-cant-get-over-it-photo/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/name-game-jada-wallace-shows-off-new-tattoo-in-honor-of-her-chris-brow/";
-      this.page.identifier = "name-game-jada-wallace-shows-off-new-tattoo-in-honor-of-her-chris-brow";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/name-game-jada-wallace-shows-off-new-tattoo-in-honor-of-her-chris-brow/";
+          this.page.identifier = "name-game-jada-wallace-shows-off-new-tattoo-in-honor-of-her-chris-brow";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

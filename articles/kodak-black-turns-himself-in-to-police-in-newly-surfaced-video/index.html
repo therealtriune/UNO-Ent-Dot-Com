@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Kodak Black Turns Himself In To Police In Newly Surfaced Video</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2025-02-28T023128Z_1622852889_MT1USATODAY25532773_RTRMADP_3_NAME-YOU-KNOW-KODAK-BLACK-BIRTH-NAME-BILL-K-KAPRI-2.jpg" alt="Kodak Black Turns Himself In To Police In Newly Surfaced Video">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2025-02-28T023128Z_1622852889_MT1USATODAY25532773_RTRMADP_3_NAME-YOU-KNOW-KODAK-BLACK-BIRTH-NAME-BILL-K-KAPRI-2.jpg" alt="Kodak Black Turns Himself In To Police In Newly Surfaced Video" onload="this.style.animation='none'">
   <p class="article-summary">It feels like Kodak Black ’s legal issues have often been more newsworthy than his musical accomplishments. Unfortunately, the past few years have suggested that his troubles with the law have impeded the growth of his career to a degree. This year, we’ve seen Yak find himself in trouble with the law, including one arrest in May when he was c harged with fleeing police.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005417-kodak-black-surrender-video" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/kodak-black-turns-himself-in-to-police-in-newly-surfaced-video/";
-      this.page.identifier = "kodak-black-turns-himself-in-to-police-in-newly-surfaced-video";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/kodak-black-turns-himself-in-to-police-in-newly-surfaced-video/";
+          this.page.identifier = "kodak-black-turns-himself-in-to-police-in-newly-surfaced-video";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

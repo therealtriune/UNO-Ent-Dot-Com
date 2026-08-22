@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Hayden Panettiere&#x27;s BF Brian Hickerson Slurs Words in Videos Taken Months Before Her Death</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/4b/16by9/2026/08/21/4ba1d58a4d294287b9ab53dc1d5c5975_xl.jpg" alt="Hayden Panettiere&#x27;s BF Brian Hickerson Slurs Words in Videos Taken Months Before Her Death">
+  <img class="article-hero" src="https://imagez.tmz.com/image/4b/16by9/2026/08/21/4ba1d58a4d294287b9ab53dc1d5c5975_xl.jpg" alt="Hayden Panettiere&#x27;s BF Brian Hickerson Slurs Words in Videos Taken Months Before Her Death" onload="this.style.animation='none'">
   <p class="article-summary">Hayden Panettiere&#x27;s boyfriend was slurring his words in some bizarre videos he posted to social media months before the actress died with him in the room. We&#x27;ve obtained videos Brian Hickerson previously shared to his Instagram story from May and…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/21/hayden-panettiere-boyfriend-brian-hickerson-posted-bizarre-videos-before-her-death/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/hayden-panettiere-s-bf-brian-hickerson-slurs-words-in-videos-taken-mon/";
-      this.page.identifier = "hayden-panettiere-s-bf-brian-hickerson-slurs-words-in-videos-taken-mon";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/hayden-panettiere-s-bf-brian-hickerson-slurs-words-in-videos-taken-mon/";
+          this.page.identifier = "hayden-panettiere-s-bf-brian-hickerson-slurs-words-in-videos-taken-mon";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

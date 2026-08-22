@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Megan Thee Stallion Revives Tina Snow With Sexy Album Announcement – Look At These Pictures</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/11/Megan-Thee-Stallion.jpg" alt="Megan Thee Stallion Revives Tina Snow With Sexy Album Announcement – Look At These Pictures">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/11/Megan-Thee-Stallion.jpg" alt="Megan Thee Stallion Revives Tina Snow With Sexy Album Announcement – Look At These Pictures" onload="this.style.animation='none'">
   <p class="article-summary">Megan Thee Stallion has confirmed her comeback, placing Act III at the center of her era. The screen cap shows an orange four-panel shoot under her name Tina Snow, complete with fur boots. Her shoulders carry “ACT III” and “I’M BACK.” ❄️👀 pic.twitter.com/gwrnOBHwHk — TINA SNOW (@theestallion) August 10, 2026 The original post drew support from Monaleo and Hayley Williams, two artists Megan listed as potential collaborators.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/megan-thee-stallion-revives-tina-snow-with-sexy-album-announcement-look-at-these-pictures/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/megan-thee-stallion-revives-tina-snow-with-sexy-album-announcement-loo/";
-      this.page.identifier = "megan-thee-stallion-revives-tina-snow-with-sexy-album-announcement-loo";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/megan-thee-stallion-revives-tina-snow-with-sexy-album-announcement-loo/";
+          this.page.identifier = "megan-thee-stallion-revives-tina-snow-with-sexy-album-announcement-loo";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

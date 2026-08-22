@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">P Of The Week – Song by Jay Worthy, George Clinton, Larry June featuring Leven Kali</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/P-of-the-Week-feat.-Leven-Kali.jpg" alt="P Of The Week – Song by Jay Worthy, George Clinton, Larry June featuring Leven Kali">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/P-of-the-Week-feat.-Leven-Kali.jpg" alt="P Of The Week – Song by Jay Worthy, George Clinton, Larry June featuring Leven Kali" onload="this.style.animation='none'">
   <p class="article-summary">Jay Worthy and his LNDN DRGS partner Sean House are teaming up with the legendary George Clinton for GENERATION P. This album is dropping next Friday, August 28. There have been some dope singles so far, including the funky new track “P Of The Week.” As you will hear, this song also comes with features from the likes of Larry June and Leven Kali.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006509-p-of-the-week-jay-worthy-george-clinton-larry-june-leven-kali" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/p-of-the-week-song-by-jay-worthy-george-clinton-larry-june-featuring-l/";
-      this.page.identifier = "p-of-the-week-song-by-jay-worthy-george-clinton-larry-june-featuring-l";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/p-of-the-week-song-by-jay-worthy-george-clinton-larry-june-featuring-l/";
+          this.page.identifier = "p-of-the-week-song-by-jay-worthy-george-clinton-larry-june-featuring-l";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

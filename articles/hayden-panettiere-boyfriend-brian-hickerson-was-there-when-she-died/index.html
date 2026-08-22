@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 days ago</div>
   <h1 class="article-title">Hayden Panettiere: Boyfriend Brian Hickerson Was There When She Died</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/7f/16by9/2026/08/18/7f80e6a8ff1e49d28ac9e8538138fded_xl.jpg" alt="Hayden Panettiere: Boyfriend Brian Hickerson Was There When She Died">
+  <img class="article-hero" src="https://imagez.tmz.com/image/7f/16by9/2026/08/18/7f80e6a8ff1e49d28ac9e8538138fded_xl.jpg" alt="Hayden Panettiere: Boyfriend Brian Hickerson Was There When She Died" onload="this.style.animation='none'">
   <p class="article-summary">Hayden Panettiere&#x27;s boyfriend Brian Hickerson and his brother were at the scene when the actress was found dead Sunday, according to police. A report cited by NBC News says Brian and Zach Hickerson were at the scene inside the apartment complex…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/18/hayden-panettiere-boyfriend-brian-hickerson-was-with-her-when-she-passed-away/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/hayden-panettiere-boyfriend-brian-hickerson-was-there-when-she-died/";
-      this.page.identifier = "hayden-panettiere-boyfriend-brian-hickerson-was-there-when-she-died";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/hayden-panettiere-boyfriend-brian-hickerson-was-there-when-she-died/";
+          this.page.identifier = "hayden-panettiere-boyfriend-brian-hickerson-was-there-when-she-died";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -128,22 +128,6 @@
     "issue": "missing_thumbnail"
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/08/GettyImages-2248170263-e1787362939548.jpg",
-    "links": [
-      "https://theshaderoom.com/last-laugh-scotty-gets-her-get-back-after-lemuel-plummer-calls-her-a-bird-in-video-watch/",
-      "https://theshaderoom.com/scotty-gets-her-get-back-after-lemuel-plummer-calls-her-a-bird-in-video-watch/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/08/GettyImages-2248170263-e1787362939548.jpg",
-    "links": [
-      "https://theshaderoom.com/last-laugh-scotty-gets-her-get-back-after-lemuel-plummer-calls-her-a-bird-in-video-watch/",
-      "https://theshaderoom.com/scotty-gets-her-get-back-after-lemuel-plummer-calls-her-a-bird-in-video-watch/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Tupac-Shakur.jpg",
     "links": [
@@ -195,14 +179,6 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Game.jpg",
-    "links": [
-      "https://allhiphop.com/news/the-game-releases-the-documentary-iii-tonight-after-years-of-delays/",
-      "https://allhiphop.com/rumors/did-the-game-just-pick-a-side-in-drakes-biggest-rap-war/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/09/NBA-YoungBoy.png",
     "links": [
@@ -211,22 +187,6 @@
       "https://allhiphop.com/news/nba-youngboys-insane-bentley-speeding-arrest-bodycam-footage-released/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://townsquare.media/site/812/files/2026/08/attachment-young-ma-photo.jpg?w=1200&format=natural",
-    "links": [
-      "https://www.xxlmag.com/how-sobriety-faith-and-a-decade-of-defying-the-odds-redefined-young-m-as-next-chapter/",
-      "https://www.xxlmag.com/young-m-a-interview-album/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://townsquare.media/site/812/files/2026/08/attachment-young-ma-photo.jpg?w=1200&format=natural",
-    "links": [
-      "https://www.xxlmag.com/how-sobriety-faith-and-a-decade-of-defying-the-odds-redefined-young-m-as-next-chapter/",
-      "https://www.xxlmag.com/young-m-a-interview-album/"
-    ]
   },
   {
     "issue": "overused_thumbnail",

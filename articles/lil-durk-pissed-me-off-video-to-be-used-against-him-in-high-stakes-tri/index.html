@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Lil Durk “Pissed Me Off” Video To Be Used Against Him In High-Stakes Trial</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png" alt="Lil Durk “Pissed Me Off” Video To Be Used Against Him In High-Stakes Trial">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png" alt="Lil Durk “Pissed Me Off” Video To Be Used Against Him In High-Stakes Trial" onload="this.style.animation='none'">
   <p class="article-summary">Lil Durk just took a massive L in federal court that could reshape his entire murder-for-hire trial. Federal Judge Michael Fitzgerald ruled Thursday that prosecutors can use the “Pissed Me Off” music video and lyrics as evidence when jury selection kicks off August 20, and that decision might be the turning point the government needed. Durk’s legal team fought hard to keep the 2021 track out of the courtroom, arguing it’d create “so much risk of prejudice and confusion” for jurors, but the judge wasn’t buying it.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/lil-durk-pissed-me-off-video-to-be-used-against-him-in-high-stakes-trial/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/lil-durk-pissed-me-off-video-to-be-used-against-him-in-high-stakes-tri/";
-      this.page.identifier = "lil-durk-pissed-me-off-video-to-be-used-against-him-in-high-stakes-tri";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/lil-durk-pissed-me-off-video-to-be-used-against-him-in-high-stakes-tri/";
+          this.page.identifier = "lil-durk-pissed-me-off-video-to-be-used-against-him-in-high-stakes-tri";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

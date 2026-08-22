@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">2026 Hall of Fame Game Open Thread</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/271bf4b49a7fbf80583c7a4d3631f1316f8695a4a12b83facfd613bfded640db/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F19a20c879b981f634ff7f73b1bc53934" alt="2026 Hall of Fame Game Open Thread">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/271bf4b49a7fbf80583c7a4d3631f1316f8695a4a12b83facfd613bfded640db/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F19a20c879b981f634ff7f73b1bc53934" alt="2026 Hall of Fame Game Open Thread" onload="this.style.animation='none'">
   <p class="article-summary">The closest thing we get to actual NFL football has arrived with the annual Hall of Fame Game in Canton, Ohio. The Hall of Fame Game will kick off the Hall of Fame weekend festivities which will culminate with the 2026 Pro Football Hall of Fame enshrinement ceremony on Saturday. Drew Brees, the greatest quarterback in New Orleans Saints history, will be the headliner of this year’s class, but the Saints themselves will not be playing in this game.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/2026-hall-fame-game-open-000000770.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/2026-hall-of-fame-game-open-thread/";
-      this.page.identifier = "2026-hall-of-fame-game-open-thread";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/2026-hall-of-fame-game-open-thread/";
+          this.page.identifier = "2026-hall-of-fame-game-open-thread";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

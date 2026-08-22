@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Dixie D&#x27;Amelio Hot Shots To Kick Off Her 25th Birthday!</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/21/16by9/2026/07/28/218967b82c074debac78450095a704dc_xl.jpg" alt="Dixie D&#x27;Amelio Hot Shots To Kick Off Her 25th Birthday!">
+  <img class="article-hero" src="https://imagez.tmz.com/image/21/16by9/2026/07/28/218967b82c074debac78450095a704dc_xl.jpg" alt="Dixie D&#x27;Amelio Hot Shots To Kick Off Her 25th Birthday!" onload="this.style.animation='none'">
   <p class="article-summary">It&#x27;s Dixie&#x27;s D&#x27;Amelio&#x27;s 25th year around the sun, and we&#x27;ve got a few trix up our sleeve to celebrate her special day! From crochet two-pieces to triangular suits that hit just right, the TikTok star knows how to work it and serve swimsuit goals…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/12/dixie-damelio-hot-pictures-for-her-birthday/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/dixie-d-amelio-hot-shots-to-kick-off-her-25th-birthday/";
-      this.page.identifier = "dixie-d-amelio-hot-shots-to-kick-off-her-25th-birthday";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/dixie-d-amelio-hot-shots-to-kick-off-her-25th-birthday/";
+          this.page.identifier = "dixie-d-amelio-hot-shots-to-kick-off-her-25th-birthday";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

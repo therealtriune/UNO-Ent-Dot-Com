@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Big U’s Friend Gives New Info As New Prison Pictures Emerge</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/03/Copy-of-AHH-Feature-Art-407.jpg" alt="Big U’s Friend Gives New Info As New Prison Pictures Emerge">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/03/Copy-of-AHH-Feature-Art-407.jpg" alt="Big U’s Friend Gives New Info As New Prison Pictures Emerge" onload="this.style.animation='none'">
   <p class="article-summary">Eugene “ Big U ” Henley is smiling in newly surfaced prison photos, but the federal case surrounding the Los Angeles powerbroker has become considerably more serious. Very serious. New images of Big U began circulating across social media this week, giving supporters their latest look at the G while he remains in federal custody.</p>
   <a class="outbound-cta" href="https://allhiphop.com/rumors/big-us-friend-gives-new-info-as-new-prison-pictures-emerge/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/big-u-s-friend-gives-new-info-as-new-prison-pictures-emerge/";
-      this.page.identifier = "big-u-s-friend-gives-new-info-as-new-prison-pictures-emerge";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/big-u-s-friend-gives-new-info-as-new-prison-pictures-emerge/";
+          this.page.identifier = "big-u-s-friend-gives-new-info-as-new-prison-pictures-emerge";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

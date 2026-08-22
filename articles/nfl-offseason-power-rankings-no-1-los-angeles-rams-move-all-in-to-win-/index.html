@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">NFL offseason power rankings: No. 1 Los Angeles Rams move all in to win another Super Bowl</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/e7c97de403c2fde5c287ea360ffa24ad202607c5624e07c953f2ce95accb4e3a/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fed-2026nflteampreview-modarttemplate-rams_3432.jpg" alt="NFL offseason power rankings: No. 1 Los Angeles Rams move all in to win another Super Bowl">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/e7c97de403c2fde5c287ea360ffa24ad202607c5624e07c953f2ce95accb4e3a/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fed-2026nflteampreview-modarttemplate-rams_3432.jpg" alt="NFL offseason power rankings: No. 1 Los Angeles Rams move all in to win another Super Bowl" onload="this.style.animation='none'">
   <p class="article-summary">Other NFL team previews: 32. Dolphins | 31. Jets | 30.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/nfl/article/nfl-offseason-power-rankings-no-1-los-angeles-rams-move-all-in-to-win-another-super-bowl-124145264.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/nfl-offseason-power-rankings-no-1-los-angeles-rams-move-all-in-to-win-/";
-      this.page.identifier = "nfl-offseason-power-rankings-no-1-los-angeles-rams-move-all-in-to-win-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/nfl-offseason-power-rankings-no-1-los-angeles-rams-move-all-in-to-win-/";
+          this.page.identifier = "nfl-offseason-power-rankings-no-1-los-angeles-rams-move-all-in-to-win-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

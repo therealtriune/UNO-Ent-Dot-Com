@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Congrats! Coco Jones &amp; Donovan Mitchell Tie The Knot In Stunning Wedding Ceremony (VIDEOS)</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Coco-Jones-Donovan-Mitchell-Tie-The-Knot-In-Stunning-Wedding-Ceremony.jpg" alt="Congrats! Coco Jones &amp; Donovan Mitchell Tie The Knot In Stunning Wedding Ceremony (VIDEOS)">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Coco-Jones-Donovan-Mitchell-Tie-The-Knot-In-Stunning-Wedding-Ceremony.jpg" alt="Congrats! Coco Jones &amp; Donovan Mitchell Tie The Knot In Stunning Wedding Ceremony (VIDEOS)" onload="this.style.animation='none'">
   <p class="article-summary">Roomies, congratulations are in order! Coco Jones and Donovan Mitchell are officially husband and wife. The couple celebrated their love with a stunning wedding ceremony that has fans in their feels.</p>
   <a class="outbound-cta" href="https://theshaderoom.com/coco-jones-donovan-mitchell-wedding-videos-social-media-reacts-shade-room/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/congrats-coco-jones-donovan-mitchell-tie-the-knot-in-stunning-wedding-/";
-      this.page.identifier = "congrats-coco-jones-donovan-mitchell-tie-the-knot-in-stunning-wedding-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/congrats-coco-jones-donovan-mitchell-tie-the-knot-in-stunning-wedding-/";
+          this.page.identifier = "congrats-coco-jones-donovan-mitchell-tie-the-knot-in-stunning-wedding-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

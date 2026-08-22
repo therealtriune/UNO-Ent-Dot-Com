@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">“Love &amp; Hip Hop” Star Busted In $198,000 Scam After 11-Month Investigation</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/vmvwxnl6luu.jpg" alt="“Love &amp; Hip Hop” Star Busted In $198,000 Scam After 11-Month Investigation">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/vmvwxnl6luu.jpg" alt="“Love &amp; Hip Hop” Star Busted In $198,000 Scam After 11-Month Investigation" onload="this.style.animation='none'">
   <p class="article-summary">Betty Idol got caught up in a $198,000 real estate fraud scheme that investigators spent eleven months untangling across multiple states. The “Love &amp; Hip Hop” and “Cartel Crew” personality, whose real name is Salome Jackson, was arrested in Volusia County after detectives traced nearly $180,000 of stolen funds directly to her through bank records, flight receipts, surveillance footage, and ATM withdrawals. The setup was slick but ultimately sloppy.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/love-hip-hop-star-busted-in-198000-scam-after-11-month-investigation/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/love-hip-hop-star-busted-in-198-000-scam-after-11-month-investigation/";
-      this.page.identifier = "love-hip-hop-star-busted-in-198-000-scam-after-11-month-investigation";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/love-hip-hop-star-busted-in-198-000-scam-after-11-month-investigation/";
+          this.page.identifier = "love-hip-hop-star-busted-in-198-000-scam-after-11-month-investigation";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

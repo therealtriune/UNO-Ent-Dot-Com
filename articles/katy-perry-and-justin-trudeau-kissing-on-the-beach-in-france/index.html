@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Katy Perry and Justin Trudeau Kissing on the Beach in France</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/1e/16by9/2026/08/03/1e69250501124969b792e82c79cb2149_xl.png" alt="Katy Perry and Justin Trudeau Kissing on the Beach in France">
+  <img class="article-hero" src="https://imagez.tmz.com/image/1e/16by9/2026/08/03/1e69250501124969b792e82c79cb2149_xl.png" alt="Katy Perry and Justin Trudeau Kissing on the Beach in France" onload="this.style.animation='none'">
   <p class="article-summary">Katy Perry and Justin Trudeau clearly have no problem with PDA...because they were making out in the South of France in front of everyone on the beach...including photogs.</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/03/katy-perry-justin-trudeau-kiss-on-beach/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/katy-perry-and-justin-trudeau-kissing-on-the-beach-in-france/";
-      this.page.identifier = "katy-perry-and-justin-trudeau-kissing-on-the-beach-in-france";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/katy-perry-and-justin-trudeau-kissing-on-the-beach-in-france/";
+          this.page.identifier = "katy-perry-and-justin-trudeau-kissing-on-the-beach-in-france";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

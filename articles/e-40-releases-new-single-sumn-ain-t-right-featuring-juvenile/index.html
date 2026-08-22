@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">E-40 Releases New Single ‘Sumn Ain’t Right’ Featuring Juvenile</h1>
-  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/SUMN-AINT-RIGHT-scaled.jpg" alt="E-40 Releases New Single ‘Sumn Ain’t Right’ Featuring Juvenile">
+  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/SUMN-AINT-RIGHT-scaled.jpg" alt="E-40 Releases New Single ‘Sumn Ain’t Right’ Featuring Juvenile" onload="this.style.animation='none'">
   <p class="article-summary">E-40 has released his latest single, “Sumn Ain’t Right,” featuring Juvenile, offering fans another preview of his upcoming quadruple album, Turning My Money Over. The collaboration is set to appear… The post E-40 Releases New Single ‘Sumn Ain’t Right’ Featuring Juvenile appeared first on.</p>
   <a class="outbound-cta" href="https://thesource.com/2026/08/03/e40-sumn-aint-right-featuring-juvenile/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=e40-sumn-aint-right-featuring-juvenile" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Source &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/e-40-releases-new-single-sumn-ain-t-right-featuring-juvenile/";
-      this.page.identifier = "e-40-releases-new-single-sumn-ain-t-right-featuring-juvenile";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/e-40-releases-new-single-sumn-ain-t-right-featuring-juvenile/";
+          this.page.identifier = "e-40-releases-new-single-sumn-ain-t-right-featuring-juvenile";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

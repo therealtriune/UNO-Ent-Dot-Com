@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Hayden Panettiere: Overdose Crisis Hitting Hard in Neighborhood Where She Died</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/e5/16by9/2026/08/20/e503bcd8f2dc43259aedfa73bdf37152_xl.jpg" alt="Hayden Panettiere: Overdose Crisis Hitting Hard in Neighborhood Where She Died">
+  <img class="article-hero" src="https://imagez.tmz.com/image/e5/16by9/2026/08/20/e503bcd8f2dc43259aedfa73bdf37152_xl.jpg" alt="Hayden Panettiere: Overdose Crisis Hitting Hard in Neighborhood Where She Died" onload="this.style.animation='none'">
   <p class="article-summary">Hayden Panettiere&#x27;s death is causing concern for Greenville, SC residents, who fear the actress is just the latest tragic example of the opioid crisis ravaging their city. An addict-turned-advocate who lives in the area tells TMZ...laced drugs…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/21/neighborhood-where-hayden-panettiere-died-has-an-overdose-problem/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/hayden-panettiere-overdose-crisis-hitting-hard-in-neighborhood-where-s/";
-      this.page.identifier = "hayden-panettiere-overdose-crisis-hitting-hard-in-neighborhood-where-s";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/hayden-panettiere-overdose-crisis-hitting-hard-in-neighborhood-where-s/";
+          this.page.identifier = "hayden-panettiere-overdose-crisis-hitting-hard-in-neighborhood-where-s";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

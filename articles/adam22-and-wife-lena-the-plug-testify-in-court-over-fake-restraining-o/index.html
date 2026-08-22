@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">5 days ago</div>
   <h1 class="article-title">Adam22 and Wife Lena The Plug Testify in Court Over Fake Restraining Order</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/30/16by9/2026/08/14/3066d0b4fddb4d99a4fc92b1dcf99029_xl.jpg" alt="Adam22 and Wife Lena The Plug Testify in Court Over Fake Restraining Order">
+  <img class="article-hero" src="https://imagez.tmz.com/image/30/16by9/2026/08/14/3066d0b4fddb4d99a4fc92b1dcf99029_xl.jpg" alt="Adam22 and Wife Lena The Plug Testify in Court Over Fake Restraining Order" onload="this.style.animation='none'">
   <p class="article-summary">Adam22 and his wife, Lena The Plug, showed up to court to fight the fake restraining order filed against him...TMZ has learned. The hearing was held on Thursday, during which Adam22 and Lena spoke via Zoom. Per the minute order, Lena told…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/17/adam22-lena-the-plug-fake-restraining-order-dismissed/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/adam22-and-wife-lena-the-plug-testify-in-court-over-fake-restraining-o/";
-      this.page.identifier = "adam22-and-wife-lena-the-plug-testify-in-court-over-fake-restraining-o";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/adam22-and-wife-lena-the-plug-testify-in-court-over-fake-restraining-o/";
+          this.page.identifier = "adam22-and-wife-lena-the-plug-testify-in-court-over-fake-restraining-o";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 days ago</div>
   <h1 class="article-title">Chris Brown, Usher Expand “R&amp;B Tour” After $100 Million Box Office Success</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/08/Chris-Brown-5.png" alt="Chris Brown, Usher Expand “R&amp;B Tour” After $100 Million Box Office Success">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/08/Chris-Brown-5.png" alt="Chris Brown, Usher Expand “R&amp;B Tour” After $100 Million Box Office Success" onload="this.style.animation='none'">
   <p class="article-summary">Chris Brown and Usher just locked in eight more stadium dates for The R&amp;B Tour, pushing the total to 59 shows across North America after the co-headlining run absolutely dominated the summer. The newly announced stops include first-time visits to Baltimore, Cincinnati, Columbia, and Indianapolis, plus extra performances in cities where demand went through the roof, like Atlanta getting a fifth show, Los Angeles adding a fourth, and both East Rutherford and Miami getting third dates. Since the sold-out Denver kickoff at Empower Field at Mile High back in June, this tour became one of the biggest live events of the season, bringing together two generational R&amp;B icons for a nearly three-hour stadium production that nobody expected to hit this hard.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/chris-brown-usher-expand-rb-tour-after-100-million-box-office-success/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/chris-brown-usher-expand-r-b-tour-after-100-million-box-office-success/";
-      this.page.identifier = "chris-brown-usher-expand-r-b-tour-after-100-million-box-office-success";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/chris-brown-usher-expand-r-b-tour-after-100-million-box-office-success/";
+          this.page.identifier = "chris-brown-usher-expand-r-b-tour-after-100-million-box-office-success";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

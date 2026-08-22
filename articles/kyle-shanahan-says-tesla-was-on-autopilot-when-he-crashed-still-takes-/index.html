@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Kyle Shanahan Says Tesla Was on Autopilot When He Crashed, Still Takes Blame</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/ee/16by9/2026/08/08/ee34ff63ca39426ea93ba7e8573310e1_xl.png" alt="Kyle Shanahan Says Tesla Was on Autopilot When He Crashed, Still Takes Blame">
+  <img class="article-hero" src="https://imagez.tmz.com/image/ee/16by9/2026/08/08/ee34ff63ca39426ea93ba7e8573310e1_xl.png" alt="Kyle Shanahan Says Tesla Was on Autopilot When He Crashed, Still Takes Blame" onload="this.style.animation='none'">
   <p class="article-summary">Kyle Shanahan revealed a major new detail about the car crash that left him seriously injured...claiming his Tesla was on autopilot when he took his eyes off the road. The 49ers head coach told reporters Saturday he&#x27;d been traveling about 20 MPH…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/08/kyle-shanahan-says-his-car-was-on-autopilot-when-he-crashed/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/kyle-shanahan-says-tesla-was-on-autopilot-when-he-crashed-still-takes-/";
-      this.page.identifier = "kyle-shanahan-says-tesla-was-on-autopilot-when-he-crashed-still-takes-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/kyle-shanahan-says-tesla-was-on-autopilot-when-he-crashed-still-takes-/";
+          this.page.identifier = "kyle-shanahan-says-tesla-was-on-autopilot-when-he-crashed-still-takes-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

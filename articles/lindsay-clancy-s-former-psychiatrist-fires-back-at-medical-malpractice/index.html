@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Lindsay Clancy&#x27;s Former Psychiatrist Fires Back at Medical Malpractice Claims</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/10/16by9/2026/08/11/104acef90825418eabb9951f30f89218_xl.jpg" alt="Lindsay Clancy&#x27;s Former Psychiatrist Fires Back at Medical Malpractice Claims">
+  <img class="article-hero" src="https://imagez.tmz.com/image/10/16by9/2026/08/11/104acef90825418eabb9951f30f89218_xl.jpg" alt="Lindsay Clancy&#x27;s Former Psychiatrist Fires Back at Medical Malpractice Claims" onload="this.style.animation='none'">
   <p class="article-summary">The doctor who treated Lindsay Clancy as a psychiatric patient is firing back at allegations of medical malpractice, denying she did anything wrong while caring for Clancy. According to court documents obtained by TMZ, Dr. Jennifer Tufts -- the…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/11/lindsay-clancys-doctor-defends-herself-against-medical-malpractice-allegations/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/lindsay-clancy-s-former-psychiatrist-fires-back-at-medical-malpractice/";
-      this.page.identifier = "lindsay-clancy-s-former-psychiatrist-fires-back-at-medical-malpractice";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/lindsay-clancy-s-former-psychiatrist-fires-back-at-medical-malpractice/";
+          this.page.identifier = "lindsay-clancy-s-former-psychiatrist-fires-back-at-medical-malpractice";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

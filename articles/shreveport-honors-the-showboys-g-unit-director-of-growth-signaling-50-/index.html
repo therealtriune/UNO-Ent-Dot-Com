@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Shreveport Honors The Showboys &amp; G-Unit Director Of Growth, Signaling 50 Cent Deal Could Be Stabilizing</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/05/50-Cent-1.jpg" alt="Shreveport Honors The Showboys &amp; G-Unit Director Of Growth, Signaling 50 Cent Deal Could Be Stabilizing">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/05/50-Cent-1.jpg" alt="Shreveport Honors The Showboys &amp; G-Unit Director Of Growth, Signaling 50 Cent Deal Could Be Stabilizing" onload="this.style.animation='none'">
   <p class="article-summary">Orville Hall and Phillip Price just got their flowers from Shreveport City Council, and the timing couldn’t be more interesting given everything happening with 50 Cent’s empire in Louisiana right now. The two legendary producers behind The Showboys were officially recognized on July 29 for creating one of Hip-Hop’s most foundational beats back in 1986. That “Drag Rap” track didn’t just become a classic; it became the blueprint for an entire sound that would define Southern rap for decades to come.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/shreveport-honors-the-showboys-g-unit-director-of-growth-signaling-50-cent-deal-could-be-stabilizing/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/shreveport-honors-the-showboys-g-unit-director-of-growth-signaling-50-/";
-      this.page.identifier = "shreveport-honors-the-showboys-g-unit-director-of-growth-signaling-50-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/shreveport-honors-the-showboys-g-unit-director-of-growth-signaling-50-/";
+          this.page.identifier = "shreveport-honors-the-showboys-g-unit-director-of-growth-signaling-50-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

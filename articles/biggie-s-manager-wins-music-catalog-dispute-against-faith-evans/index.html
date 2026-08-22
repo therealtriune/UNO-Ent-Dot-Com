@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Biggie&#x27;s Manager Wins Music Catalog Dispute Against Faith Evans</h1>
-  <img class="article-hero" src="https://townsquare.media/site/812/files/2026/08/attachment-wayne-barrow-big-faith-evans-legal-battle.jpg?w=1200&amp;format=natural" alt="Biggie&#x27;s Manager Wins Music Catalog Dispute Against Faith Evans">
+  <img class="article-hero" src="https://townsquare.media/site/812/files/2026/08/attachment-wayne-barrow-big-faith-evans-legal-battle.jpg?w=1200&amp;format=natural" alt="Biggie&#x27;s Manager Wins Music Catalog Dispute Against Faith Evans" onload="this.style.animation='none'">
   <p class="article-summary">The Notorious B.I.G.&#x27;s former manager Wayne Barrow wins his legal battle against Faith Evans to control Biggie&#x27;s music catalog and intellectual property rights. According to documents obtained by XXL on Tuesday (Aug. 11), a Delaware Chancery Court judge ruled on Aug...Continue reading…</p>
   <a class="outbound-cta" href="https://www.xxlmag.com/biggie-wayne-barrow-wins-catalog-lawsuit-faith-evans/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On XXL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/biggie-s-manager-wins-music-catalog-dispute-against-faith-evans/";
-      this.page.identifier = "biggie-s-manager-wins-music-catalog-dispute-against-faith-evans";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/biggie-s-manager-wins-music-catalog-dispute-against-faith-evans/";
+          this.page.identifier = "biggie-s-manager-wins-music-catalog-dispute-against-faith-evans";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

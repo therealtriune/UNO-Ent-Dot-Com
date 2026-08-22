@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Brielle Biermann Denies Shading Influencer&#x27;s Wedding Dress</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/92/16by9/2026/08/11/92328dd1acf74d4789b85f9200831700_xl.jpg" alt="Brielle Biermann Denies Shading Influencer&#x27;s Wedding Dress">
+  <img class="article-hero" src="https://imagez.tmz.com/image/92/16by9/2026/08/11/92328dd1acf74d4789b85f9200831700_xl.jpg" alt="Brielle Biermann Denies Shading Influencer&#x27;s Wedding Dress" onload="this.style.animation='none'">
   <p class="article-summary">Brielle Biermann is clearing her name after folks started blasting her for seemingly shading influencer Brigette Pheloung&#x27;s wedding dress...and she says they have it all wrong. Here&#x27;s the deal...Brielle shared a video Sunday of herself trying…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/11/brielle-biermann-reacts-to-wedding-dress-comments/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/brielle-biermann-denies-shading-influencer-s-wedding-dress/";
-      this.page.identifier = "brielle-biermann-denies-shading-influencer-s-wedding-dress";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/brielle-biermann-denies-shading-influencer-s-wedding-dress/";
+          this.page.identifier = "brielle-biermann-denies-shading-influencer-s-wedding-dress";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

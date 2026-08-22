@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">No Sweat: Cardinals GM appears to shut the door on trading top pass rusher</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/3332f3b25b0daff7d5bfc2416024841f3b0414b0f612f3f2b682b723f4d6a933/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Fe8819b2c-ce6a-45c2-81a4-ad6c729a5f56" alt="No Sweat: Cardinals GM appears to shut the door on trading top pass rusher">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/3332f3b25b0daff7d5bfc2416024841f3b0414b0f612f3f2b682b723f4d6a933/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Fe8819b2c-ce6a-45c2-81a4-ad6c729a5f56" alt="No Sweat: Cardinals GM appears to shut the door on trading top pass rusher" onload="this.style.animation='none'">
   <p class="article-summary">Josh Sweat’s name has been twisting in the trade-rumor breeze for months now, but the Arizona Cardinals appear to be shutting down any talk of trading their star pass rusher — for now. Cardinals GM Monti Ossenfort spoke with the media on Monday, and he was asked about Sweat’s situation. Particularly note the wording, via the official website’s team reporter, of whether Sweat had requested a trade: #AZCardinals GM Monti Ossenfort on the rumors that OLB Josh Sweat had asked for a trade: &quot;There is always a lot of talk around that.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/nfl/article/no-sweat-cardinals-gm-appears-to-shut-the-door-on-trading-top-pass-rusher-221226082.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/no-sweat-cardinals-gm-appears-to-shut-the-door-on-trading-top-pass-rus/";
-      this.page.identifier = "no-sweat-cardinals-gm-appears-to-shut-the-door-on-trading-top-pass-rus";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/no-sweat-cardinals-gm-appears-to-shut-the-door-on-trading-top-pass-rus/";
+          this.page.identifier = "no-sweat-cardinals-gm-appears-to-shut-the-door-on-trading-top-pass-rus";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

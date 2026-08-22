@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">The B-Movie Millionaires Have Spectacular Diagnostics Produce Most of “It Made Sense at the Time” (Album Review)</h1>
-  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5706-e1786678161201.jpeg" alt="The B-Movie Millionaires Have Spectacular Diagnostics Produce Most of “It Made Sense at the Time” (Album Review)">
+  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5706-e1786678161201.jpeg" alt="The B-Movie Millionaires Have Spectacular Diagnostics Produce Most of “It Made Sense at the Time” (Album Review)" onload="this.style.animation='none'">
   <p class="article-summary">United Kingdom hip hop duo the B-Movie Millionaires consisting of Manchester, England emcee Black Josh alongside Runcorn, Cheshire emcee/producer &amp; Blah Records founder Lee Scott are back to drop a sophomore effort. Known for being members of the Cult of the Damned collective, these guys would make their eponymous debut in 2015 with an extended play &amp; had Sam Zircon fully produce their 2018 full-length debut Attack of the 50,000ft Sweg Lawds from Outer Space. Damn near a decade later, It Made Sense at the Time has come months succeeding its original announcement.</p>
   <a class="outbound-cta" href="https://undergroundhiphopblog.com/albums/the-b-movie-millionaires-have-spectacular-diagnostics-produce-most-of-it-made-sense-at-the-time-album-review/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Underground Hip Hop Blog &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/the-b-movie-millionaires-have-spectacular-diagnostics-produce-most-of-/";
-      this.page.identifier = "the-b-movie-millionaires-have-spectacular-diagnostics-produce-most-of-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/the-b-movie-millionaires-have-spectacular-diagnostics-produce-most-of-/";
+          this.page.identifier = "the-b-movie-millionaires-have-spectacular-diagnostics-produce-most-of-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

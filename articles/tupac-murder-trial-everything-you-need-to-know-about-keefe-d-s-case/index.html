@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Tupac Murder Trial: Everything You Need To Know About Keefe D’s Case</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Tupac-Murder-Case.webp" alt="Tupac Murder Trial: Everything You Need To Know About Keefe D’s Case">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Tupac-Murder-Case.webp" alt="Tupac Murder Trial: Everything You Need To Know About Keefe D’s Case" onload="this.style.animation='none'">
   <p class="article-summary">Nearly 30 years after Tupac Shakur was killed in Las Vegas, Duane “Keefe D” Davis is finally facing a jury over the rapper’s murder. David was charged with murder with a deadly weapon in connection to ‘Pac’s 1996 shooting. Prosecutors claim that he assisted in organizing the attack by supplying the gun used in the murder.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005810-tupac-murder-trial-keefe-d" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/tupac-murder-trial-everything-you-need-to-know-about-keefe-d-s-case/";
-      this.page.identifier = "tupac-murder-trial-everything-you-need-to-know-about-keefe-d-s-case";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/tupac-murder-trial-everything-you-need-to-know-about-keefe-d-s-case/";
+          this.page.identifier = "tupac-murder-trial-everything-you-need-to-know-about-keefe-d-s-case";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

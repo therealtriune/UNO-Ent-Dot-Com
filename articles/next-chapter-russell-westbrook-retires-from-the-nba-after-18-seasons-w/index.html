@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Next Chapter! Russell Westbrook Retires From The NBA After 18 Seasons With A Lil’ Assist From Michael B. Jordan (VIDEO)</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Russell-Westbrook-Retires-From-The-NBA-After-18-Seasons.jpg" alt="Next Chapter! Russell Westbrook Retires From The NBA After 18 Seasons With A Lil’ Assist From Michael B. Jordan (VIDEO)">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Russell-Westbrook-Retires-From-The-NBA-After-18-Seasons.jpg" alt="Next Chapter! Russell Westbrook Retires From The NBA After 18 Seasons With A Lil’ Assist From Michael B. Jordan (VIDEO)" onload="this.style.animation='none'">
   <p class="article-summary">Russell Westbrook, the NBA’s career leader in triple-doubles and the 2017 MVP, is hanging up his jersey for good. He announced on Wednesday that he’s retiring after 18 seasons. RELATED: WNBA Commissioner Sends Out Memo About Inclusion After Two Former NBA Players Declare Themselves Eligible For 2027 Draft (VIDEOS) The two-time scoring champion shared his decision on social media in a post featuring a video narrated by actor Michael B.</p>
   <a class="outbound-cta" href="https://theshaderoom.com/russell-westbrook-retires-from-the-nba-18-seasons-michael-b-jordan-video/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/next-chapter-russell-westbrook-retires-from-the-nba-after-18-seasons-w/";
-      this.page.identifier = "next-chapter-russell-westbrook-retires-from-the-nba-after-18-seasons-w";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/next-chapter-russell-westbrook-retires-from-the-nba-after-18-seasons-w/";
+          this.page.identifier = "next-chapter-russell-westbrook-retires-from-the-nba-after-18-seasons-w";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

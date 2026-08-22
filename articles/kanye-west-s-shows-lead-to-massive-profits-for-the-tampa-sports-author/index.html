@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Kanye West’s Shows Lead To Massive Profits For The Tampa Sports Authority</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2022-08-01T184533Z_1043343902_MT1USATODAY18802124_RTRMADP_3_NFL-SUPER-BOWL-LVI-LOS-ANGELES-RAMS-AT-CINCINNATI-BENGALS-3-scaled.jpg" alt="Kanye West’s Shows Lead To Massive Profits For The Tampa Sports Authority">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2022-08-01T184533Z_1043343902_MT1USATODAY18802124_RTRMADP_3_NFL-SUPER-BOWL-LVI-LOS-ANGELES-RAMS-AT-CINCINNATI-BENGALS-3-scaled.jpg" alt="Kanye West’s Shows Lead To Massive Profits For The Tampa Sports Authority" onload="this.style.animation='none'">
   <p class="article-summary">When Kanye West announced two shows in Tampa at Raymond James Stadium, politicians and community members were quick to voice concerns. In fact, Florida Senator Rick Scott sounded the alarms, as he referenced Ye’s Nazi past. “Why on Earth would we use tax dollars to fund someone who has called himself a Nazi and praised Adolf Hitler?” Scott said, according to The Porterville Recorder.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005380-kanye-west-tampa-sports-authority-profit" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/kanye-west-s-shows-lead-to-massive-profits-for-the-tampa-sports-author/";
-      this.page.identifier = "kanye-west-s-shows-lead-to-massive-profits-for-the-tampa-sports-author";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/kanye-west-s-shows-lead-to-massive-profits-for-the-tampa-sports-author/";
+          this.page.identifier = "kanye-west-s-shows-lead-to-massive-profits-for-the-tampa-sports-author";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

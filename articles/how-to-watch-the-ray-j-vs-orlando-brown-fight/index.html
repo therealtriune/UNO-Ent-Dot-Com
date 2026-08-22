@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">How To Watch The Ray J Vs Orlando Brown Fight</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/How-To-Watch-Ray-J-Orlando-Brown-Fight-scaled.jpg" alt="How To Watch The Ray J Vs Orlando Brown Fight">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/How-To-Watch-Ray-J-Orlando-Brown-Fight-scaled.jpg" alt="How To Watch The Ray J Vs Orlando Brown Fight" onload="this.style.animation='none'">
   <p class="article-summary">Ray J and Orlando Brown are two vibrant personalities on the Internet who rarely shy away from controversy… Or from a challenge. The two will engage in a boxing match tomorrow night (Saturday, August 15) as part of the undercard for the Claressa Shields and Kaye Scott match in Atlanta. Fans are looking forward to the face-off, whether for potential viral moments or a bounce-back for either celebrity.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005867-how-to-watch-ray-j-orlando-brown-fight" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/how-to-watch-the-ray-j-vs-orlando-brown-fight/";
-      this.page.identifier = "how-to-watch-the-ray-j-vs-orlando-brown-fight";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/how-to-watch-the-ray-j-vs-orlando-brown-fight/";
+          this.page.identifier = "how-to-watch-the-ray-j-vs-orlando-brown-fight";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

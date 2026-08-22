@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 hours ago</div>
   <h1 class="article-title">Browns vs Bills weather updates: Shedeur Sanders start delayed by lightning</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/1698463c9c3ff020dad5183409a1f75a2e32aea5740515ebb1e603d0c9580ac4/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F0e6a8c03cbc03ef6cc647ee44e5e4567.jpg" alt="Browns vs Bills weather updates: Shedeur Sanders start delayed by lightning">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/1698463c9c3ff020dad5183409a1f75a2e32aea5740515ebb1e603d0c9580ac4/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F0e6a8c03cbc03ef6cc647ee44e5e4567.jpg" alt="Browns vs Bills weather updates: Shedeur Sanders start delayed by lightning" onload="this.style.animation='none'">
   <p class="article-summary">Shedeur Sanders is getting his turn to start for the Cleveland Browns as he continues to compete with Deshaun Watson for the starting job. The second-year quarterback will have to wait a bit longer to showcase his skill-set, as the Browns vs. Bills game has been delayed because of lightning.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/browns-vs-bills-weather-updates-172231452.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/browns-vs-bills-weather-updates-shedeur-sanders-start-delayed-by-light/";
-      this.page.identifier = "browns-vs-bills-weather-updates-shedeur-sanders-start-delayed-by-light";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/browns-vs-bills-weather-updates-shedeur-sanders-start-delayed-by-light/";
+          this.page.identifier = "browns-vs-bills-weather-updates-shedeur-sanders-start-delayed-by-light";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

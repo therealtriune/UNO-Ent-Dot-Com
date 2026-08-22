@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">&#x27;I&#x27;m very bright.&#x27; Shedeur Sanders on his evolution and Browns QB1 battle | Exclusive</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/bda90532b0569c82128d35e474b8757d4eccf9ee894213b58c9b9a31a5620cf3/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2Ff260c4024d5ce8317e7cf6fdf91e1abb.jpg" alt="&#x27;I&#x27;m very bright.&#x27; Shedeur Sanders on his evolution and Browns QB1 battle | Exclusive">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/bda90532b0569c82128d35e474b8757d4eccf9ee894213b58c9b9a31a5620cf3/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2Ff260c4024d5ce8317e7cf6fdf91e1abb.jpg" alt="&#x27;I&#x27;m very bright.&#x27; Shedeur Sanders on his evolution and Browns QB1 battle | Exclusive" onload="this.style.animation='none'">
   <p class="article-summary">BEREA, Ohio – One of the first things discovered during a quick visit with Shedeur Sanders is that there is no (unintended) free pub coming from the Prime Time kid who is nobody’s slouch when it comes to parlaying ball into brand and bank. Sanders and the other quarterbacks have gone through the Cleveland Browns training camp with small cameras affixed above the facemasks on their helmets – let’s call it a “QB Cam” – that conceivably provide another techy tool for further review. Tell me about the GoPro camera.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/im-very-bright-shedeur-sanders-093101174.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/i-m-very-bright-shedeur-sanders-on-his-evolution-and-browns-qb1-battle/";
-      this.page.identifier = "i-m-very-bright-shedeur-sanders-on-his-evolution-and-browns-qb1-battle";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/i-m-very-bright-shedeur-sanders-on-his-evolution-and-browns-qb1-battle/";
+          this.page.identifier = "i-m-very-bright-shedeur-sanders-on-his-evolution-and-browns-qb1-battle";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

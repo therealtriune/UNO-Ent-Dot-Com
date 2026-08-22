@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Gardner Minshew to start for Cardinals on Saturday</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/eec86162ae9f96b3d70f3aaab230a1febfd39e66ed53fbc7e95629607648ce05/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2Fe7e334233611e355ad47bd09ff279956.jpg" alt="Gardner Minshew to start for Cardinals on Saturday">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/eec86162ae9f96b3d70f3aaab230a1febfd39e66ed53fbc7e95629607648ce05/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2Fe7e334233611e355ad47bd09ff279956.jpg" alt="Gardner Minshew to start for Cardinals on Saturday" onload="this.style.animation='none'">
   <p class="article-summary">The Cardinals will have their third starting quarterback in as many preseason games when they face the Cowboys on Saturday. Head coach Mike LaFleur told reporters on Thursday that Gardner Minshew will get the start against Dallas. Rookie Carson Beck started the Hall of Fame Game and Jacoby Brissett started last week.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/gardner-minshew-start-cardinals-saturday-220246559.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/gardner-minshew-to-start-for-cardinals-on-saturday/";
-      this.page.identifier = "gardner-minshew-to-start-for-cardinals-on-saturday";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/gardner-minshew-to-start-for-cardinals-on-saturday/";
+          this.page.identifier = "gardner-minshew-to-start-for-cardinals-on-saturday";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

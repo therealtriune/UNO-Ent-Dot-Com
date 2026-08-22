@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 days ago</div>
   <h1 class="article-title">Edson Barboza always gave it his best, which doesn&#x27;t sound like much until you realize it was everything</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/542c7bc29f8f2e4204a71f859cb0eaa416d30ad371bc6f0925075b1e4215fac7/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F786bdbd4-f409-475c-87b2-8e520ed7d20c" alt="Edson Barboza always gave it his best, which doesn&#x27;t sound like much until you realize it was everything">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/542c7bc29f8f2e4204a71f859cb0eaa416d30ad371bc6f0925075b1e4215fac7/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F786bdbd4-f409-475c-87b2-8e520ed7d20c" alt="Edson Barboza always gave it his best, which doesn&#x27;t sound like much until you realize it was everything" onload="this.style.animation='none'">
   <p class="article-summary">If you want to feel like a dusty old-timer in the MMA world, go ahead and try to tell the kids these days about Edson Barboza. See how far you get. Here&#x27;s a guy who broke into the UFC in 2010, earning the rare TKO victory via repeated, agonizing leg kicks at UFC 123.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/mma/article/ufc-edson-barboza-always-gave-it-his-best-which-doesnt-sound-like-much-until-you-realize-it-was-everything-191746472.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/edson-barboza-always-gave-it-his-best-which-doesn-t-sound-like-much-un/";
-      this.page.identifier = "edson-barboza-always-gave-it-his-best-which-doesn-t-sound-like-much-un";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/edson-barboza-always-gave-it-his-best-which-doesn-t-sound-like-much-un/";
+          this.page.identifier = "edson-barboza-always-gave-it-his-best-which-doesn-t-sound-like-much-un";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

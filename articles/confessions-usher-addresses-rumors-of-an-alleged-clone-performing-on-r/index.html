@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Confessions? Usher Addresses Rumors Of An Alleged Clone Performing On ‘R&amp;B’ Tour &amp; Fans Weigh In (VIDEO)</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Confessions-Usher-Addresses-Viral-Clips-Rumors-Of-An-Alleged-Clone-Performing-On-Tour-Fans-Weigh-In-VIDEO.jpg" alt="Confessions? Usher Addresses Rumors Of An Alleged Clone Performing On ‘R&amp;B’ Tour &amp; Fans Weigh In (VIDEO)">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Confessions-Usher-Addresses-Viral-Clips-Rumors-Of-An-Alleged-Clone-Performing-On-Tour-Fans-Weigh-In-VIDEO.jpg" alt="Confessions? Usher Addresses Rumors Of An Alleged Clone Performing On ‘R&amp;B’ Tour &amp; Fans Weigh In (VIDEO)" onload="this.style.animation='none'">
   <p class="article-summary">Roomies, Usher had the internet doing a serious double take after footage from his latest ‘R&amp;B’ Tour stop started making its rounds online. What was supposed to be another big night for the eight-time Grammy winner quickly turned into a whole conversation about whether fans were really watching Usher onstage — and the singer eventually had something to say about it. RELATED: This Is A Lot!</p>
   <a class="outbound-cta" href="https://theshaderoom.com/usher-addresses-viral-rumors-clone-performing-tour-video-social-media-reacts/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/confessions-usher-addresses-rumors-of-an-alleged-clone-performing-on-r/";
-      this.page.identifier = "confessions-usher-addresses-rumors-of-an-alleged-clone-performing-on-r";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/confessions-usher-addresses-rumors-of-an-alleged-clone-performing-on-r/";
+          this.page.identifier = "confessions-usher-addresses-rumors-of-an-alleged-clone-performing-on-r";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

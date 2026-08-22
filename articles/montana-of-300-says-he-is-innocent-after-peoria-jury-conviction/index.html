@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Montana Of 300 Says He Is Innocent After Peoria Jury Conviction</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/Montana-of-300.jpg" alt="Montana Of 300 Says He Is Innocent After Peoria Jury Conviction">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/Montana-of-300.jpg" alt="Montana Of 300 Says He Is Innocent After Peoria Jury Conviction" onload="this.style.animation='none'">
   <p class="article-summary">Montana of 300 is preparing to appeal after a Peoria jury convicted him of aggravated battery and domestic battery, along with resisting or obstructing a peace officer. Representative Tiffany Gaines issued a statement saying Montana, whose legal name is Walter Anthony Bradford, still maintains his innocence after the verdict. “We respectfully disagree with the jury’s verdict and intend to pursue all available appellate remedies.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/montana-of-300-says-he-is-innocent-after-peoria-jury-conviction/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/montana-of-300-says-he-is-innocent-after-peoria-jury-conviction/";
-      this.page.identifier = "montana-of-300-says-he-is-innocent-after-peoria-jury-conviction";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/montana-of-300-says-he-is-innocent-after-peoria-jury-conviction/";
+          this.page.identifier = "montana-of-300-says-he-is-innocent-after-peoria-jury-conviction";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

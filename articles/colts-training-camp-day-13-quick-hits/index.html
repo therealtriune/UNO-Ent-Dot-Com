@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Colts Training Camp ‘Day 13’: Quick Hits</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/bc5ca77c369b10f2880e3ebcaa1b9b13ea51c697c6c20bea7a0cfdcfa8f16baa/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F213bafd19369362805eca823d38b7cdd.jpg" alt="Colts Training Camp ‘Day 13’: Quick Hits">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/bc5ca77c369b10f2880e3ebcaa1b9b13ea51c697c6c20bea7a0cfdcfa8f16baa/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F213bafd19369362805eca823d38b7cdd.jpg" alt="Colts Training Camp ‘Day 13’: Quick Hits" onload="this.style.animation='none'">
   <p class="article-summary">WESTFIELD, INDIANA - AUGUST 19: Keenan Allen looks on during the joint practice against the Atlanta Falcons at Grand Park Sports Campus on August 19, 2026 in Westfield, Indiana. (Photo by Justin Casterline/Getty Images) | Getty Images During their last week of team training camp, the Indianapolis Colts held the first of two joint training practices against the Atlanta Falcons, who the Horseshoe will host for Preseason Week 2 on Saturday afternoon. As a whole, it felt like the Colts passing attack fared better than their running game offensively against the Falcons defense, but it was the Indianapolis defense that shined the most out there late Wednesday afternoon.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/colts-training-camp-day-13-011706934.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/colts-training-camp-day-13-quick-hits/";
-      this.page.identifier = "colts-training-camp-day-13-quick-hits";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/colts-training-camp-day-13-quick-hits/";
+          this.page.identifier = "colts-training-camp-day-13-quick-hits";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

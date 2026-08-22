@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">50 Cent Trolls Diddy As Tupac Trial Revives Alleged $1M Bounty</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/01/50-Cent-Sean-Diddy-Combs.jpg" alt="50 Cent Trolls Diddy As Tupac Trial Revives Alleged $1M Bounty">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/01/50-Cent-Sean-Diddy-Combs.jpg" alt="50 Cent Trolls Diddy As Tupac Trial Revives Alleged $1M Bounty" onload="this.style.animation='none'">
   <p class="article-summary">50 Cent found fresh ammunition Thursday, laughing as Keefe D’s Tupac murder trial dragged Diddy back into a decades-old $1 million allegation. The G-Unit boss posted a courtroom clip on Instagram and wrote, “WTF 🥷🏿 tell everything SMH Zip got low wit the bread 😆 @50centaction.” On Thursday, jurors heard Keefe D’s secret 2008 interview, called a proffer. He claimed Diddy proposed a $1 million bounty for Tupac and Suge Knight.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/50-cent-trolls-diddy-as-tupac-trial-revives-alleged-1m-bounty/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/50-cent-trolls-diddy-as-tupac-trial-revives-alleged-1m-bounty/";
-      this.page.identifier = "50-cent-trolls-diddy-as-tupac-trial-revives-alleged-1m-bounty";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/50-cent-trolls-diddy-as-tupac-trial-revives-alleged-1m-bounty/";
+          this.page.identifier = "50-cent-trolls-diddy-as-tupac-trial-revives-alleged-1m-bounty";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

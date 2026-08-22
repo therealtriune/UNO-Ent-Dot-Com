@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Glover Teixeira: Josh Hokit a good fight for Alex Pereira to &#x27;knock his ass out&#x27;</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/ce42badb9f7654753bc79c16fbff453adfe48dcd0e3dedde14f74dd7744d182d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2Fa2f20610d00f03a6a726ceb3b36bdd44.jpg" alt="Glover Teixeira: Josh Hokit a good fight for Alex Pereira to &#x27;knock his ass out&#x27;">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/ce42badb9f7654753bc79c16fbff453adfe48dcd0e3dedde14f74dd7744d182d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2Fa2f20610d00f03a6a726ceb3b36bdd44.jpg" alt="Glover Teixeira: Josh Hokit a good fight for Alex Pereira to &#x27;knock his ass out&#x27;" onload="this.style.animation='none'">
   <p class="article-summary">Glover Teixeira has the utmost confidence that Alex Pereira will bounce back after UFC Freedom 250. Pereira (13-4 MMA, 10-3 UFC) was finished by Ciryl Gane in their interim heavyweight title fight this past June in Washington. Pereira was not happy with referee Herb Dean&#x27;s officiating, accusing him of missing numerous shots to the back of his head during the fight-ending sequence, which led to a Round 2 TKO.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/glover-teixeira-josh-hokit-good-220116131.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/glover-teixeira-josh-hokit-a-good-fight-for-alex-pereira-to-knock-his-/";
-      this.page.identifier = "glover-teixeira-josh-hokit-a-good-fight-for-alex-pereira-to-knock-his-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/glover-teixeira-josh-hokit-a-good-fight-for-alex-pereira-to-knock-his-/";
+          this.page.identifier = "glover-teixeira-josh-hokit-a-good-fight-for-alex-pereira-to-knock-his-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

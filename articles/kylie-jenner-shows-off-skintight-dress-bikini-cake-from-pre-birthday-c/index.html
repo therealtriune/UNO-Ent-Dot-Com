@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Kylie Jenner Shows Off Skintight Dress, Bikini Cake from Pre-Birthday Celebration</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/e1/16by9/2026/08/08/e148b0f026fa4b1dabe0a32ae461f4a7_xl.jpg" alt="Kylie Jenner Shows Off Skintight Dress, Bikini Cake from Pre-Birthday Celebration">
+  <img class="article-hero" src="https://imagez.tmz.com/image/e1/16by9/2026/08/08/e148b0f026fa4b1dabe0a32ae461f4a7_xl.jpg" alt="Kylie Jenner Shows Off Skintight Dress, Bikini Cake from Pre-Birthday Celebration" onload="this.style.animation='none'">
   <p class="article-summary">Kylie Jenner&#x27;s serving up birthday cake a little early...and before we get to the dessert, check out that skintight pink mini! The soon-to-be 29-year-old poured herself into the plunging hot pink dress for a princess kitty-themed pre-birthday…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/08/kylie-jenner-wears-pink-dress-ahead-of-birthday/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/kylie-jenner-shows-off-skintight-dress-bikini-cake-from-pre-birthday-c/";
-      this.page.identifier = "kylie-jenner-shows-off-skintight-dress-bikini-cake-from-pre-birthday-c";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/kylie-jenner-shows-off-skintight-dress-bikini-cake-from-pre-birthday-c/";
+          this.page.identifier = "kylie-jenner-shows-off-skintight-dress-bikini-cake-from-pre-birthday-c";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

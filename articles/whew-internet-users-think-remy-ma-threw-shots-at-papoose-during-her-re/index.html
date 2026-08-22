@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Whew! Internet Users Think Remy Ma Threw Shots At Papoose During Her Recent Performance At Angie Martinez’s Summer BBQ</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Internet-Users-Think-Remy-Ma-Threw-Shots-At-Papoose-During-Her-Recent-Performance-At-Angie-Martinez-Summer-BBQ.jpg" alt="Whew! Internet Users Think Remy Ma Threw Shots At Papoose During Her Recent Performance At Angie Martinez’s Summer BBQ">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Internet-Users-Think-Remy-Ma-Threw-Shots-At-Papoose-During-Her-Recent-Performance-At-Angie-Martinez-Summer-BBQ.jpg" alt="Whew! Internet Users Think Remy Ma Threw Shots At Papoose During Her Recent Performance At Angie Martinez’s Summer BBQ" onload="this.style.animation='none'">
   <p class="article-summary">Internet users seem to believe that Remy Ma threw shots at Papoose during her recent performance at Angie Martinez ‘s Summer BBQ. RELATED: Recent Flicks Of Claressa Shields Have Internet Users Saying She’s “Copying” Remy Ma’s Aesthetic (PHOTOS) More On Remy Ma’s Recent Performance At Angie Martinez’s Summer BBQ Angie Martinez’s Summer BBQ went down at Paradise Coney Island on Sunday, August 2. Furthermore, the festival event was headlined by Buju Banton, French Montana, Coi Leray, Zeddy Will, and Remy Ma.</p>
   <a class="outbound-cta" href="https://theshaderoom.com/internet-users-think-remy-ma-threw-shots-dissed-papoose-performance-angie-martinez-summer-bbq/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/whew-internet-users-think-remy-ma-threw-shots-at-papoose-during-her-re/";
-      this.page.identifier = "whew-internet-users-think-remy-ma-threw-shots-at-papoose-during-her-re";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/whew-internet-users-think-remy-ma-threw-shots-at-papoose-during-her-re/";
+          this.page.identifier = "whew-internet-users-think-remy-ma-threw-shots-at-papoose-during-her-re";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

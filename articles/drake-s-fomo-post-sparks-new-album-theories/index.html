@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Drake’s FOMO Post Sparks New Album Theories</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Drake-FOMO-Post-New-Album-Theories.jpg" alt="Drake’s FOMO Post Sparks New Album Theories">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Drake-FOMO-Post-New-Album-Theories.jpg" alt="Drake’s FOMO Post Sparks New Album Theories" onload="this.style.animation='none'">
   <p class="article-summary">Drake has been having one of the best years of his career so far when it comes to commercial dominance and cultural resonance, but it seems like he still might want more. That’s because of a new Instagram post he let off just a few hours ago at press time, which has fans thinking a new album could be on the way. Earlier today (Friday, August 21), Drizzy posted a picture on Instagram of a simple message on the back of what seems to be a CD case.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006630-drake-fomo-post-new-album-theories" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/drake-s-fomo-post-sparks-new-album-theories/";
-      this.page.identifier = "drake-s-fomo-post-sparks-new-album-theories";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/drake-s-fomo-post-sparks-new-album-theories/";
+          this.page.identifier = "drake-s-fomo-post-sparks-new-album-theories";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

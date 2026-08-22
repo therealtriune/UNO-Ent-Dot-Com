@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Chris Hansen Turned Away From Screening of &#x27;Primetime&#x27; Biopic, Refused To Sign NDA</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/50/16by9/2026/08/21/50a8fd33660042179a494c7ef0b7eda7_xl.jpg" alt="Chris Hansen Turned Away From Screening of &#x27;Primetime&#x27; Biopic, Refused To Sign NDA">
+  <img class="article-hero" src="https://imagez.tmz.com/image/50/16by9/2026/08/21/50a8fd33660042179a494c7ef0b7eda7_xl.jpg" alt="Chris Hansen Turned Away From Screening of &#x27;Primetime&#x27; Biopic, Refused To Sign NDA" onload="this.style.animation='none'">
   <p class="article-summary">Chris Hansen was turned away from a screening of the new movie that&#x27;s all about him...and while he says he didn&#x27;t want to &quot;sign away&quot; his rights, he actually refused to sign a standard NDA. Here&#x27;s the deal...the TV host went on Fox News to…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/21/chris-hansen-denied-entry-into-primetime-screening/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/chris-hansen-turned-away-from-screening-of-primetime-biopic-refused-to/";
-      this.page.identifier = "chris-hansen-turned-away-from-screening-of-primetime-biopic-refused-to";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/chris-hansen-turned-away-from-screening-of-primetime-biopic-refused-to/";
+          this.page.identifier = "chris-hansen-turned-away-from-screening-of-primetime-biopic-refused-to";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

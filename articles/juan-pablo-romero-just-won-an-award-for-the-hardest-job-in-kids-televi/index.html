@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Juan Pablo Romero Just Won an Award for the Hardest Job in Kids Television</h1>
-  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/image-3-600x557.png" alt="Juan Pablo Romero Just Won an Award for the Hardest Job in Kids Television">
+  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/image-3-600x557.png" alt="Juan Pablo Romero Just Won an Award for the Hardest Job in Kids Television" onload="this.style.animation='none'">
   <p class="article-summary">The teenage star of Dino Dex took home the Young Entertainer Award for Best Leading Young Actor in a Television Series, a category that rewards stamina more than sparkle Awards… The post Juan Pablo Romero Just Won an Award for the Hardest Job in Kids Television appeared first on.</p>
   <a class="outbound-cta" href="https://thesource.com/2026/08/14/juan-pablo-romero-just-won-an-award-for-the-hardest-job-in-kids-television/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=juan-pablo-romero-just-won-an-award-for-the-hardest-job-in-kids-television" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Source &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/juan-pablo-romero-just-won-an-award-for-the-hardest-job-in-kids-televi/";
-      this.page.identifier = "juan-pablo-romero-just-won-an-award-for-the-hardest-job-in-kids-televi";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/juan-pablo-romero-just-won-an-award-for-the-hardest-job-in-kids-televi/";
+          this.page.identifier = "juan-pablo-romero-just-won-an-award-for-the-hardest-job-in-kids-televi";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

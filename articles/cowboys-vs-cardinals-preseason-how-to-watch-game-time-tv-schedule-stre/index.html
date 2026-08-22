@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">7 hours ago</div>
   <h1 class="article-title">Cowboys vs Cardinals (preseason): How to watch, game time, TV schedule, streaming, radio</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/93199d264e60ab58b765fab74ffbf52075fcfc2d760a9d4f9291c13d0b516fe3/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2Fa72d085690a7abc8eb2d50043e82c551.jpg" alt="Cowboys vs Cardinals (preseason): How to watch, game time, TV schedule, streaming, radio">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/93199d264e60ab58b765fab74ffbf52075fcfc2d760a9d4f9291c13d0b516fe3/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2Fa72d085690a7abc8eb2d50043e82c551.jpg" alt="Cowboys vs Cardinals (preseason): How to watch, game time, TV schedule, streaming, radio" onload="this.style.animation='none'">
   <p class="article-summary">ARLINGTON, TEXAS - NOVEMBER 03: Javonte Williams #33 of the Dallas Cowboys battles Denzel Burke #29 of the Arizona Cardinals during the fourth quarter in the game at AT&amp;T Stadium on November 03, 2025 in Arlington, Texas. (Photo by Sam Hodde/Getty Images) | Getty Images The Dallas Cowboys play their second preseason game of the 2026 NFL season Saturday night, an away game at the Arizona Cardinals. The Cowboys were pleased with their first effort, a 17-7 victory over the Seattle Seahawks.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/cowboys-vs-cardinals-preseason-watch-130000489.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/cowboys-vs-cardinals-preseason-how-to-watch-game-time-tv-schedule-stre/";
-      this.page.identifier = "cowboys-vs-cardinals-preseason-how-to-watch-game-time-tv-schedule-stre";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/cowboys-vs-cardinals-preseason-how-to-watch-game-time-tv-schedule-stre/";
+          this.page.identifier = "cowboys-vs-cardinals-preseason-how-to-watch-game-time-tv-schedule-stre";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

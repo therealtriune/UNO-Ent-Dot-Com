@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Scott Eastwood Says Brad Pitt Broke Up Shia LaBeouf Confrontation on &#x27;Fury&#x27; Movie Set</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/54/16by9/2026/08/03/54c39aaa9461414ab1a5d068579b0f31_xl.png" alt="Scott Eastwood Says Brad Pitt Broke Up Shia LaBeouf Confrontation on &#x27;Fury&#x27; Movie Set">
+  <img class="article-hero" src="https://imagez.tmz.com/image/54/16by9/2026/08/03/54c39aaa9461414ab1a5d068579b0f31_xl.png" alt="Scott Eastwood Says Brad Pitt Broke Up Shia LaBeouf Confrontation on &#x27;Fury&#x27; Movie Set" onload="this.style.animation='none'">
   <p class="article-summary">Scott Eastwood says he was ready to whoop Shia LaBeouf&#x27;s ass on the set of &quot;Fury&quot;...until Brad Pitt jumped in and broke it up. Scott revisited the tense encounter on Monday&#x27;s episode of &quot;Armchair Expert with Dax Shepard&quot;...</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/03/scott-eastwood-talks-shia-labeouf-fight-on-movie-set/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/scott-eastwood-says-brad-pitt-broke-up-shia-labeouf-confrontation-on-f/";
-      this.page.identifier = "scott-eastwood-says-brad-pitt-broke-up-shia-labeouf-confrontation-on-f";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/scott-eastwood-says-brad-pitt-broke-up-shia-labeouf-confrontation-on-f/";
+          this.page.identifier = "scott-eastwood-says-brad-pitt-broke-up-shia-labeouf-confrontation-on-f";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

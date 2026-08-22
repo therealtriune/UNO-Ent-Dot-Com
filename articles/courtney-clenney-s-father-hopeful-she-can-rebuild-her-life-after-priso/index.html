@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Courtney Clenney&#x27;s Father Hopeful She Can Rebuild Her Life After Prison Sentence</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/af/16by9/2026/08/10/afac277d85904c2ab8d38b7a7582f29c_xl.jpg" alt="Courtney Clenney&#x27;s Father Hopeful She Can Rebuild Her Life After Prison Sentence">
+  <img class="article-hero" src="https://imagez.tmz.com/image/af/16by9/2026/08/10/afac277d85904c2ab8d38b7a7582f29c_xl.jpg" alt="Courtney Clenney&#x27;s Father Hopeful She Can Rebuild Her Life After Prison Sentence" onload="this.style.animation='none'">
   <p class="article-summary">Courtney Clenney&#x27;s father, Kim, held court outside the courthouse Monday after his daughter pleaded guilty to manslaughter and was sentenced to 6 years in prison...and he hopes she&#x27;s able to rebuild her life when she gets out. In an emotional…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/10/courtney-clenney-father-speaks-out-after-sentencing/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/courtney-clenney-s-father-hopeful-she-can-rebuild-her-life-after-priso/";
-      this.page.identifier = "courtney-clenney-s-father-hopeful-she-can-rebuild-her-life-after-priso";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/courtney-clenney-s-father-hopeful-she-can-rebuild-her-life-after-priso/";
+          this.page.identifier = "courtney-clenney-s-father-hopeful-she-can-rebuild-her-life-after-priso";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

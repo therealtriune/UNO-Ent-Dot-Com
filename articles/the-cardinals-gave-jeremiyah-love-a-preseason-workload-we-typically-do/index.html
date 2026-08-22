@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">5 days ago</div>
   <h1 class="article-title">The Cardinals gave Jeremiyah Love a preseason workload we typically don&#x27;t see from top backs</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/7caa35d615d342df0b0aaa68aa3fa0717e04e003d8b6f51aa77f6f34a9089cf9/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F8f96c23e-6258-4e67-a9b3-459813284818" alt="The Cardinals gave Jeremiyah Love a preseason workload we typically don&#x27;t see from top backs">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/7caa35d615d342df0b0aaa68aa3fa0717e04e003d8b6f51aa77f6f34a9089cf9/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F8f96c23e-6258-4e67-a9b3-459813284818" alt="The Cardinals gave Jeremiyah Love a preseason workload we typically don&#x27;t see from top backs" onload="this.style.animation='none'">
   <p class="article-summary">When a running back receives double-digit carries in a preseason game, it’s not always a good sign. It might be an indication they’re needing to play their way onto a team’s roster. That very clearly was not the case when Arizona Cardinals rookie Jeremiyah Love ran the ball 11 times, also catching three passes for good measure, in Arizona’s preseason opener against the Las Vegas Raiders.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/nfl/article/the-cardinals-gave-jeremiyah-love-a-preseason-workload-we-typically-dont-see-from-top-backs-204626760.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/the-cardinals-gave-jeremiyah-love-a-preseason-workload-we-typically-do/";
-      this.page.identifier = "the-cardinals-gave-jeremiyah-love-a-preseason-workload-we-typically-do";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/the-cardinals-gave-jeremiyah-love-a-preseason-workload-we-typically-do/";
+          this.page.identifier = "the-cardinals-gave-jeremiyah-love-a-preseason-workload-we-typically-do";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

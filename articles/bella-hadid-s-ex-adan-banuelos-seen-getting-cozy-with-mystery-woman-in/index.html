@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Bella Hadid’s Ex Adan Banuelos Seen Getting Cozy With Mystery Woman in Beverly Hills</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/93/16by9/2026/08/20/93c0f373fdb4452ab5a1e92bce80b62a_xl.jpg" alt="Bella Hadid’s Ex Adan Banuelos Seen Getting Cozy With Mystery Woman in Beverly Hills">
+  <img class="article-hero" src="https://imagez.tmz.com/image/93/16by9/2026/08/20/93c0f373fdb4452ab5a1e92bce80b62a_xl.jpg" alt="Bella Hadid’s Ex Adan Banuelos Seen Getting Cozy With Mystery Woman in Beverly Hills" onload="this.style.animation='none'">
   <p class="article-summary">Adan Banuelos may be getting back in the saddle following his split from Bella Hadid … because he was spotted getting cozy with a mystery woman. TMZ obtained photos of the cowboy and horse trainer hanging out with a blonde woman over coffee in…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/19/bella-hadid-ex-adan-banuelos-seen-cozy-mystery-woman-beverly-hills/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/bella-hadid-s-ex-adan-banuelos-seen-getting-cozy-with-mystery-woman-in/";
-      this.page.identifier = "bella-hadid-s-ex-adan-banuelos-seen-getting-cozy-with-mystery-woman-in";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/bella-hadid-s-ex-adan-banuelos-seen-getting-cozy-with-mystery-woman-in/";
+          this.page.identifier = "bella-hadid-s-ex-adan-banuelos-seen-getting-cozy-with-mystery-woman-in";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

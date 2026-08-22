@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">BMF Honcho Chad “J Bo” Brown Faces Fresh Federal Charges After Massive Cocaine Seizure</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/AllHipHop-80.jpg" alt="BMF Honcho Chad “J Bo” Brown Faces Fresh Federal Charges After Massive Cocaine Seizure">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/AllHipHop-80.jpg" alt="BMF Honcho Chad “J Bo” Brown Faces Fresh Federal Charges After Massive Cocaine Seizure" onload="this.style.animation='none'">
   <p class="article-summary">BMF ‘s Chad “J Bo” Brown faces fresh federal drug allegations in St. Louis after authorities said agents seized approximately 53 kilograms of cocaine from a county residence suspected of being used to store narcotics. The new case puts Brown back under a federal spotlight years after his name became closely associated with the Black Mafia Family, better known as BMF, and its expansion from a sprawling drug organization into a brand with deep connections to Hip-Hop culture.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/bmf-honcho-chad-j-bo-brown-faces-fresh-federal-charges-after-massive-cocaine-seizure/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/bmf-honcho-chad-j-bo-brown-faces-fresh-federal-charges-after-massive-c/";
-      this.page.identifier = "bmf-honcho-chad-j-bo-brown-faces-fresh-federal-charges-after-massive-c";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/bmf-honcho-chad-j-bo-brown-faces-fresh-federal-charges-after-massive-c/";
+          this.page.identifier = "bmf-honcho-chad-j-bo-brown-faces-fresh-federal-charges-after-massive-c";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

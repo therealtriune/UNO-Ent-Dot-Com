@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Kobe Bryant’s Family Rock Custom Nike Kobe 10 Protros</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2023-09-02T030731Z_411168081_MT1USATODAY21325483_RTRMADP_3_MLB-ATLANTA-BRAVES-AT-LOS-ANGELES-DODGERS-scaled.jpg" alt="Kobe Bryant’s Family Rock Custom Nike Kobe 10 Protros">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2023-09-02T030731Z_411168081_MT1USATODAY21325483_RTRMADP_3_MLB-ATLANTA-BRAVES-AT-LOS-ANGELES-DODGERS-scaled.jpg" alt="Kobe Bryant’s Family Rock Custom Nike Kobe 10 Protros" onload="this.style.animation='none'">
   <p class="article-summary">Vanessa Bryant and her daughter Natalia both wore custom Nike Kobe 10 Protros while attending this weekend’s Mamba Invitational in Los Angeles, an event built around Kobe Bryant’s legacy. Both were on hand to help award championship medals to the tournament’s winning teams. Vanessa’s pair leaned into full custom territory, finished in a pearlescent white with a striking floral piece attached at the toe.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005457-custom-nike-kobe-10-protros-sneaker-news" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/kobe-bryant-s-family-rock-custom-nike-kobe-10-protros/";
-      this.page.identifier = "kobe-bryant-s-family-rock-custom-nike-kobe-10-protros";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/kobe-bryant-s-family-rock-custom-nike-kobe-10-protros/";
+          this.page.identifier = "kobe-bryant-s-family-rock-custom-nike-kobe-10-protros";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

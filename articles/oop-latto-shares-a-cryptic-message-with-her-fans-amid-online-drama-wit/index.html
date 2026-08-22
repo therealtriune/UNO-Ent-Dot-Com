@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Oop! Latto Shares A Cryptic Message With Her Fans Amid Online Drama With Charleston White</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Latto-message-Charleston-White-claressa-shields-21-savage-.jpg" alt="Oop! Latto Shares A Cryptic Message With Her Fans Amid Online Drama With Charleston White">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Latto-message-Charleston-White-claressa-shields-21-savage-.jpg" alt="Oop! Latto Shares A Cryptic Message With Her Fans Amid Online Drama With Charleston White" onload="this.style.animation='none'">
   <p class="article-summary">Latto shared a cryptic message with fans via her finsta’s Instagram Stories amid her online drama with Charleston White. The rapper reacted after White made comments about her relationship with 21 Savage. RELATED: Latto Breaks The Internet With Viral Footage Showing Off Her Curves (VIDEO) Latto Prompts Online Chatter With A Cryptic Social Media Message Latto shared a message on her Instagram Stories on Monday, August 10, and chile, the rapper did not mince words.</p>
   <a class="outbound-cta" href="https://theshaderoom.com/latto-shares-cryptic-message-with-fans-online-drama-charleston-white/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/oop-latto-shares-a-cryptic-message-with-her-fans-amid-online-drama-wit/";
-      this.page.identifier = "oop-latto-shares-a-cryptic-message-with-her-fans-amid-online-drama-wit";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/oop-latto-shares-a-cryptic-message-with-her-fans-amid-online-drama-wit/";
+          this.page.identifier = "oop-latto-shares-a-cryptic-message-with-her-fans-amid-online-drama-wit";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

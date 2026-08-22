@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Stephen A. Smith Apologizes To Kyrie Irving For Vaccine Criticism</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/Stephen-A-Smith-Apologizes-Kyrie-Irving-Vaccine-Criticism-scaled.jpg" alt="Stephen A. Smith Apologizes To Kyrie Irving For Vaccine Criticism">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/Stephen-A-Smith-Apologizes-Kyrie-Irving-Vaccine-Criticism-scaled.jpg" alt="Stephen A. Smith Apologizes To Kyrie Irving For Vaccine Criticism" onload="this.style.animation='none'">
   <p class="article-summary">Stephen A. Smith has ruffled a lot of feathers in the sports and entertainment worlds, but he apologizes for his brash statements from time to time. Recently, Kyrie Irving was the recipient of Smith&#x27;s apology for criticizing his refusal to get the COVID-19 vaccine earlier this decade.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004242-stephen-a-smith-apologizes-kyrie-irving-vaccine-criticism" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/stephen-a-smith-apologizes-to-kyrie-irving-for-vaccine-criticism/";
-      this.page.identifier = "stephen-a-smith-apologizes-to-kyrie-irving-for-vaccine-criticism";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/stephen-a-smith-apologizes-to-kyrie-irving-for-vaccine-criticism/";
+          this.page.identifier = "stephen-a-smith-apologizes-to-kyrie-irving-for-vaccine-criticism";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

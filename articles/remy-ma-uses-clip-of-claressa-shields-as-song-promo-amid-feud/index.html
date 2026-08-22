@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Remy Ma Uses Clip Of Claressa Shields As Song Promo Amid Feud</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Remy-Ma-Clip-Claressa-Shields-Song-Promo-Amid-Feud-scaled.jpg" alt="Remy Ma Uses Clip Of Claressa Shields As Song Promo Amid Feud">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Remy-Ma-Clip-Claressa-Shields-Song-Promo-Amid-Feud-scaled.jpg" alt="Remy Ma Uses Clip Of Claressa Shields As Song Promo Amid Feud" onload="this.style.animation='none'">
   <p class="article-summary">Remy Ma just dropped her new song “Wanna Go,” which samples Crime Mob’s iconic track “Knuck If You Buck.” This could just be a simple sample, but thanks to some recent social media activity, many fans are taking this as a dig against Claressa Shields. The “W.Y.F.L.” femcee, as caught by The Shade Room on Instagram, took to her IG Story recently to share a clip of the boxer. In it, Shields spoke on loving “Knuck If You Buck,” which comes from a wider conversation about Crime Mob’s Princess.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005975-remy-ma-clip-claressa-shields-song-promo-amid-feud" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/remy-ma-uses-clip-of-claressa-shields-as-song-promo-amid-feud/";
-      this.page.identifier = "remy-ma-uses-clip-of-claressa-shields-as-song-promo-amid-feud";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/remy-ma-uses-clip-of-claressa-shields-as-song-promo-amid-feud/";
+          this.page.identifier = "remy-ma-uses-clip-of-claressa-shields-as-song-promo-amid-feud";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

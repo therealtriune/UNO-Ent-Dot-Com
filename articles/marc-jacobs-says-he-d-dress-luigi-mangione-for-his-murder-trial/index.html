@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Marc Jacobs Says He&#x27;d Dress Luigi Mangione For His Murder Trial</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/a7/16by9/2026/08/19/a7c05b03f5fc4cb48bf12a6cc8dca6dd_xl.jpg" alt="Marc Jacobs Says He&#x27;d Dress Luigi Mangione For His Murder Trial">
+  <img class="article-hero" src="https://imagez.tmz.com/image/a7/16by9/2026/08/19/a7c05b03f5fc4cb48bf12a6cc8dca6dd_xl.jpg" alt="Marc Jacobs Says He&#x27;d Dress Luigi Mangione For His Murder Trial" onload="this.style.animation='none'">
   <p class="article-summary">Marc Jacobs isn&#x27;t above giving Luigi Mangione a style makeover for his upcoming New York state murder trial...though he doesn&#x27;t seem to think Luigi needs his help. The famous fashion designer appeared on an episode of Variety&#x27;s &quot;Lie Detector…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/19/marc-jacobs-says-he-would-dress-luigi-mangione-for-court/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/marc-jacobs-says-he-d-dress-luigi-mangione-for-his-murder-trial/";
-      this.page.identifier = "marc-jacobs-says-he-d-dress-luigi-mangione-for-his-murder-trial";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/marc-jacobs-says-he-d-dress-luigi-mangione-for-his-murder-trial/";
+          this.page.identifier = "marc-jacobs-says-he-d-dress-luigi-mangione-for-his-murder-trial";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

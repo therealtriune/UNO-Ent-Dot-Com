@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Kern County DA To Reopen EDP445 Investigation Following Tell-All Documentary</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/EDP-doc.webp" alt="Kern County DA To Reopen EDP445 Investigation Following Tell-All Documentary">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/EDP-doc.webp" alt="Kern County DA To Reopen EDP445 Investigation Following Tell-All Documentary" onload="this.style.animation='none'">
   <p class="article-summary">EDP445, real name Bryant Moreland, is currently in some hot water following statements he made in a documentary last week. The documentary is called The Sick Mind Of EDP445 and was produced by YouTuber Mike Clum. It is a documentary that has received quite a bit of history.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006485-kern-county-investigation-edp445" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/kern-county-da-to-reopen-edp445-investigation-following-tell-all-docum/";
-      this.page.identifier = "kern-county-da-to-reopen-edp445-investigation-following-tell-all-docum";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/kern-county-da-to-reopen-edp445-investigation-following-tell-all-docum/";
+          this.page.identifier = "kern-county-da-to-reopen-edp445-investigation-following-tell-all-docum";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 hours ago</div>
   <h1 class="article-title">Air Jordan 14 Low “BIN 23” Set For Summer 2027 Release</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/HQQkrqdWUAIjKcC-e1787423366944.jpg" alt="Air Jordan 14 Low “BIN 23” Set For Summer 2027 Release">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/HQQkrqdWUAIjKcC-e1787423366944.jpg" alt="Air Jordan 14 Low “BIN 23” Set For Summer 2027 Release" onload="this.style.animation='none'">
   <p class="article-summary">The Air Jordan 14 Low “BIN 23” now has a release date locked in. It’s set to drop June 29, 2027 for $355, limited to just 2,300 pairs. Purple covers most of the upper, giving the shoe a deep, rich look right out the gate.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006847-air-jordan-14-low-bin-23-sneaker-news" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/air-jordan-14-low-bin-23-set-for-summer-2027-release/";
-      this.page.identifier = "air-jordan-14-low-bin-23-set-for-summer-2027-release";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/air-jordan-14-low-bin-23-set-for-summer-2027-release/";
+          this.page.identifier = "air-jordan-14-low-bin-23-set-for-summer-2027-release";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

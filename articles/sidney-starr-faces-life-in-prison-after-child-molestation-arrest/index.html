@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Sidney Starr Faces Life In Prison After Child Molestation Arrest</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/Sidney-Starr-Mugshot.png" alt="Sidney Starr Faces Life In Prison After Child Molestation Arrest">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/Sidney-Starr-Mugshot.png" alt="Sidney Starr Faces Life In Prison After Child Molestation Arrest" onload="this.style.animation='none'">
   <p class="article-summary">Sidney Starr is jailed in Georgia after police accused the transgender rapper and reality personality of sexually assaulting a juvenile. Online jail records identify Starr by her legal name, Sidney Favors, and list sexual battery against a child under 16, aggravated child molestation and sodomy charges. Hapeville police said officers responded Sunday (August 2) to an alleged incident at the Embassy Suites hotel before arresting Starr.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/sidney-starr-faces-life-in-prison-after-child-molestation-arrest/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/sidney-starr-faces-life-in-prison-after-child-molestation-arrest/";
-      this.page.identifier = "sidney-starr-faces-life-in-prison-after-child-molestation-arrest";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/sidney-starr-faces-life-in-prison-after-child-molestation-arrest/";
+          this.page.identifier = "sidney-starr-faces-life-in-prison-after-child-molestation-arrest";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

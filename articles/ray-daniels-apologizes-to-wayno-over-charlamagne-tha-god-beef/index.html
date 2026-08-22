@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 days ago</div>
   <h1 class="article-title">Ray Daniels Apologizes To Wayno Over Charlamagne Tha God Beef</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-2279574961-scaled.jpg" alt="Ray Daniels Apologizes To Wayno Over Charlamagne Tha God Beef">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-2279574961-scaled.jpg" alt="Ray Daniels Apologizes To Wayno Over Charlamagne Tha God Beef" onload="this.style.animation='none'">
   <p class="article-summary">From executive to viral talking head, Ray Daniels’ transition to media personality has been effective. His supposed insight into the alleged JAŸ-Z album only intensified the spotlight once Roc Nation themselves denied it existed, and that ultimately came with blowback. Since then, Daniels has practically been discrediting any and every media personality that downplayed his claims about Hov.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006298-ray-daniels-wayno-apology-charlamagne-tha-god-beef" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ray-daniels-apologizes-to-wayno-over-charlamagne-tha-god-beef/";
-      this.page.identifier = "ray-daniels-apologizes-to-wayno-over-charlamagne-tha-god-beef";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ray-daniels-apologizes-to-wayno-over-charlamagne-tha-god-beef/";
+          this.page.identifier = "ray-daniels-apologizes-to-wayno-over-charlamagne-tha-god-beef";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

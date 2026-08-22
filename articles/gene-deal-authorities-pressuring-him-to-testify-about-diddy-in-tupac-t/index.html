@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 hours ago</div>
   <h1 class="article-title">Gene Deal: Authorities Pressuring Him To Testify About Diddy In Tupac Trial</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/12/Diddy.jpg" alt="Gene Deal: Authorities Pressuring Him To Testify About Diddy In Tupac Trial">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/12/Diddy.jpg" alt="Gene Deal: Authorities Pressuring Him To Testify About Diddy In Tupac Trial" onload="this.style.animation='none'">
   <p class="article-summary">Gene Deal, Sean “Diddy” Combs’ former bodyguard, is facing mounting pressure to testify in the ongoing Tupac Shakur murder trial as prosecutors build their case against Duane “Keffe D” Davis. In a recent interview, Deal revealed that authorities want him to take the stand and discuss what he knows about Diddy’s alleged involvement in the 1996 killing. Deal’s potential testimony centers on Eric “Von Zip” Martin, a Harlem drug lord who allegedly served as the middleman between Diddy and the shooter.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/gene-deal-authorities-pressuring-him-to-testify-about-diddy-in-tupac-trial/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/gene-deal-authorities-pressuring-him-to-testify-about-diddy-in-tupac-t/";
-      this.page.identifier = "gene-deal-authorities-pressuring-him-to-testify-about-diddy-in-tupac-t";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/gene-deal-authorities-pressuring-him-to-testify-about-diddy-in-tupac-t/";
+          this.page.identifier = "gene-deal-authorities-pressuring-him-to-testify-about-diddy-in-tupac-t";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

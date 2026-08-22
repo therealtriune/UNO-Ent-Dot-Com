@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Ouch! iShowSpeed Takes Hard Fall After Balloons Holding Him Pop Mid-Air During His 60 Million Subscriber Celebration (VIDEO)</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/07/IMG_2643-e1785599372341.jpeg" alt="Ouch! iShowSpeed Takes Hard Fall After Balloons Holding Him Pop Mid-Air During His 60 Million Subscriber Celebration (VIDEO)">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/07/IMG_2643-e1785599372341.jpeg" alt="Ouch! iShowSpeed Takes Hard Fall After Balloons Holding Him Pop Mid-Air During His 60 Million Subscriber Celebration (VIDEO)" onload="this.style.animation='none'">
   <p class="article-summary">iShowSpeed has been celebrating win after win over the past few months, from wrapping up a successful tour around the Caribbean to performing his Gold-certified track at the FIFA World Cup. Now, the streamer had even more to celebrate as he neared 60 million YouTube subscribers. However, once he officially hit the milestone, the stream quickly took an unexpected turn.</p>
   <a class="outbound-cta" href="https://theshaderoom.com/ishowspeed-falls-balloons-pop-60-million-subscriber-celebration/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ouch-ishowspeed-takes-hard-fall-after-balloons-holding-him-pop-mid-air/";
-      this.page.identifier = "ouch-ishowspeed-takes-hard-fall-after-balloons-holding-him-pop-mid-air";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ouch-ishowspeed-takes-hard-fall-after-balloons-holding-him-pop-mid-air/";
+          this.page.identifier = "ouch-ishowspeed-takes-hard-fall-after-balloons-holding-him-pop-mid-air";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

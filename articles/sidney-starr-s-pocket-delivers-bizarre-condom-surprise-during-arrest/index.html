@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Sidney Starr’s Pocket Delivers Bizarre Condom Surprise During Arrest</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/Sidney-Starr-Mugshot.png" alt="Sidney Starr’s Pocket Delivers Bizarre Condom Surprise During Arrest">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/Sidney-Starr-Mugshot.png" alt="Sidney Starr’s Pocket Delivers Bizarre Condom Surprise During Arrest" onload="this.style.animation='none'">
   <p class="article-summary">Sidney Starr’s arrest took a bizarre turn when an open condom reportedly tumbled from her pocket as officers searched her. The odd discovery came after Hapeville police detained the reality personality Sunday at an Embassy Suites near Atlanta’s airport. A new arrest update says officers removed Starr’s cellphone during a search before the unexpected item appeared.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/sidney-starrs-pocket-delivers-bizarre-surprise-during-arrest/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/sidney-starr-s-pocket-delivers-bizarre-condom-surprise-during-arrest/";
-      this.page.identifier = "sidney-starr-s-pocket-delivers-bizarre-condom-surprise-during-arrest";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/sidney-starr-s-pocket-delivers-bizarre-condom-surprise-during-arrest/";
+          this.page.identifier = "sidney-starr-s-pocket-delivers-bizarre-condom-surprise-during-arrest";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

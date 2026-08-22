@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Where to watch Steelers vs. Jets preseason game tonight: Time, channel, streaming</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/9ee36f34ece32ef57f07878e4b415cfe6c0fc164e51c6a4d90a1224af062299a/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F7fbce7f456a2727555aeed8eef6a7257.jpg" alt="Where to watch Steelers vs. Jets preseason game tonight: Time, channel, streaming">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/9ee36f34ece32ef57f07878e4b415cfe6c0fc164e51c6a4d90a1224af062299a/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F7fbce7f456a2727555aeed8eef6a7257.jpg" alt="Where to watch Steelers vs. Jets preseason game tonight: Time, channel, streaming" onload="this.style.animation='none'">
   <p class="article-summary">Rookie quarterbacks are all the rage in the preseason, even if they&#x27;re not likely to get many snaps when the regular season begins. Last week, the New York Jets and Pittsburgh Steelers each saw their respective rookie quarterbacks shine in brief outings. Jets fourth-round pick Cade Klubnik completed five of his seven pass attempts for 56 yards, showing off a quick release, an understanding of pressure and an ability to throw on the move.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/where-watch-steelers-vs-jets-100033926.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/where-to-watch-steelers-vs-jets-preseason-game-tonight-time-channel-st/";
-      this.page.identifier = "where-to-watch-steelers-vs-jets-preseason-game-tonight-time-channel-st";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/where-to-watch-steelers-vs-jets-preseason-game-tonight-time-channel-st/";
+          this.page.identifier = "where-to-watch-steelers-vs-jets-preseason-game-tonight-time-channel-st";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

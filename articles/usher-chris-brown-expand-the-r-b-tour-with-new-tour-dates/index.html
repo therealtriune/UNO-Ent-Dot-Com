@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">5 days ago</div>
   <h1 class="article-title">Usher &amp; Chris Brown Expand The R&amp;B Tour With New Tour Dates</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2022-04-25T103708Z_1139260340_MT1USATODAY18150346_RTRMADP_3_NBA-ALL-STAR-GAME-TEAM-DURANT-AT-TEAM-LEBRON-scaled.jpg" alt="Usher &amp; Chris Brown Expand The R&amp;B Tour With New Tour Dates">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2022-04-25T103708Z_1139260340_MT1USATODAY18150346_RTRMADP_3_NBA-ALL-STAR-GAME-TEAM-DURANT-AT-TEAM-LEBRON-scaled.jpg" alt="Usher &amp; Chris Brown Expand The R&amp;B Tour With New Tour Dates" onload="this.style.animation='none'">
   <p class="article-summary">If there’s one show that everyone wants to attend this summer, it’s Usher and Chris Brown ’s current tour. The R&amp;B tour sees two generational talents join forces for one of the most in-demand shows of the year and it seems like fans are getting their money’s worth every time. After all, they are both incredible performers.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006229-usher-chris-brown-new-tour-dates" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/usher-chris-brown-expand-the-r-b-tour-with-new-tour-dates/";
-      this.page.identifier = "usher-chris-brown-expand-the-r-b-tour-with-new-tour-dates";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/usher-chris-brown-expand-the-r-b-tour-with-new-tour-dates/";
+          this.page.identifier = "usher-chris-brown-expand-the-r-b-tour-with-new-tour-dates";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

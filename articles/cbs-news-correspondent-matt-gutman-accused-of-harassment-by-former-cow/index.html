@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">CBS News Correspondent Matt Gutman Accused of Harassment by Former Coworker</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/c3/16by9/2026/08/15/c3945353a4af4998ad8052007459e700_xl.jpg" alt="CBS News Correspondent Matt Gutman Accused of Harassment by Former Coworker">
+  <img class="article-hero" src="https://imagez.tmz.com/image/c3/16by9/2026/08/15/c3945353a4af4998ad8052007459e700_xl.jpg" alt="CBS News Correspondent Matt Gutman Accused of Harassment by Former Coworker" onload="this.style.animation='none'">
   <p class="article-summary">CBS News Chief Correspondent Matt Gutman has reportedly been accused of harassment by a former colleague. The allegations are part of a broader wrongful termination lawsuit against ABC News by former ABC field producer Samira Said...who says she…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/15/matt-gutman-accused-of-harassment-by-former-coworker/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/cbs-news-correspondent-matt-gutman-accused-of-harassment-by-former-cow/";
-      this.page.identifier = "cbs-news-correspondent-matt-gutman-accused-of-harassment-by-former-cow";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/cbs-news-correspondent-matt-gutman-accused-of-harassment-by-former-cow/";
+          this.page.identifier = "cbs-news-correspondent-matt-gutman-accused-of-harassment-by-former-cow";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

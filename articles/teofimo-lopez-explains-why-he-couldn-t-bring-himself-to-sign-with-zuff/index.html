@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Teofimo Lopez explains why he couldn’t bring himself to sign with Zuffa Boxing</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/c12fa6cde9e791245098d9ba5114592733f26289c0470edb6d5da3c7f580ce5c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fteo_6789.png" alt="Teofimo Lopez explains why he couldn’t bring himself to sign with Zuffa Boxing">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/c12fa6cde9e791245098d9ba5114592733f26289c0470edb6d5da3c7f580ce5c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fteo_6789.png" alt="Teofimo Lopez explains why he couldn’t bring himself to sign with Zuffa Boxing" onload="this.style.animation='none'">
   <p class="article-summary">Teofimo Lopez joins the show during fight week, talking about his title bout against Rolly Romero, his deal with DAZN, being snubbed by Dana White and Hunter Ca</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/videos/teofimo-lopez-explains-why-couldn-223945804.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports Boxing &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/teofimo-lopez-explains-why-he-couldn-t-bring-himself-to-sign-with-zuff/";
-      this.page.identifier = "teofimo-lopez-explains-why-he-couldn-t-bring-himself-to-sign-with-zuff";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/teofimo-lopez-explains-why-he-couldn-t-bring-himself-to-sign-with-zuff/";
+          this.page.identifier = "teofimo-lopez-explains-why-he-couldn-t-bring-himself-to-sign-with-zuff";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

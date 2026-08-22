@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Tupac’s Cousin Blasts Keefe D For “Bragging” About Rapper’s Murder</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2017-05-09T233051Z_932565397_MT1USATODAY10049233_RTRMADP_3_JUNE-3-2003-FT-LAUDERDALE-FL-USA-TUPAC-SHAKUR.jpg" alt="Tupac’s Cousin Blasts Keefe D For “Bragging” About Rapper’s Murder">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2017-05-09T233051Z_932565397_MT1USATODAY10049233_RTRMADP_3_JUNE-3-2003-FT-LAUDERDALE-FL-USA-TUPAC-SHAKUR.jpg" alt="Tupac’s Cousin Blasts Keefe D For “Bragging” About Rapper’s Murder" onload="this.style.animation='none'">
   <p class="article-summary">With Keefe D set to stand trial for the murder of Tupac Shakur, the late rapper’s family hopes that they’ll finally see justice. ‘Pac’s cousin, William Lesane, recently spoke to News 3 Las Vegas this week as jury selection took place, explaining that he and the family have carried the burden of ‘Pac’s unsolved murder for decades while Keefe D’s made public statements without remorse. “I’m just happy that I can be here, that I’m not dead, I’m not in jail, healthy and of sound mind,” he said at the courthouse.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005925-tupac-cousin-blasts-keefe-d-bragging-murder" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/tupac-s-cousin-blasts-keefe-d-for-bragging-about-rapper-s-murder/";
-      this.page.identifier = "tupac-s-cousin-blasts-keefe-d-for-bragging-about-rapper-s-murder";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/tupac-s-cousin-blasts-keefe-d-for-bragging-about-rapper-s-murder/";
+          this.page.identifier = "tupac-s-cousin-blasts-keefe-d-for-bragging-about-rapper-s-murder";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

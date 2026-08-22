@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Kawhi Leonard allegedly had another multimillion-dollar &#x27;sponsorship&#x27; deal with Clippers&#x27; scoreboard manufacturer, per report</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/9256ec2a25ba4bc8f2b78dacd7afb834406e660f2550e68eaf8aeee7cb1811e6/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Fb0493745-207b-4c10-a776-0f2b741d6243" alt="Kawhi Leonard allegedly had another multimillion-dollar &#x27;sponsorship&#x27; deal with Clippers&#x27; scoreboard manufacturer, per report">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/9256ec2a25ba4bc8f2b78dacd7afb834406e660f2550e68eaf8aeee7cb1811e6/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2Fb0493745-207b-4c10-a776-0f2b741d6243" alt="Kawhi Leonard allegedly had another multimillion-dollar &#x27;sponsorship&#x27; deal with Clippers&#x27; scoreboard manufacturer, per report" onload="this.style.animation='none'">
   <p class="article-summary">Kawhi Leonard and the Los Angeles Clippers have been facing scrutiny for nearly a year over a n alleged no-show sponsorship deal with now-defunct sustainability company Aspiration that paid the star millions for no visible work, in an alleged bid to circumvent the NBA salary cap. According to the latest report from &quot;Pablo Torre Finds Out,&quot; Aspiration allegedly wasn&#x27;t the only company doing something like that. Scoreboard manufacturer Daktronics, which built the $100 million video board at the Clippers&#x27; Intuit Dome, hired Leonard to a multimillion sponsorship deal for which he has done no work that host Pablo Torre and his staff could find.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/nba/article/kawhi-leonard-allegedly-had-another-multimillion-dollar-sponsorship-deal-with-clippers-scoreboard-manufacturer-per-report-035505662.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NBA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/kawhi-leonard-allegedly-had-another-multimillion-dollar-sponsorship-de/";
-      this.page.identifier = "kawhi-leonard-allegedly-had-another-multimillion-dollar-sponsorship-de";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/kawhi-leonard-allegedly-had-another-multimillion-dollar-sponsorship-de/";
+          this.page.identifier = "kawhi-leonard-allegedly-had-another-multimillion-dollar-sponsorship-de";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

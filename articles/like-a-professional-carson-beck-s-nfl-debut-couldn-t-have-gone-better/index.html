@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">&#x27;Like a professional&#x27;: Carson Beck&#x27;s NFL debut couldn&#x27;t have gone better</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/aee29b7cd4ec72b62782d3808a1b0d17840f1d651433dabe7cadd0ffad615829/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2Fe7df808cdcce00f4dee72ed8d1b0f2ff" alt="&#x27;Like a professional&#x27;: Carson Beck&#x27;s NFL debut couldn&#x27;t have gone better">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/aee29b7cd4ec72b62782d3808a1b0d17840f1d651433dabe7cadd0ffad615829/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2Fe7df808cdcce00f4dee72ed8d1b0f2ff" alt="&#x27;Like a professional&#x27;: Carson Beck&#x27;s NFL debut couldn&#x27;t have gone better" onload="this.style.animation='none'">
   <p class="article-summary">CANTON, OH – Carson Beck didn’t end up throwing the last pass of the 2025 college football season and the first attempt of the 2026 NFL season at the Hall of Fame Game on Thursday. What he did, however, was far more important than realizing what would have been a fun yet bizarre statistical anomaly. The Carolina Panthers ultimately defeated the Cardinals 33-30 (with another rookie quarterback, Haynes King, scoring the game-winning touchdown as time expired), but Beck’s debut was the most consequential development of the first NFL action since the Super Bowl.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/professional-carson-becks-nfl-debut-045727159.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/like-a-professional-carson-beck-s-nfl-debut-couldn-t-have-gone-better/";
-      this.page.identifier = "like-a-professional-carson-beck-s-nfl-debut-couldn-t-have-gone-better";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/like-a-professional-carson-beck-s-nfl-debut-couldn-t-have-gone-better/";
+          this.page.identifier = "like-a-professional-carson-beck-s-nfl-debut-couldn-t-have-gone-better";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

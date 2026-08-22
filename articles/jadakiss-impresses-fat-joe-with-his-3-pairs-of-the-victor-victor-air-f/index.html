@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Jadakiss Impresses Fat Joe With His 3 Pairs Of The Victor Victor Air Force 1s</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2024-06-29T080839Z_555348179_MT1USATODAY23647009_RTRMADP_3_WNBA-COMMISSIONER-S-CUP-MINNESOTA-LYNX-AT-NEW-YORK-LIBERTY-scaled.jpg" alt="Jadakiss Impresses Fat Joe With His 3 Pairs Of The Victor Victor Air Force 1s">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2024-06-29T080839Z_555348179_MT1USATODAY23647009_RTRMADP_3_WNBA-COMMISSIONER-S-CUP-MINNESOTA-LYNX-AT-NEW-YORK-LIBERTY-scaled.jpg" alt="Jadakiss Impresses Fat Joe With His 3 Pairs Of The Victor Victor Air Force 1s" onload="this.style.animation='none'">
   <p class="article-summary">Jadakiss pulled up on Joe &amp; Jada with a serious sneaker flex. He showed up with three separate pairs of the Victor Victor x Nike Air Force 1. Fat Joe was left without much to say.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004792-jadakiss-victor-victor-x-air-force-1-sneaker-news" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/jadakiss-impresses-fat-joe-with-his-3-pairs-of-the-victor-victor-air-f/";
-      this.page.identifier = "jadakiss-impresses-fat-joe-with-his-3-pairs-of-the-victor-victor-air-f";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/jadakiss-impresses-fat-joe-with-his-3-pairs-of-the-victor-victor-air-f/";
+          this.page.identifier = "jadakiss-impresses-fat-joe-with-his-3-pairs-of-the-victor-victor-air-f";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

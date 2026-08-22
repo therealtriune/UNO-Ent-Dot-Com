@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Hayden Panettiere Is On Video With Hickerson Brothers At Apartment Complex Before Death</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/e5/16by9/2026/08/18/e552559e21fb41c7a4259341ac0e0d77_xl.jpg" alt="Hayden Panettiere Is On Video With Hickerson Brothers At Apartment Complex Before Death">
+  <img class="article-hero" src="https://imagez.tmz.com/image/e5/16by9/2026/08/18/e552559e21fb41c7a4259341ac0e0d77_xl.jpg" alt="Hayden Panettiere Is On Video With Hickerson Brothers At Apartment Complex Before Death" onload="this.style.animation='none'">
   <p class="article-summary">Police in South Carolina are trying to get their hands on surveillance footage that&#x27;s said to show Hayden Panettiere entering and exiting the apartment complex where she died...and it sounds like she wasn&#x27;t alone. TMZ obtained the Greenville…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/18/hayden-panettiere-death-scene-security-footage/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/hayden-panettiere-is-on-video-with-hickerson-brothers-at-apartment-com/";
-      this.page.identifier = "hayden-panettiere-is-on-video-with-hickerson-brothers-at-apartment-com";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/hayden-panettiere-is-on-video-with-hickerson-brothers-at-apartment-com/";
+          this.page.identifier = "hayden-panettiere-is-on-video-with-hickerson-brothers-at-apartment-com";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

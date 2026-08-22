@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">5 days ago</div>
   <h1 class="article-title">Social Media Reacts To The Passing Of Actress Hayden Panettiere Who Would Have Turned 37 This Friday 🙏🏾</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_3646.jpeg" alt="Social Media Reacts To The Passing Of Actress Hayden Panettiere Who Would Have Turned 37 This Friday 🙏🏾">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_3646.jpeg" alt="Social Media Reacts To The Passing Of Actress Hayden Panettiere Who Would Have Turned 37 This Friday 🙏🏾" onload="this.style.animation='none'">
   <p class="article-summary">It’s a tough morning for fans waking up to the heartbreaking news of actress Hayden Panettiere’s death, especially millennials who grew up watching her. Timelines lit up within minutes as people rushed to react, share throwback clips, and pay tribute to a woman who gave us unforgettable moments on screen, from “Remember the Titans” to “Bring It On” and everything in between. As we previously reported, it was confirmed on Sunday that she had died at 36 years old from a possible “overdose” which led to a “cardiac arrest,” and the loss cuts even deeper knowing Panettiere would have turned 37 this Friday.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/social-media-reacts-to-the-passing-of-actress-hayden-panettiere-who-would-have-turned-37-this-friday-%f0%9f%99%8f%f0%9f%8f%be/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/social-media-reacts-to-the-passing-of-actress-hayden-panettiere-who-wo/";
-      this.page.identifier = "social-media-reacts-to-the-passing-of-actress-hayden-panettiere-who-wo";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/social-media-reacts-to-the-passing-of-actress-hayden-panettiere-who-wo/";
+          this.page.identifier = "social-media-reacts-to-the-passing-of-actress-hayden-panettiere-who-wo";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

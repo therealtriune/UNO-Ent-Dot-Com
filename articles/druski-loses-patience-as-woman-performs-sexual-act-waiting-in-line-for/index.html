@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Druski Loses Patience As Woman Performs Sexual Act Waiting In Line For Coulda Been Audition</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/03/Druski.jpg" alt="Druski Loses Patience As Woman Performs Sexual Act Waiting In Line For Coulda Been Audition">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/03/Druski.jpg" alt="Druski Loses Patience As Woman Performs Sexual Act Waiting In Line For Coulda Been Audition" onload="this.style.animation='none'">
   <p class="article-summary">Druski has the internet crying again after hopefuls from Washington, D.C., entered his unforgiving Coulda Been Records audition room. The 48-minute video showcases the unpredictable nature of the audition process as Druski tested contestants’ knowledge, credibility, and talent in equal measure. The newly released episode shows the comedian transforming earnest performances, questionable vocals and deeply personal stories into nearly one hour of controlled chaos.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/druski-loses-patience-during-chaotic-washington-auditions/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/druski-loses-patience-as-woman-performs-sexual-act-waiting-in-line-for/";
-      this.page.identifier = "druski-loses-patience-as-woman-performs-sexual-act-waiting-in-line-for";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/druski-loses-patience-as-woman-performs-sexual-act-waiting-in-line-for/";
+          this.page.identifier = "druski-loses-patience-as-woman-performs-sexual-act-waiting-in-line-for";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

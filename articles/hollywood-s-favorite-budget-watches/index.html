@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Hollywood&#x27;s Favorite Budget Watches</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/08/16by9/2026/08/10/0813144c96654919a7dd7ee8e8c48e2b_xl.jpg" alt="Hollywood&#x27;s Favorite Budget Watches">
+  <img class="article-hero" src="https://imagez.tmz.com/image/08/16by9/2026/08/10/0813144c96654919a7dd7ee8e8c48e2b_xl.jpg" alt="Hollywood&#x27;s Favorite Budget Watches" onload="this.style.animation='none'">
   <p class="article-summary">TMZ may collect a share of sales or other compensation from links on this page. You don&#x27;t need a five-figure Rolex to dress like your favorite celebrity. From presidents and athletes to actors and musicians, plenty of famous faces have been spotted…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/13/affordable-watches-worn-by-celebrities/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/hollywood-s-favorite-budget-watches/";
-      this.page.identifier = "hollywood-s-favorite-budget-watches";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/hollywood-s-favorite-budget-watches/";
+          this.page.identifier = "hollywood-s-favorite-budget-watches";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

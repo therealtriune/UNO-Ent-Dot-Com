@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Cooling mistakes that quietly increase summer energy bills</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/image-3.jpg" alt="Cooling mistakes that quietly increase summer energy bills">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/image-3.jpg" alt="Cooling mistakes that quietly increase summer energy bills" onload="this.style.animation='none'">
   <p class="article-summary">When summer approaches, energy bills are often a key consideration for many families. Some tips to lower HVAC costs during the summer season include using lower-energy appliances like fans and swamp coolers, considering solar panel installation, and taking advantage of cooler air at night. Running the air conditioner may keep everyone comfortable, but what is the real cost?</p>
   <a class="outbound-cta" href="https://allhiphop.com/blogs/cooling-mistakes-that-quietly-increase-summer-energy-bills/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/cooling-mistakes-that-quietly-increase-summer-energy-bills/";
-      this.page.identifier = "cooling-mistakes-that-quietly-increase-summer-energy-bills";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/cooling-mistakes-that-quietly-increase-summer-energy-bills/";
+          this.page.identifier = "cooling-mistakes-that-quietly-increase-summer-energy-bills";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

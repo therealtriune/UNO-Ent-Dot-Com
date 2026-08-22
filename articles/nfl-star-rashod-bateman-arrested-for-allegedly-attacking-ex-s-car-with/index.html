@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">23 hours ago</div>
   <h1 class="article-title">NFL Star Rashod Bateman Arrested For Allegedly Attacking Ex&#x27;s Car With Newborn Inside</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/7c/16by9/2026/08/21/7c629aacf33a4e7cbfadd159c7b18a94_xl.jpg" alt="NFL Star Rashod Bateman Arrested For Allegedly Attacking Ex&#x27;s Car With Newborn Inside">
+  <img class="article-hero" src="https://imagez.tmz.com/image/7c/16by9/2026/08/21/7c629aacf33a4e7cbfadd159c7b18a94_xl.jpg" alt="NFL Star Rashod Bateman Arrested For Allegedly Attacking Ex&#x27;s Car With Newborn Inside" onload="this.style.animation='none'">
   <p class="article-summary">NFL star Rashod Bateman is accused of family violence in Georgia after he allegedly smashed the windows of his baby mama&#x27;s car...while his 3-month-old was inside...TMZ has learned. According to court docs, obtained by TMZ, the alleged victim…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/21/rashod-bateman-arrested-for-family-violence/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/nfl-star-rashod-bateman-arrested-for-allegedly-attacking-ex-s-car-with/";
-      this.page.identifier = "nfl-star-rashod-bateman-arrested-for-allegedly-attacking-ex-s-car-with";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/nfl-star-rashod-bateman-arrested-for-allegedly-attacking-ex-s-car-with/";
+          this.page.identifier = "nfl-star-rashod-bateman-arrested-for-allegedly-attacking-ex-s-car-with";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

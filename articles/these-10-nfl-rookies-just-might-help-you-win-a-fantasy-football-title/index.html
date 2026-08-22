@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">These 10 NFL rookies just might help you win a fantasy football title</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/dc5a0d1205fe7fd9f23c7196357c93407d32eeb4205ec0f8d25a96df54425bbc/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F41bdfed3844c5a5bde3972fa7a7ad576.jpg" alt="These 10 NFL rookies just might help you win a fantasy football title">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/dc5a0d1205fe7fd9f23c7196357c93407d32eeb4205ec0f8d25a96df54425bbc/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F41bdfed3844c5a5bde3972fa7a7ad576.jpg" alt="These 10 NFL rookies just might help you win a fantasy football title" onload="this.style.animation='none'">
   <p class="article-summary">Rookies are the ultimate wild cards in fantasy football. They&#x27;re talented, young, scrappy and hungry but they&#x27;re still unproven in the pro game. That&#x27;s why fantasy managers need to be careful when counting on rookies to be every-week starters at the skill positions.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/10-nfl-rookies-just-might-151021681.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/these-10-nfl-rookies-just-might-help-you-win-a-fantasy-football-title/";
-      this.page.identifier = "these-10-nfl-rookies-just-might-help-you-win-a-fantasy-football-title";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/these-10-nfl-rookies-just-might-help-you-win-a-fantasy-football-title/";
+          this.page.identifier = "these-10-nfl-rookies-just-might-help-you-win-a-fantasy-football-title";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

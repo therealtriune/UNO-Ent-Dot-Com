@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Talk Ya Shit – Song by Busta Rhymes &amp; J Dilla featuring Lil Wayne</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/talk-ya-shit.jpg" alt="Talk Ya Shit – Song by Busta Rhymes &amp; J Dilla featuring Lil Wayne">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/talk-ya-shit.jpg" alt="Talk Ya Shit – Song by Busta Rhymes &amp; J Dilla featuring Lil Wayne" onload="this.style.animation='none'">
   <p class="article-summary">Busta Rhymes is dropping Dillagence 2, a posthumous release for J Dilla later this month. Fans are extremely excited to hear Busta on more Dilla beats. The release of the single “Spazzz” led to lots of excitement, and today, we got another song, this time featuring Lil Wayne.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005732-talk-ya-shit-busta-rhymes-j-dilla" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/talk-ya-shit-song-by-busta-rhymes-j-dilla-featuring-lil-wayne/";
-      this.page.identifier = "talk-ya-shit-song-by-busta-rhymes-j-dilla-featuring-lil-wayne";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/talk-ya-shit-song-by-busta-rhymes-j-dilla-featuring-lil-wayne/";
+          this.page.identifier = "talk-ya-shit-song-by-busta-rhymes-j-dilla-featuring-lil-wayne";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

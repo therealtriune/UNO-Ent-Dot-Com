@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">A$AP Rocky Ends Potential Designer Collaboration After Private Message Goes Public</h1>
-  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/01/AAP-ROCKY-HELICOPTER-Official-Video-2-20-screenshot.jpg" alt="A$AP Rocky Ends Potential Designer Collaboration After Private Message Goes Public">
+  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/01/AAP-ROCKY-HELICOPTER-Official-Video-2-20-screenshot.jpg" alt="A$AP Rocky Ends Potential Designer Collaboration After Private Message Goes Public" onload="this.style.animation='none'">
   <p class="article-summary">This is a reminder to all creatives: secure the bag and deliver the product but you brag A$AP Rocky’s potential collaboration with designer Allan Peters has seemingly fallen apart after… The post A$AP Rocky Ends Potential Designer Collaboration After Private Message Goes Public appeared first on.</p>
   <a class="outbound-cta" href="https://thesource.com/2026/08/04/asap-rocky-allan-peters-collaboration/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=asap-rocky-allan-peters-collaboration" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Source &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/a-ap-rocky-ends-potential-designer-collaboration-after-private-message/";
-      this.page.identifier = "a-ap-rocky-ends-potential-designer-collaboration-after-private-message";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/a-ap-rocky-ends-potential-designer-collaboration-after-private-message/";
+          this.page.identifier = "a-ap-rocky-ends-potential-designer-collaboration-after-private-message";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

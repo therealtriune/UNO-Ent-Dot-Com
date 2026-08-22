@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">12 hours ago</div>
   <h1 class="article-title">Serrano draws 3.4m views on TikTok for 50th win</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/66cecec0e33326b97c6071075ec856726938adc8715c396791a43d6529de7a54/lightyear_networkapi/resizefill_w939_h528%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2F94a514cbf14d209017da6ed0f7e872fb.jpg" alt="Serrano draws 3.4m views on TikTok for 50th win">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/66cecec0e33326b97c6071075ec856726938adc8715c396791a43d6529de7a54/lightyear_networkapi/resizefill_w939_h528%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2F94a514cbf14d209017da6ed0f7e872fb.jpg" alt="Serrano draws 3.4m views on TikTok for 50th win" onload="this.style.animation='none'">
   <p class="article-summary">Serrano&#x27;s win over Manzur was watched by 3.4m viewers on TikTok [Getty Images] Amanda Serrano retained her WBA and WBO featherweight belts with a narrow majority decision over Argentina&#x27;s Lucrecia Manzur in the first world title fight to be streamed live on TikTok. The Puerto Rican was made to work for her 50th career win, edging a majority decision but missing the 33rd knockout she needed to break the women&#x27;s record, remaining on 32. Serrano&#x27;s fight, held over 12 two-minute rounds, may not have delivered a record‑breaking knockout, but it drew 3.4 million total views on TikTok.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/serrano-draws-3-4m-views-072029510.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports Boxing &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/serrano-draws-3-4m-views-on-tiktok-for-50th-win/";
-      this.page.identifier = "serrano-draws-3-4m-views-on-tiktok-for-50th-win";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/serrano-draws-3-4m-views-on-tiktok-for-50th-win/";
+          this.page.identifier = "serrano-draws-3-4m-views-on-tiktok-for-50th-win";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

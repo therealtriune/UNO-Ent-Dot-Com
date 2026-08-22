@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">UFC Fight Night 284: Ty Miller full post-fight interview</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/147446817cf7797f0ae37d1f5490479e1f113b7a5e6fb0e11fcc335b443fc597/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fcf-images.us-east-1.prod.boltdns.net%2Fv1%2Fjit%2F6415665815001%2F2452f20b-8f8d-4acc-8916-fc2a3eb00db5%2Fmain%2F1280x720%2F4m39s722ms%2Fmatch%2Fimage.jpg" alt="UFC Fight Night 284: Ty Miller full post-fight interview">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/147446817cf7797f0ae37d1f5490479e1f113b7a5e6fb0e11fcc335b443fc597/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fcf-images.us-east-1.prod.boltdns.net%2Fv1%2Fjit%2F6415665815001%2F2452f20b-8f8d-4acc-8916-fc2a3eb00db5%2Fmain%2F1280x720%2F4m39s722ms%2Fmatch%2Fimage.jpg" alt="UFC Fight Night 284: Ty Miller full post-fight interview" onload="this.style.animation='none'">
   <p class="article-summary">UFC Fight Night 284 winner Ty Miller talks to MMA Junkie and other reporters post-fight after his third-round TKO of Billy Ray Goff in Las Vegas.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/videos/ufc-fight-night-284-ty-142549433.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ufc-fight-night-284-ty-miller-full-post-fight-interview/";
-      this.page.identifier = "ufc-fight-night-284-ty-miller-full-post-fight-interview";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ufc-fight-night-284-ty-miller-full-post-fight-interview/";
+          this.page.identifier = "ufc-fight-night-284-ty-miller-full-post-fight-interview";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

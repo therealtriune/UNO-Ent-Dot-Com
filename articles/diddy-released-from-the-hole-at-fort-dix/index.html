@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Diddy Released From The Hole At Fort Dix</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/11/Diddy-Drinking.jpg" alt="Diddy Released From The Hole At Fort Dix">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/11/Diddy-Drinking.jpg" alt="Diddy Released From The Hole At Fort Dix" onload="this.style.animation='none'">
   <p class="article-summary">Diddy is back in the general population at FCI Fort Dix after spending weeks locked away in solitary confinement following his altercation with another inmate. The music mogul’s time in the hole came to an end on August 12, 2026, marking a significant shift in his prison experience since the late July incident that landed him there in the first place. His release from solitary represents a turning point in what’s been an increasingly complicated stretch behind bars.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/diddy-released-from-the-hole-at-fort-dix/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/diddy-released-from-the-hole-at-fort-dix/";
-      this.page.identifier = "diddy-released-from-the-hole-at-fort-dix";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/diddy-released-from-the-hole-at-fort-dix/";
+          this.page.identifier = "diddy-released-from-the-hole-at-fort-dix";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

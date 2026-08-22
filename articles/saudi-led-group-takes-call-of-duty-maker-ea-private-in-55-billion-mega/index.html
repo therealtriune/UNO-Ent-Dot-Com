@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Saudi-Led Group Takes ‘Call of Duty’ Maker EA Private in $55 Billion Mega Deal</h1>
-  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-04-at-2.55.54-PM.jpg" alt="Saudi-Led Group Takes ‘Call of Duty’ Maker EA Private in $55 Billion Mega Deal">
+  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-04-at-2.55.54-PM.jpg" alt="Saudi-Led Group Takes ‘Call of Duty’ Maker EA Private in $55 Billion Mega Deal" onload="this.style.animation='none'">
   <p class="article-summary">Electronic Arts officially entered a new era on August 4, closing its $55 billion sale to an investment group led by Saudi Arabia’s Public Investment Fund. PIF now holds a… The post Saudi-Led Group Takes ‘Call of Duty’ Maker EA Private in $55 Billion Mega Deal appeared first on.</p>
   <a class="outbound-cta" href="https://thesource.com/2026/08/04/saudi-led-group-takes-call-of-duty-maker-ea-private-in-55-billion-mega-deal/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=saudi-led-group-takes-call-of-duty-maker-ea-private-in-55-billion-mega-deal" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Source &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/saudi-led-group-takes-call-of-duty-maker-ea-private-in-55-billion-mega/";
-      this.page.identifier = "saudi-led-group-takes-call-of-duty-maker-ea-private-in-55-billion-mega";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/saudi-led-group-takes-call-of-duty-maker-ea-private-in-55-billion-mega/";
+          this.page.identifier = "saudi-led-group-takes-call-of-duty-maker-ea-private-in-55-billion-mega";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

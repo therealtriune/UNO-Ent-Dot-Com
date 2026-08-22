@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Reggie Wright Jr Denies Orchestrating Tupac Murder Ahead Of Keefe D Trial</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2023/04/Tupac-Shakur-1.jpg" alt="Reggie Wright Jr Denies Orchestrating Tupac Murder Ahead Of Keefe D Trial">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2023/04/Tupac-Shakur-1.jpg" alt="Reggie Wright Jr Denies Orchestrating Tupac Murder Ahead Of Keefe D Trial" onload="this.style.animation='none'">
   <p class="article-summary">Reggie Wright Jr is stepping into the spotlight as jury selection kicks off in one of Hip-Hop’s most consequential trials, and he’s making it clear that decades of conspiracy theories won’t define his legacy. The former Death Row Records security chief sat down to address the mounting pressure from Keefe D’s defense strategy, which has pivoted to blaming him for orchestrating Tupac’s 1996 murder. With prosecutors preparing their case against the 63-year-old gang leader, Wright’s testimony is expected to become central to understanding what really happened that September night in Las Vegas.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/reggie-wright-jr-denies-orchestrating-tupac-murder-ahead-of-keefe-d-trial/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/reggie-wright-jr-denies-orchestrating-tupac-murder-ahead-of-keefe-d-tr/";
-      this.page.identifier = "reggie-wright-jr-denies-orchestrating-tupac-murder-ahead-of-keefe-d-tr";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/reggie-wright-jr-denies-orchestrating-tupac-murder-ahead-of-keefe-d-tr/";
+          this.page.identifier = "reggie-wright-jr-denies-orchestrating-tupac-murder-ahead-of-keefe-d-tr";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Pooh Shiesty Fans Are Shocked By New Album “All Eyes On Shiest”</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Pooh-Shiesty-Fans-Shocked-New-Album-All-Eyes-On-Shiest.jpg" alt="Pooh Shiesty Fans Are Shocked By New Album “All Eyes On Shiest”">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Pooh-Shiesty-Fans-Shocked-New-Album-All-Eyes-On-Shiest.jpg" alt="Pooh Shiesty Fans Are Shocked By New Album “All Eyes On Shiest”" onload="this.style.animation='none'">
   <p class="article-summary">Pooh Shiesty hasn’t dropped a new project in years, a hiatus his new album All Eyes On Shiest is breaking in a big way. It arrives amid his robbery and kidnapping case for allegedly forcing Gucci Mane to release him from his 1017 Records contract, and it garnered a lot of shocked fan reactions online. Some folks focused on some brazen lines on the Memphis MC’s comeback LP, such as “ At first you said I was just talking, now all of a sudden you believe in me?</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004979-pooh-shiesty-fans-shocked-new-album-all-eyes-on-shiest" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/pooh-shiesty-fans-are-shocked-by-new-album-all-eyes-on-shiest/";
-      this.page.identifier = "pooh-shiesty-fans-are-shocked-by-new-album-all-eyes-on-shiest";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/pooh-shiesty-fans-are-shocked-by-new-album-all-eyes-on-shiest/";
+          this.page.identifier = "pooh-shiesty-fans-are-shocked-by-new-album-all-eyes-on-shiest";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

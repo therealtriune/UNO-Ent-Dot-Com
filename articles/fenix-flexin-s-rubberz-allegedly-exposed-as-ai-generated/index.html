@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Fenix Flexin&#x27;s &quot;RUBBERZ&quot; Allegedly Exposed As AI-Generated</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/Fenix-Flexin-RUBBERZ-Exposed-AI-Generated-scaled-e1785514191419.jpg" alt="Fenix Flexin&#x27;s &quot;RUBBERZ&quot; Allegedly Exposed As AI-Generated">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/Fenix-Flexin-RUBBERZ-Exposed-AI-Generated-scaled-e1785514191419.jpg" alt="Fenix Flexin&#x27;s &quot;RUBBERZ&quot; Allegedly Exposed As AI-Generated" onload="this.style.animation='none'">
   <p class="article-summary">Fenix Flexin had a long history of West Coast bangers before his &#x27;80s-inspired song &quot;RUBBERZ&quot; took the Internet by storm. At first, folks just expressed surprise at how different the track sounded from his previous material, and how catchy it was. But quickly, the conversation shifted to whether or not the record was AI-generated or saw other assistance from artificial intelligence.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004206-fenix-flexin-rubberz-exposed-ai-generated" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/fenix-flexin-s-rubberz-allegedly-exposed-as-ai-generated/";
-      this.page.identifier = "fenix-flexin-s-rubberz-allegedly-exposed-as-ai-generated";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/fenix-flexin-s-rubberz-allegedly-exposed-as-ai-generated/";
+          this.page.identifier = "fenix-flexin-s-rubberz-allegedly-exposed-as-ai-generated";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

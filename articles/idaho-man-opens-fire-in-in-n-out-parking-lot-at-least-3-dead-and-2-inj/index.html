@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Idaho Man Opens Fire In In-N-Out Parking Lot; At Least 3 Dead And 2 Injured; Police Confirm Suspect Dead</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/Idaho-Man-Opens-Fire-In-In-N-Out-Parking-Lot-At-Least-3-Dead-And-2-Injured-Police-Confirm-Suspect-Dead.png" alt="Idaho Man Opens Fire In In-N-Out Parking Lot; At Least 3 Dead And 2 Injured; Police Confirm Suspect Dead">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/Idaho-Man-Opens-Fire-In-In-N-Out-Parking-Lot-At-Least-3-Dead-And-2-Injured-Police-Confirm-Suspect-Dead.png" alt="Idaho Man Opens Fire In In-N-Out Parking Lot; At Least 3 Dead And 2 Injured; Police Confirm Suspect Dead" onload="this.style.animation='none'">
   <p class="article-summary">An Idaho man was filmed opening fire in an In-N-Out Burger parking lot in Twin Falls on Saturday (August 1) afternoon, around 2 p.m. According to NBC News, a spokesperson said at least 3 people are dead and 2 others injured in the shooting. Josh Palmer, Twin Falls spokesperson, also reported the restaurant had just opened last weekend on July 24.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/idaho-man-opens-fire-in-in-n-out-parking-lot-at-least-3-dead-and-2-injured-police-confirm-suspect-dead/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/idaho-man-opens-fire-in-in-n-out-parking-lot-at-least-3-dead-and-2-inj/";
-      this.page.identifier = "idaho-man-opens-fire-in-in-n-out-parking-lot-at-least-3-dead-and-2-inj";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/idaho-man-opens-fire-in-in-n-out-parking-lot-at-least-3-dead-and-2-inj/";
+          this.page.identifier = "idaho-man-opens-fire-in-in-n-out-parking-lot-at-least-3-dead-and-2-inj";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

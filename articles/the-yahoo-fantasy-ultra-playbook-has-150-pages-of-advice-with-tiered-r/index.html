@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">The Yahoo Fantasy Ultra Playbook has 150+ pages of advice with tiered rankings, targets, fades and much more to help you dominate — here&#x27;s how to get a free preview</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/1964f08049a10846c10df6552a369bb8054ed9fab8ce4bb20420bd92a5db55dd/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fed-073026-29-days-of-fantasy-fantasy-ultra-day-4-modartv2_2978.jpg" alt="The Yahoo Fantasy Ultra Playbook has 150+ pages of advice with tiered rankings, targets, fades and much more to help you dominate — here&#x27;s how to get a free preview">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/1964f08049a10846c10df6552a369bb8054ed9fab8ce4bb20420bd92a5db55dd/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fed-073026-29-days-of-fantasy-fantasy-ultra-day-4-modartv2_2978.jpg" alt="The Yahoo Fantasy Ultra Playbook has 150+ pages of advice with tiered rankings, targets, fades and much more to help you dominate — here&#x27;s how to get a free preview" onload="this.style.animation='none'">
   <p class="article-summary">Every August, the same story plays out in fantasy football drafts. Someone reaches for a name they recognize, a leaguemate panics in the middle of the draft and another manager, the one who actually prepared, walks away with a roster that puts them in position to win it all. The Yahoo Fantasy Ultra Playbook is built for that type of manager, the one looking for an edge over the competition.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/fantasy/article/the-yahoo-fantasy-ultra-playbook-has-150-pages-of-advice-with-tiered-rankings-targets-fades-and-much-more-to-help-you-dominate--heres-how-to-get-a-free-preview-224712969.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/the-yahoo-fantasy-ultra-playbook-has-150-pages-of-advice-with-tiered-r/";
-      this.page.identifier = "the-yahoo-fantasy-ultra-playbook-has-150-pages-of-advice-with-tiered-r";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/the-yahoo-fantasy-ultra-playbook-has-150-pages-of-advice-with-tiered-r/";
+          this.page.identifier = "the-yahoo-fantasy-ultra-playbook-has-150-pages-of-advice-with-tiered-r";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

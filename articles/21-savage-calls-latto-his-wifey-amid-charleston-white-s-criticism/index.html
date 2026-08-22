@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">21 Savage Calls Latto His “Wifey” Amid Charleston White’s Criticism</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/21-Savage-Latto-Wifey-Charleston-White-scaled.jpg" alt="21 Savage Calls Latto His “Wifey” Amid Charleston White’s Criticism">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/21-Savage-Latto-Wifey-Charleston-White-scaled.jpg" alt="21 Savage Calls Latto His “Wifey” Amid Charleston White’s Criticism" onload="this.style.animation='none'">
   <p class="article-summary">Folks online are still debating about 21 Savage and his marriage status, as some folks speculate his reported marriage to Keyanna Joseph, the mother of his two sons, was for visa purposes and may have resulted in a separation. This got more attention thanks to his relationship and newborn daughter with Latto, which Charleston White recently criticized online. Amid Big Mama’s clap-back to White, the Slaughter Gang rapper showed her love and may have confirmed their status to fans.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005178-21-savage-latto-wifey-charleston-white" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/21-savage-calls-latto-his-wifey-amid-charleston-white-s-criticism/";
-      this.page.identifier = "21-savage-calls-latto-his-wifey-amid-charleston-white-s-criticism";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/21-savage-calls-latto-his-wifey-amid-charleston-white-s-criticism/";
+          this.page.identifier = "21-savage-calls-latto-his-wifey-amid-charleston-white-s-criticism";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

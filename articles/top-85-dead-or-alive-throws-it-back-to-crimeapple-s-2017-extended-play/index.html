@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">“Top 85 Dead or Alive” Throws It Back to Crimeapple’s 2017 Extended Plays (EP Review)</h1>
-  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/photo-output-8-e1785478450544.jpeg" alt="“Top 85 Dead or Alive” Throws It Back to Crimeapple’s 2017 Extended Plays (EP Review)">
+  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/07/photo-output-8-e1785478450544.jpeg" alt="“Top 85 Dead or Alive” Throws It Back to Crimeapple’s 2017 Extended Plays (EP Review)" onload="this.style.animation='none'">
   <p class="article-summary">Here we have the latest &amp; 20th extended play from Hackensack, New Jersey lyricist Crimeapple. Becoming a fan of his almost a decade ago with his 4th EP Sweet Dreams along with the Big Ghost Ltd. produced full-length debut Aguardiente that next spring, his profile in the underground grew exponentially from there.</p>
   <a class="outbound-cta" href="https://undergroundhiphopblog.com/albums/top-85-dead-or-alive-throws-it-back-to-crimeapples-2017-extended-plays-ep-review/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Underground Hip Hop Blog &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/top-85-dead-or-alive-throws-it-back-to-crimeapple-s-2017-extended-play/";
-      this.page.identifier = "top-85-dead-or-alive-throws-it-back-to-crimeapple-s-2017-extended-play";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/top-85-dead-or-alive-throws-it-back-to-crimeapple-s-2017-extended-play/";
+          this.page.identifier = "top-85-dead-or-alive-throws-it-back-to-crimeapple-s-2017-extended-play";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

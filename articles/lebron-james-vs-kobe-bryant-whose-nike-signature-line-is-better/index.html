@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">LeBron James Vs. Kobe Bryant: Whose Nike Signature Line Is Better?</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2012-07-27T192605Z_2138530122_MT1USATODAY6407098_RTRMADP_3_OLYMPICS-USA-MEN-S-BASKETBALL-PRESS-CONFERENCE-scaled.jpg" alt="LeBron James Vs. Kobe Bryant: Whose Nike Signature Line Is Better?">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2012-07-27T192605Z_2138530122_MT1USATODAY6407098_RTRMADP_3_OLYMPICS-USA-MEN-S-BASKETBALL-PRESS-CONFERENCE-scaled.jpg" alt="LeBron James Vs. Kobe Bryant: Whose Nike Signature Line Is Better?" onload="this.style.animation='none'">
   <p class="article-summary">The debate between LeBron James and Kobe Bryant never really ends. It started on the court and carried over into sneakers too. Both have built Nike signature lines that changed basketball footwear forever.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004935-lebron-james-kobe-bryant-signature-sneaker-lines" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/lebron-james-vs-kobe-bryant-whose-nike-signature-line-is-better/";
-      this.page.identifier = "lebron-james-vs-kobe-bryant-whose-nike-signature-line-is-better";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/lebron-james-vs-kobe-bryant-whose-nike-signature-line-is-better/";
+          this.page.identifier = "lebron-james-vs-kobe-bryant-whose-nike-signature-line-is-better";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

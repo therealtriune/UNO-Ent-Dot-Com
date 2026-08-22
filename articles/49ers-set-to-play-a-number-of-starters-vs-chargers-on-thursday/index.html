@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">49ers set to play &quot;a number&quot; of starters vs. Chargers on Thursday</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/803ab2c12cba70467d572374117f94a4020b962203f751f7f108b8521832e195/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F4b39496f7b3e03bc1ea1b77e9a280214.jpg" alt="49ers set to play &quot;a number&quot; of starters vs. Chargers on Thursday">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/803ab2c12cba70467d572374117f94a4020b962203f751f7f108b8521832e195/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F4b39496f7b3e03bc1ea1b77e9a280214.jpg" alt="49ers set to play &quot;a number&quot; of starters vs. Chargers on Thursday" onload="this.style.animation='none'">
   <p class="article-summary">The 49ers will have a representative first unit on the field when they take on the Chargers on Thursday night. Head coach Kyle Shanahan told reporters on Tuesday that “a number” of starters will play in the contest. &quot;Not all of them, but I expect a number of starters to play, unlike last week,&quot; head coach Kyle Shanahan said, via David Bonilla of 49erswebzone.com.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/49ers-set-play-number-starters-171445887.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/49ers-set-to-play-a-number-of-starters-vs-chargers-on-thursday/";
-      this.page.identifier = "49ers-set-to-play-a-number-of-starters-vs-chargers-on-thursday";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/49ers-set-to-play-a-number-of-starters-vs-chargers-on-thursday/";
+          this.page.identifier = "49ers-set-to-play-a-number-of-starters-vs-chargers-on-thursday";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

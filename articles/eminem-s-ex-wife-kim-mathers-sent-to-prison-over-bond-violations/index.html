@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Eminem’s Ex-Wife Kim Mathers Sent To Prison Over Bond Violations</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Eminem-Ex-Wife-Kim-Mathers-Sent-Prison-Bond-Violations.jpg" alt="Eminem’s Ex-Wife Kim Mathers Sent To Prison Over Bond Violations">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Eminem-Ex-Wife-Kim-Mathers-Sent-Prison-Bond-Violations.jpg" alt="Eminem’s Ex-Wife Kim Mathers Sent To Prison Over Bond Violations" onload="this.style.animation='none'">
   <p class="article-summary">Kim Mathers has had a very rough year, as she was reportedly hospitalized after attempting to take her own life earlier this summer. This followed two drunk driving incidents earlier this year that got the ex-wife of Eminem in legal trouble after another pending DUI case. It’s part of a reportedly wider issue.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1005960-eminem-ex-wife-kim-mathers-sent-prison-bond-violations" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/eminem-s-ex-wife-kim-mathers-sent-to-prison-over-bond-violations/";
-      this.page.identifier = "eminem-s-ex-wife-kim-mathers-sent-to-prison-over-bond-violations";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/eminem-s-ex-wife-kim-mathers-sent-to-prison-over-bond-violations/";
+          this.page.identifier = "eminem-s-ex-wife-kim-mathers-sent-to-prison-over-bond-violations";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

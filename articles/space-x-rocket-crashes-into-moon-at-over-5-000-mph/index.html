@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Space X Rocket Crashes into Moon at Over 5,000 MPH</h1>
-  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/SpaceX-moon-crash-mobileLandscape_460.png" alt="Space X Rocket Crashes into Moon at Over 5,000 MPH">
+  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/SpaceX-moon-crash-mobileLandscape_460.png" alt="Space X Rocket Crashes into Moon at Over 5,000 MPH" onload="this.style.animation='none'">
   <p class="article-summary">Ok, we may have to stop Elon Musk. This man’s company is polluting the moon. Yes, the moon.</p>
   <a class="outbound-cta" href="https://thesource.com/2026/08/06/space-x-rocket-crashes-into-moon-at-over-5000-mph/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=space-x-rocket-crashes-into-moon-at-over-5000-mph" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Source &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/space-x-rocket-crashes-into-moon-at-over-5-000-mph/";
-      this.page.identifier = "space-x-rocket-crashes-into-moon-at-over-5-000-mph";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/space-x-rocket-crashes-into-moon-at-over-5-000-mph/";
+          this.page.identifier = "space-x-rocket-crashes-into-moon-at-over-5-000-mph";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

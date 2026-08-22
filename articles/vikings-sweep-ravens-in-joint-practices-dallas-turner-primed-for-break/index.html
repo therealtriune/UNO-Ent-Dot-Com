@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Vikings Sweep Ravens in Joint Practices: Dallas Turner Primed for Breakout</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/d99420933c30be874b3570d433975fdcce0135922204c12c032753ce96dd2d7a/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F085bddb200f41a366cf23d0b628a99a3.jpg" alt="Vikings Sweep Ravens in Joint Practices: Dallas Turner Primed for Breakout">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/d99420933c30be874b3570d433975fdcce0135922204c12c032753ce96dd2d7a/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F085bddb200f41a366cf23d0b628a99a3.jpg" alt="Vikings Sweep Ravens in Joint Practices: Dallas Turner Primed for Breakout" onload="this.style.animation='none'">
   <p class="article-summary">EAGAN, MINNESOTA - AUGUST 19: Dallas Turner #15 of the Minnesota Vikings and John Simpson #76 of the Baltimore Ravens participate in a drill during a joint practice between the Baltimore Ravens and Minnesota Vikings at Twin Cities Orthopedics Performance Center on August 19, 2026 in Eagan, Minnesota. (Photo by David Berding/Getty Images) | Getty Images The Minnesota Vikings dominated all eight situational drills against the Baltimore Ravens in joint practices, and Dallas Turner is primed for a massive breakout. Vikings training camp, joint practices, preseason, Brian Flores defense, J.J.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/vikings-sweep-ravens-joint-practices-131517685.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/vikings-sweep-ravens-in-joint-practices-dallas-turner-primed-for-break/";
-      this.page.identifier = "vikings-sweep-ravens-in-joint-practices-dallas-turner-primed-for-break";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/vikings-sweep-ravens-in-joint-practices-dallas-turner-primed-for-break/";
+          this.page.identifier = "vikings-sweep-ravens-in-joint-practices-dallas-turner-primed-for-break";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

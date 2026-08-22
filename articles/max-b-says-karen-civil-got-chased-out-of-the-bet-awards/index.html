@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Max B Says Karen Civil Got “Chased Out Of” The BET Awards</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-2287215288-scaled.jpg" alt="Max B Says Karen Civil Got “Chased Out Of” The BET Awards">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/GettyImages-2287215288-scaled.jpg" alt="Max B Says Karen Civil Got “Chased Out Of” The BET Awards" onload="this.style.animation='none'">
   <p class="article-summary">Max B’s been on one hell of a comeback since he came out of prison in November 2025. Part of this is because he’s had a solid team behind him, though his relationship with Karen Civil has seemingly soured recently. During a recent sit-down with Jason Lee, who claimed Karen Civil hacked t he Hollywood Unlocked Instagram page, Max B detailed how their relationship went sideways and their history over the course of two decades.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006504-max-b-karen-civil-bet-awards" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/max-b-says-karen-civil-got-chased-out-of-the-bet-awards/";
-      this.page.identifier = "max-b-says-karen-civil-got-chased-out-of-the-bet-awards";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/max-b-says-karen-civil-got-chased-out-of-the-bet-awards/";
+          this.page.identifier = "max-b-says-karen-civil-got-chased-out-of-the-bet-awards";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

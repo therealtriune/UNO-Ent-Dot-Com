@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Florida Dad Allegedly Killed His Infant Son With a Leaf Blower Because He Thought It Would Be “Fun”</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_2142.jpeg" alt="Florida Dad Allegedly Killed His Infant Son With a Leaf Blower Because He Thought It Would Be “Fun”">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_2142.jpeg" alt="Florida Dad Allegedly Killed His Infant Son With a Leaf Blower Because He Thought It Would Be “Fun”" onload="this.style.animation='none'">
   <p class="article-summary">Socialites, get into this wild story coming straight out of the Sunshine State. Authorities in Marion County have officially leveled murder charges against a Florida father after a horrifying investigation revealed he subjected his infant son to unthinkable abuse, reportedly using a high-powered leaf blower directly on the baby’s face for fun. The tragic and heartbreaking situation first came to light when local deputies rushed to a home following reports of an unresponsive infant.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/florida-dad-allegedly-killed-his-infant-son-with-a-leaf-blower-because-he-thought-it-would-be-fun/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/florida-dad-allegedly-killed-his-infant-son-with-a-leaf-blower-because/";
-      this.page.identifier = "florida-dad-allegedly-killed-his-infant-son-with-a-leaf-blower-because";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/florida-dad-allegedly-killed-his-infant-son-with-a-leaf-blower-because/";
+          this.page.identifier = "florida-dad-allegedly-killed-his-infant-son-with-a-leaf-blower-because";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

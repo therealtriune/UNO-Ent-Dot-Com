@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Kate Moss and Daughter Lila Show Off Summer Bodies on Yacht</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/48/16by9/2026/08/10/484dc8ba33a74813bb1d37d6d1c88b64_xl.jpg" alt="Kate Moss and Daughter Lila Show Off Summer Bodies on Yacht">
+  <img class="article-hero" src="https://imagez.tmz.com/image/48/16by9/2026/08/10/484dc8ba33a74813bb1d37d6d1c88b64_xl.jpg" alt="Kate Moss and Daughter Lila Show Off Summer Bodies on Yacht" onload="this.style.animation='none'">
   <p class="article-summary">It&#x27;s clear Kate Moss&#x27; daughter takes after her model mama...because they&#x27;re looking strikingly similar as they soak up the sun in their sexy swimwear. Kate and Lila Grace Moss were snapped during a yacht trip in Formentera -- an island in Spain…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/10/kate-moss-and-daughter-lila-in-bathing-suits/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/kate-moss-and-daughter-lila-show-off-summer-bodies-on-yacht/";
-      this.page.identifier = "kate-moss-and-daughter-lila-show-off-summer-bodies-on-yacht";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/kate-moss-and-daughter-lila-show-off-summer-bodies-on-yacht/";
+          this.page.identifier = "kate-moss-and-daughter-lila-show-off-summer-bodies-on-yacht";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Eddie Hearn: Ian Machado Garry one win from being ‘biggest name in UFC’</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/8e77a50763861ca99219768fe21d566245153e17e04685c2ae6714099e52a402/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_independent_us_sports_articles_270%2F5eebee26fb8124c4092a1001c023ca8f" alt="Eddie Hearn: Ian Machado Garry one win from being ‘biggest name in UFC’">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/8e77a50763861ca99219768fe21d566245153e17e04685c2ae6714099e52a402/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_independent_us_sports_articles_270%2F5eebee26fb8124c4092a1001c023ca8f" alt="Eddie Hearn: Ian Machado Garry one win from being ‘biggest name in UFC’" onload="this.style.animation='none'">
   <p class="article-summary">Eddie Hearn believes that Ian Machado Garry is one win from being “arguably the biggest name in the UFC ”. On 15 August, Machado Garry will challenge Islam Makhachev for the welterweight title, as the pair headline UFC 330 in Philadelphia. The bout represents a stern test for the Irish challenger, 28, as he takes on the UFC’s pound-for-pound No 1 fighter.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/eddie-hearn-ian-machado-garry-092434744.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/eddie-hearn-ian-machado-garry-one-win-from-being-biggest-name-in-ufc/";
-      this.page.identifier = "eddie-hearn-ian-machado-garry-one-win-from-being-biggest-name-in-ufc";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/eddie-hearn-ian-machado-garry-one-win-from-being-biggest-name-in-ufc/";
+          this.page.identifier = "eddie-hearn-ian-machado-garry-one-win-from-being-biggest-name-in-ufc";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

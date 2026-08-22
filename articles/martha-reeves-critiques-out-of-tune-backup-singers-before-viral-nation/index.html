@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Martha Reeves Critiques ‘Out Of Tune’ Backup Singers Before Viral National Anthem Performance, Later Blames Tech Issues And Wet And Windy Weather On Rocky Rendition</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/Martha-Reeves-Critiques-‘Out-Of-Tune-Backup-Singers-Before-Viral-National-Anthem-Performance-Later-Blames-Tech-Issues-And-Wet-And-Windy-Weather-On-Rocky-Rendition.jpg" alt="Martha Reeves Critiques ‘Out Of Tune’ Backup Singers Before Viral National Anthem Performance, Later Blames Tech Issues And Wet And Windy Weather On Rocky Rendition">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/Martha-Reeves-Critiques-‘Out-Of-Tune-Backup-Singers-Before-Viral-National-Anthem-Performance-Later-Blames-Tech-Issues-And-Wet-And-Windy-Weather-On-Rocky-Rendition.jpg" alt="Martha Reeves Critiques ‘Out Of Tune’ Backup Singers Before Viral National Anthem Performance, Later Blames Tech Issues And Wet And Windy Weather On Rocky Rendition" onload="this.style.animation='none'">
   <p class="article-summary">After Motown legend Martha Reeves, 85, went viral for her recent National Anthem performance, video of her critiquing her “out of tune” backup singers has now surfaced. RELATED: Singer Loomis Issues An Apology After Butchering National Anthem And Being Compared To Viral Fergie Rendition The R&amp;B and Pop singer sang the “Star-Spangled Banner” at the inaugural Women’s Professional Baseball League (WPBL) game in Springfield, Illinois on Saturday (August 1). The event not only made history as WPBL’s first game, but made its rounds online over the Motown icon’s performance with her two female backup singers.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/martha-reeves-critiques-out-of-tune-backup-singers-before-viral-national-anthem-performance-later-blames-tech-issues-and-wet-and-windy-weather-on-rocky-rendition/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/martha-reeves-critiques-out-of-tune-backup-singers-before-viral-nation/";
-      this.page.identifier = "martha-reeves-critiques-out-of-tune-backup-singers-before-viral-nation";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/martha-reeves-critiques-out-of-tune-backup-singers-before-viral-nation/";
+          this.page.identifier = "martha-reeves-critiques-out-of-tune-backup-singers-before-viral-nation";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

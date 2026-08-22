@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Kentucky Doctor Accidentally Leaves Granddaughter in Car After Forgetting Daycare Drop-Off — Infant Dies Hours Later In Hot Car</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_3950.jpeg" alt="Kentucky Doctor Accidentally Leaves Granddaughter in Car After Forgetting Daycare Drop-Off — Infant Dies Hours Later In Hot Car">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_3950.jpeg" alt="Kentucky Doctor Accidentally Leaves Granddaughter in Car After Forgetting Daycare Drop-Off — Infant Dies Hours Later In Hot Car" onload="this.style.animation='none'">
   <p class="article-summary">A family in Madisonville, Kentucky is grieving after a routine morning turned into every family’s worst nightmare. RELATED: 11-Month-Old Baby Dies Alongside Family Dog After Being Left In A Hot Car For Hours A local physician, identified by police as Dr. Stacey Fazenbaker, picked up her 10-month-old granddaughter as she normally would, planning to drop the baby at daycare before heading into her shift at Owensboro Health Multi-Care clinic.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/kentucky-doctor-accidentally-leaves-granddaughter-in-car-after-forgetting-daycare-drop-off-infant-dies-hours-later-in-hot-car/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/kentucky-doctor-accidentally-leaves-granddaughter-in-car-after-forgett/";
-      this.page.identifier = "kentucky-doctor-accidentally-leaves-granddaughter-in-car-after-forgett";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/kentucky-doctor-accidentally-leaves-granddaughter-in-car-after-forgett/";
+          this.page.identifier = "kentucky-doctor-accidentally-leaves-granddaughter-in-car-after-forgett";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

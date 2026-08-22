@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">AOC Breakup Sends Thirsty Men &amp; Women Racing To Shoot Their Shot</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2023/06/instar52423588-scaled.jpg" alt="AOC Breakup Sends Thirsty Men &amp; Women Racing To Shoot Their Shot">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2023/06/instar52423588-scaled.jpg" alt="AOC Breakup Sends Thirsty Men &amp; Women Racing To Shoot Their Shot" onload="this.style.animation='none'">
   <p class="article-summary">Alexandria Ocasio-Cortez is officially single, and thirsty hopefuls are treating her canceled engagement like an open casting call. TMZ confirmed Tuesday that AOC and Riley Roberts ended their engagement after Puck correspondent Leigh Ann Caldwell first reported the split. Caldwell said the couple quietly separated roughly two years ago, although neither AOC nor Roberts has publicly explained when their relationship ended.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/aoc-breakup-sends-thirsty-men-and-women-racing-to-shoot-their-shot/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/aoc-breakup-sends-thirsty-men-women-racing-to-shoot-their-shot/";
-      this.page.identifier = "aoc-breakup-sends-thirsty-men-women-racing-to-shoot-their-shot";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/aoc-breakup-sends-thirsty-men-women-racing-to-shoot-their-shot/";
+          this.page.identifier = "aoc-breakup-sends-thirsty-men-women-racing-to-shoot-their-shot";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

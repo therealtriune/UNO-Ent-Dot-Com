@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Sherdog Prospect Watch: PFL’s Eduardo Neves</h1>
-  <img class="article-hero" src="https://img.youtube.com/vi/i6NWV59AQcM/hqdefault.jpg" alt="Sherdog Prospect Watch: PFL’s Eduardo Neves">
+  <img class="article-hero" src="https://img.youtube.com/vi/i6NWV59AQcM/hqdefault.jpg" alt="Sherdog Prospect Watch: PFL’s Eduardo Neves" onload="this.style.animation='none'">
   <p class="article-summary">Eduardo Neves enters PFL Charlotte after Dana White&#x27;s Contender Series appearances and a difficult two-year layoff Eduardo Neves has an unusual nickname: Bbzao. But it makes perfect sense if you learn about its origin. When joining his first mixed martial arts class around the age of 14 in his native Brazil with the goal of losing weight, Eduardo already towered over his adult teammates.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/sherdog-prospect-watch-pfl-eduardo-052110259.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/sherdog-prospect-watch-pfl-s-eduardo-neves/";
-      this.page.identifier = "sherdog-prospect-watch-pfl-s-eduardo-neves";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/sherdog-prospect-watch-pfl-s-eduardo-neves/";
+          this.page.identifier = "sherdog-prospect-watch-pfl-s-eduardo-neves";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

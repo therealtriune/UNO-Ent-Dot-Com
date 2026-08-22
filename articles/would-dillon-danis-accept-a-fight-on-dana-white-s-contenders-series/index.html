@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Would Dillon Danis accept a fight on Dana White&#x27;s Contenders Series?</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/5549f5851b7ad875bf07c05feff57bc25efc8207312e732d8e1c818f882df8b1/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fdddcs_7385.png" alt="Would Dillon Danis accept a fight on Dana White&#x27;s Contenders Series?">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/5549f5851b7ad875bf07c05feff57bc25efc8207312e732d8e1c818f882df8b1/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fdddcs_7385.png" alt="Would Dillon Danis accept a fight on Dana White&#x27;s Contenders Series?" onload="this.style.animation='none'">
   <p class="article-summary">Mike Perry and Dillon Danis go face-to-face, previewing their Duel Arena fight and talking trash. They argue about the grappling disparity, knockout power, thei</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/videos/dillon-danis-accept-fight-dana-223545429.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports Boxing &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/would-dillon-danis-accept-a-fight-on-dana-white-s-contenders-series/";
-      this.page.identifier = "would-dillon-danis-accept-a-fight-on-dana-white-s-contenders-series";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/would-dillon-danis-accept-a-fight-on-dana-white-s-contenders-series/";
+          this.page.identifier = "would-dillon-danis-accept-a-fight-on-dana-white-s-contenders-series";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

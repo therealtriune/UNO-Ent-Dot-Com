@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">&#x27;Wild N&#x27; Out&#x27; Moving Away From In-Studio Format, Will Film Live Tour</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/00/16by9/2026/08/20/00b995e4d925434faefad82b089bf4d7_xl.jpg" alt="&#x27;Wild N&#x27; Out&#x27; Moving Away From In-Studio Format, Will Film Live Tour">
+  <img class="article-hero" src="https://imagez.tmz.com/image/00/16by9/2026/08/20/00b995e4d925434faefad82b089bf4d7_xl.jpg" alt="&#x27;Wild N&#x27; Out&#x27; Moving Away From In-Studio Format, Will Film Live Tour" onload="this.style.animation='none'">
   <p class="article-summary">Nick Cannon will be taking &quot;Wild N&#x27; Out&quot; and its hilarious jokes on the road full-time...because we&#x27;ve learned they&#x27;re leaving their traditional format behind to focus on the live tour. Rip Michaels -- one of the executive producers of…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/20/wild-n-out-changing-formats/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/wild-n-out-moving-away-from-in-studio-format-will-film-live-tour/";
-      this.page.identifier = "wild-n-out-moving-away-from-in-studio-format-will-film-live-tour";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/wild-n-out-moving-away-from-in-studio-format-will-film-live-tour/";
+          this.page.identifier = "wild-n-out-moving-away-from-in-studio-format-will-film-live-tour";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

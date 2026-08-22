@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">6 hours ago</div>
   <h1 class="article-title">50 Cent &amp; Ebro Clash Over The Decline Of New York Hip-Hop</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/50-Cent-Ebro-Clash-Decline-New-York-Hip-Hop-scaled-e1787407935535.jpg" alt="50 Cent &amp; Ebro Clash Over The Decline Of New York Hip-Hop">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/50-Cent-Ebro-Clash-Decline-New-York-Hip-Hop-scaled-e1787407935535.jpg" alt="50 Cent &amp; Ebro Clash Over The Decline Of New York Hip-Hop" onload="this.style.animation='none'">
   <p class="article-summary">50 Cent was the most recent guest on Apple Music’s Rap Life Review, during which hosts Ebro Darden and Nadeska Alexis spoke to him, Joe, Donnell Jones, and many others about the recent Verzuz matchup between those artists. But the conversation held more contentious moments. At one point, Darden and Fif got into an argument over who is more responsible for the decline of New York hip-hop.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006787-50-cent-ebro-clash-decline-new-york-hip-hop" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/50-cent-ebro-clash-over-the-decline-of-new-york-hip-hop/";
-      this.page.identifier = "50-cent-ebro-clash-over-the-decline-of-new-york-hip-hop";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/50-cent-ebro-clash-over-the-decline-of-new-york-hip-hop/";
+          this.page.identifier = "50-cent-ebro-clash-over-the-decline-of-new-york-hip-hop";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

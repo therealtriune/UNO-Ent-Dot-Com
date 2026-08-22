@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Mike Tomlin weighs in on Mike McCarthy, Steelers during his NBC debut</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/1a29a3f505a206972ac557d85cbf88a30e7ed8c34c5eba675e5f6e3c74a3678e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F64c1f3fd85226452ba3759d54ccf1955" alt="Mike Tomlin weighs in on Mike McCarthy, Steelers during his NBC debut">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/1a29a3f505a206972ac557d85cbf88a30e7ed8c34c5eba675e5f6e3c74a3678e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F64c1f3fd85226452ba3759d54ccf1955" alt="Mike Tomlin weighs in on Mike McCarthy, Steelers during his NBC debut" onload="this.style.animation='none'">
   <p class="article-summary">Mike McCarthy earned a vote of confidence from his predecessor, Mike Tomlin, as he prepares for his first season with the Pittsburgh Steelers. In his debut in his new role on NBC&#x27;s &quot;Football Night In America,&quot; Tomlin was asked about his expectations for the Steelers during McCarthy&#x27;s first season. &quot;I know a little bit about the Steelers situation to say the least,&quot; Tomlin said.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/mike-tomlin-weighs-mike-mccarthy-001856638.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/mike-tomlin-weighs-in-on-mike-mccarthy-steelers-during-his-nbc-debut/";
-      this.page.identifier = "mike-tomlin-weighs-in-on-mike-mccarthy-steelers-during-his-nbc-debut";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/mike-tomlin-weighs-in-on-mike-mccarthy-steelers-during-his-nbc-debut/";
+          this.page.identifier = "mike-tomlin-weighs-in-on-mike-mccarthy-steelers-during-his-nbc-debut";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

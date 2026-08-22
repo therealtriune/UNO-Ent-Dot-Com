@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">6 New Nike Ja 4 Colorways Get Official Release Dates</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-22T041128Z_830170447_MT1USATODAY28563032_RTRMADP_3_NBA-MEMPHIS-GRIZZLIES-AT-CHARLOTTE-HORNETS-scaled.jpg" alt="6 New Nike Ja 4 Colorways Get Official Release Dates">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-22T041128Z_830170447_MT1USATODAY28563032_RTRMADP_3_NBA-MEMPHIS-GRIZZLIES-AT-CHARLOTTE-HORNETS-scaled.jpg" alt="6 New Nike Ja 4 Colorways Get Official Release Dates" onload="this.style.animation='none'">
   <p class="article-summary">Nike just confirmed the release schedule for six upcoming Nike Ja 4 colorways, and they’re spacing things out across the rest of 2026. Retail price is set at $130 across the board, available in both adult and grade school sizing. Things kick off with “Phantom” on October 1st, followed shortly by “Radar” on October 9th.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006361-ja-morant-six-upcoming-nike-ja-4s-sneaker-news" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/6-new-nike-ja-4-colorways-get-official-release-dates/";
-      this.page.identifier = "6-new-nike-ja-4-colorways-get-official-release-dates";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/6-new-nike-ja-4-colorways-get-official-release-dates/";
+          this.page.identifier = "6-new-nike-ja-4-colorways-get-official-release-dates";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

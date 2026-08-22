@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">6 days ago</div>
   <h1 class="article-title">Charlamagne Tha God Speaks On “How White Drake Is” For Barking At Pinkchyu</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Charlamagne-Tha-God-Drake-Barking-Pinkchyu-Being-White.jpg" alt="Charlamagne Tha God Speaks On “How White Drake Is” For Barking At Pinkchyu">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Charlamagne-Tha-God-Drake-Barking-Pinkchyu-Being-White.jpg" alt="Charlamagne Tha God Speaks On “How White Drake Is” For Barking At Pinkchyu" onload="this.style.animation='none'">
   <p class="article-summary">Charlamagne Tha God has never been out of ideas when it comes to criticisms of Drake, although he also gives him props whenever he feels he deserves it. While he found the backlash to the 6ix God’s recent livestream to be “stupid,” he did partially agree with these fans by criticizing his choice to choose goth Internet personality Pinkchyu as his winner for his 20v1 speed dating segment. Charlamagne made these remarks during his latest Brilliant Idiots episode (specifically at the 10-minute mark of the YouTube video below).</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1006106-charlamagne-tha-god-drake-barking-pinkchyu-being-white" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/charlamagne-tha-god-speaks-on-how-white-drake-is-for-barking-at-pinkch/";
-      this.page.identifier = "charlamagne-tha-god-speaks-on-how-white-drake-is-for-barking-at-pinkch";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/charlamagne-tha-god-speaks-on-how-white-drake-is-for-barking-at-pinkch/";
+          this.page.identifier = "charlamagne-tha-god-speaks-on-how-white-drake-is-for-barking-at-pinkch";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

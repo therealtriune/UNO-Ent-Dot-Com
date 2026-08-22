@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Tasia Fortune’s Mom Doesn’t Believe She Died By Suicide After Body Found Hanging From Miss. Tree As Person Of Interest Reportedly Interviewed</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Tasia-Fortune-Mom-Doesnt-Believe-She-Died-By-Suicide-After-Body-Found-Hanging-From-Miss.-Tree-As-Person-Of-Interest-Reportedly-Interviewed.jpg" alt="Tasia Fortune’s Mom Doesn’t Believe She Died By Suicide After Body Found Hanging From Miss. Tree As Person Of Interest Reportedly Interviewed">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/Tasia-Fortune-Mom-Doesnt-Believe-She-Died-By-Suicide-After-Body-Found-Hanging-From-Miss.-Tree-As-Person-Of-Interest-Reportedly-Interviewed.jpg" alt="Tasia Fortune’s Mom Doesn’t Believe She Died By Suicide After Body Found Hanging From Miss. Tree As Person Of Interest Reportedly Interviewed" onload="this.style.animation='none'">
   <p class="article-summary">Tasia Fortune ‘s mother doesn’t believe that her daughter died by suicide. The 29-year-old was found hanging from a tree in Jackson, Mississippi, earlier this month. RELATED: Illinois Man Third Arrested For Alleged Threats As Mississippi Official Says Circulating Nolan Wells Toxicology Report Is “Fraudulent” Tasia Fortune’s Mother Rejects Her Theory Her Daughter Hung Herself The Shade Room previously reported that Tasia Fortune’s body was found on a vacant property on the 500 block of Road of Remembrance in Jackson, Mississippi.</p>
   <a class="outbound-cta" href="https://theshaderoom.com/tasia-fortune-mom-doesnt-believe-died-hanging-tree-person-of-interest-interviewed/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/tasia-fortune-s-mom-doesn-t-believe-she-died-by-suicide-after-body-fou/";
-      this.page.identifier = "tasia-fortune-s-mom-doesn-t-believe-she-died-by-suicide-after-body-fou";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/tasia-fortune-s-mom-doesn-t-believe-she-died-by-suicide-after-body-fou/";
+          this.page.identifier = "tasia-fortune-s-mom-doesn-t-believe-she-died-by-suicide-after-body-fou";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

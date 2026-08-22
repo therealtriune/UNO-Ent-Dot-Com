@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Don Toliver’s Houston Show Ends Over Lone Gunman</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/01/don-toliver.jpg" alt="Don Toliver’s Houston Show Ends Over Lone Gunman">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/01/don-toliver.jpg" alt="Don Toliver’s Houston Show Ends Over Lone Gunman" onload="this.style.animation='none'">
   <p class="article-summary">Don Toliver left thousands of Houston fans hanging Tuesday night when his sold-out Toyota Center show cut off mid-performance after a guy smuggled a gun into the arena. The Houston rapper was deep into his Octane Tour set around 10:40 P.M. when he exited the stage after performing “Kryptonite” and “Too Many Nights,” and what looked like a standard break turned into a complete shutdown.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/don-tolivers-houston-show-ends-over-lone-gunman/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/don-toliver-s-houston-show-ends-over-lone-gunman/";
-      this.page.identifier = "don-toliver-s-houston-show-ends-over-lone-gunman";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/don-toliver-s-houston-show-ends-over-lone-gunman/";
+          this.page.identifier = "don-toliver-s-houston-show-ends-over-lone-gunman";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

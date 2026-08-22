@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Texans WR Jayden Higgins tears ACL in training camp, will miss 2026 NFL season</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/6812689b976ba1563de56c41623de5889ed7b85a3c621e0776605eecde6247ab/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F601a43c7-39c5-4a85-a8df-6eaec2303863" alt="Texans WR Jayden Higgins tears ACL in training camp, will miss 2026 NFL season">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/6812689b976ba1563de56c41623de5889ed7b85a3c621e0776605eecde6247ab/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F601a43c7-39c5-4a85-a8df-6eaec2303863" alt="Texans WR Jayden Higgins tears ACL in training camp, will miss 2026 NFL season" onload="this.style.animation='none'">
   <p class="article-summary">The Houston Texans will be down a key wide receiver this season. The Texans’ Jayden Higgins went down with a torn ACL during a joint practice with the Las Vegas Raiders on Tuesday, according to the NFL Network&#x27;s Ian Rapoport. His season is now over.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/nfl/article/texans-wr-jayden-higgins-tears-acl-in-training-camp-will-miss-2026-nfl-season-025228261.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/texans-wr-jayden-higgins-tears-acl-in-training-camp-will-miss-2026-nfl/";
-      this.page.identifier = "texans-wr-jayden-higgins-tears-acl-in-training-camp-will-miss-2026-nfl";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/texans-wr-jayden-higgins-tears-acl-in-training-camp-will-miss-2026-nfl/";
+          this.page.identifier = "texans-wr-jayden-higgins-tears-acl-in-training-camp-will-miss-2026-nfl";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

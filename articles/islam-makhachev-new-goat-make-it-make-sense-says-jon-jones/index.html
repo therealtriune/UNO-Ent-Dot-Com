@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Islam Makhachev new GOAT? &#x27;Make it make sense,&#x27; says Jon Jones</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/37248625183bdb89ba5b0f953e821f0f659a8c49a10d6556f8905b59f1b03efb/lightyear_networkapi/resizefill_w1000_h667%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2F9e9e5b2c5020e486be35e9f7100ad525.jpg" alt="Islam Makhachev new GOAT? &#x27;Make it make sense,&#x27; says Jon Jones">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/37248625183bdb89ba5b0f953e821f0f659a8c49a10d6556f8905b59f1b03efb/lightyear_networkapi/resizefill_w1000_h667%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmma_junkie_usa_today_articles_344%2F9e9e5b2c5020e486be35e9f7100ad525.jpg" alt="Islam Makhachev new GOAT? &#x27;Make it make sense,&#x27; says Jon Jones" onload="this.style.animation='none'">
   <p class="article-summary">Jon Jones takes umbrage with Islam Makhachev being considered the potential greatest of all time. Makhachev (29-1 MMA, 18-1 UFC) entered the GOAT discussion after defending his welterweight title with a win over Ian Machado Garry at UFC 330 this past Saturday. Makhachev also previously defended his UFC lightweight title a division record four times.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/islam-makhachev-goat-sense-says-170043247.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/islam-makhachev-new-goat-make-it-make-sense-says-jon-jones/";
-      this.page.identifier = "islam-makhachev-new-goat-make-it-make-sense-says-jon-jones";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/islam-makhachev-new-goat-make-it-make-sense-says-jon-jones/";
+          this.page.identifier = "islam-makhachev-new-goat-make-it-make-sense-says-jon-jones";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

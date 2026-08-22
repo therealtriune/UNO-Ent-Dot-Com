@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Could CB Joshua Williams play a bigger role than Titans fans realize?</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/8e3811acc431930e8248269d5a53a5de725ce3a545c9ceb391aab35fd312fe54/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F9fae2efd137bae25c428a5a98e6bf2a4.jpg" alt="Could CB Joshua Williams play a bigger role than Titans fans realize?">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/8e3811acc431930e8248269d5a53a5de725ce3a545c9ceb391aab35fd312fe54/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F9fae2efd137bae25c428a5a98e6bf2a4.jpg" alt="Could CB Joshua Williams play a bigger role than Titans fans realize?" onload="this.style.animation='none'">
   <p class="article-summary">Feb 7, 2024; Las Vegas, NV, USA; Kansas City Chiefs cornerback Joshua Williams (2) during a press conference before Super Bowl LVIII at Westin Lake Las Vegas Resort and Spa. Mandatory Credit: Kirby Lee-USA TODAY Sports | USA TODAY Sports via Reuters Con Much is being made about the Tennessee Titans’ supposed ongoing struggles in the secondary. It was undeniably disappointing to watch San Francisco 49ers backup quarterback Kurtis Rourke complete 12-of-14 passes against the Titans’ starting secondary in the first preseason game.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/could-cb-joshua-williams-play-114500652.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/could-cb-joshua-williams-play-a-bigger-role-than-titans-fans-realize/";
-      this.page.identifier = "could-cb-joshua-williams-play-a-bigger-role-than-titans-fans-realize";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/could-cb-joshua-williams-play-a-bigger-role-than-titans-fans-realize/";
+          this.page.identifier = "could-cb-joshua-williams-play-a-bigger-role-than-titans-fans-realize";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

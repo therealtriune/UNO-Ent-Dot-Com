@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 days ago</div>
   <h1 class="article-title">Cris Cyborg opens up about what motivates her ahead of final MMA bout</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/ed157383ae974daed74bf70b7a642282f03137b124566daf88794a04eff8b82d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsherdog_sports_videos_459%2F53849d08093b84efd17a6245fd9670e0.png" alt="Cris Cyborg opens up about what motivates her ahead of final MMA bout">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/ed157383ae974daed74bf70b7a642282f03137b124566daf88794a04eff8b82d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsherdog_sports_videos_459%2F53849d08093b84efd17a6245fd9670e0.png" alt="Cris Cyborg opens up about what motivates her ahead of final MMA bout" onload="this.style.animation='none'">
   <p class="article-summary">Cris Cyborg outlines what drives her career as she prepares to defend the Professional Fighters League women&#x27;s featherweight title on Aug. 22, highlighting her</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/videos/cris-cyborg-opens-motivates-her-133336898.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/cris-cyborg-opens-up-about-what-motivates-her-ahead-of-final-mma-bout/";
-      this.page.identifier = "cris-cyborg-opens-up-about-what-motivates-her-ahead-of-final-mma-bout";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/cris-cyborg-opens-up-about-what-motivates-her-ahead-of-final-mma-bout/";
+          this.page.identifier = "cris-cyborg-opens-up-about-what-motivates-her-ahead-of-final-mma-bout";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

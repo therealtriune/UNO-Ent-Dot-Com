@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Jake Paul Cops A New Custom VENUUM G63 Mastodon V3</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2023-12-16T044605Z_1566347063_MT1USATODAY22115287_RTRMADP_3_BOXING-JAKE-PAUL-VS-ANDRE-AUGUST-scaled.jpg" alt="Jake Paul Cops A New Custom VENUUM G63 Mastodon V3">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2023-12-16T044605Z_1566347063_MT1USATODAY22115287_RTRMADP_3_BOXING-JAKE-PAUL-VS-ANDRE-AUGUST-scaled.jpg" alt="Jake Paul Cops A New Custom VENUUM G63 Mastodon V3" onload="this.style.animation='none'">
   <p class="article-summary">Jake Paul is celebrating in style. Fresh off officially merging his MVP promotion with the PFL, Paul stepped out with a brand new whip. The vehicle is reportedly worth well over $500,000.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004311-jake-paul-venuum-g63-mastodon-v3-sports-news" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/jake-paul-cops-a-new-custom-venuum-g63-mastodon-v3/";
-      this.page.identifier = "jake-paul-cops-a-new-custom-venuum-g63-mastodon-v3";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/jake-paul-cops-a-new-custom-venuum-g63-mastodon-v3/";
+          this.page.identifier = "jake-paul-cops-a-new-custom-venuum-g63-mastodon-v3";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

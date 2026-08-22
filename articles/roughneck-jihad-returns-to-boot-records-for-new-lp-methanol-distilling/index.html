@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Roughneck Jihad Returns to Boot Records for New LP “Methanol” Distilling His Chemistry with Senz Beats (Album Review)</h1>
-  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/08/photo-output-1-e1785883949905.jpeg" alt="Roughneck Jihad Returns to Boot Records for New LP “Methanol” Distilling His Chemistry with Senz Beats (Album Review)">
+  <img class="article-hero" src="https://undergroundhiphopblog.com/wp-content/uploads/2026/08/photo-output-1-e1785883949905.jpeg" alt="Roughneck Jihad Returns to Boot Records for New LP “Methanol” Distilling His Chemistry with Senz Beats (Album Review)" onload="this.style.animation='none'">
   <p class="article-summary">This is the 11th studio LP from the South Bay Area, Northern California emcee Roughneck Jihad. A member of the trio 3rd Sight, he would go on to drop his last 10 full-lengths along with 10 extended plays &amp; a mixtape in over a decade. The most notable being his 2nd EP The Little Assassination Handbook produced by Brussels, Belgium producer Senz Beats under Boot Records.</p>
   <a class="outbound-cta" href="https://undergroundhiphopblog.com/albums/roughneck-jihad-returns-to-boot-records-for-new-lp-methanol-distilling-his-chemistry-with-senz-beats-album-review/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Underground Hip Hop Blog &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/roughneck-jihad-returns-to-boot-records-for-new-lp-methanol-distilling/";
-      this.page.identifier = "roughneck-jihad-returns-to-boot-records-for-new-lp-methanol-distilling";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/roughneck-jihad-returns-to-boot-records-for-new-lp-methanol-distilling/";
+          this.page.identifier = "roughneck-jihad-returns-to-boot-records-for-new-lp-methanol-distilling";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

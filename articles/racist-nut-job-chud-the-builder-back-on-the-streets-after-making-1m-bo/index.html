@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Racist Nut Job Chud The Builder Back On The Streets After Making $1M Bond</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/03/Crime-scene.jpg" alt="Racist Nut Job Chud The Builder Back On The Streets After Making $1M Bond">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2024/03/Crime-scene.jpg" alt="Racist Nut Job Chud The Builder Back On The Streets After Making $1M Bond" onload="this.style.animation='none'">
   <p class="article-summary">Chud The Builder walked out of Montgomery County Jail Monday morning after two months locked up, his $1 million bond finally posted through ten separate bail services. The livestreamer known for his racist tirades against Black people in Nashville streets is back on the outside, and the legal nightmare he’s facing is far from over. Dalton Eatherly, the real name behind the online persona, put up 10% of his bond with each of the 10 bonding companies, covering $100,000 apiece.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/racist-nut-job-chud-the-builder-back-on-the-streets-after-making-1m-bond/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/racist-nut-job-chud-the-builder-back-on-the-streets-after-making-1m-bo/";
-      this.page.identifier = "racist-nut-job-chud-the-builder-back-on-the-streets-after-making-1m-bo";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/racist-nut-job-chud-the-builder-back-on-the-streets-after-making-1m-bo/";
+          this.page.identifier = "racist-nut-job-chud-the-builder-back-on-the-streets-after-making-1m-bo";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">49ers All-Pro Nick Bosa dealing with tendinitis in surgically repaired right knee; Christian McCaffrey misses another practice</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/c2500165348ab7f471522cea3dae0ae56a45254e0a7b20b2c30d152471f52f3c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F48a09806-ec91-4350-9954-1dfdfcec91c0" alt="49ers All-Pro Nick Bosa dealing with tendinitis in surgically repaired right knee; Christian McCaffrey misses another practice">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/c2500165348ab7f471522cea3dae0ae56a45254e0a7b20b2c30d152471f52f3c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F48a09806-ec91-4350-9954-1dfdfcec91c0" alt="49ers All-Pro Nick Bosa dealing with tendinitis in surgically repaired right knee; Christian McCaffrey misses another practice" onload="this.style.animation='none'">
   <p class="article-summary">All-Pro San Francisco 49ers edge rusher Nick Bosa is dealing with tendinitis in his surgically repaired right knee and remains absent from practice at training camp. Head coach Kyle Shanahan discussed Bosa’s condition with reporters on Tuesday and downplayed concern that it could linger. He described the tendinitis as “normal” for Bosa coming off surgery to repair an ACL tear and described him as “week-to-week.” “Just soreness, tendinitis,” Shanahan said.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/nfl/article/49ers-all-pro-nick-bosa-dealing-with-tendinitis-in-surgically-repaired-right-knee-christian-mccaffrey-misses-another-practice-210240014.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/49ers-all-pro-nick-bosa-dealing-with-tendinitis-in-surgically-repaired/";
-      this.page.identifier = "49ers-all-pro-nick-bosa-dealing-with-tendinitis-in-surgically-repaired";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/49ers-all-pro-nick-bosa-dealing-with-tendinitis-in-surgically-repaired/";
+          this.page.identifier = "49ers-all-pro-nick-bosa-dealing-with-tendinitis-in-surgically-repaired";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

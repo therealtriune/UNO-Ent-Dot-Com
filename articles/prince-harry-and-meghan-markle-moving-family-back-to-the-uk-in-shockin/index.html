@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Prince Harry and Meghan Markle Moving Family Back to the UK In Shocking Twist</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/9c/16by9/2026/08/19/9c74359667bd48b4886e1b61b1ac28d8_xl.jpg" alt="Prince Harry and Meghan Markle Moving Family Back to the UK In Shocking Twist">
+  <img class="article-hero" src="https://imagez.tmz.com/image/9c/16by9/2026/08/19/9c74359667bd48b4886e1b61b1ac28d8_xl.jpg" alt="Prince Harry and Meghan Markle Moving Family Back to the UK In Shocking Twist" onload="this.style.animation='none'">
   <p class="article-summary">Prince Harry and Meghan Markle are booking it out of the U.S. and moving back to Britain...a pretty shocking turn of events considering it&#x27;s only been six years since they shunned their royal duties. Perhaps the decision has been in the works for…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/19/prince-harry-meghan-markle-moving-family-back-to-united-kingdom/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/prince-harry-and-meghan-markle-moving-family-back-to-the-uk-in-shockin/";
-      this.page.identifier = "prince-harry-and-meghan-markle-moving-family-back-to-the-uk-in-shockin";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/prince-harry-and-meghan-markle-moving-family-back-to-the-uk-in-shockin/";
+          this.page.identifier = "prince-harry-and-meghan-markle-moving-family-back-to-the-uk-in-shockin";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

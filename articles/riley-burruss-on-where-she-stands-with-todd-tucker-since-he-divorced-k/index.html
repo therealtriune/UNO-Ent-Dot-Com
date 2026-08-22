@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Riley Burruss on Where She Stands with Todd Tucker Since He Divorced Kandi</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/4c/16by9/2026/08/10/4cbd89b4c80046acb9ad45a3c5fd8601_xl.png" alt="Riley Burruss on Where She Stands with Todd Tucker Since He Divorced Kandi">
+  <img class="article-hero" src="https://imagez.tmz.com/image/4c/16by9/2026/08/10/4cbd89b4c80046acb9ad45a3c5fd8601_xl.png" alt="Riley Burruss on Where She Stands with Todd Tucker Since He Divorced Kandi" onload="this.style.animation='none'">
   <p class="article-summary">Riley Burruss says it&#x27;s been a bit of an adjustment now that her mom&#x27;s split from Todd Tucker is official...but she says they&#x27;re still cool. We caught up with Kandi Burruss&#x27; daughter in New York City Monday, where she tells us despite her mom and…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/10/riley-burruss-relationship-with-todd-tucker-after-divorce-from-kandi/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/riley-burruss-on-where-she-stands-with-todd-tucker-since-he-divorced-k/";
-      this.page.identifier = "riley-burruss-on-where-she-stands-with-todd-tucker-since-he-divorced-k";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/riley-burruss-on-where-she-stands-with-todd-tucker-since-he-divorced-k/";
+          this.page.identifier = "riley-burruss-on-where-she-stands-with-todd-tucker-since-he-divorced-k";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

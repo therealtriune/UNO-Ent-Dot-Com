@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Mitchell Trubisky, Tony Pollard return to Titans practice on Wednesday</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/4ea90e126fc41d2800a332ca1250d470428894a6e96498b0f8369623049e7e05/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F6e1ccbd7dd214d52977a7caa554d0756.jpg" alt="Mitchell Trubisky, Tony Pollard return to Titans practice on Wednesday">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/4ea90e126fc41d2800a332ca1250d470428894a6e96498b0f8369623049e7e05/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F6e1ccbd7dd214d52977a7caa554d0756.jpg" alt="Mitchell Trubisky, Tony Pollard return to Titans practice on Wednesday" onload="this.style.animation='none'">
   <p class="article-summary">There is some positive news on the injury front for the Titans. Both quarterback Mitchell Trubisky and running back Tony Pollard returned to practice on Wednesday, according to multiple reporters on the scene. Trubisky exited practice early on Monday to have a biceps injury evaluated.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/mitchell-trubisky-tony-pollard-return-160901220.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/mitchell-trubisky-tony-pollard-return-to-titans-practice-on-wednesday/";
-      this.page.identifier = "mitchell-trubisky-tony-pollard-return-to-titans-practice-on-wednesday";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/mitchell-trubisky-tony-pollard-return-to-titans-practice-on-wednesday/";
+          this.page.identifier = "mitchell-trubisky-tony-pollard-return-to-titans-practice-on-wednesday";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

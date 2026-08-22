@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Read McKenna West&#x27;s Surrogacy Agreement With Baby Gabriel&#x27;s Biological Parents</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/74/16by9/2026/08/13/74059ee2192c41a6b411aa89404c96be_xl.jpg" alt="Read McKenna West&#x27;s Surrogacy Agreement With Baby Gabriel&#x27;s Biological Parents">
+  <img class="article-hero" src="https://imagez.tmz.com/image/74/16by9/2026/08/13/74059ee2192c41a6b411aa89404c96be_xl.jpg" alt="Read McKenna West&#x27;s Surrogacy Agreement With Baby Gabriel&#x27;s Biological Parents" onload="this.style.animation='none'">
   <p class="article-summary">McKenna West says she couldn&#x27;t go through with terminating her pregnancy, despite Nausheen Gilkar and Omar Ahmed insisting she do so...even though she previously stated she talked it over with a psychologist and was willing to do so if they…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/14/mckenna-west-surrogacy-agreement-with-baby-gabriel-biological-parents/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/read-mckenna-west-s-surrogacy-agreement-with-baby-gabriel-s-biological/";
-      this.page.identifier = "read-mckenna-west-s-surrogacy-agreement-with-baby-gabriel-s-biological";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/read-mckenna-west-s-surrogacy-agreement-with-baby-gabriel-s-biological/";
+          this.page.identifier = "read-mckenna-west-s-surrogacy-agreement-with-baby-gabriel-s-biological";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

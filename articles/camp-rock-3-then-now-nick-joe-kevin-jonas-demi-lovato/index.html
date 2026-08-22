@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">6 days ago</div>
   <h1 class="article-title">&#x27;Camp Rock 3&#x27; Then &amp; Now -- Nick, Joe, Kevin Jonas, Demi Lovato</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/20/16by9/2026/08/11/202dedd6b6a34d5ab53f83c296300dad_xl.jpg" alt="&#x27;Camp Rock 3&#x27; Then &amp; Now -- Nick, Joe, Kevin Jonas, Demi Lovato">
+  <img class="article-hero" src="https://imagez.tmz.com/image/20/16by9/2026/08/11/202dedd6b6a34d5ab53f83c296300dad_xl.jpg" alt="&#x27;Camp Rock 3&#x27; Then &amp; Now -- Nick, Joe, Kevin Jonas, Demi Lovato" onload="this.style.animation='none'">
   <p class="article-summary">“Camp Rock 3” gave us all the nostalgic feels, and any day the Jo Bros hit a premiere looking this unbothered, we’re totes hot n’ bothered! 🥵 Now, let’s throw it back to when they first hit the carpet in 2008. The squad was all smiles…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/16/camp-rock-nick-joe-kevin-jonas-demi-lovato-photos/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/camp-rock-3-then-now-nick-joe-kevin-jonas-demi-lovato/";
-      this.page.identifier = "camp-rock-3-then-now-nick-joe-kevin-jonas-demi-lovato";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/camp-rock-3-then-now-nick-joe-kevin-jonas-demi-lovato/";
+          this.page.identifier = "camp-rock-3-then-now-nick-joe-kevin-jonas-demi-lovato";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

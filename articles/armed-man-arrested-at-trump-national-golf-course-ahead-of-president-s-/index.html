@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Armed Man Arrested at Trump National Golf Course Ahead of President&#x27;s Appearance</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/05/16by9/2026/08/04/05c43e87afc9485dbe493031f8211b30_xl.jpg" alt="Armed Man Arrested at Trump National Golf Course Ahead of President&#x27;s Appearance">
+  <img class="article-hero" src="https://imagez.tmz.com/image/05/16by9/2026/08/04/05c43e87afc9485dbe493031f8211b30_xl.jpg" alt="Armed Man Arrested at Trump National Golf Course Ahead of President&#x27;s Appearance" onload="this.style.animation='none'">
   <p class="article-summary">A man was arrested outside the Trump National Golf Club in California Sunday while allegedly monitoring &quot;security-planning activities&quot;...just days before Donald Trump was set to headline a fundraiser there. Jeanine John Taele was allegedly taking…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/04/armed-man-arrested-at-trump-golf-course/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/armed-man-arrested-at-trump-national-golf-course-ahead-of-president-s-/";
-      this.page.identifier = "armed-man-arrested-at-trump-national-golf-course-ahead-of-president-s-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/armed-man-arrested-at-trump-national-golf-course-ahead-of-president-s-/";
+          this.page.identifier = "armed-man-arrested-at-trump-national-golf-course-ahead-of-president-s-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

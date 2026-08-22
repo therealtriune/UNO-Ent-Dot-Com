@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 days ago</div>
   <h1 class="article-title">Trump Aide Natalie Harp Draws Scrutiny Over Constant Presence, See Their Photos</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/f8/16by9/2026/08/18/f888af01066d4fbf9138878a1c4d3741_xl.png" alt="Trump Aide Natalie Harp Draws Scrutiny Over Constant Presence, See Their Photos">
+  <img class="article-hero" src="https://imagez.tmz.com/image/f8/16by9/2026/08/18/f888af01066d4fbf9138878a1c4d3741_xl.png" alt="Trump Aide Natalie Harp Draws Scrutiny Over Constant Presence, See Their Photos" onload="this.style.animation='none'">
   <p class="article-summary">If Donald Trump is in the frame, odds are Natalie Harp isn&#x27;t far away...with the President&#x27;s executive assistant becoming a near-constant presence by his side. Natalie is suddenly getting extra scrutiny after Sen. Jon Ossoff mentioned her during…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/18/donald-trump-aide-natalie-harp-always-by-his-side/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/trump-aide-natalie-harp-draws-scrutiny-over-constant-presence-see-thei/";
-      this.page.identifier = "trump-aide-natalie-harp-draws-scrutiny-over-constant-presence-see-thei";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/trump-aide-natalie-harp-draws-scrutiny-over-constant-presence-see-thei/";
+          this.page.identifier = "trump-aide-natalie-harp-draws-scrutiny-over-constant-presence-see-thei";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

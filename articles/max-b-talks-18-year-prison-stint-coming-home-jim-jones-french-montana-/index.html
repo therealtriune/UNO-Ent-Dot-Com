@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Max B Talks 18-Year Prison Stint &amp; Coming Home, Jim Jones, French Montana, Karen Civil, And More On ‘The Jason Lee Show’</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/Max-B-Talks-18-Year-Prison-Stint-Coming-Home-Jim-Jones-French-Montana-Karen-Civil-Plus-More-On-‘The-Jason-Lee-Show.jpg" alt="Max B Talks 18-Year Prison Stint &amp; Coming Home, Jim Jones, French Montana, Karen Civil, And More On ‘The Jason Lee Show’">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/Max-B-Talks-18-Year-Prison-Stint-Coming-Home-Jim-Jones-French-Montana-Karen-Civil-Plus-More-On-‘The-Jason-Lee-Show.jpg" alt="Max B Talks 18-Year Prison Stint &amp; Coming Home, Jim Jones, French Montana, Karen Civil, And More On ‘The Jason Lee Show’" onload="this.style.animation='none'">
   <p class="article-summary">Harlem rap legend Max B is the latest guest to join ‘ The Jason Lee Show,’ where he talks about his 18-year prison stint and coming home, speaks on Jim Jones fallout, close friendship with French Montana, and more. RELATED: Max B Denies Rumor That He Jumped Ja Rule: ‘I Love Ja Rule’ Max B Talks Spending 18 Years In Prison, Snitching Claims, Coming Home, And More Max B And Jason Lee On ‘The Jason Lee Show’ Max B On ‘The Jason Lee Show’ Max B On ‘The Jason Lee Show’ While Rap is all about storytelling, very few rap stories sound as unbelievable as Max B’s. 18 years after he was sentenced to 75, the Harlem legend and inventor of the wave sits down with Jason Lee.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/max-b-talks-18-year-prison-stint-coming-home-jim-jones-french-montana-karen-civil-and-more-on-the-jason-lee-show/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/max-b-talks-18-year-prison-stint-coming-home-jim-jones-french-montana-/";
-      this.page.identifier = "max-b-talks-18-year-prison-stint-coming-home-jim-jones-french-montana-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/max-b-talks-18-year-prison-stint-coming-home-jim-jones-french-montana-/";
+          this.page.identifier = "max-b-talks-18-year-prison-stint-coming-home-jim-jones-french-montana-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

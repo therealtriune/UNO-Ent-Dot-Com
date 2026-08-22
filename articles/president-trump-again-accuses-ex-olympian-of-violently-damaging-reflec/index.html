@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">President Trump Again Accuses Ex-Olympian of Violently Damaging Reflecting Pool</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/13/16by9/2026/08/10/1327a9b47f9147b8a8f6321ddbde4036_xl.jpg" alt="President Trump Again Accuses Ex-Olympian of Violently Damaging Reflecting Pool">
+  <img class="article-hero" src="https://imagez.tmz.com/image/13/16by9/2026/08/10/1327a9b47f9147b8a8f6321ddbde4036_xl.jpg" alt="President Trump Again Accuses Ex-Olympian of Violently Damaging Reflecting Pool" onload="this.style.animation='none'">
   <p class="article-summary">President Trump just won&#x27;t let the Lincoln Memorial Reflecting Pool controversy sink...because he again insisted the Pool was &quot;violently&quot; vandalized by ex-Olympian David Hearn...even though he admits the contractor rushed to finish the job and…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/10/donald-trump-doubles-down-on-damaged-reflecting-pool/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/president-trump-again-accuses-ex-olympian-of-violently-damaging-reflec/";
-      this.page.identifier = "president-trump-again-accuses-ex-olympian-of-violently-damaging-reflec";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/president-trump-again-accuses-ex-olympian-of-violently-damaging-reflec/";
+          this.page.identifier = "president-trump-again-accuses-ex-olympian-of-violently-damaging-reflec";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

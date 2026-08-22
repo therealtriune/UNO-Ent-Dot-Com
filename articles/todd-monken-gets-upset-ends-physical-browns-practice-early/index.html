@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">Todd Monken gets upset, ends physical Browns practice early</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/313f6b018783ef972ca44f03eb13efb4d983a3f18701d5764772cf6c365e4e3e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F0a9a04384d3867f2b3eda774701f4295.jpg" alt="Todd Monken gets upset, ends physical Browns practice early">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/313f6b018783ef972ca44f03eb13efb4d983a3f18701d5764772cf6c365e4e3e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprofootballtalk.nbcsports.com%2F0a9a04384d3867f2b3eda774701f4295.jpg" alt="Todd Monken gets upset, ends physical Browns practice early" onload="this.style.animation='none'">
   <p class="article-summary">Browns head coach Todd Monken found himself &quot; emotionally hijacked &quot; during a practice early in training camp and he was hot under the collar again on Tuesday. Monken called practice to an end more than 10 minutes before the scheduled finish after a series of plays that left him angry about the contact being made by defensive players. Mary Kay Cabot of Cleveland.com reports that Monken kicked defensive end Benton Whitley off the field for making contact with quarterback Shedeur Sanders and then did the same to defensive tackle Adin Huntington for a hit on running back Quinshon Judkins.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/todd-monken-gets-upset-ends-213315881.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/todd-monken-gets-upset-ends-physical-browns-practice-early/";
-      this.page.identifier = "todd-monken-gets-upset-ends-physical-browns-practice-early";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/todd-monken-gets-upset-ends-physical-browns-practice-early/";
+          this.page.identifier = "todd-monken-gets-upset-ends-physical-browns-practice-early";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

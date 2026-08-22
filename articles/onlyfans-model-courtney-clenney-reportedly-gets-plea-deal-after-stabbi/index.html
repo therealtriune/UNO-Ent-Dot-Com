@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">OnlyFans Model Courtney Clenney Reportedly Gets Plea Deal After Stabbing Boyfriend Christian Obumseli To Death</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/07/OnlyFans-model-Courtney-Clenney-fatally-stabbing-Christian-Obumseli-.jpg" alt="OnlyFans Model Courtney Clenney Reportedly Gets Plea Deal After Stabbing Boyfriend Christian Obumseli To Death">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/07/OnlyFans-model-Courtney-Clenney-fatally-stabbing-Christian-Obumseli-.jpg" alt="OnlyFans Model Courtney Clenney Reportedly Gets Plea Deal After Stabbing Boyfriend Christian Obumseli To Death" onload="this.style.animation='none'">
   <p class="article-summary">Courtney Clenney accepted a plea deal after fatally stabbing her boyfriend, Christian Obumseli. The OnlyFans model was facing life in prison for stabbing Obumseli back in 2022. RELATED: UPDATE: Judge Dismisses Laptop Conversation Evidence In Courtney Clenney Murder Trial Courtney Clenney Gets Plea Deal After Stabbing Boyfriend Courtney Clenney accepted a plea deal after stabbing her boyfriend to death inside their condo in Miami, Florida.</p>
   <a class="outbound-cta" href="https://theshaderoom.com/onlyfans-model-courtney-clenney-reportedly-gets-plea-deal-after-stabbing-boyfriend-christian-obumseli-to-death/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/onlyfans-model-courtney-clenney-reportedly-gets-plea-deal-after-stabbi/";
-      this.page.identifier = "onlyfans-model-courtney-clenney-reportedly-gets-plea-deal-after-stabbi";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/onlyfans-model-courtney-clenney-reportedly-gets-plea-deal-after-stabbi/";
+          this.page.identifier = "onlyfans-model-courtney-clenney-reportedly-gets-plea-deal-after-stabbi";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

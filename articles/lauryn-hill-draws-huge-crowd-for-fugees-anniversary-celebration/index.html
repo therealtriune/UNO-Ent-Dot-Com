@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Lauryn Hill Draws Huge Crowd for Fugees Anniversary Celebration</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/9c/16by9/2026/08/05/9caddc85307a49edb93ec48d675babdd_xl.jpg" alt="Lauryn Hill Draws Huge Crowd for Fugees Anniversary Celebration">
+  <img class="article-hero" src="https://imagez.tmz.com/image/9c/16by9/2026/08/05/9caddc85307a49edb93ec48d675babdd_xl.jpg" alt="Lauryn Hill Draws Huge Crowd for Fugees Anniversary Celebration" onload="this.style.animation='none'">
   <p class="article-summary">Lauryn Hill joined Wyclef Jean for a Fugees&#x27; album anniversary celebration...and thousands turned out to get a peek at the superstar. Lauryn and Wyclef gave fans a thrill at Piccadilly Circus...</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/05/lauryn-hill-has-big-crowd-at-fugees-anniversary-concert/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/lauryn-hill-draws-huge-crowd-for-fugees-anniversary-celebration/";
-      this.page.identifier = "lauryn-hill-draws-huge-crowd-for-fugees-anniversary-celebration";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/lauryn-hill-draws-huge-crowd-for-fugees-anniversary-celebration/";
+          this.page.identifier = "lauryn-hill-draws-huge-crowd-for-fugees-anniversary-celebration";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

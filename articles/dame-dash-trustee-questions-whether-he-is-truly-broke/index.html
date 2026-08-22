@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Dame Dash Trustee Questions Whether He Is Truly Broke</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/03/Damon-Dash-1.jpg" alt="Dame Dash Trustee Questions Whether He Is Truly Broke">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2025/03/Damon-Dash-1.jpg" alt="Dame Dash Trustee Questions Whether He Is Truly Broke" onload="this.style.animation='none'">
   <p class="article-summary">Dame Dash could lose the rights to his own life story as his Chapter 7 bankruptcy grows more invasive. Loren LoRosa of The Breakfast Club first reported that the bankruptcy trustee requested court approval to sell Dash’s “life rights.” The filing defines those rights as Dash’s “life story together with Dash’s voice, image, likeness, biography, and identifying characteristics, and the right to portray all the incidents, events, and situations of Seller’s life story from childhood through petition date.” The trustee also believes Dash possesses “substantial archival material relating to his life and career, including over 100 hours of video content, photographs, and memorabilia spanning approximately 1990 through 2025.” That collection allegedly includes an unreleased documentary or film project called The Roc-A-Fella Movie, which remains under development that Dash has been shopping around. The request follows another filing where the trustee said she was “not convinced that Dame Dash is actually bankrupt” after investigating his disclosures.</p>
   <a class="outbound-cta" href="https://allhiphop.com/news/dame-dash-trustee-questions-whether-he-is-truly-broke/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/dame-dash-trustee-questions-whether-he-is-truly-broke/";
-      this.page.identifier = "dame-dash-trustee-questions-whether-he-is-truly-broke";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/dame-dash-trustee-questions-whether-he-is-truly-broke/";
+          this.page.identifier = "dame-dash-trustee-questions-whether-he-is-truly-broke";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

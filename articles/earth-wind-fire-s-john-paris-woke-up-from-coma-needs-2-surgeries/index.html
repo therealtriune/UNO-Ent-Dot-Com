@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Earth, Wind &amp; Fire&#x27;s John Paris Woke Up From Coma, Needs 2 Surgeries</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/86/16by9/2026/08/20/869d98fade95416b938ffbfed4c2f27e_xl.jpg" alt="Earth, Wind &amp; Fire&#x27;s John Paris Woke Up From Coma, Needs 2 Surgeries">
+  <img class="article-hero" src="https://imagez.tmz.com/image/86/16by9/2026/08/20/869d98fade95416b938ffbfed4c2f27e_xl.jpg" alt="Earth, Wind &amp; Fire&#x27;s John Paris Woke Up From Coma, Needs 2 Surgeries" onload="this.style.animation='none'">
   <p class="article-summary">John Paris has got a ways to go on his road to recovery...involving 2 major surgeries, according to a new update on his condition. In a new post, the Standing for John Paris Facebook page shared that the Earth, Wind &amp; Fire drummer woke up…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/20/earth-wind-and-fires-john-paris-is-out-of-coma/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/earth-wind-fire-s-john-paris-woke-up-from-coma-needs-2-surgeries/";
-      this.page.identifier = "earth-wind-fire-s-john-paris-woke-up-from-coma-needs-2-surgeries";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/earth-wind-fire-s-john-paris-woke-up-from-coma-needs-2-surgeries/";
+          this.page.identifier = "earth-wind-fire-s-john-paris-woke-up-from-coma-needs-2-surgeries";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

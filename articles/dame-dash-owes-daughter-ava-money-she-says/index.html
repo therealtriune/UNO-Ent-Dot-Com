@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Dame Dash Owes Daughter Ava Money, She Says</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/ava-dash-scaled.jpg" alt="Dame Dash Owes Daughter Ava Money, She Says">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/ava-dash-scaled.jpg" alt="Dame Dash Owes Daughter Ava Money, She Says" onload="this.style.animation='none'">
   <p class="article-summary">Money has become an unexpectedly candid topic between Dame Dash and his daughter, Ava Dash, thanks to a revealing moment on Next Gen NYC. The father-daughter pair shared a lighthearted exchange about finances during a recent episode of the reality series, with Ava revealing that she’s occasionally the one helping her father when he needs cash. In the clip, Ava is speaking with her father.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004288-ava-dash-dame-money" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/dame-dash-owes-daughter-ava-money-she-says/";
-      this.page.identifier = "dame-dash-owes-daughter-ava-money-she-says";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/dame-dash-owes-daughter-ava-money-she-says/";
+          this.page.identifier = "dame-dash-owes-daughter-ava-money-she-says";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

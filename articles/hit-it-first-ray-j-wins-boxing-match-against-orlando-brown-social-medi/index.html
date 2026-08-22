@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">6 days ago</div>
   <h1 class="article-title">Hit It First! Ray J Wins Boxing Match Against Orlando Brown &amp; Social Media Has Thoughts (VIDEOS)</h1>
-  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/I-Hit-It-First-Social-Media-Has-Entered-The-Chat-After-Ray-J-Beats-Orlando-Brown-In-Boxing-Match-VIDEOS.png" alt="Hit It First! Ray J Wins Boxing Match Against Orlando Brown &amp; Social Media Has Thoughts (VIDEOS)">
+  <img class="article-hero" src="https://theshaderoom.com/wp-content/uploads/2026/08/I-Hit-It-First-Social-Media-Has-Entered-The-Chat-After-Ray-J-Beats-Orlando-Brown-In-Boxing-Match-VIDEOS.png" alt="Hit It First! Ray J Wins Boxing Match Against Orlando Brown &amp; Social Media Has Thoughts (VIDEOS)" onload="this.style.animation='none'">
   <p class="article-summary">Y’all! Ray J may have gotten the result he wanted, but his latest boxing match has fans wondering what exactly went down in that ring. After stepping up against Orlando Brown on Saturday night, the singer walked away with a unanimous-decision victory—but the chaotic three-round showdown quickly became a social media spectacle for reasons that had little to do with the scorecards.</p>
   <a class="outbound-cta" href="https://theshaderoom.com/ray-j-wins-boxing-match-orlando-brown-social-media-reacts-brandy-videos/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Shade Room &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/hit-it-first-ray-j-wins-boxing-match-against-orlando-brown-social-medi/";
-      this.page.identifier = "hit-it-first-ray-j-wins-boxing-match-against-orlando-brown-social-medi";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/hit-it-first-ray-j-wins-boxing-match-against-orlando-brown-social-medi/";
+          this.page.identifier = "hit-it-first-ray-j-wins-boxing-match-against-orlando-brown-social-medi";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

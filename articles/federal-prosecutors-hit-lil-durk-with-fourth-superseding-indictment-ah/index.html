@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Federal Prosecutors Hit Lil Durk With Fourth Superseding Indictment Ahead of Trial</h1>
-  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2023/04/unnamed-1-4-scaled.jpg" alt="Federal Prosecutors Hit Lil Durk With Fourth Superseding Indictment Ahead of Trial">
+  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2023/04/unnamed-1-4-scaled.jpg" alt="Federal Prosecutors Hit Lil Durk With Fourth Superseding Indictment Ahead of Trial" onload="this.style.animation='none'">
   <p class="article-summary">Federal prosecutors have escalated their high-stakes murder-for-hire case against Lil Durk, filing a fourth superseding indictment in California federal court that expands the charges facing the Grammy-winning Chicago rapper and… The post Federal Prosecutors Hit Lil Durk With Fourth Superseding Indictment Ahead of Trial appeared first on.</p>
   <a class="outbound-cta" href="https://thesource.com/2026/08/07/federal-prosecutors-hit-lil-durk-with-fourth-superseding-indictment-ahead-of-trial/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=federal-prosecutors-hit-lil-durk-with-fourth-superseding-indictment-ahead-of-trial" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Source &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/federal-prosecutors-hit-lil-durk-with-fourth-superseding-indictment-ah/";
-      this.page.identifier = "federal-prosecutors-hit-lil-durk-with-fourth-superseding-indictment-ah";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/federal-prosecutors-hit-lil-durk-with-fourth-superseding-indictment-ah/";
+          this.page.identifier = "federal-prosecutors-hit-lil-durk-with-fourth-superseding-indictment-ah";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

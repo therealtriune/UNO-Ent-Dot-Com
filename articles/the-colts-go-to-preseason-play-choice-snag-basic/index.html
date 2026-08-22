@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">just now</div>
   <h1 class="article-title">The Colts Go-To Preseason Play: Choice + Snag Basic</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/44e50389c8af84cd164e8274caa82971adc41b7bc2afc4feb8ec1ea53b9170f2/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F7541dd636a5297bf16dc6cbd66231801.jpg" alt="The Colts Go-To Preseason Play: Choice + Snag Basic">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/44e50389c8af84cd164e8274caa82971adc41b7bc2afc4feb8ec1ea53b9170f2/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F7541dd636a5297bf16dc6cbd66231801.jpg" alt="The Colts Go-To Preseason Play: Choice + Snag Basic" onload="this.style.animation='none'">
   <p class="article-summary">Everyone remembers the infamous snap Anthony Richardson took to kickoff the QB competition in Baltimore. You know, the one that set Twitter on fire that night? Anthony Richardson running it.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/colts-preseason-play-choice-snag-200214596.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/the-colts-go-to-preseason-play-choice-snag-basic/";
-      this.page.identifier = "the-colts-go-to-preseason-play-choice-snag-basic";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/the-colts-go-to-preseason-play-choice-snag-basic/";
+          this.page.identifier = "the-colts-go-to-preseason-play-choice-snag-basic";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Nolan Wells Case: Friends Overcome With Emotion While Visiting Where Body was Discovered</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/af/16by9/2026/08/07/afc3856958d6494a81d734a23559c91e_xl.jpg" alt="Nolan Wells Case: Friends Overcome With Emotion While Visiting Where Body was Discovered">
+  <img class="article-hero" src="https://imagez.tmz.com/image/af/16by9/2026/08/07/afc3856958d6494a81d734a23559c91e_xl.jpg" alt="Nolan Wells Case: Friends Overcome With Emotion While Visiting Where Body was Discovered" onload="this.style.animation='none'">
   <p class="article-summary">Nolan Wells&#x27; friends set out Friday to Horn Island after launching an investigation of their own into the death of the teen...and the visit was intense. Warren Hudson and Jax Pitalo took their lawyers, J.</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/07/nolan-wells-friends-went-where-body-was-discovered/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/nolan-wells-case-friends-overcome-with-emotion-while-visiting-where-bo/";
-      this.page.identifier = "nolan-wells-case-friends-overcome-with-emotion-while-visiting-where-bo";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/nolan-wells-case-friends-overcome-with-emotion-while-visiting-where-bo/";
+          this.page.identifier = "nolan-wells-case-friends-overcome-with-emotion-while-visiting-where-bo";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

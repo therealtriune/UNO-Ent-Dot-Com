@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Bruce Wayne – Song by Be:First feat. Flo Milli &amp; ATL Jacob</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/BRUCE-WAYNE-BeFirst-Flo-Milli-ATL-Jacob.jpg" alt="Bruce Wayne – Song by Be:First feat. Flo Milli &amp; ATL Jacob">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/BRUCE-WAYNE-BeFirst-Flo-Milli-ATL-Jacob.jpg" alt="Bruce Wayne – Song by Be:First feat. Flo Milli &amp; ATL Jacob" onload="this.style.animation='none'">
   <p class="article-summary">Be:First is a boy band out of Japan that’s making waves in the world of J-pop, which Flo Milli and ATL Jacob joined on their new single “Bruce Wayne.” Fittingly, the track takes on quite the ominous and nocturnal vibe thanks to Jacob’s production. Deep bass, minimal melody, crisp percussion, and woozy synth leads give the track a propulsive pace despite its simplicity. Milli comes through with a lot of expected charisma and energy, adding some more vibrance to an otherwise brooding cut.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004358-bruce-wayne-befirst-flo-milli-atl-jacob" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/bruce-wayne-song-by-be-first-feat-flo-milli-atl-jacob/";
-      this.page.identifier = "bruce-wayne-song-by-be-first-feat-flo-milli-atl-jacob";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/bruce-wayne-song-by-be-first-feat-flo-milli-atl-jacob/";
+          this.page.identifier = "bruce-wayne-song-by-be-first-feat-flo-milli-atl-jacob";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

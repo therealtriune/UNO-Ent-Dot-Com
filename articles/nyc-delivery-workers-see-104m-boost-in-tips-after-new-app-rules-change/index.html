@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">NYC Delivery Workers See $104M Boost in Tips After New App Rules Change Experience</h1>
-  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-03-at-1.59.25-PM.jpg" alt="NYC Delivery Workers See $104M Boost in Tips After New App Rules Change Experience">
+  <img class="article-hero" src="https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-03-at-1.59.25-PM.jpg" alt="NYC Delivery Workers See $104M Boost in Tips After New App Rules Change Experience" onload="this.style.animation='none'">
   <p class="article-summary">A major shift in how New Yorkers order food is putting significantly more money into the pockets of delivery workers. New York City officials announced that app-based couriers have received… The post NYC Delivery Workers See $104M Boost in Tips After New App Rules Change Experience appeared first on.</p>
   <a class="outbound-cta" href="https://thesource.com/2026/08/03/nyc-delivery-workers-see-104m-boost-in-tips-after-new-app-rules-change-experience/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=nyc-delivery-workers-see-104m-boost-in-tips-after-new-app-rules-change-experience" target="_blank" rel="noopener noreferrer">
     Read The Full Story On The Source &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/nyc-delivery-workers-see-104m-boost-in-tips-after-new-app-rules-change/";
-      this.page.identifier = "nyc-delivery-workers-see-104m-boost-in-tips-after-new-app-rules-change";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/nyc-delivery-workers-see-104m-boost-in-tips-after-new-app-rules-change/";
+          this.page.identifier = "nyc-delivery-workers-see-104m-boost-in-tips-after-new-app-rules-change";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

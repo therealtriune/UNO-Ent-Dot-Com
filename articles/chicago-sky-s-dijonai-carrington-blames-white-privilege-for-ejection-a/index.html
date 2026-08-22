@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Chicago Sky’s DiJonai Carrington Blames ‘White Privilege’ For Ejection After Flagrant 2 Foul On Indiana Fever’s Sophie Cunningham; Sophie Says Incident ‘Had Nothing To Do With Race, It Was ‘Intentional’</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/Chicago-Skys-DiJonai-Carrington-Blames-‘White-Privilege-For-Ejection-After-Flagrant-2-Foul-On-Indiana-Fevers-Sophie-Cunningham-Who-Says-‘It-Had-Nothing-To-Do-With-Race-Was-Intentional.jpg" alt="Chicago Sky’s DiJonai Carrington Blames ‘White Privilege’ For Ejection After Flagrant 2 Foul On Indiana Fever’s Sophie Cunningham; Sophie Says Incident ‘Had Nothing To Do With Race, It Was ‘Intentional’">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/Chicago-Skys-DiJonai-Carrington-Blames-‘White-Privilege-For-Ejection-After-Flagrant-2-Foul-On-Indiana-Fevers-Sophie-Cunningham-Who-Says-‘It-Had-Nothing-To-Do-With-Race-Was-Intentional.jpg" alt="Chicago Sky’s DiJonai Carrington Blames ‘White Privilege’ For Ejection After Flagrant 2 Foul On Indiana Fever’s Sophie Cunningham; Sophie Says Incident ‘Had Nothing To Do With Race, It Was ‘Intentional’" onload="this.style.animation='none'">
   <p class="article-summary">Chicago Sky star DiJonai Carrington calls out “white privilege” after she was ejected for a flagrant foul on Indiana Fever star Sophie Cunningham. RELATED: Chicago Sky Announces They Have Cut Kysre Gondrezick From Their Roster On Saturday (August 8), the Chicago Sky guard was fouled during a transition play where the Fever guard attempted a layup. With 2 minutes left in the first quarter, Carrington ended up fouling Cunningham as she swung her left arm to block the shot.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/chicago-skys-dijonai-carrington-blames-white-privilege-for-ejection-after-flagrant-2-foul-on-indiana-fevers-sophie-cunningham-sophie-says-incident-had-not/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/chicago-sky-s-dijonai-carrington-blames-white-privilege-for-ejection-a/";
-      this.page.identifier = "chicago-sky-s-dijonai-carrington-blames-white-privilege-for-ejection-a";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/chicago-sky-s-dijonai-carrington-blames-white-privilege-for-ejection-a/";
+          this.page.identifier = "chicago-sky-s-dijonai-carrington-blames-white-privilege-for-ejection-a";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

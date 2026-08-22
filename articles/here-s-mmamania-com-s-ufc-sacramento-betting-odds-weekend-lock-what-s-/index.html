@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">21 hours ago</div>
   <h1 class="article-title">Here’s MMAmania.com’s UFC Sacramento betting odds ‘Weekend Lock’ … what’s yours?</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/eea0a8902975ee50adb5a2355cf2db8c4dd07a4cf0f8eac6a312ebd91879c24c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2Fa9553b19f5d3b0931933399ab5de9bd3.jpg" alt="Here’s MMAmania.com’s UFC Sacramento betting odds ‘Weekend Lock’ … what’s yours?">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/eea0a8902975ee50adb5a2355cf2db8c4dd07a4cf0f8eac6a312ebd91879c24c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2Fa9553b19f5d3b0931933399ab5de9bd3.jpg" alt="Here’s MMAmania.com’s UFC Sacramento betting odds ‘Weekend Lock’ … what’s yours?" onload="this.style.animation='none'">
   <p class="article-summary">LAS VEGAS, NEVADA - AUGUST 11: Anthony Wint prepares to face Matt Adams in a heavyweight fight during Dana White&#x27;s Contender Series Season 10, Week 1 at Meta APEX on August 11, 2026 in Las Vegas, Nevada. (Photo by Jeff Bottari/Zuffa LLC) UFC Sacramento is less than 24 hours away … It all goes down this weekend (Sat., Aug. 22, 2026), inside Golden 1 Center in Sacramento, California.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/mmamania-com-ufc-sacramento-betting-230000748.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/here-s-mmamania-com-s-ufc-sacramento-betting-odds-weekend-lock-what-s-/";
-      this.page.identifier = "here-s-mmamania-com-s-ufc-sacramento-betting-odds-weekend-lock-what-s-";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/here-s-mmamania-com-s-ufc-sacramento-betting-odds-weekend-lock-what-s-/";
+          this.page.identifier = "here-s-mmamania-com-s-ufc-sacramento-betting-odds-weekend-lock-what-s-";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">Brawl Breaks Out at Fancy Beverly Hills Steakhouse, on Video</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/8f/16by9/2026/08/13/8f822393ab30463f9f91c4d065bbd7a1_xl.png" alt="Brawl Breaks Out at Fancy Beverly Hills Steakhouse, on Video">
+  <img class="article-hero" src="https://imagez.tmz.com/image/8f/16by9/2026/08/13/8f822393ab30463f9f91c4d065bbd7a1_xl.png" alt="Brawl Breaks Out at Fancy Beverly Hills Steakhouse, on Video" onload="this.style.animation='none'">
   <p class="article-summary">The Beverly Hills bourgeoisie got dinner and a free show when a fight broke out at one of their ritzy restaurants...and it&#x27;s all on video. Ya gotta see this brawl that went down at Steak 48 -- a popular restaurant in Bev Hills -- footage shows…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/13/fight-at-steak-48-in-beverly-hills/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/brawl-breaks-out-at-fancy-beverly-hills-steakhouse-on-video/";
-      this.page.identifier = "brawl-breaks-out-at-fancy-beverly-hills-steakhouse-on-video";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/brawl-breaks-out-at-fancy-beverly-hills-steakhouse-on-video/";
+          this.page.identifier = "brawl-breaks-out-at-fancy-beverly-hills-steakhouse-on-video";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

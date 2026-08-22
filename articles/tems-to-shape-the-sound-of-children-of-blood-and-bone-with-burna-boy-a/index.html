@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">4 days ago</div>
   <h1 class="article-title">Tems To Shape The Sound Of “Children Of Blood And Bone” With Burna Boy, Ayra Starr, Says Gina Prince-Bythewood</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/Image-8-18-26-at-1.50-PM-scaled.jpg" alt="Tems To Shape The Sound Of “Children Of Blood And Bone” With Burna Boy, Ayra Starr, Says Gina Prince-Bythewood">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/Image-8-18-26-at-1.50-PM-scaled.jpg" alt="Tems To Shape The Sound Of “Children Of Blood And Bone” With Burna Boy, Ayra Starr, Says Gina Prince-Bythewood" onload="this.style.animation='none'">
   <p class="article-summary">Gina Prince-Bythewood is committed to African music being at the heart of Children of Blood and Bone, and Tems is playing a historic role in creating the soundscape of the highly anticipated fantasy epic. Prince-Bythewood and star Thuso Mbedu discussed the movie and soundtrack during a conversation at the NABJ (National Association of Black Journalists) national convention about the upcoming Paramount Pictures film to a roomful of journalists. Prince-Bythewood opened up about the importance of music to the movie and revealed details about a stacked soundtrack with many of the biggest names in modern African music.</p>
   <a class="outbound-cta" href="https://allhiphop.com/ahhplus/tems-to-shape-the-sound-of-children-of-blood-and-bone-with-burna-boy-ayra-starr-says-gina-prince-bythewood/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/tems-to-shape-the-sound-of-children-of-blood-and-bone-with-burna-boy-a/";
-      this.page.identifier = "tems-to-shape-the-sound-of-children-of-blood-and-bone-with-burna-boy-a";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/tems-to-shape-the-sound-of-children-of-blood-and-bone-with-burna-boy-a/";
+          this.page.identifier = "tems-to-shape-the-sound-of-children-of-blood-and-bone-with-burna-boy-a";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

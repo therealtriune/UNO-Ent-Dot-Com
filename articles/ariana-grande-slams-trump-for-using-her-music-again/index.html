@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 day ago</div>
   <h1 class="article-title">Ariana Grande Slams Trump for Using Her Music Again</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/0e/16by9/2026/08/20/0e72f040d26d4cbd8956b77f8a717829_xl.jpg" alt="Ariana Grande Slams Trump for Using Her Music Again">
+  <img class="article-hero" src="https://imagez.tmz.com/image/0e/16by9/2026/08/20/0e72f040d26d4cbd8956b77f8a717829_xl.jpg" alt="Ariana Grande Slams Trump for Using Her Music Again" onload="this.style.animation='none'">
   <p class="article-summary">Donald Trump&#x27;s team trolled Ariana Grande once again by using her music in one of the President&#x27;s social videos...and again, the superstar told them to get bent. Trump posted a rally video to TikTok that included several messages about his…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/20/ariana-grande-tells-trump-to-stop-using-her-music-for-propaganda/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ariana-grande-slams-trump-for-using-her-music-again/";
-      this.page.identifier = "ariana-grande-slams-trump-for-using-her-music-again";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ariana-grande-slams-trump-for-using-her-music-again/";
+          this.page.identifier = "ariana-grande-slams-trump-for-using-her-music-again";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

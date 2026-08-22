@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Jay Versace Reveals He Lost His Memory After Three Seizures</h1>
-  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/AllHipHop-75.jpg" alt="Jay Versace Reveals He Lost His Memory After Three Seizures">
+  <img class="article-hero" src="https://allhiphop.com/wp-content/uploads/2026/08/AllHipHop-75.jpg" alt="Jay Versace Reveals He Lost His Memory After Three Seizures" onload="this.style.animation='none'">
   <p class="article-summary">Jay Versace has broken his silence after a recent hospitalization, and thankfully, it sounds like he’s on the road to recovery. The acclaimed producer took to social media to address the frightening health scare that landed him in the hospital. He also revealed just how serious the situation really was.</p>
   <a class="outbound-cta" href="https://allhiphop.com/rumors/jay-versace-reveals-he-lost-his-memory-after-three-seizures/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On AllHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/jay-versace-reveals-he-lost-his-memory-after-three-seizures/";
-      this.page.identifier = "jay-versace-reveals-he-lost-his-memory-after-three-seizures";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/jay-versace-reveals-he-lost-his-memory-after-three-seizures/";
+          this.page.identifier = "jay-versace-reveals-he-lost-his-memory-after-three-seizures";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

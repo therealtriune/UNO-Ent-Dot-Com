@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">&#x27;Exorcist&#x27; Star Linda Blair Says Her Shelter With 250 Dogs Is Fine, Neighbors Disagree</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/d2/16by9/2026/08/03/d2cc63ef057a4bafbb1a4af1f1a3ba5d_xl.jpg" alt="&#x27;Exorcist&#x27; Star Linda Blair Says Her Shelter With 250 Dogs Is Fine, Neighbors Disagree">
+  <img class="article-hero" src="https://imagez.tmz.com/image/d2/16by9/2026/08/03/d2cc63ef057a4bafbb1a4af1f1a3ba5d_xl.jpg" alt="&#x27;Exorcist&#x27; Star Linda Blair Says Her Shelter With 250 Dogs Is Fine, Neighbors Disagree" onload="this.style.animation='none'">
   <p class="article-summary">Linda Blair allegedly had hundreds of dogs on her property Friday when cops showed up over possible animal neglect and code violations -- and while she says it&#x27;s all good and the pups are &quot;fine,&quot; neighbors say there&#x27;s a major problem. Here&#x27;s the…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/03/linda-blairs-no-kill-shelter-results-in-overwhelming-amount-of-dogs/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/exorcist-star-linda-blair-says-her-shelter-with-250-dogs-is-fine-neigh/";
-      this.page.identifier = "exorcist-star-linda-blair-says-her-shelter-with-250-dogs-is-fine-neigh";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/exorcist-star-linda-blair-says-her-shelter-with-250-dogs-is-fine-neigh/";
+          this.page.identifier = "exorcist-star-linda-blair-says-her-shelter-with-250-dogs-is-fine-neigh";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

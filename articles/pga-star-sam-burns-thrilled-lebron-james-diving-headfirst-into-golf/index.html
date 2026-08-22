@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 days ago</div>
   <h1 class="article-title">PGA Star Sam Burns Thrilled LeBron James Diving Headfirst Into Golf</h1>
-  <img class="article-hero" src="https://imagez.tmz.com/image/01/16by9/2026/08/18/0191331489e8460ebb74de1247000107_xl.jpg" alt="PGA Star Sam Burns Thrilled LeBron James Diving Headfirst Into Golf">
+  <img class="article-hero" src="https://imagez.tmz.com/image/01/16by9/2026/08/18/0191331489e8460ebb74de1247000107_xl.jpg" alt="PGA Star Sam Burns Thrilled LeBron James Diving Headfirst Into Golf" onload="this.style.animation='none'">
   <p class="article-summary">LeBron James is taking his talents to the links -- and PGA Tour star Sam Burns is all for it! TMZ Sports spoke to one of the Tour&#x27;s top-ranked golfers Tuesday morning from a golf event in St. Louis (more on that in a minute), and Burns said he was…</p>
   <a class="outbound-cta" href="https://www.tmz.com/2026/08/19/sam-burns-welcomes-lebron-james-to-golf/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On TMZ &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/pga-star-sam-burns-thrilled-lebron-james-diving-headfirst-into-golf/";
-      this.page.identifier = "pga-star-sam-burns-thrilled-lebron-james-diving-headfirst-into-golf";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/pga-star-sam-burns-thrilled-lebron-james-diving-headfirst-into-golf/";
+          this.page.identifier = "pga-star-sam-burns-thrilled-lebron-james-diving-headfirst-into-golf";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

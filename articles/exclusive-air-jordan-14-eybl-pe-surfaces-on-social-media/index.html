@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">3 weeks ago</div>
   <h1 class="article-title">Exclusive Air Jordan 14 “EYBL” PE Surfaces On Social Media</h1>
-  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/air-jordan-14-eybl-1-e1785531298789.webp" alt="Exclusive Air Jordan 14 “EYBL” PE Surfaces On Social Media">
+  <img class="article-hero" src="https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/air-jordan-14-eybl-1-e1785531298789.webp" alt="Exclusive Air Jordan 14 “EYBL” PE Surfaces On Social Media" onload="this.style.animation='none'">
   <p class="article-summary">Nike ’s Elite Youth Basketball League gets special footwear every summer, and this year’s standout is the Air Jordan 14 “EYBL” PE. It surfaced during the Peach Jam and Nike Nationals tournaments, where the country’s top young talent competes in front of college scouts. These events have become one of the most important stops on the recruiting circuit.</p>
   <a class="outbound-cta" href="https://www.hotnewhiphop.com/1004275-air-jordan-14-eybl-pe-sneaker-news" target="_blank" rel="noopener noreferrer">
     Read The Full Story On HotNewHipHop &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/exclusive-air-jordan-14-eybl-pe-surfaces-on-social-media/";
-      this.page.identifier = "exclusive-air-jordan-14-eybl-pe-surfaces-on-social-media";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/exclusive-air-jordan-14-eybl-pe-surfaces-on-social-media/";
+          this.page.identifier = "exclusive-air-jordan-14-eybl-pe-surfaces-on-social-media";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 weeks ago</div>
   <h1 class="article-title">Miami Police Respond To Perez Hilton’s Home After Alleged Self-Harming Incident On TikTok Live, Blogger Rushed To Hospital</h1>
-  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/Miami-Police-Respond-To-Perez-Hiltons-Home-After-Alleged-Self-Harming-Incident-On-TikTok-Live-His-Reps-Speak-Out.jpg" alt="Miami Police Respond To Perez Hilton’s Home After Alleged Self-Harming Incident On TikTok Live, Blogger Rushed To Hospital">
+  <img class="article-hero" src="https://hollywoodunlocked.com/wp-content/uploads/2026/08/Miami-Police-Respond-To-Perez-Hiltons-Home-After-Alleged-Self-Harming-Incident-On-TikTok-Live-His-Reps-Speak-Out.jpg" alt="Miami Police Respond To Perez Hilton’s Home After Alleged Self-Harming Incident On TikTok Live, Blogger Rushed To Hospital" onload="this.style.animation='none'">
   <p class="article-summary">PRAYERS: Famed blogger and media personality Perez Hilton has left fans deeply concerned for his well-being after going live on TikTok with alarming behavior in an apparent self-harming incident. Miami Police ended up responding to his home and had him rushed him to the hospital. Before this concerning incident, Hilton went viral in March after claiming to have “met God” during his 21-day hospital stay after battling for his life.</p>
   <a class="outbound-cta" href="https://hollywoodunlocked.com/miami-police-respond-to-perez-hiltons-home-after-alleged-self-harming-incident-on-tiktok-live-blogger-rushed-to-hospital/" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Hollywood Unlocked &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/miami-police-respond-to-perez-hilton-s-home-after-alleged-self-harming/";
-      this.page.identifier = "miami-police-respond-to-perez-hilton-s-home-after-alleged-self-harming";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/miami-police-respond-to-perez-hilton-s-home-after-alleged-self-harming/";
+          this.page.identifier = "miami-police-respond-to-perez-hilton-s-home-after-alleged-self-harming";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

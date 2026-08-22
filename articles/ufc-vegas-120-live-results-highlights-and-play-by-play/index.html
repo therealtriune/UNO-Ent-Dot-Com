@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">1 week ago</div>
   <h1 class="article-title">UFC Vegas 120 live results, highlights and play-by-play</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/5d22f5d1eb15a4b103e620d1d1bfcd3b9576bbf1f4ee90e405d2c98607dc05ab/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2Fdd98cb8a514b8c15119a68fe523fd7e2" alt="UFC Vegas 120 live results, highlights and play-by-play">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/5d22f5d1eb15a4b103e620d1d1bfcd3b9576bbf1f4ee90e405d2c98607dc05ab/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2Fdd98cb8a514b8c15119a68fe523fd7e2" alt="UFC Vegas 120 live results, highlights and play-by-play" onload="this.style.animation='none'">
   <p class="article-summary">PERTH, AUSTRALIA - MAY 02: Quillan Salkilld of Australia prepares to face Beneil Dariush of Iran in a lightweight fight during the UFC Fight Night event at RAC Arena on May 02, 2026 in Perth, Australia. (Photo by Ed Mulholland/Zuffa LLC) Ultimate Fighting Championship (UFC) is live TODAY (Sat., Aug. 8, 2026) with UFC Vegas 120, streaming live online via Paramount+.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/ufc-vegas-120-live-results-201500641.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports MMA &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/ufc-vegas-120-live-results-highlights-and-play-by-play/";
-      this.page.identifier = "ufc-vegas-120-live-results-highlights-and-play-by-play";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/ufc-vegas-120-live-results-highlights-and-play-by-play/";
+          this.page.identifier = "ufc-vegas-120-live-results-highlights-and-play-by-play";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

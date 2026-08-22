@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
   <div class="article-meta">2 days ago</div>
   <h1 class="article-title">Eagles-Patriots training camp practice updates, Day 2</h1>
-  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/03cfeb474c41cb247d69f3680caee11cd766b3a0b487f298f6c2fc92ce77afc0/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F6c02e68fe5f6d198190473b527c04227.jpg" alt="Eagles-Patriots training camp practice updates, Day 2">
+  <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/03cfeb474c41cb247d69f3680caee11cd766b3a0b487f298f6c2fc92ce77afc0/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F6c02e68fe5f6d198190473b527c04227.jpg" alt="Eagles-Patriots training camp practice updates, Day 2" onload="this.style.animation='none'">
   <p class="article-summary">FOXBOROUGH, MASSACHUSETTS - AUGUST 19: Fans react as A.J. Brown #1 of the New England Patriots looks on during a joint practice with the Philadelphia Eagles at Gillette Stadium on August 19, 2026 in Foxborough, Massachusetts. (Photo by Billie Weiss/Getty Images) | Getty Images The Philadelphia Eagles ’ 2026 training camp schedule continues today with the second of two joint training camp practices against A.J.</p>
   <a class="outbound-cta" href="https://sports.yahoo.com/articles/eagles-patriots-training-camp-practice-131100536.html" target="_blank" rel="noopener noreferrer">
     Read The Full Story On Yahoo Sports NFL &rarr;
@@ -74,17 +74,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div class="comments-wrap">
   <h2 class="comments-heading">Comments</h2>
-  <div id="disqus_thread"></div>
+  <div id="disqus-loader">
+    <button type="button" class="comments-load-btn" id="disqus-load-btn">Show Comments</button>
+    <p class="comments-load-note">Comments are hosted by Disqus and only load once you click above.</p>
+  </div>
+  <div id="disqus_thread" style="display:none;"></div>
   <script>
-    var disqus_config = function () {
-      this.page.url = "https://unoent.com/articles/eagles-patriots-training-camp-practice-updates-day-2/";
-      this.page.identifier = "eagles-patriots-training-camp-practice-updates-day-2";
-    };
     (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://unoent.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      var btn = document.getElementById('disqus-load-btn');
+      var loader = document.getElementById('disqus-loader');
+      var thread = document.getElementById('disqus_thread');
+      if (!btn) return;
+      btn.addEventListener('click', function() {
+        thread.style.display = '';
+        loader.style.display = 'none';
+        window.disqus_config = function () {
+          this.page.url = "https://unoent.com/articles/eagles-patriots-training-camp-practice-updates-day-2/";
+          this.page.identifier = "eagles-patriots-training-camp-practice-updates-day-2";
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://unoent.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }, { once: true });
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
