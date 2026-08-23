@@ -677,7 +677,7 @@ footer a:hover { color: var(--text); }
 .footer-logo { height: 40px; width: auto; }
 .footer-tagline { margin: 0; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--red); }
 .footer-columns {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;
   padding-bottom: 40px; border-top: 1px solid var(--border); padding-top: 40px;
 }
 .footer-col h4 {
@@ -694,9 +694,13 @@ footer a:hover { color: var(--text); }
   margin: 0; font-size: 11px; color: var(--gray); display: flex; justify-content: space-between;
   flex-wrap: wrap; gap: 8px;
 }
+@media (max-width: 900px) {
+  .footer-columns { grid-template-columns: repeat(2, 1fr); }
+}
 @media (max-width: 640px) {
   .footer-columns { grid-template-columns: 1fr; gap: 28px; text-align: center; }
   .footer-copy { justify-content: center; text-align: center; }
+  .footer-col-newsletter .klaviyo-signup-consent { justify-content: center; text-align: left; max-width: 320px; margin-left: auto; margin-right: auto; }
 }
 
 .pagination { display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 48px; }
@@ -1089,80 +1093,137 @@ footer a:hover { color: var(--text); }
 .topic-index-count { font-size: 12px; color: var(--gray); flex-shrink: 0; }
 
 /* ---------------------------------------------------------------------
-   Klaviyo email signup -- footer bar (sitewide, in footer_html()) and
-   homepage inline module (in build_page()'s article grid). Both variants
-   share markup/JS (klaviyo_signup_html()/KLAVIYO_SIGNUP_JS below); only
-   this layout differs per variant.
+   Klaviyo email signup -- two surfaces, one shared set of form styles:
+
+   1. Footer column (.footer-col-newsletter) -- 4th column in
+      footer_html()'s .footer-columns grid, same h4/p rhythm as the other
+      three columns (see klaviyo_signup_html()). Deliberately NOT its own
+      band/section; it lives inside the existing footer grid.
+   2. .klaviyo-modal -- first-visit popup (see klaviyo_popup_html()),
+      shown once per browser by KLAVIYO_SIGNUP_JS. This one keeps the
+      icon/eyebrow treatment since it's a standalone card, not a grid cell.
+
+   .klaviyo-signup-input/-btn/-consent/-status are shared between both.
 --------------------------------------------------------------------- */
-.klaviyo-signup {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 24px 28px;
-}
-.klaviyo-signup--footer {
-  margin: 24px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-.klaviyo-signup--inline {
-  grid-column: 1 / -1;
-  text-align: center;
-}
-.klaviyo-signup--inline .klaviyo-signup-copy { margin-bottom: 16px; }
-.klaviyo-signup-copy h3 { margin: 0 0 4px; font-size: 18px; font-weight: 700; }
-.klaviyo-signup-copy p { margin: 0; color: var(--gray); font-size: 13px; }
-.klaviyo-signup-form { flex: 1 1 360px; min-width: 260px; }
-.klaviyo-signup--inline .klaviyo-signup-form { max-width: 480px; margin: 0 auto; }
-.klaviyo-signup-row { display: flex; gap: 8px; }
-.klaviyo-signup-input {
-  flex: 1;
-  padding: 11px 14px;
-  border-radius: 999px;
+.footer-col-newsletter .klaviyo-signup-input {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--bg);
   color: var(--text);
-  font-size: 14px;
-  min-width: 0;
+  font-size: 13px;
+  margin-bottom: 8px;
 }
-.klaviyo-signup-input:focus { outline: 2px solid var(--red); outline-offset: 1px; }
-.klaviyo-signup-btn {
-  padding: 11px 22px;
-  border-radius: 999px;
+.footer-col-newsletter .klaviyo-signup-input:focus { outline: 2px solid var(--red); outline-offset: 1px; border-color: var(--red); }
+.footer-col-newsletter .klaviyo-signup-btn {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 8px;
   border: none;
   background: var(--red);
   color: #fff;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   cursor: pointer;
-  white-space: nowrap;
+  transition: filter 0.12s ease;
 }
-.klaviyo-signup-btn:hover { filter: brightness(1.1); }
-.klaviyo-signup-btn:disabled { opacity: 0.6; cursor: default; }
+.footer-col-newsletter .klaviyo-signup-btn:hover { filter: brightness(1.12); }
+.footer-col-newsletter .klaviyo-signup-btn:disabled { opacity: 0.6; cursor: default; }
 .klaviyo-signup-consent {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
+  gap: 6px;
   margin-top: 10px;
-  font-size: 11px;
+  font-size: 10.5px;
+  line-height: 1.4;
   color: var(--gray);
   cursor: pointer;
   text-align: left;
 }
-.klaviyo-signup--inline .klaviyo-signup-consent { justify-content: center; }
 .klaviyo-signup-consent input { margin-top: 2px; flex-shrink: 0; }
 .klaviyo-signup-consent a { color: var(--text-secondary); text-decoration: underline; }
-.klaviyo-signup-status { margin: 8px 0 0; font-size: 12px; min-height: 14px; }
+.klaviyo-signup-status { margin: 8px 0 0; font-size: 11px; min-height: 14px; }
 .klaviyo-signup-status.is-success { color: #4caf6d; }
 .klaviyo-signup-status.is-error { color: var(--red); }
-@media (max-width: 700px) {
-  .klaviyo-signup--footer { flex-direction: column; align-items: stretch; text-align: center; }
-  .klaviyo-signup--footer .klaviyo-signup-consent { justify-content: center; }
-  .klaviyo-signup-row { flex-direction: column; }
+.klaviyo-signup-icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.klaviyo-signup-icon svg { width: 22px; height: 22px; }
+.klaviyo-signup-eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 6px;
+}
+
+/* First-visit popup */
+.klaviyo-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.klaviyo-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
+}
+[data-theme="light"] .klaviyo-modal-backdrop { background: rgba(20, 20, 20, 0.55); }
+.klaviyo-modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--red);
+  border-radius: 18px;
+  padding: 40px 32px 32px;
+  text-align: center;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+  animation: klaviyo-modal-in 0.25s ease;
+}
+@keyframes klaviyo-modal-in {
+  from { opacity: 0; transform: translateY(12px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.klaviyo-modal-card .klaviyo-signup-icon { margin: 0 auto 16px; }
+.klaviyo-modal-card h2 { margin: 0 0 8px; font-size: 22px; font-weight: 800; line-height: 1.3; }
+.klaviyo-modal-card > p { margin: 0 0 20px; color: var(--gray); font-size: 13.5px; line-height: 1.5; }
+.klaviyo-modal-card .klaviyo-signup-input { width: 100%; margin-bottom: 10px; }
+.klaviyo-modal-card .klaviyo-signup-btn { width: 100%; }
+.klaviyo-modal-card .klaviyo-signup-consent { justify-content: center; }
+.klaviyo-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: var(--bg);
+  color: var(--gray);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+.klaviyo-modal-close:hover { background: var(--bg-card-hover); color: var(--text); }
 
 """
 
@@ -1451,6 +1512,10 @@ KLAVIYO_SIGNUP_JS = f"""
           form.reset();
           status.textContent = "You're in! Check your inbox to confirm.";
           status.className = "klaviyo-signup-status is-success";
+          try {{ localStorage.setItem("uno_klaviyo_popup_seen", "1"); }} catch (e) {{}}
+          if (form.getAttribute("data-variant") === "popup") {{
+            setTimeout(unoKlaviyoPopupClose, 1400);
+          }}
         }} else {{
           status.textContent = "Something went wrong. Please try again.";
           status.className = "klaviyo-signup-status is-error";
@@ -1463,34 +1528,90 @@ KLAVIYO_SIGNUP_JS = f"""
       }});
     }});
   }});
+
+  // First-visit popup -- shown once per browser, ~4.5s after page load,
+  // for anyone without the uno_klaviyo_popup_seen flag (set on dismiss or
+  // successful signup, same pattern as uno_cookie_notice_seen in
+  // cookie_banner_html()). Wrapped in try/except: localStorage can throw
+  // in private-mode/locked-down browsers and that should never break the
+  // page.
+  var popup = document.getElementById("uno-klaviyo-popup");
+  if (popup) {{
+    window.unoKlaviyoPopupClose = function() {{
+      popup.hidden = true;
+      document.documentElement.style.overflow = "";
+      try {{ localStorage.setItem("uno_klaviyo_popup_seen", "1"); }} catch (e) {{}}
+    }};
+    popup.querySelectorAll("[data-klaviyo-dismiss]").forEach(function(el) {{
+      el.addEventListener("click", window.unoKlaviyoPopupClose);
+    }});
+    document.addEventListener("keydown", function(e) {{
+      if (e.key === "Escape" && !popup.hidden) window.unoKlaviyoPopupClose();
+    }});
+    try {{
+      if (!localStorage.getItem("uno_klaviyo_popup_seen")) {{
+        setTimeout(function() {{
+          popup.hidden = false;
+          document.documentElement.style.overflow = "hidden";
+        }}, 4500);
+      }}
+    }} catch (e) {{}}
+  }}
 }})();
 """
 
 
-def klaviyo_signup_html(variant: str = "footer", heading: str = "Get The Culture's Feed In Your Inbox", subheading: str = "Breaking hip-hop news, drops, and rumors -- straight to your email. No spam, unsubscribe anytime.") -> str:
-    """Klaviyo newsletter signup form. variant is "footer" (compact bar,
-    rendered sitewide by footer_html()) or "inline" (card-style module
-    dropped into the homepage article grid by build_page()). Both variants
-    share the same markup/classes; KLAVIYO_SIGNUP_JS (loaded once, in
-    footer_html()) binds every .klaviyo-signup-form on the page regardless
-    of which page(s) it appears on."""
+_KLAVIYO_MAIL_ICON = '''<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Z" stroke="#fff" stroke-width="1.6"/><path d="M4 6.5 12 13l8-6.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>'''
+
+
+def klaviyo_signup_html() -> str:
+    """Newsletter signup, rendered as the 4th column in footer_html()'s
+    .footer-columns grid (after "Get In Touch") -- same h4/p/a rhythm as
+    the other three columns, not a separate band. That grid is a single
+    CSS Grid row (repeat(4, 1fr)), so this naturally fills the blank
+    space the shorter "About"/"Get In Touch" columns leave below their
+    text, instead of floating as its own oversized section. KLAVIYO_
+    SIGNUP_JS, loaded once in footer_html(), binds this form's submit
+    handler."""
+    return """
+<h4>Newsletter</h4>
+<p>Breaking hip-hop news, drops, and rumors -- straight to your email.</p>
+<form class="klaviyo-signup-form" data-variant="footer">
+  <input type="email" name="email" class="klaviyo-signup-input" placeholder="Enter your email" required aria-label="Email address">
+  <button type="submit" class="klaviyo-signup-btn">Sign Up</button>
+  <label class="klaviyo-signup-consent">
+    <input type="checkbox" required>
+    <span>I agree to receive emails from UNO Entertainment. See our <a href="/privacy-policy/">Privacy Policy</a>.</span>
+  </label>
+  <p class="klaviyo-signup-status" role="status" aria-live="polite"></p>
+</form>"""
+
+
+def klaviyo_popup_html() -> str:
+    """First-visit newsletter modal. Hidden by default (CSS + [hidden]
+    attribute); KLAVIYO_SIGNUP_JS shows it once, after a short delay, for
+    anyone who doesn't already have the uno_klaviyo_popup_seen flag in
+    localStorage -- same pattern as cookie_banner_html()'s dismissal
+    tracking. Rendered once sitewide by footer_html(), same as the band."""
     return f"""
-<div class="klaviyo-signup klaviyo-signup--{variant}">
-  <div class="klaviyo-signup-copy">
-    <h3>{heading}</h3>
-    <p>{subheading}</p>
-  </div>
-  <form class="klaviyo-signup-form" data-variant="{variant}">
-    <div class="klaviyo-signup-row">
+<div id="uno-klaviyo-popup" class="klaviyo-modal" hidden>
+  <div class="klaviyo-modal-backdrop" data-klaviyo-dismiss></div>
+  <div class="klaviyo-modal-card" role="dialog" aria-modal="true" aria-labelledby="uno-klaviyo-popup-heading">
+    <button type="button" class="klaviyo-modal-close" aria-label="Close" data-klaviyo-dismiss>&times;</button>
+    <div class="klaviyo-signup-icon" aria-hidden="true">{_KLAVIYO_MAIL_ICON}</div>
+    <span class="klaviyo-signup-eyebrow">Newsletter</span>
+    <h2 id="uno-klaviyo-popup-heading">Get The Culture's Feed In Your Inbox</h2>
+    <p>Breaking hip-hop news, drops, and rumors -- straight to your email. No spam, unsubscribe anytime.</p>
+    <form class="klaviyo-signup-form" data-variant="popup">
       <input type="email" name="email" class="klaviyo-signup-input" placeholder="Enter your email" required aria-label="Email address">
       <button type="submit" class="klaviyo-signup-btn">Sign Up</button>
-    </div>
-    <label class="klaviyo-signup-consent">
-      <input type="checkbox" required>
-      <span>Yes, send me UNO Entertainment news and updates. I can unsubscribe anytime. See our <a href="/privacy-policy/">Privacy Policy</a>.</span>
-    </label>
-    <p class="klaviyo-signup-status" role="status" aria-live="polite"></p>
-  </form>
+      <label class="klaviyo-signup-consent">
+        <input type="checkbox" required>
+        <span>Yes, send me UNO Entertainment news and updates. I can unsubscribe anytime. See our <a href="/privacy-policy/">Privacy Policy</a>.</span>
+      </label>
+      <p class="klaviyo-signup-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
 </div>"""
 
 
@@ -1506,8 +1627,6 @@ def footer_html(prefix: str) -> str:
       <a href="/"><img class="footer-logo logo-dark-mode" src="{prefix}uno-logo.png" alt="UNO Entertainment"><img class="footer-logo logo-light-mode" src="{prefix}uno-logo-dark.png" alt="UNO Entertainment"></a>
       <p class="footer-tagline">The Culture's Feed</p>
     </div>
-
-    {klaviyo_signup_html("footer")}
 
     <div class="footer-columns">
       <div class="footer-col">
@@ -1526,6 +1645,9 @@ def footer_html(prefix: str) -> str:
         <p>Questions or a story tip?</p>
         <a class="footer-contact-email" href="mailto:support@unoent.com">support@unoent.com</a>
       </div>
+      <div class="footer-col footer-col-newsletter">
+        {klaviyo_signup_html()}
+      </div>
     </div>
 
     <div class="footer-bottom">
@@ -1540,6 +1662,7 @@ def footer_html(prefix: str) -> str:
   </div>
 </footer>
 {cookie_banner_html(prefix)}
+{klaviyo_popup_html()}
 <script>{SEARCH_SUGGEST_JS}</script>
 <script>{KLAVIYO_SIGNUP_JS}</script>"""
 
@@ -1694,15 +1817,7 @@ def build_page(page_num: int, total_pages: int):
     page_articles = ARTICLES[start:start + ARTICLES_PER_PAGE]
     # page/{n}/index.html is 2 directories deep; index.html at the root is 0.
     prefix = "" if page_num == 1 else "../../"
-    card_list = [card_html(a, prefix) for a in page_articles]
-    if page_num == 1 and len(card_list) > 6:
-        # Newsletter module lives inside the CSS grid (spans all columns via
-        # .klaviyo-signup--inline { grid-column: 1 / -1 } in style.css), not
-        # a separate section -- keeps it from pushing the ad rail's sticky
-        # positioning around. Homepage page 1 only; pagination pages 2+ and
-        # category/topic grids don't get it.
-        card_list.insert(6, klaviyo_signup_html("inline"))
-    cards = "\n".join(card_list)
+    cards = "\n".join(card_html(a, prefix) for a in page_articles)
     title = "UNO Entertainment" if page_num == 1 else f"UNO Entertainment | Page {page_num}"
     canonical = SITE_URL + page_href(page_num)
     description = SITE_DESCRIPTION if page_num == 1 else f"{SITE_DESCRIPTION} (Page {page_num})"
