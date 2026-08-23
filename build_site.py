@@ -677,13 +677,21 @@ footer a:hover { color: var(--text); }
 .footer-logo { height: 40px; width: auto; }
 .footer-tagline { margin: 0; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--red); }
 .footer-columns {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr;
+  grid-template-areas: "sections about touch" "sections news news";
+  column-gap: 28px; row-gap: 24px;
   padding-bottom: 40px; border-top: 1px solid var(--border); padding-top: 40px;
 }
+.footer-col-sections { grid-area: sections; }
+.footer-col-about { grid-area: about; }
+.footer-col-touch { grid-area: touch; }
+.footer-col-newsletter { grid-area: news; padding-top: 20px; border-top: 1px solid var(--border); }
 .footer-col h4 {
   margin: 0 0 16px; font-size: 12px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.8px; color: var(--text);
 }
+.footer-col-newsletter h4 { margin-bottom: 10px; }
 .footer-col a { display: block; margin-bottom: 10px; font-size: 13px; }
 .footer-col p { margin: 0 0 10px; font-size: 13px; color: var(--gray); }
 .footer-col .footer-contact-email { color: var(--red); font-weight: 700; }
@@ -695,12 +703,21 @@ footer a:hover { color: var(--text); }
   flex-wrap: wrap; gap: 8px;
 }
 @media (max-width: 900px) {
-  .footer-columns { grid-template-columns: repeat(2, 1fr); }
+  .footer-columns {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "sections about" "sections touch" "news news";
+  }
 }
 @media (max-width: 640px) {
-  .footer-columns { grid-template-columns: 1fr; gap: 28px; text-align: center; }
+  .footer-columns {
+    grid-template-columns: 1fr;
+    grid-template-areas: "sections" "about" "touch" "news";
+    gap: 28px; text-align: center;
+  }
+  .footer-col-newsletter { border-top: none; padding-top: 0; }
   .footer-copy { justify-content: center; text-align: center; }
-  .footer-col-newsletter .klaviyo-signup-consent { justify-content: center; text-align: left; max-width: 320px; margin-left: auto; margin-right: auto; }
+  .klaviyo-signup-row { flex-direction: column; }
+  .klaviyo-signup-consent { justify-content: center; text-align: left; max-width: 320px; margin: 10px auto 0; }
 }
 
 .pagination { display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 48px; }
@@ -1095,43 +1112,43 @@ footer a:hover { color: var(--text); }
 /* ---------------------------------------------------------------------
    Klaviyo email signup -- two surfaces, one shared set of form styles:
 
-   1. Footer column (.footer-col-newsletter) -- 4th column in
-      footer_html()'s .footer-columns grid, same h4/p rhythm as the other
-      three columns (see klaviyo_signup_html()). Deliberately NOT its own
-      band/section; it lives inside the existing footer grid.
+   1. Footer newsletter row (.footer-col-newsletter) -- spans the About +
+      Get in touch columns in footer_html()'s .footer-columns grid area
+      "news" (see grid-template-areas above), directly below them. Email
+      input + button sit side by side via .klaviyo-signup-row.
    2. .klaviyo-modal -- first-visit popup (see klaviyo_popup_html()),
-      shown once per browser by KLAVIYO_SIGNUP_JS. This one keeps the
-      icon/eyebrow treatment since it's a standalone card, not a grid cell.
+      shown once per browser by KLAVIYO_SIGNUP_JS. Input/button stack
+      full-width instead (see .klaviyo-modal-card overrides below).
 
-   .klaviyo-signup-input/-btn/-consent/-status are shared between both.
+   .klaviyo-signup-input/-btn/-consent/-status are the shared base; each
+   surface only overrides layout, not color/type.
 --------------------------------------------------------------------- */
-.footer-col-newsletter .klaviyo-signup-input {
-  display: block;
-  width: 100%;
-  padding: 10px 14px;
+.klaviyo-signup-row { display: flex; gap: 10px; }
+.klaviyo-signup-input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 16px;
   border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--bg);
   color: var(--text);
-  font-size: 13px;
-  margin-bottom: 8px;
+  font-size: 14px;
 }
-.footer-col-newsletter .klaviyo-signup-input:focus { outline: 2px solid var(--red); outline-offset: 1px; border-color: var(--red); }
-.footer-col-newsletter .klaviyo-signup-btn {
-  display: block;
-  width: 100%;
-  padding: 10px 16px;
+.klaviyo-signup-input:focus { outline: 2px solid var(--red); outline-offset: 1px; border-color: var(--red); }
+.klaviyo-signup-btn {
+  padding: 12px 26px;
   border-radius: 8px;
   border: none;
   background: var(--red);
   color: #fff;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14px;
+  white-space: nowrap;
   cursor: pointer;
   transition: filter 0.12s ease;
 }
-.footer-col-newsletter .klaviyo-signup-btn:hover { filter: brightness(1.12); }
-.footer-col-newsletter .klaviyo-signup-btn:disabled { opacity: 0.6; cursor: default; }
+.klaviyo-signup-btn:hover { filter: brightness(1.12); }
+.klaviyo-signup-btn:disabled { opacity: 0.6; cursor: default; }
 .klaviyo-signup-consent {
   display: flex;
   align-items: flex-start;
@@ -1565,20 +1582,20 @@ _KLAVIYO_MAIL_ICON = '''<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/s
 
 
 def klaviyo_signup_html() -> str:
-    """Newsletter signup, rendered as the 4th column in footer_html()'s
-    .footer-columns grid (after "Get In Touch") -- same h4/p/a rhythm as
-    the other three columns, not a separate band. That grid is a single
-    CSS Grid row (repeat(4, 1fr)), so this naturally fills the blank
-    space the shorter "About"/"Get In Touch" columns leave below their
-    text, instead of floating as its own oversized section. KLAVIYO_
-    SIGNUP_JS, loaded once in footer_html(), binds this form's submit
-    handler."""
+    """Newsletter signup, rendered in footer_html()'s .footer-columns grid
+    under grid-area "news" -- a dedicated row spanning the About + Get In
+    Touch columns, directly below them (see grid-template-areas in
+    STYLE_CSS), not a separate band and not a same-width 4th column.
+    KLAVIYO_SIGNUP_JS, loaded once in footer_html(), binds this form's
+    submit handler."""
     return """
 <h4>Newsletter</h4>
 <p>Breaking hip-hop news, drops, and rumors -- straight to your email.</p>
 <form class="klaviyo-signup-form" data-variant="footer">
-  <input type="email" name="email" class="klaviyo-signup-input" placeholder="Enter your email" required aria-label="Email address">
-  <button type="submit" class="klaviyo-signup-btn">Sign Up</button>
+  <div class="klaviyo-signup-row">
+    <input type="email" name="email" class="klaviyo-signup-input" placeholder="Enter your email" required aria-label="Email address">
+    <button type="submit" class="klaviyo-signup-btn">Sign Up</button>
+  </div>
   <label class="klaviyo-signup-consent">
     <input type="checkbox" required>
     <span>I agree to receive emails from UNO Entertainment. See our <a href="/privacy-policy/">Privacy Policy</a>.</span>
@@ -1629,18 +1646,18 @@ def footer_html(prefix: str) -> str:
     </div>
 
     <div class="footer-columns">
-      <div class="footer-col">
+      <div class="footer-col footer-col-sections">
         <h4>Sections</h4>
         <a href="/">Home</a>{section_links}
         <a href="/topics/">Topics</a>
         <a href="/about/">About</a>
       </div>
-      <div class="footer-col">
+      <div class="footer-col footer-col-about">
         <h4>About UNO Entertainment</h4>
         <p>Los Angeles. Hip-hop and culture, summarized. Credit always goes back to the source.</p>
         <a href="/about/">Read more</a>
       </div>
-      <div class="footer-col">
+      <div class="footer-col footer-col-touch">
         <h4>Get In Touch</h4>
         <p>Questions or a story tip?</p>
         <a class="footer-contact-email" href="mailto:support@unoent.com">support@unoent.com</a>
