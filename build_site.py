@@ -637,6 +637,36 @@ main { padding: 32px 5vw 80px; }
 .card-excerpt { font-size: 14px; color: var(--gray); line-height: 1.5; margin: 0 0 16px; flex: 1; }
 .card-link { font-size: 13px; font-weight: 700; color: var(--text); text-transform: uppercase;
   letter-spacing: 0.5px; border-bottom: 2px solid var(--red); padding-bottom: 3px; align-self: flex-start; }
+
+/* Ad rail -- reserves a right-column slot on listing pages (home, category,
+   topic hub) for standard IAB units (300x250, 300x600). Narrows the card
+   grid to ~4 columns on wide desktop instead of 5, sight-unseen -- .grid's
+   existing auto-fill/minmax does that on its own once .listing-main has
+   less width to work with, no column count hardcoded anywhere. Swap the
+   .ad-slot placeholder contents for real ad-network tags once one is
+   wired up; the sizing/markup won't need to change. */
+.listing-layout { display: flex; gap: 28px; align-items: flex-start; }
+.listing-main { flex: 1; min-width: 0; }
+.ad-rail { width: 300px; flex-shrink: 0; display: flex; flex-direction: column; gap: 24px; position: sticky; top: 24px; }
+.ad-slot-flip { position: relative; display: block; width: 300px; height: 250px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+.ad-flip-frame { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.6s ease; }
+.ad-flip-frame.is-visible { opacity: 1; }
+.ad-slot-image { display: block; width: 300px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+.ad-slot-image img { display: block; width: 100%; height: auto; }
+.house-ad { border: 1px solid var(--border); border-radius: 10px; background: var(--bg-card); padding: 22px 20px; text-align: center; }
+.house-ad h3 { font-size: 15px; font-weight: 800; color: var(--text); margin: 0 0 8px; }
+.house-ad p { font-size: 13px; color: var(--gray); line-height: 1.5; margin: 0 0 14px; }
+.house-ad a {
+  display: inline-block; background: var(--red); color: #fff; font-size: 12px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.5px; padding: 10px 20px; border-radius: 6px; text-decoration: none;
+}
+.house-ad a:hover { background: #c81a27; }
+@media (max-width: 980px) {
+  .listing-layout { flex-direction: column; }
+  .ad-rail { width: 100%; flex-direction: row; flex-wrap: wrap; justify-content: center; position: static; }
+  .ad-slot, .house-ad { width: 100%; max-width: 336px; }
+}
+
 footer { padding: 56px 5vw 0; border-top: 1px solid var(--border); color: var(--gray); font-size: 13px; line-height: 1.7; background: var(--bg-card); }
 footer strong { color: var(--text); }
 footer a { color: var(--gray); text-decoration: none; }
@@ -1349,6 +1379,49 @@ def meta_html(prefix: str, title: str, description: str, canonical_url: str, ima
 <meta name="twitter:image" content="{image_url}">"""
 
 
+def ad_rail_html(prefix: str) -> str:
+    """Sticky right-rail placement for listing pages (homepage, category,
+    topic hub) -- one 300x250, a house ad, and one 300x600, the standard
+    IAB units most ad networks and direct buys expect.
+
+    The 300x250 auto-flips between two Holly Michelle "Good Girl" creatives
+    (cover shot / branded CTA) every 2-5s, both clicking through to her
+    Instagram. The 300x600 is a real sold placement for Terra the City's
+    Lemon Negra, linking to prophiphop.myshopify.com/products/terraform-the-city-lemonegra -- first actual ad sale
+    on the site. Swap any slot's contents for a network/direct tag as more
+    inventory sells; the layout itself doesn't need to change."""
+    return f"""<aside class="ad-rail">
+    <a class="ad-slot-flip" href="https://www.instagram.com/h0llymichelle/" target="_blank" rel="noopener noreferrer sponsored">
+      <img class="ad-flip-frame is-visible" src="{prefix}images/ad-holly-michelle-mrec-a.png" alt="Holly Michelle -- Good Girl, follow on Instagram" width="300" height="250" loading="lazy">
+      <img class="ad-flip-frame" src="{prefix}images/ad-holly-michelle-mrec-b.png" alt="Holly Michelle -- Good Girl, follow on Instagram" width="300" height="250" loading="lazy">
+    </a>
+    <script>
+    (function(){{
+      document.querySelectorAll(".ad-slot-flip").forEach(function(rail){{
+        var frames = rail.querySelectorAll(".ad-flip-frame");
+        if (frames.length < 2) return;
+        var i = 0;
+        function tick(){{
+          frames[i].classList.remove("is-visible");
+          i = (i + 1) % frames.length;
+          frames[i].classList.add("is-visible");
+          setTimeout(tick, 2000 + Math.random() * 3000);
+        }}
+        setTimeout(tick, 2000 + Math.random() * 3000);
+      }});
+    }})();
+    </script>
+    <div class="house-ad">
+      <h3>Advertise With UNO Ent</h3>
+      <p>Reach hip-hop's most engaged audience. Placements available now.</p>
+      <a href="mailto:support@unoent.com">Get In Touch</a>
+    </div>
+    <a class="ad-slot-image" href="https://prophiphop.myshopify.com/products/terraform-the-city-lemonegra" target="_blank" rel="noopener noreferrer sponsored">
+      <img src="{prefix}images/ad-coffee-lemon-negra-300x600.png" alt="Terra the City -- Lemon Negra coffee lemonade" width="300" height="600" loading="lazy">
+    </a>
+  </aside>"""
+
+
 def card_html(a: dict, prefix: str) -> str:
     thumb = a.get("thumbnail")
     thumb_html = (
@@ -1448,10 +1521,15 @@ def build_page(page_num: int, total_pages: int):
 {GTM_BODY_SNIPPET}
 {header_html(prefix, "all")}
 <main>
-  <div class="grid">
-    {cards}
+  <div class="listing-layout">
+    <div class="listing-main">
+      <div class="grid">
+        {cards}
+      </div>
+      {pagination_html(page_num, total_pages)}
+    </div>
+    {ad_rail_html(prefix)}
   </div>
-  {pagination_html(page_num, total_pages)}
 </main>
 {footer_html(prefix)}
 </body>
@@ -1551,11 +1629,16 @@ def build_category(cat_key: str, cat_label: str):
 {GTM_BODY_SNIPPET}
 {header_html(prefix, cat_key)}
 <main>
-  <div class="grid">
-    {cards}
+  <div class="listing-layout">
+    <div class="listing-main">
+      <div class="grid">
+        {cards}
+      </div>
+      {empty_state}
+      {category_pagination_html(cat_key, page_num, total_pages)}
+    </div>
+    {ad_rail_html(prefix)}
   </div>
-  {empty_state}
-  {category_pagination_html(cat_key, page_num, total_pages)}
 </main>
 {footer_html(prefix)}
 </body>
@@ -1647,14 +1730,19 @@ def build_topic(slug: str, name: str):
 {GTM_BODY_SNIPPET}
 {header_html(prefix)}
 <main>
-  <div class="topic-hub-heading">
-    <h1>{escape(name)}</h1>
-    <p class="topic-hub-sub">Every UNO Entertainment story on {escape(name)}, newest first.</p>
+  <div class="listing-layout">
+    <div class="listing-main">
+      <div class="topic-hub-heading">
+        <h1>{escape(name)}</h1>
+        <p class="topic-hub-sub">Every UNO Entertainment story on {escape(name)}, newest first.</p>
+      </div>
+      <div class="grid">
+        {cards}
+      </div>
+      {topic_pagination_html(slug, page_num, total_pages)}
+    </div>
+    {ad_rail_html(prefix)}
   </div>
-  <div class="grid">
-    {cards}
-  </div>
-  {topic_pagination_html(slug, page_num, total_pages)}
 </main>
 {footer_html(prefix)}
 </body>
