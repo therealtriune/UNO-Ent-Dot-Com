@@ -142,7 +142,21 @@ header .tagline {
 [data-theme="light"] .theme-icon-sun { display: none; }
 [data-theme="light"] .theme-icon-moon { display: block; }
 
-@media (max-width: 1500px) {
+/* Tablet -- same nav as desktop (pills + search, no hamburger), just
+   compacted to fit narrower widths: tagline dropped, tighter gaps/padding
+   on the pills, and the search bar collapses to an icon (shared with the
+   mobile collapse rule below) until tapped. Anything wider than this
+   falls through to the full desktop spacing above; anything narrower
+   switches to the hamburger layout below. */
+@media (min-width: 761px) and (max-width: 1500px) {
+  header .tagline { display: none; }
+  header { padding: 18px 4vw; gap: 10px; }
+  .header-filters { gap: 5px; }
+  .header-filters a { padding: 6px 11px; font-size: 11px; }
+  .header-filters .theme-toggle-btn { padding: 6px 11px; }
+}
+
+@media (max-width: 760px) {
   header .tagline { display: none; }
   header { gap: 10px; }
   /* Visible header row on mobile, left to right: logo, search, theme
@@ -393,7 +407,7 @@ footer a:hover { color: var(--text); }
 }
 .search-bar button:hover { background: #c81a27; }
                           
-.header-search { order: 2; margin-left: auto; }
+.header-search { order: 2; }
 @media (max-width: 1500px) {
   /* Collapse to an icon-only button on mobile -- there isn't room for logo +
      full text input + hamburger on one row, so the input is visually hidden
