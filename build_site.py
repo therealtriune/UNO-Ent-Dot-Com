@@ -1057,25 +1057,6 @@ footer a:hover { color: var(--text); }
 .topic-index-name { font-size: 15px; font-weight: 700; color: var(--text); }
 .topic-index-count { font-size: 12px; color: var(--gray); flex-shrink: 0; }
 
-/* Hip-Hop Beef Tracker pillar page (/hip-hop-beef-tracker/) */
-.beef-tracker-intro { font-size: 15px; line-height: 1.7; color: var(--text-secondary); max-width: 760px; margin: 0 0 40px; }
-.beef-entry {
-  background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
-  padding: 24px 26px; margin-bottom: 20px;
-}
-.beef-entry-header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 10px; }
-.beef-entry-title { font-size: 19px; font-weight: 800; color: var(--text); margin: 0; }
-.beef-entry-status {
-  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
-  padding: 4px 12px; border-radius: 999px; flex-shrink: 0;
-}
-.beef-entry-status.active { background: rgba(224, 32, 46, 0.16); color: var(--red); }
-.beef-entry-status.dormant { background: rgba(154, 154, 154, 0.16); color: var(--gray); }
-.beef-entry-updated { font-size: 12px; color: var(--gray); margin: 0 0 12px; }
-.beef-entry-summary { font-size: 15px; line-height: 1.65; color: var(--text-secondary); margin: 0 0 14px; }
-.beef-entry-links { display: flex; flex-wrap: wrap; gap: 8px 18px; }
-.beef-entry-links a { font-size: 13px; font-weight: 700; color: var(--red); text-decoration: none; }
-.beef-entry-links a:hover { text-decoration: underline; }
 """
 
 # ---------------------------------------------------------------------------
@@ -1315,7 +1296,6 @@ def footer_html(prefix: str) -> str:
         <h4>Sections</h4>
         <a href="/">Home</a>{section_links}
         <a href="/topics/">Topics</a>
-        <a href="/hip-hop-beef-tracker/">Beef Tracker</a>
         <a href="/about/">About</a>
       </div>
       <div class="footer-col">
@@ -1740,214 +1720,6 @@ def build_topics_index(live_topics: list) -> None:
 
 # ---------------------------------------------------------------------------
 # Hip-Hop Beef Tracker — a single evergreen pillar page at
-# /hip-hop-beef-tracker/ rounding up the storylines UNO Ent has covered the
-# most (curated below, not auto-detected — matching two names co-occurring
-# in an article is a decent signal for a topic hub, but "is this actually an
-# active beef" takes a human call fabrication). Every claim in SUMMARY below
-# is a paraphrase of something already reported in one of the linked
-# ARTICLE_SLUGS -- nothing here should ever assert a fact that isn't backed
-# by an article already in the archive.
-#
-# MAINTENANCE: this needs a human pass periodically, the same way the
-# category/topic lists above do -- add a new entry when a storyline UNO Ent
-# is covering repeatedly doesn't have one yet, flip STATUS to "dormant" once
-# a beef goes quiet for a while, and add newer ARTICLE_SLUGS to an existing
-# entry as the story develops. build_beef_tracker() below only ever links to
-# slugs that still exist in ARTICLES (a slug removed by check_links.py's
-# dead-link pruning is silently dropped from an entry's link list, never
-# left as a broken link), and computes "last updated" from whichever of an
-# entry's still-live articles is newest -- but it doesn't invent new
-# entries or new claims on its own.
-BEEF_TRACKER = [
-    {
-        "slug": "drake-kendrick-lamar",
-        "title": "Drake vs. Kendrick Lamar",
-        "status": "active",
-        "summary": (
-            "Their 2024 lyrical war never fully cooled off. Drake has kept "
-            "referencing the battle -- including barking along to Kendrick's "
-            "\"Not Like Us\" in a viral clip -- and the beef has since pulled "
-            "in a second front: Drake trading shots with Jay-Z as tension "
-            "with Roc Nation escalates, with Kendrick's name coming up in "
-            "that conversation too."
-        ),
-        "article_slugs": [
-            "drake-takes-more-shots-at-jay-z-as-roc-nation-beef-intensifies",
-            "drake-makes-a-rare-admission-about-his-battle-with-kendrick-lamar",
-            "drake-barks-to-the-beat-of-not-like-us-in-new-viral-video-edit",
-        ],
-        "topic_slugs": ["drake", "kendrick-lamar", "jay-z"],
-    },
-    {
-        "slug": "doja-cat-tyga",
-        "title": "Doja Cat vs. Tyga",
-        "status": "active",
-        "summary": (
-            "Doja Cat publicly tore into Tyga over his new album $TARFACE, "
-            "accusing him of leaning on AI in its production and calling him "
-            "out during a livestream. Tyga pushed back, insisting the album "
-            "isn't \"totally AI\" and responding directly to her criticism."
-        ),
-        "article_slugs": [
-            "doja-cat-brutally-disses-tyga-his-tarface-album",
-            "tyga-insists-tarface-album-not-totally-ai-responds-to-doja-cat",
-            "doja-cat-calls-tyga-a-penis-for-releasing-a-i-album",
-        ],
-        "topic_slugs": ["doja-cat", "tyga"],
-    },
-    {
-        "slug": "cardi-b-bia",
-        "title": "Cardi B vs. BIA",
-        "status": "active",
-        "summary": (
-            "A long-running feud between Cardi B and BIA flared back up: BIA "
-            "made clear she wouldn't apologize to Cardi the way she had to "
-            "Doja Cat, and Cardi responded by accusing BIA of spreading "
-            "rumors about her relationship with Offset during an X Spaces "
-            "conversation."
-        ),
-        "article_slugs": [
-            "bia-revives-cardi-b-feud-cardi-b-unleashes-explosive-response",
-            "cardi-b-reignites-feud-with-bia-over-offset-cheating-rumors",
-        ],
-        "topic_slugs": ["cardi-b"],
-    },
-    {
-        "slug": "rick-ross-50-cent",
-        "title": "Rick Ross vs. 50 Cent",
-        "status": "active",
-        "summary": (
-            "50 Cent mocked Rick Ross's album sales and a sparse Detroit "
-            "crowd; Ross fired back with his own streaming numbers for "
-            "*Set In Stone* and challenged 50's business record, and the "
-            "back-and-forth has since spilled into jokes about liquor "
-            "brands and sneaker deals."
-        ),
-        "article_slugs": [
-            "rick-ross-challenges-50-cent-s-business-record-after-album-sales-jab",
-            "rick-ross-challenges-50-cent-s-sales-jokes-with-his-own-math",
-            "50-cent-insists-rick-ross-career-is-over-after-low-album-sales",
-        ],
-        "topic_slugs": ["rick-ross", "50-cent"],
-    },
-    {
-        "slug": "50-cent-diddy",
-        "title": "50 Cent vs. Diddy",
-        "status": "dormant",
-        "summary": (
-            "Not a diss-track beef so much as a running war of press hits: "
-            "Diddy has accused Lil Rod of stealing private footage and "
-            "feeding it to 50 Cent's Netflix documentary, and 50 has kept "
-            "needling Diddy over the ongoing Tupac murder-trial coverage, "
-            "including a public jab at Keefe D over his claims."
-        ),
-        "article_slugs": [
-            "exclusive-diddy-claims-lil-rod-sold-stolen-footage-into-50-cent-s-netf",
-            "50-cent-clowns-keefe-d-for-claiming-diddy-didn-t-murder-tupac",
-        ],
-        "topic_slugs": ["50-cent", "diddy", "keefe-d"],
-    },
-]
-
-
-def beef_tracker_jsonld(live_entries: list) -> str:
-    """ItemList structured data for the tracker -- lets Google understand
-    this is a curated list of distinct storylines, not one long article."""
-    data = {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "Hip-Hop Beef Tracker",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": i + 1,
-                "name": entry["title"],
-                "url": f"{SITE_URL}/hip-hop-beef-tracker/#{entry['slug']}",
-            }
-            for i, entry in enumerate(live_entries)
-        ],
-    }
-    return jsonld_script(data)
-
-
-def build_beef_tracker():
-    """/hip-hop-beef-tracker/ -- one evergreen page, not paginated. Returns
-    the list of entries that actually rendered (had at least one surviving
-    article link) so main()/build_sitemap can both use it as the single
-    source of truth, same pattern as build_topic_hubs()."""
-    import os
-
-    article_by_slug = {a["slug"]: a for a in ARTICLES}
-    live_entries = []
-    entries_html = []
-    for entry in BEEF_TRACKER:
-        live_articles = [article_by_slug[s] for s in entry["article_slugs"] if s in article_by_slug]
-        if not live_articles:
-            # Every source article for this storyline has since been pruned
-            # (dead link) -- skip rather than publish an unsourced claim.
-            continue
-        live_entries.append(entry)
-        last_updated = max(live_articles, key=lambda a: a["date"])["date"]
-        links = " &middot; ".join(
-            f'<a href="/articles/{a["slug"]}/">{escape(a["title"])}</a>' for a in live_articles
-        )
-        topic_links = " &middot; ".join(
-            f'<a href="/topic/{slug}/">{escape(TOPIC_LABELS[slug])}</a>'
-            for slug in entry["topic_slugs"]
-            if slug in TOPIC_LABELS and topic_articles(slug)
-        )
-        entries_html.append(f"""
-  <article class="beef-entry" id="{entry['slug']}">
-    <div class="beef-entry-header">
-      <h2 class="beef-entry-title">{escape(entry['title'])}</h2>
-      <span class="beef-entry-status {entry['status']}">{entry['status']}</span>
-    </div>
-    <p class="beef-entry-updated">Last updated {escape(time_ago(last_updated))}</p>
-    <p class="beef-entry-summary">{escape(entry['summary'])}</p>
-    <div class="beef-entry-links">{links}{" &middot; " + topic_links if topic_links else ""}</div>
-  </article>""")
-
-    prefix = "../"
-    title = "Hip-Hop Beef Tracker | UNO Entertainment"
-    canonical = f"{SITE_URL}/hip-hop-beef-tracker/"
-    description = (
-        "Every hip-hop beef UNO Entertainment is tracking right now -- who's "
-        "involved, what started it, and where each storyline stands."
-    )
-    html = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-{GTM_HEAD_SNIPPET}
-{THEME_INIT_SNIPPET}
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{title}</title>
-{meta_html(prefix, title, description, canonical)}
-{beef_tracker_jsonld(live_entries)}
-<link rel="stylesheet" href="{prefix}style.css">
-</head>
-<body>
-{GTM_BODY_SNIPPET}
-{header_html(prefix)}
-<main>
-  <div class="topic-hub-heading">
-    <h1>Hip-Hop Beef Tracker</h1>
-    <p class="topic-hub-sub">Every storyline UNO Entertainment is following right now, updated as it develops.</p>
-  </div>
-  <p class="beef-tracker-intro">From lyrical wars to X Spaces callouts, this is where UNO Ent keeps score.
-  Each entry links back to the stories behind it -- click through for the full picture, or check the linked
-  artist hub for everything else we've covered on them.</p>
-{"".join(entries_html)}
-</main>
-{footer_html(prefix)}
-</body>
-</html>
-"""
-    os.makedirs("hip-hop-beef-tracker", exist_ok=True)
-    with open("hip-hop-beef-tracker/index.html", "w") as f:
-        f.write(html)
-    return live_entries
-
 
 def build_topic_hubs():
     """Builds every topic hub with at least one matching article today, plus
@@ -2439,7 +2211,7 @@ ABOUT_BODY = """
   <p>UNO Entertainment is The Culture's Feed. Hip-hop news, new music, beef, and the stories people actually talk about, pulled into one place.</p>
   <p>We're based in Los Angeles. Every story on this site is a short original summary with a link to the outlet that reported it. XXL, HotNewHipHop, The Source, and the rest of the desk get the credit.</p>
   <h2>What you'll find</h2>
-  <p>The feed. Artist <a href="/topics/">topic hubs</a>. And the <a href="/hip-hop-beef-tracker/">Hip-Hop Beef Tracker</a>, where we keep score on the storylines that are still live.</p>
+  <p>The feed. Artist <a href="/topics/">topic hubs</a>. All in one place.</p>
   <h2>Story tips</h2>
   <p><a href="mailto:support@unoent.com">support@unoent.com</a></p>
 """
@@ -2556,7 +2328,7 @@ Sitemap: {SITE_URL}/sitemap.xml
         f.write(content)
 
 
-def build_sitemap(total_pages: int, live_topics: list, beef_tracker_live: list):
+def build_sitemap(total_pages: int, live_topics: list):
     """XML sitemap covering every clean-URL page the Site generates:
     homepage + pagination, every category (+ its pagination), every topic
     hub (+ its pagination), every article page, the legal pages, /topics/,
@@ -2586,8 +2358,6 @@ def build_sitemap(total_pages: int, live_topics: list, beef_tracker_live: list):
     if live_topics:
         urls.append((f"{SITE_URL}/topics/", now_iso))
 
-    if beef_tracker_live:
-        urls.append((f"{SITE_URL}/hip-hop-beef-tracker/", now_iso))
 
     for a in ARTICLES:
         try:
@@ -2621,7 +2391,6 @@ def main():
     total_pages = build_pages()
     build_categories()
     live_topics = build_topic_hubs()
-    beef_tracker_live = build_beef_tracker()
     prune_stale_article_pages()
     for a in ARTICLES:
         build_article(a)
@@ -2632,7 +2401,7 @@ def main():
     build_search_index()
     build_search_page()
     build_robots_txt()
-    sitemap_url_count = build_sitemap(total_pages, live_topics, beef_tracker_live)
+    sitemap_url_count = build_sitemap(total_pages, live_topics)
     from collections import Counter
     counts = Counter(a.get("category") for a in ARTICLES)
     cat_summary = ", ".join(f"{label} {counts.get(key, 0)}" for key, label in CATEGORIES)
@@ -2641,7 +2410,6 @@ def main():
         f"+ {ARTICLE_COUNT} article pages in articles/*/ "
         f"+ category pages ({cat_summary}) "
         f"+ {len(live_topics)} topic hub(s) + /topics/ "
-        f"+ /hip-hop-beef-tracker/ ({len(beef_tracker_live)} storylines) "
         f"+ /about/ + /privacy-policy/ + /terms/ "
         f"+ /search/ (search-index.json, {ARTICLE_COUNT} articles) "
         f"+ robots.txt + sitemap.xml ({sitemap_url_count} URLs), plus style.css"
