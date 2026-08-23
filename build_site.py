@@ -2586,6 +2586,39 @@ def build_search_index():
     with open("search-index.json", "w") as f:
         json.dump(index, f, separators=(",", ":"))
 
+def build_hottest_feed():
+    """Small JSON feed of the freshest News/Rumors/Music articles, consumed
+    by Klaviyo as a Web Feed (Settings -> Data Feeds) for the welcome
+    series' "what you missed" email. Klaviyo polls this URL every ~15
+    minutes -- the same cadence this site already rebuilds on -- so the
+    feed self-refreshes with no separate sync job. Deliberately over-
+    provides (HOTTEST_FEED_LIMIT items) rather than hardcoding 3, so the
+    email template can `|slice:':3'` (or however many it wants) without
+    this function needing to know how many any given email shows.
+    UTM params are baked into each url here rather than left to the email
+    template, so every consumer of this feed gets consistent attribution
+    for free."""
+    HOTTEST_FEED_LIMIT = 10
+    eligible = [a for a in ARTICLES if a.get("category") in ("news", "rumors", "music")]
+    items = []
+    for a in eligible[:HOTTEST_FEED_LIMIT]:
+        url = (
+            f"{SITE_URL}/articles/{a['slug']}/"
+            f"?utm_source=klaviyo&utm_medium=email&utm_campaign=welcome_2&utm_content={a['category']}"
+        )
+        items.append(
+            {
+                "title": a["title"],
+                "excerpt": a.get("excerpt", ""),
+                "url": url,
+                "thumbnail": a.get("thumbnail") or f"{SITE_URL}/uno-logo.png",
+                "category": a.get("category"),
+            }
+        )
+    with open("hottest.json", "w") as f:
+        json.dump({"items": items}, f, separators=(",", ":"))
+
+
 def build_search_page():
     """/search/ -- a static shell with no server-rendered results. All
     matching happens client-side in SEARCH_PAGE_JS against
@@ -2821,6 +2854,7 @@ def main():
     build_legal_page("terms", "Terms of Service", TERMS_BODY)
     check_thumbnails(ARTICLES)
     build_search_index()
+    build_hottest_feed()
     build_search_page()
     build_robots_txt()
     sitemap_url_count = build_sitemap(total_pages, live_topics)
@@ -2834,6 +2868,7 @@ def main():
         f"+ {len(live_topics)} topic hub(s) + /topics/ "
         f"+ /about/ + /privacy-policy/ + /terms/ "
         f"+ /search/ (search-index.json, {ARTICLE_COUNT} articles) "
+        f"+ hottest.json "
         f"+ robots.txt + sitemap.xml ({sitemap_url_count} URLs), plus style.css"
     )
 
