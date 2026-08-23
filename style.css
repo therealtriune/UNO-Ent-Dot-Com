@@ -561,7 +561,7 @@ footer a:hover { color: var(--text); }
 }
 .feature-body a { color: var(--red); font-weight: 700; text-decoration: none; }
 .feature-body a:hover { text-decoration: underline; }
-.feature-body .outbound-cta { margin: 10px 0 28px; border-radius: 2px; text-transform: uppercase; letter-spacing: 1px; }
+.feature-body .outbound-cta { margin: 10px 0 28px; border-radius: 2px; text-transform: uppercase; letter-spacing: 1px; color: #fff; }
 .feature-pullquote {
   position: relative; margin: 40px 0; padding: 8px 0 8px 40px;
   font-size: 30px; line-height: 1.35; font-weight: 800; color: var(--text);
