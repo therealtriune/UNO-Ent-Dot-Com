@@ -123,7 +123,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">20 hours ago</div>
+  <div class="article-meta">21 hours ago</div>
   <h1 class="article-title">EXCLUSIVE: The Game Tells His Life Story (Flashback)</h1>
   <img class="article-hero" src="https://www.vladtv.com/images/size_fs/video-315825.jpg?ver=1787332031" alt="EXCLUSIVE: The Game Tells His Life Story (Flashback)" onload="this.style.animation='none'">
   <p class="article-summary">In this flashback, we revisit our VladTV interview with multi-platinum rapper The Game, who opened up about his life and career. Vlad began the conversation by</p>
@@ -170,6 +170,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="/"><img class="footer-logo logo-dark-mode" src="../../uno-logo.png" alt="UNO Entertainment"><img class="footer-logo logo-light-mode" src="../../uno-logo-dark.png" alt="UNO Entertainment"></a>
       <p class="footer-tagline">The Culture's Feed</p>
     </div>
+
+    
+<div class="klaviyo-signup klaviyo-signup--footer">
+  <div class="klaviyo-signup-copy">
+    <h3>Get The Culture's Feed In Your Inbox</h3>
+    <p>Breaking hip-hop news, drops, and rumors -- straight to your email. No spam, unsubscribe anytime.</p>
+  </div>
+  <form class="klaviyo-signup-form" data-variant="footer">
+    <div class="klaviyo-signup-row">
+      <input type="email" name="email" class="klaviyo-signup-input" placeholder="Enter your email" required aria-label="Email address">
+      <button type="submit" class="klaviyo-signup-btn">Sign Up</button>
+    </div>
+    <label class="klaviyo-signup-consent">
+      <input type="checkbox" required>
+      <span>Yes, send me UNO Entertainment news and updates. I can unsubscribe anytime. See our <a href="/privacy-policy/">Privacy Policy</a>.</span>
+    </label>
+    <p class="klaviyo-signup-status" role="status" aria-live="polite"></p>
+  </form>
+</div>
 
     <div class="footer-columns">
       <div class="footer-col">
@@ -303,6 +322,75 @@ function unoCookieConsent() {
     });
     input.addEventListener("blur", function () { setTimeout(closePanel, 150); });
     document.addEventListener("click", function (e) { if (!bar.contains(e.target)) closePanel(); });
+  });
+})();
+</script>
+<script>
+(function() {
+  var COMPANY_ID = "W6wbWE";
+  var LIST_ID = "WNfXVh";
+  function isValidEmail(email) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); }
+  document.querySelectorAll(".klaviyo-signup-form").forEach(function(form) {
+    if (form.dataset.klaviyoBound) return;
+    form.dataset.klaviyoBound = "1";
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      var status = form.querySelector(".klaviyo-signup-status");
+      var btn = form.querySelector(".klaviyo-signup-btn");
+      var emailInput = form.querySelector(".klaviyo-signup-input");
+      var email = (emailInput.value || "").trim();
+      if (!isValidEmail(email)) {
+        status.textContent = "Enter a valid email address.";
+        status.className = "klaviyo-signup-status is-error";
+        return;
+      }
+      btn.disabled = true;
+      var originalLabel = btn.textContent;
+      btn.textContent = "Signing up…";
+      status.textContent = "";
+      status.className = "klaviyo-signup-status";
+      fetch("https://a.klaviyo.com/client/subscriptions?company_id=" + COMPANY_ID, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+          "revision": "2024-10-15"
+        },
+        body: JSON.stringify({
+          data: {
+            type: "subscription",
+            attributes: {
+              custom_source: "unoent.com -- " + (form.getAttribute("data-variant") || "signup"),
+              profile: {
+                data: {
+                  type: "profile",
+                  attributes: { email: email }
+                }
+              }
+            },
+            relationships: {
+              list: { data: { type: "list", id: LIST_ID } }
+            }
+          }
+        })
+      }).then(function(res) {
+        btn.disabled = false;
+        btn.textContent = originalLabel;
+        if (res.ok) {
+          form.reset();
+          status.textContent = "You're in! Check your inbox to confirm.";
+          status.className = "klaviyo-signup-status is-success";
+        } else {
+          status.textContent = "Something went wrong. Please try again.";
+          status.className = "klaviyo-signup-status is-error";
+        }
+      }).catch(function() {
+        btn.disabled = false;
+        btn.textContent = originalLabel;
+        status.textContent = "Something went wrong. Please try again.";
+        status.className = "klaviyo-signup-status is-error";
+      });
+    });
   });
 })();
 </script>

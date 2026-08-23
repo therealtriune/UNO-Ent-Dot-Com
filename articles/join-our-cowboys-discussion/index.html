@@ -123,7 +123,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">13 hours ago</div>
+  <div class="article-meta">14 hours ago</div>
   <h1 class="article-title">Join our Cowboys discussion</h1>
   <img class="article-hero" src="https://s.yimg.com/lo/mysterio/api/140a0ae9c323eecaefa73f2acaab99a107e5751cdf65eb82a4f3793325a4b141/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F75ae8b297836a619e8ad74c8bf649b42.jpg" alt="Join our Cowboys discussion" onload="this.style.animation='none'">
   <p class="article-summary">ARLINGTON, TEXAS - NOVEMBER 03: Trey McBride #85 of the Arizona Cardinals successfully defended by Markquese Bell #14 of the Dallas Cowboys during the first quarter in the game at AT&amp;T Stadium on November 03, 2025 in Arlington, Texas. (Photo by Stacy Revere/Getty Images) | Getty Images The Dallas Cowboys take on the Arizona Cardinals in their second preseason game for the 2026 season. The Cowboys were successful in most things in their first preseason game, a 17-7 win over the Seattle Seahawks.</p>
@@ -170,6 +170,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="/"><img class="footer-logo logo-dark-mode" src="../../uno-logo.png" alt="UNO Entertainment"><img class="footer-logo logo-light-mode" src="../../uno-logo-dark.png" alt="UNO Entertainment"></a>
       <p class="footer-tagline">The Culture's Feed</p>
     </div>
+
+    
+<div class="klaviyo-signup klaviyo-signup--footer">
+  <div class="klaviyo-signup-copy">
+    <h3>Get The Culture's Feed In Your Inbox</h3>
+    <p>Breaking hip-hop news, drops, and rumors -- straight to your email. No spam, unsubscribe anytime.</p>
+  </div>
+  <form class="klaviyo-signup-form" data-variant="footer">
+    <div class="klaviyo-signup-row">
+      <input type="email" name="email" class="klaviyo-signup-input" placeholder="Enter your email" required aria-label="Email address">
+      <button type="submit" class="klaviyo-signup-btn">Sign Up</button>
+    </div>
+    <label class="klaviyo-signup-consent">
+      <input type="checkbox" required>
+      <span>Yes, send me UNO Entertainment news and updates. I can unsubscribe anytime. See our <a href="/privacy-policy/">Privacy Policy</a>.</span>
+    </label>
+    <p class="klaviyo-signup-status" role="status" aria-live="polite"></p>
+  </form>
+</div>
 
     <div class="footer-columns">
       <div class="footer-col">
@@ -303,6 +322,75 @@ function unoCookieConsent() {
     });
     input.addEventListener("blur", function () { setTimeout(closePanel, 150); });
     document.addEventListener("click", function (e) { if (!bar.contains(e.target)) closePanel(); });
+  });
+})();
+</script>
+<script>
+(function() {
+  var COMPANY_ID = "W6wbWE";
+  var LIST_ID = "WNfXVh";
+  function isValidEmail(email) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); }
+  document.querySelectorAll(".klaviyo-signup-form").forEach(function(form) {
+    if (form.dataset.klaviyoBound) return;
+    form.dataset.klaviyoBound = "1";
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      var status = form.querySelector(".klaviyo-signup-status");
+      var btn = form.querySelector(".klaviyo-signup-btn");
+      var emailInput = form.querySelector(".klaviyo-signup-input");
+      var email = (emailInput.value || "").trim();
+      if (!isValidEmail(email)) {
+        status.textContent = "Enter a valid email address.";
+        status.className = "klaviyo-signup-status is-error";
+        return;
+      }
+      btn.disabled = true;
+      var originalLabel = btn.textContent;
+      btn.textContent = "Signing up…";
+      status.textContent = "";
+      status.className = "klaviyo-signup-status";
+      fetch("https://a.klaviyo.com/client/subscriptions?company_id=" + COMPANY_ID, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+          "revision": "2024-10-15"
+        },
+        body: JSON.stringify({
+          data: {
+            type: "subscription",
+            attributes: {
+              custom_source: "unoent.com -- " + (form.getAttribute("data-variant") || "signup"),
+              profile: {
+                data: {
+                  type: "profile",
+                  attributes: { email: email }
+                }
+              }
+            },
+            relationships: {
+              list: { data: { type: "list", id: LIST_ID } }
+            }
+          }
+        })
+      }).then(function(res) {
+        btn.disabled = false;
+        btn.textContent = originalLabel;
+        if (res.ok) {
+          form.reset();
+          status.textContent = "You're in! Check your inbox to confirm.";
+          status.className = "klaviyo-signup-status is-success";
+        } else {
+          status.textContent = "Something went wrong. Please try again.";
+          status.className = "klaviyo-signup-status is-error";
+        }
+      }).catch(function() {
+        btn.disabled = false;
+        btn.textContent = originalLabel;
+        status.textContent = "Something went wrong. Please try again.";
+        status.className = "klaviyo-signup-status is-error";
+      });
+    });
   });
 })();
 </script>

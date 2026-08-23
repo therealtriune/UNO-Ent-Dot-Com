@@ -682,3 +682,79 @@ footer a:hover { color: var(--text); }
 .topic-index-name { font-size: 15px; font-weight: 700; color: var(--text); }
 .topic-index-count { font-size: 12px; color: var(--gray); flex-shrink: 0; }
 
+/* ---------------------------------------------------------------------
+   Klaviyo email signup -- footer bar (sitewide, in footer_html()) and
+   homepage inline module (in build_page()'s article grid). Both variants
+   share markup/JS (klaviyo_signup_html()/KLAVIYO_SIGNUP_JS below); only
+   this layout differs per variant.
+--------------------------------------------------------------------- */
+.klaviyo-signup {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 28px;
+}
+.klaviyo-signup--footer {
+  margin: 24px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.klaviyo-signup--inline {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+.klaviyo-signup--inline .klaviyo-signup-copy { margin-bottom: 16px; }
+.klaviyo-signup-copy h3 { margin: 0 0 4px; font-size: 18px; font-weight: 700; }
+.klaviyo-signup-copy p { margin: 0; color: var(--gray); font-size: 13px; }
+.klaviyo-signup-form { flex: 1 1 360px; min-width: 260px; }
+.klaviyo-signup--inline .klaviyo-signup-form { max-width: 480px; margin: 0 auto; }
+.klaviyo-signup-row { display: flex; gap: 8px; }
+.klaviyo-signup-input {
+  flex: 1;
+  padding: 11px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  min-width: 0;
+}
+.klaviyo-signup-input:focus { outline: 2px solid var(--red); outline-offset: 1px; }
+.klaviyo-signup-btn {
+  padding: 11px 22px;
+  border-radius: 999px;
+  border: none;
+  background: var(--red);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.klaviyo-signup-btn:hover { filter: brightness(1.1); }
+.klaviyo-signup-btn:disabled { opacity: 0.6; cursor: default; }
+.klaviyo-signup-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--gray);
+  cursor: pointer;
+  text-align: left;
+}
+.klaviyo-signup--inline .klaviyo-signup-consent { justify-content: center; }
+.klaviyo-signup-consent input { margin-top: 2px; flex-shrink: 0; }
+.klaviyo-signup-consent a { color: var(--text-secondary); text-decoration: underline; }
+.klaviyo-signup-status { margin: 8px 0 0; font-size: 12px; min-height: 14px; }
+.klaviyo-signup-status.is-success { color: #4caf6d; }
+.klaviyo-signup-status.is-error { color: var(--red); }
+@media (max-width: 700px) {
+  .klaviyo-signup--footer { flex-direction: column; align-items: stretch; text-align: center; }
+  .klaviyo-signup--footer .klaviyo-signup-consent { justify-content: center; }
+  .klaviyo-signup-row { flex-direction: column; }
+}
+
