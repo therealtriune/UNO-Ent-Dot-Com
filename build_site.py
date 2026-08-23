@@ -649,8 +649,9 @@ main { padding: 32px 5vw 80px; }
 .listing-main { flex: 1; min-width: 0; }
 .ad-rail { width: 300px; flex-shrink: 0; display: flex; flex-direction: column; gap: 24px; position: sticky; top: 24px; }
 .ad-slot-flip { position: relative; display: block; width: 300px; height: 250px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
-.ad-flip-frame { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.6s ease; }
+.ad-flip-frame { position: absolute; inset: 0; display: block; width: 100%; height: 100%; opacity: 0; transition: opacity 0.6s ease; }
 .ad-flip-frame.is-visible { opacity: 1; }
+.ad-flip-frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .ad-slot-image { display: block; width: 300px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
 .ad-slot-image img { display: block; width: 100%; height: auto; }
 .house-ad { border: 1px solid var(--border); border-radius: 10px; background: var(--bg-card); padding: 22px 20px; text-align: center; }
@@ -1391,10 +1392,14 @@ def ad_rail_html(prefix: str) -> str:
     on the site. Swap any slot's contents for a network/direct tag as more
     inventory sells; the layout itself doesn't need to change."""
     return f"""<aside class="ad-rail">
-    <a class="ad-slot-flip" href="https://www.instagram.com/h0llymichelle/" target="_blank" rel="noopener noreferrer sponsored">
-      <img class="ad-flip-frame is-visible" src="{prefix}images/ad-holly-michelle-mrec-a.png" alt="Holly Michelle -- Good Girl, follow on Instagram" width="300" height="250" loading="lazy">
-      <img class="ad-flip-frame" src="{prefix}images/ad-holly-michelle-mrec-b.png" alt="Holly Michelle -- Good Girl, follow on Instagram" width="300" height="250" loading="lazy">
-    </a>
+    <div class="ad-slot-flip">
+      <a class="ad-flip-frame is-visible" href="https://www.instagram.com/h0llymichelle/" target="_blank" rel="noopener noreferrer sponsored">
+        <img src="{prefix}images/ad-holly-michelle-mrec-a.png" alt="Holly Michelle -- Good Girl, follow on Instagram" width="300" height="250" loading="lazy">
+      </a>
+      <a class="ad-flip-frame" href="{prefix}articles/holly-michelle-good-girl-ep/" target="_blank" rel="noopener noreferrer">
+        <img src="{prefix}images/ad-holly-michelle-mrec-b.png" alt="Holly Michelle -- Good Girl, read the story" width="300" height="250" loading="lazy">
+      </a>
+    </div>
     <script>
     (function(){{
       document.querySelectorAll(".ad-slot-flip").forEach(function(rail){{
