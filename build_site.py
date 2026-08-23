@@ -548,7 +548,7 @@ header .tagline {
 [data-theme="light"] .theme-icon-sun { display: none; }
 [data-theme="light"] .theme-icon-moon { display: block; }
 
-@media (max-width: 760px) {
+@media (max-width: 1500px) {
   header .tagline { display: none; }
   header { gap: 10px; }
   /* Visible header row on mobile, left to right: logo, search, theme
@@ -800,7 +800,7 @@ footer a:hover { color: var(--text); }
 .search-bar button:hover { background: #c81a27; }
                           
 .header-search { order: 2; margin-left: auto; }
-@media (max-width: 760px) {
+@media (max-width: 1500px) {
   /* Collapse to an icon-only button on mobile -- there isn't room for logo +
      full text input + hamburger on one row, so the input is visually hidden
      and tapping the circular red button submits the (empty) form to
@@ -1404,7 +1404,7 @@ SEARCH_SUGGEST_JS = """
       var toggleBtn = bar.querySelector('button[type="submit"]');
       if (toggleBtn) {
         toggleBtn.addEventListener("click", function (e) {
-          if (window.matchMedia("(max-width: 760px)").matches && !bar.classList.contains("expanded")) {
+          if (window.matchMedia("(max-width: 1500px)").matches && !bar.classList.contains("expanded")) {
             e.preventDefault();
             bar.classList.add("expanded");
             input.focus();
