@@ -1728,12 +1728,14 @@ def ad_rail_html(prefix: str) -> str:
     topic hub) -- one 300x250, a house ad, and one 300x600, the standard
     IAB units most ad networks and direct buys expect.
 
-    The 300x250 auto-flips between two Holly Michelle "Good Girl" creatives
-    (cover shot / branded CTA) every 2-5s, both clicking through to her
-    Instagram. The 300x600 is a real sold placement for Terra the City's
-    Lemon Negra, linking to prophiphop.myshopify.com/products/terraform-the-city-lemonegra -- first actual ad sale
-    on the site. Swap any slot's contents for a network/direct tag as more
-    inventory sells; the layout itself doesn't need to change."""
+    The 300x250 auto-flips between three creatives every 2-5s: two Holly
+    Michelle "Good Girl" house-promo frames (cover shot / branded CTA,
+    both clicking through to her Instagram) and one real sold placement
+    for Get Laced Laces (getlacedlaces.com, custom shoelaces, code UNO
+    for 15% off). The 300x600 is a real sold placement for Terra the
+    City's Lemon Negra, linking to prophiphop.myshopify.com/products/terraform-the-city-lemonegra.
+    Swap any slot's contents for a network/direct tag as more inventory
+    sells; the layout itself doesn't need to change."""
     return f"""<aside class="ad-rail">
     <div class="ad-slot-flip" id="ad-holly-michelle" data-campaign="holly-michelle">
       <a class="ad-flip-frame is-visible" href="https://www.instagram.com/h0llymichelle/" target="_blank" rel="noopener noreferrer sponsored">
@@ -1741,6 +1743,9 @@ def ad_rail_html(prefix: str) -> str:
       </a>
       <a class="ad-flip-frame" href="{prefix}articles/holly-michelle-good-girl-ep/" target="_blank" rel="noopener noreferrer">
         <img src="{prefix}images/ad-holly-michelle-mrec-b.png" alt="Holly Michelle -- Good Girl, read the story" width="300" height="250" loading="lazy">
+      </a>
+      <a class="ad-flip-frame" id="ad-getlacedlaces" data-campaign="getlacedlaces" href="https://getlacedlaces.com/" target="_blank" rel="noopener noreferrer sponsored">
+        <img src="{prefix}images/ad-getlacedlaces-mrec.png" alt="Get Laced Laces -- custom shoelaces, 15% off with code UNO" width="300" height="250" loading="lazy">
       </a>
     </div>
     <script>
