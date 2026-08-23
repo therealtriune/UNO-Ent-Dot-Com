@@ -1414,7 +1414,7 @@ def ad_rail_html(prefix: str) -> str:
     <div class="house-ad">
       <h3>Advertise With UNO Ent</h3>
       <p>Reach hip-hop's most engaged audience. Placements available now.</p>
-      <a href="mailto:support@unoent.com">Get In Touch</a>
+      <a href="mailto:support@unoent.com?subject=Advertising%20Inquiry%20--%20UNO%20Ent%20Media">Get In Touch With UNO Ent Media</a>
     </div>
     <a class="ad-slot-image" href="https://prophiphop.myshopify.com/products/terraform-the-city-lemonegra" target="_blank" rel="noopener noreferrer sponsored">
       <img src="{prefix}images/ad-coffee-lemon-negra-300x600.png" alt="Terra the City -- Lemon Negra coffee lemonade" width="300" height="600" loading="lazy">
