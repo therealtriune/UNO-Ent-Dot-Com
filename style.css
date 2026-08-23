@@ -790,6 +790,7 @@ footer a:hover { color: var(--text); }
   justify-content: center;
   padding: 20px;
 }
+.klaviyo-modal[hidden] { display: none; }
 .klaviyo-modal-backdrop {
   position: absolute;
   inset: 0;
