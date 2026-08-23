@@ -1392,7 +1392,7 @@ def ad_rail_html(prefix: str) -> str:
     on the site. Swap any slot's contents for a network/direct tag as more
     inventory sells; the layout itself doesn't need to change."""
     return f"""<aside class="ad-rail">
-    <div class="ad-slot-flip">
+    <div class="ad-slot-flip" id="ad-holly-michelle" data-campaign="holly-michelle">
       <a class="ad-flip-frame is-visible" href="https://www.instagram.com/h0llymichelle/" target="_blank" rel="noopener noreferrer sponsored">
         <img src="{prefix}images/ad-holly-michelle-mrec-a.png" alt="Holly Michelle -- Good Girl, follow on Instagram" width="300" height="250" loading="lazy">
       </a>
@@ -1421,7 +1421,7 @@ def ad_rail_html(prefix: str) -> str:
       <p>Reach hip-hop's most engaged audience. Placements available now.</p>
       <a href="mailto:support@unoent.com?subject=Advertising%20Inquiry%20--%20UNO%20Ent%20Media">Get In Touch With UNO Ent Media</a>
     </div>
-    <a class="ad-slot-image" href="https://prophiphop.myshopify.com/products/terraform-the-city-lemonegra" target="_blank" rel="noopener noreferrer sponsored">
+    <a class="ad-slot-image" id="ad-coffee-lemon-negra" data-campaign="coffee-lemon-negra" href="https://prophiphop.myshopify.com/products/terraform-the-city-lemonegra" target="_blank" rel="noopener noreferrer sponsored">
       <img src="{prefix}images/ad-coffee-lemon-negra-300x600.png" alt="Terra the City -- Lemon Negra coffee lemonade" width="300" height="600" loading="lazy">
     </a>
   </aside>"""
