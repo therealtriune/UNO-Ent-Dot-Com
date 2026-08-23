@@ -393,7 +393,7 @@ footer a:hover { color: var(--text); }
 }
 .search-bar button:hover { background: #c81a27; }
                           
-.header-search { order: 2; }
+.header-search { order: 2; margin-left: auto; }
 @media (max-width: 760px) {
   /* Collapse to an icon-only button on mobile -- there isn't room for logo +
      full text input + hamburger on one row, so the input is visually hidden
