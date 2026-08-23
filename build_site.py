@@ -1088,6 +1088,82 @@ footer a:hover { color: var(--text); }
 .topic-index-name { font-size: 15px; font-weight: 700; color: var(--text); }
 .topic-index-count { font-size: 12px; color: var(--gray); flex-shrink: 0; }
 
+/* ---------------------------------------------------------------------
+   Klaviyo email signup -- footer bar (sitewide, in footer_html()) and
+   homepage inline module (in build_page()'s article grid). Both variants
+   share markup/JS (klaviyo_signup_html()/KLAVIYO_SIGNUP_JS below); only
+   this layout differs per variant.
+--------------------------------------------------------------------- */
+.klaviyo-signup {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 28px;
+}
+.klaviyo-signup--footer {
+  margin: 24px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.klaviyo-signup--inline {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+.klaviyo-signup--inline .klaviyo-signup-copy { margin-bottom: 16px; }
+.klaviyo-signup-copy h3 { margin: 0 0 4px; font-size: 18px; font-weight: 700; }
+.klaviyo-signup-copy p { margin: 0; color: var(--gray); font-size: 13px; }
+.klaviyo-signup-form { flex: 1 1 360px; min-width: 260px; }
+.klaviyo-signup--inline .klaviyo-signup-form { max-width: 480px; margin: 0 auto; }
+.klaviyo-signup-row { display: flex; gap: 8px; }
+.klaviyo-signup-input {
+  flex: 1;
+  padding: 11px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  min-width: 0;
+}
+.klaviyo-signup-input:focus { outline: 2px solid var(--red); outline-offset: 1px; }
+.klaviyo-signup-btn {
+  padding: 11px 22px;
+  border-radius: 999px;
+  border: none;
+  background: var(--red);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.klaviyo-signup-btn:hover { filter: brightness(1.1); }
+.klaviyo-signup-btn:disabled { opacity: 0.6; cursor: default; }
+.klaviyo-signup-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--gray);
+  cursor: pointer;
+  text-align: left;
+}
+.klaviyo-signup--inline .klaviyo-signup-consent { justify-content: center; }
+.klaviyo-signup-consent input { margin-top: 2px; flex-shrink: 0; }
+.klaviyo-signup-consent a { color: var(--text-secondary); text-decoration: underline; }
+.klaviyo-signup-status { margin: 8px 0 0; font-size: 12px; min-height: 14px; }
+.klaviyo-signup-status.is-success { color: #4caf6d; }
+.klaviyo-signup-status.is-error { color: var(--red); }
+@media (max-width: 700px) {
+  .klaviyo-signup--footer { flex-direction: column; align-items: stretch; text-align: center; }
+  .klaviyo-signup--footer .klaviyo-signup-consent { justify-content: center; }
+  .klaviyo-signup-row { flex-direction: column; }
+}
+
 """
 
 # ---------------------------------------------------------------------------
@@ -1309,6 +1385,115 @@ SEARCH_SUGGEST_JS = """
 """
 
 
+KLAVIYO_COMPANY_ID = "W6wbWE"
+KLAVIYO_LIST_ID = "WNfXVh"
+
+# Vanilla JS, no dependency on Klaviyo's onsite embed script -- POSTs
+# straight to Klaviyo's public Create Client Subscription endpoint
+# (https://developers.klaviyo.com/en/reference/create_client_subscription).
+# Public API key + list ID are safe to ship client-side by design (that's
+# the whole point of the /client/ endpoints). Shared by every
+# .klaviyo-signup-form on the page -- footer bar and homepage inline module
+# both use it, since footer_html() (which loads this script) renders on
+# every page.
+KLAVIYO_SIGNUP_JS = f"""
+(function() {{
+  var COMPANY_ID = "{KLAVIYO_COMPANY_ID}";
+  var LIST_ID = "{KLAVIYO_LIST_ID}";
+  function isValidEmail(email) {{ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); }}
+  document.querySelectorAll(".klaviyo-signup-form").forEach(function(form) {{
+    if (form.dataset.klaviyoBound) return;
+    form.dataset.klaviyoBound = "1";
+    form.addEventListener("submit", function(e) {{
+      e.preventDefault();
+      var status = form.querySelector(".klaviyo-signup-status");
+      var btn = form.querySelector(".klaviyo-signup-btn");
+      var emailInput = form.querySelector(".klaviyo-signup-input");
+      var email = (emailInput.value || "").trim();
+      if (!isValidEmail(email)) {{
+        status.textContent = "Enter a valid email address.";
+        status.className = "klaviyo-signup-status is-error";
+        return;
+      }}
+      btn.disabled = true;
+      var originalLabel = btn.textContent;
+      btn.textContent = "Signing up\u2026";
+      status.textContent = "";
+      status.className = "klaviyo-signup-status";
+      fetch("https://a.klaviyo.com/client/subscriptions?company_id=" + COMPANY_ID, {{
+        method: "POST",
+        headers: {{
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+          "revision": "2024-10-15"
+        }},
+        body: JSON.stringify({{
+          data: {{
+            type: "subscription",
+            attributes: {{
+              custom_source: "unoent.com -- " + (form.getAttribute("data-variant") || "signup"),
+              profile: {{
+                data: {{
+                  type: "profile",
+                  attributes: {{ email: email }}
+                }}
+              }}
+            }},
+            relationships: {{
+              list: {{ data: {{ type: "list", id: LIST_ID }} }}
+            }}
+          }}
+        }})
+      }}).then(function(res) {{
+        btn.disabled = false;
+        btn.textContent = originalLabel;
+        if (res.ok) {{
+          form.reset();
+          status.textContent = "You're in! Check your inbox to confirm.";
+          status.className = "klaviyo-signup-status is-success";
+        }} else {{
+          status.textContent = "Something went wrong. Please try again.";
+          status.className = "klaviyo-signup-status is-error";
+        }}
+      }}).catch(function() {{
+        btn.disabled = false;
+        btn.textContent = originalLabel;
+        status.textContent = "Something went wrong. Please try again.";
+        status.className = "klaviyo-signup-status is-error";
+      }});
+    }});
+  }});
+}})();
+"""
+
+
+def klaviyo_signup_html(variant: str = "footer", heading: str = "Get The Culture's Feed In Your Inbox", subheading: str = "Breaking hip-hop news, drops, and rumors -- straight to your email. No spam, unsubscribe anytime.") -> str:
+    """Klaviyo newsletter signup form. variant is "footer" (compact bar,
+    rendered sitewide by footer_html()) or "inline" (card-style module
+    dropped into the homepage article grid by build_page()). Both variants
+    share the same markup/classes; KLAVIYO_SIGNUP_JS (loaded once, in
+    footer_html()) binds every .klaviyo-signup-form on the page regardless
+    of which page(s) it appears on."""
+    return f"""
+<div class="klaviyo-signup klaviyo-signup--{variant}">
+  <div class="klaviyo-signup-copy">
+    <h3>{heading}</h3>
+    <p>{subheading}</p>
+  </div>
+  <form class="klaviyo-signup-form" data-variant="{variant}">
+    <div class="klaviyo-signup-row">
+      <input type="email" name="email" class="klaviyo-signup-input" placeholder="Enter your email" required aria-label="Email address">
+      <button type="submit" class="klaviyo-signup-btn">Sign Up</button>
+    </div>
+    <label class="klaviyo-signup-consent">
+      <input type="checkbox" required>
+      <span>Yes, send me UNO Entertainment news and updates. I can unsubscribe anytime. See our <a href="/privacy-policy/">Privacy Policy</a>.</span>
+    </label>
+    <p class="klaviyo-signup-status" role="status" aria-live="polite"></p>
+  </form>
+</div>"""
+
+
 def footer_html(prefix: str) -> str:
     year = datetime.now(timezone.utc).year
     section_links = "".join(
@@ -1321,6 +1506,8 @@ def footer_html(prefix: str) -> str:
       <a href="/"><img class="footer-logo logo-dark-mode" src="{prefix}uno-logo.png" alt="UNO Entertainment"><img class="footer-logo logo-light-mode" src="{prefix}uno-logo-dark.png" alt="UNO Entertainment"></a>
       <p class="footer-tagline">The Culture's Feed</p>
     </div>
+
+    {klaviyo_signup_html("footer")}
 
     <div class="footer-columns">
       <div class="footer-col">
@@ -1353,7 +1540,8 @@ def footer_html(prefix: str) -> str:
   </div>
 </footer>
 {cookie_banner_html(prefix)}
-<script>{SEARCH_SUGGEST_JS}</script>"""
+<script>{SEARCH_SUGGEST_JS}</script>
+<script>{KLAVIYO_SIGNUP_JS}</script>"""
 
 
 def meta_html(prefix: str, title: str, description: str, canonical_url: str, image_url: str = None) -> str:
@@ -1506,7 +1694,15 @@ def build_page(page_num: int, total_pages: int):
     page_articles = ARTICLES[start:start + ARTICLES_PER_PAGE]
     # page/{n}/index.html is 2 directories deep; index.html at the root is 0.
     prefix = "" if page_num == 1 else "../../"
-    cards = "\n".join(card_html(a, prefix) for a in page_articles)
+    card_list = [card_html(a, prefix) for a in page_articles]
+    if page_num == 1 and len(card_list) > 6:
+        # Newsletter module lives inside the CSS grid (spans all columns via
+        # .klaviyo-signup--inline { grid-column: 1 / -1 } in style.css), not
+        # a separate section -- keeps it from pushing the ad rail's sticky
+        # positioning around. Homepage page 1 only; pagination pages 2+ and
+        # category/topic grids don't get it.
+        card_list.insert(6, klaviyo_signup_html("inline"))
+    cards = "\n".join(card_list)
     title = "UNO Entertainment" if page_num == 1 else f"UNO Entertainment | Page {page_num}"
     canonical = SITE_URL + page_href(page_num)
     description = SITE_DESCRIPTION if page_num == 1 else f"{SITE_DESCRIPTION} (Page {page_num})"
