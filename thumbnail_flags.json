@@ -128,6 +128,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
+    "links": [
+      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-after-blocking-for-late-td-vs-cardinals-194323239.html",
+      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-nation-after-blocking-for-late-td-vs-cardinals-194323239.html"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Tupac-Shakur.jpg",
     "links": [
@@ -177,6 +185,14 @@
       "https://allhiphop.com/news/exclusive-lil-durk-fires-back-at-feds-over-free-durk-media-battle/"
     ],
     "use_count": 4
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Game.jpg",
+    "links": [
+      "https://allhiphop.com/news/the-game-releases-the-documentary-iii-tonight-after-years-of-delays/",
+      "https://allhiphop.com/rumors/did-the-game-just-pick-a-side-in-drakes-biggest-rap-war/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
