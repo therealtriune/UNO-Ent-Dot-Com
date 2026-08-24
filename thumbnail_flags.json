@@ -1,9 +1,5 @@
 [
   {
-    "link": "https://sports.yahoo.com/articles/south-african-police-arrest-4-115402733.html",
-    "issue": "missing_thumbnail"
-  },
-  {
     "link": "https://sports.yahoo.com/articles/chris-padilla-grew-watching-jim-065137766.html",
     "issue": "missing_thumbnail"
   },
@@ -191,6 +187,14 @@
     "use_count": 4
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Game.jpg",
+    "links": [
+      "https://allhiphop.com/news/the-game-releases-the-documentary-iii-tonight-after-years-of-delays/",
+      "https://allhiphop.com/rumors/did-the-game-just-pick-a-side-in-drakes-biggest-rap-war/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/09/NBA-YoungBoy.png",
     "links": [
@@ -296,7 +300,7 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
