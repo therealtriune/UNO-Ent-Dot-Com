@@ -130,35 +130,76 @@ Policy explains what information we collect, how we use it, and the choices you 
 you agree to the practices described here.</p>
 
 <h2>2. Information We Collect</h2>
-<p>You don't need an account to read UNO Ent, and we don't collect personal information unless you choose
-to give it to us. That includes information you provide directly, such as your email address if you contact
-us at <a href="mailto:support@unoent.com">support@unoent.com</a> with a question or story tip, and standard
-technical information collected automatically by our hosting provider — like IP address, browser type, and
-pages visited — used for basic site performance and security.</p>
+<p>You don't need an account to read UNO Ent. Information we collect includes: information you give us
+directly (an email address if you join the newsletter, contact us at
+<a href="mailto:support@unoent.com">support@unoent.com</a>, send a story tip, or leave a comment); and
+technical information collected automatically by our hosts and tools, such as IP address, browser type,
+device, referring URL, and pages visited.</p>
+<p>The Site is served by GitHub Pages, Fastly, and Cloudflare. Those providers keep standard request logs
+(IP address, user agent, path) for performance and security. Cloudflare also protects email addresses on
+the Site and may record a country code so we can rotate house ads.</p>
 
-<h2>3. Cookies</h2>
-<p>UNO Ent doesn't currently use cookies to track visitors or personalize advertising. As the Site grows, we
-may introduce cookies for purposes like traffic analytics (for example, Google Analytics) or advertising. If
-we do, this policy will be updated and we'll ask for your consent through a cookie banner before any
-non-essential cookie is set. You can control or delete cookies at any time through your browser settings.</p>
+<h2>3. Analytics</h2>
+<p>We use Google Tag Manager (container GTM-KNZNCCPT) to run measurement on the Site. That container
+loads Google Analytics 4. Google may set cookies and collect device and usage data as described in
+Google's own privacy policy. We use this to understand how the Site is used: which pages are read, where
+traffic comes from, and how people move through the Site. We do not put the GA4 measurement ID in our
+page source; it lives inside Tag Manager.</p>
 
-<h2>4. Third-Party Links</h2>
-<p>UNO Ent publishes original summaries of hip-hop news with links to the original reporting from outlets
-such as XXL, HotNewHipHop, and The Source. When you click through to one of these sites, you're subject to
-their own privacy practices, which we don't control and aren't responsible for. We encourage you to review
-the privacy policy of any site you visit.</p>
+<h2>4. Newsletter</h2>
+<p>If you sign up for The Culture's Feed newsletter, we send your email address to Klaviyo, our email
+provider, so we can deliver the list and measure signups. Signup is in the footer and in a first-visit
+popup. The form includes a consent checkbox. Klaviyo may set its own cookies. You can unsubscribe from
+any email we send. We also store a flag in your browser (localStorage) so we don't keep showing the
+signup popup after you join or dismiss it.</p>
 
-<h2>5. Children's Privacy</h2>
+<h2>5. Comments</h2>
+<p>Article pages include a "Show Comments" button. Comments are powered by Disqus (shortname unoent).
+Disqus does not load until you click that button. Once you do, Disqus is a third party and may set
+cookies and collect information under its own privacy policy.</p>
+
+<h2>6. Cookies and local storage</h2>
+<p>The Site uses cookies, local storage, and similar technologies:</p>
+<p><strong>uno_ad_freq</strong> (first-party cookie, Path=/, Max-Age 30 days, SameSite=Lax): set by a
+Cloudflare worker on HTML responses. It stores impression counts for our house ads (Holly Michelle and
+Lemon Negra) so we can rotate them. It is not an ad-network tracking cookie.<br>
+Google Tag Manager / Google Analytics 4: measurement cookies set by Google.<br>
+Klaviyo: cookies and storage tied to the newsletter, if you interact with signup.<br>
+Disqus: cookies only if you click "Show Comments."<br>
+UNO Ent local storage (not cookies): <code>uno_theme</code> (light/dark),
+<code>uno_cookie_notice_seen</code> (whether you dismissed this notice), and
+<code>uno_klaviyo_popup_seen</code> (whether you dismissed or completed the newsletter popup). These
+stay on your device and are not sent to us as a login.</p>
+<p>You can block or delete cookies in your browser settings. Blocking analytics cookies will limit how
+well we can measure the Site. The cookie banner on the Site points here.</p>
+
+<h2>7. Advertising</h2>
+<p>The Site shows first-party house ads and sponsored placements (for example, on the homepage rail:
+Holly Michelle, Get Laced, Lemon Negra). Those are our own creative and <code>rel="sponsored"</code>
+links. Advertisers get a click, not a tracking pixel on our pages. We list a Google AdSense publisher
+ID in ads.txt so we can run Google display advertising later. Third-party ad tags (AdSense, Google
+Publisher Tag, or similar) are not on the Site today. When we turn display ads on, this policy will
+still apply, and those partners may use cookies to serve and measure ads. We will not pretend the Site
+is ad-free.</p>
+
+<h2>8. Third-Party Links and Media</h2>
+<p>UNO Ent is a news aggregator. Stories include a short summary and a link to the original reporting.
+Thumbnails and Open Graph images are often hotlinked from the source (outlets such as HotNewHipHop,
+TMZ, Yahoo, The Shade Room, Hollywood Unlocked, and VladTV). Those hosts can see the image request.
+When you click through to a story or a sponsored link, you are on their site and their privacy policy
+applies. We don't control that. We do not run Facebook, TikTok, X, or Hotjar pixels.</p>
+
+<h2>9. Children's Privacy</h2>
 <p>UNO Ent isn't directed at children under 13, and we don't knowingly collect personal information from
 children under 13. If you believe a child has provided us with personal information, contact us at
 <a href="mailto:support@unoent.com">support@unoent.com</a> and we'll remove it.</p>
 
-<h2>6. Changes to This Policy</h2>
+<h2>10. Changes to This Policy</h2>
 <p>We may update this Privacy Policy from time to time as the Site evolves. The effective date above
 reflects the most recent revision. Continued use of the Site after changes take effect means you accept the
 updated policy.</p>
 
-<h2>7. Contact Us</h2>
+<h2>11. Contact Us</h2>
 <p>Questions about this Privacy Policy? Email us at <a href="mailto:support@unoent.com">support@unoent.com</a>.</p>
 
 </div>
@@ -225,8 +266,8 @@ updated policy.</p>
 
 <div id="uno-cookie-banner" class="cookie-banner" hidden>
   <div class="cookie-banner-inner">
-    <p>UNO Entertainment doesn't use tracking cookies today. If that changes — for analytics or
-    advertising — we'll ask first. Read our <a href="/privacy-policy/">Privacy Policy</a> for details.</p>
+    <p>We use Google Analytics, a cookie for house-ad rotation, Klaviyo if you join the
+    newsletter, and Disqus if you open comments. Read our <a href="/privacy-policy/">Privacy Policy</a> for details.</p>
     <button type="button" class="cookie-banner-btn" onclick="unoCookieConsent()">Got It</button>
   </div>
 </div>
