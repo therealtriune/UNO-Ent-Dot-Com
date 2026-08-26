@@ -141,6 +141,27 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/05/6ix9ine.webp",
+    "links": [
+      "https://www.hotnewhiphop.com/1007287-6ix9ine-lawyer-moe-gangat-lil-durk-trial-beef",
+      "https://www.hotnewhiphop.com/1007143-6ix9ine-lil-durk-bradford-cohen-snitching-narrative",
+      "https://www.hotnewhiphop.com/1006494-6ix9ine-lil-durk-legal-strategy",
+      "https://www.hotnewhiphop.com/1006379-6ix9ine-king-von-trolling-lil-durk"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2022/10/Lil-Durk.jpg",
+    "links": [
+      "https://allhiphop.com/news/lil-durk-trial-turns-to-king-von-texts-as-defense-challenges-context/",
+      "https://allhiphop.com/news/lil-durk-murder-for-hire-trial-begins-monday-jury-already-seated/",
+      "https://allhiphop.com/news/feds-reveal-plea-deal-witnesses-ready-to-testify-against-lil-durk/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/05/Suge-Knight.png",
     "links": [
       "https://allhiphop.com/news/suge-knight-claims-he-rejected-1m-bribe-from-keefe-ds-legal-team/",
@@ -204,16 +225,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/05/6ix9ine.webp",
-    "links": [
-      "https://www.hotnewhiphop.com/1007143-6ix9ine-lil-durk-bradford-cohen-snitching-narrative",
-      "https://www.hotnewhiphop.com/1006494-6ix9ine-lil-durk-legal-strategy",
-      "https://www.hotnewhiphop.com/1006379-6ix9ine-king-von-trolling-lil-durk"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/03/Nipsey-Hussle.jpg",
     "links": [
       "https://allhiphop.com/news/blacc-sam-brings-marathon-burger-to-las-vegas-with-24-hour-drive-thru/",
@@ -257,14 +268,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
-    "links": [
-      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-after-blocking-for-late-td-vs-cardinals-194323239.html",
-      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-nation-after-blocking-for-late-td-vs-cardinals-194323239.html"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Tupac-Shakur.jpg",
     "links": [
@@ -279,14 +282,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
-    "links": [
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
     "links": [
       "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
@@ -424,7 +419,7 @@
     ]
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
