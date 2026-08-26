@@ -1,5 +1,9 @@
 [
   {
+    "link": "https://sports.yahoo.com/articles/umar-nurmagomedov-not-taking-yadong-051748749.html",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/edson-barboza-calls-ufc-331-061310295.html",
     "issue": "missing_thumbnail"
   },
@@ -350,14 +354,6 @@
       "https://allhiphop.com/news/shreveport-honors-the-showboys-g-unit-director-of-growth-signaling-50-cent-deal-could-be-stabilizing/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
-      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
   },
   {
     "issue": "same_homepage_page",
