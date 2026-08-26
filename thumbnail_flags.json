@@ -125,6 +125,18 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Sidney-Starr-Mugshot.png",
+    "links": [
+      "https://allhiphop.com/news/sidney-starr-denied-bond-despite-good-nature-defense-in-alleged-assault-of-13-year-old/",
+      "https://allhiphop.com/news/sidney-starr-wants-out-of-jail-as-georgia-sex-case-advances/",
+      "https://allhiphop.com/news/sidney-starrs-pocket-delivers-bizarre-surprise-during-arrest/",
+      "https://allhiphop.com/news/sidney-starr-disputes-charges-as-arrest-warrants-reveal-hotel-allegation/",
+      "https://allhiphop.com/news/sidney-starr-faces-life-in-prison-after-child-molestation-arrest/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Crime-scene.jpg",
     "links": [
       "https://allhiphop.com/news/milwaukee-rappers-shot-dead-during-argument-over-gun-in-studio/",
@@ -338,17 +350,6 @@
       "https://allhiphop.com/news/shreveport-honors-the-showboys-g-unit-director-of-growth-signaling-50-cent-deal-could-be-stabilizing/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Sidney-Starr-Mugshot.png",
-    "links": [
-      "https://allhiphop.com/news/sidney-starr-wants-out-of-jail-as-georgia-sex-case-advances/",
-      "https://allhiphop.com/news/sidney-starrs-pocket-delivers-bizarre-surprise-during-arrest/",
-      "https://allhiphop.com/news/sidney-starr-disputes-charges-as-arrest-warrants-reveal-hotel-allegation/",
-      "https://allhiphop.com/news/sidney-starr-faces-life-in-prison-after-child-molestation-arrest/"
-    ],
-    "use_count": 4
   },
   {
     "issue": "same_homepage_page",
