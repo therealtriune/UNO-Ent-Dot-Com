@@ -141,6 +141,28 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/AllHipHop-34.jpg",
+    "links": [
+      "https://allhiphop.com/news/lil-durk-trial-day-6-otf-jam-lays-out-assassination-plan-says-he-has-no-respect-for-rapper/",
+      "https://allhiphop.com/news/lil-durk-jury-selection-resumes-as-16-person-panel-takes-shape/",
+      "https://allhiphop.com/news/exclusive-lil-durk-challenges-stalking-claim-before-high-stakes-august-trial/",
+      "https://allhiphop.com/news/exclusive-prosecutors-move-to-seal-lil-durk-witness-list-before-murder-trial/",
+      "https://allhiphop.com/news/exclusive-lil-durk-fires-back-at-feds-over-free-durk-media-battle/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/drake-sells-stake-in-ovo-empire-with-authentic-brands-investment/",
+      "https://allhiphop.com/news/exclusive-drakes-stake-fight-turns-new-mexico-into-nationwide-legal-battleground/",
+      "https://allhiphop.com/news/drakes-gambling-accusers-lose-bid-for-public-class-action/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/06/Tupac-2Pac-Shakur.jpg",
     "links": [
       "https://allhiphop.com/news/tupac-casting-locked-for-snoop-dogg-biopic/",
@@ -270,7 +292,7 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
     "links": [
       "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-after-blocking-for-late-td-vs-cardinals-194323239.html",
@@ -299,14 +321,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
-    "links": [
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
     "links": [
@@ -316,25 +330,6 @@
       "https://allhiphop.com/news/lil-durk-puts-drill-rap-authenticity-at-center-of-expert-witness-fight/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/AllHipHop-34.jpg",
-    "links": [
-      "https://allhiphop.com/news/lil-durk-jury-selection-resumes-as-16-person-panel-takes-shape/",
-      "https://allhiphop.com/news/exclusive-lil-durk-challenges-stalking-claim-before-high-stakes-august-trial/",
-      "https://allhiphop.com/news/exclusive-prosecutors-move-to-seal-lil-durk-witness-list-before-murder-trial/",
-      "https://allhiphop.com/news/exclusive-lil-durk-fires-back-at-feds-over-free-durk-media-battle/"
-    ],
-    "use_count": 4
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Game.jpg",
-    "links": [
-      "https://allhiphop.com/news/the-game-releases-the-documentary-iii-tonight-after-years-of-delays/",
-      "https://allhiphop.com/rumors/did-the-game-just-pick-a-side-in-drakes-biggest-rap-war/"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -422,14 +417,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
-      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
