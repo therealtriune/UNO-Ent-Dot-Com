@@ -141,6 +141,41 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Game.jpg",
+    "links": [
+      "https://allhiphop.com/news/game-cannot-outrun-priscilla-raineys-7-13m-collection-campaign/",
+      "https://allhiphop.com/news/the-game-releases-the-documentary-iii-tonight-after-years-of-delays/",
+      "https://allhiphop.com/rumors/did-the-game-just-pick-a-side-in-drakes-biggest-rap-war/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Tupac-Shakur.jpg",
+    "links": [
+      "https://allhiphop.com/news/defense-rests-in-keefe-d-trial-closing-arguments-set-for-monday/",
+      "https://allhiphop.com/news/keefe-d-melts-down-in-court-says-prosecutors-cops-target-him-for-beatings/",
+      "https://allhiphop.com/news/keefe-d-blamed-compton-police-for-tupac-killing-in-fbi-profer-interview/",
+      "https://allhiphop.com/news/tupacs-sister-reveals-what-real-justice-means-in-murder-case/",
+      "https://allhiphop.com/news/tupacs-cousin-confronts-keefe-ds-bragging-after-jury-selection-at-court/",
+      "https://allhiphop.com/news/keefe-d-trial-turns-courtroom-into-daily-lottery/",
+      "https://allhiphop.com/news/keffe-d-refuses-plea-deal-days-before-trial-begins/"
+    ],
+    "use_count": 7
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/04/Tupac-Shakur-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/keefe-d-trial-detective-reveals-da-blocked-2009-arrest-in-tupac-murder/",
+      "https://allhiphop.com/news/keefe-d-trial-update-ballistics-expert-establishes-one-gun-in-tupac-murder/",
+      "https://allhiphop.com/news/tupac-trial-begins-with-witness-testimony-about-gunfire-from-black-arm/",
+      "https://allhiphop.com/news/reggie-wright-jr-denies-orchestrating-tupac-murder-ahead-of-keefe-d-trial/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/01/North-West.jpg",
     "links": [
       "https://allhiphop.com/news/dr-drew-concerned-for-north-wests-mental-health-this-isnt-going-to-go-well/",
@@ -172,6 +207,22 @@
       "https://allhiphop.com/news/exclusive-lil-durk-fires-back-at-feds-over-free-durk-media-battle/"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
+      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
+      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -221,16 +272,6 @@
       "https://allhiphop.com/news/suge-knight-claims-he-rejected-1m-bribe-from-keefe-ds-legal-team/",
       "https://allhiphop.com/news/suge-knight-promises-to-derail-keefe-ds-tupac-trial-if-hes-called-to-testify/",
       "https://allhiphop.com/news/suge-knight-emerges-as-key-witness-in-tupac-murder-trial/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/04/Tupac-Shakur-1.jpg",
-    "links": [
-      "https://allhiphop.com/news/keefe-d-trial-update-ballistics-expert-establishes-one-gun-in-tupac-murder/",
-      "https://allhiphop.com/news/tupac-trial-begins-with-witness-testimony-about-gunfire-from-black-arm/",
-      "https://allhiphop.com/news/reggie-wright-jr-denies-orchestrating-tupac-murder-ahead-of-keefe-d-trial/"
     ],
     "use_count": 3
   },
@@ -330,19 +371,6 @@
     ]
   },
   {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Tupac-Shakur.jpg",
-    "links": [
-      "https://allhiphop.com/news/keefe-d-melts-down-in-court-says-prosecutors-cops-target-him-for-beatings/",
-      "https://allhiphop.com/news/keefe-d-blamed-compton-police-for-tupac-killing-in-fbi-profer-interview/",
-      "https://allhiphop.com/news/tupacs-sister-reveals-what-real-justice-means-in-murder-case/",
-      "https://allhiphop.com/news/tupacs-cousin-confronts-keefe-ds-bragging-after-jury-selection-at-court/",
-      "https://allhiphop.com/news/keefe-d-trial-turns-courtroom-into-daily-lottery/",
-      "https://allhiphop.com/news/keffe-d-refuses-plea-deal-days-before-trial-begins/"
-    ],
-    "use_count": 6
-  },
-  {
     "issue": "same_homepage_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
     "links": [
@@ -368,14 +396,6 @@
       "https://allhiphop.com/news/lil-durk-puts-drill-rap-authenticity-at-center-of-expert-witness-fight/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Game.jpg",
-    "links": [
-      "https://allhiphop.com/news/the-game-releases-the-documentary-iii-tonight-after-years-of-delays/",
-      "https://allhiphop.com/rumors/did-the-game-just-pick-a-side-in-drakes-biggest-rap-war/"
-    ]
   },
   {
     "issue": "overused_thumbnail",
