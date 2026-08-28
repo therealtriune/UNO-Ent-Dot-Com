@@ -141,6 +141,28 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/01/North-West.jpg",
+    "links": [
+      "https://allhiphop.com/news/dr-drew-concerned-for-north-wests-mental-health-this-isnt-going-to-go-well/",
+      "https://allhiphop.com/news/north-west-wants-normal-job-serving-coffee-when-she-turns-14/",
+      "https://allhiphop.com/news/north-west-molly-santanas-tour-gets-shelved-without-explanation/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/04/source-logo_red1-2.png",
+    "links": [
+      "https://thesource.com/2026/08/27/watch-devastating-flash-flood-hits-china-nepal-border-more-than-1300-missing/?utm_source=rss&utm_medium=rss&utm_campaign=watch-devastating-flash-flood-hits-china-nepal-border-more-than-1300-missing",
+      "https://thesource.com/2026/08/14/judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations/?utm_source=rss&utm_medium=rss&utm_campaign=judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations",
+      "https://thesource.com/2026/08/12/source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop/?utm_source=rss&utm_medium=rss&utm_campaign=source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop",
+      "https://thesource.com/2026/08/11/nba-offseason-trae-young-lights-up-drew-league-with-triple-double/?utm_source=rss&utm_medium=rss&utm_campaign=nba-offseason-trae-young-lights-up-drew-league-with-triple-double",
+      "https://thesource.com/2026/08/07/mitch-mcconnell-discharged-rehab-center/?utm_source=rss&utm_medium=rss&utm_campaign=mitch-mcconnell-discharged-rehab-center"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/AllHipHop-34.jpg",
     "links": [
       "https://allhiphop.com/news/lil-durk-trial-day-6-otf-jam-lays-out-assassination-plan-says-he-has-no-respect-for-rapper/",
@@ -292,6 +314,14 @@
     ]
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
+    "links": [
+      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-after-blocking-for-late-td-vs-cardinals-194323239.html",
+      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-nation-after-blocking-for-late-td-vs-cardinals-194323239.html"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
     "links": [
@@ -321,6 +351,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
+    "links": [
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
     "links": [
@@ -330,6 +368,14 @@
       "https://allhiphop.com/news/lil-durk-puts-drill-rap-authenticity-at-center-of-expert-witness-fight/"
     ],
     "use_count": 4
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Game.jpg",
+    "links": [
+      "https://allhiphop.com/news/the-game-releases-the-documentary-iii-tonight-after-years-of-delays/",
+      "https://allhiphop.com/rumors/did-the-game-just-pick-a-side-in-drakes-biggest-rap-war/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -384,17 +430,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/04/source-logo_red1-2.png",
-    "links": [
-      "https://thesource.com/2026/08/14/judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations/?utm_source=rss&utm_medium=rss&utm_campaign=judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations",
-      "https://thesource.com/2026/08/12/source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop/?utm_source=rss&utm_medium=rss&utm_campaign=source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop",
-      "https://thesource.com/2026/08/11/nba-offseason-trae-young-lights-up-drew-league-with-triple-double/?utm_source=rss&utm_medium=rss&utm_campaign=nba-offseason-trae-young-lights-up-drew-league-with-triple-double",
-      "https://thesource.com/2026/08/07/mitch-mcconnell-discharged-rehab-center/?utm_source=rss&utm_medium=rss&utm_campaign=mitch-mcconnell-discharged-rehab-center"
-    ],
-    "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Nolan-Wells.jpg",
     "links": [
       "https://allhiphop.com/news/nolan-wells-case-escalates-as-black-lawmakers-seek-civil-rights-review/",
@@ -421,6 +456,22 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
+      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
+      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
