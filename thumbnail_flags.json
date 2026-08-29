@@ -140,6 +140,26 @@
     "issue": "missing_thumbnail"
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Slime-Language-3.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1007700-eaters-young-thug-yeat-travis-scott-future-tezzus",
+      "https://www.hotnewhiphop.com/1007657-slime-language-3-young-thug-young-stoner-life"
+    ]
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
+    "links": [
+      "https://allhiphop.com/news/lil-durk-trial-day-7-brian-steel-challenges-otf-jams-changing-answers/",
+      "https://allhiphop.com/news/exclusive-lil-durk-jury-selection-slows-after-juror-says-defendants-look-guilty/",
+      "https://allhiphop.com/news/lil-durk-loses-key-battle-over-seized-phone-evidence-before-trial/",
+      "https://allhiphop.com/news/lil-durk-pissed-me-off-video-to-be-used-against-him-in-high-stakes-trial/",
+      "https://allhiphop.com/news/lil-durk-puts-drill-rap-authenticity-at-center-of-expert-witness-fight/"
+    ],
+    "use_count": 5
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Game.jpg",
     "links": [
@@ -207,14 +227,6 @@
       "https://allhiphop.com/news/exclusive-lil-durk-fires-back-at-feds-over-free-durk-media-battle/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
-      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -371,31 +383,12 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
-    "links": [
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
     "links": [
       "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
       "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
     ]
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
-    "links": [
-      "https://allhiphop.com/news/exclusive-lil-durk-jury-selection-slows-after-juror-says-defendants-look-guilty/",
-      "https://allhiphop.com/news/lil-durk-loses-key-battle-over-seized-phone-evidence-before-trial/",
-      "https://allhiphop.com/news/lil-durk-pissed-me-off-video-to-be-used-against-him-in-high-stakes-trial/",
-      "https://allhiphop.com/news/lil-durk-puts-drill-rap-authenticity-at-center-of-expert-witness-fight/"
-    ],
-    "use_count": 4
   },
   {
     "issue": "overused_thumbnail",
@@ -484,14 +477,6 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
