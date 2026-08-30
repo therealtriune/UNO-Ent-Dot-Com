@@ -145,6 +145,16 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/09/Crime-Scene.jpg",
+    "links": [
+      "https://allhiphop.com/news/rapper-coldheartedac-busted-in-8-1-million-stolen-check-scheme/",
+      "https://allhiphop.com/news/man-accused-of-scamming-rappers-nfl-star-found-dead-in-pool/",
+      "https://allhiphop.com/news/witnesses-describe-terror-during-twin-falls-in-n-out-shooting/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Milo-Yiannopoulos-.jpg",
     "links": [
       "https://allhiphop.com/news/milo-yiannopoulos-alleged-racist-texts-surface-as-ice-enforces-policy-he-demanded/",
@@ -402,6 +412,14 @@
       "https://allhiphop.com/news/keefe-d-could-walk-free-on-bail-before-tupac-murder-trial-starts/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/101863a2720f8285bdc25dfd62c8f4af70b53c6e23fd69db37b73cf1c1706cd8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F51d423e8-e724-4b22-9b64-a777be34d751",
+    "links": [
+      "https://sports.yahoo.com/nfl/article/nfl-preseason-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html",
+      "https://sports.yahoo.com/nfl/article/nfl-preseason-week-2-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html"
+    ]
   },
   {
     "issue": "same_category_page",
