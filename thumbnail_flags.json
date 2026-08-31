@@ -145,6 +145,16 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/04/D4vd.jpg",
+    "links": [
+      "https://allhiphop.com/news/d4vds-defense-team-enters-not-guilty-plea-in-celeste-rivas-hernandez-case/",
+      "https://allhiphop.com/news/d4vds-behavior-changed-dramatically-before-his-arrest-friend-reveals/",
+      "https://allhiphop.com/news/d4vds-bloody-merchandise-video-resurfaces-amid-murder-case/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Milo-Yiannopoulos-.jpg",
     "links": [
       "https://allhiphop.com/news/milo-yiannopoulos-disses-louisiana-after-ice-kicks-him-out-u-s/",
@@ -257,6 +267,22 @@
     "use_count": 6
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Slime-Language-3.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1007700-eaters-young-thug-yeat-travis-scott-future-tezzus",
+      "https://www.hotnewhiphop.com/1007657-slime-language-3-young-thug-young-stoner-life"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Slime-Language-3.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1007700-eaters-young-thug-yeat-travis-scott-future-tezzus",
+      "https://www.hotnewhiphop.com/1007657-slime-language-3-young-thug-young-stoner-life"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
     "links": [
@@ -314,6 +340,14 @@
       "https://thesource.com/2026/08/07/mitch-mcconnell-discharged-rehab-center/?utm_source=rss&utm_medium=rss&utm_campaign=mitch-mcconnell-discharged-rehab-center"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
+      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
+    ]
   },
   {
     "issue": "same_category_page",
