@@ -145,6 +145,28 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Milo-Yiannopoulos-.jpg",
+    "links": [
+      "https://allhiphop.com/news/milo-yiannopoulos-disses-louisiana-after-ice-kicks-him-out-u-s/",
+      "https://allhiphop.com/news/milo-yiannopoulos-alleged-racist-texts-surface-as-ice-enforces-policy-he-demanded/",
+      "https://allhiphop.com/news/milo-yiannopoulos-maga-connections-offer-no-shield-from/",
+      "https://allhiphop.com/news/kanyes-spokesman-milo-yiannopoulos-busted-by-ice-ahead-of-new-orleans-show/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Game.jpg",
+    "links": [
+      "https://allhiphop.com/news/the-game-loses-another-appeal-in-7-13-million-legal-fight/",
+      "https://allhiphop.com/news/game-cannot-outrun-priscilla-raineys-7-13m-collection-campaign/",
+      "https://allhiphop.com/news/the-game-releases-the-documentary-iii-tonight-after-years-of-delays/",
+      "https://allhiphop.com/rumors/did-the-game-just-pick-a-side-in-drakes-biggest-rap-war/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/cropped-AllHipHop-2.jpg",
     "links": [
       "https://allhiphop.com/news/anthropic-faces-multi-billion-dollar-lawsuit-from-sony-warner-chappell-in-latest-war-over-ai/",
@@ -152,6 +174,22 @@
       "https://allhiphop.com/rumors/drake-invites-more-smoke-from-the-opps/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
+    "links": [
+      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
+      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
+    "links": [
+      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
+      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -180,16 +218,6 @@
       "https://allhiphop.com/news/rapper-coldheartedac-busted-in-8-1-million-stolen-check-scheme/",
       "https://allhiphop.com/news/man-accused-of-scamming-rappers-nfl-star-found-dead-in-pool/",
       "https://allhiphop.com/news/witnesses-describe-terror-during-twin-falls-in-n-out-shooting/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Milo-Yiannopoulos-.jpg",
-    "links": [
-      "https://allhiphop.com/news/milo-yiannopoulos-alleged-racist-texts-surface-as-ice-enforces-policy-he-demanded/",
-      "https://allhiphop.com/news/milo-yiannopoulos-maga-connections-offer-no-shield-from/",
-      "https://allhiphop.com/news/kanyes-spokesman-milo-yiannopoulos-busted-by-ice-ahead-of-new-orleans-show/"
     ],
     "use_count": 3
   },
@@ -229,22 +257,6 @@
     "use_count": 6
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Slime-Language-3.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1007700-eaters-young-thug-yeat-travis-scott-future-tezzus",
-      "https://www.hotnewhiphop.com/1007657-slime-language-3-young-thug-young-stoner-life"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Slime-Language-3.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1007700-eaters-young-thug-yeat-travis-scott-future-tezzus",
-      "https://www.hotnewhiphop.com/1007657-slime-language-3-young-thug-young-stoner-life"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
     "links": [
@@ -255,16 +267,6 @@
       "https://allhiphop.com/news/lil-durk-puts-drill-rap-authenticity-at-center-of-expert-witness-fight/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Game.jpg",
-    "links": [
-      "https://allhiphop.com/news/game-cannot-outrun-priscilla-raineys-7-13m-collection-campaign/",
-      "https://allhiphop.com/news/the-game-releases-the-documentary-iii-tonight-after-years-of-delays/",
-      "https://allhiphop.com/rumors/did-the-game-just-pick-a-side-in-drakes-biggest-rap-war/"
-    ],
-    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
@@ -312,14 +314,6 @@
       "https://thesource.com/2026/08/07/mitch-mcconnell-discharged-rehab-center/?utm_source=rss&utm_medium=rss&utm_campaign=mitch-mcconnell-discharged-rehab-center"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
-      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -546,6 +540,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
+      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
