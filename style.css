@@ -547,7 +547,7 @@ footer a:hover { color: var(--text); }
 .article-body h2 { font-size: 21px; font-weight: 800; color: var(--text); margin: 32px 0 14px; }
 .article-body a { color: var(--red); font-weight: 700; text-decoration: none; }
 .article-body a:hover { text-decoration: underline; }
-.article-body .outbound-cta { margin: 8px 0 24px; }
+.article-body .outbound-cta { margin: 8px 0 24px; color: #fff; }
 /* Responsive 16:9 video embed for hand-authored posts that include a
    YouTube (or similar) player inline -- e.g. a music release announcement
    embedding the official video. */
