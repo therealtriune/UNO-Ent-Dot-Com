@@ -149,6 +149,16 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Mo3.jpg",
+    "links": [
+      "https://allhiphop.com/news/witness-says-assassin-ran-his-mouth-admitted-putting-in-work-in-mo3-assassination/",
+      "https://allhiphop.com/news/mo3s-mother-gives-emotional-testimony-as-murder-trial-opens-he-was-my-baby/",
+      "https://allhiphop.com/news/jury-selection-complete-in-mo3-alleged-shooters-trial-the-stakes-are-high-for-yella-beezy/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/AllHipHop-34.jpg",
     "links": [
       "https://allhiphop.com/news/lil-durk-trial-two-cooperators-link-rapper-to-quando-rondo-plot/",
@@ -196,6 +206,17 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/04/D4vd.jpg",
+    "links": [
+      "https://allhiphop.com/rumors/d4vd-is-likely-cooked/",
+      "https://allhiphop.com/news/d4vds-defense-team-enters-not-guilty-plea-in-celeste-rivas-hernandez-case/",
+      "https://allhiphop.com/news/d4vds-behavior-changed-dramatically-before-his-arrest-friend-reveals/",
+      "https://allhiphop.com/news/d4vds-bloody-merchandise-video-resurfaces-amid-murder-case/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Slime-Language-3.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1008064-snakes-on-my-collar-young-thug-diamond-lil-keed",
@@ -225,16 +246,6 @@
       "https://allhiphop.com/news/reggie-wright-jr-denies-orchestrating-tupac-murder-ahead-of-keefe-d-trial/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/04/D4vd.jpg",
-    "links": [
-      "https://allhiphop.com/news/d4vds-defense-team-enters-not-guilty-plea-in-celeste-rivas-hernandez-case/",
-      "https://allhiphop.com/news/d4vds-behavior-changed-dramatically-before-his-arrest-friend-reveals/",
-      "https://allhiphop.com/news/d4vds-bloody-merchandise-video-resurfaces-amid-murder-case/"
-    ],
-    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
@@ -383,14 +394,6 @@
       "https://thesource.com/2026/08/07/mitch-mcconnell-discharged-rehab-center/?utm_source=rss&utm_medium=rss&utm_campaign=mitch-mcconnell-discharged-rehab-center"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
-      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -600,22 +603,6 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
-      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
