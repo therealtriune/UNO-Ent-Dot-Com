@@ -1,5 +1,9 @@
 [
   {
+    "link": "https://www.hotnewhiphop.com/1007983-lionel-richie-hospitalized-health-scare-icu",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/usman-nurmagomedov-issues-statement-says-051304042.html",
     "issue": "missing_thumbnail"
   },
@@ -145,6 +149,18 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/04/Tupac-Shakur-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/breaking-keefe-d-convicted-tupac-shakur-killing/",
+      "https://allhiphop.com/news/keefe-d-trial-detective-reveals-da-blocked-2009-arrest-in-tupac-murder/",
+      "https://allhiphop.com/news/keefe-d-trial-update-ballistics-expert-establishes-one-gun-in-tupac-murder/",
+      "https://allhiphop.com/news/tupac-trial-begins-with-witness-testimony-about-gunfire-from-black-arm/",
+      "https://allhiphop.com/news/reggie-wright-jr-denies-orchestrating-tupac-murder-ahead-of-keefe-d-trial/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/04/D4vd.jpg",
     "links": [
       "https://allhiphop.com/news/d4vds-defense-team-enters-not-guilty-plea-in-celeste-rivas-hernandez-case/",
@@ -275,14 +291,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Slime-Language-3.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1007700-eaters-young-thug-yeat-travis-scott-future-tezzus",
-      "https://www.hotnewhiphop.com/1007657-slime-language-3-young-thug-young-stoner-life"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
     "links": [
@@ -307,17 +315,6 @@
       "https://allhiphop.com/news/keffe-d-refuses-plea-deal-days-before-trial-begins/"
     ],
     "use_count": 7
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/04/Tupac-Shakur-1.jpg",
-    "links": [
-      "https://allhiphop.com/news/keefe-d-trial-detective-reveals-da-blocked-2009-arrest-in-tupac-murder/",
-      "https://allhiphop.com/news/keefe-d-trial-update-ballistics-expert-establishes-one-gun-in-tupac-murder/",
-      "https://allhiphop.com/news/tupac-trial-begins-with-witness-testimony-about-gunfire-from-black-arm/",
-      "https://allhiphop.com/news/reggie-wright-jr-denies-orchestrating-tupac-murder-ahead-of-keefe-d-trial/"
-    ],
-    "use_count": 4
   },
   {
     "issue": "overused_thumbnail",
@@ -586,6 +583,14 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
+      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
