@@ -149,6 +149,51 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/02/Lil-Durk.png",
+    "links": [
+      "https://allhiphop.com/news/lil-durk-trial-otf-vonni-admits-he-controlled-rappers-financial-identity/",
+      "https://allhiphop.com/news/lil-durk-trial-otf-jam-testifies-explains-weed-dealer-gave-the-drop-on-quando-rondo/",
+      "https://allhiphop.com/news/lil-durk-begins-murder-for-hire-trial-as-machine-gun-kelly-shows-courtroom-support/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/AllHipHop-34.jpg",
+    "links": [
+      "https://allhiphop.com/news/lil-durk-trial-otf-vonni-says-guns-came-from-rappers-home/",
+      "https://allhiphop.com/news/lil-durk-trial-two-cooperators-link-rapper-to-quando-rondo-plot/",
+      "https://allhiphop.com/rumors/is-the-press-safe-at-lil-durks-trial/",
+      "https://allhiphop.com/news/lil-durk-trial-day-6-otf-jam-lays-out-assassination-plan-says-he-has-no-respect-for-rapper/",
+      "https://allhiphop.com/news/lil-durk-jury-selection-resumes-as-16-person-panel-takes-shape/",
+      "https://allhiphop.com/news/exclusive-lil-durk-challenges-stalking-claim-before-high-stakes-august-trial/",
+      "https://allhiphop.com/news/exclusive-prosecutors-move-to-seal-lil-durk-witness-list-before-murder-trial/",
+      "https://allhiphop.com/news/exclusive-lil-durk-fires-back-at-feds-over-free-durk-media-battle/"
+    ],
+    "use_count": 8
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png",
+    "links": [
+      "https://allhiphop.com/news/blueface-reveals-bizarre-childhood-story-involving-peanut-butter-his-dog-sex-act/",
+      "https://allhiphop.com/news/nevaeh-akira-welcomes-bluefaces-son-as-chrisean-rock-airport-run-complicates-birth/",
+      "https://allhiphop.com/news/nevaeh-calls-chrisean-rock-a-baby-disabler-blueface-thought-insult-about-his-son-was-funny/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/The-Game-Talks-\u2018The-Documentary-3-Kendrick-Lamar-Drake-Kobe-Nipsey-His-Legacy-0-17-screenshot.jpg",
+    "links": [
+      "https://thesource.com/2026/09/02/the-game-documentary-3-top-five-classic-albums/?utm_source=rss&utm_medium=rss&utm_campaign=the-game-documentary-3-top-five-classic-albums",
+      "https://thesource.com/2026/08/31/the-game-kendrick-lamar-beef-rumors/?utm_source=rss&utm_medium=rss&utm_campaign=the-game-kendrick-lamar-beef-rumors",
+      "https://thesource.com/2026/08/27/the-game-claims-he-pulled-drakes-verse-from-new-album-to-keep-peace/?utm_source=rss&utm_medium=rss&utm_campaign=the-game-claims-he-pulled-drakes-verse-from-new-album-to-keep-peace"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Milo-Yiannopoulos-.jpg",
     "links": [
       "https://allhiphop.com/news/milo-yiannopoulos-whines-about-being-degraded-during-ice-deportation-it-was-frightening/",
@@ -230,20 +275,6 @@
       "https://www.hotnewhiphop.com/1006379-6ix9ine-king-von-trolling-lil-durk"
     ],
     "use_count": 6
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/AllHipHop-34.jpg",
-    "links": [
-      "https://allhiphop.com/news/lil-durk-trial-two-cooperators-link-rapper-to-quando-rondo-plot/",
-      "https://allhiphop.com/rumors/is-the-press-safe-at-lil-durks-trial/",
-      "https://allhiphop.com/news/lil-durk-trial-day-6-otf-jam-lays-out-assassination-plan-says-he-has-no-respect-for-rapper/",
-      "https://allhiphop.com/news/lil-durk-jury-selection-resumes-as-16-person-panel-takes-shape/",
-      "https://allhiphop.com/news/exclusive-lil-durk-challenges-stalking-claim-before-high-stakes-august-trial/",
-      "https://allhiphop.com/news/exclusive-prosecutors-move-to-seal-lil-durk-witness-list-before-murder-trial/",
-      "https://allhiphop.com/news/exclusive-lil-durk-fires-back-at-feds-over-free-durk-media-battle/"
-    ],
-    "use_count": 7
   },
   {
     "issue": "overused_thumbnail",
@@ -626,6 +657,14 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
+      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
