@@ -149,6 +149,29 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Milo-Yiannopoulos-.jpg",
+    "links": [
+      "https://allhiphop.com/news/milo-yiannopoulos-whines-about-being-degraded-during-ice-deportation-it-was-frightening/",
+      "https://allhiphop.com/news/milo-yiannopoulos-disses-louisiana-after-ice-kicks-him-out-u-s/",
+      "https://allhiphop.com/news/milo-yiannopoulos-alleged-racist-texts-surface-as-ice-enforces-policy-he-demanded/",
+      "https://allhiphop.com/news/milo-yiannopoulos-maga-connections-offer-no-shield-from/",
+      "https://allhiphop.com/news/kanyes-spokesman-milo-yiannopoulos-busted-by-ice-ahead-of-new-orleans-show/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Slime-Language-3.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1008175-club-outside-lil-baby-young-thug",
+      "https://www.hotnewhiphop.com/1008064-snakes-on-my-collar-young-thug-diamond-lil-keed",
+      "https://www.hotnewhiphop.com/1007700-eaters-young-thug-yeat-travis-scott-future-tezzus",
+      "https://www.hotnewhiphop.com/1007657-slime-language-3-young-thug-young-stoner-life"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://thesource.com/wp-content/uploads/2025/09/unnamed-48.jpg",
     "links": [
       "https://thesource.com/2026/09/02/cardi-b-bardi-bowl-chipotle/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-bardi-bowl-chipotle",
@@ -245,16 +268,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/Slime-Language-3.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1008064-snakes-on-my-collar-young-thug-diamond-lil-keed",
-      "https://www.hotnewhiphop.com/1007700-eaters-young-thug-yeat-travis-scott-future-tezzus",
-      "https://www.hotnewhiphop.com/1007657-slime-language-3-young-thug-young-stoner-life"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/07/JAY\u0308-ZEXTRAINNINGS32-1.webp",
     "links": [
       "https://thesource.com/2026/09/01/jay-z-30-london-trafalgar-square-installation/?utm_source=rss&utm_medium=rss&utm_campaign=jay-z-30-london-trafalgar-square-installation",
@@ -274,17 +287,6 @@
       "https://allhiphop.com/news/reggie-wright-jr-denies-orchestrating-tupac-murder-ahead-of-keefe-d-trial/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Milo-Yiannopoulos-.jpg",
-    "links": [
-      "https://allhiphop.com/news/milo-yiannopoulos-disses-louisiana-after-ice-kicks-him-out-u-s/",
-      "https://allhiphop.com/news/milo-yiannopoulos-alleged-racist-texts-surface-as-ice-enforces-policy-he-demanded/",
-      "https://allhiphop.com/news/milo-yiannopoulos-maga-connections-offer-no-shield-from/",
-      "https://allhiphop.com/news/kanyes-spokesman-milo-yiannopoulos-busted-by-ice-ahead-of-new-orleans-show/"
-    ],
-    "use_count": 4
   },
   {
     "issue": "overused_thumbnail",
@@ -624,14 +626,6 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
