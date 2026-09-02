@@ -149,6 +149,29 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/04/D4vd.jpg",
+    "links": [
+      "https://allhiphop.com/news/d4vds-family-forced-to-sell-texas-home-as-legal-costs-mount/",
+      "https://allhiphop.com/rumors/d4vd-is-likely-cooked/",
+      "https://allhiphop.com/news/d4vds-defense-team-enters-not-guilty-plea-in-celeste-rivas-hernandez-case/",
+      "https://allhiphop.com/news/d4vds-behavior-changed-dramatically-before-his-arrest-friend-reveals/",
+      "https://allhiphop.com/news/d4vds-bloody-merchandise-video-resurfaces-amid-murder-case/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Mo3.jpg",
+    "links": [
+      "https://allhiphop.com/news/mo3s-assassin-waited-18-hours-before-brutal-highway-shooting/",
+      "https://allhiphop.com/news/witness-says-assassin-ran-his-mouth-admitted-putting-in-work-in-mo3-assassination/",
+      "https://allhiphop.com/news/mo3s-mother-gives-emotional-testimony-as-murder-trial-opens-he-was-my-baby/",
+      "https://allhiphop.com/news/jury-selection-complete-in-mo3-alleged-shooters-trial-the-stakes-are-high-for-yella-beezy/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
     "links": [
       "https://allhiphop.com/news/lil-durk-trial-otf-vonni-details-two-quando-rondo-attempts/",
@@ -172,16 +195,6 @@
       "https://www.hotnewhiphop.com/1006379-6ix9ine-king-von-trolling-lil-durk"
     ],
     "use_count": 6
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Mo3.jpg",
-    "links": [
-      "https://allhiphop.com/news/witness-says-assassin-ran-his-mouth-admitted-putting-in-work-in-mo3-assassination/",
-      "https://allhiphop.com/news/mo3s-mother-gives-emotional-testimony-as-murder-trial-opens-he-was-my-baby/",
-      "https://allhiphop.com/news/jury-selection-complete-in-mo3-alleged-shooters-trial-the-stakes-are-high-for-yella-beezy/"
-    ],
-    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
@@ -217,17 +230,6 @@
       "https://www.hotnewhiphop.com/1007084-trap-lore-ross-responds-feds-allegation"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/04/D4vd.jpg",
-    "links": [
-      "https://allhiphop.com/rumors/d4vd-is-likely-cooked/",
-      "https://allhiphop.com/news/d4vds-defense-team-enters-not-guilty-plea-in-celeste-rivas-hernandez-case/",
-      "https://allhiphop.com/news/d4vds-behavior-changed-dramatically-before-his-arrest-friend-reveals/",
-      "https://allhiphop.com/news/d4vds-bloody-merchandise-video-resurfaces-amid-murder-case/"
-    ],
-    "use_count": 4
   },
   {
     "issue": "overused_thumbnail",
@@ -524,14 +526,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
-    "links": [
-      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-after-blocking-for-late-td-vs-cardinals-194323239.html",
-      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-nation-after-blocking-for-late-td-vs-cardinals-194323239.html"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
     "links": [
       "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-after-blocking-for-late-td-vs-cardinals-194323239.html",
