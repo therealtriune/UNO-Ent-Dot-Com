@@ -149,6 +149,19 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
+    "links": [
+      "https://allhiphop.com/news/lil-durk-trial-otf-vonni-details-two-quando-rondo-attempts/",
+      "https://allhiphop.com/news/lil-durk-trial-day-7-brian-steel-challenges-otf-jams-changing-answers/",
+      "https://allhiphop.com/news/exclusive-lil-durk-jury-selection-slows-after-juror-says-defendants-look-guilty/",
+      "https://allhiphop.com/news/lil-durk-loses-key-battle-over-seized-phone-evidence-before-trial/",
+      "https://allhiphop.com/news/lil-durk-pissed-me-off-video-to-be-used-against-him-in-high-stakes-trial/",
+      "https://allhiphop.com/news/lil-durk-puts-drill-rap-authenticity-at-center-of-expert-witness-fight/"
+    ],
+    "use_count": 6
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/05/6ix9ine.webp",
     "links": [
       "https://www.hotnewhiphop.com/1008130-6ix9ine-taunts-lil-durk-trial",
@@ -350,18 +363,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
-    "links": [
-      "https://allhiphop.com/news/lil-durk-trial-day-7-brian-steel-challenges-otf-jams-changing-answers/",
-      "https://allhiphop.com/news/exclusive-lil-durk-jury-selection-slows-after-juror-says-defendants-look-guilty/",
-      "https://allhiphop.com/news/lil-durk-loses-key-battle-over-seized-phone-evidence-before-trial/",
-      "https://allhiphop.com/news/lil-durk-pissed-me-off-video-to-be-used-against-him-in-high-stakes-trial/",
-      "https://allhiphop.com/news/lil-durk-puts-drill-rap-authenticity-at-center-of-expert-witness-fight/"
-    ],
-    "use_count": 5
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Tupac-Shakur.jpg",
     "links": [
       "https://allhiphop.com/news/defense-rests-in-keefe-d-trial-closing-arguments-set-for-monday/",
@@ -507,6 +508,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/101863a2720f8285bdc25dfd62c8f4af70b53c6e23fd69db37b73cf1c1706cd8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F51d423e8-e724-4b22-9b64-a777be34d751",
+    "links": [
+      "https://sports.yahoo.com/nfl/article/nfl-preseason-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html",
+      "https://sports.yahoo.com/nfl/article/nfl-preseason-week-2-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://s.yimg.com/lo/mysterio/api/101863a2720f8285bdc25dfd62c8f4af70b53c6e23fd69db37b73cf1c1706cd8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F51d423e8-e724-4b22-9b64-a777be34d751",
     "links": [
       "https://sports.yahoo.com/nfl/article/nfl-preseason-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html",

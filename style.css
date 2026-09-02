@@ -629,17 +629,11 @@ footer a:hover { color: var(--text); }
 .feature-body a:hover { text-decoration: underline; }
 .feature-body .outbound-cta { margin: 10px 0 28px; border-radius: 2px; text-transform: uppercase; letter-spacing: 1px; color: #fff; }
 .feature-pullquote {
-  margin: 32px 0; font-size: 24px; line-height: 1.4; font-weight: 800; color: var(--text);
-  letter-spacing: -0.3px; border-left: 4px solid var(--red); padding: 4px 0 4px 20px;
-}
-/* The giant decorative quote mark is a "feature" layout flourish only --
-   plain article-body pullquotes (hand-authored posts without the full
-   magazine template) get the simple red-border treatment above instead. */
-.feature-body .feature-pullquote {
   position: relative; margin: 40px 0; padding: 8px 0 8px 40px;
-  font-size: 30px; border-left: none;
+  font-size: 30px; line-height: 1.35; font-weight: 800; color: var(--text);
+  letter-spacing: -0.3px;
 }
-.feature-body .feature-pullquote::before {
+.feature-pullquote::before {
   content: "C"; position: absolute; left: -4px; top: -18px;
   font-size: 76px; font-weight: 800; color: var(--gold); line-height: 1; font-family: Georgia, serif;
 }
@@ -665,8 +659,8 @@ footer a:hover { color: var(--text); }
   .feature-hero-inner { padding: 30px 6vw 28px; }
   .feature-body { font-size: 17px; }
   .feature-body > p:first-of-type::first-letter { font-size: 56px; }
-  .feature-body .feature-pullquote { font-size: 22px; padding-left: 30px; }
-  .feature-body .feature-pullquote::before { font-size: 56px; top: -14px; }
+  .feature-pullquote { font-size: 22px; padding-left: 30px; }
+  .feature-pullquote::before { font-size: 56px; top: -14px; }
 }
 .comments-wrap { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
 .comments-heading { font-size: 20px; font-weight: 800; margin: 0 0 20px; color: var(--text); }
