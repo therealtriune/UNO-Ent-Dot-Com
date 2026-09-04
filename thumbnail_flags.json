@@ -148,12 +148,29 @@
     "issue": "missing_thumbnail"
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-03-at-10.37.29-PM.png",
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Lil-Durk.jpg",
     "links": [
-      "https://www.hotnewhiphop.com/1008519-gass-nemzzz-travis-scott",
-      "https://www.hotnewhiphop.com/1008495-locked-in-nemzzz"
-    ]
+      "https://allhiphop.com/news/lil-durk-trial-executive-says-violence-was-a-sales-tool/",
+      "https://allhiphop.com/news/lil-durk-trial-smoking-on-lul-pab-recording-played-for-jurors/",
+      "https://allhiphop.com/news/lil-durk-trial-jury-instructions-reveal-questions-that-could-decide-verdict/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
+    "links": [
+      "https://allhiphop.com/news/lil-durk-trial-engineer-admits-songs-described-revenge/",
+      "https://allhiphop.com/news/lil-durks-father-dante-banks-demands-justice-as-trial-continues-with-bombshell-testimony/",
+      "https://allhiphop.com/news/lil-durk-trial-otf-vonni-details-two-quando-rondo-attempts/",
+      "https://allhiphop.com/news/lil-durk-trial-day-7-brian-steel-challenges-otf-jams-changing-answers/",
+      "https://allhiphop.com/news/exclusive-lil-durk-jury-selection-slows-after-juror-says-defendants-look-guilty/",
+      "https://allhiphop.com/news/lil-durk-loses-key-battle-over-seized-phone-evidence-before-trial/",
+      "https://allhiphop.com/news/lil-durk-pissed-me-off-video-to-be-used-against-him-in-high-stakes-trial/",
+      "https://allhiphop.com/news/lil-durk-puts-drill-rap-authenticity-at-center-of-expert-witness-fight/"
+    ],
+    "use_count": 8
   },
   {
     "issue": "overused_thumbnail",
@@ -213,20 +230,6 @@
       "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
       "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
     ]
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
-    "links": [
-      "https://allhiphop.com/news/lil-durks-father-dante-banks-demands-justice-as-trial-continues-with-bombshell-testimony/",
-      "https://allhiphop.com/news/lil-durk-trial-otf-vonni-details-two-quando-rondo-attempts/",
-      "https://allhiphop.com/news/lil-durk-trial-day-7-brian-steel-challenges-otf-jams-changing-answers/",
-      "https://allhiphop.com/news/exclusive-lil-durk-jury-selection-slows-after-juror-says-defendants-look-guilty/",
-      "https://allhiphop.com/news/lil-durk-loses-key-battle-over-seized-phone-evidence-before-trial/",
-      "https://allhiphop.com/news/lil-durk-pissed-me-off-video-to-be-used-against-him-in-high-stakes-trial/",
-      "https://allhiphop.com/news/lil-durk-puts-drill-rap-authenticity-at-center-of-expert-witness-fight/"
-    ],
-    "use_count": 7
   },
   {
     "issue": "same_homepage_page",
@@ -517,7 +520,7 @@
     "use_count": 3
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
     "links": [
       "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
@@ -689,18 +692,10 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
     "links": [
-      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
-      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
-      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
+      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
