@@ -1,6 +1,83 @@
 [
   {
     "source": "Yahoo Sports NFL",
+    "title": "Predicting the Steelers' 2026 season with Google's Gemini AI system",
+    "slug": "predicting-the-steelers-2026-season-with-google-s-gemini-ai-system",
+    "excerpt": "The AI was prompted to make its decisions using mostly publicly available data analytics systems to avoid repeating human analysis.",
+    "summary": "Human expectations aren\u2019t very high for the Pittsburgh Steelers in 2026. USA TODAY's own Nate Davis and Tom Viera pegged them as a 7-10 team in their record predictions earlier this month. Google\u2019s Gemini artificial intelligence assistant strikes a more optimistic tone.",
+    "category": "sports",
+    "link": "https://sports.yahoo.com/articles/predicting-steelers-2026-season-googles-100139986.html",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/bf75a4a5e550f5cbf27a8cf3ccf7bde44cb3cdefe40191fd6915e3bef8cc4f22/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fusa_today_sports_articles_558%2F197a9a51b5e098723b0661c398a17a2c.jpg",
+    "date": "2026-09-07T10:01:39+00:00"
+  },
+  {
+    "source": "Yahoo Sports NFL",
+    "title": "Packers Depth Chart: We still don\u2019t know who will start at cornerback",
+    "slug": "packers-depth-chart-we-still-don-t-know-who-will-start-at-cornerback",
+    "excerpt": "The competition is between Carrington Valentine and Brandon Cisse, not Keisean Nixon",
+    "summary": "Green Bay Packers Brandon Cisse (2) participates in mandatory minicamp Thursday, June 11, 2026, at the Don Hutson Center in Green Bay, Wisconsin. Dan Powers/USA TODAY NETWORK-Wisconsin | USA TODAY Network via Reuters Co Last week, we went through an exercise where we tried to pin down which 48 players among the Green Bay Packers\u2019 53-man roster would actually make the cut for being game-day actives against the Minnesota Vikings in the team\u2019s Week 1 regular-season opener. Today, I want to focus less on the back end of the depth chart and turn our attention to the starting lineup, namely the much-talked-about outside cornerback position.",
+    "category": "sports",
+    "link": "https://sports.yahoo.com/articles/packers-depth-chart-still-don-100000073.html",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f9d3c150202ec1af770ac1efe7a15a13ed5d9b6ea03e53f6e4a259d21d8f12e4/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2Fe5ecac7a3fcb982b923b25d6f85ed717.jpg",
+    "date": "2026-09-07T10:00:00+00:00"
+  },
+  {
+    "source": "Yahoo Sports NFL",
+    "title": "NY Giants news: Odell Beckham, D.J. Reader, rookies, more headlines",
+    "slug": "ny-giants-news-odell-beckham-d-j-reader-rookies-more-headlines",
+    "excerpt": "New York Giants headlines for Monday.",
+    "summary": "Good morning, New York Giants fans! Here are the stories you need to know as Week 1 of the NFL season has finally arrived. Check our Giants-Cowboys StoryStream for all your coverage of the Giants\u2019 season-opening game.",
+    "category": "sports",
+    "link": "https://sports.yahoo.com/articles/ny-giants-news-odell-beckham-100000431.html",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/5017cdbc26085458d699dc650ca45accd3e61c0c1cf618fa689f98d2d68c88b9/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2Fe5e28f900fbf0351d27173589dc0ea30.jpg",
+    "date": "2026-09-07T10:00:00+00:00"
+  },
+  {
+    "source": "TMZ",
+    "title": "Celebrity Baby Bumps Guess Who -- Happy Labor Day!",
+    "slug": "celebrity-baby-bumps-guess-who-happy-labor-day",
+    "excerpt": "Let\u2019s be honest, these expecting mamas are doing the heavy lifting, and they deserve to take a load off. Put those celeb skills to the test, and see if you can",
+    "summary": "Let\u2019s be honest, these expecting mamas are doing the heavy lifting, and they deserve to take a load off. Put those celeb skills to the test, and see if you can score this famous belly quest! Ready, set, go!",
+    "category": "rumors",
+    "link": "https://www.tmz.com/2026/09/07/hot-pregnant-celebrity-pictures/",
+    "thumbnail": "https://imagez.tmz.com/image/57/16by9/2026/09/01/57a233f4a186421583e7f9bdd8f3150a_xl.jpg",
+    "date": "2026-09-07T07:45:23+00:00"
+  },
+  {
+    "source": "TMZ",
+    "title": "BKFC's Fenway Park Card Was 'Incredible' But Even Bigger Events Planned",
+    "slug": "bkfc-s-fenway-park-card-was-incredible-but-even-bigger-events-planned",
+    "excerpt": "Bare Knuckle Fighting Championship boss David Feldman says Fenway Park was a grand slam...and now he's going after another iconic baseball stadium! The founder",
+    "summary": "Bare Knuckle Fighting Championship boss David Feldman says Fenway Park was a grand slam...and now he's going after another iconic baseball stadium! The founder and president of the bare-knuckle boxing promotion joined Babcock this week and raved\u2026",
+    "category": "rumors",
+    "link": "https://www.tmz.com/2026/09/07/david-feldman-teases-new-bare-knuckle-events/",
+    "thumbnail": "https://imagez.tmz.com/image/20/16by9/2026/09/01/20d3d335dc9a4566913bfae5a2875fb9_xl.png",
+    "date": "2026-09-07T07:30:46+00:00"
+  },
+  {
+    "source": "TMZ",
+    "title": "Guess The Nickelodeon Star This Baby Boy Turned Into!",
+    "slug": "guess-the-nickelodeon-star-this-baby-boy-turned-into",
+    "excerpt": "When this bubbly boy turned 10, he was acting alongside Sofia Vergara on \"Modern Family.\" From 2014-2018, he played Nicky Harper on the Nickelodeon sitcom \"Nick",
+    "summary": "When this bubbly boy turned 10, he was acting alongside Sofia Vergara on \"Modern Family.\" From 2014-2018, he played Nicky Harper on the Nickelodeon sitcom \"Nicky, Ricky, Dicky & Dawn.\" Some might argue his breakthrough role was playing \"Number\u2026",
+    "category": "rumors",
+    "link": "https://www.tmz.com/2026/09/07/aidan-gallagher-childhood-photo/",
+    "thumbnail": "https://imagez.tmz.com/image/8b/16by9/2026/08/24/8b7dd9935cef40f48e20e0d2e8bb647d_xl.jpg",
+    "date": "2026-09-07T07:01:42+00:00"
+  },
+  {
+    "source": "The Source",
+    "title": "PUMA Unveils Josh Giddey\u2019s Australia-Inspired All-Pro NITRO\u2122 2 Wonder",
+    "slug": "puma-unveils-josh-giddey-s-australia-inspired-all-pro-nitro-2-wonder",
+    "excerpt": "PUMA is introducing the All-Pro NITRO\u2122 2 Wonder, a new PE colorway inspired by Josh Giddey\u2019s Australian heritage and the beauty of the country\u2019s iconic coastlin",
+    "summary": "PUMA is introducing the All-Pro NITRO\u2122 2 Wonder, a new PE colorway inspired by Josh Giddey\u2019s Australian heritage and the beauty of the country\u2019s iconic coastline. Drawing from Australia\u2019s natural\u2026 The post PUMA Unveils Josh Giddey\u2019s Australia-Inspired All-Pro NITRO\u2122 2 Wonder appeared first on.",
+    "category": "news",
+    "link": "https://thesource.com/2026/09/07/puma-josh-giddey-all-pro-nitro-2-wonder/?utm_source=rss&utm_medium=rss&utm_campaign=puma-josh-giddey-all-pro-nitro-2-wonder",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/PUMA_COURTSIDE_JOSHGIDDEY_0571-scaled.jpg",
+    "date": "2026-09-07T05:23:00+00:00"
+  },
+  {
+    "source": "Yahoo Sports NFL",
     "title": "Kyle Shanahan expects Aaron Donald to play on Thursday night",
     "slug": "kyle-shanahan-expects-aaron-donald-to-play-on-thursday-night",
     "excerpt": "Aaron Donald is back.",
