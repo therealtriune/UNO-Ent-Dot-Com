@@ -1,5 +1,9 @@
 [
   {
+    "link": "https://www.hotnewhiphop.com/1008919-blueface-nevaeh-breakup",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/valentina-shevchenko-vacates-flyweight-championship-205056917.html",
     "issue": "missing_thumbnail"
   },
@@ -157,6 +161,17 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/01/Kanye-West-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/kanye-west-chicago-total-attendance-numbers-are-in-they-are-insane/",
+      "https://allhiphop.com/news/kanye-west-st-petersburg-shows-still-happening-promoter-insists/",
+      "https://allhiphop.com/news/kanye-west-loses-his-head-in-bianca-censoris-gruesome-ok-video/",
+      "https://allhiphop.com/news/ye-performs-portugal-concert-despite-international-pressure/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/04/D4vd.jpg",
     "links": [
       "https://allhiphop.com/news/celeste-rivas-family-calls-for-death-penalty-against-singer-d4vd/",
@@ -167,14 +182,6 @@
       "https://allhiphop.com/news/d4vds-bloody-merchandise-video-resurfaces-amid-murder-case/"
     ],
     "use_count": 6
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
-    "links": [
-      "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
-      "https://allhiphop.com/news/ciara-russell-wilson-announce-baby-cinco/"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -304,14 +311,6 @@
       "https://allhiphop.com/news/drakes-gambling-accusers-lose-bid-for-public-class-action/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
-    "links": [
-      "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
-      "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -499,14 +498,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
-    "links": [
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/08/Rick-Ross-50-Cent.png",
     "links": [
@@ -572,6 +563,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
+      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
     "links": [
@@ -596,16 +595,6 @@
       "https://www.hotnewhiphop.com/1007268-julian-newman-abuse-allegations",
       "https://www.hotnewhiphop.com/1005596-jaden-newman-julian-newman-adam22-sex-tape",
       "https://www.hotnewhiphop.com/1004646-julian-newman-jaden-newman-leak-videos"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/01/Kanye-West-1.jpg",
-    "links": [
-      "https://allhiphop.com/news/kanye-west-st-petersburg-shows-still-happening-promoter-insists/",
-      "https://allhiphop.com/news/kanye-west-loses-his-head-in-bianca-censoris-gruesome-ok-video/",
-      "https://allhiphop.com/news/ye-performs-portugal-concert-despite-international-pressure/"
     ],
     "use_count": 3
   },
@@ -756,14 +745,6 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
