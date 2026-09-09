@@ -157,6 +157,29 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/Screenshot-2026-07-27-111324-scaled.png",
+    "links": [
+      "https://www.hotnewhiphop.com/1009009-trap-lore-ross-akademiks-21-savage-lil-durk",
+      "https://www.hotnewhiphop.com/1008066-trap-lore-ross-brian-steel-cried-lil-durk-trial",
+      "https://www.hotnewhiphop.com/1007266-trap-lore-ross-lil-durk-trial-confronted",
+      "https://www.hotnewhiphop.com/1007084-trap-lore-ross-responds-feds-allegation"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Lil-Durk.jpg",
+    "links": [
+      "https://allhiphop.com/news/lil-durk-trial-five-of-the-best-defenses-jurors-must-weigh/",
+      "https://allhiphop.com/news/otf-jam-attacks-lil-durk-before-closing-arguments-fuck-durk/",
+      "https://allhiphop.com/news/lil-durk-trial-executive-says-violence-was-a-sales-tool/",
+      "https://allhiphop.com/news/lil-durk-trial-smoking-on-lul-pab-recording-played-for-jurors/",
+      "https://allhiphop.com/news/lil-durk-trial-jury-instructions-reveal-questions-that-could-decide-verdict/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/05/6ix9ine.webp",
     "links": [
       "https://www.hotnewhiphop.com/1009006-6ix9ine-lil-durk-laugh-now-cry-later-troll",
@@ -191,17 +214,6 @@
       "https://allhiphop.com/news/kanye-west-st-petersburg-shows-still-happening-promoter-insists/",
       "https://allhiphop.com/news/kanye-west-loses-his-head-in-bianca-censoris-gruesome-ok-video/",
       "https://allhiphop.com/news/ye-performs-portugal-concert-despite-international-pressure/"
-    ],
-    "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Lil-Durk.jpg",
-    "links": [
-      "https://allhiphop.com/news/otf-jam-attacks-lil-durk-before-closing-arguments-fuck-durk/",
-      "https://allhiphop.com/news/lil-durk-trial-executive-says-violence-was-a-sales-tool/",
-      "https://allhiphop.com/news/lil-durk-trial-smoking-on-lul-pab-recording-played-for-jurors/",
-      "https://allhiphop.com/news/lil-durk-trial-jury-instructions-reveal-questions-that-could-decide-verdict/"
     ],
     "use_count": 4
   },
@@ -444,16 +456,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/Screenshot-2026-07-27-111324-scaled.png",
-    "links": [
-      "https://www.hotnewhiphop.com/1008066-trap-lore-ross-brian-steel-cried-lil-durk-trial",
-      "https://www.hotnewhiphop.com/1007266-trap-lore-ross-lil-durk-trial-confronted",
-      "https://www.hotnewhiphop.com/1007084-trap-lore-ross-responds-feds-allegation"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/07/JAY\u0308-ZEXTRAINNINGS32-1.webp",
     "links": [
       "https://thesource.com/2026/09/01/jay-z-30-london-trafalgar-square-installation/?utm_source=rss&utm_medium=rss&utm_campaign=jay-z-30-london-trafalgar-square-installation",
@@ -664,6 +666,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/101863a2720f8285bdc25dfd62c8f4af70b53c6e23fd69db37b73cf1c1706cd8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F51d423e8-e724-4b22-9b64-a777be34d751",
+    "links": [
+      "https://sports.yahoo.com/nfl/article/nfl-preseason-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html",
+      "https://sports.yahoo.com/nfl/article/nfl-preseason-week-2-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html"
+    ]
+  },
+  {
     "issue": "same_homepage_page",
     "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
     "links": [
@@ -677,6 +687,22 @@
     "links": [
       "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-after-blocking-for-late-td-vs-cardinals-194323239.html",
       "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-nation-after-blocking-for-late-td-vs-cardinals-194323239.html"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
+    "links": [
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
+    "links": [
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
     ]
   },
   {
@@ -735,6 +761,14 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
+      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
