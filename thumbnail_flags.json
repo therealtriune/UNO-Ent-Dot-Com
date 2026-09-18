@@ -178,6 +178,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
+    "links": [
+      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
+      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Colin-Kaepernick.jpg",
     "links": [
@@ -361,7 +369,7 @@
     "use_count": 10
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/09/img_6399.jpeg",
     "links": [
       "https://hollywoodunlocked.com/watch-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/",
@@ -526,14 +534,6 @@
     "links": [
       "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
       "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
-    "links": [
-      "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
-      "https://theshaderoom.com/raven-symone-kalen-allen-miranda-maday-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness/"
     ]
   },
   {
@@ -735,6 +735,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
+      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
     "links": [
@@ -884,6 +892,14 @@
       "https://allhiphop.com/news/shreveport-honors-the-showboys-g-unit-director-of-growth-signaling-50-cent-deal-could-be-stabilizing/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
+      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
   },
   {
     "issue": "same_category_page",
