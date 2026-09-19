@@ -233,6 +233,14 @@
     "use_count": 4
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
+      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
     "links": [
@@ -861,14 +869,6 @@
     "links": [
       "https://sports.yahoo.com/nfl/article/nfl-preseason-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html",
       "https://sports.yahoo.com/nfl/article/nfl-preseason-week-2-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
-    "links": [
-      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-after-blocking-for-late-td-vs-cardinals-194323239.html",
-      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-nation-after-blocking-for-late-td-vs-cardinals-194323239.html"
     ]
   },
   {
