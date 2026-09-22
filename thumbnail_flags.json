@@ -1,5 +1,9 @@
 [
   {
+    "link": "https://sports.yahoo.com/articles/hypocrite-daniel-cormier-reacts-own-220012219.html",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/robelis-despaigne-says-ufc-exit-042655477.html",
     "issue": "missing_thumbnail"
   },
@@ -166,6 +170,26 @@
   {
     "link": "https://sports.yahoo.com/articles/yair-rodriguez-returns-against-jean-054557860.html",
     "issue": "missing_thumbnail"
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://imagez.tmz.com/image/de/16by9/2026/08/14/def51576bcc146648e1a583a5bfb5bae_xl.jpg",
+    "links": [
+      "https://www.tmz.com/2026/09/22/mckenna-west-rejected-by-supreme-court/",
+      "https://www.tmz.com/2026/08/18/mckenna-west-fighting-restraining-order-that-bars-her-from-seeing-baby-gabriel/",
+      "https://www.tmz.com/2026/08/14/mckenna-west-wrote-letter-explaining-why-she-did-not-want-abortion/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://townsquare.media/site/812/files/2026/07/attachment-lil-durk-murder-for-hire-trial.jpg?w=1200&format=natural",
+    "links": [
+      "https://www.xxlmag.com/lil-durk-codefendants-otf-dede-browneyez-appeal/",
+      "https://www.xxlmag.com/lil-durk-not-guilty-murder-for-hire-trial/",
+      "https://www.xxlmag.com/lil-durk-testify-murder-for-hire-trial/"
+    ],
+    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
@@ -604,14 +628,6 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
-    "links": [
-      "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
-      "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
@@ -925,6 +941,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
+    "links": [
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://imagez.tmz.com/image/74/16by9/2026/08/13/74059ee2192c41a6b411aa89404c96be_xl.jpg",
     "links": [
@@ -968,14 +992,6 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   }
 ]
