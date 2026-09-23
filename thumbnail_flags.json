@@ -173,6 +173,17 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2022/09/Tupac-Shakur.jpg",
+    "links": [
+      "https://allhiphop.com/news/keefe-d-trial-becomes-tupac-documentary-with-access-to-shakur-family/",
+      "https://allhiphop.com/news/keefe-d-faces-producers-who-say-his-tupac-interviews-were-unscripted/",
+      "https://allhiphop.com/news/newly-surfaced-fbi-notes-reveal-fatal-shootout-that-killed-tupac-suspect/",
+      "https://allhiphop.com/news/keefe-d-could-walk-free-on-bail-before-tupac-murder-trial-starts/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://thesource.com/wp-content/uploads/2025/04/231230-Duane-Keffe-D-Davis-Tupac-murder-mjf-0942-260fd2.webp",
     "links": [
       "https://thesource.com/2026/09/23/new-tupac-shakur-murder-trial-documentary-set-for-2027/?utm_source=rss&utm_medium=rss&utm_campaign=new-tupac-shakur-murder-trial-documentary-set-for-2027",
@@ -373,6 +384,14 @@
       "https://allhiphop.com/news/chicagos-bloodhound-q50-killed-in-early-morning-ambush/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
+    "links": [
+      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
+      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -653,7 +672,7 @@
     ]
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
       "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
@@ -904,16 +923,6 @@
     "use_count": 3
   },
   {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2022/09/Tupac-Shakur.jpg",
-    "links": [
-      "https://allhiphop.com/news/keefe-d-faces-producers-who-say-his-tupac-interviews-were-unscripted/",
-      "https://allhiphop.com/news/newly-surfaced-fbi-notes-reveal-fatal-shootout-that-killed-tupac-suspect/",
-      "https://allhiphop.com/news/keefe-d-could-walk-free-on-bail-before-tupac-murder-trial-starts/"
-    ],
-    "use_count": 3
-  },
-  {
     "issue": "same_homepage_page",
     "thumbnail": "https://s.yimg.com/lo/mysterio/api/101863a2720f8285bdc25dfd62c8f4af70b53c6e23fd69db37b73cf1c1706cd8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F51d423e8-e724-4b22-9b64-a777be34d751",
     "links": [
@@ -947,6 +956,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
+    "links": [
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
     "links": [
       "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
@@ -1000,7 +1017,7 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
