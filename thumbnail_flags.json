@@ -1,5 +1,9 @@
 [
   {
+    "link": "https://sports.yahoo.com/articles/bounce-remembering-michael-jordan-became-143107658.html",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/mikey-musumeci-beats-bryce-mitchell-051737829.html",
     "issue": "missing_thumbnail"
   },
@@ -177,6 +181,40 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Diddy.jpg",
+    "links": [
+      "https://allhiphop.com/news/exclusive-diddy-investigation-drives-jonathan-hays-new-fight-with-cj-wallace/",
+      "https://allhiphop.com/news/gene-deal-authorities-pressuring-him-to-testify-about-diddy-in-tupac-trial/",
+      "https://allhiphop.com/news/exclusive-diddy-claims-lil-rod-hired-sex-workers-for-himself-took-drugs-willingly/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Jay-Z-3.jpg",
+    "links": [
+      "https://allhiphop.com/news/jay-zs-reform-alliance-opened-career-doors-for-young-adults-on-probation/",
+      "https://allhiphop.com/rumors/jay-z-is-still-playing-chess-but-the-internet-loves-checkers/",
+      "https://allhiphop.com/rumors/roc-nation-denies-jay-z-album-rumor-but-look-at-what-they-didnt-say/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2025/09/unnamed-48.jpg",
+    "links": [
+      "https://thesource.com/2026/09/25/cardi-b-celebrates-walking-in-milan-fashion-show-a-moment-i-will-never-forget/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-celebrates-walking-in-milan-fashion-show-a-moment-i-will-never-forget",
+      "https://thesource.com/2026/09/23/cardi-b-puts-the-game-on-notice-for-a-2027-album/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-puts-the-game-on-notice-for-a-2027-album",
+      "https://thesource.com/2026/09/02/cardi-b-bardi-bowl-chipotle/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-bardi-bowl-chipotle",
+      "https://thesource.com/2026/08/18/cardi-b-to-make-history-with-first-ever-headlining-stadium-concert-in-the-caribbean/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-to-make-history-with-first-ever-headlining-stadium-concert-in-the-caribbean",
+      "https://thesource.com/2026/08/14/cardi-bia-feud-offset-cheating-rumors/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-bia-feud-offset-cheating-rumors",
+      "https://thesource.com/2026/08/05/cardi-b-kash-doll-ah-ha-remix/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-kash-doll-ah-ha-remix",
+      "https://thesource.com/2026/08/04/cardi-b-four-diamond-singles/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-four-diamond-singles"
+    ],
+    "use_count": 7
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Macklemore-1.jpg",
     "links": [
       "https://allhiphop.com/news/macklemore-sticks-it-to-zionist-robert-kraft-with-free-palestine-tour/",
@@ -184,6 +222,21 @@
       "https://allhiphop.com/news/pro-palestinian-dearborn-mayor-offers-macklemore-free-concert-funded-by-city-following-ed-sheeran-tour-fiasco/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/04/source-logo_red1-2.png",
+    "links": [
+      "https://thesource.com/2026/09/24/the-best-gifts-for-athletes-thoughtful-ideas-theyll-actually-use/?utm_source=rss&utm_medium=rss&utm_campaign=the-best-gifts-for-athletes-thoughtful-ideas-theyll-actually-use",
+      "https://thesource.com/2026/09/17/audiomack-pro-launches-song-pulse/?utm_source=rss&utm_medium=rss&utm_campaign=audiomack-pro-launches-song-pulse",
+      "https://thesource.com/2026/09/04/amen-thompson-signs-208-million-extension-with-rockets/?utm_source=rss&utm_medium=rss&utm_campaign=amen-thompson-signs-208-million-extension-with-rockets",
+      "https://thesource.com/2026/08/27/watch-devastating-flash-flood-hits-china-nepal-border-more-than-1300-missing/?utm_source=rss&utm_medium=rss&utm_campaign=watch-devastating-flash-flood-hits-china-nepal-border-more-than-1300-missing",
+      "https://thesource.com/2026/08/14/judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations/?utm_source=rss&utm_medium=rss&utm_campaign=judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations",
+      "https://thesource.com/2026/08/12/source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop/?utm_source=rss&utm_medium=rss&utm_campaign=source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop",
+      "https://thesource.com/2026/08/11/nba-offseason-trae-young-lights-up-drew-league-with-triple-double/?utm_source=rss&utm_medium=rss&utm_campaign=nba-offseason-trae-young-lights-up-drew-league-with-triple-double",
+      "https://thesource.com/2026/08/07/mitch-mcconnell-discharged-rehab-center/?utm_source=rss&utm_medium=rss&utm_campaign=mitch-mcconnell-discharged-rehab-center"
+    ],
+    "use_count": 8
   },
   {
     "issue": "overused_thumbnail",
@@ -217,19 +270,6 @@
       "https://thesource.com/2026/08/11/the-web-of-confessions-in-the-tupac-murder-trial/?utm_source=rss&utm_medium=rss&utm_campaign=the-web-of-confessions-in-the-tupac-murder-trial"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2025/09/unnamed-48.jpg",
-    "links": [
-      "https://thesource.com/2026/09/23/cardi-b-puts-the-game-on-notice-for-a-2027-album/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-puts-the-game-on-notice-for-a-2027-album",
-      "https://thesource.com/2026/09/02/cardi-b-bardi-bowl-chipotle/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-bardi-bowl-chipotle",
-      "https://thesource.com/2026/08/18/cardi-b-to-make-history-with-first-ever-headlining-stadium-concert-in-the-caribbean/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-to-make-history-with-first-ever-headlining-stadium-concert-in-the-caribbean",
-      "https://thesource.com/2026/08/14/cardi-bia-feud-offset-cheating-rumors/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-bia-feud-offset-cheating-rumors",
-      "https://thesource.com/2026/08/05/cardi-b-kash-doll-ah-ha-remix/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-kash-doll-ah-ha-remix",
-      "https://thesource.com/2026/08/04/cardi-b-four-diamond-singles/?utm_source=rss&utm_medium=rss&utm_campaign=cardi-b-four-diamond-singles"
-    ],
-    "use_count": 6
   },
   {
     "issue": "overused_thumbnail",
@@ -427,28 +467,6 @@
       "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
       "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
     ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
-      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
-    ]
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/04/source-logo_red1-2.png",
-    "links": [
-      "https://thesource.com/2026/09/17/audiomack-pro-launches-song-pulse/?utm_source=rss&utm_medium=rss&utm_campaign=audiomack-pro-launches-song-pulse",
-      "https://thesource.com/2026/09/04/amen-thompson-signs-208-million-extension-with-rockets/?utm_source=rss&utm_medium=rss&utm_campaign=amen-thompson-signs-208-million-extension-with-rockets",
-      "https://thesource.com/2026/08/27/watch-devastating-flash-flood-hits-china-nepal-border-more-than-1300-missing/?utm_source=rss&utm_medium=rss&utm_campaign=watch-devastating-flash-flood-hits-china-nepal-border-more-than-1300-missing",
-      "https://thesource.com/2026/08/14/judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations/?utm_source=rss&utm_medium=rss&utm_campaign=judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations",
-      "https://thesource.com/2026/08/12/source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop/?utm_source=rss&utm_medium=rss&utm_campaign=source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop",
-      "https://thesource.com/2026/08/11/nba-offseason-trae-young-lights-up-drew-league-with-triple-double/?utm_source=rss&utm_medium=rss&utm_campaign=nba-offseason-trae-young-lights-up-drew-league-with-triple-double",
-      "https://thesource.com/2026/08/07/mitch-mcconnell-discharged-rehab-center/?utm_source=rss&utm_medium=rss&utm_campaign=mitch-mcconnell-discharged-rehab-center"
-    ],
-    "use_count": 7
   },
   {
     "issue": "overused_thumbnail",
@@ -670,6 +688,14 @@
       "https://allhiphop.com/rumors/is-chrisean-rock-in-serious-legal-trouble-internet-goes-crazy-over-ronnie-doe-investigation/"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
+    "links": [
+      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
+      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
+    ]
   },
   {
     "issue": "same_homepage_page",
