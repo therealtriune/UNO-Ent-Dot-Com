@@ -204,6 +204,29 @@ header .tagline {
 }
 
 main { padding: 32px 5vw 80px; }
+.home-heading { font-size: 28px; font-weight: 800; margin: 0 0 22px; color: var(--text); letter-spacing: -0.3px; }
+main.article-page { padding: 32px 5vw 80px; }
+main.feature-page { padding: 0 5vw 80px; }
+.listing-main .article-wrap { max-width: 720px; margin: 0; padding: 8px 0 40px; }
+.listing-main .feature-wrap { max-width: 720px; margin: 0; padding: 40px 0 40px; }
+.article-recirc { margin: 36px 0 8px; padding-top: 28px; border-top: 1px solid var(--border); }
+.recirc-heading { font-size: 13px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--text); margin: 0 0 14px; }
+.recirc-related { display: flex; flex-direction: column; gap: 10px; }
+.recirc-item {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+  padding: 14px 16px;
+}
+.recirc-item:hover { background: var(--bg-card-hover); border-color: var(--gray); }
+.recirc-title { display: block; font-size: 15px; font-weight: 700; color: var(--text); line-height: 1.35; }
+.recirc-meta { display: block; font-size: 12px; color: var(--gray); margin-top: 6px; }
+.recirc-next { font-size: 14px; color: var(--gray); margin: 18px 0 0; }
+.recirc-next a { color: var(--red); font-weight: 700; text-decoration: none; }
+.recirc-next a:hover { text-decoration: underline; }
+.article-404 { max-width: 640px; }
+.article-404 h1 { font-size: 32px; font-weight: 800; margin: 0 0 12px; }
+.article-404 p { color: var(--text-secondary); font-size: 16px; line-height: 1.6; }
+.article-404 .outbound-cta { margin-top: 8px; }
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -547,7 +570,7 @@ footer a:hover { color: var(--text); }
 .article-body h2 { font-size: 21px; font-weight: 800; color: var(--text); margin: 32px 0 14px; }
 .article-body a { color: var(--red); font-weight: 700; text-decoration: none; }
 .article-body a:hover { text-decoration: underline; }
-.article-body .outbound-cta { margin: 8px 0 24px; color: #fff; }
+.article-body .outbound-cta { margin: 8px 0 24px; }
 /* Responsive 16:9 video embed for hand-authored posts that include a
    YouTube (or similar) player inline -- e.g. a music release announcement
    embedding the official video. */

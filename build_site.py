@@ -3,8 +3,8 @@
 UNO Entertainment — static site builder.
 
 Reads articles.json (produced by fetch_feeds.py) and renders:
-  - index.html                       homepage, page 1 (newest ARTICLES_PER_PAGE stories)
-  - page/2/index.html, page/3/...    older stories on the homepage, paginated
+  - index.html                       homepage, page 1 (HOME_ARTICLES, newest first)
+  - page/2/index.html, page/3/...    older HOME_ARTICLES, paginated from that same list
   - category/<cat>/index.html        page 1 of a single category (news, rumors,
                                       videos, music, opinion, sports), same pagination
   - category/<cat>/2/index.html ...  older stories within that category
@@ -39,7 +39,7 @@ Run this after fetch_feeds.py any time you want to refresh the site.
 
 import json
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from html import escape
 
 
@@ -66,8 +66,13 @@ with open("articles.json") as f:
 
 
 def slugify(title: str) -> str:
-    s = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
-    return s[:70]
+    """URL slug for articles that have no stored slug.
+
+    Existing rows keep whatever slug is already in articles.json -- this
+    never recomputes those. The old 70-char cap is gone so newly created
+    pages can use the full title slug.
+    """
+    return re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
 
 
 def time_ago(date_iso: str) -> str:
@@ -215,6 +220,35 @@ def article_topic_slugs(a: dict) -> list:
 
 ARTICLE_COUNT = len(ARTICLES)
 
+# Homepage list filter -- not a publish gate. Every article still gets a
+# page and still appears on its category (sports stays on /category/sports/).
+# HOME_ARTICLES is the one list the homepage paginates; mixing this filter
+# with ARTICLES[12:24] would repeat cards.
+HOME_SPORTS_SOURCES = {
+    "Yahoo Sports NBA",
+    "Yahoo Sports Boxing",
+    "Yahoo Sports MMA",
+}
+
+
+def homepage_eligible(a: dict) -> bool:
+    source = a.get("source") or ""
+    title = a.get("title") or ""
+    if title.startswith("TMZ Streaming Live"):
+        return False
+    if source == "VladTV":
+        return True
+    if source == "Yahoo Sports NFL":
+        return False
+    if a.get("category") == "sports" and source not in HOME_SPORTS_SOURCES:
+        return False
+    return True
+
+
+HOME_ARTICLES = [a for a in ARTICLES if homepage_eligible(a)]
+ARTICLE_INDEX = {a["slug"]: i for i, a in enumerate(ARTICLES)}
+ARTICLE_TOPICS = {a["slug"]: set(article_topic_slugs(a)) for a in ARTICLES}
+
 # ---------------------------------------------------------------------------
 # Thumbnail QA — catches the "logo instead of a photo" problem automatically
 # instead of relying on someone noticing it on the live site. Runs on every
@@ -278,8 +312,9 @@ def check_thumbnails(articles):
             })
         elif len(uses) == 2:
             (i1, a1), (i2, a2) = uses
-            home_page_1, home_page_2 = i1 // ARTICLES_PER_PAGE, i2 // ARTICLES_PER_PAGE
-            if home_page_1 == home_page_2:
+            home_pos = {h["link"]: j for j, h in enumerate(HOME_ARTICLES)}
+            j1, j2 = home_pos.get(a1["link"]), home_pos.get(a2["link"])
+            if j1 is not None and j2 is not None and j1 // ARTICLES_PER_PAGE == j2 // ARTICLES_PER_PAGE:
                 flags.append({
                     "issue": "same_homepage_page",
                     "thumbnail": thumb,
@@ -610,6 +645,29 @@ header .tagline {
 }
 
 main { padding: 32px 5vw 80px; }
+.home-heading { font-size: 28px; font-weight: 800; margin: 0 0 22px; color: var(--text); letter-spacing: -0.3px; }
+main.article-page { padding: 32px 5vw 80px; }
+main.feature-page { padding: 0 5vw 80px; }
+.listing-main .article-wrap { max-width: 720px; margin: 0; padding: 8px 0 40px; }
+.listing-main .feature-wrap { max-width: 720px; margin: 0; padding: 40px 0 40px; }
+.article-recirc { margin: 36px 0 8px; padding-top: 28px; border-top: 1px solid var(--border); }
+.recirc-heading { font-size: 13px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--text); margin: 0 0 14px; }
+.recirc-related { display: flex; flex-direction: column; gap: 10px; }
+.recirc-item {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+  padding: 14px 16px;
+}
+.recirc-item:hover { background: var(--bg-card-hover); border-color: var(--gray); }
+.recirc-title { display: block; font-size: 15px; font-weight: 700; color: var(--text); line-height: 1.35; }
+.recirc-meta { display: block; font-size: 12px; color: var(--gray); margin-top: 6px; }
+.recirc-next { font-size: 14px; color: var(--gray); margin: 18px 0 0; }
+.recirc-next a { color: var(--red); font-weight: 700; text-decoration: none; }
+.recirc-next a:hover { text-decoration: underline; }
+.article-404 { max-width: 640px; }
+.article-404 h1 { font-size: 32px; font-weight: 800; margin: 0 0 12px; }
+.article-404 p { color: var(--text-secondary); font-size: 16px; line-height: 1.6; }
+.article-404 .outbound-cta { margin-top: 8px; }
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -953,7 +1011,7 @@ footer a:hover { color: var(--text); }
 .article-body h2 { font-size: 21px; font-weight: 800; color: var(--text); margin: 32px 0 14px; }
 .article-body a { color: var(--red); font-weight: 700; text-decoration: none; }
 .article-body a:hover { text-decoration: underline; }
-.article-body .outbound-cta { margin: 8px 0 24px; color: #fff; }
+.article-body .outbound-cta { margin: 8px 0 24px; }
 /* Responsive 16:9 video embed for hand-authored posts that include a
    YouTube (or similar) player inline -- e.g. a music release announcement
    embedding the official video. */
@@ -1665,6 +1723,7 @@ def footer_html(prefix: str) -> str:
         <a href="/">Home</a>{section_links}
         <a href="/topics/">Topics</a>
         <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
       </div>
       <div class="footer-col footer-col-about">
         <h4>About UNO Entertainment</h4>
@@ -1674,7 +1733,9 @@ def footer_html(prefix: str) -> str:
       <div class="footer-col footer-col-touch">
         <h4>Get In Touch</h4>
         <p>Questions or a story tip?</p>
+        <a href="/contact/">Contact</a>
         <a class="footer-contact-email" href="mailto:support@unoent.com">support@unoent.com</a>
+        <a href="mailto:support@unoent.com?subject=Advertising%20Inquiry%20--%20UNO%20Ent%20Media">Advertise with UNO Ent Media</a>
       </div>
       <div class="footer-col footer-col-newsletter">
         {klaviyo_signup_html()}
@@ -1698,11 +1759,21 @@ def footer_html(prefix: str) -> str:
 <script>{KLAVIYO_SIGNUP_JS}</script>"""
 
 
-def meta_html(prefix: str, title: str, description: str, canonical_url: str, image_url: str = None) -> str:
+def meta_html(prefix: str, title: str, description: str, canonical_url: str, image_url: str = None, og_type: str = "website", published_time: str = None, robots: str = None) -> str:
     """Favicon links + Open Graph / Twitter card tags, shared by every page.
     image_url and canonical_url must be absolute (http/https) -- social apps
-    like iMessage, Facebook, and Twitter/X ignore relative og:image URLs."""
+    like iMessage, Facebook, and Twitter/X ignore relative og:image URLs.
+    og_type defaults to website; article pages pass og_type='article' and
+    optional article:published_time. robots is added only when set (e.g.
+    noindex,follow on paginated listings and /search/)."""
     image_url = image_url or DEFAULT_OG_IMAGE
+    robots_tag = (
+        f'\n<meta name="robots" content="{escape(robots)}">' if robots else ""
+    )
+    published_tag = (
+        f'\n<meta property="article:published_time" content="{escape(published_time)}">'
+        if published_time else ""
+    )
     return f"""
 <meta name="description" content="{escape(description)}">
 <link rel="canonical" href="{canonical_url}">
@@ -1710,16 +1781,16 @@ def meta_html(prefix: str, title: str, description: str, canonical_url: str, ima
 <link rel="icon" type="image/png" sizes="32x32" href="{prefix}favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="{prefix}favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="{prefix}favicon-180.png">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{escape(og_type)}">
 <meta property="og:site_name" content="UNO Entertainment">
 <meta property="og:title" content="{escape(title)}">
 <meta property="og:description" content="{escape(description)}">
 <meta property="og:image" content="{image_url}">
-<meta property="og:url" content="{canonical_url}">
+<meta property="og:url" content="{canonical_url}">{published_tag}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{escape(title)}">
 <meta name="twitter:description" content="{escape(description)}">
-<meta name="twitter:image" content="{image_url}">"""
+<meta name="twitter:image" content="{image_url}">{robots_tag}"""
 
 
 def ad_rail_html(prefix: str) -> str:
@@ -1826,7 +1897,7 @@ def page_jump_html(current_page: int, total_pages: int, href_for) -> str:
     </label>"""
 
 
-def pagination_html(current_page: int, total_pages: int) -> str:
+def pagination_html(current_page: int, total_pages: int, include_jump: bool = False) -> str:
     if total_pages <= 1:
         return ""
     if current_page > 1:
@@ -1837,7 +1908,7 @@ def pagination_html(current_page: int, total_pages: int) -> str:
         nxt = f'<a href="{page_href(current_page + 1)}">Older &rarr;</a>'
     else:
         nxt = '<span class="disabled">Older &rarr;</span>'
-    jump = page_jump_html(current_page, total_pages, page_href)
+    jump = page_jump_html(current_page, total_pages, page_href) if include_jump else ""
     return f"""
   <nav class="pagination">
     {prev}
@@ -1850,13 +1921,15 @@ def pagination_html(current_page: int, total_pages: int) -> str:
 
 def build_page(page_num: int, total_pages: int):
     start = (page_num - 1) * ARTICLES_PER_PAGE
-    page_articles = ARTICLES[start:start + ARTICLES_PER_PAGE]
+    page_articles = HOME_ARTICLES[start:start + ARTICLES_PER_PAGE]
     # page/{n}/index.html is 2 directories deep; index.html at the root is 0.
     prefix = "" if page_num == 1 else "../../"
     cards = "\n".join(card_html(a, prefix) for a in page_articles)
     title = "UNO Entertainment" if page_num == 1 else f"UNO Entertainment | Page {page_num}"
     canonical = SITE_URL + page_href(page_num)
     description = SITE_DESCRIPTION if page_num == 1 else f"{SITE_DESCRIPTION} (Page {page_num})"
+    robots = "noindex,follow" if page_num > 1 else None
+    heading = "The Culture's Feed" if page_num == 1 else f"The Culture's Feed — Page {page_num}"
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1865,7 +1938,7 @@ def build_page(page_num: int, total_pages: int):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
-{meta_html(prefix, title, description, canonical)}
+{meta_html(prefix, title, description, canonical, robots=robots)}
 {website_jsonld() if page_num == 1 else ""}
 <link rel="stylesheet" href="{prefix}style.css">
 </head>
@@ -1875,6 +1948,7 @@ def build_page(page_num: int, total_pages: int):
 <main>
   <div class="listing-layout">
     <div class="listing-main">
+      <h1 class="home-heading">{heading}</h1>
       <div class="grid">
         {cards}
       </div>
@@ -1899,7 +1973,7 @@ def build_page(page_num: int, total_pages: int):
 
 def build_pages():
     import math
-    total_pages = max(1, math.ceil(ARTICLE_COUNT / ARTICLES_PER_PAGE))
+    total_pages = max(1, math.ceil(len(HOME_ARTICLES) / ARTICLES_PER_PAGE))
     for page_num in range(1, total_pages + 1):
         build_page(page_num, total_pages)
     return total_pages
@@ -1966,6 +2040,7 @@ def build_category(cat_key: str, cat_label: str):
             f"The latest {cat_label.lower()} in hip-hop and culture, curated by UNO Entertainment.",
         )
         description = base_description if page_num == 1 else f"{base_description} (Page {page_num})"
+        robots = "noindex,follow" if page_num > 1 else None
         html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1974,7 +2049,7 @@ def build_category(cat_key: str, cat_label: str):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{escape(title)}</title>
-{meta_html(prefix, title, description, canonical)}
+{meta_html(prefix, title, description, canonical, robots=robots)}
 <link rel="stylesheet" href="{prefix}style.css">
 </head>
 <body>
@@ -2067,6 +2142,7 @@ def build_topic(slug: str, name: str):
             f"all in one place."
         )
         description = base_description if page_num == 1 else f"{base_description} (Page {page_num})"
+        robots = "noindex,follow" if page_num > 1 else None
         html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2075,7 +2151,7 @@ def build_topic(slug: str, name: str):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{escape(title)}</title>
-{meta_html(prefix, title, description, canonical)}
+{meta_html(prefix, title, description, canonical, robots=robots)}
 <link rel="stylesheet" href="{prefix}style.css">
 </head>
 <body>
@@ -2158,9 +2234,6 @@ def build_topics_index(live_topics: list) -> None:
         f.write(html)
 
 
-# ---------------------------------------------------------------------------
-# Hip-Hop Beef Tracker — a single evergreen pillar page at
-
 def build_topic_hubs():
     """Builds every topic hub with at least one matching article today, plus
     the /topics/ directory linking to all of them. Returns the list of
@@ -2231,6 +2304,92 @@ def website_jsonld() -> str:
     return jsonld_script(data)
 
 
+def format_display_date(date_iso: str) -> str:
+    """Calendar date for article bylines, shown next to time_ago()."""
+    try:
+        dt = datetime.fromisoformat(date_iso.replace("Z", "+00:00"))
+    except (ValueError, TypeError, AttributeError):
+        return ""
+    return f"{dt.strftime('%B')} {dt.day}, {dt.year}"
+
+
+def article_date_label(date_iso: str) -> str:
+    real = format_display_date(date_iso)
+    ago = time_ago(date_iso)
+    if real and ago:
+        return f"{escape(real)} &middot; {escape(ago)}"
+    return escape(real or ago)
+
+
+def related_articles_for(a: dict, limit: int = 3) -> list:
+    """Up to `limit` related stories, newest first, excluding self.
+
+    Prefer other articles that share any of this story's topic slugs; if
+    this story matches no topics, fall back to the same category.
+    """
+    self_slug = a.get("slug")
+    topic_slugs = ARTICLE_TOPICS.get(self_slug) or set()
+    picked = []
+    if topic_slugs:
+        for other in ARTICLES:
+            if other.get("slug") == self_slug:
+                continue
+            if topic_slugs.intersection(ARTICLE_TOPICS.get(other.get("slug")) or set()):
+                picked.append(other)
+                if len(picked) >= limit:
+                    return picked
+        return picked
+    cat = a.get("category")
+    for other in ARTICLES:
+        if other.get("slug") == self_slug:
+            continue
+        if other.get("category") == cat:
+            picked.append(other)
+            if len(picked) >= limit:
+                break
+    return picked
+
+
+def next_older_article(a: dict):
+    """The next older story in the newest-first archive (ARTICLES[i+1])."""
+    i = ARTICLE_INDEX.get(a.get("slug"))
+    if i is None or i + 1 >= len(ARTICLES):
+        return None
+    return ARTICLES[i + 1]
+
+
+def recirc_html(a: dict) -> str:
+    related = related_articles_for(a, 3)
+    nxt = next_older_article(a)
+    parts = []
+    if related:
+        items = "".join(
+            f'<a class="recirc-item" href="/articles/{r["slug"]}/">'
+            f'<span class="recirc-title">{escape(r["title"])}</span>'
+            f'<span class="recirc-meta">{article_date_label(r["date"])}</span>'
+            f"</a>"
+            for r in related
+        )
+        parts.append(
+            f'<div class="recirc-related"><h2 class="recirc-heading">Related</h2>{items}</div>'
+        )
+    if nxt:
+        parts.append(
+            f'<p class="recirc-next">Next: '
+            f'<a href="/articles/{nxt["slug"]}/">{escape(nxt["title"])}</a></p>'
+        )
+    if not parts:
+        return ""
+    return f'<section class="article-recirc">{"".join(parts)}</section>'
+
+
+def published_time_iso(date_iso: str) -> str:
+    try:
+        return datetime.fromisoformat(date_iso.replace("Z", "+00:00")).isoformat()
+    except (ValueError, TypeError, AttributeError, KeyError):
+        return ""
+
+
 def build_article(a: dict):
     # articles/{slug}/index.html is 2 directories deep.
     prefix = "../../"
@@ -2243,16 +2402,22 @@ def build_article(a: dict):
     # Hand-authored UNO Ent originals set "body_html" directly (full control
     # over paragraphs, subheads, embedded video, custom CTAs) instead of
     # going through the standard RSS-summary + "Read Full Story On {source}"
-    # outbound-CTA block every scraped article uses.
+    # outbound-CTA block every scraped article uses. Originals keep their
+    # body and still get recirc + the house-ad rail; they just skip the
+    # outbound CTA. Thin recaps stay published -- layout only, never a 404.
     if a.get("body_html"):
         body_class = "feature-body" if a.get("layout") == "feature" else "article-body"
         body_html = f'<div class="{body_class}">{a["body_html"]}</div>'
+        outbound_html = ""
     else:
-        body_html = f'''<p class="article-summary">{escape(a.get('summary') or a.get('excerpt', ''))}</p>
-  <a class="outbound-cta" href="{escape(a['link'])}" target="_blank" rel="noopener noreferrer">
-    Read The Full Story On {escape(a['source'])} &rarr;
-  </a>
-  <p class="outbound-note">Original reporting by {escape(a['source'])}. This page is a summary. The full story, photos, and details live at the link above.</p>'''
+        summary_text = escape(a.get("summary") or a.get("excerpt", ""))
+        body_html = f'<p class="article-summary">{summary_text}</p>'
+        outbound_html = (
+            f'<a class="outbound-cta" href="{escape(a["link"])}" target="_blank" rel="noopener noreferrer">'
+            f'Read The Full Story On {escape(a["source"])} &rarr;</a>'
+            f'<p class="outbound-note">Original reporting by {escape(a["source"])}. '
+            f"This page is a summary. The full story, photos, and details live at the link above.</p>"
+        )
     title = f"{a['title']} | UNO Entertainment"
     canonical = f"{SITE_URL}/articles/{a['slug']}/"
     description = a.get("excerpt") or SITE_DESCRIPTION
@@ -2269,21 +2434,31 @@ def build_article(a: dict):
             f'<a href="/topic/{slug}/">{escape(name)}</a>' for slug, name in matched_topics
         )
         related_topics_html = f'<p class="article-related-topics">More on: {links}</p>'
+    recirc = recirc_html(a)
+    # Order: body/summary, recirc (related + next), topic chips, outbound CTA, Disqus.
+    after_body = f"""
+  {recirc}
+  {related_topics_html}
+  {outbound_html}
+  {disqus_html(canonical, a['slug'])}"""
     # "feature" layout -- opt-in via a["layout"] == "feature" -- swaps the
     # standard capped-height article-wrap for a full-bleed hero with the
     # kicker/headline/byline overlaid on the image, magazine-style. See the
     # .feature-* CSS block for the visual design. Every other article page
-    # (the other 3500+) never sets "layout", so they're unaffected.
-    if a.get("layout") == "feature":
+    # (the other 3500+) never sets "layout", so they're unaffected. House
+    # ad rail (Holly / Get Laced / Lemon Negra) sits on both layouts.
+    is_feature = a.get("layout") == "feature"
+    if is_feature:
         word_count = len(re.sub(r"<[^>]+>", " ", body_html).split())
         read_mins = max(1, round(word_count / 200))
         dot = '<span class="dot">&middot;</span>'
+        date_label = article_date_label(a["date"])
         # Default byline for hand-authored UNO Ent originals -- all of
         # today's feature-layout content is written by Figure Infinite for
         # UNO Ent Media; a["byline"] can still override this per-article.
         byline = a.get("byline") or (
             f"<strong>By Figure Infinite</strong> for UNO Ent Media {dot} "
-            f"{escape(time_ago(a['date']))} {dot} {read_mins} min read"
+            f"{date_label} {dot} {read_mins} min read"
         )
         kicker = escape(a.get("kicker") or CATEGORY_LABELS.get(a.get("category"), "Feature"))
         if thumb:
@@ -2323,22 +2498,35 @@ def build_article(a: dict):
             body_html = body_html.replace("{{GALLERY}}", gallery_html)
             gallery_html = ""
         content_html = f'''{feature_hero}
-<div class="feature-wrap">
+<main class="feature-page">
+  <div class="listing-layout">
+    <div class="listing-main">
+      <div class="feature-wrap">
   {body_html}
   {gallery_html}
-  {related_topics_html}
-  {disqus_html(canonical, a['slug'])}
-</div>'''
+  {after_body}
+      </div>
+    </div>
+    {ad_rail_html(prefix)}
+  </div>
+</main>'''
     else:
-        content_html = f'''<div class="article-wrap">
+        content_html = f'''<main class="article-page">
+  <div class="listing-layout">
+    <div class="listing-main">
+      <div class="article-wrap">
   <a class="back-link" href="/">&larr; Back to UNO Entertainment</a>
-  <div class="article-meta">{escape(time_ago(a['date']))}</div>
+  <div class="article-meta">{article_date_label(a['date'])}</div>
   <h1 class="article-title">{escape(a['title'])}</h1>
   {hero_html}
   {body_html}
-  {related_topics_html}
-  {disqus_html(canonical, a['slug'])}
-</div>'''
+  {after_body}
+      </div>
+    </div>
+    {ad_rail_html(prefix)}
+  </div>
+</main>'''
+    pub_time = published_time_iso(a.get("date", ""))
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2347,7 +2535,7 @@ def build_article(a: dict):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{escape(title)}</title>
-{meta_html(prefix, title, description, canonical, image_url=thumb)}
+{meta_html(prefix, title, description, canonical, image_url=thumb, og_type="article", published_time=pub_time or None)}
 {article_jsonld(a, canonical, description)}
 <link rel="stylesheet" href="{prefix}style.css">
 </head>
@@ -2364,6 +2552,7 @@ def build_article(a: dict):
     os.makedirs(out_dir, exist_ok=True)
     with open(f"{out_dir}/index.html", "w") as f:
         f.write(html)
+
 
 
 # ---------------------------------------------------------------------------
@@ -2698,7 +2887,7 @@ def build_search_page():
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
-{meta_html(prefix, title, description, canonical)}
+{meta_html(prefix, title, description, canonical, robots="noindex,follow")}
 <link rel="stylesheet" href="{prefix}style.css">
 </head>
 <body>
@@ -2804,6 +2993,182 @@ def build_legal_page(slug: str, title: str, body_html: str):
         f.write(html)
 
 
+def build_contact_page():
+    """/contact/ -- support + advertising. Replaces the need for /advertise/."""
+    import os
+    prefix = "../"
+    title = "Contact"
+    full_title = f"{title} | UNO Entertainment"
+    canonical = f"{SITE_URL}/contact/"
+    description = "Contact UNO Entertainment — story tips, support, and advertising."
+    body = """
+  <p>Questions, a story tip, or something we should look at?</p>
+  <p><a href="mailto:support@unoent.com">support@unoent.com</a></p>
+  <h2>Advertising</h2>
+  <p>House placements and sponsorships on The Culture's Feed. Holly Michelle, Get Laced, and Lemon Negra are on the rail today — reach us for a slot.</p>
+  <p><a href="mailto:support@unoent.com?subject=Advertising%20Inquiry%20--%20UNO%20Ent%20Media">Advertise with UNO Ent Media</a></p>
+"""
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+{GTM_HEAD_SNIPPET}
+{THEME_INIT_SNIPPET}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{full_title}</title>
+{meta_html(prefix, full_title, description, canonical)}
+<link rel="stylesheet" href="{prefix}style.css">
+</head>
+<body>
+{GTM_BODY_SNIPPET}
+{header_html(prefix)}
+<div class="legal-wrap">
+  <h1>{title}</h1>
+  <p class="legal-updated">The Culture's Feed &middot; Los Angeles</p>
+  {body}
+</div>
+{footer_html(prefix)}
+</body>
+</html>
+"""
+    os.makedirs("contact", exist_ok=True)
+    with open("contact/index.html", "w") as f:
+        f.write(html)
+
+
+def build_404_page():
+    """Root 404.html for GitHub Pages — branded, absolute asset paths so it
+    still looks right when served for any missing URL."""
+    prefix = "/"
+    title = "Page Not Found | UNO Entertainment"
+    canonical = f"{SITE_URL}/404.html"
+    description = "This page isn't on UNO Entertainment. Head back to The Culture's Feed."
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+{GTM_HEAD_SNIPPET}
+{THEME_INIT_SNIPPET}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title}</title>
+{meta_html(prefix, title, description, canonical, robots="noindex,follow")}
+<link rel="stylesheet" href="{prefix}style.css">
+</head>
+<body>
+{GTM_BODY_SNIPPET}
+{header_html(prefix)}
+<main>
+  <div class="legal-wrap article-404">
+    <h1>Page not found</h1>
+    <p>This page isn't on UNO Ent. It may have moved, or the link is stale. The feed is still here.</p>
+    <p><a class="outbound-cta" href="/">Back to The Culture's Feed</a></p>
+  </div>
+</main>
+{footer_html(prefix)}
+</body>
+</html>
+"""
+    with open("404.html", "w") as f:
+        f.write(html)
+
+
+def articles_from_last_hours(hours: int = 48) -> list:
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
+    out = []
+    for a in ARTICLES:
+        try:
+            dt = datetime.fromisoformat(a["date"].replace("Z", "+00:00"))
+        except (ValueError, KeyError, TypeError):
+            continue
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        if dt >= cutoff:
+            out.append(a)
+    return out
+
+
+def rfc822_date(date_iso: str) -> str:
+    try:
+        dt = datetime.fromisoformat(date_iso.replace("Z", "+00:00")).astimezone(timezone.utc)
+    except (ValueError, TypeError, AttributeError):
+        dt = datetime.now(timezone.utc)
+    return dt.strftime("%a, %d %b %Y %H:%M:%S +0000")
+
+
+def w3c_date(date_iso: str) -> str:
+    try:
+        dt = datetime.fromisoformat(date_iso.replace("Z", "+00:00")).astimezone(timezone.utc)
+        return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+    except (ValueError, TypeError, AttributeError):
+        return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def build_rss():
+    """rss.xml — last 48 hours, item link is our canonical article URL."""
+    items = articles_from_last_hours(48)
+    now = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
+    blocks = []
+    for a in items:
+        link = f"{SITE_URL}/articles/{a['slug']}/"
+        desc = escape(a.get("excerpt") or a.get("summary") or "")
+        blocks.append(
+            "    <item>\n"
+            f"      <title>{escape(a['title'])}</title>\n"
+            f"      <link>{escape(link)}</link>\n"
+            f"      <guid isPermaLink=\"true\">{escape(link)}</guid>\n"
+            f"      <pubDate>{rfc822_date(a.get('date', ''))}</pubDate>\n"
+            f"      <description>{desc}</description>\n"
+            "    </item>"
+        )
+    xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>UNO Entertainment</title>
+    <link>{SITE_URL}/</link>
+    <description>{escape(SITE_DESCRIPTION)}</description>
+    <language>en-us</language>
+    <lastBuildDate>{now}</lastBuildDate>
+{chr(10).join(blocks)}
+  </channel>
+</rss>
+"""
+    with open("rss.xml", "w") as f:
+        f.write(xml)
+    return len(items)
+
+
+def build_news_sitemap():
+    """news-sitemap.xml — last 48 hours by a['date']. Canonical loc only;
+    no Google News publisher-center tags."""
+    items = articles_from_last_hours(48)
+    blocks = []
+    for a in items:
+        loc = f"{SITE_URL}/articles/{a['slug']}/"
+        pub = w3c_date(a.get("date", ""))
+        blocks.append(
+            "  <url>\n"
+            f"    <loc>{escape(loc)}</loc>\n"
+            "    <news:news>\n"
+            "      <news:publication>\n"
+            "        <news:name>UNO Entertainment</news:name>\n"
+            "        <news:language>en</news:language>\n"
+            "      </news:publication>\n"
+            f"      <news:publication_date>{pub}</news:publication_date>\n"
+            f"      <news:title>{escape(a['title'])}</news:title>\n"
+            "    </news:news>\n"
+            "  </url>"
+        )
+    xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+{chr(10).join(blocks)}
+</urlset>
+"""
+    with open("news-sitemap.xml", "w") as f:
+        f.write(xml)
+    return len(items)
+
+
 def prune_stale_article_pages():
     """
     Removes articles/<slug>/ directories left over from articles that are no
@@ -2830,47 +3195,38 @@ def prune_stale_article_pages():
 
 
 def build_robots_txt():
-    """robots.txt pointing crawlers at sitemap.xml. No paths are disallowed
-    -- everything on the Site is meant to be indexed."""
+    """robots.txt pointing crawlers at sitemap.xml and the news sitemap."""
     content = f"""User-agent: *
 Allow: /
 
 Sitemap: {SITE_URL}/sitemap.xml
+Sitemap: {SITE_URL}/news-sitemap.xml
 """
     with open("robots.txt", "w") as f:
         f.write(content)
 
 
-def build_sitemap(total_pages: int, live_topics: list):
-    """XML sitemap covering every clean-URL page the Site generates:
-    homepage + pagination, every category (+ its pagination), every topic
-    hub (+ its pagination), every article page, the legal pages, /topics/,
-    and search. Article <lastmod> uses the article's own published date;
-    listing pages use "now" since their content changes on every feed
-    refresh. live_topics is the (slug, name, count) list build_topic_hubs()
-    already computed -- reused here instead of recomputing which topics are
-    actually live."""
-    import math
-
+def build_sitemap(live_topics: list):
+    """XML sitemap: home, about, contact, terms, privacy, /topics/, topic
+    page 1, category page 1, and every article. Pagination and /search/
+    are built on disk but dropped here (those pages are noindex,follow).
+    Article <lastmod> uses the article's own published date; listing
+    pages use "now". live_topics is reused from build_topic_hubs()."""
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     urls = []
 
-    for page_num in range(1, total_pages + 1):
-        urls.append((SITE_URL + page_href(page_num), now_iso))
+    urls.append((SITE_URL + "/", now_iso))
+    urls.append((f"{SITE_URL}/about/", now_iso))
+    urls.append((f"{SITE_URL}/contact/", now_iso))
+    urls.append((f"{SITE_URL}/terms/", now_iso))
+    urls.append((f"{SITE_URL}/privacy-policy/", now_iso))
+    urls.append((f"{SITE_URL}/topics/", now_iso))
 
     for cat_key, _ in CATEGORIES:
-        cat_articles = [a for a in ARTICLES if a.get("category") == cat_key]
-        cat_total_pages = max(1, math.ceil(len(cat_articles) / ARTICLES_PER_PAGE))
-        for page_num in range(1, cat_total_pages + 1):
-            urls.append((f"{SITE_URL}{category_page_href(cat_key, page_num)}", now_iso))
+        urls.append((f"{SITE_URL}{category_page_href(cat_key, 1)}", now_iso))
 
-    for slug, _, count in live_topics:
-        topic_total_pages = max(1, math.ceil(count / ARTICLES_PER_PAGE))
-        for page_num in range(1, topic_total_pages + 1):
-            urls.append((f"{SITE_URL}{topic_page_href(slug, page_num)}", now_iso))
-    if live_topics:
-        urls.append((f"{SITE_URL}/topics/", now_iso))
-
+    for slug, _, _ in live_topics:
+        urls.append((f"{SITE_URL}{topic_page_href(slug, 1)}", now_iso))
 
     for a in ARTICLES:
         try:
@@ -2878,11 +3234,6 @@ def build_sitemap(total_pages: int, live_topics: list):
         except (ValueError, KeyError):
             lastmod = now_iso
         urls.append((f"{SITE_URL}/articles/{a['slug']}/", lastmod))
-
-    urls.append((f"{SITE_URL}/about/", now_iso))
-    urls.append((f"{SITE_URL}/privacy-policy/", now_iso))
-    urls.append((f"{SITE_URL}/terms/", now_iso))
-    urls.append((f"{SITE_URL}/search/", now_iso))
 
     entries = "\n".join(
         f"  <url>\n    <loc>{escape(loc)}</loc>\n    <lastmod>{lastmod}</lastmod>\n  </url>"
@@ -2908,26 +3259,31 @@ def main():
     for a in ARTICLES:
         build_article(a)
     build_about_page()
+    build_contact_page()
     build_legal_page("privacy-policy", "Privacy Policy", PRIVACY_POLICY_BODY)
     build_legal_page("terms", "Terms of Service", TERMS_BODY)
+    build_404_page()
     check_thumbnails(ARTICLES)
     build_search_index()
     build_hottest_feed()
     build_search_page()
     build_robots_txt()
-    sitemap_url_count = build_sitemap(total_pages, live_topics)
+    sitemap_url_count = build_sitemap(live_topics)
+    rss_count = build_rss()
+    news_count = build_news_sitemap()
     from collections import Counter
     counts = Counter(a.get("category") for a in ARTICLES)
     cat_summary = ", ".join(f"{label} {counts.get(key, 0)}" for key, label in CATEGORIES)
     print(
-        f"Built {total_pages} homepage page(s) ({ARTICLES_PER_PAGE}/page) "
+        f"Built {total_pages} homepage page(s) ({ARTICLES_PER_PAGE}/page, {len(HOME_ARTICLES)} eligible) "
         f"+ {ARTICLE_COUNT} article pages in articles/*/ "
         f"+ category pages ({cat_summary}) "
         f"+ {len(live_topics)} topic hub(s) + /topics/ "
-        f"+ /about/ + /privacy-policy/ + /terms/ "
+        f"+ /about/ + /contact/ + /privacy-policy/ + /terms/ + 404.html "
         f"+ /search/ (search-index.json, {ARTICLE_COUNT} articles) "
         f"+ hottest.json "
-        f"+ robots.txt + sitemap.xml ({sitemap_url_count} URLs), plus style.css"
+        f"+ robots.txt + sitemap.xml ({sitemap_url_count} URLs) "
+        f"+ rss.xml ({rss_count}) + news-sitemap.xml ({news_count}), plus style.css"
     )
 
 
