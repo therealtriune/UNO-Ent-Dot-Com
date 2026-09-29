@@ -189,6 +189,36 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/cropped-AllHipHop-2.jpg",
+    "links": [
+      "https://allhiphop.com/blogs/private-equity-is-moving-deeper-into-music-and-creator-owned-brands/",
+      "https://allhiphop.com/blogs/how-second-generation-stars-are-defining-their-own-terms-in-media/",
+      "https://allhiphop.com/blogs/personal-branding-has-become-part-of-building-a-modern-career/",
+      "https://allhiphop.com/blogs/relocating-to-nevada-means-learning-a-new-set-of-rules-for-everyday-life/",
+      "https://allhiphop.com/news/anthropic-faces-multi-billion-dollar-lawsuit-from-sony-warner-chappell-in-latest-war-over-ai/",
+      "https://allhiphop.com/news/bad-bunny-stuck-with-465k-bill-after-copyright-lawsuit-dismissed/",
+      "https://allhiphop.com/rumors/drake-invites-more-smoke-from-the-opps/"
+    ],
+    "use_count": 7
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
+    "links": [
+      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
+      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
+    "links": [
+      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
+      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
+    ]
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Nicki-Minaj-and-Kenneth-Petty.jpg",
     "links": [
       "https://allhiphop.com/news/exclusive-kenneth-pettys-old-letter-battle-grows-as-jennifer-hough-cites-knife-admission-guilty-plea/",
@@ -219,18 +249,6 @@
       "https://allhiphop.com/news/ray-j-beats-orlando-brown-as-atlanta-crowd-boos-quiet-final-round/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/cropped-AllHipHop-2.jpg",
-    "links": [
-      "https://allhiphop.com/blogs/personal-branding-has-become-part-of-building-a-modern-career/",
-      "https://allhiphop.com/blogs/relocating-to-nevada-means-learning-a-new-set-of-rules-for-everyday-life/",
-      "https://allhiphop.com/news/anthropic-faces-multi-billion-dollar-lawsuit-from-sony-warner-chappell-in-latest-war-over-ai/",
-      "https://allhiphop.com/news/bad-bunny-stuck-with-465k-bill-after-copyright-lawsuit-dismissed/",
-      "https://allhiphop.com/rumors/drake-invites-more-smoke-from-the-opps/"
-    ],
-    "use_count": 5
   },
   {
     "issue": "overused_thumbnail",
@@ -545,14 +563,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
-      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
     "links": [
@@ -736,6 +746,14 @@
       "https://allhiphop.com/news/d4vds-bloody-merchandise-video-resurfaces-amid-murder-case/"
     ],
     "use_count": 7
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
+    "links": [
+      "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
+      "https://allhiphop.com/news/ciara-russell-wilson-announce-baby-cinco/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
