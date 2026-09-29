@@ -191,6 +191,8 @@
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/cropped-AllHipHop-2.jpg",
     "links": [
+      "https://allhiphop.com/blogs/heres-what-you-need-to-know-about-managing-stress-during-a-big-move/",
+      "https://allhiphop.com/blogs/upgrade-your-remote-work-setups-with-these-comfortable-desk-hacks/",
       "https://allhiphop.com/blogs/private-equity-is-moving-deeper-into-music-and-creator-owned-brands/",
       "https://allhiphop.com/blogs/how-second-generation-stars-are-defining-their-own-terms-in-media/",
       "https://allhiphop.com/blogs/personal-branding-has-become-part-of-building-a-modern-career/",
@@ -199,7 +201,7 @@
       "https://allhiphop.com/news/bad-bunny-stuck-with-465k-bill-after-copyright-lawsuit-dismissed/",
       "https://allhiphop.com/rumors/drake-invites-more-smoke-from-the-opps/"
     ],
-    "use_count": 7
+    "use_count": 9
   },
   {
     "issue": "same_homepage_page",
@@ -556,6 +558,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
+      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
@@ -988,14 +998,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
-      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
     "links": [
       "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
