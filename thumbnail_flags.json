@@ -188,17 +188,10 @@
     "issue": "missing_thumbnail"
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
-    "links": [
-      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
-      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/cropped-AllHipHop-2.jpg",
     "links": [
+      "https://allhiphop.com/blogs/taking-control-of-your-retirement-savings-before-it-is-too-late/",
       "https://allhiphop.com/blogs/how-to-handle-bulky-cargo-safely-when-you-are-short-staffed/",
       "https://allhiphop.com/blogs/heres-what-you-need-to-know-about-managing-stress-during-a-big-move/",
       "https://allhiphop.com/blogs/upgrade-your-remote-work-setups-with-these-comfortable-desk-hacks/",
@@ -210,15 +203,36 @@
       "https://allhiphop.com/news/bad-bunny-stuck-with-465k-bill-after-copyright-lawsuit-dismissed/",
       "https://allhiphop.com/rumors/drake-invites-more-smoke-from-the-opps/"
     ],
-    "use_count": 10
+    "use_count": 11
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/07/JAY\u0308-ZEXTRAINNINGS32-1.webp",
     "links": [
-      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
-      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
-    ]
+      "https://thesource.com/2026/10/01/jay-z-miley-cyrus-2027-super-bowl-halftime-odds/?utm_source=rss&utm_medium=rss&utm_campaign=jay-z-miley-cyrus-2027-super-bowl-halftime-odds",
+      "https://thesource.com/2026/09/01/jay-z-30-london-trafalgar-square-installation/?utm_source=rss&utm_medium=rss&utm_campaign=jay-z-30-london-trafalgar-square-installation",
+      "https://thesource.com/2026/08/26/jay-z-30-london-camden-pop-up/?utm_source=rss&utm_medium=rss&utm_campaign=jay-z-30-london-camden-pop-up",
+      "https://thesource.com/2026/08/11/roc-nation-jay-z-album-ray-daniels/?utm_source=rss&utm_medium=rss&utm_campaign=roc-nation-jay-z-album-ray-daniels"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/04/source-logo_red1-2.png",
+    "links": [
+      "https://thesource.com/2026/10/01/a-speedy-guide-to-the-upcoming-nba-2026-27-season/?utm_source=rss&utm_medium=rss&utm_campaign=a-speedy-guide-to-the-upcoming-nba-2026-27-season",
+      "https://thesource.com/2026/10/01/flydubai-pilot-stabbing-midair-incident/?utm_source=rss&utm_medium=rss&utm_campaign=flydubai-pilot-stabbing-midair-incident",
+      "https://thesource.com/2026/10/01/pastor-admits-stealing-504k-from-historic-church-that-survived-tulsa-race-massacre/?utm_source=rss&utm_medium=rss&utm_campaign=pastor-admits-stealing-504k-from-historic-church-that-survived-tulsa-race-massacre",
+      "https://thesource.com/2026/09/24/the-best-gifts-for-athletes-thoughtful-ideas-theyll-actually-use/?utm_source=rss&utm_medium=rss&utm_campaign=the-best-gifts-for-athletes-thoughtful-ideas-theyll-actually-use",
+      "https://thesource.com/2026/09/17/audiomack-pro-launches-song-pulse/?utm_source=rss&utm_medium=rss&utm_campaign=audiomack-pro-launches-song-pulse",
+      "https://thesource.com/2026/09/04/amen-thompson-signs-208-million-extension-with-rockets/?utm_source=rss&utm_medium=rss&utm_campaign=amen-thompson-signs-208-million-extension-with-rockets",
+      "https://thesource.com/2026/08/27/watch-devastating-flash-flood-hits-china-nepal-border-more-than-1300-missing/?utm_source=rss&utm_medium=rss&utm_campaign=watch-devastating-flash-flood-hits-china-nepal-border-more-than-1300-missing",
+      "https://thesource.com/2026/08/14/judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations/?utm_source=rss&utm_medium=rss&utm_campaign=judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations",
+      "https://thesource.com/2026/08/12/source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop/?utm_source=rss&utm_medium=rss&utm_campaign=source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop",
+      "https://thesource.com/2026/08/11/nba-offseason-trae-young-lights-up-drew-league-with-triple-double/?utm_source=rss&utm_medium=rss&utm_campaign=nba-offseason-trae-young-lights-up-drew-league-with-triple-double",
+      "https://thesource.com/2026/08/07/mitch-mcconnell-discharged-rehab-center/?utm_source=rss&utm_medium=rss&utm_campaign=mitch-mcconnell-discharged-rehab-center"
+    ],
+    "use_count": 11
   },
   {
     "issue": "same_category_page",
@@ -347,21 +361,6 @@
       "https://allhiphop.com/news/pro-palestinian-dearborn-mayor-offers-macklemore-free-concert-funded-by-city-following-ed-sheeran-tour-fiasco/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/04/source-logo_red1-2.png",
-    "links": [
-      "https://thesource.com/2026/09/24/the-best-gifts-for-athletes-thoughtful-ideas-theyll-actually-use/?utm_source=rss&utm_medium=rss&utm_campaign=the-best-gifts-for-athletes-thoughtful-ideas-theyll-actually-use",
-      "https://thesource.com/2026/09/17/audiomack-pro-launches-song-pulse/?utm_source=rss&utm_medium=rss&utm_campaign=audiomack-pro-launches-song-pulse",
-      "https://thesource.com/2026/09/04/amen-thompson-signs-208-million-extension-with-rockets/?utm_source=rss&utm_medium=rss&utm_campaign=amen-thompson-signs-208-million-extension-with-rockets",
-      "https://thesource.com/2026/08/27/watch-devastating-flash-flood-hits-china-nepal-border-more-than-1300-missing/?utm_source=rss&utm_medium=rss&utm_campaign=watch-devastating-flash-flood-hits-china-nepal-border-more-than-1300-missing",
-      "https://thesource.com/2026/08/14/judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations/?utm_source=rss&utm_medium=rss&utm_campaign=judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations",
-      "https://thesource.com/2026/08/12/source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop/?utm_source=rss&utm_medium=rss&utm_campaign=source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop",
-      "https://thesource.com/2026/08/11/nba-offseason-trae-young-lights-up-drew-league-with-triple-double/?utm_source=rss&utm_medium=rss&utm_campaign=nba-offseason-trae-young-lights-up-drew-league-with-triple-double",
-      "https://thesource.com/2026/08/07/mitch-mcconnell-discharged-rehab-center/?utm_source=rss&utm_medium=rss&utm_campaign=mitch-mcconnell-discharged-rehab-center"
-    ],
-    "use_count": 8
   },
   {
     "issue": "overused_thumbnail",
@@ -545,14 +544,6 @@
       "https://www.tmz.com/2026/08/13/parents-of-surrogate-baby-have-custody-of-their-child/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
-    "links": [
-      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
-      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -775,14 +766,6 @@
     "use_count": 7
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
-    "links": [
-      "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
-      "https://allhiphop.com/news/ciara-russell-wilson-announce-baby-cinco/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-03-at-10.37.29-PM.png",
     "links": [
@@ -909,16 +892,6 @@
       "https://allhiphop.com/news/mopreme-shakur-sitting-through-tupac-trial-will-be-retraumatizing-but-necessary/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/07/JAY\u0308-ZEXTRAINNINGS32-1.webp",
-    "links": [
-      "https://thesource.com/2026/09/01/jay-z-30-london-trafalgar-square-installation/?utm_source=rss&utm_medium=rss&utm_campaign=jay-z-30-london-trafalgar-square-installation",
-      "https://thesource.com/2026/08/26/jay-z-30-london-camden-pop-up/?utm_source=rss&utm_medium=rss&utm_campaign=jay-z-30-london-camden-pop-up",
-      "https://thesource.com/2026/08/11/roc-nation-jay-z-album-ray-daniels/?utm_source=rss&utm_medium=rss&utm_campaign=roc-nation-jay-z-album-ray-daniels"
-    ],
-    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
@@ -1061,6 +1034,14 @@
       "https://allhiphop.com/news/nipsey-hussle-shares-pain-ambition-and-victory-with-bino-rideaux-on-prolific/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/101863a2720f8285bdc25dfd62c8f4af70b53c6e23fd69db37b73cf1c1706cd8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F51d423e8-e724-4b22-9b64-a777be34d751",
+    "links": [
+      "https://sports.yahoo.com/nfl/article/nfl-preseason-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html",
+      "https://sports.yahoo.com/nfl/article/nfl-preseason-week-2-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html"
+    ]
   },
   {
     "issue": "same_category_page",
