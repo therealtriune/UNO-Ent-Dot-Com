@@ -189,21 +189,10 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png",
-    "links": [
-      "https://allhiphop.com/news/blueface-gets-swatted-twice-in-one-day-as-fake-emergency-calls-keep-coming/",
-      "https://allhiphop.com/news/blueface-gets-swatted-again-as-fourth-police-scare-extends-dangerous-pattern/",
-      "https://allhiphop.com/news/army-of-miami-police-detain-blueface-detained-at-gunpoint-during-latest-swatting-incident/",
-      "https://allhiphop.com/news/blueface-reveals-bizarre-childhood-story-involving-peanut-butter-his-dog-sex-act/",
-      "https://allhiphop.com/news/nevaeh-akira-welcomes-bluefaces-son-as-chrisean-rock-airport-run-complicates-birth/",
-      "https://allhiphop.com/news/nevaeh-calls-chrisean-rock-a-baby-disabler-blueface-thought-insult-about-his-son-was-funny/"
-    ],
-    "use_count": 6
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/cropped-AllHipHop-2.jpg",
     "links": [
+      "https://allhiphop.com/blogs/check-out-these-smart-ways-to-engage-your-target-customer-through-digital-media/",
+      "https://allhiphop.com/apartment-aesthetic/creative-apartment-aesthetic-trends-taking-over-social-media-feeds-this-year-2/",
       "https://allhiphop.com/blogs/avoid-common-renovation-mistakes-with-these-stress-free-planning-tips/",
       "https://allhiphop.com/blogs/creative-apartment-aesthetic-trends-taking-over-social-media-feeds-this-year/",
       "https://allhiphop.com/blogs/rebuilding-yourself-after-addiction-takes-more-than-staying-sober/",
@@ -221,7 +210,30 @@
       "https://allhiphop.com/news/bad-bunny-stuck-with-465k-bill-after-copyright-lawsuit-dismissed/",
       "https://allhiphop.com/rumors/drake-invites-more-smoke-from-the-opps/"
     ],
-    "use_count": 16
+    "use_count": 18
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Drake-3.jpg",
+    "links": [
+      "https://allhiphop.com/news/drake-denies-being-a-professional-trick-with-eloquent-explanation/",
+      "https://allhiphop.com/news/drake-ovo-accused-of-ripping-off-investor-now-the-sec-is-involved/",
+      "https://allhiphop.com/news/drakes-ovo-expansion-details-revealed-after-blockbuster-acquisition/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png",
+    "links": [
+      "https://allhiphop.com/news/blueface-gets-swatted-twice-in-one-day-as-fake-emergency-calls-keep-coming/",
+      "https://allhiphop.com/news/blueface-gets-swatted-again-as-fourth-police-scare-extends-dangerous-pattern/",
+      "https://allhiphop.com/news/army-of-miami-police-detain-blueface-detained-at-gunpoint-during-latest-swatting-incident/",
+      "https://allhiphop.com/news/blueface-reveals-bizarre-childhood-story-involving-peanut-butter-his-dog-sex-act/",
+      "https://allhiphop.com/news/nevaeh-akira-welcomes-bluefaces-son-as-chrisean-rock-airport-run-complicates-birth/",
+      "https://allhiphop.com/news/nevaeh-calls-chrisean-rock-a-baby-disabler-blueface-thought-insult-about-his-son-was-funny/"
+    ],
+    "use_count": 6
   },
   {
     "issue": "overused_thumbnail",
@@ -307,15 +319,15 @@
     "use_count": 11
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
     "links": [
-      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
-      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
+      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
+      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
     ]
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
       "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
@@ -745,6 +757,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/09/img_6399.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/watch-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/",
+      "https://hollywoodunlocked.com/watch-donald-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/09/Cardi-B-1.jpg",
     "links": [
@@ -840,14 +860,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
-    "links": [
-      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
-      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
-    ]
-  },
-  {
     "issue": "same_homepage_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
@@ -865,14 +877,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
-    "links": [
-      "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
-      "https://theshaderoom.com/raven-symone-kalen-allen-miranda-maday-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
     "links": [
       "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
