@@ -1,5 +1,13 @@
 [
   {
+    "link": "https://sports.yahoo.com/articles/israel-adesanya-reportedly-set-shara-064924559.html",
+    "issue": "missing_thumbnail"
+  },
+  {
+    "link": "https://sports.yahoo.com/articles/dana-white-doubles-down-killer-061654580.html",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/ufc-fight-night-289-video-000622059.html",
     "issue": "missing_thumbnail"
   },
@@ -189,6 +197,17 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/BigXThaPlug.jpg",
+    "links": [
+      "https://allhiphop.com/news/bigxthaplug-announces-better-over-time-with-unique-album-marketing-strategy/",
+      "https://allhiphop.com/news/bigxthaplug-pleads-guilty-to-firearm-charge-from-august-2025-arrest/",
+      "https://allhiphop.com/news/exclusive-bigxthaplugs-label-says-employees-struck-secret-side-deals-for-rappers-music/",
+      "https://allhiphop.com/news/rapper-bigxthaplug-busted-for-dwi-packing-a-gun-marijuana/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Crime-scene.jpg",
     "links": [
       "https://allhiphop.com/news/georgia-hospitals-treat-dozens-after-gunfire-tears-through-homecoming-party/",
@@ -284,14 +303,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
-      "https://www.hotnewhiphop.com/1011958-lucki-alleged-fight-playboi-carti-entourage"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
@@ -405,14 +416,6 @@
     "use_count": 11
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
-    "links": [
-      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
-      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
-    ]
-  },
-  {
     "issue": "same_homepage_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
@@ -449,14 +452,6 @@
       "https://allhiphop.com/news/exclusive-nicki-minaj-denies-being-a-spoiled-entitled-rap-star-over-103k-hotel-bill/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Keke-Wyatt.jpg",
-    "links": [
-      "https://allhiphop.com/news/keke-wyatt-addresses-assault-case-and-denies-reported-child-cruelty-charge/",
-      "https://allhiphop.com/news/details-emerge-in-keke-wyatt-arrest-singer-threatened-to-blow-womans-brains-out/"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -1055,30 +1050,12 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
-    "links": [
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/08/Rick-Ross-50-Cent.png",
     "links": [
       "https://allhiphop.com/news/rick-ross-turns-50-cent-tour-joke-into-personal-daphne-joy-attack/",
       "https://allhiphop.com/news/50-cent-celebrates-g6-sneaker-sellout-by-taunting-rick-ross/",
       "https://allhiphop.com/news/rick-ross-challenges-50-cents-sales-jokes-with-his-own-math/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/BigXThaPlug.jpg",
-    "links": [
-      "https://allhiphop.com/news/bigxthaplug-pleads-guilty-to-firearm-charge-from-august-2025-arrest/",
-      "https://allhiphop.com/news/exclusive-bigxthaplugs-label-says-employees-struck-secret-side-deals-for-rappers-music/",
-      "https://allhiphop.com/news/rapper-bigxthaplug-busted-for-dwi-packing-a-gun-marijuana/"
     ],
     "use_count": 3
   },
@@ -1160,6 +1137,14 @@
     "links": [
       "https://sports.yahoo.com/nfl/article/nfl-preseason-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html",
       "https://sports.yahoo.com/nfl/article/nfl-preseason-week-2-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
+    "links": [
+      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-after-blocking-for-late-td-vs-cardinals-194323239.html",
+      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-nation-after-blocking-for-late-td-vs-cardinals-194323239.html"
     ]
   },
   {
