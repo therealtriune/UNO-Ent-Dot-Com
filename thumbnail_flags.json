@@ -205,6 +205,16 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Diddy-5.jpg",
+    "links": [
+      "https://allhiphop.com/news/prison-diddy-accused-of-running-faces-fresh-scrutiny-after-guard-admits-sex-with-inmate/",
+      "https://allhiphop.com/news/exclusive-diddy-gets-massive-win-as-100m-lawsuit-over-lawyers-laced-baby-oil-claims-other-allegations-moves-forward/",
+      "https://allhiphop.com/news/exclusive-diddy-faces-eye-watering-legal-bill-after-losing-100m-nbc-defamation-case/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/01/Kanye-West-1.jpg",
     "links": [
       "https://allhiphop.com/news/kanye-west-loses-antisemitism-fight-in-gun-to-my-head-case/",
@@ -524,11 +534,11 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
     "links": [
-      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
-      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
+      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
+      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
     ]
   },
   {
@@ -754,6 +764,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://imagez.tmz.com/image/21/16by9/2026/09/19/214d022ee08d41ecb2f888e15c6e424e_xl.jpg",
+    "links": [
+      "https://www.tmz.com/2026/09/19/dozens-of-tickets-still-available-for-ed-sheerans-saturday-concert/",
+      "https://www.tmz.com/2026/09/19/ed-sheerans-philadelphia-concert-has-hundreds-of-tickets-left/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://imagez.tmz.com/image/26/16by9/2026/08/13/2646c76b67074739a31788b6927b9dcf_xl.jpg",
     "links": [
@@ -762,14 +780,6 @@
       "https://www.tmz.com/2026/08/13/parents-of-surrogate-baby-have-custody-of-their-child/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
-    "links": [
-      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
-      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -954,6 +964,14 @@
       "https://allhiphop.com/news/d4vds-bloody-merchandise-video-resurfaces-amid-murder-case/"
     ],
     "use_count": 7
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
+    "links": [
+      "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
+      "https://allhiphop.com/news/ciara-russell-wilson-announce-baby-cinco/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -1253,14 +1271,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
