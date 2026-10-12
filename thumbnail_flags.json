@@ -314,7 +314,6 @@
       "https://allhiphop.com/blogs/adding-data-center-capacity-is-becoming-a-major-part-of-business-growth-planning/",
       "https://allhiphop.com/first-car/your-first-car-teaches-lessons-that-driving-school-never-covers-2/",
       "https://allhiphop.com/blogs/your-first-car-teaches-lessons-that-driving-school-never-covers/",
-      "https://allhiphop.com/music-news/fifty-years-after-the-block-party-hip-hop-djs-are-running-corporate-americas-rooms/",
       "https://allhiphop.com/blogs/discover-how-to-support-young-scientists-with-the-right-tools-for-discovery/",
       "https://allhiphop.com/street-sweepers/do-you-struggle-to-keep-industrial-property-surfaces-clean-and-safe-3/",
       "https://allhiphop.com/blogs/transform-your-dark-living-room-into-a-cozy-sanctuary-with-these-stylish-decor-updates/",
@@ -340,7 +339,7 @@
       "https://allhiphop.com/news/bad-bunny-stuck-with-465k-bill-after-copyright-lawsuit-dismissed/",
       "https://allhiphop.com/rumors/drake-invites-more-smoke-from-the-opps/"
     ],
-    "use_count": 28
+    "use_count": 27
   },
   {
     "issue": "overused_thumbnail",
@@ -486,14 +485,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
-      "https://www.hotnewhiphop.com/1011958-lucki-alleged-fight-playboi-carti-entourage"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
@@ -854,14 +845,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
-      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
     "links": [
@@ -951,14 +934,6 @@
       "https://allhiphop.com/news/exclusive-robyn-dixon-gizelle-bryant-blame-eminem-for-mounting-costs/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/09/img_6399.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/watch-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/",
-      "https://hollywoodunlocked.com/watch-donald-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -1051,6 +1026,14 @@
       "https://allhiphop.com/rumors/is-chrisean-rock-in-serious-legal-trouble-internet-goes-crazy-over-ronnie-doe-investigation/"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
+    "links": [
+      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
+      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
+    ]
   },
   {
     "issue": "same_homepage_page",
