@@ -209,6 +209,49 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/AKA.jpg",
+    "links": [
+      "https://allhiphop.com/news/aka-murder-trial-witness-describes-gun-seizure-as-defendant-denies-possession/",
+      "https://allhiphop.com/news/aka-murder-trial-halted-after-cellphone-handed-to-defendant/",
+      "https://allhiphop.com/news/aka-assassination-trial-finally-reaches-courtroom-after-years-as-father-demands-justice/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/AllHipHop-88.jpg",
+    "links": [
+      "https://allhiphop.com/news/wyclef-jean-says-ai-may-help-tell-the-haitian-revolution-story-in-hollywood/",
+      "https://allhiphop.com/exclusives/exclusive-global-citizen-festival-canceled-with-ms-lauryn-hill-wyclef-jean-highlight/",
+      "https://allhiphop.com/features/wyclef-jean-says-hip-hops-elders-must-prove-they-can-still-compete/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/09/50-Cent-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/50-cent-explains-how-tupacs-mike-tyson-recording-shaped-his-street-fighter-music/",
+      "https://allhiphop.com/news/50-cent-questions-how-son-sire-feels-about-daphne-joys-wild-freaky-revelations-with-ye-wife/",
+      "https://allhiphop.com/news/50-cent-brings-street-dice-game-cee-lo-to-las-vegas-casinos-with-headcrack/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake.jpg",
+    "links": [
+      "https://allhiphop.com/news/drake-hits-91-top-10s-with-solar-eclipse-featuring-don-toliver/",
+      "https://allhiphop.com/news/drake-cashes-seven-figure-payout-after-joshua-van-beats-alexandre-pantoja/",
+      "https://allhiphop.com/news/drake-reveals-rare-jewelry-cars-celebrity-friends-in-fomo/",
+      "https://allhiphop.com/rumors/drake-says-pray-for-gaza-reveals-fomo-tour/",
+      "https://allhiphop.com/news/drake-drops-philosophical-yacht-trailer-for-fomo-film/",
+      "https://allhiphop.com/news/drake-served-contestants-caviar-chicken-nuggets-during-his-20v1/"
+    ],
+    "use_count": 6
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/07/chrome-capture-2026-7-24.jpg",
     "links": [
       "https://thesource.com/2026/10/13/spokesperson-for-diddy-responds-to-reports-of-head-injury-and-hospital-visit/?utm_source=rss&utm_medium=rss&utm_campaign=spokesperson-for-diddy-responds-to-reports-of-head-injury-and-hospital-visit",
@@ -653,15 +696,15 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
+    "issue": "same_homepage_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
-      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
-      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
+      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
+      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
     ]
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
       "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
@@ -689,14 +732,6 @@
       "https://allhiphop.com/news/exclusive-nicki-minaj-denies-being-a-spoiled-entitled-rap-star-over-103k-hotel-bill/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Keke-Wyatt.jpg",
-    "links": [
-      "https://allhiphop.com/news/keke-wyatt-addresses-assault-case-and-denies-reported-child-cruelty-charge/",
-      "https://allhiphop.com/news/details-emerge-in-keke-wyatt-arrest-singer-threatened-to-blow-womans-brains-out/"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -846,18 +881,6 @@
       "https://www.hotnewhiphop.com/1004646-julian-newman-jaden-newman-leak-videos"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake.jpg",
-    "links": [
-      "https://allhiphop.com/news/drake-cashes-seven-figure-payout-after-joshua-van-beats-alexandre-pantoja/",
-      "https://allhiphop.com/news/drake-reveals-rare-jewelry-cars-celebrity-friends-in-fomo/",
-      "https://allhiphop.com/rumors/drake-says-pray-for-gaza-reveals-fomo-tour/",
-      "https://allhiphop.com/news/drake-drops-philosophical-yacht-trailer-for-fomo-film/",
-      "https://allhiphop.com/news/drake-served-contestants-caviar-chicken-nuggets-during-his-20v1/"
-    ],
-    "use_count": 5
   },
   {
     "issue": "overused_thumbnail",
@@ -1138,7 +1161,23 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
+    "links": [
+      "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
+      "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
+    ]
+  },
+  {
     "issue": "same_homepage_page",
+    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
+    "links": [
+      "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
+      "https://theshaderoom.com/raven-symone-kalen-allen-miranda-maday-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
     "links": [
       "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
@@ -1327,6 +1366,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
+    "links": [
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
     "links": [
       "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
