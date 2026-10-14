@@ -211,12 +211,13 @@
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/AKA.jpg",
     "links": [
+      "https://allhiphop.com/news/aka-murder-trial-witness-recalls-gunshots-he-mistook-for-fireworks/",
       "https://allhiphop.com/news/akas-manager-details-bodyguard-assignment-on-night-rapper-was-killed/",
       "https://allhiphop.com/news/aka-murder-trial-witness-describes-gun-seizure-as-defendant-denies-possession/",
       "https://allhiphop.com/news/aka-murder-trial-halted-after-cellphone-handed-to-defendant/",
       "https://allhiphop.com/news/aka-assassination-trial-finally-reaches-courtroom-after-years-as-father-demands-justice/"
     ],
-    "use_count": 4
+    "use_count": 5
   },
   {
     "issue": "overused_thumbnail",
@@ -727,11 +728,11 @@
     "use_count": 5
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
     "links": [
-      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
-      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
+      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
+      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
     ]
   },
   {
@@ -1168,14 +1169,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
-    "links": [
-      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
-      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
-    ]
-  },
-  {
     "issue": "same_homepage_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
@@ -1427,6 +1420,14 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
+      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
