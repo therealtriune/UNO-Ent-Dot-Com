@@ -213,6 +213,20 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/AKA.jpg",
+    "links": [
+      "https://allhiphop.com/news/aka-murder-trial-witness-says-rapper-seemed-to-avoid-someone-before-shooting/",
+      "https://allhiphop.com/news/aka-trial-witness-describes-tibz-collapsing-while-fleeing-gunfire/",
+      "https://allhiphop.com/news/aka-murder-trial-witness-recalls-gunshots-he-mistook-for-fireworks/",
+      "https://allhiphop.com/news/akas-manager-details-bodyguard-assignment-on-night-rapper-was-killed/",
+      "https://allhiphop.com/news/aka-murder-trial-witness-describes-gun-seizure-as-defendant-denies-possession/",
+      "https://allhiphop.com/news/aka-murder-trial-halted-after-cellphone-handed-to-defendant/",
+      "https://allhiphop.com/news/aka-assassination-trial-finally-reaches-courtroom-after-years-as-father-demands-justice/"
+    ],
+    "use_count": 7
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Lil-Durk-Escorted-Out-Of-Court.png",
     "links": [
       "https://allhiphop.com/news/exclusive-feds-fight-to-keep-lil-durk-co-defendants-stalking-convictions/",
@@ -289,19 +303,6 @@
       "https://allhiphop.com/rumors/drake-invites-more-smoke-from-the-opps/"
     ],
     "use_count": 29
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/AKA.jpg",
-    "links": [
-      "https://allhiphop.com/news/aka-trial-witness-describes-tibz-collapsing-while-fleeing-gunfire/",
-      "https://allhiphop.com/news/aka-murder-trial-witness-recalls-gunshots-he-mistook-for-fireworks/",
-      "https://allhiphop.com/news/akas-manager-details-bodyguard-assignment-on-night-rapper-was-killed/",
-      "https://allhiphop.com/news/aka-murder-trial-witness-describes-gun-seizure-as-defendant-denies-possession/",
-      "https://allhiphop.com/news/aka-murder-trial-halted-after-cellphone-handed-to-defendant/",
-      "https://allhiphop.com/news/aka-assassination-trial-finally-reaches-courtroom-after-years-as-father-demands-justice/"
-    ],
-    "use_count": 6
   },
   {
     "issue": "same_homepage_page",
@@ -775,14 +776,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
-    "links": [
-      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
-      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
-    ]
-  },
-  {
     "issue": "same_homepage_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
@@ -981,14 +974,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://imagez.tmz.com/image/21/16by9/2026/09/19/214d022ee08d41ecb2f888e15c6e424e_xl.jpg",
-    "links": [
-      "https://www.tmz.com/2026/09/19/dozens-of-tickets-still-available-for-ed-sheerans-saturday-concert/",
-      "https://www.tmz.com/2026/09/19/ed-sheerans-philadelphia-concert-has-hundreds-of-tickets-left/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://imagez.tmz.com/image/21/16by9/2026/09/19/214d022ee08d41ecb2f888e15c6e424e_xl.jpg",
     "links": [
       "https://www.tmz.com/2026/09/19/dozens-of-tickets-still-available-for-ed-sheerans-saturday-concert/",
@@ -1434,14 +1419,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
-    "links": [
-      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-after-blocking-for-late-td-vs-cardinals-194323239.html",
-      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-nation-after-blocking-for-late-td-vs-cardinals-194323239.html"
-    ]
-  },
-  {
     "issue": "same_homepage_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
     "links": [
@@ -1469,6 +1446,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
+      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
