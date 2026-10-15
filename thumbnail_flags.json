@@ -213,37 +213,31 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/AKA.jpg",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake-2.jpg",
     "links": [
-      "https://allhiphop.com/news/aka-trial-witness-describes-tibz-collapsing-while-fleeing-gunfire/",
-      "https://allhiphop.com/news/aka-murder-trial-witness-recalls-gunshots-he-mistook-for-fireworks/",
-      "https://allhiphop.com/news/akas-manager-details-bodyguard-assignment-on-night-rapper-was-killed/",
-      "https://allhiphop.com/news/aka-murder-trial-witness-describes-gun-seizure-as-defendant-denies-possession/",
-      "https://allhiphop.com/news/aka-murder-trial-halted-after-cellphone-handed-to-defendant/",
-      "https://allhiphop.com/news/aka-assassination-trial-finally-reaches-courtroom-after-years-as-father-demands-justice/"
+      "https://allhiphop.com/news/drake-breaks-the-temptations-record-with-18th-no-1/",
+      "https://allhiphop.com/news/distrokid-removes-songs-over-umg-claims-as-rappers-question-takedowns/",
+      "https://allhiphop.com/news/rap-misses-top-vma-categories-as-six-stars-compete-for-best-hip-hop/",
+      "https://allhiphop.com/news/drake-receives-one-of-one-rolex-and-warns-jewelers-against-copying-it/"
     ],
-    "use_count": 6
+    "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Lucki.png",
     "links": [
-      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
-      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
-      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
-    ]
+      "https://allhiphop.com/news/lucki-gives-long-awaited-leaks-an-official-release-on-last-laugh/",
+      "https://allhiphop.com/news/lucki-says-100k-in-his-car-fears-lapd-will-have-fun-while-showing-off-bandaged-face/",
+      "https://allhiphop.com/news/lucki-recovering-after-violent-complexcon-attack-as-details-emerge/",
+      "https://allhiphop.com/news/exclusive-luckis-former-manager-sues-for-1-5m-claims-rapper-drained-his-savings-destroyed-hotel-rooms/"
+    ],
+    "use_count": 4
   },
   {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/cropped-AllHipHop-2.jpg",
     "links": [
+      "https://allhiphop.com/news/youtube-music-adds-ai-song-labels-with-rules-for-beats-vocals/",
       "https://allhiphop.com/news/beyonce-kelly-rowland-open-31-unit-housing-development/",
       "https://allhiphop.com/blogs/adding-data-center-capacity-is-becoming-a-major-part-of-business-growth-planning/",
       "https://allhiphop.com/first-car/your-first-car-teaches-lessons-that-driving-school-never-covers-2/",
@@ -273,7 +267,36 @@
       "https://allhiphop.com/news/bad-bunny-stuck-with-465k-bill-after-copyright-lawsuit-dismissed/",
       "https://allhiphop.com/rumors/drake-invites-more-smoke-from-the-opps/"
     ],
-    "use_count": 28
+    "use_count": 29
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/AKA.jpg",
+    "links": [
+      "https://allhiphop.com/news/aka-trial-witness-describes-tibz-collapsing-while-fleeing-gunfire/",
+      "https://allhiphop.com/news/aka-murder-trial-witness-recalls-gunshots-he-mistook-for-fireworks/",
+      "https://allhiphop.com/news/akas-manager-details-bodyguard-assignment-on-night-rapper-was-killed/",
+      "https://allhiphop.com/news/aka-murder-trial-witness-describes-gun-seizure-as-defendant-denies-possession/",
+      "https://allhiphop.com/news/aka-murder-trial-halted-after-cellphone-handed-to-defendant/",
+      "https://allhiphop.com/news/aka-assassination-trial-finally-reaches-courtroom-after-years-as-father-demands-justice/"
+    ],
+    "use_count": 6
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
+      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
+      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -442,16 +465,6 @@
       "https://allhiphop.com/news/cardi-b-blames-unfinished-arrangements-for-jamaica-show-cancellation/",
       "https://allhiphop.com/news/angry-senior-citizen-gets-disorderly-conduct-summons-at-cardi-b-video-shoot/",
       "https://allhiphop.com/news/cardi-b-turns-herself-into-overweight-meme-to-promote-new-song-ah-ha/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake-2.jpg",
-    "links": [
-      "https://allhiphop.com/news/distrokid-removes-songs-over-umg-claims-as-rappers-question-takedowns/",
-      "https://allhiphop.com/news/rap-misses-top-vma-categories-as-six-stars-compete-for-best-hip-hop/",
-      "https://allhiphop.com/news/drake-receives-one-of-one-rolex-and-warns-jewelers-against-copying-it/"
     ],
     "use_count": 3
   },
@@ -629,16 +642,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Lucki.png",
-    "links": [
-      "https://allhiphop.com/news/lucki-says-100k-in-his-car-fears-lapd-will-have-fun-while-showing-off-bandaged-face/",
-      "https://allhiphop.com/news/lucki-recovering-after-violent-complexcon-attack-as-details-emerge/",
-      "https://allhiphop.com/news/exclusive-luckis-former-manager-sues-for-1-5m-claims-rapper-drained-his-savings-destroyed-hotel-rooms/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/01/Too-hort.png",
     "links": [
       "https://allhiphop.com/news/too-hort-apologizes-after-backlash-over-plans-to-attend-diddy-party/",
@@ -752,6 +755,22 @@
   },
   {
     "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
+    "links": [
+      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
+      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
+    "links": [
+      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
+      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
       "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
@@ -779,6 +798,14 @@
       "https://allhiphop.com/news/exclusive-nicki-minaj-denies-being-a-spoiled-entitled-rap-star-over-103k-hotel-bill/"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Keke-Wyatt.jpg",
+    "links": [
+      "https://allhiphop.com/news/keke-wyatt-addresses-assault-case-and-denies-reported-child-cruelty-charge/",
+      "https://allhiphop.com/news/details-emerge-in-keke-wyatt-arrest-singer-threatened-to-blow-womans-brains-out/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -966,6 +993,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
+    "links": [
+      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
+      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
     "links": [
@@ -983,14 +1018,6 @@
       "https://allhiphop.com/news/colin-kaepernick-calls-out-nfl-hypocrisy-amid-jay-z-partnership/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
-      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -1200,6 +1227,14 @@
     ]
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
+    "links": [
+      "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
+      "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
@@ -1291,14 +1326,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
-    "links": [
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
     "links": [
       "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
@@ -1428,14 +1455,6 @@
       "https://www.tmz.com/2026/08/13/surrogate-who-wouldnt-get-abortion-gives-birth/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
-      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
   },
   {
     "issue": "same_category_page",
