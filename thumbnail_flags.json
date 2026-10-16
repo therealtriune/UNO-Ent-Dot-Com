@@ -217,6 +217,16 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2024/09/Diddy004.jpg",
+    "links": [
+      "https://thesource.com/2026/10/16/bureau-of-prisons-denies-fight-happened-between-diddy-and-jamaican-drug-lord/?utm_source=rss&utm_medium=rss&utm_campaign=bureau-of-prisons-denies-fight-happened-between-diddy-and-jamaican-drug-lord",
+      "https://thesource.com/2026/10/14/diddy-prison-fight-christopher-dudus-coke-head-injury/?utm_source=rss&utm_medium=rss&utm_campaign=diddy-prison-fight-christopher-dudus-coke-head-injury",
+      "https://thesource.com/2026/08/07/diddy-paid-up-to-8-million-in-legal-fees-to-fight-federal-sex-crimes-case/?utm_source=rss&utm_medium=rss&utm_campaign=diddy-paid-up-to-8-million-in-legal-fees-to-fight-federal-sex-crimes-case"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Cardi-B-5.jpg",
     "links": [
       "https://allhiphop.com/news/cardi-bs-birkin-collection-takes-a-hit-as-esmeralda-goes-missing/",
@@ -331,6 +341,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
+      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
     "links": [
       "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
@@ -829,6 +847,14 @@
     "use_count": 5
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Keke-Wyatt.jpg",
+    "links": [
+      "https://allhiphop.com/news/keke-wyatt-addresses-assault-case-and-denies-reported-child-cruelty-charge/",
+      "https://allhiphop.com/news/details-emerge-in-keke-wyatt-arrest-singer-threatened-to-blow-womans-brains-out/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/01/Nicki-Minaj-and-Donald-Trump.jpg",
     "links": [
@@ -1014,7 +1040,7 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
     "links": [
       "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
@@ -1138,14 +1164,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/09/img_6399.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/watch-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/",
-      "https://hollywoodunlocked.com/watch-donald-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/09/Cardi-B-1.jpg",
     "links": [
@@ -1228,6 +1246,14 @@
       "https://allhiphop.com/rumors/is-chrisean-rock-in-serious-legal-trouble-internet-goes-crazy-over-ronnie-doe-investigation/"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
+    "links": [
+      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
+      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
+    ]
   },
   {
     "issue": "same_homepage_page",
@@ -1329,14 +1355,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
-    "links": [
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
     "links": [
       "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
@@ -1484,7 +1502,7 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
