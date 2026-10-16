@@ -213,6 +213,16 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Cardi-B-5.jpg",
+    "links": [
+      "https://allhiphop.com/news/cardi-bs-birkin-collection-takes-a-hit-as-esmeralda-goes-missing/",
+      "https://allhiphop.com/news/snoop-dogg-leads-hip-hops-big-night-as-cardi-b-wins-at-mtv-vmas/",
+      "https://allhiphop.com/news/cardi-b-shows-off-15k-butt-crack-jewelry-in-tight-white-catsuit/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Diddy-5.jpg",
     "links": [
       "https://allhiphop.com/news/diddys-dudus-prison-fight-story-hit-with-flat-denial/",
@@ -317,14 +327,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
-      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
     "links": [
       "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
@@ -702,14 +704,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
-      "https://www.hotnewhiphop.com/1011958-lucki-alleged-fight-playboi-carti-entourage"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png",
     "links": [
@@ -821,14 +815,6 @@
       "https://allhiphop.com/news/exclusive-nicki-minaj-denies-being-a-spoiled-entitled-rap-star-over-103k-hotel-bill/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Keke-Wyatt.jpg",
-    "links": [
-      "https://allhiphop.com/news/keke-wyatt-addresses-assault-case-and-denies-reported-child-cruelty-charge/",
-      "https://allhiphop.com/news/details-emerge-in-keke-wyatt-arrest-singer-threatened-to-blow-womans-brains-out/"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -998,6 +984,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://imagez.tmz.com/image/21/16by9/2026/09/19/214d022ee08d41ecb2f888e15c6e424e_xl.jpg",
+    "links": [
+      "https://www.tmz.com/2026/09/19/dozens-of-tickets-still-available-for-ed-sheerans-saturday-concert/",
+      "https://www.tmz.com/2026/09/19/ed-sheerans-philadelphia-concert-has-hundreds-of-tickets-left/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://imagez.tmz.com/image/26/16by9/2026/08/13/2646c76b67074739a31788b6927b9dcf_xl.jpg",
     "links": [
@@ -1006,6 +1000,14 @@
       "https://www.tmz.com/2026/08/13/parents-of-surrogate-baby-have-custody-of-their-child/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
+    "links": [
+      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
+      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -1020,14 +1022,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
-      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
@@ -1216,14 +1210,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
-    "links": [
-      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
-      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
-    ]
-  },
-  {
     "issue": "same_homepage_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
@@ -1330,6 +1316,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
+    "links": [
+      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
+      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/08/Rick-Ross-50-Cent.png",
     "links": [
@@ -1428,14 +1422,6 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
-    "links": [
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
     "links": [
@@ -1471,6 +1457,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
+      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
