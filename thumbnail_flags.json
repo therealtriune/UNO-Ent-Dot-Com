@@ -1,5 +1,9 @@
 [
   {
+    "link": "https://sports.yahoo.com/articles/ufc-edmonton-video-chelsea-chandler-215736459.html",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/kyle-nelson-vs-cristian-perez-150128356.html",
     "issue": "missing_thumbnail"
   },
@@ -221,6 +225,30 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Diddy-5.jpg",
+    "links": [
+      "https://allhiphop.com/news/exclusive-diddys-lawyers-want-out-after-seven-months-without-a-payment/",
+      "https://allhiphop.com/news/diddys-dudus-prison-fight-story-hit-with-flat-denial/",
+      "https://allhiphop.com/news/prison-diddy-accused-of-running-faces-fresh-scrutiny-after-guard-admits-sex-with-inmate/",
+      "https://allhiphop.com/news/exclusive-diddy-gets-massive-win-as-100m-lawsuit-over-lawyers-laced-baby-oil-claims-other-allegations-moves-forward/",
+      "https://allhiphop.com/news/exclusive-diddy-faces-eye-watering-legal-bill-after-losing-100m-nbc-defamation-case/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Drake-3.jpg",
+    "links": [
+      "https://allhiphop.com/news/drake-sued-over-janice-stfu-by-songwriter-behind-beyonces-heated/",
+      "https://allhiphop.com/news/drakes-rep-rules-out-rapper-as-father-of-keshia-chantes-baby/",
+      "https://allhiphop.com/news/drake-denies-being-a-professional-trick-with-eloquent-explanation/",
+      "https://allhiphop.com/news/drake-ovo-accused-of-ripping-off-investor-now-the-sec-is-involved/",
+      "https://allhiphop.com/news/drakes-ovo-expansion-details-revealed-after-blockbuster-acquisition/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Lil-Wayne-1.jpg",
     "links": [
       "https://allhiphop.com/news/lil-wayne-concert-derailed-three-hours-before-showtime/",
@@ -300,17 +328,6 @@
       "https://allhiphop.com/news/cardi-b-shows-off-15k-butt-crack-jewelry-in-tight-white-catsuit/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Diddy-5.jpg",
-    "links": [
-      "https://allhiphop.com/news/diddys-dudus-prison-fight-story-hit-with-flat-denial/",
-      "https://allhiphop.com/news/prison-diddy-accused-of-running-faces-fresh-scrutiny-after-guard-admits-sex-with-inmate/",
-      "https://allhiphop.com/news/exclusive-diddy-gets-massive-win-as-100m-lawsuit-over-lawyers-laced-baby-oil-claims-other-allegations-moves-forward/",
-      "https://allhiphop.com/news/exclusive-diddy-faces-eye-watering-legal-bill-after-losing-100m-nbc-defamation-case/"
-    ],
-    "use_count": 4
   },
   {
     "issue": "overused_thumbnail",
@@ -676,17 +693,6 @@
       "https://allhiphop.com/news/ohio-woman-accused-of-making-29-bomb-threats-over-nolan-wells-case/"
     ],
     "use_count": 9
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Drake-3.jpg",
-    "links": [
-      "https://allhiphop.com/news/drakes-rep-rules-out-rapper-as-father-of-keshia-chantes-baby/",
-      "https://allhiphop.com/news/drake-denies-being-a-professional-trick-with-eloquent-explanation/",
-      "https://allhiphop.com/news/drake-ovo-accused-of-ripping-off-investor-now-the-sec-is-involved/",
-      "https://allhiphop.com/news/drakes-ovo-expansion-details-revealed-after-blockbuster-acquisition/"
-    ],
-    "use_count": 4
   },
   {
     "issue": "overused_thumbnail",
@@ -1078,7 +1084,7 @@
     "use_count": 3
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
     "links": [
       "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
@@ -1095,14 +1101,6 @@
       "https://allhiphop.com/news/colin-kaepernick-calls-out-nfl-hypocrisy-amid-jay-z-partnership/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
-      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -1318,14 +1316,6 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
-    "links": [
-      "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
-      "https://theshaderoom.com/raven-symone-kalen-allen-miranda-maday-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
     "links": [
@@ -1400,14 +1390,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
-    "links": [
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
     "links": [
@@ -1460,14 +1442,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
-      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
     "links": [
@@ -1514,6 +1488,14 @@
     ]
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
+    "links": [
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
     "links": [
@@ -1545,14 +1527,6 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
