@@ -237,6 +237,19 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Diddy-5.jpg",
+    "links": [
+      "https://allhiphop.com/news/exclusive-diddy-asks-judge-to-curb-clayton-howards-emergency-court-filings/",
+      "https://allhiphop.com/news/exclusive-diddys-lawyers-want-out-after-seven-months-without-a-payment/",
+      "https://allhiphop.com/news/diddys-dudus-prison-fight-story-hit-with-flat-denial/",
+      "https://allhiphop.com/news/prison-diddy-accused-of-running-faces-fresh-scrutiny-after-guard-admits-sex-with-inmate/",
+      "https://allhiphop.com/news/exclusive-diddy-gets-massive-win-as-100m-lawsuit-over-lawyers-laced-baby-oil-claims-other-allegations-moves-forward/",
+      "https://allhiphop.com/news/exclusive-diddy-faces-eye-watering-legal-bill-after-losing-100m-nbc-defamation-case/"
+    ],
+    "use_count": 6
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/06/Blueface.png",
     "links": [
       "https://allhiphop.com/news/blueface-debates-taking-his-livestream-fans-to-church-with-chrisean-rock/",
@@ -352,18 +365,6 @@
       "https://allhiphop.com/news/kash-dies-at-29-after-oakland-shooting-woman-arrested/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Diddy-5.jpg",
-    "links": [
-      "https://allhiphop.com/news/exclusive-diddys-lawyers-want-out-after-seven-months-without-a-payment/",
-      "https://allhiphop.com/news/diddys-dudus-prison-fight-story-hit-with-flat-denial/",
-      "https://allhiphop.com/news/prison-diddy-accused-of-running-faces-fresh-scrutiny-after-guard-admits-sex-with-inmate/",
-      "https://allhiphop.com/news/exclusive-diddy-gets-massive-win-as-100m-lawsuit-over-lawyers-laced-baby-oil-claims-other-allegations-moves-forward/",
-      "https://allhiphop.com/news/exclusive-diddy-faces-eye-watering-legal-bill-after-losing-100m-nbc-defamation-case/"
-    ],
-    "use_count": 5
   },
   {
     "issue": "overused_thumbnail",
@@ -540,6 +541,14 @@
       "https://allhiphop.com/rumors/drake-invites-more-smoke-from-the-opps/"
     ],
     "use_count": 29
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
+      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -840,6 +849,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
+      "https://www.hotnewhiphop.com/1011958-lucki-alleged-fight-playboi-carti-entourage"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
     "links": [
@@ -1128,14 +1145,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://imagez.tmz.com/image/21/16by9/2026/09/19/214d022ee08d41ecb2f888e15c6e424e_xl.jpg",
-    "links": [
-      "https://www.tmz.com/2026/09/19/dozens-of-tickets-still-available-for-ed-sheerans-saturday-concert/",
-      "https://www.tmz.com/2026/09/19/ed-sheerans-philadelphia-concert-has-hundreds-of-tickets-left/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://imagez.tmz.com/image/26/16by9/2026/08/13/2646c76b67074739a31788b6927b9dcf_xl.jpg",
     "links": [
@@ -1144,14 +1153,6 @@
       "https://www.tmz.com/2026/08/13/parents-of-surrogate-baby-have-custody-of-their-child/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
-    "links": [
-      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
-      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -1328,6 +1329,14 @@
     "use_count": 7
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
+    "links": [
+      "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
+      "https://allhiphop.com/news/ciara-russell-wilson-announce-baby-cinco/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-03-at-10.37.29-PM.png",
     "links": [
@@ -1360,6 +1369,14 @@
       "https://allhiphop.com/rumors/is-chrisean-rock-in-serious-legal-trouble-internet-goes-crazy-over-ronnie-doe-investigation/"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
+    "links": [
+      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
+      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
+    ]
   },
   {
     "issue": "same_homepage_page",
@@ -1518,14 +1535,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
-      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Sidney-Starr-Mugshot.png",
     "links": [
@@ -1598,11 +1607,11 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "issue": "same_category_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
     "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
+      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
+      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
     ]
   },
   {
