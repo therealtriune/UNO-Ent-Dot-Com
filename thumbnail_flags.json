@@ -240,6 +240,34 @@
     "issue": "missing_thumbnail"
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/06/Funkmaster-Flex.jpg",
+    "links": [
+      "https://allhiphop.com/news/tt-torrez-accuses-funkmaster-flex-of-assaulting-her-during-madison-square-garden-confrontation/",
+      "https://allhiphop.com/news/funkmaster-flex-names-shadow-stokes-after-knicks-game-scuffle/"
+    ]
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/DJ-Akademiks-Crashes-Out-Rory-QueenzFlip.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1013933-dj-akademiks-meek-mill-tylil-knicks",
+      "https://www.hotnewhiphop.com/1012201-dj-akademiks-record-labels-scared-influence",
+      "https://www.hotnewhiphop.com/1011113-dj-akademiks-crashes-out-rory-queenzflip"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Pooh-Shiesty-Jail-Cell-23-Hours-Day.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1013930-pooh-shiesty-prison-conditions-feds",
+      "https://www.hotnewhiphop.com/1013714-pooh-shiesty-lawyers-23-hour-isolation",
+      "https://www.hotnewhiphop.com/1013358-pooh-shiesty-jail-cell-23-hours-day"
+    ],
+    "use_count": 3
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/06/Lil-Baby-3.png",
     "links": [
@@ -1309,7 +1337,7 @@
     "use_count": 3
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
     "links": [
       "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
@@ -1326,14 +1354,6 @@
       "https://allhiphop.com/news/colin-kaepernick-calls-out-nfl-hypocrisy-amid-jay-z-partnership/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
-      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -1516,14 +1536,6 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
-    "links": [
-      "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
-      "https://theshaderoom.com/raven-symone-kalen-allen-miranda-maday-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
     "links": [
@@ -1598,14 +1610,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
-    "links": [
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
     "links": [
@@ -1636,14 +1640,6 @@
       "https://allhiphop.com/news/keffe-d-refuses-plea-deal-days-before-trial-begins/"
     ],
     "use_count": 7
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
-      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -1723,14 +1719,6 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
