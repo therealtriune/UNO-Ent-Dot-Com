@@ -245,6 +245,28 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/10/Kash.jpg",
+    "links": [
+      "https://allhiphop.com/news/kashs-mother-alleges-death-threats/",
+      "https://allhiphop.com/news/kashs-father-urges-public-to-stop-hate-toward-sister-charged-in-her-death/",
+      "https://allhiphop.com/news/kashs-sister-charged-with-manslaughter-in-fatal-oakland-shooting/",
+      "https://allhiphop.com/news/kash-dies-at-29-after-oakland-shooting-woman-arrested/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/02/Eminem.jpg",
+    "links": [
+      "https://allhiphop.com/news/eminems-ex-employee-pleads-guilty-over-stolen-music/",
+      "https://allhiphop.com/news/eminem-defends-kid-rock-collab-with-message-about-their-friendship/",
+      "https://allhiphop.com/news/eminems-ex-kim-mathers-thrown-in-jail-for-blowing-off-court-hearings-violating-alcohol-monitor/",
+      "https://allhiphop.com/news/eminems-ex-kim-mathers-heads-to-jail-for-ankle-monitor-violations/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/AKA.jpg",
     "links": [
       "https://allhiphop.com/news/aka-trial-witness-reports-threats-as-others-ask-to-stay-off-tv/",
@@ -454,6 +476,22 @@
     "use_count": 4
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
+      "https://hollywoodunlocked.com/donald-trump-nobody-appreciates-how-great-a-president-i-am/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
+      "https://hollywoodunlocked.com/donald-trump-nobody-appreciates-how-great-a-president-i-am/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/tina-tuesday-freestyle.jpg",
     "links": [
@@ -603,31 +641,11 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/02/Eminem.jpg",
-    "links": [
-      "https://allhiphop.com/news/eminem-defends-kid-rock-collab-with-message-about-their-friendship/",
-      "https://allhiphop.com/news/eminems-ex-kim-mathers-thrown-in-jail-for-blowing-off-court-hearings-violating-alcohol-monitor/",
-      "https://allhiphop.com/news/eminems-ex-kim-mathers-heads-to-jail-for-ankle-monitor-violations/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/06/Machine-Gun-Kelly.jpg",
     "links": [
       "https://allhiphop.com/news/mgks-car-at-dakota-johnsons-house-adds-to-dating-buzz/",
       "https://allhiphop.com/news/machine-gun-kelly-explodes-over-fake-fumbling-the-bag-post-about-megan-fox/",
       "https://allhiphop.com/news/mgk-speaks-out-after-attending-lil-durks-federal-court-proceedings/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/10/Kash.jpg",
-    "links": [
-      "https://allhiphop.com/news/kashs-father-urges-public-to-stop-hate-toward-sister-charged-in-her-death/",
-      "https://allhiphop.com/news/kashs-sister-charged-with-manslaughter-in-fatal-oakland-shooting/",
-      "https://allhiphop.com/news/kash-dies-at-29-after-oakland-shooting-woman-arrested/"
     ],
     "use_count": 3
   },
@@ -1139,14 +1157,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
-    "links": [
-      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
-      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
-    ]
-  },
-  {
     "issue": "same_homepage_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
@@ -1335,22 +1345,6 @@
       "https://www.tmz.com/2026/08/13/parents-of-surrogate-baby-have-custody-of-their-child/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
-    "links": [
-      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
-      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
-    "links": [
-      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
-      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -1698,14 +1692,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
-      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Sidney-Starr-Mugshot.png",
     "links": [
@@ -1770,7 +1756,7 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
