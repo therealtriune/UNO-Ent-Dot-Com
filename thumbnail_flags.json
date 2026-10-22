@@ -245,6 +245,34 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/AKA.jpg",
+    "links": [
+      "https://allhiphop.com/news/aka-trial-witness-reports-threats-as-others-ask-to-stay-off-tv/",
+      "https://allhiphop.com/news/anele-tembe-inquest-hears-no-clear-signs-of-strangulation/",
+      "https://allhiphop.com/news/aka-had-fresh-injuries-after-anele-tembes-death-doctor-told-inquest/",
+      "https://allhiphop.com/news/aka-murder-trial-airport-footage-draws-identity-challenge/",
+      "https://allhiphop.com/news/aka-murder-trial-witness-says-rapper-seemed-to-avoid-someone-before-shooting/",
+      "https://allhiphop.com/news/aka-trial-witness-describes-tibz-collapsing-while-fleeing-gunfire/",
+      "https://allhiphop.com/news/aka-murder-trial-witness-recalls-gunshots-he-mistook-for-fireworks/",
+      "https://allhiphop.com/news/akas-manager-details-bodyguard-assignment-on-night-rapper-was-killed/",
+      "https://allhiphop.com/news/aka-murder-trial-witness-describes-gun-seizure-as-defendant-denies-possession/",
+      "https://allhiphop.com/news/aka-murder-trial-halted-after-cellphone-handed-to-defendant/",
+      "https://allhiphop.com/news/aka-assassination-trial-finally-reaches-courtroom-after-years-as-father-demands-justice/"
+    ],
+    "use_count": 11
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Rick-Ross-3-1.png",
+    "links": [
+      "https://allhiphop.com/news/rick-ross-arraignment-delayed-as-attorneys-say-charges-remain-unfiled/",
+      "https://allhiphop.com/news/rick-ross-son-reports-pistol-whipping-death-threat/",
+      "https://allhiphop.com/news/rick-ross-sued-for-ditching-north-carolina-concerts-as-bad-week-gets-worse/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/DJ-Akademiks-Crashes-Out-Rory-QueenzFlip.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1014012-dj-akademiks-lebron-savannah-james-knicks-game",
@@ -316,23 +344,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/AKA.jpg",
-    "links": [
-      "https://allhiphop.com/news/anele-tembe-inquest-hears-no-clear-signs-of-strangulation/",
-      "https://allhiphop.com/news/aka-had-fresh-injuries-after-anele-tembes-death-doctor-told-inquest/",
-      "https://allhiphop.com/news/aka-murder-trial-airport-footage-draws-identity-challenge/",
-      "https://allhiphop.com/news/aka-murder-trial-witness-says-rapper-seemed-to-avoid-someone-before-shooting/",
-      "https://allhiphop.com/news/aka-trial-witness-describes-tibz-collapsing-while-fleeing-gunfire/",
-      "https://allhiphop.com/news/aka-murder-trial-witness-recalls-gunshots-he-mistook-for-fireworks/",
-      "https://allhiphop.com/news/akas-manager-details-bodyguard-assignment-on-night-rapper-was-killed/",
-      "https://allhiphop.com/news/aka-murder-trial-witness-describes-gun-seizure-as-defendant-denies-possession/",
-      "https://allhiphop.com/news/aka-murder-trial-halted-after-cellphone-handed-to-defendant/",
-      "https://allhiphop.com/news/aka-assassination-trial-finally-reaches-courtroom-after-years-as-father-demands-justice/"
-    ],
-    "use_count": 10
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Crime-scene.jpg",
     "links": [
       "https://allhiphop.com/news/ace-nh-asks-judge-for-death-sentence-rejects-further-plea-to-spare-him/",
@@ -353,14 +364,6 @@
       "https://allhiphop.com/news/kid-cudi-set-to-melt-faces-in-first-lead-role-pathetic-fallacy/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/06/Funkmaster-Flex.jpg",
-    "links": [
-      "https://allhiphop.com/news/tt-torrez-accuses-funkmaster-flex-of-assaulting-her-during-madison-square-garden-confrontation/",
-      "https://allhiphop.com/news/funkmaster-flex-names-shadow-stokes-after-knicks-game-scuffle/"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -449,22 +452,6 @@
       "https://allhiphop.com/news/pro-palestinian-dearborn-mayor-offers-macklemore-free-concert-funded-by-city-following-ed-sheeran-tour-fiasco/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
-      "https://hollywoodunlocked.com/donald-trump-nobody-appreciates-how-great-a-president-i-am/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
-      "https://hollywoodunlocked.com/donald-trump-nobody-appreciates-how-great-a-president-i-am/"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -1350,6 +1337,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
+    "links": [
+      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
+      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
     "links": [
@@ -1455,6 +1450,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/09/img_6399.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/watch-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/",
+      "https://hollywoodunlocked.com/watch-donald-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/09/img_6399.jpeg",
     "links": [
@@ -1499,6 +1502,14 @@
     "use_count": 7
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
+    "links": [
+      "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
+      "https://allhiphop.com/news/ciara-russell-wilson-announce-baby-cinco/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-03-at-10.37.29-PM.png",
     "links": [
@@ -1531,6 +1542,14 @@
       "https://allhiphop.com/rumors/is-chrisean-rock-in-serious-legal-trouble-internet-goes-crazy-over-ronnie-doe-investigation/"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
+    "links": [
+      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
+      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
+    ]
   },
   {
     "issue": "same_homepage_page",
@@ -1752,14 +1771,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
-      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
