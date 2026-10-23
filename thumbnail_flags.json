@@ -245,6 +245,30 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake-2.jpg",
+    "links": [
+      "https://allhiphop.com/news/caleb-williams-gives-drake-ten-spots-on-his-madden-nfl-27-playlist/",
+      "https://allhiphop.com/news/drake-breaks-the-temptations-record-with-18th-no-1/",
+      "https://allhiphop.com/news/distrokid-removes-songs-over-umg-claims-as-rappers-question-takedowns/",
+      "https://allhiphop.com/news/rap-misses-top-vma-categories-as-six-stars-compete-for-best-hip-hop/",
+      "https://allhiphop.com/news/drake-receives-one-of-one-rolex-and-warns-jewelers-against-copying-it/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Jay-Z-2.jpg",
+    "links": [
+      "https://allhiphop.com/news/nuri-muhammad-puts-jay-zs-pen-above-a-billion-dollar-check/",
+      "https://allhiphop.com/news/jay-z-vindicated-after-accuser-admits-she-fabricated-entire-rape-accusation/",
+      "https://allhiphop.com/news/jay-z-london-show-features-lauryn-hill-wyclef-jean-forever-a-fan/",
+      "https://allhiphop.com/news/jay-z-sets-september-18-premiere-for-jay-z-in-8-with-new-trailer/",
+      "https://allhiphop.com/news/jay-zs-latest-sports-move-tom-bradys-trading-card-business/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/10/Kash.jpg",
     "links": [
       "https://allhiphop.com/news/kashs-mother-alleges-death-threats/",
@@ -388,14 +412,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/06/Funkmaster-Flex.jpg",
-    "links": [
-      "https://allhiphop.com/news/tt-torrez-accuses-funkmaster-flex-of-assaulting-her-during-madison-square-garden-confrontation/",
-      "https://allhiphop.com/news/funkmaster-flex-names-shadow-stokes-after-knicks-game-scuffle/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Pooh-Shiesty-Jail-Cell-23-Hours-Day.jpg",
     "links": [
@@ -482,6 +498,14 @@
       "https://allhiphop.com/news/pro-palestinian-dearborn-mayor-offers-macklemore-free-concert-funded-by-city-following-ed-sheeran-tour-fiasco/"
     ],
     "use_count": 4
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
+      "https://hollywoodunlocked.com/donald-trump-nobody-appreciates-how-great-a-president-i-am/"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -740,17 +764,6 @@
       "https://allhiphop.com/news/exclusive-eminems-stolen-music-case-takes-major-turn-with-new-felony-filing/",
       "https://allhiphop.com/news/eminem-mourns-dolly-parton-reveals-sad-regret/",
       "https://allhiphop.com/news/exclusive-robyn-dixon-gizelle-bryant-blame-eminem-for-mounting-costs/"
-    ],
-    "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake-2.jpg",
-    "links": [
-      "https://allhiphop.com/news/drake-breaks-the-temptations-record-with-18th-no-1/",
-      "https://allhiphop.com/news/distrokid-removes-songs-over-umg-claims-as-rappers-question-takedowns/",
-      "https://allhiphop.com/news/rap-misses-top-vma-categories-as-six-stars-compete-for-best-hip-hop/",
-      "https://allhiphop.com/news/drake-receives-one-of-one-rolex-and-warns-jewelers-against-copying-it/"
     ],
     "use_count": 4
   },
@@ -1203,17 +1216,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Jay-Z-2.jpg",
-    "links": [
-      "https://allhiphop.com/news/jay-z-vindicated-after-accuser-admits-she-fabricated-entire-rape-accusation/",
-      "https://allhiphop.com/news/jay-z-london-show-features-lauryn-hill-wyclef-jean-forever-a-fan/",
-      "https://allhiphop.com/news/jay-z-sets-september-18-premiere-for-jay-z-in-8-with-new-trailer/",
-      "https://allhiphop.com/news/jay-zs-latest-sports-move-tom-bradys-trading-card-business/"
-    ],
-    "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Kendrick-Lamar.jpg",
     "links": [
       "https://allhiphop.com/news/kendrick-lamar-reportedly-had-the-highest-grossing-touring-year-in-rap-history-finished/",
@@ -1337,6 +1339,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://imagez.tmz.com/image/21/16by9/2026/09/19/214d022ee08d41ecb2f888e15c6e424e_xl.jpg",
+    "links": [
+      "https://www.tmz.com/2026/09/19/dozens-of-tickets-still-available-for-ed-sheerans-saturday-concert/",
+      "https://www.tmz.com/2026/09/19/ed-sheerans-philadelphia-concert-has-hundreds-of-tickets-left/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://imagez.tmz.com/image/26/16by9/2026/08/13/2646c76b67074739a31788b6927b9dcf_xl.jpg",
     "links": [
@@ -1347,7 +1357,7 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
     "links": [
       "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
@@ -1538,6 +1548,14 @@
     "use_count": 5
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
+    "links": [
+      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
+      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
+    ]
+  },
+  {
     "issue": "same_homepage_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
@@ -1723,22 +1741,6 @@
   },
   {
     "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
-    "links": [
-      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-after-blocking-for-late-td-vs-cardinals-194323239.html",
-      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-nation-after-blocking-for-late-td-vs-cardinals-194323239.html"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
-    "links": [
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
     "links": [
       "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
@@ -1773,6 +1775,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
+      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
