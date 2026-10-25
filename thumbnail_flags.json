@@ -261,6 +261,16 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Offset-2.png",
+    "links": [
+      "https://allhiphop.com/news/offset-points-to-november-13-for-gmfu-after-october-23-plan/",
+      "https://allhiphop.com/news/offset-faces-default-in-200k-casino-battle-as-paris-blackjack-video-surfaces/",
+      "https://allhiphop.com/rumors/is-offsets-gambling-a-problem-or-is-something-else-happening/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Jay-Z-1.jpg",
     "links": [
       "https://allhiphop.com/news/jay-z-brings-dr-dre-snoop-dogg-too-hort-to-sofi-finale/",
@@ -1301,7 +1311,7 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
       "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
@@ -1608,6 +1618,14 @@
     "use_count": 7
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
+    "links": [
+      "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
+      "https://allhiphop.com/news/ciara-russell-wilson-announce-baby-cinco/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-03-at-10.37.29-PM.png",
     "links": [
@@ -1650,14 +1668,6 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
-    "links": [
-      "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
-      "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
@@ -1667,6 +1677,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
+    "links": [
+      "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
+      "https://theshaderoom.com/raven-symone-kalen-allen-miranda-maday-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
     "links": [
       "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
