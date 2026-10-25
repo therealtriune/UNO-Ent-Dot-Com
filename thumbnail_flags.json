@@ -261,6 +261,42 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Jay-Z-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/jay-z-brings-dr-dre-snoop-dogg-too-hort-to-sofi-finale/",
+      "https://allhiphop.com/news/jay-z-opens-los-angeles-pop-up-ahead-of-sofi-stadium-shows/",
+      "https://allhiphop.com/news/jay-z-makes-big-power-move-brings-baseball-elite-into-roc-nation-sports/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/01/Nicki-Minaj-and-Donald-Trump.jpg",
+    "links": [
+      "https://allhiphop.com/news/nicki-minaj-takes-her-trump-support-to-michigan-campaign-trail/",
+      "https://allhiphop.com/news/nicki-minaj-urges-people-to-vote-red-even-though-she-cant-because-shes-not-a-citizen/",
+      "https://allhiphop.com/news/nicki-minaj-says-she-loves-trump-and-refuses-to-make-excuses/",
+      "https://allhiphop.com/news/nicki-minaj-links-spiritual-power-to-trump-elon-musk-and-herself/",
+      "https://allhiphop.com/news/nicki-minaj-to-judge-president-trumps-1-million-small-business-competition/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Crime-scene.jpg",
+    "links": [
+      "https://allhiphop.com/news/famu-homecoming-weekend-turns-violent-with-12-people-hurt/",
+      "https://allhiphop.com/news/ace-nh-asks-judge-for-death-sentence-rejects-further-plea-to-spare-him/",
+      "https://allhiphop.com/news/georgia-hospitals-treat-dozens-after-gunfire-tears-through-homecoming-party/",
+      "https://allhiphop.com/news/milwaukee-rappers-shot-dead-during-argument-over-gun-in-studio/",
+      "https://allhiphop.com/news/racist-nut-job-chud-the-builder-back-on-the-streets-after-making-1m-bond/",
+      "https://allhiphop.com/news/playa-pat-faces-life-after-federal-drug-network-conviction/",
+      "https://allhiphop.com/news/dc-rapper-fat-swagg-gunned-down-family-demands-justice/"
+    ],
+    "use_count": 7
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/10/Macklemore.jpg",
     "links": [
       "https://allhiphop.com/news/macklemore-takes-palestine-message-back-to-the-stage-at-red-rocks/",
@@ -269,6 +305,31 @@
       "https://allhiphop.com/news/angry-jews-want-macklemore-tossed-from-ed-sheeran-tour-over-rappers-support-for-palestine/"
     ],
     "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/04/source-logo_red1-2.png",
+    "links": [
+      "https://thesource.com/2026/10/24/two-unglamorous-decisions-that-shape-a-music-business-in-la/?utm_source=rss&utm_medium=rss&utm_campaign=two-unglamorous-decisions-that-shape-a-music-business-in-la",
+      "https://thesource.com/2026/10/23/prizepicks-launches-digital-collectibles-prizepicks-packs/?utm_source=rss&utm_medium=rss&utm_campaign=prizepicks-launches-digital-collectibles-prizepicks-packs",
+      "https://thesource.com/2026/10/22/how-an-experienced-defense-lawyer-helps-you-prepare-for-court-and-understand-your-legal-options/?utm_source=rss&utm_medium=rss&utm_campaign=how-an-experienced-defense-lawyer-helps-you-prepare-for-court-and-understand-your-legal-options",
+      "https://thesource.com/2026/10/20/tiktok-reportedly-cracks-down-on-peptide-content-as-safety-concerns-grow/?utm_source=rss&utm_medium=rss&utm_campaign=tiktok-reportedly-cracks-down-on-peptide-content-as-safety-concerns-grow",
+      "https://thesource.com/2026/10/19/dangelo-posthumous-album-six-tracks/?utm_source=rss&utm_medium=rss&utm_campaign=dangelo-posthumous-album-six-tracks",
+      "https://thesource.com/2026/10/08/rival-nba-executives-showing-interest-in-bronny-james/?utm_source=rss&utm_medium=rss&utm_campaign=rival-nba-executives-showing-interest-in-bronny-james",
+      "https://thesource.com/2026/10/07/the-video-game-cameo-is-becoming-hip-hops-new-pop-culture-flex/?utm_source=rss&utm_medium=rss&utm_campaign=the-video-game-cameo-is-becoming-hip-hops-new-pop-culture-flex",
+      "https://thesource.com/2026/10/01/a-speedy-guide-to-the-upcoming-nba-2026-27-season/?utm_source=rss&utm_medium=rss&utm_campaign=a-speedy-guide-to-the-upcoming-nba-2026-27-season",
+      "https://thesource.com/2026/10/01/flydubai-pilot-stabbing-midair-incident/?utm_source=rss&utm_medium=rss&utm_campaign=flydubai-pilot-stabbing-midair-incident",
+      "https://thesource.com/2026/10/01/pastor-admits-stealing-504k-from-historic-church-that-survived-tulsa-race-massacre/?utm_source=rss&utm_medium=rss&utm_campaign=pastor-admits-stealing-504k-from-historic-church-that-survived-tulsa-race-massacre",
+      "https://thesource.com/2026/09/24/the-best-gifts-for-athletes-thoughtful-ideas-theyll-actually-use/?utm_source=rss&utm_medium=rss&utm_campaign=the-best-gifts-for-athletes-thoughtful-ideas-theyll-actually-use",
+      "https://thesource.com/2026/09/17/audiomack-pro-launches-song-pulse/?utm_source=rss&utm_medium=rss&utm_campaign=audiomack-pro-launches-song-pulse",
+      "https://thesource.com/2026/09/04/amen-thompson-signs-208-million-extension-with-rockets/?utm_source=rss&utm_medium=rss&utm_campaign=amen-thompson-signs-208-million-extension-with-rockets",
+      "https://thesource.com/2026/08/27/watch-devastating-flash-flood-hits-china-nepal-border-more-than-1300-missing/?utm_source=rss&utm_medium=rss&utm_campaign=watch-devastating-flash-flood-hits-china-nepal-border-more-than-1300-missing",
+      "https://thesource.com/2026/08/14/judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations/?utm_source=rss&utm_medium=rss&utm_campaign=judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations",
+      "https://thesource.com/2026/08/12/source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop/?utm_source=rss&utm_medium=rss&utm_campaign=source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop",
+      "https://thesource.com/2026/08/11/nba-offseason-trae-young-lights-up-drew-league-with-triple-double/?utm_source=rss&utm_medium=rss&utm_campaign=nba-offseason-trae-young-lights-up-drew-league-with-triple-double",
+      "https://thesource.com/2026/08/07/mitch-mcconnell-discharged-rehab-center/?utm_source=rss&utm_medium=rss&utm_campaign=mitch-mcconnell-discharged-rehab-center"
+    ],
+    "use_count": 18
   },
   {
     "issue": "overused_thumbnail",
@@ -418,30 +479,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/04/source-logo_red1-2.png",
-    "links": [
-      "https://thesource.com/2026/10/23/prizepicks-launches-digital-collectibles-prizepicks-packs/?utm_source=rss&utm_medium=rss&utm_campaign=prizepicks-launches-digital-collectibles-prizepicks-packs",
-      "https://thesource.com/2026/10/22/how-an-experienced-defense-lawyer-helps-you-prepare-for-court-and-understand-your-legal-options/?utm_source=rss&utm_medium=rss&utm_campaign=how-an-experienced-defense-lawyer-helps-you-prepare-for-court-and-understand-your-legal-options",
-      "https://thesource.com/2026/10/20/tiktok-reportedly-cracks-down-on-peptide-content-as-safety-concerns-grow/?utm_source=rss&utm_medium=rss&utm_campaign=tiktok-reportedly-cracks-down-on-peptide-content-as-safety-concerns-grow",
-      "https://thesource.com/2026/10/19/dangelo-posthumous-album-six-tracks/?utm_source=rss&utm_medium=rss&utm_campaign=dangelo-posthumous-album-six-tracks",
-      "https://thesource.com/2026/10/08/rival-nba-executives-showing-interest-in-bronny-james/?utm_source=rss&utm_medium=rss&utm_campaign=rival-nba-executives-showing-interest-in-bronny-james",
-      "https://thesource.com/2026/10/07/the-video-game-cameo-is-becoming-hip-hops-new-pop-culture-flex/?utm_source=rss&utm_medium=rss&utm_campaign=the-video-game-cameo-is-becoming-hip-hops-new-pop-culture-flex",
-      "https://thesource.com/2026/10/01/a-speedy-guide-to-the-upcoming-nba-2026-27-season/?utm_source=rss&utm_medium=rss&utm_campaign=a-speedy-guide-to-the-upcoming-nba-2026-27-season",
-      "https://thesource.com/2026/10/01/flydubai-pilot-stabbing-midair-incident/?utm_source=rss&utm_medium=rss&utm_campaign=flydubai-pilot-stabbing-midair-incident",
-      "https://thesource.com/2026/10/01/pastor-admits-stealing-504k-from-historic-church-that-survived-tulsa-race-massacre/?utm_source=rss&utm_medium=rss&utm_campaign=pastor-admits-stealing-504k-from-historic-church-that-survived-tulsa-race-massacre",
-      "https://thesource.com/2026/09/24/the-best-gifts-for-athletes-thoughtful-ideas-theyll-actually-use/?utm_source=rss&utm_medium=rss&utm_campaign=the-best-gifts-for-athletes-thoughtful-ideas-theyll-actually-use",
-      "https://thesource.com/2026/09/17/audiomack-pro-launches-song-pulse/?utm_source=rss&utm_medium=rss&utm_campaign=audiomack-pro-launches-song-pulse",
-      "https://thesource.com/2026/09/04/amen-thompson-signs-208-million-extension-with-rockets/?utm_source=rss&utm_medium=rss&utm_campaign=amen-thompson-signs-208-million-extension-with-rockets",
-      "https://thesource.com/2026/08/27/watch-devastating-flash-flood-hits-china-nepal-border-more-than-1300-missing/?utm_source=rss&utm_medium=rss&utm_campaign=watch-devastating-flash-flood-hits-china-nepal-border-more-than-1300-missing",
-      "https://thesource.com/2026/08/14/judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations/?utm_source=rss&utm_medium=rss&utm_campaign=judge-puts-doj-on-clock-over-epstein-files-and-fbi-notes-involving-trump-accusations",
-      "https://thesource.com/2026/08/12/source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop/?utm_source=rss&utm_medium=rss&utm_campaign=source-exclusive-cypress-hills-divine-return-b-real-on-heritage-heavy-beats-and-the-global-rise-of-latin-hip-hop",
-      "https://thesource.com/2026/08/11/nba-offseason-trae-young-lights-up-drew-league-with-triple-double/?utm_source=rss&utm_medium=rss&utm_campaign=nba-offseason-trae-young-lights-up-drew-league-with-triple-double",
-      "https://thesource.com/2026/08/07/mitch-mcconnell-discharged-rehab-center/?utm_source=rss&utm_medium=rss&utm_campaign=mitch-mcconnell-discharged-rehab-center"
-    ],
-    "use_count": 17
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/02/Wu-Tang-Clan.jpg",
     "links": [
       "https://allhiphop.com/news/wu-tang-director-reveals-nas-odb-cher-playlist-picks/",
@@ -579,19 +616,6 @@
       "https://allhiphop.com/news/shreveport-honors-the-showboys-g-unit-director-of-growth-signaling-50-cent-deal-could-be-stabilizing/"
     ],
     "use_count": 8
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Crime-scene.jpg",
-    "links": [
-      "https://allhiphop.com/news/ace-nh-asks-judge-for-death-sentence-rejects-further-plea-to-spare-him/",
-      "https://allhiphop.com/news/georgia-hospitals-treat-dozens-after-gunfire-tears-through-homecoming-party/",
-      "https://allhiphop.com/news/milwaukee-rappers-shot-dead-during-argument-over-gun-in-studio/",
-      "https://allhiphop.com/news/racist-nut-job-chud-the-builder-back-on-the-streets-after-making-1m-bond/",
-      "https://allhiphop.com/news/playa-pat-faces-life-after-federal-drug-network-conviction/",
-      "https://allhiphop.com/news/dc-rapper-fat-swagg-gunned-down-family-demands-justice/"
-    ],
-    "use_count": 6
   },
   {
     "issue": "overused_thumbnail",
@@ -1269,15 +1293,15 @@
     "use_count": 5
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
     "links": [
-      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
-      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
+      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
+      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
     ]
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
       "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
@@ -1293,17 +1317,6 @@
       "https://allhiphop.com/news/exclusive-nicki-minajs-hubby-kenneth-petty-accuser-tell-judge-settlement-is-pointless/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/01/Nicki-Minaj-and-Donald-Trump.jpg",
-    "links": [
-      "https://allhiphop.com/news/nicki-minaj-urges-people-to-vote-red-even-though-she-cant-because-shes-not-a-citizen/",
-      "https://allhiphop.com/news/nicki-minaj-says-she-loves-trump-and-refuses-to-make-excuses/",
-      "https://allhiphop.com/news/nicki-minaj-links-spiritual-power-to-trump-elon-musk-and-herself/",
-      "https://allhiphop.com/news/nicki-minaj-to-judge-president-trumps-1-million-small-business-competition/"
-    ],
-    "use_count": 4
   },
   {
     "issue": "overused_thumbnail",
@@ -1446,6 +1459,14 @@
       "https://www.tmz.com/2026/08/13/parents-of-surrogate-baby-have-custody-of-their-child/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
+    "links": [
+      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
+      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -1621,6 +1642,14 @@
     "use_count": 5
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
+    "links": [
+      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
+      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
+    ]
+  },
+  {
     "issue": "same_homepage_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
@@ -1638,14 +1667,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
-    "links": [
-      "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
-      "https://theshaderoom.com/raven-symone-kalen-allen-miranda-maday-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
     "links": [
       "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
