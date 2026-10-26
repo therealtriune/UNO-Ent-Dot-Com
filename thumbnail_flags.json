@@ -261,6 +261,66 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Cardi-B-5.jpg",
+    "links": [
+      "https://allhiphop.com/news/cardi-bs-grow-good-takes-over-nyc-salon-for-custom-curl-treatments/",
+      "https://allhiphop.com/news/cardi-bs-birkin-collection-takes-a-hit-as-esmeralda-goes-missing/",
+      "https://allhiphop.com/news/snoop-dogg-leads-hip-hops-big-night-as-cardi-b-wins-at-mtv-vmas/",
+      "https://allhiphop.com/news/cardi-b-shows-off-15k-butt-crack-jewelry-in-tight-white-catsuit/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/loe-shimmy-gifts-drake-a-1986-ferrari-for-his-40th-birthday/",
+      "https://allhiphop.com/news/drake-wins-fifth-straight-socan-songwriter-award-jessie-reyez-earns-international-honor/",
+      "https://allhiphop.com/news/exclusive-drake-could-reveal-how-much-his-stake-partnership-pays/",
+      "https://allhiphop.com/news/drake-reveals-self-funded-fomo-film-is-a-blueprint-for-living-without-regret/",
+      "https://allhiphop.com/news/drake-uses-livestream-to-build-hype-around-fomo-project/",
+      "https://allhiphop.com/news/drake-sells-stake-in-ovo-empire-with-authentic-brands-investment/",
+      "https://allhiphop.com/news/exclusive-drakes-stake-fight-turns-new-mexico-into-nationwide-legal-battleground/",
+      "https://allhiphop.com/news/drakes-gambling-accusers-lose-bid-for-public-class-action/"
+    ],
+    "use_count": 8
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/09/Kanye-West.jpg",
+    "links": [
+      "https://allhiphop.com/news/jakarta-makes-it-rain-literally-with-cloud-seeding-before-kanye-west-show/",
+      "https://allhiphop.com/news/kanye-wests-pockets-take-180k-hit-in-battle-with-handyman/",
+      "https://allhiphop.com/news/ye-seeks-to-drop-hammer-on-handyman-his-massive-legal-fee-request/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/05/AAP-Rocky.png",
+    "links": [
+      "https://allhiphop.com/rumors/aap-rocky-accused-of-stealing-artists-video-as-ai-controversy-explodes/",
+      "https://allhiphop.com/news/aap-rocky-chases-first-grammy-with-dont-be-dumb/",
+      "https://allhiphop.com/news/asap-rocky-adds-australia-new-zealand-dates-to-dont-be-dumb-tour/",
+      "https://allhiphop.com/news/asap-rocky-funds-full-tuition-scholarship-at-roc-nation-school/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/01/Nicki-Minaj-and-Donald-Trump.jpg",
+    "links": [
+      "https://allhiphop.com/news/nicki-minaj-promises-trump-her-support-if-he-runs-again/",
+      "https://allhiphop.com/news/nicki-minaj-takes-her-trump-support-to-michigan-campaign-trail/",
+      "https://allhiphop.com/news/nicki-minaj-urges-people-to-vote-red-even-though-she-cant-because-shes-not-a-citizen/",
+      "https://allhiphop.com/news/nicki-minaj-says-she-loves-trump-and-refuses-to-make-excuses/",
+      "https://allhiphop.com/news/nicki-minaj-links-spiritual-power-to-trump-elon-musk-and-herself/",
+      "https://allhiphop.com/news/nicki-minaj-to-judge-president-trumps-1-million-small-business-competition/"
+    ],
+    "use_count": 6
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/cropped-AllHipHop-2.jpg",
     "links": [
       "https://allhiphop.com/news/suno-smacked-with-285m-lawsuit-over-hip-hop-producer-tags/",
@@ -327,18 +387,6 @@
       "https://allhiphop.com/news/jay-z-makes-big-power-move-brings-baseball-elite-into-roc-nation-sports/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/01/Nicki-Minaj-and-Donald-Trump.jpg",
-    "links": [
-      "https://allhiphop.com/news/nicki-minaj-takes-her-trump-support-to-michigan-campaign-trail/",
-      "https://allhiphop.com/news/nicki-minaj-urges-people-to-vote-red-even-though-she-cant-because-shes-not-a-citizen/",
-      "https://allhiphop.com/news/nicki-minaj-says-she-loves-trump-and-refuses-to-make-excuses/",
-      "https://allhiphop.com/news/nicki-minaj-links-spiritual-power-to-trump-elon-musk-and-herself/",
-      "https://allhiphop.com/news/nicki-minaj-to-judge-president-trumps-1-million-small-business-competition/"
-    ],
-    "use_count": 5
   },
   {
     "issue": "overused_thumbnail",
@@ -911,16 +959,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/05/AAP-Rocky.png",
-    "links": [
-      "https://allhiphop.com/news/aap-rocky-chases-first-grammy-with-dont-be-dumb/",
-      "https://allhiphop.com/news/asap-rocky-adds-australia-new-zealand-dates-to-dont-be-dumb-tour/",
-      "https://allhiphop.com/news/asap-rocky-funds-full-tuition-scholarship-at-roc-nation-school/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://townsquare.media/site/812/files/2017/08/xxl-fb-image1.jpg?format=natural",
     "links": [
       "https://www.xxlmag.com/lil-jon-childhood-injury-sunglasses/",
@@ -937,16 +975,6 @@
       "https://thesource.com/2026/10/16/bureau-of-prisons-denies-fight-happened-between-diddy-and-jamaican-drug-lord/?utm_source=rss&utm_medium=rss&utm_campaign=bureau-of-prisons-denies-fight-happened-between-diddy-and-jamaican-drug-lord",
       "https://thesource.com/2026/10/14/diddy-prison-fight-christopher-dudus-coke-head-injury/?utm_source=rss&utm_medium=rss&utm_campaign=diddy-prison-fight-christopher-dudus-coke-head-injury",
       "https://thesource.com/2026/08/07/diddy-paid-up-to-8-million-in-legal-fees-to-fight-federal-sex-crimes-case/?utm_source=rss&utm_medium=rss&utm_campaign=diddy-paid-up-to-8-million-in-legal-fees-to-fight-federal-sex-crimes-case"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Cardi-B-5.jpg",
-    "links": [
-      "https://allhiphop.com/news/cardi-bs-birkin-collection-takes-a-hit-as-esmeralda-goes-missing/",
-      "https://allhiphop.com/news/snoop-dogg-leads-hip-hops-big-night-as-cardi-b-wins-at-mtv-vmas/",
-      "https://allhiphop.com/news/cardi-b-shows-off-15k-butt-crack-jewelry-in-tight-white-catsuit/"
     ],
     "use_count": 3
   },
@@ -1058,20 +1086,6 @@
       "https://thesource.com/2026/08/06/drake-and-karol-g-planning-to-team-for-new-single-on-friday/?utm_source=rss&utm_medium=rss&utm_campaign=drake-and-karol-g-planning-to-team-for-new-single-on-friday"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake-1.jpg",
-    "links": [
-      "https://allhiphop.com/news/drake-wins-fifth-straight-socan-songwriter-award-jessie-reyez-earns-international-honor/",
-      "https://allhiphop.com/news/exclusive-drake-could-reveal-how-much-his-stake-partnership-pays/",
-      "https://allhiphop.com/news/drake-reveals-self-funded-fomo-film-is-a-blueprint-for-living-without-regret/",
-      "https://allhiphop.com/news/drake-uses-livestream-to-build-hype-around-fomo-project/",
-      "https://allhiphop.com/news/drake-sells-stake-in-ovo-empire-with-authentic-brands-investment/",
-      "https://allhiphop.com/news/exclusive-drakes-stake-fight-turns-new-mexico-into-nationwide-legal-battleground/",
-      "https://allhiphop.com/news/drakes-gambling-accusers-lose-bid-for-public-class-action/"
-    ],
-    "use_count": 7
   },
   {
     "issue": "overused_thumbnail",
@@ -1310,14 +1324,6 @@
     "links": [
       "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
       "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
-    "links": [
-      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
-      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
     ]
   },
   {
@@ -1670,19 +1676,11 @@
     "use_count": 5
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
-    "links": [
-      "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
-      "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
-    ]
-  },
-  {
     "issue": "same_category_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
     "links": [
-      "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
-      "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
+      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
+      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
     ]
   },
   {
@@ -1776,6 +1774,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
+    "links": [
+      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
+      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/09/Crime-Scene.jpg",
     "links": [
@@ -1862,14 +1868,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
-    "links": [
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://imagez.tmz.com/image/74/16by9/2026/08/13/74059ee2192c41a6b411aa89404c96be_xl.jpg",
     "links": [
@@ -1881,6 +1879,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
+      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
