@@ -1,5 +1,9 @@
 [
   {
+    "link": "https://sports.yahoo.com/articles/daniel-cormier-explains-sean-omalley-010037606.html",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/undefeated-20-0-pfl-rizin-043621644.html",
     "issue": "missing_thumbnail"
   },
@@ -265,6 +269,42 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/03/Yella-Beezy.jpg",
+    "links": [
+      "https://allhiphop.com/news/yella-beezy-trial-mo3s-girlfriend-testifies/",
+      "https://allhiphop.com/news/mo3-murder-trial-prosecution-defense-rest-as-yella-beezy-life-hangs-in-the-balance/",
+      "https://allhiphop.com/news/jury-selection-begins-for-mo3s-alleged-assassins-trial-yella-beezy-s-fate-tied-to-trial/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/drakes-janice-stfu-accuser-withdraws-copyright-lawsuit/",
+      "https://allhiphop.com/news/loe-shimmy-gifts-drake-a-1986-ferrari-for-his-40th-birthday/",
+      "https://allhiphop.com/news/drake-wins-fifth-straight-socan-songwriter-award-jessie-reyez-earns-international-honor/",
+      "https://allhiphop.com/news/exclusive-drake-could-reveal-how-much-his-stake-partnership-pays/",
+      "https://allhiphop.com/news/drake-reveals-self-funded-fomo-film-is-a-blueprint-for-living-without-regret/",
+      "https://allhiphop.com/news/drake-uses-livestream-to-build-hype-around-fomo-project/",
+      "https://allhiphop.com/news/drake-sells-stake-in-ovo-empire-with-authentic-brands-investment/",
+      "https://allhiphop.com/news/exclusive-drakes-stake-fight-turns-new-mexico-into-nationwide-legal-battleground/",
+      "https://allhiphop.com/news/drakes-gambling-accusers-lose-bid-for-public-class-action/"
+    ],
+    "use_count": 9
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Megan-Thee-Stallion-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/megan-thee-stallion-explains-how-silence-over-her-contract-led-to-regret-legal-war/",
+      "https://allhiphop.com/rumors/jason-lee-claims-megan-thee-stallion-has-a-drinking-problem/",
+      "https://allhiphop.com/news/megan-thee-stallion-must-answer-claim-that-she-trapped-cameraman-had-sex-in-car/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/09/Drake-9.png",
     "links": [
       "https://allhiphop.com/news/exclusive-rbx-loses-spotify-bot-lawsuit-again-after-judge-rejects-latest-attempt/",
@@ -308,6 +348,22 @@
       "https://allhiphop.com/news/nicki-minaj-to-judge-president-trumps-1-million-small-business-competition/"
     ],
     "use_count": 7
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-donald-trump-brutally-raped-her-in-1993-he-denies-it/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-donald-trump-brutally-raped-her-in-1993-he-denies-it/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -446,21 +502,6 @@
       "https://allhiphop.com/news/cardi-b-shows-off-15k-butt-crack-jewelry-in-tight-white-catsuit/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake-1.jpg",
-    "links": [
-      "https://allhiphop.com/news/loe-shimmy-gifts-drake-a-1986-ferrari-for-his-40th-birthday/",
-      "https://allhiphop.com/news/drake-wins-fifth-straight-socan-songwriter-award-jessie-reyez-earns-international-honor/",
-      "https://allhiphop.com/news/exclusive-drake-could-reveal-how-much-his-stake-partnership-pays/",
-      "https://allhiphop.com/news/drake-reveals-self-funded-fomo-film-is-a-blueprint-for-living-without-regret/",
-      "https://allhiphop.com/news/drake-uses-livestream-to-build-hype-around-fomo-project/",
-      "https://allhiphop.com/news/drake-sells-stake-in-ovo-empire-with-authentic-brands-investment/",
-      "https://allhiphop.com/news/exclusive-drakes-stake-fight-turns-new-mexico-into-nationwide-legal-battleground/",
-      "https://allhiphop.com/news/drakes-gambling-accusers-lose-bid-for-public-class-action/"
-    ],
-    "use_count": 8
   },
   {
     "issue": "overused_thumbnail",
@@ -920,6 +961,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
+      "https://hollywoodunlocked.com/donald-trump-nobody-appreciates-how-great-a-president-i-am/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/tina-tuesday-freestyle.jpg",
     "links": [
@@ -1115,6 +1164,22 @@
       "https://allhiphop.com/news/exclusive-luckis-former-manager-sues-for-1-5m-claims-rapper-drained-his-savings-destroyed-hotel-rooms/"
     ],
     "use_count": 4
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
+      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
+      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -1313,6 +1378,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
+      "https://www.hotnewhiphop.com/1011958-lucki-alleged-fight-playboi-carti-entourage"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
     "links": [
@@ -1386,14 +1459,6 @@
       "https://www.hotnewhiphop.com/1011684-habibti-fomo-drake"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
-    "links": [
-      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
-      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
-    ]
   },
   {
     "issue": "same_homepage_page",
@@ -1538,6 +1603,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://imagez.tmz.com/image/21/16by9/2026/09/19/214d022ee08d41ecb2f888e15c6e424e_xl.jpg",
+    "links": [
+      "https://www.tmz.com/2026/09/19/dozens-of-tickets-still-available-for-ed-sheerans-saturday-concert/",
+      "https://www.tmz.com/2026/09/19/ed-sheerans-philadelphia-concert-has-hundreds-of-tickets-left/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://imagez.tmz.com/image/21/16by9/2026/09/19/214d022ee08d41ecb2f888e15c6e424e_xl.jpg",
     "links": [
@@ -1554,22 +1627,6 @@
       "https://www.tmz.com/2026/08/13/parents-of-surrogate-baby-have-custody-of-their-child/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
-    "links": [
-      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
-      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
-    "links": [
-      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
-      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
-    ]
   },
   {
     "issue": "overused_thumbnail",
