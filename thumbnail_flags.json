@@ -273,6 +273,65 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Macklemore.png",
+    "links": [
+      "https://allhiphop.com/news/macklemore-brings-hozier-kneecap-to-dublin-benefit/",
+      "https://allhiphop.com/news/macklemore-sparks-feud-in-ed-sheerans-family-as-cousin-prepares-rap-song-diss/",
+      "https://allhiphop.com/news/macklemore-stands-firm-on-gaza-message-despite-tour-backlash/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/01/Kanye-West-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/ai-vocal-worker-suing-kanye-fears-for-his-safety-asks-to-remain-anonymous/",
+      "https://allhiphop.com/news/ye-defends-jakarta-crowd-after-heartless-clip-draws-criticism/",
+      "https://allhiphop.com/news/kanye-west-loses-antisemitism-fight-in-gun-to-my-head-case/",
+      "https://allhiphop.com/news/kanye-west-joins-educators-and-rappers-at-donda-west-street-ceremony/",
+      "https://allhiphop.com/news/kanye-west-chicago-total-attendance-numbers-are-in-they-are-insane/",
+      "https://allhiphop.com/news/kanye-west-st-petersburg-shows-still-happening-promoter-insists/",
+      "https://allhiphop.com/news/kanye-west-loses-his-head-in-bianca-censoris-gruesome-ok-video/",
+      "https://allhiphop.com/news/ye-performs-portugal-concert-despite-international-pressure/"
+    ],
+    "use_count": 8
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/10/Copy-of-AllHipHop-47.jpg",
+    "links": [
+      "https://allhiphop.com/rumors/davinchi-offered-an-apology-is-it-enough/",
+      "https://allhiphop.com/rumors/bmf-actor-davinchi-loses-half-a-million-followers/",
+      "https://allhiphop.com/rumors/bmf-actor-davinchi-angers-black-americans-over-lazy-slavery-comments/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/02/Project-Pat.jpg",
+    "links": [
+      "https://allhiphop.com/news/project-pat-takes-chickenhead-to-churchs/",
+      "https://allhiphop.com/news/trial-in-project-pats-sons-killing-pushed-back-to-december/",
+      "https://allhiphop.com/rumors/second-woman-allegedly-killed-project-pats-son-as-a-teen/",
+      "https://allhiphop.com/news/woman-charged-in-death-of-project-pats-21-year-old-son-faces-september-trial/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake-2.jpg",
+    "links": [
+      "https://allhiphop.com/news/drake-gets-surprise-jeff-ross-birthday-roast/",
+      "https://allhiphop.com/news/caleb-williams-gives-drake-ten-spots-on-his-madden-nfl-27-playlist/",
+      "https://allhiphop.com/news/drake-breaks-the-temptations-record-with-18th-no-1/",
+      "https://allhiphop.com/news/distrokid-removes-songs-over-umg-claims-as-rappers-question-takedowns/",
+      "https://allhiphop.com/news/rap-misses-top-vma-categories-as-six-stars-compete-for-best-hip-hop/",
+      "https://allhiphop.com/news/drake-receives-one-of-one-rolex-and-warns-jewelers-against-copying-it/"
+    ],
+    "use_count": 6
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/07/50-Cent-Rick-Ross.png",
     "links": [
       "https://allhiphop.com/news/50-cent-wins-temporary-restraining-order-against-tia-kemp-as-battle-over-sons-explodes/",
@@ -315,14 +374,12 @@
     "use_count": 4
   },
   {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/02/Project-Pat.jpg",
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Just-Doin-Me.jpg",
     "links": [
-      "https://allhiphop.com/news/trial-in-project-pats-sons-killing-pushed-back-to-december/",
-      "https://allhiphop.com/rumors/second-woman-allegedly-killed-project-pats-son-as-a-teen/",
-      "https://allhiphop.com/news/woman-charged-in-death-of-project-pats-21-year-old-son-faces-september-trial/"
-    ],
-    "use_count": 3
+      "https://www.hotnewhiphop.com/1014701-spinnin-21-savage-young-nudy",
+      "https://www.hotnewhiphop.com/1014698-just-doin-me-young-nudy"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -508,14 +565,6 @@
     "use_count": 7
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
-      "https://hollywoodunlocked.com/former-miss-switzerland-says-donald-trump-brutally-raped-her-in-1993-he-denies-it/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
     "links": [
@@ -566,20 +615,6 @@
       "https://allhiphop.com/news/robert-kraft-confirms-he-got-macklemore-kicked-off-ed-sheeran-tour-over-palestinian-activism/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/01/Kanye-West-1.jpg",
-    "links": [
-      "https://allhiphop.com/news/ye-defends-jakarta-crowd-after-heartless-clip-draws-criticism/",
-      "https://allhiphop.com/news/kanye-west-loses-antisemitism-fight-in-gun-to-my-head-case/",
-      "https://allhiphop.com/news/kanye-west-joins-educators-and-rappers-at-donda-west-street-ceremony/",
-      "https://allhiphop.com/news/kanye-west-chicago-total-attendance-numbers-are-in-they-are-insane/",
-      "https://allhiphop.com/news/kanye-west-st-petersburg-shows-still-happening-promoter-insists/",
-      "https://allhiphop.com/news/kanye-west-loses-his-head-in-bianca-censoris-gruesome-ok-video/",
-      "https://allhiphop.com/news/ye-performs-portugal-concert-despite-international-pressure/"
-    ],
-    "use_count": 7
   },
   {
     "issue": "overused_thumbnail",
@@ -873,18 +908,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake-2.jpg",
-    "links": [
-      "https://allhiphop.com/news/caleb-williams-gives-drake-ten-spots-on-his-madden-nfl-27-playlist/",
-      "https://allhiphop.com/news/drake-breaks-the-temptations-record-with-18th-no-1/",
-      "https://allhiphop.com/news/distrokid-removes-songs-over-umg-claims-as-rappers-question-takedowns/",
-      "https://allhiphop.com/news/rap-misses-top-vma-categories-as-six-stars-compete-for-best-hip-hop/",
-      "https://allhiphop.com/news/drake-receives-one-of-one-rolex-and-warns-jewelers-against-copying-it/"
-    ],
-    "use_count": 5
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/10/Kash.jpg",
     "links": [
       "https://allhiphop.com/news/kashs-mother-alleges-death-threats/",
@@ -1029,6 +1052,14 @@
       "https://allhiphop.com/news/pro-palestinian-dearborn-mayor-offers-macklemore-free-concert-funded-by-city-following-ed-sheeran-tour-fiasco/"
     ],
     "use_count": 4
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
+      "https://hollywoodunlocked.com/donald-trump-nobody-appreciates-how-great-a-president-i-am/"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -1816,14 +1847,6 @@
     "use_count": 7
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
-    "links": [
-      "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
-      "https://allhiphop.com/news/ciara-russell-wilson-announce-baby-cinco/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-03-at-10.37.29-PM.png",
     "links": [
@@ -1863,14 +1886,6 @@
     "links": [
       "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
       "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
-    "links": [
-      "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
-      "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
     ]
   },
   {
@@ -2030,14 +2045,6 @@
       "https://allhiphop.com/news/sidney-starr-faces-life-in-prison-after-child-molestation-arrest/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/101863a2720f8285bdc25dfd62c8f4af70b53c6e23fd69db37b73cf1c1706cd8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F51d423e8-e724-4b22-9b64-a777be34d751",
-    "links": [
-      "https://sports.yahoo.com/nfl/article/nfl-preseason-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html",
-      "https://sports.yahoo.com/nfl/article/nfl-preseason-week-2-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html"
-    ]
   },
   {
     "issue": "same_category_page",
