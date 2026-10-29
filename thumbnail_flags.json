@@ -273,6 +273,65 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/AAP-Rocky.jpg",
+    "links": [
+      "https://allhiphop.com/news/asap-rocky-creative-director-owns-shroom-clouds-credit-failure/",
+      "https://allhiphop.com/news/aap-rocky-says-his-kids-still-have-rihannas-fame-to-discover/",
+      "https://allhiphop.com/rumors/aap-rocky-cancels-logo-project-after-designer-shares-private-dm/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Megan-Thee-Stallion.jpg",
+    "links": [
+      "https://allhiphop.com/news/megan-thee-stallions-thin-ice-streams-jump-152/",
+      "https://allhiphop.com/news/megan-thee-stallion-becomes-label-boss-with-interscope-distribution-deal/",
+      "https://allhiphop.com/news/megan-thee-stallion-revives-tina-snow-with-sexy-album-announcement-look-at-these-pictures/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/04/OutKast.jpg",
+    "links": [
+      "https://allhiphop.com/news/outkasts-nike-collection-heads-to-more-stores/",
+      "https://allhiphop.com/news/exclusive-outkast-sues-ovrkast-after-rapper-admits-listeners-confuse-their-names/",
+      "https://allhiphop.com/news/outkast-marks-30-years-of-atliens-with-community-soccer-partnership/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake.jpg",
+    "links": [
+      "https://allhiphop.com/news/drake-earns-third-latin-airplay-no-1/",
+      "https://allhiphop.com/news/drakes-birthday-bash-offers-guests-a-shot-at-1-million/",
+      "https://allhiphop.com/news/drake-hits-91-top-10s-with-solar-eclipse-featuring-don-toliver/",
+      "https://allhiphop.com/news/drake-cashes-seven-figure-payout-after-joshua-van-beats-alexandre-pantoja/",
+      "https://allhiphop.com/news/drake-reveals-rare-jewelry-cars-celebrity-friends-in-fomo/",
+      "https://allhiphop.com/rumors/drake-says-pray-for-gaza-reveals-fomo-tour/",
+      "https://allhiphop.com/news/drake-drops-philosophical-yacht-trailer-for-fomo-film/",
+      "https://allhiphop.com/news/drake-served-contestants-caviar-chicken-nuggets-during-his-20v1/"
+    ],
+    "use_count": 8
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Drake-3.jpg",
+    "links": [
+      "https://allhiphop.com/news/drakes-birthday-bracelet-honors-adonis-iceman/",
+      "https://allhiphop.com/news/drakes-views-goes-diamond/",
+      "https://allhiphop.com/news/drake-sued-over-janice-stfu-by-songwriter-behind-beyonces-heated/",
+      "https://allhiphop.com/news/drakes-rep-rules-out-rapper-as-father-of-keshia-chantes-baby/",
+      "https://allhiphop.com/news/drake-denies-being-a-professional-trick-with-eloquent-explanation/",
+      "https://allhiphop.com/news/drake-ovo-accused-of-ripping-off-investor-now-the-sec-is-involved/",
+      "https://allhiphop.com/news/drakes-ovo-expansion-details-revealed-after-blockbuster-acquisition/"
+    ],
+    "use_count": 7
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Macklemore.png",
     "links": [
       "https://allhiphop.com/news/macklemore-brings-hozier-kneecap-to-dublin-benefit/",
@@ -565,6 +624,14 @@
     "use_count": 7
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-donald-trump-brutally-raped-her-in-1993-he-denies-it/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
     "links": [
@@ -671,19 +738,6 @@
       "https://allhiphop.com/news/yella-beezy-spews-threats-on-social-media-as-messages-40k-withdrawal-allegedly-connect-him-to-mo3-killing/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Drake-3.jpg",
-    "links": [
-      "https://allhiphop.com/news/drakes-views-goes-diamond/",
-      "https://allhiphop.com/news/drake-sued-over-janice-stfu-by-songwriter-behind-beyonces-heated/",
-      "https://allhiphop.com/news/drakes-rep-rules-out-rapper-as-father-of-keshia-chantes-baby/",
-      "https://allhiphop.com/news/drake-denies-being-a-professional-trick-with-eloquent-explanation/",
-      "https://allhiphop.com/news/drake-ovo-accused-of-ripping-off-investor-now-the-sec-is-involved/",
-      "https://allhiphop.com/news/drakes-ovo-expansion-details-revealed-after-blockbuster-acquisition/"
-    ],
-    "use_count": 6
   },
   {
     "issue": "overused_thumbnail",
@@ -806,20 +860,6 @@
       "https://allhiphop.com/news/dababy-puts-north-carolina-compound-on-market-for-nearly-7m/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake.jpg",
-    "links": [
-      "https://allhiphop.com/news/drakes-birthday-bash-offers-guests-a-shot-at-1-million/",
-      "https://allhiphop.com/news/drake-hits-91-top-10s-with-solar-eclipse-featuring-don-toliver/",
-      "https://allhiphop.com/news/drake-cashes-seven-figure-payout-after-joshua-van-beats-alexandre-pantoja/",
-      "https://allhiphop.com/news/drake-reveals-rare-jewelry-cars-celebrity-friends-in-fomo/",
-      "https://allhiphop.com/rumors/drake-says-pray-for-gaza-reveals-fomo-tour/",
-      "https://allhiphop.com/news/drake-drops-philosophical-yacht-trailer-for-fomo-film/",
-      "https://allhiphop.com/news/drake-served-contestants-caviar-chicken-nuggets-during-his-20v1/"
-    ],
-    "use_count": 7
   },
   {
     "issue": "overused_thumbnail",
@@ -1534,14 +1574,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
-    "links": [
-      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
-      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
-    ]
-  },
-  {
     "issue": "same_homepage_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
@@ -1682,14 +1714,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://imagez.tmz.com/image/21/16by9/2026/09/19/214d022ee08d41ecb2f888e15c6e424e_xl.jpg",
-    "links": [
-      "https://www.tmz.com/2026/09/19/dozens-of-tickets-still-available-for-ed-sheerans-saturday-concert/",
-      "https://www.tmz.com/2026/09/19/ed-sheerans-philadelphia-concert-has-hundreds-of-tickets-left/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://imagez.tmz.com/image/26/16by9/2026/08/13/2646c76b67074739a31788b6927b9dcf_xl.jpg",
     "links": [
@@ -1698,6 +1722,14 @@
       "https://www.tmz.com/2026/08/13/parents-of-surrogate-baby-have-custody-of-their-child/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
+    "links": [
+      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
+      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -1881,11 +1913,11 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
+    "issue": "same_homepage_page",
+    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
-      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
-      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
+      "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
+      "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
     ]
   },
   {
@@ -2045,6 +2077,14 @@
       "https://allhiphop.com/news/sidney-starr-faces-life-in-prison-after-child-molestation-arrest/"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/101863a2720f8285bdc25dfd62c8f4af70b53c6e23fd69db37b73cf1c1706cd8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F51d423e8-e724-4b22-9b64-a777be34d751",
+    "links": [
+      "https://sports.yahoo.com/nfl/article/nfl-preseason-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html",
+      "https://sports.yahoo.com/nfl/article/nfl-preseason-week-2-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html"
+    ]
   },
   {
     "issue": "same_category_page",
