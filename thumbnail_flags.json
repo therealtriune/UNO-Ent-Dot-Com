@@ -273,6 +273,33 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Gunna.jpg",
+    "links": [
+      "https://allhiphop.com/news/gunna-leads-n-c-ats-100th-homecoming-concert/",
+      "https://allhiphop.com/news/gunna-joins-100-hit-club-with-pop-it-chart-debut/",
+      "https://allhiphop.com/news/gunna-and-walmart-pledge-10000-in-famu-student-scholarships/",
+      "https://allhiphop.com/news/gunna-leaves-ysl-starts-his-own-label/",
+      "https://allhiphop.com/news/gunna-receives-south-fulton-proclamation-in-amazing-post-rico-turnaround/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Drake-3.jpg",
+    "links": [
+      "https://allhiphop.com/news/drake-financed-k-oss-blackneck-with-hundreds-of-thousands/",
+      "https://allhiphop.com/news/drakes-birthday-bracelet-honors-adonis-iceman/",
+      "https://allhiphop.com/news/drakes-views-goes-diamond/",
+      "https://allhiphop.com/news/drake-sued-over-janice-stfu-by-songwriter-behind-beyonces-heated/",
+      "https://allhiphop.com/news/drakes-rep-rules-out-rapper-as-father-of-keshia-chantes-baby/",
+      "https://allhiphop.com/news/drake-denies-being-a-professional-trick-with-eloquent-explanation/",
+      "https://allhiphop.com/news/drake-ovo-accused-of-ripping-off-investor-now-the-sec-is-involved/",
+      "https://allhiphop.com/news/drakes-ovo-expansion-details-revealed-after-blockbuster-acquisition/"
+    ],
+    "use_count": 8
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/12/Copy-of-AHH-Feature-Art-323.jpg",
     "links": [
       "https://allhiphop.com/news/skilla-baby-gets-ford-field-pregame-spotlight/",
@@ -300,6 +327,14 @@
       "https://allhiphop.com/news/t-i-tiny-harris-reaffirm-their-marriage-at-private-ocho-rios-villa/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -565,20 +600,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Drake-3.jpg",
-    "links": [
-      "https://allhiphop.com/news/drakes-birthday-bracelet-honors-adonis-iceman/",
-      "https://allhiphop.com/news/drakes-views-goes-diamond/",
-      "https://allhiphop.com/news/drake-sued-over-janice-stfu-by-songwriter-behind-beyonces-heated/",
-      "https://allhiphop.com/news/drakes-rep-rules-out-rapper-as-father-of-keshia-chantes-baby/",
-      "https://allhiphop.com/news/drake-denies-being-a-professional-trick-with-eloquent-explanation/",
-      "https://allhiphop.com/news/drake-ovo-accused-of-ripping-off-investor-now-the-sec-is-involved/",
-      "https://allhiphop.com/news/drakes-ovo-expansion-details-revealed-after-blockbuster-acquisition/"
-    ],
-    "use_count": 7
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Macklemore.png",
     "links": [
       "https://allhiphop.com/news/macklemore-brings-hozier-kneecap-to-dublin-benefit/",
@@ -678,6 +699,14 @@
       "https://www.hotnewhiphop.com/1013358-pooh-shiesty-jail-cell-23-hours-day"
     ],
     "use_count": 4
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Just-Doin-Me.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1014701-spinnin-21-savage-young-nudy",
+      "https://www.hotnewhiphop.com/1014698-just-doin-me-young-nudy"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -1189,17 +1218,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Gunna.jpg",
-    "links": [
-      "https://allhiphop.com/news/gunna-joins-100-hit-club-with-pop-it-chart-debut/",
-      "https://allhiphop.com/news/gunna-and-walmart-pledge-10000-in-famu-student-scholarships/",
-      "https://allhiphop.com/news/gunna-leaves-ysl-starts-his-own-label/",
-      "https://allhiphop.com/news/gunna-receives-south-fulton-proclamation-in-amazing-post-rico-turnaround/"
-    ],
-    "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/08/Rick-Ross-50-Cent.png",
     "links": [
       "https://allhiphop.com/rumors/50-cent-and-tia-kemp-exchange-vicious-insults-after-rick-ross-son-pistol-whipped-madness/",
@@ -1665,6 +1683,14 @@
     "use_count": 5
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
+    "links": [
+      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
+      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
+    ]
+  },
+  {
     "issue": "same_homepage_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
@@ -1689,14 +1715,6 @@
       "https://allhiphop.com/news/exclusive-nicki-minajs-hubby-kenneth-petty-accuser-tell-judge-settlement-is-pointless/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Keke-Wyatt.jpg",
-    "links": [
-      "https://allhiphop.com/news/keke-wyatt-addresses-assault-case-and-denies-reported-child-cruelty-charge/",
-      "https://allhiphop.com/news/details-emerge-in-keke-wyatt-arrest-singer-threatened-to-blow-womans-brains-out/"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -1831,6 +1849,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
+    "links": [
+      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
+      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
     "links": [
@@ -1848,14 +1874,6 @@
       "https://allhiphop.com/news/colin-kaepernick-calls-out-nfl-hypocrisy-amid-jay-z-partnership/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
-      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -1968,6 +1986,14 @@
     "use_count": 7
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
+    "links": [
+      "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
+      "https://allhiphop.com/news/ciara-russell-wilson-announce-baby-cinco/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-03-at-10.37.29-PM.png",
     "links": [
@@ -2023,14 +2049,6 @@
     "links": [
       "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
       "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
-    "links": [
-      "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
-      "https://theshaderoom.com/raven-symone-kalen-allen-miranda-maday-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness/"
     ]
   },
   {
@@ -2108,7 +2126,7 @@
     "use_count": 5
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
     "links": [
       "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
@@ -2138,14 +2156,6 @@
       "https://allhiphop.com/news/keffe-d-refuses-plea-deal-days-before-trial-begins/"
     ],
     "use_count": 7
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
-      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -2218,11 +2228,11 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "issue": "same_category_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
     "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
+      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
+      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
     ]
   },
   {
