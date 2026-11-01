@@ -1,9 +1,5 @@
 [
   {
-    "link": "https://sports.yahoo.com/nfl/breaking-news/article/cardinals-rookie-rb-jeremeyah-love-leaves-vs-cowboys-with-injury-to-same-ankle-that-sidelined-him-in-preseason-190811145.html",
-    "issue": "missing_thumbnail"
-  },
-  {
     "link": "https://sports.yahoo.com/articles/ufc-champion-expects-quillan-salkilld-193026053.html",
     "issue": "missing_thumbnail"
   },
@@ -277,6 +273,29 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Cardi-B.jpg",
+    "links": [
+      "https://allhiphop.com/news/cardi-b-urges-parents-to-teach-kindness-after-javits-frimpong-killing/",
+      "https://allhiphop.com/news/cardi-b-blames-unfinished-arrangements-for-jamaica-show-cancellation/",
+      "https://allhiphop.com/news/angry-senior-citizen-gets-disorderly-conduct-summons-at-cardi-b-video-shoot/",
+      "https://allhiphop.com/news/cardi-b-turns-herself-into-overweight-meme-to-promote-new-song-ah-ha/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Macklemore-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/macklemore-defends-speaking-on-gaza-at-london-free-palestine-tour-finale/",
+      "https://allhiphop.com/news/macklemore-faces-backlash-over-palestine-tour-beneficiarys-october-7-remarks/",
+      "https://allhiphop.com/news/macklemore-sticks-it-to-zionist-robert-kraft-with-free-palestine-tour/",
+      "https://allhiphop.com/news/macklemore-gets-gaza-mural-after-ed-sheeran-tour-removal/",
+      "https://allhiphop.com/news/pro-palestinian-dearborn-mayor-offers-macklemore-free-concert-funded-by-city-following-ed-sheeran-tour-fiasco/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/03/Cordae.png",
     "links": [
       "https://allhiphop.com/news/cordae-anderson-paak-land-top-10-hits-debut-with-heavy-is-the-crown/",
@@ -351,6 +370,14 @@
       "https://allhiphop.com/news/t-i-tiny-harris-reaffirm-their-marriage-at-private-ocho-rios-villa/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -1244,18 +1271,15 @@
     "use_count": 4
   },
   {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Macklemore-1.jpg",
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
     "links": [
-      "https://allhiphop.com/news/macklemore-faces-backlash-over-palestine-tour-beneficiarys-october-7-remarks/",
-      "https://allhiphop.com/news/macklemore-sticks-it-to-zionist-robert-kraft-with-free-palestine-tour/",
-      "https://allhiphop.com/news/macklemore-gets-gaza-mural-after-ed-sheeran-tour-removal/",
-      "https://allhiphop.com/news/pro-palestinian-dearborn-mayor-offers-macklemore-free-concert-funded-by-city-following-ed-sheeran-tour-fiasco/"
-    ],
-    "use_count": 4
+      "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
+      "https://hollywoodunlocked.com/donald-trump-nobody-appreciates-how-great-a-president-i-am/"
+    ]
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
     "links": [
       "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
@@ -1468,6 +1492,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
+      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/01/don-toliver.jpg",
     "links": [
@@ -1545,16 +1577,6 @@
       "https://allhiphop.com/news/druski-takes-gopuff-equity-puts-coulda-been-records-in-the-deal/",
       "https://allhiphop.com/ahhplus/druski-and-ali-g-link-up-sparks-backlash-before-brooklyn-old-heads-auditions/",
       "https://allhiphop.com/news/alaska-gets-the-druski-treatment-coulda-been-records-auditions-roast-crime-stats-talent/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Cardi-B.jpg",
-    "links": [
-      "https://allhiphop.com/news/cardi-b-blames-unfinished-arrangements-for-jamaica-show-cancellation/",
-      "https://allhiphop.com/news/angry-senior-citizen-gets-disorderly-conduct-summons-at-cardi-b-video-shoot/",
-      "https://allhiphop.com/news/cardi-b-turns-herself-into-overweight-meme-to-promote-new-song-ah-ha/"
     ],
     "use_count": 3
   },
@@ -1849,14 +1871,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
-    "links": [
-      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
-      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
     "links": [
@@ -1994,6 +2008,14 @@
     "use_count": 7
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
+    "links": [
+      "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
+      "https://allhiphop.com/news/ciara-russell-wilson-announce-baby-cinco/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-03-at-10.37.29-PM.png",
     "links": [
@@ -2026,14 +2048,6 @@
       "https://allhiphop.com/rumors/is-chrisean-rock-in-serious-legal-trouble-internet-goes-crazy-over-ronnie-doe-investigation/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
-    "links": [
-      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
-      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
-    ]
   },
   {
     "issue": "same_homepage_page",
@@ -2245,6 +2259,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
+      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
