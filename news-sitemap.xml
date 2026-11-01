@@ -2,6 +2,116 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://unoent.com/articles/canelo-reclaims-gold-but-questions-remain-about-his-future/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>UNO Entertainment</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-01T01:21:24Z</news:publication_date>
+      <news:title>Canelo reclaims gold, but questions remain about his future</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://unoent.com/articles/yg-confronts-himself/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>UNO Entertainment</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-01T01:00:24Z</news:publication_date>
+      <news:title>YG Confronts Himself</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://unoent.com/articles/tyrese-maxey-scores-38-jaylen-brown-returns-to-76ers-lineup-for-109-10/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>UNO Entertainment</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-01T00:47:17Z</news:publication_date>
+      <news:title>Tyrese Maxey scores 38, Jaylen Brown returns to 76ers&#x27; lineup for 109-104 win over Hornets</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://unoent.com/articles/ufc-vegas-123-video-jean-paul-lebosnoyani-mutilates-farman-hasanov-s-f/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>UNO Entertainment</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-01T00:46:10Z</news:publication_date>
+      <news:title>UFC Vegas 123 video: Jean-Paul Lebosnoyani mutilates Farman Hasanov&#x27;s face for TKO</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://unoent.com/articles/doors-guitarist-robby-krieger-s-wife-lynn-dead-at-79/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>UNO Entertainment</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-01T00:24:00Z</news:publication_date>
+      <news:title>Doors Guitarist Robby Krieger&#x27;s Wife Lynn Dead at 79</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://unoent.com/articles/tamica-small-builds-coalition-of-national-leaders-labor-and-local-supp/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>UNO Entertainment</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-01T00:03:04Z</news:publication_date>
+      <news:title>Tamica Small Builds Coalition of National Leaders, Labor and Local Support in Stockton City Council Race</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://unoent.com/articles/timbaland-sues-ex-managers-for-15-million-after-foreclosure-scare/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>UNO Entertainment</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-01T00:00:00Z</news:publication_date>
+      <news:title>Timbaland Sues Ex-Managers For $15 Million After Foreclosure Scare</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://unoent.com/articles/an-unreleased-air-jordan-4-dark-mocha-sample-has-surfaced/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>UNO Entertainment</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T23:51:33Z</news:publication_date>
+      <news:title>An Unreleased Air Jordan 4 “Dark Mocha” Sample Has Surfaced</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://unoent.com/articles/joe-budden-plays-big-switty-in-law-order-murder-plot/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>UNO Entertainment</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T23:00:00Z</news:publication_date>
+      <news:title>Joe Budden Plays Big Switty In “Law &amp; Order” Murder Plot</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://unoent.com/articles/mc-lyte-lands-halftime-slot-for-wnba-finals-first-game-7/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>UNO Entertainment</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T22:30:00Z</news:publication_date>
+      <news:title>MC Lyte Lands Halftime Slot For WNBA Finals’ First Game 7</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://unoent.com/articles/2026-midterms-seven-battlegrounds-could-decide-who-controls-congress-a/</loc>
     <news:news>
       <news:publication>
@@ -802,6 +912,17 @@
       </news:publication>
       <news:publication_date>2026-10-31T15:30:23Z</news:publication_date>
       <news:title>Latto Has Fans Questioning Their Productivity After Showing How She Juggles Motherhood &amp; Tour Life (VIDEO)</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://unoent.com/articles/a-new-era-of-luxury-2-chainz-on-health-ownership-and-legacy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>UNO Entertainment</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T15:20:00Z</news:publication_date>
+      <news:title>A New Era of Luxury: 2 Chainz on Health, Ownership, and Legacy</news:title>
     </news:news>
   </url>
   <url>
@@ -3651,281 +3772,6 @@
       </news:publication>
       <news:publication_date>2026-10-30T01:51:45Z</news:publication_date>
       <news:title>Banner Up at the Garden, New Blood in Brooklyn: Your New York Game Night Guide</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/colts-reportedly-have-no-intention-of-trading-breakout-young-defensive/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-30T01:01:44Z</news:publication_date>
-      <news:title>Colts reportedly have no intention of trading breakout young defensive tackle</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/ray-j-whitney-houston-s-relationship-was-never-that-simple/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-30T01:01:11Z</news:publication_date>
-      <news:title>Ray J &amp; Whitney Houston’s Relationship Was Never That Simple</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/kirk-franklin-defends-glorilla-against-gospel-critics-haters/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-30T01:00:46Z</news:publication_date>
-      <news:title>Kirk Franklin Defends GloRilla Against Gospel Critics &amp; Haters</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/chuba-hubbard-gives-panthers-10-6-lead/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-30T00:58:23Z</news:publication_date>
-      <news:title>Chuba Hubbard gives Panthers 10-6 lead</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/sir-ian-mckellen-mourns-the-loss-of-sir-patrick-stewart/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-30T00:55:47Z</news:publication_date>
-      <news:title>Sir Ian McKellen Mourns the Loss of Sir Patrick Stewart</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/packers-roster-which-kickers-could-replace-trey-smack/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-30T00:52:19Z</news:publication_date>
-      <news:title>Packers Roster: Which kickers could replace Trey Smack?</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/tupac-murder-convict-keffe-d-transferred-to-maximum-security-prison/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-30T00:51:24Z</news:publication_date>
-      <news:title>Tupac Murder Convict Keffe D Transferred to Maximum-Security Prison</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/ceedee-lamb-on-cardinals-dominance-over-cowboys-it-s-crazy/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-30T00:48:44Z</news:publication_date>
-      <news:title>CeeDee Lamb on Cardinals&#x27; dominance over Cowboys: It&#x27;s crazy</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/bravo-greenlights-next-gen-atlanta-reality-series/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-30T00:45:28Z</news:publication_date>
-      <news:title>Bravo Greenlights “Next Gen Atlanta” Reality Series</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/john-legend-addresses-super-bowl-speculation-after-jay-z-reunion/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-30T00:40:00Z</news:publication_date>
-      <news:title>John Legend Addresses Super Bowl Speculation After Jay-Z Reunion</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/yella-beezy-s-friend-refuses-to-testify-in-rapper-s-murder-trial/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-30T00:20:44Z</news:publication_date>
-      <news:title>Yella Beezy&#x27;s Friend Refuses to Testify in Rapper&#x27;s Murder Trial</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/ohio-state-gets-its-own-nike-foamposite/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-30T00:02:40Z</news:publication_date>
-      <news:title>Ohio State Gets Its Own Nike Foamposite</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/halle-berry-s-ex-olivier-martinez-keeps-primary-custody-of-their-son/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-30T00:02:00Z</news:publication_date>
-      <news:title>Halle Berry’s Ex Olivier Martinez Keeps Primary Custody Of Their Son</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/post-malone-previews-bad-mood/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-29T23:45:24Z</news:publication_date>
-      <news:title>Post Malone Previews “Bad Mood”</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/maino-s-rick-ross-halloween-costume-is-all-about-heavy-marinara/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-29T23:45:05Z</news:publication_date>
-      <news:title>Maino’s Rick Ross Halloween Costume Is All About “Heavy Marinara”</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/faith-evans-company-faces-nearly-14m-payout-in-biggie-estate-battle/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-29T23:30:00Z</news:publication_date>
-      <news:title>Faith Evans’ Company Faces Nearly $14M Payout In Biggie Estate Battle</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/atlanta-dream-forces-first-ever-game-7-in-wnba-finals-history-angel-re/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-29T23:25:52Z</news:publication_date>
-      <news:title>Atlanta Dream Forces First-EVER Game 7 In WNBA Finals History &amp; Angel Reese Needs Her Flowers</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/hey-young-t-the-ladies-are-calling-todd-tucker-fione-after-he-shares-a/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-29T23:23:23Z</news:publication_date>
-      <news:title>Hey, Young T! The Ladies Are Calling Todd Tucker FIONE After He Shares A Photo Of His Younger Self</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/skip-bayless-isn-t-giving-up-on-his-lil-wayne-super-bowl-dreams/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-29T23:16:56Z</news:publication_date>
-      <news:title>Skip Bayless Isn’t Giving Up On His Lil Wayne Super Bowl Dreams</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/star-trek-star-paul-wesley-says-patrick-stewart-was-iconic-tv-hero/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-29T23:07:43Z</news:publication_date>
-      <news:title>&#x27;Star Trek&#x27; Star Paul Wesley Says Patrick Stewart Was Iconic TV Hero</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/tyler-perry-wants-private-texts-kept-secret-in-sexual-assault-case/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-29T23:01:00Z</news:publication_date>
-      <news:title>Tyler Perry Wants Private Texts Kept Secret In Sexual Assault Case</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/too-hort-explains-how-cash-demand-from-the-pack-s-friends-led-to-signi/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-29T23:00:40Z</news:publication_date>
-      <news:title>Too $hort Explains How Cash Demand From The Pack’s Friends Led To Signing</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/patrick-stewart-beloved-star-trek-and-x-men-actor-dies-at-86/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-29T22:51:40Z</news:publication_date>
-      <news:title>Patrick Stewart, Beloved ‘Star Trek’ And ‘X-Men’ Actor, Dies At 86</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/megan-thee-stallion-puts-tina-snow-in-diamonds/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-29T22:45:08Z</news:publication_date>
-      <news:title>Megan Thee Stallion Puts Tina Snow In Diamonds</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://unoent.com/articles/patrick-stewart-regretted-putting-hollywood-career-before-his-two-chil/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>UNO Entertainment</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-29T22:39:41Z</news:publication_date>
-      <news:title>Patrick Stewart Regretted Putting Hollywood Career Before His Two Children</news:title>
     </news:news>
   </url>
 </urlset>
