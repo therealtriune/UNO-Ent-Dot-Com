@@ -1,9 +1,5 @@
 [
   {
-    "link": "https://sports.yahoo.com/nba/breaking-news/article/nba-suspends-hawks-rookie-kingston-flemings-for-intentionally-elbowing-pelicans-bryce-mcgowens-015705861.html",
-    "issue": "missing_thumbnail"
-  },
-  {
     "link": "https://sports.yahoo.com/articles/ufc-champion-expects-quillan-salkilld-193026053.html",
     "issue": "missing_thumbnail"
   },
@@ -277,6 +273,37 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Nicki-Minaj-6.png",
+    "links": [
+      "https://allhiphop.com/news/nicki-minaj-defends-white-people-accuses-abdul-el-sayed-of-jealousy/",
+      "https://allhiphop.com/news/nicki-minaj-promises-fans-cash-for-watch-party-fashion-contest/",
+      "https://allhiphop.com/news/nicki-minaj-rants-about-persecuted-nigerians-at-elon-musks-x-takeover-in-texas/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/BLUEFACE-4K-.jpg",
+    "links": [
+      "https://allhiphop.com/news/blueface-says-ddg-helped-him-make-1-million-in-90-days/",
+      "https://allhiphop.com/rumors/bluefaces-alleged-fourth-baby-mama-breaks-down-in-tears/",
+      "https://allhiphop.com/rumors/blueface-stays-over-with-chrisean-rock-pregnant-nevaeh-akira-gets-mad/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/02/Wu-Tang-Clan.jpg",
+    "links": [
+      "https://allhiphop.com/news/eminem-taps-wu-tang-clan-to-headline-lions-thanksgiving-show/",
+      "https://allhiphop.com/news/wu-tang-director-reveals-nas-odb-cher-playlist-picks/",
+      "https://allhiphop.com/news/wu-tang-clans-secret-album-saga-gets-new-netflix-trailer/",
+      "https://allhiphop.com/news/wu-tang-clans-secret-album-gets-netflix-documentary-treatment/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Jermaine-Dupri.jpg",
     "links": [
       "https://allhiphop.com/news/jermaine-dupri-demands-spotify-pay-artists-for-ai-remixes-cut-us-in/",
@@ -384,14 +411,6 @@
       "https://allhiphop.com/news/t-i-tiny-harris-reaffirm-their-marriage-at-private-ocho-rios-villa/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -1173,16 +1192,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/02/Wu-Tang-Clan.jpg",
-    "links": [
-      "https://allhiphop.com/news/wu-tang-director-reveals-nas-odb-cher-playlist-picks/",
-      "https://allhiphop.com/news/wu-tang-clans-secret-album-saga-gets-new-netflix-trailer/",
-      "https://allhiphop.com/news/wu-tang-clans-secret-album-gets-netflix-documentary-treatment/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/10/Kash.jpg",
     "links": [
       "https://allhiphop.com/news/kashs-mother-alleges-death-threats/",
@@ -1652,6 +1661,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
+    "links": [
+      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
+      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png",
     "links": [
@@ -1717,6 +1734,14 @@
       "https://www.hotnewhiphop.com/1011684-habibti-fomo-drake"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
+    "links": [
+      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
+      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
+    ]
   },
   {
     "issue": "same_homepage_page",
@@ -1859,14 +1884,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://imagez.tmz.com/image/21/16by9/2026/09/19/214d022ee08d41ecb2f888e15c6e424e_xl.jpg",
-    "links": [
-      "https://www.tmz.com/2026/09/19/dozens-of-tickets-still-available-for-ed-sheerans-saturday-concert/",
-      "https://www.tmz.com/2026/09/19/ed-sheerans-philadelphia-concert-has-hundreds-of-tickets-left/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://imagez.tmz.com/image/26/16by9/2026/08/13/2646c76b67074739a31788b6927b9dcf_xl.jpg",
     "links": [
@@ -1877,7 +1894,7 @@
     "use_count": 3
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
     "links": [
       "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
@@ -1894,14 +1911,6 @@
       "https://allhiphop.com/news/colin-kaepernick-calls-out-nfl-hypocrisy-amid-jay-z-partnership/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
-      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -2072,14 +2081,6 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
-    "links": [
-      "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
-      "https://theshaderoom.com/raven-symone-kalen-allen-miranda-maday-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
     "links": [
@@ -2154,14 +2155,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
-    "links": [
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
     "links": [
@@ -2192,14 +2185,6 @@
       "https://allhiphop.com/news/keffe-d-refuses-plea-deal-days-before-trial-begins/"
     ],
     "use_count": 7
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
-      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -2277,14 +2262,6 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   }
 ]
