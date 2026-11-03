@@ -648,8 +648,8 @@ main { padding: 32px 5vw 80px; }
 .home-heading { font-size: 28px; font-weight: 800; margin: 0 0 22px; color: var(--text); letter-spacing: -0.3px; }
 main.article-page { padding: 32px 5vw 80px; }
 main.feature-page { padding: 0 5vw 80px; }
-.listing-main .article-wrap { max-width: 720px; margin: 0; padding: 8px 0 40px; }
-.listing-main .feature-wrap { max-width: 720px; margin: 0; padding: 40px 0 40px; }
+.listing-main .article-wrap { max-width: 720px; margin: 0 auto; padding: 8px 0 40px; }
+.listing-main .feature-wrap { max-width: 720px; margin: 0 auto; padding: 40px 0 40px; }
 .article-recirc { margin: 36px 0 8px; padding-top: 28px; border-top: 1px solid var(--border); }
 .recirc-heading { font-size: 13px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--text); margin: 0 0 14px; }
 .recirc-related { display: flex; flex-direction: column; gap: 10px; }
@@ -1929,7 +1929,6 @@ def build_page(page_num: int, total_pages: int):
     canonical = SITE_URL + page_href(page_num)
     description = SITE_DESCRIPTION if page_num == 1 else f"{SITE_DESCRIPTION} (Page {page_num})"
     robots = "noindex,follow" if page_num > 1 else None
-    heading = "The Culture's Feed" if page_num == 1 else f"The Culture's Feed — Page {page_num}"
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1948,7 +1947,6 @@ def build_page(page_num: int, total_pages: int):
 <main>
   <div class="listing-layout">
     <div class="listing-main">
-      <h1 class="home-heading">{heading}</h1>
       <div class="grid">
         {cards}
       </div>
