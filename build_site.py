@@ -1939,7 +1939,7 @@ def build_page(page_num: int, total_pages: int):
 <title>{title}</title>
 {meta_html(prefix, title, description, canonical, robots=robots)}
 {website_jsonld() if page_num == 1 else ""}
-<link rel="stylesheet" href="{prefix}style.css">
+<link rel="stylesheet" href="{prefix}style.css?v={CSS_VERSION}">
 </head>
 <body>
 {GTM_BODY_SNIPPET}
@@ -2048,7 +2048,7 @@ def build_category(cat_key: str, cat_label: str):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{escape(title)}</title>
 {meta_html(prefix, title, description, canonical, robots=robots)}
-<link rel="stylesheet" href="{prefix}style.css">
+<link rel="stylesheet" href="{prefix}style.css?v={CSS_VERSION}">
 </head>
 <body>
 {GTM_BODY_SNIPPET}
@@ -2150,7 +2150,7 @@ def build_topic(slug: str, name: str):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{escape(title)}</title>
 {meta_html(prefix, title, description, canonical, robots=robots)}
-<link rel="stylesheet" href="{prefix}style.css">
+<link rel="stylesheet" href="{prefix}style.css?v={CSS_VERSION}">
 </head>
 <body>
 {GTM_BODY_SNIPPET}
@@ -2209,7 +2209,7 @@ def build_topics_index(live_topics: list) -> None:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
 {meta_html(prefix, title, description, canonical)}
-<link rel="stylesheet" href="{prefix}style.css">
+<link rel="stylesheet" href="{prefix}style.css?v={CSS_VERSION}">
 </head>
 <body>
 {GTM_BODY_SNIPPET}
@@ -2535,7 +2535,7 @@ def build_article(a: dict):
 <title>{escape(title)}</title>
 {meta_html(prefix, title, description, canonical, image_url=thumb, og_type="article", published_time=pub_time or None)}
 {article_jsonld(a, canonical, description)}
-<link rel="stylesheet" href="{prefix}style.css">
+<link rel="stylesheet" href="{prefix}style.css?v={CSS_VERSION}">
 </head>
 <body>
 {GTM_BODY_SNIPPET}
@@ -2886,7 +2886,7 @@ def build_search_page():
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
 {meta_html(prefix, title, description, canonical, robots="noindex,follow")}
-<link rel="stylesheet" href="{prefix}style.css">
+<link rel="stylesheet" href="{prefix}style.css?v={CSS_VERSION}">
 </head>
 <body>
 {GTM_BODY_SNIPPET}
@@ -2934,7 +2934,7 @@ def build_about_page():
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{full_title}</title>
 {meta_html(prefix, full_title, description, canonical)}
-<link rel="stylesheet" href="{prefix}style.css">
+<link rel="stylesheet" href="{prefix}style.css?v={CSS_VERSION}">
 </head>
 <body>
 {GTM_BODY_SNIPPET}
@@ -2971,7 +2971,7 @@ def build_legal_page(slug: str, title: str, body_html: str):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{full_title}</title>
 {meta_html(prefix, full_title, description, canonical)}
-<link rel="stylesheet" href="{prefix}style.css">
+<link rel="stylesheet" href="{prefix}style.css?v={CSS_VERSION}">
 </head>
 <body>
 {GTM_BODY_SNIPPET}
@@ -3015,7 +3015,7 @@ def build_contact_page():
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{full_title}</title>
 {meta_html(prefix, full_title, description, canonical)}
-<link rel="stylesheet" href="{prefix}style.css">
+<link rel="stylesheet" href="{prefix}style.css?v={CSS_VERSION}">
 </head>
 <body>
 {GTM_BODY_SNIPPET}
@@ -3050,7 +3050,7 @@ def build_404_page():
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
 {meta_html(prefix, title, description, canonical, robots="noindex,follow")}
-<link rel="stylesheet" href="{prefix}style.css">
+<link rel="stylesheet" href="{prefix}style.css?v={CSS_VERSION}">
 </head>
 <body>
 {GTM_BODY_SNIPPET}
@@ -3245,6 +3245,10 @@ def build_sitemap(live_topics: list):
     with open("sitemap.xml", "w") as f:
         f.write(xml)
     return len(urls)
+
+
+import hashlib as _hashlib
+CSS_VERSION = _hashlib.md5(STYLE_CSS.encode()).hexdigest()[:8]
 
 
 def main():
