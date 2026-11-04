@@ -275,6 +275,8 @@
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/cropped-AllHipHop-2.jpg",
     "links": [
+      "https://allhiphop.com/music-news/1-rapper-that-should-have-blown-up-by-now/",
+      "https://allhiphop.com/news/jamie-foxx-third-child-alyce-huckstepp/",
       "https://allhiphop.com/news/blac-chyna-california-tax-lien-2024/",
       "https://allhiphop.com/news/nicki-minaj-new-hampshire-polling-place-election-day/",
       "https://allhiphop.com/news/create-music-group-buys-a-minority-stake-in-distrokid/",
@@ -312,7 +314,18 @@
       "https://allhiphop.com/news/bad-bunny-stuck-with-465k-bill-after-copyright-lawsuit-dismissed/",
       "https://allhiphop.com/rumors/drake-invites-more-smoke-from-the-opps/"
     ],
-    "use_count": 36
+    "use_count": 38
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Screenshot-2026-10-07-at-7.17.20-PM.png",
+    "links": [
+      "https://www.hotnewhiphop.com/1015597-yella-beezy-dallas-police-testimony",
+      "https://www.hotnewhiphop.com/1015456-yella-beezy-jose-bodega-recant-testimony",
+      "https://www.hotnewhiphop.com/1014577-yella-beezy-jury-selection",
+      "https://www.hotnewhiphop.com/1012364-yella-beezy-theodore-thomas-mo3-trial"
+    ],
+    "use_count": 4
   },
   {
     "issue": "overused_thumbnail",
@@ -333,6 +346,22 @@
       "https://allhiphop.com/news/nicki-minaj-praises-trumps-work-ethic-aboard-air-force-one/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1661.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/first-muslim-elected-to-us-senate-abdul-el-sayed-had-a-message-for-trump-and-vance-over-their-name-mockery-call-me-senator/",
+      "https://hollywoodunlocked.com/first-muslim-elected-to-us-senate-abdul-el-sayed-had-a-message-for-donald-trump-and-jd-vance-over-their-name-mockery-call-me-senator/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1661.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/first-muslim-elected-to-us-senate-abdul-el-sayed-had-a-message-for-trump-and-vance-over-their-name-mockery-call-me-senator/",
+      "https://hollywoodunlocked.com/first-muslim-elected-to-us-senate-abdul-el-sayed-had-a-message-for-donald-trump-and-jd-vance-over-their-name-mockery-call-me-senator/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -417,16 +446,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Screenshot-2026-10-07-at-7.17.20-PM.png",
-    "links": [
-      "https://www.hotnewhiphop.com/1015456-yella-beezy-jose-bodega-recant-testimony",
-      "https://www.hotnewhiphop.com/1014577-yella-beezy-jury-selection",
-      "https://www.hotnewhiphop.com/1012364-yella-beezy-theodore-thomas-mo3-trial"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Yella-Beezy.jpg",
     "links": [
       "https://allhiphop.com/news/yella-beezy-trial-examines-limits-of-100-bill-tracking/",
@@ -477,14 +496,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1469.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/",
-      "https://hollywoodunlocked.com/donald-trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Nicki-Minaj-6.png",
     "links": [
@@ -506,6 +517,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1432.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/",
+      "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-nicki-minajs-donald-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1432.jpeg",
     "links": [
       "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/",
@@ -621,22 +640,6 @@
       "https://allhiphop.com/news/t-i-tiny-harris-reaffirm-their-marriage-at-private-ocho-rios-villa/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -915,14 +918,6 @@
       "https://www.hotnewhiphop.com/1013358-pooh-shiesty-jail-cell-23-hours-day"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Just-Doin-Me.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1014701-spinnin-21-savage-young-nudy",
-      "https://www.hotnewhiphop.com/1014698-just-doin-me-young-nudy"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -1744,6 +1739,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
+    "links": [
+      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
+      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png",
     "links": [
@@ -1809,6 +1812,14 @@
       "https://www.hotnewhiphop.com/1011684-habibti-fomo-drake"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
+    "links": [
+      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
+      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
+    ]
   },
   {
     "issue": "same_homepage_page",
@@ -1969,6 +1980,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
+    "links": [
+      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
+      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
     "links": [
@@ -1986,14 +2005,6 @@
       "https://allhiphop.com/news/colin-kaepernick-calls-out-nfl-hypocrisy-amid-jay-z-partnership/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
-      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -2164,14 +2175,6 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
-    "links": [
-      "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
-      "https://theshaderoom.com/raven-symone-kalen-allen-miranda-maday-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
     "links": [
@@ -2246,14 +2249,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
-    "links": [
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
     "links": [
@@ -2286,14 +2281,6 @@
     "use_count": 7
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
-      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
     "links": [
@@ -2312,14 +2299,6 @@
       "https://allhiphop.com/news/sidney-starr-faces-life-in-prison-after-child-molestation-arrest/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/101863a2720f8285bdc25dfd62c8f4af70b53c6e23fd69db37b73cf1c1706cd8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F51d423e8-e724-4b22-9b64-a777be34d751",
-    "links": [
-      "https://sports.yahoo.com/nfl/article/nfl-preseason-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html",
-      "https://sports.yahoo.com/nfl/article/nfl-preseason-week-2-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -2369,14 +2348,6 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
