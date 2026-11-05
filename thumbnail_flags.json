@@ -273,28 +273,9 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Diddy-1.jpg",
-    "links": [
-      "https://allhiphop.com/news/anthony-constantino-trump-free-diddy-ny21-win/",
-      "https://allhiphop.com/news/diddys-federal-release-date-changes-for-eighth-time/",
-      "https://allhiphop.com/news/keefe-d-clears-diddy-of-tupac-murder-before-trial-despite-1m-claim/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/06/50-Cent.jpg",
-    "links": [
-      "https://allhiphop.com/news/50-cent-targets-tia-kemps-backup-accounts-as-their-internet-war-continues/",
-      "https://allhiphop.com/news/50-cent-sues-rick-ross-ex-tia-kemp-for-6m-over-posts-about-sire-jackson/",
-      "https://allhiphop.com/news/50-cent-wins-street-fighter-co-stars-praise-for-being-cool-on-set/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/cropped-AllHipHop-2.jpg",
     "links": [
+      "https://allhiphop.com/news/youtube-expands-ai-music-replacement/",
       "https://allhiphop.com/music-news/1-rapper-that-should-have-blown-up-by-now/",
       "https://allhiphop.com/news/jamie-foxx-third-child-alyce-huckstepp/",
       "https://allhiphop.com/news/blac-chyna-california-tax-lien-2024/",
@@ -334,7 +315,27 @@
       "https://allhiphop.com/news/bad-bunny-stuck-with-465k-bill-after-copyright-lawsuit-dismissed/",
       "https://allhiphop.com/rumors/drake-invites-more-smoke-from-the-opps/"
     ],
-    "use_count": 38
+    "use_count": 39
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Diddy-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/anthony-constantino-trump-free-diddy-ny21-win/",
+      "https://allhiphop.com/news/diddys-federal-release-date-changes-for-eighth-time/",
+      "https://allhiphop.com/news/keefe-d-clears-diddy-of-tupac-murder-before-trial-despite-1m-claim/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/06/50-Cent.jpg",
+    "links": [
+      "https://allhiphop.com/news/50-cent-targets-tia-kemps-backup-accounts-as-their-internet-war-continues/",
+      "https://allhiphop.com/news/50-cent-sues-rick-ross-ex-tia-kemp-for-6m-over-posts-about-sire-jackson/",
+      "https://allhiphop.com/news/50-cent-wins-street-fighter-co-stars-praise-for-being-cool-on-set/"
+    ],
+    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
@@ -545,14 +546,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1432.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/",
-      "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-nicki-minajs-donald-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1432.jpeg",
     "links": [
       "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/",
@@ -1107,6 +1100,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-donald-trump-brutally-raped-her-in-1993-he-denies-it/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
     "links": [
       "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
@@ -1884,14 +1885,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Keke-Wyatt.jpg",
-    "links": [
-      "https://allhiphop.com/news/keke-wyatt-addresses-assault-case-and-denies-reported-child-cruelty-charge/",
-      "https://allhiphop.com/news/details-emerge-in-keke-wyatt-arrest-singer-threatened-to-blow-womans-brains-out/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Kendrick-Lamar.jpg",
     "links": [
@@ -2195,7 +2188,23 @@
     "use_count": 5
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
+    "links": [
+      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
+      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
+    ]
+  },
+  {
     "issue": "same_homepage_page",
+    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
+    "links": [
+      "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
+      "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
       "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
@@ -2370,6 +2379,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
+    "links": [
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
     "links": [
       "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
