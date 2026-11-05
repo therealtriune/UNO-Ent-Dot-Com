@@ -273,8 +273,20 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Nicki-Minaj-2.webp",
+    "links": [
+      "https://allhiphop.com/news/nicki-minaj-process-server-three-failed-visits/",
+      "https://allhiphop.com/news/carol-maraj-audrey-jackson-bring-domestic-violence-talk-to-canarsie/",
+      "https://allhiphop.com/news/nicki-minaj-promises-no-political-lectures-during-future-tour-unlike-macklemore/",
+      "https://allhiphop.com/news/nicki-minaj-honors-9-11-heroes-while-maga-targets-aoc-and-zohran-mamdani/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/cropped-AllHipHop-2.jpg",
     "links": [
+      "https://allhiphop.com/news/aka-murder-trial-adjourned-april-2027-defendants-custody/",
       "https://allhiphop.com/news/youtube-expands-ai-music-replacement/",
       "https://allhiphop.com/music-news/1-rapper-that-should-have-blown-up-by-now/",
       "https://allhiphop.com/news/jamie-foxx-third-child-alyce-huckstepp/",
@@ -315,7 +327,38 @@
       "https://allhiphop.com/news/bad-bunny-stuck-with-465k-bill-after-copyright-lawsuit-dismissed/",
       "https://allhiphop.com/rumors/drake-invites-more-smoke-from-the-opps/"
     ],
-    "use_count": 39
+    "use_count": 40
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/04/Kanye-West-5.png",
+    "links": [
+      "https://allhiphop.com/news/ye-four-children-yeezy-season-01-runway-show/",
+      "https://allhiphop.com/news/kanye-west-draws-30000-foreign-visitors-jakarta-governor-says/",
+      "https://allhiphop.com/news/ye-blames-milo-yiannopoulos-deportation-russian-concerts-for-23m-trial-delay-request/",
+      "https://allhiphop.com/news/kremlin-addresses-putin-meeting-with-kanye-west-in-russia/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/10/Copy-of-AllHipHop-64.jpg",
+    "links": [
+      "https://allhiphop.com/news/50-cent-tia-kemp-backup-to-backup-page-suspended/",
+      "https://allhiphop.com/rumors/tia-kemp-tells-50-cent-you-cant-bully-me-after-legal-filing/",
+      "https://allhiphop.com/rumors/50-cent-may-have-finally-met-his-match-in-tia-kemp/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/yung-miami.webp",
+    "links": [
+      "https://www.hotnewhiphop.com/1015724-yung-miami-outrage-diddy-birthday",
+      "https://www.hotnewhiphop.com/1014481-yung-miami-lore-l-radio-confrontation",
+      "https://www.hotnewhiphop.com/1014121-yung-miami-dear-jt-new-song-roasted"
+    ],
+    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
@@ -509,14 +552,6 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1469.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/",
-      "https://hollywoodunlocked.com/donald-trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1469.jpeg",
     "links": [
@@ -546,6 +581,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1432.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/",
+      "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-nicki-minajs-donald-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1432.jpeg",
     "links": [
       "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/",
@@ -663,14 +706,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
     "links": [
@@ -729,16 +764,6 @@
       "https://allhiphop.com/news/latto-sets-first-africa-show-in-lagos-on-her-birthday/",
       "https://allhiphop.com/rumors/lattos-bbl-has-the-internet-a-talking-but-why-was-the-video-deleted/",
       "https://allhiphop.com/news/latto-celebrates-angel-reese-win-at-arena-that-moved-her-show/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Nicki-Minaj-2.webp",
-    "links": [
-      "https://allhiphop.com/news/carol-maraj-audrey-jackson-bring-domestic-violence-talk-to-canarsie/",
-      "https://allhiphop.com/news/nicki-minaj-promises-no-political-lectures-during-future-tour-unlike-macklemore/",
-      "https://allhiphop.com/news/nicki-minaj-honors-9-11-heroes-while-maga-targets-aoc-and-zohran-mamdani/"
     ],
     "use_count": 3
   },
@@ -1170,16 +1195,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/04/Kanye-West-5.png",
-    "links": [
-      "https://allhiphop.com/news/kanye-west-draws-30000-foreign-visitors-jakarta-governor-says/",
-      "https://allhiphop.com/news/ye-blames-milo-yiannopoulos-deportation-russian-concerts-for-23m-trial-delay-request/",
-      "https://allhiphop.com/news/kremlin-addresses-putin-meeting-with-kanye-west-in-russia/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/09/50-Cent-5.png",
     "links": [
       "https://allhiphop.com/news/50-cent-files-for-restraining-order-against-tia-kemp-over-attacks-on-son-sire/",
@@ -1425,14 +1440,6 @@
       "https://allhiphop.com/news/rick-ross-challenges-50-cents-sales-jokes-with-his-own-math/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
-      "https://hollywoodunlocked.com/donald-trump-nobody-appreciates-how-great-a-president-i-am/"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -1851,14 +1858,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
-    "links": [
-      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
-      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
-    ]
-  },
-  {
     "issue": "same_homepage_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
@@ -2017,14 +2016,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
-    "links": [
-      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
-      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Colin-Kaepernick.jpg",
     "links": [
@@ -2100,6 +2091,14 @@
       "https://allhiphop.com/news/charleston-white-arrested-on-battery-charge-ahead-of-florida-comedy-show/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/09/img_6399.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/watch-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/",
+      "https://hollywoodunlocked.com/watch-donald-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -2178,6 +2177,14 @@
       "https://allhiphop.com/rumors/is-chrisean-rock-in-serious-legal-trouble-internet-goes-crazy-over-ronnie-doe-investigation/"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
+    "links": [
+      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
+      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
+    ]
   },
   {
     "issue": "same_homepage_page",
@@ -2405,14 +2412,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
