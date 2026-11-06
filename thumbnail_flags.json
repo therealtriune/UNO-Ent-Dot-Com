@@ -277,6 +277,40 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/03/Kid-Cudi.png",
+    "links": [
+      "https://allhiphop.com/news/kid-cudi-ye-big-brother-yeezy-runway-reunion/",
+      "https://allhiphop.com/news/kid-cudi-to-play-jean-michel-basquiat-in-his-own-film-jean/",
+      "https://allhiphop.com/news/kid-cudi-uses-constitution-against-m-i-a-s-free-speech-lawsuit/",
+      "https://allhiphop.com/news/kid-cudi-set-to-melt-faces-in-first-lead-role-pathetic-fallacy/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/12/Caresha-Brownlee-aka-Yung-Miami.jpg",
+    "links": [
+      "https://allhiphop.com/news/yung-miami-focused-on-herself-diddy-backlash/",
+      "https://allhiphop.com/news/yung-miami-spend-dat-success-anxiety-watch-dis/",
+      "https://allhiphop.com/rumors/yung-miami-questions-mtv-vmas-after-spend-dat-song-of-summer-snub/",
+      "https://allhiphop.com/rumors/yung-miamis-scam-inspiration-nabbed-by-feds/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/BigXThaPlug.jpg",
+    "links": [
+      "https://allhiphop.com/news/bigxthaplug-country-artists-unity-hip-hop-friendships/",
+      "https://allhiphop.com/news/bigxthaplug-announces-better-over-time-with-unique-album-marketing-strategy/",
+      "https://allhiphop.com/news/bigxthaplug-pleads-guilty-to-firearm-charge-from-august-2025-arrest/",
+      "https://allhiphop.com/news/exclusive-bigxthaplugs-label-says-employees-struck-secret-side-deals-for-rappers-music/",
+      "https://allhiphop.com/news/rapper-bigxthaplug-busted-for-dwi-packing-a-gun-marijuana/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Cardi-B.jpg",
     "links": [
       "https://allhiphop.com/news/mona-love-apologizes-cardi-b-colorism-research-clip/",
@@ -286,16 +320,6 @@
       "https://allhiphop.com/news/cardi-b-turns-herself-into-overweight-meme-to-promote-new-song-ah-ha/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/12/Caresha-Brownlee-aka-Yung-Miami.jpg",
-    "links": [
-      "https://allhiphop.com/news/yung-miami-spend-dat-success-anxiety-watch-dis/",
-      "https://allhiphop.com/rumors/yung-miami-questions-mtv-vmas-after-spend-dat-song-of-summer-snub/",
-      "https://allhiphop.com/rumors/yung-miamis-scam-inspiration-nabbed-by-feds/"
-    ],
-    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
@@ -1418,16 +1442,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/03/Kid-Cudi.png",
-    "links": [
-      "https://allhiphop.com/news/kid-cudi-to-play-jean-michel-basquiat-in-his-own-film-jean/",
-      "https://allhiphop.com/news/kid-cudi-uses-constitution-against-m-i-a-s-free-speech-lawsuit/",
-      "https://allhiphop.com/news/kid-cudi-set-to-melt-faces-in-first-lead-role-pathetic-fallacy/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/06/Lil-Baby-3.png",
     "links": [
       "https://allhiphop.com/news/lil-baby-calls-on-future-young-thug-for-fresh/",
@@ -1791,17 +1805,6 @@
       "https://allhiphop.com/news/exclusive-lawyer-faces-sanctions-for-failing-to-drop-his-own-client-in-fat-joe-legal-war/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/BigXThaPlug.jpg",
-    "links": [
-      "https://allhiphop.com/news/bigxthaplug-announces-better-over-time-with-unique-album-marketing-strategy/",
-      "https://allhiphop.com/news/bigxthaplug-pleads-guilty-to-firearm-charge-from-august-2025-arrest/",
-      "https://allhiphop.com/news/exclusive-bigxthaplugs-label-says-employees-struck-secret-side-deals-for-rappers-music/",
-      "https://allhiphop.com/news/rapper-bigxthaplug-busted-for-dwi-packing-a-gun-marijuana/"
-    ],
-    "use_count": 4
   },
   {
     "issue": "overused_thumbnail",
@@ -2252,6 +2255,14 @@
     "use_count": 5
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
+    "links": [
+      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
+      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
+    ]
+  },
+  {
     "issue": "same_homepage_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
@@ -2391,6 +2402,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
+      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
     "links": [
       "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
