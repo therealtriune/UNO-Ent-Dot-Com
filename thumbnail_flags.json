@@ -360,7 +360,7 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/IMG_7490-scaled-e1792279703726.jpeg",
     "links": [
       "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-go-down-as-mozzys-most-soulfully-raw-extended-play-ep-review/",
@@ -415,6 +415,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1808.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-trump-to-resign-after-midterms-nobody-wants-you/",
+      "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-donald-trump-to-resign-after-midterms-nobody-wants-you/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1808.jpeg",
     "links": [
       "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-trump-to-resign-after-midterms-nobody-wants-you/",
@@ -688,14 +696,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1469.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/",
-      "https://hollywoodunlocked.com/donald-trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Nicki-Minaj-6.png",
     "links": [
@@ -831,7 +831,7 @@
     "use_count": 3
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
     "links": [
       "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
@@ -1115,14 +1115,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Just-Doin-Me.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1014701-spinnin-21-savage-young-nudy",
-      "https://www.hotnewhiphop.com/1014698-just-doin-me-young-nudy"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/Screenshot-2026-07-27-111324-scaled.png",
     "links": [
@@ -1237,6 +1229,14 @@
       "https://allhiphop.com/news/nicki-minaj-to-judge-president-trumps-1-million-small-business-competition/"
     ],
     "use_count": 7
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-donald-trump-brutally-raped-her-in-1993-he-denies-it/"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -1859,22 +1859,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
-      "https://www.hotnewhiphop.com/1011958-lucki-alleged-fight-playboi-carti-entourage"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
-      "https://www.hotnewhiphop.com/1011958-lucki-alleged-fight-playboi-carti-entourage"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png",
     "links": [
@@ -1929,14 +1913,6 @@
     "links": [
       "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
       "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
-    "links": [
-      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
-      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
     ]
   },
   {
@@ -2117,14 +2093,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
-      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/08/Lil-Durk.png",
     "links": [
@@ -2225,14 +2193,6 @@
       "https://www.hotnewhiphop.com/1006379-6ix9ine-king-von-trolling-lil-durk"
     ],
     "use_count": 7
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
-    "links": [
-      "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
-      "https://allhiphop.com/news/ciara-russell-wilson-announce-baby-cinco/"
-    ]
   },
   {
     "issue": "overused_thumbnail",
