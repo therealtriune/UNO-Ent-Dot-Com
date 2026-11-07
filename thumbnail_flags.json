@@ -277,6 +277,27 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/spotify.jpg",
+    "links": [
+      "https://allhiphop.com/news/rbx-appeals-spotify-bot-streaming-lawsuit-dismissal/",
+      "https://allhiphop.com/news/chicago-musicians-call-for-two-day-streaming-boycott-over-ai/",
+      "https://allhiphop.com/news/spotifys-ai-remix-push-gives-indie-artists-two-chances-to-say-no/",
+      "https://allhiphop.com/news/feds-want-ai-streaming-fraudster-who-stole-8m-from-artists-sent-to-prison-for-a-long-time/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/05/Island-Boys.jpg",
+    "links": [
+      "https://allhiphop.com/news/flyysoulja-drug-induced-psychosis-not-overdose/",
+      "https://allhiphop.com/news/flyysoulja-jailed-over-75-45-walgreens-theft-after-overdose/",
+      "https://allhiphop.com/news/flyysouljas-new-condo-car-celebration-ends-with-drug-overdose/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/AllHipHop-34.jpg",
     "links": [
       "https://allhiphop.com/rumors/lil-durk-apple-watch-rumor-leads-fans-to-body-cavity-search/",
@@ -339,6 +360,14 @@
     "use_count": 5
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/IMG_7490-scaled-e1792279703726.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-go-down-as-mozzys-most-soulfully-raw-extended-play-ep-review/",
+      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-be-mozzys-most-soulful-material-ep-review/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Cardi-B.jpg",
     "links": [
@@ -385,7 +414,7 @@
     "use_count": 4
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1808.jpeg",
     "links": [
       "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-trump-to-resign-after-midterms-nobody-wants-you/",
@@ -802,7 +831,7 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
     "links": [
       "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
@@ -1210,14 +1239,6 @@
     "use_count": 7
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
-      "https://hollywoodunlocked.com/former-miss-switzerland-says-donald-trump-brutally-raped-her-in-1993-he-denies-it/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
     "links": [
@@ -1266,16 +1287,6 @@
       "https://allhiphop.com/news/macklemore-faces-uk-ban-push-from-50-peers-before-wembley-benefit/",
       "https://allhiphop.com/exclusives/is-macklemore-the-hardest-rapper-out-right-now/",
       "https://allhiphop.com/news/robert-kraft-confirms-he-got-macklemore-kicked-off-ed-sheeran-tour-over-palestinian-activism/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/spotify.jpg",
-    "links": [
-      "https://allhiphop.com/news/chicago-musicians-call-for-two-day-streaming-boycott-over-ai/",
-      "https://allhiphop.com/news/spotifys-ai-remix-push-gives-indie-artists-two-chances-to-say-no/",
-      "https://allhiphop.com/news/feds-want-ai-streaming-fraudster-who-stole-8m-from-artists-sent-to-prison-for-a-long-time/"
     ],
     "use_count": 3
   },
@@ -1864,14 +1875,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
-    "links": [
-      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
-      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png",
     "links": [
@@ -2087,14 +2090,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
-    "links": [
-      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
-      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
     "links": [
@@ -2112,6 +2107,14 @@
       "https://allhiphop.com/news/colin-kaepernick-calls-out-nfl-hypocrisy-amid-jay-z-partnership/"
     ],
     "use_count": 4
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
+      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -2224,6 +2227,14 @@
     "use_count": 7
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
+    "links": [
+      "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
+      "https://allhiphop.com/news/ciara-russell-wilson-announce-baby-cinco/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-03-at-10.37.29-PM.png",
     "links": [
@@ -2279,6 +2290,14 @@
     "links": [
       "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
       "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
+    "links": [
+      "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
+      "https://theshaderoom.com/raven-symone-kalen-allen-miranda-maday-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness/"
     ]
   },
   {
@@ -2356,6 +2375,14 @@
     "use_count": 5
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
+    "links": [
+      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
+      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
     "links": [
@@ -2386,6 +2413,14 @@
       "https://allhiphop.com/news/keffe-d-refuses-plea-deal-days-before-trial-begins/"
     ],
     "use_count": 7
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
+      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -2463,6 +2498,14 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
+      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
