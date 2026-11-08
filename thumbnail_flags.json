@@ -277,6 +277,27 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/01/J.-Cole-The-Fall-Off.jpg",
+    "links": [
+      "https://allhiphop.com/news/j-cole-dreamville-paris-saint-germain-collection/",
+      "https://allhiphop.com/news/j-cole-rejects-retirement-im-not-using-that-word/",
+      "https://allhiphop.com/news/j-coles-the-fall-off-reportedly-absent-from-2027-grammy-race/",
+      "https://allhiphop.com/news/j-cole-cancels-sacramento-show-following-crew-members-death/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/LeBron-James-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/lebron-james-home-felony-stalking-arrest/",
+      "https://allhiphop.com/news/lebron-james-focused-on-golf-as-he-joins-philadelphia-76ers/",
+      "https://allhiphop.com/rumors/lebron-the-lakers-sale-the-trump-connection/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/04/OutKast.jpg",
     "links": [
       "https://allhiphop.com/news/trap-music-museum-outkast-exhibit-atlanta/",
@@ -717,14 +738,6 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1469.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/",
-      "https://hollywoodunlocked.com/donald-trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1469.jpeg",
     "links": [
@@ -754,6 +767,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1432.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/",
+      "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-nicki-minajs-donald-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1432.jpeg",
     "links": [
       "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/",
@@ -860,14 +881,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
     "links": [
@@ -908,16 +921,6 @@
       "https://allhiphop.com/news/too-hort-wants-new-verzuz-format-with-e-40-as-his-partner/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/01/J.-Cole-The-Fall-Off.jpg",
-    "links": [
-      "https://allhiphop.com/news/j-cole-rejects-retirement-im-not-using-that-word/",
-      "https://allhiphop.com/news/j-coles-the-fall-off-reportedly-absent-from-2027-grammy-race/",
-      "https://allhiphop.com/news/j-cole-cancels-sacramento-show-following-crew-members-death/"
-    ],
-    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
@@ -1564,14 +1567,6 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
-      "https://hollywoodunlocked.com/donald-trump-nobody-appreciates-how-great-a-president-i-am/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
     "links": [
@@ -1910,14 +1905,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
-    "links": [
-      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
-      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png",
     "links": [
@@ -1999,6 +1986,14 @@
       "https://allhiphop.com/news/exclusive-nicki-minajs-hubby-kenneth-petty-accuser-tell-judge-settlement-is-pointless/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Keke-Wyatt.jpg",
+    "links": [
+      "https://allhiphop.com/news/keke-wyatt-addresses-assault-case-and-denies-reported-child-cruelty-charge/",
+      "https://allhiphop.com/news/details-emerge-in-keke-wyatt-arrest-singer-threatened-to-blow-womans-brains-out/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -2304,14 +2299,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
-    "links": [
-      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
-      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
-    ]
-  },
-  {
     "issue": "same_homepage_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
@@ -2418,14 +2405,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
-    "links": [
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/09/Crime-Scene.jpg",
     "links": [
@@ -2479,18 +2458,18 @@
   },
   {
     "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/101863a2720f8285bdc25dfd62c8f4af70b53c6e23fd69db37b73cf1c1706cd8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F51d423e8-e724-4b22-9b64-a777be34d751",
+    "links": [
+      "https://sports.yahoo.com/nfl/article/nfl-preseason-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html",
+      "https://sports.yahoo.com/nfl/article/nfl-preseason-week-2-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
     "links": [
       "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-after-blocking-for-late-td-vs-cardinals-194323239.html",
       "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-nation-after-blocking-for-late-td-vs-cardinals-194323239.html"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
-    "links": [
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
     ]
   },
   {
