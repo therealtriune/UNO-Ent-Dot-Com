@@ -277,6 +277,28 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Wale.png",
+    "links": [
+      "https://allhiphop.com/news/wale-gifted-week-black-sports-career-program/",
+      "https://allhiphop.com/news/wale-salutes-angel-reese-gabby-williams-on-wnba-finals-anthem/",
+      "https://allhiphop.com/news/wale-joins-capsole-as-co-owner-creative-chief/",
+      "https://allhiphop.com/news/wale-opens-up-and-the-internet-talks-back/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/03/Cordae.png",
+    "links": [
+      "https://allhiphop.com/news/anderson-paak-cordae-billboard-top-rap-albums-number-one/",
+      "https://allhiphop.com/news/cordae-anderson-paak-land-top-10-hits-debut-with-heavy-is-the-crown/",
+      "https://allhiphop.com/news/cordae-revisits-naomi-osaka-split-on-helpless/",
+      "https://allhiphop.com/news/exclusive-cordae-hit-with-15m-contract-lawsuit-that-may-derail-anderson-paak-collab-album/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Megan-Thee-Stallion-.jpg",
     "links": [
       "https://allhiphop.com/news/megan-thee-stallion-thin-ice-hot-100-68/",
@@ -558,14 +580,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/IMG_7490-scaled-e1792279703726.jpeg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-go-down-as-mozzys-most-soulfully-raw-extended-play-ep-review/",
-      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-be-mozzys-most-soulful-material-ep-review/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Cardi-B.jpg",
     "links": [
@@ -697,14 +711,6 @@
       "https://allhiphop.com/news/nicki-minaj-praises-trumps-work-ethic-aboard-air-force-one/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1661.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/first-muslim-elected-to-us-senate-abdul-el-sayed-had-a-message-for-trump-and-vance-over-their-name-mockery-call-me-senator/",
-      "https://hollywoodunlocked.com/first-muslim-elected-to-us-senate-abdul-el-sayed-had-a-message-for-donald-trump-and-jd-vance-over-their-name-mockery-call-me-senator/"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -853,6 +859,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1432.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/",
+      "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-nicki-minajs-donald-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1432.jpeg",
     "links": [
@@ -881,16 +895,6 @@
       "https://allhiphop.com/news/pro-palestinian-dearborn-mayor-offers-macklemore-free-concert-funded-by-city-following-ed-sheeran-tour-fiasco/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/03/Cordae.png",
-    "links": [
-      "https://allhiphop.com/news/cordae-anderson-paak-land-top-10-hits-debut-with-heavy-is-the-crown/",
-      "https://allhiphop.com/news/cordae-revisits-naomi-osaka-split-on-helpless/",
-      "https://allhiphop.com/news/exclusive-cordae-hit-with-15m-contract-lawsuit-that-may-derail-anderson-paak-collab-album/"
-    ],
-    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
@@ -958,22 +962,6 @@
       "https://allhiphop.com/news/t-i-tiny-harris-reaffirm-their-marriage-at-private-ocho-rios-villa/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -1215,14 +1203,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Just-Doin-Me.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1014701-spinnin-21-savage-young-nudy",
-      "https://www.hotnewhiphop.com/1014698-just-doin-me-young-nudy"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Just-Doin-Me.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1014701-spinnin-21-savage-young-nudy",
@@ -1659,16 +1639,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Wale.png",
-    "links": [
-      "https://allhiphop.com/news/wale-salutes-angel-reese-gabby-williams-on-wnba-finals-anthem/",
-      "https://allhiphop.com/news/wale-joins-capsole-as-co-owner-creative-chief/",
-      "https://allhiphop.com/news/wale-opens-up-and-the-internet-talks-back/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/08/BloodHound-Q50.png",
     "links": [
       "https://allhiphop.com/news/bloodhound-q50-autopsy-reveals-five-gunshot-wounds-in-unsolved-killing/",
@@ -1940,10 +1910,10 @@
   },
   {
     "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
     "links": [
-      "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
-      "https://www.hotnewhiphop.com/1011958-lucki-alleged-fight-playboi-carti-entourage"
+      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
+      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
     ]
   },
   {
@@ -1994,6 +1964,14 @@
       "https://www.hotnewhiphop.com/1011684-habibti-fomo-drake"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
+    "links": [
+      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
+      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
+    ]
   },
   {
     "issue": "same_homepage_page",
@@ -2136,6 +2114,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://imagez.tmz.com/image/21/16by9/2026/09/19/214d022ee08d41ecb2f888e15c6e424e_xl.jpg",
+    "links": [
+      "https://www.tmz.com/2026/09/19/dozens-of-tickets-still-available-for-ed-sheerans-saturday-concert/",
+      "https://www.tmz.com/2026/09/19/ed-sheerans-philadelphia-concert-has-hundreds-of-tickets-left/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://imagez.tmz.com/image/26/16by9/2026/08/13/2646c76b67074739a31788b6927b9dcf_xl.jpg",
     "links": [
@@ -2144,14 +2130,6 @@
       "https://www.tmz.com/2026/08/13/parents-of-surrogate-baby-have-custody-of-their-child/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
-    "links": [
-      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
-      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -2174,14 +2152,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
-      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
@@ -2240,6 +2210,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/09/img_6399.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/watch-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/",
+      "https://hollywoodunlocked.com/watch-donald-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/09/img_6399.jpeg",
     "links": [
       "https://hollywoodunlocked.com/watch-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/",
@@ -2546,6 +2524,14 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
+      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
