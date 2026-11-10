@@ -277,6 +277,59 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/adrien-broner.jpg",
+    "links": [
+      "https://allhiphop.com/news/adrien-broner-update-deenthegreat-blueface/",
+      "https://allhiphop.com/news/adrien-broner-hospitalized-blueface-show-medical-emergency/",
+      "https://allhiphop.com/news/adrien-broner-deenthegreat-turn-kai-cenat-feud-into-diss-track/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/10/64A7752.jpeg",
+    "links": [
+      "https://allhiphop.com/news/mc-lyte-vh1-jacket-rock-hall-exhibit/",
+      "https://allhiphop.com/news/mc-lyte-reveals-shes-back-in-the-studio-with-warryn-campbell-teases-hollywood-projects/",
+      "https://allhiphop.com/exclusives/mc-lyte-takes-road-to-the-hall-of-fame-with-12-city-tour/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/07/yella-beezy.jpg",
+    "links": [
+      "https://allhiphop.com/news/yella-beezy-defense-begins-dismissal-denied-mo3-trial/",
+      "https://allhiphop.com/news/yella-beezy-defense-uses-17-other-bookings-to-challenge-flight-evidence-in-mo3-trial/",
+      "https://allhiphop.com/news/jose-bodega-pleads-the-fifth-in-yella-beezys-mo3-murder-trial/",
+      "https://allhiphop.com/news/yella-beezy-murder-for-hire-trial-in-mo3-shooting-pushed-back-months/",
+      "https://allhiphop.com/news/detective-forced-to-admit-yella-beezys-40k-withdrawal-was-routine-banking-as-trial-gets-interrupted/",
+      "https://allhiphop.com/news/detective-reveals-concert-footage-connecting-kewon-white-yella-beezy-before-mo3-murder/"
+    ],
+    "use_count": 6
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Donald-Trump.jpg",
+    "links": [
+      "https://allhiphop.com/news/donald-trump-forgiving-enemies-60-minutes/",
+      "https://allhiphop.com/news/abdul-el-sayed-says-trump-treats-constitution-like-toilet-paper/",
+      "https://allhiphop.com/news/white-house-uses-drakes-hoe-phase-in-new-ice-deportation-video/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Common.jpg",
+    "links": [
+      "https://allhiphop.com/news/common-miami-orchestra-one-night-arsht/",
+      "https://allhiphop.com/news/common-performs-at-el-sayeds-final-detroit-rally-as-eminem-song-scores-campaign-ad/",
+      "https://allhiphop.com/news/common-reveals-kanye-surprise-answer-after-he-quit-tour-for-acting/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/cropped-AllHipHop-2.jpg",
     "links": [
       "https://allhiphop.com/news/suno-artist-names-identity-lawsuit-dismissal/",
@@ -518,14 +571,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/IMG_6570.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/attorney-who-defended-duane-keffe-d-davis-in-tupac-shakur-murder-trial-dies-in-las-vegas/",
-      "https://hollywoodunlocked.com/attorney-who-defended-duane-keefe-d-davis-in-tupac-shakur-murder-trial-dies-in-las-vegas/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/IMG_6570.jpeg",
     "links": [
@@ -657,6 +702,14 @@
       "https://allhiphop.com/news/nicki-minaj-honors-9-11-heroes-while-maga-targets-aoc-and-zohran-mamdani/"
     ],
     "use_count": 4
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1808.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-trump-to-resign-after-midterms-nobody-wants-you/",
+      "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-donald-trump-to-resign-after-midterms-nobody-wants-you/"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -805,18 +858,6 @@
       "https://thesource.com/2026/08/07/mitch-mcconnell-discharged-rehab-center/?utm_source=rss&utm_medium=rss&utm_campaign=mitch-mcconnell-discharged-rehab-center"
     ],
     "use_count": 21
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/07/yella-beezy.jpg",
-    "links": [
-      "https://allhiphop.com/news/yella-beezy-defense-uses-17-other-bookings-to-challenge-flight-evidence-in-mo3-trial/",
-      "https://allhiphop.com/news/jose-bodega-pleads-the-fifth-in-yella-beezys-mo3-murder-trial/",
-      "https://allhiphop.com/news/yella-beezy-murder-for-hire-trial-in-mo3-shooting-pushed-back-months/",
-      "https://allhiphop.com/news/detective-forced-to-admit-yella-beezys-40k-withdrawal-was-routine-banking-as-trial-gets-interrupted/",
-      "https://allhiphop.com/news/detective-reveals-concert-footage-connecting-kewon-white-yella-beezy-before-mo3-murder/"
-    ],
-    "use_count": 5
   },
   {
     "issue": "overused_thumbnail",
@@ -1362,6 +1403,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-donald-trump-brutally-raped-her-in-1993-he-denies-it/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
     "links": [
       "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
@@ -1953,14 +2002,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
-    "links": [
-      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
-      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png",
     "links": [
@@ -2026,14 +2067,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
-    "links": [
-      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
-      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Nicki-Minaj-and-Kenneth-Petty.jpg",
     "links": [
@@ -2042,14 +2075,6 @@
       "https://allhiphop.com/news/exclusive-nicki-minajs-hubby-kenneth-petty-accuser-tell-judge-settlement-is-pointless/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Keke-Wyatt.jpg",
-    "links": [
-      "https://allhiphop.com/news/keke-wyatt-addresses-assault-case-and-denies-reported-child-cruelty-charge/",
-      "https://allhiphop.com/news/details-emerge-in-keke-wyatt-arrest-singer-threatened-to-blow-womans-brains-out/"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -2184,6 +2209,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
+    "links": [
+      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
+      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Colin-Kaepernick.jpg",
     "links": [
@@ -2313,6 +2346,14 @@
     "use_count": 7
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
+    "links": [
+      "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
+      "https://allhiphop.com/news/ciara-russell-wilson-announce-baby-cinco/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-03-at-10.37.29-PM.png",
     "links": [
@@ -2347,14 +2388,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
-    "links": [
-      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
-      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
-    ]
-  },
-  {
     "issue": "same_homepage_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
@@ -2363,15 +2396,15 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
+    "issue": "same_category_page",
+    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
-      "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
-      "https://theshaderoom.com/raven-symone-kalen-allen-miranda-maday-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness/"
+      "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
+      "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
     ]
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
     "links": [
       "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
@@ -2537,6 +2570,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
+    "links": [
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://imagez.tmz.com/image/74/16by9/2026/08/13/74059ee2192c41a6b411aa89404c96be_xl.jpg",
     "links": [
@@ -2564,6 +2605,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
+      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
