@@ -277,6 +277,32 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/DJ-Akademiks-OVO-Chain-Drake-Slide-In-DMs.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1016298-dj-akademiks-blames-future-failure-ya-hit",
+      "https://www.hotnewhiphop.com/1014842-drake-dj-akademiks-spending-out-of-control",
+      "https://www.hotnewhiphop.com/1014294-drake-dj-akademiks-40th-birthday-party",
+      "https://www.hotnewhiphop.com/1013997-dj-akademiks-jay-z-jeweler-knicks-game",
+      "https://www.hotnewhiphop.com/1013625-dj-akademiks-ovo-chain-drake-slide-in-dms"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/07/yella-beezy.jpg",
+    "links": [
+      "https://allhiphop.com/news/yella-beezy-kewon-white-search-history-trial/",
+      "https://allhiphop.com/news/yella-beezy-defense-begins-dismissal-denied-mo3-trial/",
+      "https://allhiphop.com/news/yella-beezy-defense-uses-17-other-bookings-to-challenge-flight-evidence-in-mo3-trial/",
+      "https://allhiphop.com/news/jose-bodega-pleads-the-fifth-in-yella-beezys-mo3-murder-trial/",
+      "https://allhiphop.com/news/yella-beezy-murder-for-hire-trial-in-mo3-shooting-pushed-back-months/",
+      "https://allhiphop.com/news/detective-forced-to-admit-yella-beezys-40k-withdrawal-was-routine-banking-as-trial-gets-interrupted/",
+      "https://allhiphop.com/news/detective-reveals-concert-footage-connecting-kewon-white-yella-beezy-before-mo3-murder/"
+    ],
+    "use_count": 7
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake-1.jpg",
     "links": [
       "https://allhiphop.com/rumors/drake-hints-he-may-retire-take-care-but-is-rihanna-the-reason/",
@@ -419,19 +445,6 @@
       "https://allhiphop.com/exclusives/mc-lyte-takes-road-to-the-hall-of-fame-with-12-city-tour/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/07/yella-beezy.jpg",
-    "links": [
-      "https://allhiphop.com/news/yella-beezy-defense-begins-dismissal-denied-mo3-trial/",
-      "https://allhiphop.com/news/yella-beezy-defense-uses-17-other-bookings-to-challenge-flight-evidence-in-mo3-trial/",
-      "https://allhiphop.com/news/jose-bodega-pleads-the-fifth-in-yella-beezys-mo3-murder-trial/",
-      "https://allhiphop.com/news/yella-beezy-murder-for-hire-trial-in-mo3-shooting-pushed-back-months/",
-      "https://allhiphop.com/news/detective-forced-to-admit-yella-beezys-40k-withdrawal-was-routine-banking-as-trial-gets-interrupted/",
-      "https://allhiphop.com/news/detective-reveals-concert-footage-connecting-kewon-white-yella-beezy-before-mo3-murder/"
-    ],
-    "use_count": 6
   },
   {
     "issue": "overused_thumbnail",
@@ -783,14 +796,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/IMG_7490-scaled-e1792279703726.jpeg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-go-down-as-mozzys-most-soulfully-raw-extended-play-ep-review/",
-      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-be-mozzys-most-soulful-material-ep-review/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Cardi-B.jpg",
     "links": [
@@ -826,14 +831,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1808.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-trump-to-resign-after-midterms-nobody-wants-you/",
-      "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-donald-trump-to-resign-after-midterms-nobody-wants-you/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1808.jpeg",
     "links": [
       "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-trump-to-resign-after-midterms-nobody-wants-you/",
@@ -913,6 +910,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1661.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/first-muslim-elected-to-us-senate-abdul-el-sayed-had-a-message-for-trump-and-vance-over-their-name-mockery-call-me-senator/",
+      "https://hollywoodunlocked.com/first-muslim-elected-to-us-senate-abdul-el-sayed-had-a-message-for-donald-trump-and-jd-vance-over-their-name-mockery-call-me-senator/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1661.jpeg",
     "links": [
       "https://hollywoodunlocked.com/first-muslim-elected-to-us-senate-abdul-el-sayed-had-a-message-for-trump-and-vance-over-their-name-mockery-call-me-senator/",
@@ -1018,14 +1023,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1432.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/",
-      "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-nicki-minajs-donald-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1432.jpeg",
     "links": [
@@ -1114,14 +1111,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
     "links": [
       "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
@@ -1227,17 +1216,6 @@
       "https://allhiphop.com/news/exclusive-nicki-minaj-denies-being-a-spoiled-entitled-rap-star-over-103k-hotel-bill/"
     ],
     "use_count": 10
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/DJ-Akademiks-OVO-Chain-Drake-Slide-In-DMs.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1014842-drake-dj-akademiks-spending-out-of-control",
-      "https://www.hotnewhiphop.com/1014294-drake-dj-akademiks-40th-birthday-party",
-      "https://www.hotnewhiphop.com/1013997-dj-akademiks-jay-z-jeweler-knicks-game",
-      "https://www.hotnewhiphop.com/1013625-dj-akademiks-ovo-chain-drake-slide-in-dms"
-    ],
-    "use_count": 4
   },
   {
     "issue": "overused_thumbnail",
@@ -2038,6 +2016,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
+    "links": [
+      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
+      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png",
     "links": [
@@ -2390,6 +2376,14 @@
     "use_count": 7
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
+    "links": [
+      "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
+      "https://allhiphop.com/news/ciara-russell-wilson-announce-baby-cinco/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-03-at-10.37.29-PM.png",
     "links": [
@@ -2653,14 +2647,6 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
