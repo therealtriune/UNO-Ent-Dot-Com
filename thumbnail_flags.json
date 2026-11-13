@@ -281,6 +281,64 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/01/Kid-Cudi.jpg",
+    "links": [
+      "https://allhiphop.com/news/kid-cudi-keeps-weed-off-movie-sets-after-20-blunt-days/",
+      "https://allhiphop.com/news/kid-cudi-reveals-bloody-details-about-horror-movie-wrong-number/",
+      "https://allhiphop.com/news/kid-cudi-reveals-new-terrifying-horror-comedy-fckin-gnarly-hes-the-director/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake-1.jpg",
+    "links": [
+      "https://allhiphop.com/news/drake-nicki-minaj-lil-wayne-cash-money-surveillance-lawsuit-dismissed/",
+      "https://allhiphop.com/rumors/drake-hints-he-may-retire-take-care-but-is-rihanna-the-reason/",
+      "https://allhiphop.com/news/drakes-janice-stfu-accuser-withdraws-copyright-lawsuit/",
+      "https://allhiphop.com/news/loe-shimmy-gifts-drake-a-1986-ferrari-for-his-40th-birthday/",
+      "https://allhiphop.com/news/drake-wins-fifth-straight-socan-songwriter-award-jessie-reyez-earns-international-honor/",
+      "https://allhiphop.com/news/exclusive-drake-could-reveal-how-much-his-stake-partnership-pays/",
+      "https://allhiphop.com/news/drake-reveals-self-funded-fomo-film-is-a-blueprint-for-living-without-regret/",
+      "https://allhiphop.com/news/drake-uses-livestream-to-build-hype-around-fomo-project/",
+      "https://allhiphop.com/news/drake-sells-stake-in-ovo-empire-with-authentic-brands-investment/",
+      "https://allhiphop.com/news/exclusive-drakes-stake-fight-turns-new-mexico-into-nationwide-legal-battleground/",
+      "https://allhiphop.com/news/drakes-gambling-accusers-lose-bid-for-public-class-action/"
+    ],
+    "use_count": 11
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2022/11/Takeoff-3.jpg",
+    "links": [
+      "https://allhiphop.com/news/takeoffs-estate-resolves-sexual-assault-suit-before-december-trial/",
+      "https://allhiphop.com/news/takeoff-murder-trial-rescheduled-for-april-2027/",
+      "https://allhiphop.com/news/takeoff-estate-seeks-dismissal/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Jay-Z-and-Beyonce.jpg",
+    "links": [
+      "https://allhiphop.com/news/beyonce-makes-cecred-wait-two-years-to-meet-her-standards/",
+      "https://allhiphop.com/news/jay-z-beyonce-celebrate-ace-of-spades-20th-anniversary-in-las-vegas/",
+      "https://allhiphop.com/news/beyonce-steps-up-again-this-time-200k-going-to-help-indiana-with-flood-recovery/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Tupac-Shakur.jpg",
+    "links": [
+      "https://allhiphop.com/news/angie-martinez-tupac-tapes-netflix-withheld-interview/",
+      "https://allhiphop.com/news/outlawz-member-napoleon-reveals-why-he-believes-there-are-more-people-involved-in-tupacs-death/",
+      "https://allhiphop.com/news/keefe-ds-attorney-blasts-police-says-they-ignored-people-with-clear-motives/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/01/Rod-Wave.png",
     "links": [
       "https://allhiphop.com/news/rod-wave-defends-jay-zs-age-thats-the-goal/",
@@ -604,14 +662,6 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/11/photo-output-3-e1794077053137.jpeg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/the-dealer-wins-prod-by-conductor-williams-is-a-sample-heavy-improvement-over-bruiser-wolfs-previous-album-push-and-paint-album-review/",
-      "https://undergroundhiphopblog.com/albums/the-dealer-wins-prod-by-conductor-williams-is-a-sample-heavy-improvement-over-bruiser-wolfs-previous-album-push-and-paint-ep-review/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/11/photo-output-3-e1794077053137.jpeg",
     "links": [
@@ -650,23 +700,6 @@
       "https://www.hotnewhiphop.com/1013625-dj-akademiks-ovo-chain-drake-slide-in-dms"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Drake-1.jpg",
-    "links": [
-      "https://allhiphop.com/rumors/drake-hints-he-may-retire-take-care-but-is-rihanna-the-reason/",
-      "https://allhiphop.com/news/drakes-janice-stfu-accuser-withdraws-copyright-lawsuit/",
-      "https://allhiphop.com/news/loe-shimmy-gifts-drake-a-1986-ferrari-for-his-40th-birthday/",
-      "https://allhiphop.com/news/drake-wins-fifth-straight-socan-songwriter-award-jessie-reyez-earns-international-honor/",
-      "https://allhiphop.com/news/exclusive-drake-could-reveal-how-much-his-stake-partnership-pays/",
-      "https://allhiphop.com/news/drake-reveals-self-funded-fomo-film-is-a-blueprint-for-living-without-regret/",
-      "https://allhiphop.com/news/drake-uses-livestream-to-build-hype-around-fomo-project/",
-      "https://allhiphop.com/news/drake-sells-stake-in-ovo-empire-with-authentic-brands-investment/",
-      "https://allhiphop.com/news/exclusive-drakes-stake-fight-turns-new-mexico-into-nationwide-legal-battleground/",
-      "https://allhiphop.com/news/drakes-gambling-accusers-lose-bid-for-public-class-action/"
-    ],
-    "use_count": 10
   },
   {
     "issue": "overused_thumbnail",
@@ -1205,6 +1238,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1432.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/",
+      "https://hollywoodunlocked.com/pastor-jamal-bryant-slams-nicki-minajs-donald-trump-rally-appearance-stood-right-on-up-like-aunt-jemima-selling-pancakes-dont-you-let-nobody-objectify-your-black-body-and-yo/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1432.jpeg",
     "links": [
@@ -1516,6 +1557,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Just-Doin-Me.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1014701-spinnin-21-savage-young-nudy",
+      "https://www.hotnewhiphop.com/1014698-just-doin-me-young-nudy"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Just-Doin-Me.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1014701-spinnin-21-savage-young-nudy",
@@ -2171,10 +2220,10 @@
   },
   {
     "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
     "links": [
-      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
-      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
+      "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
+      "https://www.hotnewhiphop.com/1011958-lucki-alleged-fight-playboi-carti-entourage"
     ]
   },
   {
@@ -2236,6 +2285,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
+    "links": [
+      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
+      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
       "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
@@ -2367,14 +2424,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://imagez.tmz.com/image/21/16by9/2026/09/19/214d022ee08d41ecb2f888e15c6e424e_xl.jpg",
-    "links": [
-      "https://www.tmz.com/2026/09/19/dozens-of-tickets-still-available-for-ed-sheerans-saturday-concert/",
-      "https://www.tmz.com/2026/09/19/ed-sheerans-philadelphia-concert-has-hundreds-of-tickets-left/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://imagez.tmz.com/image/26/16by9/2026/08/13/2646c76b67074739a31788b6927b9dcf_xl.jpg",
     "links": [
@@ -2405,6 +2454,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
+      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
@@ -2527,30 +2584,22 @@
   },
   {
     "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
-    "links": [
-      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
-      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
       "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
       "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
+    "links": [
+      "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
+      "https://theshaderoom.com/raven-symone-kalen-allen-miranda-maday-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness/"
     ]
   },
   {
     "issue": "same_category_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
-    "links": [
-      "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
-      "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
     "links": [
       "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
