@@ -281,19 +281,9 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Kendrick-Lamar.jpg",
-    "links": [
-      "https://allhiphop.com/news/grammys-move-most-award-presentations-to-disney-for-2027/",
-      "https://allhiphop.com/news/kendrick-lamar-reportedly-had-the-highest-grossing-touring-year-in-rap-history-finished/",
-      "https://allhiphop.com/news/exclusive-kendrick-lamars-m-a-a-d-city-subject-of-nasty-legal-war-over-credit/",
-      "https://allhiphop.com/news/kendrick-lamar-shows-up-for-seven-year-old-after-dog-attack/"
-    ],
-    "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/cropped-AllHipHop-2.jpg",
     "links": [
+      "https://allhiphop.com/news/nvidias-suno-investor-fights-music-labels-over-court-testimony/",
       "https://allhiphop.com/news/suno-faces-bigger-reservoir-lawsuit-as-ai-claims-top-445-million/",
       "https://allhiphop.com/news/kanye-wests-alice-merton-sample-case-dismissed-after-settlement-deal/",
       "https://allhiphop.com/rumors/yella-beezy-passed-out-collapsed-after-mo3-murder-verdict/",
@@ -344,7 +334,18 @@
       "https://allhiphop.com/news/bad-bunny-stuck-with-465k-bill-after-copyright-lawsuit-dismissed/",
       "https://allhiphop.com/rumors/drake-invites-more-smoke-from-the-opps/"
     ],
-    "use_count": 49
+    "use_count": 50
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/12/Kendrick-Lamar.jpg",
+    "links": [
+      "https://allhiphop.com/news/grammys-move-most-award-presentations-to-disney-for-2027/",
+      "https://allhiphop.com/news/kendrick-lamar-reportedly-had-the-highest-grossing-touring-year-in-rap-history-finished/",
+      "https://allhiphop.com/news/exclusive-kendrick-lamars-m-a-a-d-city-subject-of-nasty-legal-war-over-credit/",
+      "https://allhiphop.com/news/kendrick-lamar-shows-up-for-seven-year-old-after-dog-attack/"
+    ],
+    "use_count": 4
   },
   {
     "issue": "overused_thumbnail",
@@ -1187,14 +1188,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1808.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-trump-to-resign-after-midterms-nobody-wants-you/",
-      "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-donald-trump-to-resign-after-midterms-nobody-wants-you/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/10/Copy-of-AllHipHop-64.jpg",
     "links": [
@@ -1452,6 +1445,14 @@
       "https://allhiphop.com/news/t-i-tiny-harris-reaffirm-their-marriage-at-private-ocho-rios-villa/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -1756,6 +1757,14 @@
       "https://allhiphop.com/news/nicki-minaj-to-judge-president-trumps-1-million-small-business-competition/"
     ],
     "use_count": 7
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-donald-trump-brutally-raped-her-in-1993-he-denies-it/"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -2316,14 +2325,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
-    "links": [
-      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
-      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png",
     "links": [
@@ -2511,6 +2512,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://imagez.tmz.com/image/21/16by9/2026/09/19/214d022ee08d41ecb2f888e15c6e424e_xl.jpg",
+    "links": [
+      "https://www.tmz.com/2026/09/19/dozens-of-tickets-still-available-for-ed-sheerans-saturday-concert/",
+      "https://www.tmz.com/2026/09/19/ed-sheerans-philadelphia-concert-has-hundreds-of-tickets-left/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://imagez.tmz.com/image/26/16by9/2026/08/13/2646c76b67074739a31788b6927b9dcf_xl.jpg",
     "links": [
@@ -2636,6 +2645,14 @@
     "use_count": 7
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
+    "links": [
+      "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
+      "https://allhiphop.com/news/ciara-russell-wilson-announce-baby-cinco/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-03-at-10.37.29-PM.png",
     "links": [
@@ -2656,14 +2673,6 @@
       "https://allhiphop.com/news/feds-reveal-plea-deal-witnesses-ready-to-testify-against-lil-durk/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
-    "links": [
-      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
-      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
-    ]
   },
   {
     "issue": "same_homepage_page",
