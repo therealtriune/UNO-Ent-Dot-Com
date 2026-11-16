@@ -285,6 +285,60 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/gta-6-dirty-south-classics.webp",
+    "links": [
+      "https://www.hotnewhiphop.com/1016663-hip-hop-artists-confirmed-for-gta-vi",
+      "https://www.hotnewhiphop.com/1016229-gta-vi-dirty-south-classics-alleged-tracklist",
+      "https://www.hotnewhiphop.com/1006523-gta-6-dirty-south-classics-radio"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/DJ-Akademiks-OVO-Chain-Drake-Slide-In-DMs.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1016657-dj-akademiks-victory-lap-lil-baby",
+      "https://www.hotnewhiphop.com/1016298-dj-akademiks-blames-future-failure-ya-hit",
+      "https://www.hotnewhiphop.com/1014842-drake-dj-akademiks-spending-out-of-control",
+      "https://www.hotnewhiphop.com/1014294-drake-dj-akademiks-40th-birthday-party",
+      "https://www.hotnewhiphop.com/1013997-dj-akademiks-jay-z-jeweler-knicks-game",
+      "https://www.hotnewhiphop.com/1013625-dj-akademiks-ovo-chain-drake-slide-in-dms"
+    ],
+    "use_count": 6
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/05/ChancetheRapper1-scaled.jpeg",
+    "links": [
+      "https://thesource.com/2026/11/16/chance-the-rapper-welcomes-third-child-hayli/?utm_source=rss&utm_medium=rss&utm_campaign=chance-the-rapper-welcomes-third-child-hayli",
+      "https://thesource.com/2026/10/15/chance-the-rapper-wins-case-pat-corcoran/?utm_source=rss&utm_medium=rss&utm_campaign=chance-the-rapper-wins-case-pat-corcoran",
+      "https://thesource.com/2026/10/02/chance-the-rapper-reveals-he-is-considering-a-name-change/?utm_source=rss&utm_medium=rss&utm_campaign=chance-the-rapper-reveals-he-is-considering-a-name-change"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Real-Talk-with-NBA-YoungBoy-Funny-Marco_-Laughs-Life-and-Truth-3-43-screenshot.jpg",
+    "links": [
+      "https://thesource.com/2026/11/16/youngboy-never-broke-again-limited-edition-rc-truck/?utm_source=rss&utm_medium=rss&utm_campaign=youngboy-never-broke-again-limited-edition-rc-truck",
+      "https://thesource.com/2026/09/08/youngboy-never-broke-again-lamborghini-traffic-stop/?utm_source=rss&utm_medium=rss&utm_campaign=youngboy-never-broke-again-lamborghini-traffic-stop",
+      "https://thesource.com/2026/08/12/nba-youngboy-one-two-albums-left-final-tour/?utm_source=rss&utm_medium=rss&utm_campaign=nba-youngboy-one-two-albums-left-final-tour"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2025/09/Screen-Shot-2025-09-30-at-11.00.09-AM.png",
+    "links": [
+      "https://thesource.com/2026/11/16/trump-blames-biden-administration-faa-ground-stop/?utm_source=rss&utm_medium=rss&utm_campaign=trump-blames-biden-administration-faa-ground-stop",
+      "https://thesource.com/2026/10/27/house-democrats-report-allegations-donald-trump/?utm_source=rss&utm_medium=rss&utm_campaign=house-democrats-report-allegations-donald-trump",
+      "https://thesource.com/2026/08/12/trump-plane-swap-iran-threat-nato-summit/?utm_source=rss&utm_medium=rss&utm_campaign=trump-plane-swap-iran-threat-nato-summit",
+      "https://thesource.com/2026/08/11/trump-administration-proposes-new-fda-rule-targeting-ultra-processed-food-additives/?utm_source=rss&utm_medium=rss&utm_campaign=trump-administration-proposes-new-fda-rule-targeting-ultra-processed-food-additives"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2022/10/Westside-Gunn-1.png",
     "links": [
       "https://allhiphop.com/news/westside-gunn-holds-off-on-4th-rope-tv-deal-to-build-its-value/",
@@ -898,18 +952,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/DJ-Akademiks-OVO-Chain-Drake-Slide-In-DMs.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1016298-dj-akademiks-blames-future-failure-ya-hit",
-      "https://www.hotnewhiphop.com/1014842-drake-dj-akademiks-spending-out-of-control",
-      "https://www.hotnewhiphop.com/1014294-drake-dj-akademiks-40th-birthday-party",
-      "https://www.hotnewhiphop.com/1013997-dj-akademiks-jay-z-jeweler-knicks-game",
-      "https://www.hotnewhiphop.com/1013625-dj-akademiks-ovo-chain-drake-slide-in-dms"
-    ],
-    "use_count": 5
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/02/Lil-Baby-2.png",
     "links": [
       "https://allhiphop.com/news/lil-babys-fresh-forecast-trails-whams-140000-unit-debut/",
@@ -1151,14 +1193,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/IMG_6570.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/attorney-who-defended-duane-keffe-d-davis-in-tupac-shakur-murder-trial-dies-in-las-vegas/",
-      "https://hollywoodunlocked.com/attorney-who-defended-duane-keefe-d-davis-in-tupac-shakur-murder-trial-dies-in-las-vegas/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/IMG_6570.jpeg",
     "links": [
@@ -1230,7 +1264,7 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/IMG_7490-scaled-e1792279703726.jpeg",
     "links": [
       "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-go-down-as-mozzys-most-soulfully-raw-extended-play-ep-review/",
@@ -1400,6 +1434,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1469.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/",
+      "https://hollywoodunlocked.com/donald-trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Nicki-Minaj-6.png",
     "links": [
@@ -1516,14 +1558,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
     "links": [
       "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
@@ -1839,16 +1873,6 @@
       "https://allhiphop.com/news/nipsey-hussle-shares-pain-ambition-and-victory-with-bino-rideaux-on-prolific/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2025/09/Screen-Shot-2025-09-30-at-11.00.09-AM.png",
-    "links": [
-      "https://thesource.com/2026/10/27/house-democrats-report-allegations-donald-trump/?utm_source=rss&utm_medium=rss&utm_campaign=house-democrats-report-allegations-donald-trump",
-      "https://thesource.com/2026/08/12/trump-plane-swap-iran-threat-nato-summit/?utm_source=rss&utm_medium=rss&utm_campaign=trump-plane-swap-iran-threat-nato-summit",
-      "https://thesource.com/2026/08/11/trump-administration-proposes-new-fda-rule-targeting-ultra-processed-food-additives/?utm_source=rss&utm_medium=rss&utm_campaign=trump-administration-proposes-new-fda-rule-targeting-ultra-processed-food-additives"
-    ],
-    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
@@ -2357,14 +2381,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
-    "links": [
-      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
-      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png",
     "links": [
@@ -2423,6 +2439,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
+    "links": [
+      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
+      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
       "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
@@ -2544,6 +2568,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://imagez.tmz.com/image/21/16by9/2026/09/19/214d022ee08d41ecb2f888e15c6e424e_xl.jpg",
+    "links": [
+      "https://www.tmz.com/2026/09/19/dozens-of-tickets-still-available-for-ed-sheerans-saturday-concert/",
+      "https://www.tmz.com/2026/09/19/ed-sheerans-philadelphia-concert-has-hundreds-of-tickets-left/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://imagez.tmz.com/image/26/16by9/2026/08/13/2646c76b67074739a31788b6927b9dcf_xl.jpg",
     "links": [
@@ -2552,6 +2584,14 @@
       "https://www.tmz.com/2026/08/13/parents-of-surrogate-baby-have-custody-of-their-child/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
+    "links": [
+      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
+      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -2716,6 +2756,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
+    "links": [
+      "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
+      "https://theshaderoom.com/raven-symone-kalen-allen-miranda-maday-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
     "links": [
       "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
@@ -2912,14 +2960,6 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
-      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
