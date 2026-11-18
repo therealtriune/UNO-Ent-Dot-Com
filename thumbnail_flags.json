@@ -285,6 +285,93 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/01/Rod-Wave.png",
+    "links": [
+      "https://allhiphop.com/news/rod-wave-indicted-on-drug-gun-charges-in-atlanta-traffic-stop-case/",
+      "https://allhiphop.com/news/rod-wave-defends-jay-zs-age-thats-the-goal/",
+      "https://allhiphop.com/news/rod-wave-fans-face-halloween-costume-ban-at-chicago-concerts/",
+      "https://allhiphop.com/news/prosecutors-build-shooting-case-against-rod-wave-with-huge-video-evidence-dump/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2022/11/Takeoff-3.jpg",
+    "links": [
+      "https://allhiphop.com/news/offset-says-he-still-carries-guilt-over-takeoffs-death/",
+      "https://allhiphop.com/news/takeoffs-estate-resolves-sexual-assault-suit-before-december-trial/",
+      "https://allhiphop.com/news/takeoff-murder-trial-rescheduled-for-april-2027/",
+      "https://allhiphop.com/news/takeoff-estate-seeks-dismissal/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/spotify.jpg",
+    "links": [
+      "https://allhiphop.com/news/spotify-opens-artist-protection-to-everyone-but-leaves-releases-on-by-default/",
+      "https://allhiphop.com/news/rbx-appeals-spotify-bot-streaming-lawsuit-dismissal/",
+      "https://allhiphop.com/news/chicago-musicians-call-for-two-day-streaming-boycott-over-ai/",
+      "https://allhiphop.com/news/spotifys-ai-remix-push-gives-indie-artists-two-chances-to-say-no/",
+      "https://allhiphop.com/news/feds-want-ai-streaming-fraudster-who-stole-8m-from-artists-sent-to-prison-for-a-long-time/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Wale.png",
+    "links": [
+      "https://allhiphop.com/news/wale-reveals-grammy-nominated-leon-thomas-track-was-a-last-minute-addition/",
+      "https://allhiphop.com/news/wale-gifted-week-black-sports-career-program/",
+      "https://allhiphop.com/news/wale-salutes-angel-reese-gabby-williams-on-wnba-finals-anthem/",
+      "https://allhiphop.com/news/wale-joins-capsole-as-co-owner-creative-chief/",
+      "https://allhiphop.com/news/wale-opens-up-and-the-internet-talks-back/"
+    ],
+    "use_count": 5
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/09/LL-Cool-J.jpg",
+    "links": [
+      "https://allhiphop.com/news/ll-cool-j-takes-ncis-new-york-into-more-than-135-markets/",
+      "https://allhiphop.com/news/ll-cool-j-urges-rappers-to-stop-chasing-clicks-build-real-fans/",
+      "https://allhiphop.com/news/ll-cool-j-credits-bruce-lee-for-doing-up-to-90-of-his-own-stunts/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/12/Lil-Baby-1.png",
+    "links": [
+      "https://allhiphop.com/news/lil-baby-tops-hip-hop-albums-chart-as-fresh-opens-with-59000-units/",
+      "https://allhiphop.com/news/lil-baby-brings-his-gator-xbox-into-new-l-o-t-p-video/",
+      "https://allhiphop.com/news/lil-baby-politics-changed-mind-voting/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/yung-miami.webp",
+    "links": [
+      "https://www.hotnewhiphop.com/1016722-yung-miami-responds-grammy-nomination",
+      "https://www.hotnewhiphop.com/1015724-yung-miami-outrage-diddy-birthday",
+      "https://www.hotnewhiphop.com/1014481-yung-miami-lore-l-radio-confrontation",
+      "https://www.hotnewhiphop.com/1014121-yung-miami-dear-jt-new-song-roasted"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-24-at-3.31.37-PM.png",
+    "links": [
+      "https://www.hotnewhiphop.com/1016720-adam22-chrisean-rock-threat-response",
+      "https://www.hotnewhiphop.com/1015361-adam22-dj-akademiks-kendrick-lamar-rumors",
+      "https://www.hotnewhiphop.com/1010809-adam22-chrisean-rock-legal-action-response"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/07/yella-beezy.jpg",
     "links": [
       "https://allhiphop.com/news/yella-beezy-announces-new-album-with-mozzy-preview-after-life-sentence/",
@@ -705,16 +792,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2022/11/Takeoff-3.jpg",
-    "links": [
-      "https://allhiphop.com/news/takeoffs-estate-resolves-sexual-assault-suit-before-december-trial/",
-      "https://allhiphop.com/news/takeoff-murder-trial-rescheduled-for-april-2027/",
-      "https://allhiphop.com/news/takeoff-estate-seeks-dismissal/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Jay-Z-and-Beyonce.jpg",
     "links": [
       "https://allhiphop.com/news/beyonce-makes-cecred-wait-two-years-to-meet-her-standards/",
@@ -730,16 +807,6 @@
       "https://allhiphop.com/news/angie-martinez-tupac-tapes-netflix-withheld-interview/",
       "https://allhiphop.com/news/outlawz-member-napoleon-reveals-why-he-believes-there-are-more-people-involved-in-tupacs-death/",
       "https://allhiphop.com/news/keefe-ds-attorney-blasts-police-says-they-ignored-people-with-clear-motives/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/01/Rod-Wave.png",
-    "links": [
-      "https://allhiphop.com/news/rod-wave-defends-jay-zs-age-thats-the-goal/",
-      "https://allhiphop.com/news/rod-wave-fans-face-halloween-costume-ban-at-chicago-concerts/",
-      "https://allhiphop.com/news/prosecutors-build-shooting-case-against-rod-wave-with-huge-video-evidence-dump/"
     ],
     "use_count": 3
   },
@@ -1133,17 +1200,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Wale.png",
-    "links": [
-      "https://allhiphop.com/news/wale-gifted-week-black-sports-career-program/",
-      "https://allhiphop.com/news/wale-salutes-angel-reese-gabby-williams-on-wnba-finals-anthem/",
-      "https://allhiphop.com/news/wale-joins-capsole-as-co-owner-creative-chief/",
-      "https://allhiphop.com/news/wale-opens-up-and-the-internet-talks-back/"
-    ],
-    "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/03/Cordae.png",
     "links": [
       "https://allhiphop.com/news/anderson-paak-cordae-billboard-top-rap-albums-number-one/",
@@ -1229,17 +1285,6 @@
       "https://allhiphop.com/news/outkasts-nike-collection-heads-to-more-stores/",
       "https://allhiphop.com/news/exclusive-outkast-sues-ovrkast-after-rapper-admits-listeners-confuse-their-names/",
       "https://allhiphop.com/news/outkast-marks-30-years-of-atliens-with-community-soccer-partnership/"
-    ],
-    "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/spotify.jpg",
-    "links": [
-      "https://allhiphop.com/news/rbx-appeals-spotify-bot-streaming-lawsuit-dismissal/",
-      "https://allhiphop.com/news/chicago-musicians-call-for-two-day-streaming-boycott-over-ai/",
-      "https://allhiphop.com/news/spotifys-ai-remix-push-gives-indie-artists-two-chances-to-say-no/",
-      "https://allhiphop.com/news/feds-want-ai-streaming-fraudster-who-stole-8m-from-artists-sent-to-prison-for-a-long-time/"
     ],
     "use_count": 4
   },
@@ -1360,14 +1405,6 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1808.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-trump-to-resign-after-midterms-nobody-wants-you/",
-      "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-donald-trump-to-resign-after-midterms-nobody-wants-you/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1808.jpeg",
     "links": [
@@ -1382,16 +1419,6 @@
       "https://allhiphop.com/news/50-cent-tia-kemp-backup-to-backup-page-suspended/",
       "https://allhiphop.com/rumors/tia-kemp-tells-50-cent-you-cant-bully-me-after-legal-filing/",
       "https://allhiphop.com/rumors/50-cent-may-have-finally-met-his-match-in-tia-kemp/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/yung-miami.webp",
-    "links": [
-      "https://www.hotnewhiphop.com/1015724-yung-miami-outrage-diddy-birthday",
-      "https://www.hotnewhiphop.com/1014481-yung-miami-lore-l-radio-confrontation",
-      "https://www.hotnewhiphop.com/1014121-yung-miami-dear-jt-new-song-roasted"
     ],
     "use_count": 3
   },
@@ -1624,14 +1651,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
     "links": [
       "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
@@ -2493,14 +2512,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
-    "links": [
-      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
-      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
-    ]
-  },
-  {
     "issue": "same_homepage_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
@@ -2649,14 +2660,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
-    "links": [
-      "https://www.hotnewhiphop.com/1010122-miss-my-dawg-yeat-drake",
-      "https://www.hotnewhiphop.com/1010115-cocoon-yeat"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/Screenshot-2026-09-17-at-9.05.17-PM.png",
     "links": [
@@ -2674,6 +2677,14 @@
       "https://allhiphop.com/news/colin-kaepernick-calls-out-nfl-hypocrisy-amid-jay-z-partnership/"
     ],
     "use_count": 4
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/RHYNO-from-GTAVI_-The-Album.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1010010-thats-it-yung-lean-future-metro-boomin-gta-vi",
+      "https://www.hotnewhiphop.com/1010006-rhyno-travis-scott-gta-vi"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -2772,6 +2783,14 @@
     "use_count": 5
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
+    "links": [
+      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
+      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
+    ]
+  },
+  {
     "issue": "same_homepage_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
@@ -2785,6 +2804,14 @@
     "links": [
       "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
       "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Raven-Symone-Kalen-Allen-Miranda-Maday-Receiving-Death-Threats-Resurfaced-Podcast-Video-Disney-Character-Raven-Baxter-Black-Blackness.png",
+    "links": [
+      "https://theshaderoom.com/kalen-allen-says-hes-raven-symone-kalen-allen-miranda-maday-receiving-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness-death-threats-amid-backlash-over-resurfaced-v/",
+      "https://theshaderoom.com/raven-symone-kalen-allen-miranda-maday-death-threats-resurfaced-podcast-video-disney-character-raven-baxter-black-blackness/"
     ]
   },
   {
@@ -2862,6 +2889,14 @@
     "use_count": 5
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
+    "links": [
+      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
+      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
     "links": [
@@ -2894,6 +2929,14 @@
     "use_count": 7
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/president-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/",
+      "https://hollywoodunlocked.com/president-donald-trump-signs-an-executive-order-renaming-lake-ontario-to-lake-america-effective-immediately/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/img_4856.jpeg",
     "links": [
@@ -2919,14 +2962,6 @@
     "links": [
       "https://sports.yahoo.com/nfl/article/nfl-preseason-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html",
       "https://sports.yahoo.com/nfl/article/nfl-preseason-week-2-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
-    "links": [
-      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-after-blocking-for-late-td-vs-cardinals-194323239.html",
-      "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-nation-after-blocking-for-late-td-vs-cardinals-194323239.html"
     ]
   },
   {
@@ -2969,6 +3004,14 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
+      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
