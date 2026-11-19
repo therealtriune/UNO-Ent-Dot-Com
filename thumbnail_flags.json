@@ -1,5 +1,9 @@
 [
   {
+    "link": "https://www.hotnewhiphop.com/1016775-travis-scott-gta-vi-burn-mission",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://www.hotnewhiphop.com/1016770-dame-dash-archives-gone",
     "issue": "missing_thumbnail"
   },
@@ -286,6 +290,34 @@
   {
     "link": "https://sports.yahoo.com/articles/yair-rodriguez-returns-against-jean-054557860.html",
     "issue": "missing_thumbnail"
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Jay-Z-2.jpg",
+    "links": [
+      "https://allhiphop.com/news/zane-lowe-says-jay-z-changed-his-approach-to-artist-interviews/",
+      "https://allhiphop.com/news/blacc-sam-jay-z-marathon-live-nation-partnership/",
+      "https://allhiphop.com/news/jay-z-confirms-himself-for-super-bowl-halftime-show-at-sofi-stadium/",
+      "https://allhiphop.com/news/nuri-muhammad-puts-jay-zs-pen-above-a-billion-dollar-check/",
+      "https://allhiphop.com/news/jay-z-vindicated-after-accuser-admits-she-fabricated-entire-rape-accusation/",
+      "https://allhiphop.com/news/jay-z-london-show-features-lauryn-hill-wyclef-jean-forever-a-fan/",
+      "https://allhiphop.com/news/jay-z-sets-september-18-premiere-for-jay-z-in-8-with-new-trailer/",
+      "https://allhiphop.com/news/jay-zs-latest-sports-move-tom-bradys-trading-card-business/"
+    ],
+    "use_count": 8
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/02/Eminem.jpg",
+    "links": [
+      "https://allhiphop.com/news/suno-promises-artist-likeness-filters-as-it-expands-into-ai-music-videos/",
+      "https://allhiphop.com/news/eminem-stalking-defendant-faces-250k-bond/",
+      "https://allhiphop.com/news/eminems-ex-employee-pleads-guilty-over-stolen-music/",
+      "https://allhiphop.com/news/eminem-defends-kid-rock-collab-with-message-about-their-friendship/",
+      "https://allhiphop.com/news/eminems-ex-kim-mathers-thrown-in-jail-for-blowing-off-court-hearings-violating-alcohol-monitor/",
+      "https://allhiphop.com/news/eminems-ex-kim-mathers-heads-to-jail-for-ankle-monitor-violations/"
+    ],
+    "use_count": 6
   },
   {
     "issue": "overused_thumbnail",
@@ -1159,6 +1191,14 @@
     "use_count": 4
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/11/photo-output-3-e1794077053137.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/the-dealer-wins-prod-by-conductor-williams-is-a-sample-heavy-improvement-over-bruiser-wolfs-previous-album-push-and-paint-album-review/",
+      "https://undergroundhiphopblog.com/albums/the-dealer-wins-prod-by-conductor-williams-is-a-sample-heavy-improvement-over-bruiser-wolfs-previous-album-push-and-paint-ep-review/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/11/photo-output-3-e1794077053137.jpeg",
     "links": [
@@ -1291,20 +1331,6 @@
       "https://allhiphop.com/news/common-reveals-kanye-surprise-answer-after-he-quit-tour-for-acting/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Jay-Z-2.jpg",
-    "links": [
-      "https://allhiphop.com/news/blacc-sam-jay-z-marathon-live-nation-partnership/",
-      "https://allhiphop.com/news/jay-z-confirms-himself-for-super-bowl-halftime-show-at-sofi-stadium/",
-      "https://allhiphop.com/news/nuri-muhammad-puts-jay-zs-pen-above-a-billion-dollar-check/",
-      "https://allhiphop.com/news/jay-z-vindicated-after-accuser-admits-she-fabricated-entire-rape-accusation/",
-      "https://allhiphop.com/news/jay-z-london-show-features-lauryn-hill-wyclef-jean-forever-a-fan/",
-      "https://allhiphop.com/news/jay-z-sets-september-18-premiere-for-jay-z-in-8-with-new-trailer/",
-      "https://allhiphop.com/news/jay-zs-latest-sports-move-tom-bradys-trading-card-business/"
-    ],
-    "use_count": 7
   },
   {
     "issue": "overused_thumbnail",
@@ -1486,14 +1512,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/IMG_7490-scaled-e1792279703726.jpeg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-go-down-as-mozzys-most-soulfully-raw-extended-play-ep-review/",
-      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-be-mozzys-most-soulful-material-ep-review/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Nicki-Minaj-2.webp",
     "links": [
@@ -1506,14 +1524,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1808.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-trump-to-resign-after-midterms-nobody-wants-you/",
-      "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-donald-trump-to-resign-after-midterms-nobody-wants-you/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1808.jpeg",
     "links": [
       "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-trump-to-resign-after-midterms-nobody-wants-you/",
@@ -1627,14 +1637,6 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1469.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/",
-      "https://hollywoodunlocked.com/donald-trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1469.jpeg",
     "links": [
@@ -1731,22 +1733,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Cardi-B-4.jpg",
     "links": [
@@ -1789,18 +1775,6 @@
       "https://allhiphop.com/news/latto-celebrates-angel-reese-win-at-arena-that-moved-her-show/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/02/Eminem.jpg",
-    "links": [
-      "https://allhiphop.com/news/eminem-stalking-defendant-faces-250k-bond/",
-      "https://allhiphop.com/news/eminems-ex-employee-pleads-guilty-over-stolen-music/",
-      "https://allhiphop.com/news/eminem-defends-kid-rock-collab-with-message-about-their-friendship/",
-      "https://allhiphop.com/news/eminems-ex-kim-mathers-thrown-in-jail-for-blowing-off-court-hearings-violating-alcohol-monitor/",
-      "https://allhiphop.com/news/eminems-ex-kim-mathers-heads-to-jail-for-ankle-monitor-violations/"
-    ],
-    "use_count": 5
   },
   {
     "issue": "overused_thumbnail",
@@ -2249,14 +2223,6 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
-      "https://hollywoodunlocked.com/donald-trump-nobody-appreciates-how-great-a-president-i-am/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
     "links": [
@@ -2527,14 +2493,6 @@
     "links": [
       "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
       "https://www.hotnewhiphop.com/1011958-lucki-alleged-fight-playboi-carti-entourage"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
-    "links": [
-      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
-      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
     ]
   },
   {
@@ -2821,14 +2779,6 @@
   },
   {
     "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/09/img_6399.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/watch-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/",
-      "https://hollywoodunlocked.com/watch-donald-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Russell-Wilson-Ciara.jpg",
     "links": [
       "https://allhiphop.com/news/russell-wilsons-cinco-campaign-finally-pays-off-ciara-is-pregnant/",
@@ -2856,22 +2806,6 @@
       "https://allhiphop.com/news/feds-reveal-plea-deal-witnesses-ready-to-testify-against-lil-durk/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
-    "links": [
-      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
-      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
-    "links": [
-      "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
-      "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -3087,6 +3021,14 @@
     "links": [
       "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
       "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/2026-03-13T023729Z_1013837759_MT1USATODAY28478997_RTRMADP_3_NBA-BROOKLYN-NETS-AT-ATLANTA-HAWKS-scaled.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1004887-boosie-badazz-youtubers-feds-hip-hop-news",
+      "https://www.hotnewhiphop.com/1004880-50-cent-legal-battle-shaniqua-tompkins-hip-hop-news"
     ]
   },
   {
