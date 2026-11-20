@@ -289,6 +289,58 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/03/Nelly.jpg",
+    "links": [
+      "https://allhiphop.com/news/nelly-black-white-ball-st-charles-2026/",
+      "https://allhiphop.com/news/nelly-allen-iverson-horse-win-conditions/",
+      "https://allhiphop.com/news/nelly-recalls-taylor-swifts-50000-favor/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/gta-6-dirty-south-classics.webp",
+    "links": [
+      "https://www.hotnewhiphop.com/1016917-gta-vi-sales-figures-24-hours",
+      "https://www.hotnewhiphop.com/1016763-hip-hop-songs-gta-vi-so-far",
+      "https://www.hotnewhiphop.com/1016683-is-gta-vi-releasing-on-pc-this-week",
+      "https://www.hotnewhiphop.com/1016663-hip-hop-artists-confirmed-for-gta-vi",
+      "https://www.hotnewhiphop.com/1016229-gta-vi-dirty-south-classics-alleged-tracklist",
+      "https://www.hotnewhiphop.com/1006523-gta-6-dirty-south-classics-radio"
+    ],
+    "use_count": 6
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Lil-Durk.jpg",
+    "links": [
+      "https://allhiphop.com/news/lil-durk-double-jeopardy-drew-findling-second-trial/",
+      "https://allhiphop.com/news/exclusive-otf-dede-demands-new-trial-over-missing-instagram-comments/",
+      "https://allhiphop.com/news/lil-durk-trial-five-of-the-best-defenses-jurors-must-weigh/",
+      "https://allhiphop.com/news/otf-jam-attacks-lil-durk-before-closing-arguments-fuck-durk/",
+      "https://allhiphop.com/news/lil-durk-trial-executive-says-violence-was-a-sales-tool/",
+      "https://allhiphop.com/news/lil-durk-trial-smoking-on-lul-pab-recording-played-for-jurors/",
+      "https://allhiphop.com/news/lil-durk-trial-jury-instructions-reveal-questions-that-could-decide-verdict/"
+    ],
+    "use_count": 7
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Boosie.jpg",
+    "links": [
+      "https://allhiphop.com/news/boosie-badazz-avoids-indictment-in-houston-nightclub-case/",
+      "https://allhiphop.com/news/boosie-badazz-gets-baby-no-10-news-in-rajel-nelsons-birthday-surprise/",
+      "https://allhiphop.com/news/boosie-badazz-set-to-perform-with-full-orchestra-in-little-rock/",
+      "https://allhiphop.com/news/two-more-arrested-in-robbery-case-involving-boosie-badazzs-son/",
+      "https://allhiphop.com/news/boosie-badazzs-son-arrested-on-armed-robbery-gun-drug-charges/",
+      "https://allhiphop.com/news/boosie-badazz-performs-set-it-off-outside-white-house-in-surprise-appearance/",
+      "https://allhiphop.com/news/boosie-rips-mo3-killer-for-admitting-he-shot-rapper-in-dallas-planned-to-rap-about-it/",
+      "https://allhiphop.com/news/boosie-arraignment-marks-start-of-legal-nightmare-over-hookah-attack-case/"
+    ],
+    "use_count": 8
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2022/07/Beastie-Boys.jpg",
     "links": [
       "https://allhiphop.com/news/mike-d-sons-tiny-desk-concert-thank-you-beastie-boys/",
@@ -576,6 +628,14 @@
     "use_count": 5
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://www.hotnewhiphop.com/wp-content/uploads/2026/09/RHYNO-from-GTAVI_-The-Album-1-e1789647762818.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1016785-hip-hop-albums-songs-november-20-2026",
+      "https://www.hotnewhiphop.com/1016775-travis-scott-gta-vi-burn-mission"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://thesource.com/wp-content/uploads/2025/09/Trump-says-US-shot-out-a-drug-carrying-vessel-that-departed-from-Venezuela-0-5-screenshot.png",
     "links": [
@@ -633,18 +693,6 @@
       "https://allhiphop.com/news/wale-opens-up-and-the-internet-talks-back/"
     ],
     "use_count": 6
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/08/gta-6-dirty-south-classics.webp",
-    "links": [
-      "https://www.hotnewhiphop.com/1016763-hip-hop-songs-gta-vi-so-far",
-      "https://www.hotnewhiphop.com/1016683-is-gta-vi-releasing-on-pc-this-week",
-      "https://www.hotnewhiphop.com/1016663-hip-hop-artists-confirmed-for-gta-vi",
-      "https://www.hotnewhiphop.com/1016229-gta-vi-dirty-south-classics-alleged-tracklist",
-      "https://www.hotnewhiphop.com/1006523-gta-6-dirty-south-classics-radio"
-    ],
-    "use_count": 5
   },
   {
     "issue": "overused_thumbnail",
@@ -833,14 +881,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_2868.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-says-he-isnt-worried-about-recent-banking-air-control-and-tech-failures-its-life/",
-      "https://hollywoodunlocked.com/donald-trump-says-he-isnt-worried-about-recent-banking-air-control-and-tech-failures-its-life/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_2868.jpeg",
     "links": [
       "https://hollywoodunlocked.com/trump-says-he-isnt-worried-about-recent-banking-air-control-and-tech-failures-its-life/",
@@ -1050,20 +1090,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Boosie.jpg",
-    "links": [
-      "https://allhiphop.com/news/boosie-badazz-gets-baby-no-10-news-in-rajel-nelsons-birthday-surprise/",
-      "https://allhiphop.com/news/boosie-badazz-set-to-perform-with-full-orchestra-in-little-rock/",
-      "https://allhiphop.com/news/two-more-arrested-in-robbery-case-involving-boosie-badazzs-son/",
-      "https://allhiphop.com/news/boosie-badazzs-son-arrested-on-armed-robbery-gun-drug-charges/",
-      "https://allhiphop.com/news/boosie-badazz-performs-set-it-off-outside-white-house-in-surprise-appearance/",
-      "https://allhiphop.com/news/boosie-rips-mo3-killer-for-admitting-he-shot-rapper-in-dallas-planned-to-rap-about-it/",
-      "https://allhiphop.com/news/boosie-arraignment-marks-start-of-legal-nightmare-over-hookah-attack-case/"
-    ],
-    "use_count": 7
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/02/GloRilla-1.jpg",
     "links": [
       "https://allhiphop.com/news/glorilla-refuses-to-let-gospel-critics-silence-her-praise/",
@@ -1119,19 +1145,6 @@
       "https://allhiphop.com/news/keefe-ds-attorney-blasts-police-says-they-ignored-people-with-clear-motives/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Lil-Durk.jpg",
-    "links": [
-      "https://allhiphop.com/news/exclusive-otf-dede-demands-new-trial-over-missing-instagram-comments/",
-      "https://allhiphop.com/news/lil-durk-trial-five-of-the-best-defenses-jurors-must-weigh/",
-      "https://allhiphop.com/news/otf-jam-attacks-lil-durk-before-closing-arguments-fuck-durk/",
-      "https://allhiphop.com/news/lil-durk-trial-executive-says-violence-was-a-sales-tool/",
-      "https://allhiphop.com/news/lil-durk-trial-smoking-on-lul-pab-recording-played-for-jurors/",
-      "https://allhiphop.com/news/lil-durk-trial-jury-instructions-reveal-questions-that-could-decide-verdict/"
-    ],
-    "use_count": 6
   },
   {
     "issue": "overused_thumbnail",
@@ -1337,14 +1350,6 @@
       "https://allhiphop.com/news/tyler-perry-dumps-57m-beverly-hills-mansion-for-fresh-start-in-puerto-rico/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/11/photo-output-3-e1794077053137.jpeg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/the-dealer-wins-prod-by-conductor-williams-is-a-sample-heavy-improvement-over-bruiser-wolfs-previous-album-push-and-paint-album-review/",
-      "https://undergroundhiphopblog.com/albums/the-dealer-wins-prod-by-conductor-williams-is-a-sample-heavy-improvement-over-bruiser-wolfs-previous-album-push-and-paint-ep-review/"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -1660,6 +1665,14 @@
     "use_count": 5
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/IMG_7490-scaled-e1792279703726.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-go-down-as-mozzys-most-soulfully-raw-extended-play-ep-review/",
+      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-be-mozzys-most-soulful-material-ep-review/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Nicki-Minaj-2.webp",
     "links": [
@@ -1785,6 +1798,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1469.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/",
+      "https://hollywoodunlocked.com/donald-trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Nicki-Minaj-6.png",
     "links": [
@@ -1871,6 +1892,22 @@
       "https://allhiphop.com/news/t-i-tiny-harris-reaffirm-their-marriage-at-private-ocho-rios-villa/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -2020,6 +2057,14 @@
       "https://allhiphop.com/news/rick-ross-sued-for-ditching-north-carolina-concerts-as-bad-week-gets-worse/"
     ],
     "use_count": 4
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Just-Doin-Me.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1014701-spinnin-21-savage-young-nudy",
+      "https://www.hotnewhiphop.com/1014698-just-doin-me-young-nudy"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -2323,14 +2368,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
-      "https://hollywoodunlocked.com/donald-trump-nobody-appreciates-how-great-a-president-i-am/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/tina-tuesday-freestyle.jpg",
     "links": [
@@ -2481,14 +2518,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
-      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/01/don-toliver.jpg",
     "links": [
@@ -2596,6 +2625,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
+    "links": [
+      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
+      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/11/Blueface-1.png",
     "links": [
@@ -2643,6 +2680,14 @@
       "https://www.hotnewhiphop.com/1011684-habibti-fomo-drake"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
+    "links": [
+      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
+      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
+    ]
   },
   {
     "issue": "same_homepage_page",
@@ -2862,6 +2907,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/09/img_6399.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/watch-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/",
+      "https://hollywoodunlocked.com/watch-donald-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/09/img_6399.jpeg",
     "links": [
@@ -3067,26 +3120,10 @@
   },
   {
     "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/101863a2720f8285bdc25dfd62c8f4af70b53c6e23fd69db37b73cf1c1706cd8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F51d423e8-e724-4b22-9b64-a777be34d751",
-    "links": [
-      "https://sports.yahoo.com/nfl/article/nfl-preseason-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html",
-      "https://sports.yahoo.com/nfl/article/nfl-preseason-week-2-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
     "links": [
       "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-after-blocking-for-late-td-vs-cardinals-194323239.html",
       "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-nation-after-blocking-for-late-td-vs-cardinals-194323239.html"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
-    "links": [
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
     ]
   },
   {
@@ -3106,6 +3143,14 @@
       "https://www.tmz.com/2026/08/13/surrogate-who-wouldnt-get-abortion-gives-birth/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
+      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
+    ]
   },
   {
     "issue": "same_category_page",
