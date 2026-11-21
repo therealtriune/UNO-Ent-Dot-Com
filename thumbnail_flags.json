@@ -1,5 +1,9 @@
 [
   {
+    "link": "https://sports.yahoo.com/articles/kyoji-horiguchi-vs-asu-almabayev-030019146.html",
+    "issue": "missing_thumbnail"
+  },
+  {
     "link": "https://sports.yahoo.com/articles/ufc-qatar-video-jiri-prochazka-153601082.html",
     "issue": "missing_thumbnail"
   },
@@ -286,6 +290,26 @@
   {
     "link": "https://sports.yahoo.com/articles/yair-rodriguez-returns-against-jean-054557860.html",
     "issue": "missing_thumbnail"
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/summer-walker-spend-it-video-tgj.webp",
+    "links": [
+      "https://www.hotnewhiphop.com/1016914-summer-walker-countersuit-interscope",
+      "https://www.hotnewhiphop.com/1016439-summer-walker-lvrn-lawsuit-update",
+      "https://www.hotnewhiphop.com/1012678-summer-walker-interscope-umg-lawsuit"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/11/DJ-Akademiks-Awards-Show-Adam22-Trap-Lore-Ross-More.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1016919-dj-akademiks-drake-iceman-livestream",
+      "https://www.hotnewhiphop.com/1016594-joe-budden-dj-akademiks-angie-martinez-tupac",
+      "https://www.hotnewhiphop.com/1016162-dj-akademiks-awards-show-adam22-trap-lore-ross-more"
+    ],
+    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
@@ -628,14 +652,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/wp-content/uploads/2026/09/RHYNO-from-GTAVI_-The-Album-1-e1789647762818.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1016785-hip-hop-albums-songs-november-20-2026",
-      "https://www.hotnewhiphop.com/1016775-travis-scott-gta-vi-burn-mission"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://thesource.com/wp-content/uploads/2025/09/Trump-says-US-shot-out-a-drug-carrying-vessel-that-departed-from-Venezuela-0-5-screenshot.png",
     "links": [
@@ -881,6 +897,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_2868.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/trump-says-he-isnt-worried-about-recent-banking-air-control-and-tech-failures-its-life/",
+      "https://hollywoodunlocked.com/donald-trump-says-he-isnt-worried-about-recent-banking-air-control-and-tech-failures-its-life/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_2868.jpeg",
     "links": [
       "https://hollywoodunlocked.com/trump-says-he-isnt-worried-about-recent-banking-air-control-and-tech-failures-its-life/",
@@ -1352,6 +1376,14 @@
     "use_count": 4
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/11/photo-output-3-e1794077053137.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/the-dealer-wins-prod-by-conductor-williams-is-a-sample-heavy-improvement-over-bruiser-wolfs-previous-album-push-and-paint-album-review/",
+      "https://undergroundhiphopblog.com/albums/the-dealer-wins-prod-by-conductor-williams-is-a-sample-heavy-improvement-over-bruiser-wolfs-previous-album-push-and-paint-ep-review/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/11/photo-output-3-e1794077053137.jpeg",
     "links": [
@@ -1586,14 +1618,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/IMG_6570.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/attorney-who-defended-duane-keffe-d-davis-in-tupac-shakur-murder-trial-dies-in-las-vegas/",
-      "https://hollywoodunlocked.com/attorney-who-defended-duane-keefe-d-davis-in-tupac-shakur-murder-trial-dies-in-las-vegas/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/IMG_6570.jpeg",
     "links": [
@@ -1798,14 +1822,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1469.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/",
-      "https://hollywoodunlocked.com/donald-trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Nicki-Minaj-6.png",
     "links": [
@@ -1895,14 +1911,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
     "links": [
       "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
@@ -2368,6 +2376,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
+      "https://hollywoodunlocked.com/donald-trump-nobody-appreciates-how-great-a-president-i-am/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/tina-tuesday-freestyle.jpg",
     "links": [
@@ -2518,6 +2534,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
+      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/01/don-toliver.jpg",
     "links": [
@@ -2622,14 +2646,6 @@
     "links": [
       "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
       "https://www.hotnewhiphop.com/1011958-lucki-alleged-fight-playboi-carti-entourage"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
-    "links": [
-      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
-      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
     ]
   },
   {
@@ -2945,14 +2961,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
-    "links": [
-      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
-      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
-    ]
-  },
-  {
     "issue": "same_homepage_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
@@ -3120,10 +3128,26 @@
   },
   {
     "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/101863a2720f8285bdc25dfd62c8f4af70b53c6e23fd69db37b73cf1c1706cd8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F51d423e8-e724-4b22-9b64-a777be34d751",
+    "links": [
+      "https://sports.yahoo.com/nfl/article/nfl-preseason-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html",
+      "https://sports.yahoo.com/nfl/article/nfl-preseason-week-2-browns-qb-mess-nervous-time-for-raiders-nine-key-takeaways-232017908.html"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://s.yimg.com/lo/mysterio/api/9cc14cff3bfb65f5ea7621d1c9981fdbe41fcbb64a89674f36d62160d4433c7f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F2562151f-f78e-4ded-8d0a-4293f0c78510",
     "links": [
       "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-after-blocking-for-late-td-vs-cardinals-194323239.html",
       "https://sports.yahoo.com/nfl/article/cowboys-rookie-shiyazh-pete-gets-standing-ovation-from-navajo-nation-after-blocking-for-late-td-vs-cardinals-194323239.html"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
+    "links": [
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
     ]
   },
   {
