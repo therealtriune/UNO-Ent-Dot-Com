@@ -293,6 +293,26 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/11/Gemini_Generated_Image_tzl1zctzl1zctzl1.jpg",
+    "links": [
+      "https://allhiphop.com/news/looze-cannon-childhood-record-deal-big-michael-ownership/",
+      "https://allhiphop.com/news/looze-cannon-reveals-eric-bellinger-roscoe-dash-sessions-after-big-michael-breakout/",
+      "https://allhiphop.com/opinion/how-big-michael-michael-broke-hip-hops-generational-curse/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/Jaafar-Jackson.jpg",
+    "links": [
+      "https://allhiphop.com/news/jaafar-jackson-wins-hollywood-music-award-for-bad-in-michael/",
+      "https://allhiphop.com/news/jaafar-jackson-credits-deleted-michael-scenes-for-making-him-a-better-actor/",
+      "https://allhiphop.com/news/supermax-adds-jaafar-jackson-alongside-bald-headed-will-smith/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/summer-walker-spend-it-video-tgj.webp",
     "links": [
       "https://www.hotnewhiphop.com/1016914-summer-walker-countersuit-interscope",
@@ -652,6 +672,14 @@
     "use_count": 5
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://www.hotnewhiphop.com/wp-content/uploads/2026/09/RHYNO-from-GTAVI_-The-Album-1-e1789647762818.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1016785-hip-hop-albums-songs-november-20-2026",
+      "https://www.hotnewhiphop.com/1016775-travis-scott-gta-vi-burn-mission"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://thesource.com/wp-content/uploads/2025/09/Trump-says-US-shot-out-a-drug-carrying-vessel-that-departed-from-Venezuela-0-5-screenshot.png",
     "links": [
@@ -897,14 +925,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_2868.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-says-he-isnt-worried-about-recent-banking-air-control-and-tech-failures-its-life/",
-      "https://hollywoodunlocked.com/donald-trump-says-he-isnt-worried-about-recent-banking-air-control-and-tech-failures-its-life/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_2868.jpeg",
     "links": [
       "https://hollywoodunlocked.com/trump-says-he-isnt-worried-about-recent-banking-air-control-and-tech-failures-its-life/",
@@ -1618,6 +1638,14 @@
     "use_count": 3
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/IMG_6570.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/attorney-who-defended-duane-keffe-d-davis-in-tupac-shakur-murder-trial-dies-in-las-vegas/",
+      "https://hollywoodunlocked.com/attorney-who-defended-duane-keefe-d-davis-in-tupac-shakur-murder-trial-dies-in-las-vegas/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/IMG_6570.jpeg",
     "links": [
@@ -1689,7 +1717,7 @@
     "use_count": 5
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/IMG_7490-scaled-e1792279703726.jpeg",
     "links": [
       "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-go-down-as-mozzys-most-soulfully-raw-extended-play-ep-review/",
@@ -1814,7 +1842,7 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1469.jpeg",
     "links": [
       "https://hollywoodunlocked.com/trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/",
@@ -1910,7 +1938,7 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
     "links": [
       "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
@@ -2376,14 +2404,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
-      "https://hollywoodunlocked.com/donald-trump-nobody-appreciates-how-great-a-president-i-am/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/tina-tuesday-freestyle.jpg",
     "links": [
@@ -2526,22 +2546,6 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
-      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
-      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/01/don-toliver.jpg",
     "links": [
@@ -2633,14 +2637,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
-      "https://www.hotnewhiphop.com/1011958-lucki-alleged-fight-playboi-carti-entourage"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
     "links": [
@@ -2696,22 +2692,6 @@
       "https://www.hotnewhiphop.com/1011684-habibti-fomo-drake"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
-    "links": [
-      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
-      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
-    ]
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
-    "links": [
-      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
-      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
-    ]
   },
   {
     "issue": "same_category_page",
@@ -2959,6 +2939,14 @@
       "https://allhiphop.com/news/feds-reveal-plea-deal-witnesses-ready-to-testify-against-lil-durk/"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
+    "links": [
+      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
+      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
+    ]
   },
   {
     "issue": "same_homepage_page",
