@@ -293,6 +293,58 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/11/Grand-Theft-Auto-VI_-The-Album-Deluxe-Edition.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1016961-got-dat-pooh-shiesty",
+      "https://www.hotnewhiphop.com/1016959-burn-this-shit-down-travis-scott",
+      "https://www.hotnewhiphop.com/1016955-grand-theft-auto-vi-the-album-deluxe"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2022/11/KRS-One.jpg",
+    "links": [
+      "https://allhiphop.com/news/krs-ones-temple-of-hip-hop-opens-its-doors-for-newarks-turkey-giveaway/",
+      "https://allhiphop.com/news/toure-reveals-krs-ones-homeless-vision-that-led-to-iconic-career/",
+      "https://allhiphop.com/news/krs-one-proposes-little-hip-hop-neighborhoods-in-every-city-worldwide/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/07/chrome-capture-2026-7-24.jpg",
+    "links": [
+      "https://thesource.com/2026/11/23/diddys-prison-thanksgiving-meal-to-include-tofu-stir-fry/?utm_source=rss&utm_medium=rss&utm_campaign=diddys-prison-thanksgiving-meal-to-include-tofu-stir-fry",
+      "https://thesource.com/2026/10/13/spokesperson-for-diddy-responds-to-reports-of-head-injury-and-hospital-visit/?utm_source=rss&utm_medium=rss&utm_campaign=spokesperson-for-diddy-responds-to-reports-of-head-injury-and-hospital-visit",
+      "https://thesource.com/2026/10/08/diddys-prison-release-date-extended-following-reports-of-vip-treatment-behind-bars/?utm_source=rss&utm_medium=rss&utm_campaign=diddys-prison-release-date-extended-following-reports-of-vip-treatment-behind-bars",
+      "https://thesource.com/2026/08/07/diddys-release-date-pushed-back-to-february-2028-after-inmate-fight/?utm_source=rss&utm_medium=rss&utm_campaign=diddys-release-date-pushed-back-to-february-2028-after-inmate-fight"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/AllHipHop-89-1.jpg",
+    "links": [
+      "https://allhiphop.com/rumors/david-banner-calls-out-rapper-podcasts-aint-nobody-talking-about-sht/",
+      "https://allhiphop.com/music/david-banner-reunites-southern-heavyweights-for-where-you-from-video/",
+      "https://allhiphop.com/news/david-banner-considers-giving-away-the-god-box-2-for-free/",
+      "https://allhiphop.com/features/david-banner-brings-t-i-method-man-benny-the-butcher-westside-gunn-more-on-the-god-box-2/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/08/E.D.I.-Mean.jpg",
+    "links": [
+      "https://allhiphop.com/news/__trashed-414/",
+      "https://allhiphop.com/news/e-d-i-mean-speaks-out-after-tupac-murder-trial-guilty-verdict/",
+      "https://allhiphop.com/news/e-d-i-mean-takes-the-stand-reveals-warning-from-bullet-riddled-tupac-that-saved-his-life/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Wale.png",
     "links": [
       "https://allhiphop.com/news/wale-dunbar-high-school-principal-gifted-week-lyrics/",
@@ -799,6 +851,14 @@
     "use_count": 5
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://www.hotnewhiphop.com/wp-content/uploads/2026/09/RHYNO-from-GTAVI_-The-Album-1-e1789647762818.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1016785-hip-hop-albums-songs-november-20-2026",
+      "https://www.hotnewhiphop.com/1016775-travis-scott-gta-vi-burn-mission"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://thesource.com/wp-content/uploads/2025/09/Trump-says-US-shot-out-a-drug-carrying-vessel-that-departed-from-Venezuela-0-5-screenshot.png",
     "links": [
@@ -1168,16 +1228,6 @@
       "https://allhiphop.com/news/exclusive-robyn-dixon-gizelle-bryant-blame-eminem-for-mounting-costs/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/08/AllHipHop-89-1.jpg",
-    "links": [
-      "https://allhiphop.com/music/david-banner-reunites-southern-heavyweights-for-where-you-from-video/",
-      "https://allhiphop.com/news/david-banner-considers-giving-away-the-god-box-2-for-free/",
-      "https://allhiphop.com/features/david-banner-brings-t-i-method-man-benny-the-butcher-westside-gunn-more-on-the-god-box-2/"
-    ],
-    "use_count": 3
   },
   {
     "issue": "overused_thumbnail",
@@ -1787,14 +1837,6 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1808.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-trump-to-resign-after-midterms-nobody-wants-you/",
-      "https://hollywoodunlocked.com/jimmy-kimmel-calls-on-donald-trump-to-resign-after-midterms-nobody-wants-you/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1808.jpeg",
     "links": [
@@ -1854,6 +1896,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1661.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/first-muslim-elected-to-us-senate-abdul-el-sayed-had-a-message-for-trump-and-vance-over-their-name-mockery-call-me-senator/",
+      "https://hollywoodunlocked.com/first-muslim-elected-to-us-senate-abdul-el-sayed-had-a-message-for-donald-trump-and-jd-vance-over-their-name-mockery-call-me-senator/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1661.jpeg",
     "links": [
       "https://hollywoodunlocked.com/first-muslim-elected-to-us-senate-abdul-el-sayed-had-a-message-for-trump-and-vance-over-their-name-mockery-call-me-senator/",
@@ -1990,6 +2040,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
     "links": [
       "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
@@ -2663,16 +2721,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/07/chrome-capture-2026-7-24.jpg",
-    "links": [
-      "https://thesource.com/2026/10/13/spokesperson-for-diddy-responds-to-reports-of-head-injury-and-hospital-visit/?utm_source=rss&utm_medium=rss&utm_campaign=spokesperson-for-diddy-responds-to-reports-of-head-injury-and-hospital-visit",
-      "https://thesource.com/2026/10/08/diddys-prison-release-date-extended-following-reports-of-vip-treatment-behind-bars/?utm_source=rss&utm_medium=rss&utm_campaign=diddys-prison-release-date-extended-following-reports-of-vip-treatment-behind-bars",
-      "https://thesource.com/2026/08/07/diddys-release-date-pushed-back-to-february-2028-after-inmate-fight/?utm_source=rss&utm_medium=rss&utm_campaign=diddys-release-date-pushed-back-to-february-2028-after-inmate-fight"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://thesource.com/wp-content/uploads/2025/07/image003-3.jpg",
     "links": [
       "https://thesource.com/2026/10/13/drake-don-toliver-solar-eclipse-billboard-hot-100/?utm_source=rss&utm_medium=rss&utm_campaign=drake-don-toliver-solar-eclipse-billboard-hot-100",
@@ -2775,14 +2823,6 @@
       "https://www.hotnewhiphop.com/1011684-habibti-fomo-drake"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/f75eaeaeac746f006a35bae566e01f2cf7b22290775bf42212fe7769bab96460/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Ffuryaj_1684.png",
-    "links": [
-      "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
-      "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
-    ]
   },
   {
     "issue": "same_homepage_page",
@@ -3002,14 +3042,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/09/img_6399.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/watch-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/",
-      "https://hollywoodunlocked.com/watch-donald-trump-snap-and-get-in-abc-reporters-face-after-she-hits-him-with-the-40-trillion-debt-question/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/09/img_6399.jpeg",
     "links": [
@@ -3038,6 +3070,14 @@
       "https://allhiphop.com/news/feds-reveal-plea-deal-witnesses-ready-to-testify-against-lil-durk/"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
+    "links": [
+      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
+      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
+    ]
   },
   {
     "issue": "same_homepage_page",
@@ -3246,14 +3286,6 @@
       "https://www.tmz.com/2026/08/13/surrogate-who-wouldnt-get-abortion-gives-birth/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/08/IMG_5549-e1786102614676.jpeg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/q-uniques-4th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/",
-      "https://undergroundhiphopblog.com/albums/q-uniques-5th-lp-the-qr-code-prod-by-dj-rhettmatic-celebrates-the-cultures-principles-album-review/"
-    ]
   },
   {
     "issue": "same_category_page",
