@@ -293,6 +293,30 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Wale.png",
+    "links": [
+      "https://allhiphop.com/news/wale-dunbar-high-school-principal-gifted-week-lyrics/",
+      "https://allhiphop.com/news/wale-plans-thanksgiving-food-drive-for-gifted-week-finale/",
+      "https://allhiphop.com/news/wale-reveals-grammy-nominated-leon-thomas-track-was-a-last-minute-addition/",
+      "https://allhiphop.com/news/wale-gifted-week-black-sports-career-program/",
+      "https://allhiphop.com/news/wale-salutes-angel-reese-gabby-williams-on-wnba-finals-anthem/",
+      "https://allhiphop.com/news/wale-joins-capsole-as-co-owner-creative-chief/",
+      "https://allhiphop.com/news/wale-opens-up-and-the-internet-talks-back/"
+    ],
+    "use_count": 7
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/11/Queen-Latifah.jpg",
+    "links": [
+      "https://allhiphop.com/news/coco-jones-joins-queen-latifah-in-new-ice-age-movie/",
+      "https://allhiphop.com/news/queen-latifah-reacts-to-first-grammy-nomination-since-2008/",
+      "https://allhiphop.com/news/queen-latifah-enters-rock-hall-with-megan-thee-stallion-mc-lyte/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/11/bigxthaplug-instar55351029-1200x800-1.jpg",
     "links": [
       "https://allhiphop.com/news/bigxthaplug-wins-first-bmi-country-award-for-bailey-zimmerman-collab/",
@@ -819,19 +843,6 @@
       "https://allhiphop.com/news/tyler-the-creator-takes-over-fc-barcelona-campaign-calls-his-own-shots/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Wale.png",
-    "links": [
-      "https://allhiphop.com/news/wale-plans-thanksgiving-food-drive-for-gifted-week-finale/",
-      "https://allhiphop.com/news/wale-reveals-grammy-nominated-leon-thomas-track-was-a-last-minute-addition/",
-      "https://allhiphop.com/news/wale-gifted-week-black-sports-career-program/",
-      "https://allhiphop.com/news/wale-salutes-angel-reese-gabby-williams-on-wnba-finals-anthem/",
-      "https://allhiphop.com/news/wale-joins-capsole-as-co-owner-creative-chief/",
-      "https://allhiphop.com/news/wale-opens-up-and-the-internet-talks-back/"
-    ],
-    "use_count": 6
   },
   {
     "issue": "overused_thumbnail",
@@ -1757,6 +1768,14 @@
     "use_count": 5
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/IMG_7490-scaled-e1792279703726.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-go-down-as-mozzys-most-soulfully-raw-extended-play-ep-review/",
+      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-be-mozzys-most-soulful-material-ep-review/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Nicki-Minaj-2.webp",
     "links": [
@@ -1835,14 +1854,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1661.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/first-muslim-elected-to-us-senate-abdul-el-sayed-had-a-message-for-trump-and-vance-over-their-name-mockery-call-me-senator/",
-      "https://hollywoodunlocked.com/first-muslim-elected-to-us-senate-abdul-el-sayed-had-a-message-for-donald-trump-and-jd-vance-over-their-name-mockery-call-me-senator/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1661.jpeg",
     "links": [
       "https://hollywoodunlocked.com/first-muslim-elected-to-us-senate-abdul-el-sayed-had-a-message-for-trump-and-vance-over-their-name-mockery-call-me-senator/",
@@ -1976,6 +1987,14 @@
       "https://allhiphop.com/news/t-i-tiny-harris-reaffirm-their-marriage-at-private-ocho-rios-villa/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -2135,6 +2154,14 @@
     ]
   },
   {
+    "issue": "same_category_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Just-Doin-Me.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1014701-spinnin-21-savage-young-nudy",
+      "https://www.hotnewhiphop.com/1014698-just-doin-me-young-nudy"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/07/Screenshot-2026-07-27-111324-scaled.png",
     "links": [
@@ -2187,6 +2214,14 @@
       "https://allhiphop.com/news/nicki-minaj-to-judge-president-trumps-1-million-small-business-competition/"
     ],
     "use_count": 7
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-donald-trump-brutally-raped-her-in-1993-he-denies-it/"
+    ]
   },
   {
     "issue": "same_category_page",
@@ -2686,10 +2721,10 @@
   },
   {
     "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
     "links": [
-      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
-      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
+      "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
+      "https://www.hotnewhiphop.com/1011958-lucki-alleged-fight-playboi-carti-entourage"
     ]
   },
   {
@@ -3003,14 +3038,6 @@
       "https://allhiphop.com/news/feds-reveal-plea-deal-witnesses-ready-to-testify-against-lil-durk/"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
-    "links": [
-      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
-      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
-    ]
   },
   {
     "issue": "same_homepage_page",
