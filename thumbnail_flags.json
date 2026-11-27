@@ -293,6 +293,33 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Cardi-B-5.jpg",
+    "links": [
+      "https://allhiphop.com/news/bobby-lytes-eyes-rehab-and-gets-cardi-bs-support-after-miami-club-incident/",
+      "https://allhiphop.com/news/cardi-b-turns-her-year-of-touring-and-motherhood-into-a-pep-talk/",
+      "https://allhiphop.com/news/cardi-b-thanks-summer-walker-for-having-her-back-in-toronto-speech/",
+      "https://allhiphop.com/news/cardi-b-brings-dont-chart-to-gta-vi-festival-as-it-hits-no-1-on-urban-radio/",
+      "https://allhiphop.com/news/cardi-b-bzr-dispute/",
+      "https://allhiphop.com/news/cardi-bs-grow-good-takes-over-nyc-salon-for-custom-curl-treatments/",
+      "https://allhiphop.com/news/cardi-bs-birkin-collection-takes-a-hit-as-esmeralda-goes-missing/",
+      "https://allhiphop.com/news/snoop-dogg-leads-hip-hops-big-night-as-cardi-b-wins-at-mtv-vmas/",
+      "https://allhiphop.com/news/cardi-b-shows-off-15k-butt-crack-jewelry-in-tight-white-catsuit/"
+    ],
+    "use_count": 9
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Big-Boi.jpg",
+    "links": [
+      "https://allhiphop.com/news/outkast-and-crime-mob-land-on-georgias-state-song-shortlist/",
+      "https://allhiphop.com/news/big-boi-revisits-the-two-rejections-before-outkasts-christmas-breakthrough/",
+      "https://allhiphop.com/news/big-boi-says-fatherhood-finally-wins-him-over-to-podcasting/",
+      "https://allhiphop.com/news/en-vogue-takes-wnba-finals-stage-after-big-bois-atlanta-set/"
+    ],
+    "use_count": 4
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/08/Tupac-2Pac-Shakur.jpg",
     "links": [
       "https://allhiphop.com/news/2pac-leads-three-hip-hop-and-rb-vinyl-picks-for-record-store-day-black-friday/",
@@ -325,21 +352,6 @@
       "https://allhiphop.com/news/dmc-of-run-dmc-fame-involved-in-los-angeles-freeway-crash/"
     ],
     "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Cardi-B-5.jpg",
-    "links": [
-      "https://allhiphop.com/news/cardi-b-turns-her-year-of-touring-and-motherhood-into-a-pep-talk/",
-      "https://allhiphop.com/news/cardi-b-thanks-summer-walker-for-having-her-back-in-toronto-speech/",
-      "https://allhiphop.com/news/cardi-b-brings-dont-chart-to-gta-vi-festival-as-it-hits-no-1-on-urban-radio/",
-      "https://allhiphop.com/news/cardi-b-bzr-dispute/",
-      "https://allhiphop.com/news/cardi-bs-grow-good-takes-over-nyc-salon-for-custom-curl-treatments/",
-      "https://allhiphop.com/news/cardi-bs-birkin-collection-takes-a-hit-as-esmeralda-goes-missing/",
-      "https://allhiphop.com/news/snoop-dogg-leads-hip-hops-big-night-as-cardi-b-wins-at-mtv-vmas/",
-      "https://allhiphop.com/news/cardi-b-shows-off-15k-butt-crack-jewelry-in-tight-white-catsuit/"
-    ],
-    "use_count": 8
   },
   {
     "issue": "overused_thumbnail",
@@ -478,14 +490,6 @@
       "https://allhiphop.com/news/wu-tang-clans-secret-album-gets-netflix-documentary-treatment/"
     ],
     "use_count": 9
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://imagez.tmz.com/image/7f/16by9/2026/11/25/7f92b6393e8945dd8db63b015a508f3f_xl.jpg",
-    "links": [
-      "https://www.tmz.com/2026/11/25/six-people-dead-in-mississippi-plane-crash/",
-      "https://www.tmz.com/2026/11/24/plane-crash-near-horn-island-mississipi/"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -833,16 +837,6 @@
   },
   {
     "issue": "overused_thumbnail",
-    "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/10/Big-Boi.jpg",
-    "links": [
-      "https://allhiphop.com/news/big-boi-revisits-the-two-rejections-before-outkasts-christmas-breakthrough/",
-      "https://allhiphop.com/news/big-boi-says-fatherhood-finally-wins-him-over-to-podcasting/",
-      "https://allhiphop.com/news/en-vogue-takes-wnba-finals-stage-after-big-bois-atlanta-set/"
-    ],
-    "use_count": 3
-  },
-  {
-    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/02/Eminem.jpg",
     "links": [
       "https://allhiphop.com/news/eminem-publishers-suno-amended-complaint-108-outputs/",
@@ -1122,6 +1116,14 @@
       "https://www.hotnewhiphop.com/1013114-gta-vi-launch-trailer"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://www.hotnewhiphop.com/wp-content/uploads/2026/09/RHYNO-from-GTAVI_-The-Album-1-e1789647762818.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1016785-hip-hop-albums-songs-november-20-2026",
+      "https://www.hotnewhiphop.com/1016775-travis-scott-gta-vi-burn-mission"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -1948,14 +1950,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/IMG_6570.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/attorney-who-defended-duane-keffe-d-davis-in-tupac-shakur-murder-trial-dies-in-las-vegas/",
-      "https://hollywoodunlocked.com/attorney-who-defended-duane-keefe-d-davis-in-tupac-shakur-murder-trial-dies-in-las-vegas/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/AllHipHop-34.jpg",
     "links": [
@@ -2017,6 +2011,14 @@
       "https://allhiphop.com/news/rapper-bigxthaplug-busted-for-dwi-packing-a-gun-marijuana/"
     ],
     "use_count": 5
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/IMG_7490-scaled-e1792279703726.jpeg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-go-down-as-mozzys-most-soulfully-raw-extended-play-ep-review/",
+      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-be-mozzys-most-soulful-material-ep-review/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -2136,14 +2138,6 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1469.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/",
-      "https://hollywoodunlocked.com/donald-trump-says-he-might-pardon-elon-musk-and-staff-if-democrats-win/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/11/img_1469.jpeg",
     "links": [
@@ -2238,6 +2232,14 @@
       "https://allhiphop.com/news/t-i-tiny-harris-reaffirm-their-marriage-at-private-ocho-rios-villa/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
+    "links": [
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
+      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -2449,6 +2451,22 @@
     "use_count": 7
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-donald-trump-brutally-raped-her-in-1993-he-denies-it/"
+    ]
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
+      "https://hollywoodunlocked.com/former-miss-switzerland-says-donald-trump-brutally-raped-her-in-1993-he-denies-it/"
+    ]
+  },
+  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2024/09/50-Cent-5.png",
     "links": [
@@ -2653,14 +2671,6 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/trump-nobody-appreciates-how-great-a-president-i-am/",
-      "https://hollywoodunlocked.com/donald-trump-nobody-appreciates-how-great-a-president-i-am/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0292.jpeg",
     "links": [
@@ -2788,6 +2798,14 @@
     "use_count": 4
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
+    "links": [
+      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
+      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
     "links": [
@@ -2877,7 +2895,7 @@
     "use_count": 3
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
@@ -2886,10 +2904,10 @@
   },
   {
     "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
     "links": [
-      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
-      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
+      "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
+      "https://www.hotnewhiphop.com/1011958-lucki-alleged-fight-playboi-carti-entourage"
     ]
   },
   {
@@ -2935,6 +2953,14 @@
     "links": [
       "https://sports.yahoo.com/video/biggest-takeaways-first-tyson-fury-223605041.html",
       "https://sports.yahoo.com/video/biggest-takeaways-from-the-first-tyson-fury-vs-anthony-joshua-press-conference-223605041.html"
+    ]
+  },
+  {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
+    "links": [
+      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
+      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
     ]
   },
   {
@@ -3193,15 +3219,15 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://s.yimg.com/lo/mysterio/api/251985ce331def4277230a645fab19be8d70fefde3cb08cdc373b61e648f017c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvideo-frame-1788480327051_2961.jpg",
+    "issue": "same_homepage_page",
+    "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
-      "https://sports.yahoo.com/video/shaq-jokes-returning-school-actually-000545717.html",
-      "https://sports.yahoo.com/video/shaq-jokes-about-returning-to-school-i-actually-was-going-to-do-that-000545717.html"
+      "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
+      "https://theshaderoom.com/carla-jeffery-passing-zombies-actress-death-social-media-reacts-the-shade-room/"
     ]
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
       "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
@@ -3299,14 +3325,6 @@
     ]
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/08/Alleged-\u2018Last-Victim-Of-Daejon-Love-Man-Posing-As-San-Francisco-49ers-Player-Spent-\u2018Hundreds-Of-Thousands-Of-Dollars-On-Him-Says-FBI-Arrested-Him-At-Airport-Where-They-Planned-To-Meet.jpg",
-    "links": [
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-hundreds-of-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/",
-      "https://hollywoodunlocked.com/alleged-last-victim-of-daejon-love-man-posing-as-san-francisco-49ers-player-spent-thousands-of-dollars-on-him-says-fbi-arrested-him-at-airport-w/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/09/Crime-Scene.jpg",
     "links": [
@@ -3376,6 +3394,14 @@
   },
   {
     "issue": "same_homepage_page",
+    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
+    "links": [
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
+      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
+    ]
+  },
+  {
+    "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
     "links": [
       "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
