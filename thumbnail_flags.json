@@ -293,6 +293,31 @@
   },
   {
     "issue": "overused_thumbnail",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2023/08/Tupac-2Pac-Shakur.jpg",
+    "links": [
+      "https://allhiphop.com/news/2pac-leads-three-hip-hop-and-rb-vinyl-picks-for-record-store-day-black-friday/",
+      "https://allhiphop.com/news/jury-members-fear-retaliation-after-convicting-keefe-d-in-tupac-case/",
+      "https://allhiphop.com/news/gunfire-erupts-near-las-vegas-courthouse-during-tupac-trial-as-witnesses-get-hostile/"
+    ],
+    "use_count": 3
+  },
+  {
+    "issue": "overused_thumbnail",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/DJ-Akademiks-Crashes-Out-Rory-QueenzFlip.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1017171-dj-akademiks-meek-mill-live-nation",
+      "https://www.hotnewhiphop.com/1016971-dj-akademiks-hip-hop-media-drake-dominance",
+      "https://www.hotnewhiphop.com/1016405-dj-akademiks-angie-martinez-tupac-tapes",
+      "https://www.hotnewhiphop.com/1014868-sneako-dj-akademiks-legal-action-ai",
+      "https://www.hotnewhiphop.com/1014012-dj-akademiks-lebron-savannah-james-knicks-game",
+      "https://www.hotnewhiphop.com/1013933-dj-akademiks-meek-mill-tylil-knicks",
+      "https://www.hotnewhiphop.com/1012201-dj-akademiks-record-labels-scared-influence",
+      "https://www.hotnewhiphop.com/1011113-dj-akademiks-crashes-out-rory-queenzflip"
+    ],
+    "use_count": 8
+  },
+  {
+    "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2025/09/DMC.jpg",
     "links": [
       "https://allhiphop.com/news/dmc-signs-his-limited-america-vinyl-on-black-friday/",
@@ -453,6 +478,14 @@
       "https://allhiphop.com/news/wu-tang-clans-secret-album-gets-netflix-documentary-treatment/"
     ],
     "use_count": 9
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://imagez.tmz.com/image/7f/16by9/2026/11/25/7f92b6393e8945dd8db63b015a508f3f_xl.jpg",
+    "links": [
+      "https://www.tmz.com/2026/11/25/six-people-dead-in-mississippi-plane-crash/",
+      "https://www.tmz.com/2026/11/24/plane-crash-near-horn-island-mississipi/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -697,20 +730,6 @@
       "https://allhiphop.com/news/latto-celebrates-angel-reese-win-at-arena-that-moved-her-show/"
     ],
     "use_count": 4
-  },
-  {
-    "issue": "overused_thumbnail",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/09/DJ-Akademiks-Crashes-Out-Rory-QueenzFlip.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1016971-dj-akademiks-hip-hop-media-drake-dominance",
-      "https://www.hotnewhiphop.com/1016405-dj-akademiks-angie-martinez-tupac-tapes",
-      "https://www.hotnewhiphop.com/1014868-sneako-dj-akademiks-legal-action-ai",
-      "https://www.hotnewhiphop.com/1014012-dj-akademiks-lebron-savannah-james-knicks-game",
-      "https://www.hotnewhiphop.com/1013933-dj-akademiks-meek-mill-tylil-knicks",
-      "https://www.hotnewhiphop.com/1012201-dj-akademiks-record-labels-scared-influence",
-      "https://www.hotnewhiphop.com/1011113-dj-akademiks-crashes-out-rory-queenzflip"
-    ],
-    "use_count": 7
   },
   {
     "issue": "overused_thumbnail",
@@ -1103,14 +1122,6 @@
       "https://www.hotnewhiphop.com/1013114-gta-vi-launch-trailer"
     ],
     "use_count": 5
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/wp-content/uploads/2026/09/RHYNO-from-GTAVI_-The-Album-1-e1789647762818.jpg",
-    "links": [
-      "https://www.hotnewhiphop.com/1016785-hip-hop-albums-songs-november-20-2026",
-      "https://www.hotnewhiphop.com/1016775-travis-scott-gta-vi-burn-mission"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -2008,14 +2019,6 @@
     "use_count": 5
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/IMG_7490-scaled-e1792279703726.jpeg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-go-down-as-mozzys-most-soulfully-raw-extended-play-ep-review/",
-      "https://undergroundhiphopblog.com/albums/bmx-prod-by-mr-green-could-be-mozzys-most-soulful-material-ep-review/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/07/Nicki-Minaj-2.webp",
     "links": [
@@ -2237,14 +2240,6 @@
     "use_count": 3
   },
   {
-    "issue": "same_category_page",
-    "thumbnail": "https://undergroundhiphopblog.com/wp-content/uploads/2026/10/photo-output-1-10-e1793428744602.jpg",
-    "links": [
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-remembers-his-late-friend-keva-mixtape-review/",
-      "https://undergroundhiphopblog.com/albums/jon-connor-dedicates-the-artist-yahn-freeman-vi-to-his-late-friend-keva-mixtape-review/"
-    ]
-  },
-  {
     "issue": "overused_thumbnail",
     "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/05/Cardi-B-4.jpg",
     "links": [
@@ -2384,6 +2379,14 @@
     "use_count": 4
   },
   {
+    "issue": "same_homepage_page",
+    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Just-Doin-Me.jpg",
+    "links": [
+      "https://www.hotnewhiphop.com/1014701-spinnin-21-savage-young-nudy",
+      "https://www.hotnewhiphop.com/1014698-just-doin-me-young-nudy"
+    ]
+  },
+  {
     "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/Just-Doin-Me.jpg",
     "links": [
@@ -2444,22 +2447,6 @@
       "https://allhiphop.com/news/nicki-minaj-to-judge-president-trumps-1-million-small-business-competition/"
     ],
     "use_count": 7
-  },
-  {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
-      "https://hollywoodunlocked.com/former-miss-switzerland-says-donald-trump-brutally-raped-her-in-1993-he-denies-it/"
-    ]
-  },
-  {
-    "issue": "same_category_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_0900.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/former-miss-switzerland-says-trump-brutally-raped-her-in-1993-he-denies-it/",
-      "https://hollywoodunlocked.com/former-miss-switzerland-says-donald-trump-brutally-raped-her-in-1993-he-denies-it/"
-    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -2801,14 +2788,6 @@
     "use_count": 4
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
-    "links": [
-      "https://hollywoodunlocked.com/mayor-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/",
-      "https://hollywoodunlocked.com/mayor-zohran-mamdani-announces-the-horse-carriage-industry-is-coming-to-an-end-in-new-york-city/"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://hollywoodunlocked.com/wp-content/uploads/2026/10/img_9727.jpeg",
     "links": [
@@ -2898,7 +2877,7 @@
     "use_count": 3
   },
   {
-    "issue": "same_homepage_page",
+    "issue": "same_category_page",
     "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
     "links": [
       "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
@@ -2907,10 +2886,10 @@
   },
   {
     "issue": "same_category_page",
-    "thumbnail": "https://www.hotnewhiphop.com/imgprst/2292x1200-fit-81-auto/2026/10/LUCKI-Stabbed-Alleged-Fight-Playboi-Carti-Entourage.jpg",
+    "thumbnail": "https://s.yimg.com/lo/mysterio/api/785d51f772a59cfb88e1bf3578a0f0eecedaa89e44c6be739c250f9fe924473b/lightyear_networkapi/resizefill_w1200_h630%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2Fvd-072926-the-uncrowned-beat-16x9_3308.png",
     "links": [
-      "https://www.hotnewhiphop.com/1011958-lucki-stabbed-alleged-fight-playboi-carti-entourage",
-      "https://www.hotnewhiphop.com/1011958-lucki-alleged-fight-playboi-carti-entourage"
+      "https://sports.yahoo.com/video/uncrowned-beat-episode-5-chuck-145257889.html",
+      "https://sports.yahoo.com/video/the-uncrowned-beat---episode-3-dan-canobbio-naji-grampus--eric-jackman-110929793.html"
     ]
   },
   {
@@ -2959,14 +2938,6 @@
     ]
   },
   {
-    "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
-    "links": [
-      "https://thesource.com/2026/09/29/lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-wanted-to-join-knicks-but-their-finals-win-killed-it",
-      "https://thesource.com/2026/09/29/lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits/?utm_source=rss&utm_medium=rss&utm_campaign=lebron-james-says-he-didnt-leave-his-family-for-early-playoff-exits"
-    ]
-  },
-  {
     "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/09/HTUbtDXasAA3e-u.jpeg",
     "links": [
@@ -2983,6 +2954,14 @@
       "https://allhiphop.com/news/exclusive-nicki-minajs-hubby-kenneth-petty-accuser-tell-judge-settlement-is-pointless/"
     ],
     "use_count": 3
+  },
+  {
+    "issue": "same_category_page",
+    "thumbnail": "https://allhiphop.com/wp-content/uploads/2026/09/Keke-Wyatt.jpg",
+    "links": [
+      "https://allhiphop.com/news/keke-wyatt-addresses-assault-case-and-denies-reported-child-cruelty-charge/",
+      "https://allhiphop.com/news/details-emerge-in-keke-wyatt-arrest-singer-threatened-to-blow-womans-brains-out/"
+    ]
   },
   {
     "issue": "overused_thumbnail",
@@ -3222,7 +3201,7 @@
     ]
   },
   {
-    "issue": "same_category_page",
+    "issue": "same_homepage_page",
     "thumbnail": "https://theshaderoom.com/wp-content/uploads/2026/09/Zombies-Actress-Carla-Jeffrey-Reportedly-Passes-Away-At-Age-33-e1788389746856.jpg",
     "links": [
       "https://theshaderoom.com/carla-jeffrey-passing-zombies-actress-death-social-media-reacts-the-shade-room/",
@@ -3397,14 +3376,6 @@
   },
   {
     "issue": "same_homepage_page",
-    "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
-    "links": [
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
-      "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-grays-is-building-businesses-her-way"
-    ]
-  },
-  {
-    "issue": "same_category_page",
     "thumbnail": "https://thesource.com/wp-content/uploads/2026/08/Screenshot-2026-08-21-at-4.54.33-PM.jpg",
     "links": [
       "https://thesource.com/2026/08/21/from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way/?utm_source=rss&utm_medium=rss&utm_campaign=from-reality-tv-to-healthcare-and-tech-indy-bosses-summer-gray-is-building-businesses-her-way",
